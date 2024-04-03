@@ -62,7 +62,6 @@ fun PlayerScreen(
     modifier: Modifier = Modifier,
 ) {
     val volumeUiState by volumeViewModel.volumeUiState.collectAsStateWithLifecycle()
-    // val settingsState by playerScreenViewModel.settingsState.collectAsStateWithLifecycle()
     val focusRequester: FocusRequester = rememberActiveFocusRequester()
     PlayerScreen(
         mediaDisplay = {

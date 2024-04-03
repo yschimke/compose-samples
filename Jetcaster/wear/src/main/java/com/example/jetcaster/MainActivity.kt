@@ -48,6 +48,7 @@ import com.google.android.horologist.annotations.ExperimentalHorologistApi
 import com.google.android.horologist.audio.ui.VolumeViewModel
 import com.google.android.horologist.compose.layout.ScreenScaffold
 import com.google.android.horologist.compose.layout.rememberColumnState
+import com.google.android.horologist.media.ui.navigation.MediaNavController.navigateToPlayer
 import com.google.android.horologist.media.ui.navigation.MediaNavController.navigateToVolume
 import com.google.android.horologist.media.ui.navigation.MediaPlayerScaffold
 import com.google.android.horologist.media.ui.snackbar.SnackbarManager
@@ -96,8 +97,7 @@ fun WearApp() {
                     homeViewModel = HomeViewModel(),
                     onLatestEpisodeClick = { navController.navigateToLatestEpisode() },
                     onYourPodcastClick = { navController.navigateToYourPodcast() },
-                    onUpNextClick = { navController.navigateToUpNext() },
-                    onErrorDialogCancelClick = { navController.popBackStack() }
+                    onUpNextClick = { navController.navigateToUpNext() }
                 )
             },
             categoryEntityScreen = { _, _ -> },
@@ -124,8 +124,12 @@ fun WearApp() {
                             columnState = columnState,
                             playlistName = stringResource(id = R.string.latest_episodes),
                             latestEpisodeViewModel = LatestEpisodeViewModel(),
-                            onShuffleButtonClick = {},
-                            onPlayButtonClick = {}
+                            onShuffleButtonClick = {
+                               // navController.navigateToPlayer(it[0].episode.uri)
+                                 },
+                            onPlayButtonClick = {
+                                navController.navigateToPlayer()
+                            }
                         )
                     }
                 }

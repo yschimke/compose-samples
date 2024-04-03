@@ -20,6 +20,9 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.MusicNote
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.painter.Painter
@@ -50,7 +53,6 @@ fun HomeScreen(
     onLatestEpisodeClick: () -> Unit,
     onYourPodcastClick: () -> Unit,
     onUpNextClick: () -> Unit,
-    onErrorDialogCancelClick: () -> Unit,
     modifier: Modifier = Modifier
 ) {
     val columnState = rememberResponsiveColumnState(
@@ -60,10 +62,11 @@ fun HomeScreen(
         ),
     )
     val viewState by homeViewModel.state.collectAsStateWithLifecycle()
+    var showDialog by remember { mutableStateOf(viewState.featuredPodcasts.isEmpty()) }
 
     ScreenScaffold(scrollState = columnState, modifier = modifier) {
         ScalingLazyColumn(columnState = columnState) {
-            if (viewState.featuredPodcasts.isNotEmpty()) {
+            if (!showDialog) {
                 item {
                     ResponsiveListHeader(modifier = Modifier.listTextPadding()) {
                         Text(stringResource(R.string.home_library))
@@ -102,8 +105,8 @@ fun HomeScreen(
                 item {
                     AlertDialog(
                         message = stringResource(R.string.entity_no_featured_podcasts),
-                        showDialog = true,
-                        onDismiss = { onErrorDialogCancelClick },
+                        showDialog = showDialog,
+                        onDismiss = { showDialog = false },
                         content = {
 
                             if (viewState

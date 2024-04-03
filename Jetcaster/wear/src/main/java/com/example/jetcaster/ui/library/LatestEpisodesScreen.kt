@@ -53,8 +53,8 @@ public fun LatestEpisodesScreen(
     columnState: ScalingLazyColumnState,
     playlistName: String,
     latestEpisodeViewModel: LatestEpisodeViewModel,
-    onShuffleButtonClick: (EpisodeToPodcast) -> Unit,
-    onPlayButtonClick: (EpisodeToPodcast) -> Unit,
+    onShuffleButtonClick: (List<EpisodeToPodcast>) -> Unit,
+    onPlayButtonClick: (List<EpisodeToPodcast>) -> Unit,
     modifier: Modifier = Modifier,
 ) {
     val viewState by latestEpisodeViewModel.state.collectAsStateWithLifecycle()
@@ -80,6 +80,7 @@ public fun LatestEpisodesScreen(
             modifier = modifier,
             buttonsContent = {
                 ButtonsContent(
+                    viewState = viewState,
                     onShuffleButtonClick = onShuffleButtonClick,
                     onPlayButtonClick = onPlayButtonClick,
                 )
@@ -111,8 +112,9 @@ private fun MediaContent(
 @OptIn(ExperimentalHorologistApi::class)
 @Composable
 private fun ButtonsContent(
-    onShuffleButtonClick: (EpisodeToPodcast) -> Unit,
-    onPlayButtonClick: (EpisodeToPodcast) -> Unit,
+    viewState: LatestEpisodeViewState,
+    onShuffleButtonClick: (List<EpisodeToPodcast>) -> Unit,
+    onPlayButtonClick: (List<EpisodeToPodcast>) -> Unit,
 ) {
 
     Row(
@@ -125,7 +127,7 @@ private fun ButtonsContent(
         Button(
             imageVector = ImageVector.vectorResource(R.drawable.speed),
             contentDescription = stringResource(id = R.string.speed_button_content_description),
-            onClick = { /*onShuffleButtonClick(state.collectionModel)*/ },
+            onClick = { onShuffleButtonClick(viewState.libraryEpisodes) },
             modifier = Modifier
                 .weight(weight = 0.3F, fill = false),
         )
@@ -133,7 +135,7 @@ private fun ButtonsContent(
         Button(
             imageVector = Icons.Filled.PlayArrow,
             contentDescription = stringResource(id = R.string.button_play_content_description),
-            onClick = { /*onPlayButtonClick(state.)*/ },
+            onClick = { onPlayButtonClick(viewState.libraryEpisodes) },
             modifier = Modifier
                 .weight(weight = 0.3F, fill = false),
         )
