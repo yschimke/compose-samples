@@ -42,12 +42,6 @@ fun WearApp() {
             playerScreen = {
                 PlayerScreen(
                     modifier = Modifier.fillMaxSize(),
-
-                    playerScreenViewModel = viewModel(
-                        factory = PlayerViewModel.provideFactory(
-                            owner = LocalSavedStateRegistryOwner.current
-                        )
-                    ),
                     volumeViewModel = volumeViewModel,
                     onVolumeClick = {
                         navController.navigateToVolume()
@@ -77,7 +71,6 @@ fun WearApp() {
                 ) {
                     LatestEpisodesScreen(
                         playlistName = stringResource(id = R.string.latest_episodes),
-                        latestEpisodeViewModel = LatestEpisodeViewModel(),
                         onShuffleButtonClick = {
                             // navController.navigateToPlayer(it[0].episode.uri)
                         },

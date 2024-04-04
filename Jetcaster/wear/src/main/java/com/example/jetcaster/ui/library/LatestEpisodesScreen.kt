@@ -34,6 +34,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.res.vectorResource
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.wear.compose.material.ChipDefaults
 import com.example.jetcaster.R
 import com.example.jetcaster.core.data.database.model.EpisodeToPodcast
@@ -49,10 +50,10 @@ import com.google.android.horologist.media.ui.screens.entity.EntityScreen
 @Composable
 fun LatestEpisodesScreen(
     playlistName: String,
-    latestEpisodeViewModel: LatestEpisodeViewModel,
     onShuffleButtonClick: (List<EpisodeToPodcast>) -> Unit,
     onPlayButtonClick: (List<EpisodeToPodcast>) -> Unit,
     modifier: Modifier = Modifier,
+    latestEpisodeViewModel: LatestEpisodeViewModel = viewModel(),
 ) {
     val viewState by latestEpisodeViewModel.state.collectAsStateWithLifecycle()
 

@@ -28,6 +28,8 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.res.stringResource
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import androidx.lifecycle.viewmodel.compose.viewModel
+import androidx.wear.compose.foundation.lazy.items
 import androidx.wear.compose.material.ChipDefaults
 import androidx.wear.compose.material.Text
 import com.example.jetcaster.R
@@ -51,9 +53,9 @@ fun HomeScreen(
     onYourPodcastClick: () -> Unit,
     onUpNextClick: () -> Unit,
     modifier: Modifier = Modifier,
-    homeViewModel: HomeViewModel = HomeViewModel(),
+    homeViewModel: HomeViewModel = viewModel(),
 ) {
-    val viewState by homeViewModel.state.collectAsStateWithLifecycle()
+    val viewState by homeViewModel.uiState.collectAsStateWithLifecycle()
 
     HomeScreen(
         modifier = modifier,
@@ -62,12 +64,7 @@ fun HomeScreen(
         onYourPodcastClick = onYourPodcastClick,
         onUpNextClick = onUpNextClick,
         onTogglePodcastFollowed = {
-            homeViewModel.onTogglePodcastFollowed(
-                viewState
-                    .podcastCategoryFilterResult
-                    .topPodcasts[0]
-                    .uri
-            )
+            homeViewModel.onTogglePodcastFollowed(it.uri)
         },
     )
 }
@@ -78,7 +75,7 @@ fun HomeScreen(
     onLatestEpisodeClick: () -> Unit,
     onYourPodcastClick: () -> Unit,
     onUpNextClick: () -> Unit,
-    onTogglePodcastFollowed: () -> Unit,
+    onTogglePodcastFollowed: (PodcastInfo) -> Unit,
     modifier: Modifier = Modifier,
 ) {
     val columnState = rememberResponsiveColumnState(
@@ -92,41 +89,51 @@ fun HomeScreen(
 
     ScreenScaffold(scrollState = columnState, modifier = modifier) {
         ScalingLazyColumn(columnState = columnState) {
-                item {
-                    ResponsiveListHeader(modifier = Modifier.listTextPadding()) {
-                        Text(stringResource(R.string.home_library))
-                    }
-                }
-                item {
-                    Chip(
-                        label = stringResource(R.string.latest_episodes),
-                        onClick = onLatestEpisodeClick,
-                        icon = DrawableResPaintable(R.drawable.new_releases),
-                        colors = ChipDefaults.secondaryChipColors()
-                    )
-                }
-                item {
-                    Chip(
-                        label = stringResource(R.string.podcasts),
-                        onClick = onYourPodcastClick,
-                        icon = DrawableResPaintable(R.drawable.podcast),
-                        colors = ChipDefaults.secondaryChipColors()
-                    )
-                }
-                item {
-                    ResponsiveListHeader(modifier = Modifier.listTextPadding()) {
-                        Text(stringResource(R.string.queue))
-                    }
-                }
-                item {
-                    Chip(
-                        label = stringResource(R.string.up_next),
-                        onClick = onUpNextClick,
-                        icon = DrawableResPaintable(R.drawable.up_next),
-                        colors = ChipDefaults.secondaryChipColors()
-                    )
+            item {
+                ResponsiveListHeader(modifier = Modifier.listTextPadding()) {
+                    Text(stringResource(R.string.home_library))
                 }
             }
+            item {
+                Chip(
+                    label = stringResource(R.string.latest_episodes),
+                    onClick = onLatestEpisodeClick,
+                    icon = DrawableResPaintable(R.drawable.new_releases),
+                    colors = ChipDefaults.secondaryChipColors()
+                )
+            }
+            item {
+                Chip(
+                    label = stringResource(R.string.podcasts),
+                    onClick = onYourPodcastClick,
+                    icon = DrawableResPaintable(R.drawable.podcast),
+                    colors = ChipDefaults.secondaryChipColors()
+                )
+            }
+            item {
+                ResponsiveListHeader(modifier = Modifier.listTextPadding()) {
+                    Text(stringResource(R.string.queue))
+                }
+            }
+            item {
+                Chip(
+                    label = stringResource(R.string.up_next),
+                    onClick = onUpNextClick,
+                    icon = DrawableResPaintable(R.drawable.up_next),
+                    colors = ChipDefaults.secondaryChipColors()
+                )
+            }
+            items(viewState.podcastCategoryFilterResult.topPodcasts.take(1)) { podcast ->
+                PodcastContent(
+                    podcast = podcast,
+                    downloadItemArtworkPlaceholder = rememberVectorPainter(
+                        image = Icons.Default.MusicNote,
+                        tintColor = Color.Blue,
+                    ),
+                    onClick = { onTogglePodcastFollowed(podcast) },
+                )
+            }
+        }
     }
 
     AlertDialog(
@@ -134,30 +141,11 @@ fun HomeScreen(
         showDialog = showDialog,
         onDismiss = { showDialog = false },
         content = {
-
-            if (viewState
-                    .podcastCategoryFilterResult
-                    .topPodcasts
-                    .isNotEmpty()
-            ) {
-                item {
-                    PodcastContent(
-                        podcast = viewState.podcastCategoryFilterResult
-                            .topPodcasts[0],
-                        downloadItemArtworkPlaceholder = rememberVectorPainter(
-                            image = Icons.Default.MusicNote,
-                            tintColor = Color.Blue,
-                        ),
-                        onClick = onTogglePodcastFollowed,
-                    )
-                }
-            } else {
-                item {
-                    PlaceholderChip(
-                        contentDescription = "",
-                        colors = ChipDefaults.secondaryChipColors()
-                    )
-                }
+            item {
+                PlaceholderChip(
+                    contentDescription = "",
+                    colors = ChipDefaults.secondaryChipColors()
+                )
             }
         }
     )

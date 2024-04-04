@@ -36,8 +36,10 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalSavedStateRegistryOwner
 import androidx.compose.ui.platform.LocalView
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.wear.compose.material.MaterialTheme
 import com.google.android.horologist.audio.ui.VolumeUiState
 import com.google.android.horologist.audio.ui.VolumeViewModel
@@ -51,10 +53,14 @@ import com.google.android.horologist.media.ui.screens.player.PlayerScreen
 
 @Composable
 fun PlayerScreen(
-    playerScreenViewModel: PlayerViewModel,
     volumeViewModel: VolumeViewModel,
     onVolumeClick: () -> Unit,
     modifier: Modifier = Modifier,
+    playerScreenViewModel: PlayerViewModel = viewModel(
+        factory = PlayerViewModel.provideFactory(
+            owner = LocalSavedStateRegistryOwner.current
+        )
+    ),
 ) {
     val volumeUiState by volumeViewModel.volumeUiState.collectAsStateWithLifecycle()
     val playerUiState by playerScreenViewModel.uiState.collectAsStateWithLifecycle()
@@ -79,7 +85,10 @@ private fun PlayerScreen(
     PlayerScreen(
         mediaDisplay = {
             if (playerUiState != null) {
-                TextMediaDisplay(title = playerUiState.podcastName, subtitle = playerUiState.subTitle)
+                TextMediaDisplay(
+                    title = playerUiState.podcastName,
+                    subtitle = playerUiState.subTitle
+                )
             } else {
                 LoadingMediaDisplay()
             }
