@@ -32,7 +32,6 @@ import androidx.wear.compose.material.ChipDefaults
 import androidx.wear.compose.material.Text
 import com.example.jetcaster.R
 import com.example.jetcaster.core.data.model.PodcastInfo
-import com.google.android.horologist.annotations.ExperimentalHorologistApi
 import com.google.android.horologist.composables.PlaceholderChip
 import com.google.android.horologist.compose.layout.ScalingLazyColumn
 import com.google.android.horologist.compose.layout.ScalingLazyColumnDefaults
@@ -46,14 +45,41 @@ import com.google.android.horologist.images.base.paintable.DrawableResPaintable
 import com.google.android.horologist.images.base.util.rememberVectorPainter
 import com.google.android.horologist.images.coil.CoilPaintable
 
-@OptIn(ExperimentalHorologistApi::class)
 @Composable
 fun HomeScreen(
-    homeViewModel: HomeViewModel,
     onLatestEpisodeClick: () -> Unit,
     onYourPodcastClick: () -> Unit,
     onUpNextClick: () -> Unit,
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
+    homeViewModel: HomeViewModel = HomeViewModel(),
+) {
+    val viewState by homeViewModel.state.collectAsStateWithLifecycle()
+
+    HomeScreen(
+        modifier = modifier,
+        viewState = viewState,
+        onLatestEpisodeClick = onLatestEpisodeClick,
+        onYourPodcastClick = onYourPodcastClick,
+        onUpNextClick = onUpNextClick,
+        onTogglePodcastFollowed = {
+            homeViewModel.onTogglePodcastFollowed(
+                viewState
+                    .podcastCategoryFilterResult
+                    .topPodcasts[0]
+                    .uri
+            )
+        },
+    )
+}
+
+@Composable
+fun HomeScreen(
+    viewState: HomeViewState,
+    onLatestEpisodeClick: () -> Unit,
+    onYourPodcastClick: () -> Unit,
+    onUpNextClick: () -> Unit,
+    onTogglePodcastFollowed: () -> Unit,
+    modifier: Modifier = Modifier,
 ) {
     val columnState = rememberResponsiveColumnState(
         contentPadding = ScalingLazyColumnDefaults.padding(
@@ -61,12 +87,11 @@ fun HomeScreen(
             last = ScalingLazyColumnDefaults.ItemType.Chip,
         ),
     )
-    val viewState by homeViewModel.state.collectAsStateWithLifecycle()
+
     var showDialog by remember { mutableStateOf(viewState.featuredPodcasts.isEmpty()) }
 
     ScreenScaffold(scrollState = columnState, modifier = modifier) {
         ScalingLazyColumn(columnState = columnState) {
-            if (!showDialog) {
                 item {
                     ResponsiveListHeader(modifier = Modifier.listTextPadding()) {
                         Text(stringResource(R.string.home_library))
@@ -101,54 +126,43 @@ fun HomeScreen(
                         colors = ChipDefaults.secondaryChipColors()
                     )
                 }
+            }
+    }
+
+    AlertDialog(
+        message = stringResource(R.string.entity_no_featured_podcasts),
+        showDialog = showDialog,
+        onDismiss = { showDialog = false },
+        content = {
+
+            if (viewState
+                    .podcastCategoryFilterResult
+                    .topPodcasts
+                    .isNotEmpty()
+            ) {
+                item {
+                    PodcastContent(
+                        podcast = viewState.podcastCategoryFilterResult
+                            .topPodcasts[0],
+                        downloadItemArtworkPlaceholder = rememberVectorPainter(
+                            image = Icons.Default.MusicNote,
+                            tintColor = Color.Blue,
+                        ),
+                        onClick = onTogglePodcastFollowed,
+                    )
+                }
             } else {
                 item {
-                    AlertDialog(
-                        message = stringResource(R.string.entity_no_featured_podcasts),
-                        showDialog = showDialog,
-                        onDismiss = { showDialog = false },
-                        content = {
-
-                            if (viewState
-                                .podcastCategoryFilterResult
-                                .topPodcasts
-                                .isNotEmpty()
-                            ) {
-                                item {
-                                    PodcastContent(
-                                        podcast = viewState.podcastCategoryFilterResult
-                                            .topPodcasts[0],
-                                        downloadItemArtworkPlaceholder = rememberVectorPainter(
-                                            image = Icons.Default.MusicNote,
-                                            tintColor = Color.Blue,
-                                        ),
-                                        onClick = {
-                                            homeViewModel.onTogglePodcastFollowed(
-                                                viewState
-                                                    .podcastCategoryFilterResult
-                                                    .topPodcasts[0]
-                                                    .uri
-                                            )
-                                        },
-                                    )
-                                }
-                            } else {
-                                item {
-                                    PlaceholderChip(
-                                        contentDescription = "",
-                                        colors = ChipDefaults.secondaryChipColors()
-                                    )
-                                }
-                            }
-                        }
+                    PlaceholderChip(
+                        contentDescription = "",
+                        colors = ChipDefaults.secondaryChipColors()
                     )
                 }
             }
         }
-    }
+    )
 }
 
-@OptIn(ExperimentalHorologistApi::class)
 @Composable
 private fun PodcastContent(
     podcast: PodcastInfo,

@@ -37,9 +37,8 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.wear.compose.material.ChipDefaults
 import com.example.jetcaster.R
 import com.example.jetcaster.core.data.database.model.EpisodeToPodcast
-import com.google.android.horologist.annotations.ExperimentalHorologistApi
-import com.google.android.horologist.compose.layout.ScalingLazyColumnState
 import com.google.android.horologist.compose.layout.ScreenScaffold
+import com.google.android.horologist.compose.layout.rememberColumnState
 import com.google.android.horologist.compose.material.Button
 import com.google.android.horologist.compose.material.Chip
 import com.google.android.horologist.images.base.util.rememberVectorPainter
@@ -47,10 +46,8 @@ import com.google.android.horologist.images.coil.CoilPaintable
 import com.google.android.horologist.media.ui.screens.entity.DefaultEntityScreenHeader
 import com.google.android.horologist.media.ui.screens.entity.EntityScreen
 
-@OptIn(ExperimentalHorologistApi::class)
 @Composable
-public fun LatestEpisodesScreen(
-    columnState: ScalingLazyColumnState,
+fun LatestEpisodesScreen(
     playlistName: String,
     latestEpisodeViewModel: LatestEpisodeViewModel,
     onShuffleButtonClick: (List<EpisodeToPodcast>) -> Unit,
@@ -59,11 +56,31 @@ public fun LatestEpisodesScreen(
 ) {
     val viewState by latestEpisodeViewModel.state.collectAsStateWithLifecycle()
 
+    LatestEpisodeScreen(
+        modifier = modifier,
+        playlistName = playlistName,
+        viewState = viewState,
+        onShuffleButtonClick = onShuffleButtonClick,
+        onPlayButtonClick = onPlayButtonClick,
+    )
+}
+
+@Composable
+fun LatestEpisodeScreen(
+    playlistName: String,
+    viewState: LatestEpisodeViewState,
+    onShuffleButtonClick: (List<EpisodeToPodcast>) -> Unit,
+    onPlayButtonClick: (List<EpisodeToPodcast>) -> Unit,
+    modifier: Modifier = Modifier,
+) {
+    val columnState = rememberColumnState()
+
     ScreenScaffold(
         scrollState = columnState,
         modifier = modifier
     ) {
         EntityScreen(
+            modifier = modifier,
             columnState = columnState,
             headerContent = { DefaultEntityScreenHeader(title = playlistName) },
             content = {
@@ -77,7 +94,6 @@ public fun LatestEpisodesScreen(
                     )
                 }
             },
-            modifier = modifier,
             buttonsContent = {
                 ButtonsContent(
                     viewState = viewState,
@@ -89,9 +105,8 @@ public fun LatestEpisodesScreen(
     }
 }
 
-@OptIn(ExperimentalHorologistApi::class)
 @Composable
-private fun MediaContent(
+fun MediaContent(
     episode: EpisodeToPodcast,
     downloadItemArtworkPlaceholder: Painter?
 ) {
@@ -109,14 +124,12 @@ private fun MediaContent(
     )
 }
 
-@OptIn(ExperimentalHorologistApi::class)
 @Composable
-private fun ButtonsContent(
+fun ButtonsContent(
     viewState: LatestEpisodeViewState,
     onShuffleButtonClick: (List<EpisodeToPodcast>) -> Unit,
     onPlayButtonClick: (List<EpisodeToPodcast>) -> Unit,
 ) {
-
     Row(
         modifier = Modifier
             .padding(bottom = 16.dp)

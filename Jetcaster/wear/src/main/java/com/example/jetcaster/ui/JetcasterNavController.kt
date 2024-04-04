@@ -26,27 +26,27 @@ import com.google.android.horologist.media.ui.navigation.NavigationScreens
  */
 public object JetcasterNavController {
 
-    public fun NavController.navigateToYourPodcast() {
+    fun NavController.navigateToYourPodcast() {
         navigate(YourPodcasts.destination())
     }
 
-    public fun NavController.navigateToLatestEpisode() {
+    fun NavController.navigateToLatestEpisode() {
         navigate(LatestEpisodes.destination())
     }
 
-    public fun NavController.navigateToUpNext() {
+    fun NavController.navigateToUpNext() {
         navigate(UpNext.destination())
     }
 }
 
 public object YourPodcasts : NavigationScreens("yourPodcasts") {
-    public fun destination(): String = navRoute
+    fun destination(): String = navRoute
 }
 
 public object LatestEpisodes : NavigationScreens("latestEpisodes") {
-    public fun destination(): String = navRoute
+    fun destination(): String = navRoute
 }
 
 public object UpNext : NavigationScreens("upNext") {
-    public fun destination(): String = navRoute
+    fun destination(): String = navRoute
 }

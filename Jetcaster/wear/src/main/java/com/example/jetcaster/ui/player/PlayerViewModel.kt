@@ -29,6 +29,7 @@ import androidx.savedstate.SavedStateRegistryOwner
 import com.example.jetcaster.core.data.di.Graph
 import com.example.jetcaster.core.data.repository.EpisodeStore
 import com.example.jetcaster.core.data.repository.PodcastStore
+import kotlinx.coroutines.flow.MutableStateFlow
 import java.time.Duration
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
@@ -51,9 +52,7 @@ class PlayerViewModel(
     podcastStore: PodcastStore,
     savedStateHandle: SavedStateHandle
 ) : ViewModel() {
-
-    var uiState by mutableStateOf(PlayerUiState())
-        private set
+    val uiState = MutableStateFlow<PlayerUiState?>(null)
 
     init {
         viewModelScope.launch {
@@ -61,7 +60,7 @@ class PlayerViewModel(
                 val episodeUri = Uri.decode(savedStateHandle.get<String>("episodeUri"))
                 val episode = episodeStore.episodeWithUri(episodeUri).first()
                 val podcast = podcastStore.podcastWithUri(episode.podcastUri).first()
-                uiState = PlayerUiState(
+                uiState.value = PlayerUiState(
                     title = episode.title,
                     duration = episode.duration,
                     podcastName = podcast.title,
@@ -69,7 +68,7 @@ class PlayerViewModel(
                     podcastImageUrl = podcast.imageUrl ?: ""
                 )
             } else {
-                uiState = PlayerUiState(
+                uiState.value = PlayerUiState(
                     title = "",
                     duration = Duration.ZERO,
                     podcastName = "Nothing to play",
