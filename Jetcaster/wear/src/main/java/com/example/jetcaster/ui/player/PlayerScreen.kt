@@ -56,11 +56,7 @@ fun PlayerScreen(
     volumeViewModel: VolumeViewModel,
     onVolumeClick: () -> Unit,
     modifier: Modifier = Modifier,
-    playerScreenViewModel: PlayerViewModel = viewModel(
-        factory = PlayerViewModel.provideFactory(
-            owner = LocalSavedStateRegistryOwner.current
-        )
-    ),
+    playerScreenViewModel: PlayerViewModel = viewModel(),
 ) {
     val volumeUiState by volumeViewModel.volumeUiState.collectAsStateWithLifecycle()
     val playerUiState by playerScreenViewModel.uiState.collectAsStateWithLifecycle()
