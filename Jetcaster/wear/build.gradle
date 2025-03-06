@@ -20,6 +20,7 @@ plugins {
     alias(libs.plugins.ksp)
     alias(libs.plugins.hilt)
     alias(libs.plugins.compose)
+    alias(libs.plugins.kotlin.serialization)
 }
 
 android {
@@ -126,6 +127,8 @@ dependencies {
 
     implementation(libs.coil.kt.compose)
 
+    implementation(libs.kotlinx.serialization.core)
+
     coreLibraryDesugaring(libs.core.jdk.desugaring)
 
     implementation projects.core.data
@@ -140,9 +143,7 @@ dependencies {
     testImplementation libs.roborazzi
     testImplementation libs.roborazzi.compose
     testImplementation libs.roborazzi.rule
-    testImplementation(libs.horologist.roboscreenshots) {
-      exclude(group: "com.github.QuickBirdEng.kotlin-snapshot-testing")
-    }
+    testImplementation(libs.horologist.roboscreenshots)
 
     androidTestImplementation libs.androidx.test.ext.junit
     androidTestImplementation libs.androidx.test.espresso.core

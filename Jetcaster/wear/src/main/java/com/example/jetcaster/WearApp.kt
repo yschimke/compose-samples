@@ -25,17 +25,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
-import androidx.wear.compose.navigation.SwipeDismissableNavHost
-import androidx.wear.compose.navigation.composable
 import androidx.wear.compose.navigation.rememberSwipeDismissableNavController
 import androidx.wear.compose.navigation.rememberSwipeDismissableNavHostState
 import com.example.jetcaster.theme.WearAppTheme
 import com.example.jetcaster.ui.Episode
-import com.example.jetcaster.ui.JetcasterNavController.navigateToEpisode
-import com.example.jetcaster.ui.JetcasterNavController.navigateToLatestEpisode
-import com.example.jetcaster.ui.JetcasterNavController.navigateToPodcastDetails
-import com.example.jetcaster.ui.JetcasterNavController.navigateToUpNext
-import com.example.jetcaster.ui.JetcasterNavController.navigateToYourPodcast
 import com.example.jetcaster.ui.LatestEpisodes
 import com.example.jetcaster.ui.PodcastDetails
 import com.example.jetcaster.ui.UpNext
@@ -51,9 +44,9 @@ import com.google.android.horologist.audio.ui.VolumeScreen
 import com.google.android.horologist.audio.ui.VolumeViewModel
 import com.google.android.horologist.compose.layout.AppScaffold
 import com.google.android.horologist.compose.layout.ScreenScaffold
+import com.google.android.horologist.compose.nav.composable
 import com.google.android.horologist.media.ui.navigation.MediaNavController.navigateToPlayer
-import com.google.android.horologist.media.ui.navigation.MediaNavController.navigateToVolume
-import com.google.android.horologist.media.ui.navigation.NavigationScreens
+import com.google.android.horologist.media.ui.navigation.NavigationScreen
 import com.google.android.horologist.media.ui.screens.playerlibrarypager.PlayerLibraryPagerScreen
 
 @Composable
@@ -65,17 +58,13 @@ fun WearApp() {
 
     WearAppTheme {
         AppScaffold {
-            SwipeDismissableNavHost(
-                startDestination = NavigationScreens.Player.navRoute,
+            com.google.android.horologist.compose.nav.SwipeDismissableNavHost(
+                startDestination = NavigationScreen.Player(),
                 navController = navController,
                 modifier = Modifier.background(Color.Transparent),
                 state = navHostState,
             ) {
-                composable(
-                    route = NavigationScreens.Player.navRoute,
-                    arguments = NavigationScreens.Player.arguments,
-                    deepLinks = NavigationScreens.Player.deepLinks(""),
-                ) {
+                composable<NavigationScreen.Player> {
                     val volumeState by volumeViewModel.volumeUiState.collectAsStateWithLifecycle()
                     val pagerState = rememberPagerState(initialPage = 0, pageCount = { 2 })
 
@@ -88,34 +77,28 @@ fun WearApp() {
                                 modifier = Modifier.fillMaxSize(),
                                 volumeViewModel = volumeViewModel,
                                 onVolumeClick = {
-                                    navController.navigateToVolume()
+                                    navController.navigate(NavigationScreen.Volume)
                                 }
                             )
                         },
                         libraryScreen = {
                             LibraryScreen(
-                                onLatestEpisodeClick = { navController.navigateToLatestEpisode() },
-                                onYourPodcastClick = { navController.navigateToYourPodcast() },
-                                onUpNextClick = { navController.navigateToUpNext() },
+                                onLatestEpisodeClick = { navController.navigate(LatestEpisodes) },
+                                onYourPodcastClick = { navController.navigate(YourPodcasts) },
+                                onUpNextClick = { navController.navigate(UpNext) },
                             )
                         },
                         backStack = it,
                     )
                 }
 
-                composable(
-                    route = NavigationScreens.Volume.navRoute,
-                    arguments = NavigationScreens.Volume.arguments,
-                    deepLinks = NavigationScreens.Volume.deepLinks(""),
-                ) {
+                composable<NavigationScreen.Volume> {
                     ScreenScaffold(timeText = {}) {
                         VolumeScreen(volumeViewModel = volumeViewModel)
                     }
                 }
 
-                composable(
-                    route = LatestEpisodes.navRoute,
-                ) {
+                composable<LatestEpisodes> {
                     LatestEpisodesScreen(
                         onPlayButtonClick = {
                             navController.navigateToPlayer()
@@ -123,41 +106,41 @@ fun WearApp() {
                         onDismiss = { navController.popBackStack() }
                     )
                 }
-                composable(route = YourPodcasts.navRoute) {
+                composable<YourPodcasts> {
                     PodcastsScreen(
-                        onPodcastsItemClick = { navController.navigateToPodcastDetails(it.uri) },
+                        onPodcastsItemClick = { navController.navigate(PodcastDetails(it.uri)) },
                         onDismiss = { navController.popBackStack() }
                     )
                 }
-                composable(route = PodcastDetails.navRoute) {
+                composable<PodcastDetails> {
                     PodcastDetailsScreen(
                         onPlayButtonClick = {
                             navController.navigateToPlayer()
                         },
-                        onEpisodeItemClick = { navController.navigateToEpisode(it.uri) },
+                        onEpisodeItemClick = { navController.navigate(Episode(it.uri)) },
                         onDismiss = { navController.popBackStack() }
                     )
                 }
-                composable(route = UpNext.navRoute) {
+                composable<UpNext> {
                     QueueScreen(
                         onPlayButtonClick = {
                             navController.navigateToPlayer()
                         },
-                        onEpisodeItemClick = { navController.navigateToPlayer() },
+                        onEpisodeItemClick = { navController.navigate(NavigationScreen.Player) },
                         onDismiss = {
                             navController.popBackStack()
-                            navController.navigateToYourPodcast()
+                            navController.navigate(YourPodcasts)
                         }
                     )
                 }
-                composable(route = Episode.navRoute) {
+                composable<Episode> {
                     EpisodeScreen(
                         onPlayButtonClick = {
                             navController.navigateToPlayer()
                         },
                         onDismiss = {
                             navController.popBackStack()
-                            navController.navigateToYourPodcast()
+                            navController.navigate(YourPodcasts)
                         }
                     )
                 }
