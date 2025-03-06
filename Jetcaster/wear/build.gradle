@@ -105,6 +105,7 @@ dependencies {
 
     //Horologist Media toolkit
     implementation libs.horologist.media.ui
+    implementation libs.horologist.media.ui.model
     implementation libs.horologist.audio.ui
     implementation libs.horologist.audio.ui.model
     implementation libs.horologist.media.data
