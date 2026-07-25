@@ -22,7 +22,7 @@ on:
         default: false
   push:
     branches:
-      - agent/preview-catalogs
+      - previews
     paths:
       - '*/catalog*.spec.json'
       - '*/app/src/debug/**'
@@ -78,10 +78,7 @@ jobs:
           # PostCard/Popular wrapper in JetNews for the pattern. Its spec is
           # committed and validates (with the two Wear multipreview annotations
           # passed via preview-annotations); only the wrappers are missing.
-    # TODO: move back to @main once the working-directory + preview-annotations
-    # inputs land there — compose-samples is the first multi-build consumer, and
-    # neither input exists on main yet.
-    uses: yschimke/compose-ai-tools/.github/workflows/design-artifacts-reusable.yml@agent/preview-coo-ee-compose-samples
+    uses: yschimke/compose-ai-tools/.github/workflows/design-artifacts-reusable.yml@main
     with:
       system: ${{ matrix.system }}
       spec: ${{ matrix.spec }}
