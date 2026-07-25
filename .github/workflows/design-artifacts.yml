@@ -1,0 +1,93 @@
+name: Design Artifacts
+
+# Render each sample's `@Preview` catalog and publish its importable sticker
+# sheet to a clean `design-artifacts/<system>` branch, which the public preview
+# server (preview.coo.ee) serves at /<system>/.
+#
+# Every sample declares its inventory in a `catalog.spec.json` pointing at the
+# `@Preview` functions the sample already ships — adopting compose-preview here
+# cost a plugin line per module plus that file, with no UI code changes.
+#
+# The render → validate → generate → publish pipeline is delegated wholesale to
+# the reusable workflow in compose-ai-tools; this file is only the per-sample
+# matrix. Note that each sample is its OWN Gradle build (JetNews/gradlew,
+# Jetcaster/gradlew, …) with no build at the repo root, hence working-directory.
+
+on:
+  workflow_dispatch:
+    inputs:
+      allow_incomplete:
+        description: 'Publish even if some previews fail to render or lack semantics (use while tuning a spec).'
+        type: boolean
+        default: false
+  push:
+    branches:
+      - agent/preview-catalogs
+    paths:
+      - '*/catalog*.spec.json'
+      - '*/app/src/debug/**'
+      - '.github/workflows/design-artifacts.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: design-artifacts-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    # Never let a fork of this fork push delivery branches here.
+    if: ${{ github.repository == 'yschimke/compose-samples' }}
+    name: ${{ matrix.system }}
+    permissions:
+      contents: write
+    strategy:
+      # One sample's render failing shouldn't stop the others publishing.
+      fail-fast: false
+      matrix:
+        include:
+          - system: jetnews
+            spec: JetNews/catalog.spec.json
+            dir: JetNews
+            module: ':app'
+          - system: jetcaster
+            spec: Jetcaster/catalog.spec.json
+            dir: Jetcaster
+            module: ':mobile'
+          - system: jetchat
+            spec: Jetchat/catalog.spec.json
+            dir: Jetchat
+            module: ':app'
+          - system: jetsnack
+            spec: Jetsnack/catalog.spec.json
+            dir: Jetsnack
+            module: ':app'
+          - system: jetlagged
+            spec: JetLagged/catalog.spec.json
+            dir: JetLagged
+            module: ':app'
+          - system: reply
+            spec: Reply/catalog.spec.json
+            dir: Reply
+            module: ':app'
+          # jetcaster-wear is deliberately NOT here yet. 9 of its 12 previews
+          # take a @PreviewParameter, and the renderer emits no data products
+          # for such a preview, so the completeness gate refuses to publish the
+          # catalog. It needs zero-argument wrapper previews first — see the
+          # PostCard/Popular wrapper in JetNews for the pattern. Its spec is
+          # committed and validates (with the two Wear multipreview annotations
+          # passed via preview-annotations); only the wrappers are missing.
+    # TODO: move back to @main once the working-directory + preview-annotations
+    # inputs land there — compose-samples is the first multi-build consumer, and
+    # neither input exists on main yet.
+    uses: yschimke/compose-ai-tools/.github/workflows/design-artifacts-reusable.yml@agent/preview-coo-ee-compose-samples
+    with:
+      system: ${{ matrix.system }}
+      spec: ${{ matrix.spec }}
+      module: ${{ matrix.module }}
+      working-directory: ${{ matrix.dir }}
+      allow-incomplete: ${{ inputs.allow_incomplete || false }}
+      commit-user-name: Yuri Schimke
+      commit-user-email: yuri@schimke.ee
+      timeout-minutes: 90
