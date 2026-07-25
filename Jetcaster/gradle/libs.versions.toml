@@ -3,6 +3,7 @@
 # Do not add a dependency to an individual sample, edit the global version instead.
 #####
 [versions]
+composeAiPreview = "0.17.17"
 accompanist = "0.37.3"
 android-material3 = "1.14.0"
 androidGradlePlugin = "9.2.1"
@@ -62,6 +63,7 @@ targetSdk = "33"
 version-catalog-update = "1.1.0"
 
 [libraries]
+composeai-preview-annotations = { module = "ee.schimke.composeai:preview-annotations", version.ref = "composeAiPreview" }
 accompanist-adaptive = { module = "com.google.accompanist:accompanist-adaptive", version.ref = "accompanist" }
 accompanist-permissions = { module = "com.google.accompanist:accompanist-permissions", version.ref = "accompanist" }
 android-material3 = { module = "com.google.android.material:material", version.ref = "android-material3" }
@@ -171,6 +173,7 @@ rometools-modules = { module = "com.rometools:rome-modules", version.ref = "rome
 rometools-rome = { module = "com.rometools:rome", version.ref = "rome" }
 
 [plugins]
+composeai-preview = { id = "ee.schimke.composeai.preview", version.ref = "composeAiPreview" }
 android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
 android-library = { id = "com.android.library", version.ref = "androidGradlePlugin" }
 android-test = { id = "com.android.test", version.ref = "androidGradlePlugin" }

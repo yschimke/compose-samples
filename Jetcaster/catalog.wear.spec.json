@@ -1,0 +1,103 @@
+{
+  "$schema": "https://raw.githubusercontent.com/yschimke/compose-ai-tools/main/scripts/design-artifacts/catalog.spec.schema.json",
+  "$comment": "Jetcaster's Wear OS tier as its own sticker sheet. Wear is a separate design system — androidx.wear.compose.material3, round device frames, and its own layout idioms — so it gets a separate catalog rather than being folded into the phone sheet. compareWith pairs it against the phone catalog so the same feature can be read across form factors. NOTE: every preview here is annotated with @WearPreviewDevices/@WearPreviewFontScales, which are multipreview annotations from androidx.wear.compose.ui.tooling.preview — an external artifact. The build-free spec validator only recognises annotations it can see in the scanned source, so it must be run as: validate-catalog-spec.mjs --spec catalog.wear.spec.json --preview-annotation WearPreviewDevices --preview-annotation WearPreviewFontScales. Without those flags it reports 0 discovered previews and fails every entry.",
+  "system": "jetcaster-wear",
+  "title": "Jetcaster for Wear OS",
+  "library": [
+    "androidx.wear.compose:compose-material3",
+    "androidx.wear.compose:compose-foundation"
+  ],
+  "module": ":wear",
+  "modes": ["dark"],
+  "compareWith": "jetcaster",
+  "display": {
+    "surface": "dark",
+    "hero": "Podcast/Row"
+  },
+  "groupOrder": ["Browse", "Playback", "States"],
+  "groups": [
+    {
+      "name": "Browse",
+      "section": "Screens",
+      "components": [
+        {
+          "componentId": "Podcast/Row",
+          "preview": "PodcastScreenLoadedPreview",
+          "caption": "Podcast browse list on a round face — the Wear counterpart of the phone's discover carousel.",
+          "parallel": "Podcast/Card"
+        },
+        {
+          "componentId": "Podcast/Content",
+          "preview": "PodcastContentPreview",
+          "caption": "Podcast content block as laid out for a round display."
+        },
+        {
+          "componentId": "Podcast/Details",
+          "preview": "PodcastDetailsScreenLoadedPreview",
+          "caption": "Podcast details on Wear."
+        },
+        {
+          "componentId": "Library/Screen",
+          "preview": "LibraryScreenPreview",
+          "caption": "The user's library entry point."
+        },
+        {
+          "componentId": "Episode/Latest",
+          "preview": "LatestEpisodeScreenLoadedPreview",
+          "caption": "Latest-episode screen — the primary Wear launch surface."
+        }
+      ]
+    },
+    {
+      "name": "Playback",
+      "section": "Screens",
+      "components": [
+        {
+          "componentId": "Episode/Screen",
+          "preview": "EpisodeScreenLoadedPreview",
+          "caption": "Episode detail with playback controls, loaded.",
+          "parallel": "Episode/List item"
+        },
+        {
+          "componentId": "Player/Controls",
+          "preview": "MediaContentPreview",
+          "caption": "Media content and transport on a round face — where Wear's touch-target minimums bite hardest.",
+          "parallel": "Player/Transport"
+        },
+        {
+          "componentId": "Queue/Screen",
+          "preview": "QueueScreenLoadedPreview",
+          "caption": "Playback queue, populated."
+        }
+      ]
+    },
+    {
+      "name": "States",
+      "section": "Screens",
+      "components": [
+        {
+          "componentId": "Episode/Loading",
+          "preview": "EpisodeScreenLoadingPreview",
+          "caption": "Episode screen while loading.",
+          "variants": [
+            {
+              "preview": "EpisodeScreenEmptyPreview",
+              "caption": "Episode screen with nothing to show.",
+              "state": "empty"
+            }
+          ]
+        },
+        {
+          "componentId": "Podcast/Empty",
+          "preview": "PodcastScreenEmptyPreview",
+          "caption": "Podcast list with no subscriptions yet."
+        },
+        {
+          "componentId": "Queue/Empty",
+          "preview": "QueueScreenEmptyPreview",
+          "caption": "Empty playback queue."
+        }
+      ]
+    }
+  ]
+}

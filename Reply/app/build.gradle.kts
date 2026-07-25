@@ -21,6 +21,15 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.serialization)
     alias(libs.plugins.compose)
+    alias(libs.plugins.composeai.preview)
+}
+
+// Renders every `@Preview` in this module to PNG outside Android Studio.
+// sdkVersion is pinned rather than auto-detected: the sample compiles against
+// SDK 37, which is outside Robolectric's render range on JDK 17.
+composePreview {
+    variant.set("debug")
+    sdkVersion.set(35)
 }
 
 android {

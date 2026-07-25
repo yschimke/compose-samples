@@ -1,0 +1,160 @@
+{
+  "$schema": "https://raw.githubusercontent.com/yschimke/compose-ai-tools/main/scripts/design-artifacts/catalog.spec.schema.json",
+  "$comment": "Jetchat sticker sheet. Jetchat's distinguishing feature is that almost every surface has a dark counterpart authored as a separate @Preview function — so the catalog uses `theme` variants to fold each light/dark pair onto one swap card instead of listing them twice.",
+  "system": "jetchat",
+  "title": "Jetchat",
+  "library": ["androidx.compose.material3:material3"],
+  "module": ":app",
+  "modes": ["light", "dark"],
+  "breakpoints": [
+    { "size": "compact", "widthDp": 412 },
+    { "size": "medium", "widthDp": 700 }
+  ],
+  "display": {
+    "surface": "light",
+    "hero": "Conversation/Screen"
+  },
+  "groupOrder": ["Conversation", "Profile", "Chrome", "Widget"],
+  "groups": [
+    {
+      "name": "Conversation",
+      "section": "Screens",
+      "components": [
+        {
+          "componentId": "Conversation/Screen",
+          "preview": "ConversationPreview",
+          "caption": "Conversation screen — message list, input bar and app bar together."
+        },
+        {
+          "componentId": "Conversation/Message",
+          "preview": "MessageItemPreview",
+          "caption": "Single message bubble."
+        },
+        {
+          "componentId": "Conversation/Day header",
+          "preview": "DayHeaderPrev",
+          "caption": "Date separator between message groups."
+        },
+        {
+          "componentId": "Conversation/Input",
+          "preview": "UserInputPreview",
+          "caption": "Message composer with its emoji/attachment selectors."
+        },
+        {
+          "componentId": "Conversation/Jump to bottom",
+          "preview": "JumpToBottomPreview",
+          "caption": "Jump-to-bottom affordance that appears when scrolled away from the latest message."
+        },
+        {
+          "componentId": "Conversation/Orientation",
+          "preview": "ConvPreviewPortraitMeDefault",
+          "caption": "Conversation in portrait.",
+          "variants": [
+            {
+              "preview": "ConvPreviewLandscapeMeDefault",
+              "caption": "The same conversation in landscape.",
+              "props": { "orientation": "landscape" }
+            },
+            {
+              "preview": "ConvPreviewPortraitOtherDefault",
+              "caption": "Portrait, viewed as the other participant.",
+              "props": { "author": "other" }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Profile",
+      "section": "Screens",
+      "components": [
+        {
+          "componentId": "Profile/340dp",
+          "preview": "ProfilePreview340",
+          "caption": "Profile at 340dp — the narrowest supported width.",
+          "variants": [
+            {
+              "preview": "ProfilePreview340MeDark",
+              "caption": "340dp, dark theme.",
+              "theme": "dark"
+            }
+          ]
+        },
+        {
+          "componentId": "Profile/480dp",
+          "preview": "ProfilePreview480Me",
+          "caption": "Profile at 480dp, own profile.",
+          "variants": [
+            {
+              "preview": "ProfilePreview480MeDark",
+              "caption": "480dp own profile, dark theme.",
+              "theme": "dark"
+            },
+            {
+              "preview": "ProfilePreview480Other",
+              "caption": "480dp, another user's profile.",
+              "props": { "subject": "other" }
+            },
+            {
+              "preview": "ProfilePreview480OtherDark",
+              "caption": "480dp other user, dark theme.",
+              "theme": "dark",
+              "props": { "subject": "other" }
+            }
+          ]
+        },
+        {
+          "componentId": "Profile/FAB",
+          "preview": "ProfileFabPreview",
+          "caption": "Profile action button."
+        }
+      ]
+    },
+    {
+      "name": "Chrome",
+      "section": "Components",
+      "components": [
+        {
+          "componentId": "Chrome/App bar",
+          "preview": "JetchatAppBarPreview",
+          "caption": "Jetchat app bar.",
+          "variants": [
+            {
+              "preview": "JetchatAppBarPreviewDark",
+              "caption": "App bar, dark theme.",
+              "theme": "dark"
+            }
+          ]
+        },
+        {
+          "componentId": "Chrome/Drawer",
+          "preview": "DrawerPreview",
+          "caption": "Navigation drawer listing channels and direct messages.",
+          "variants": [
+            {
+              "preview": "DrawerPreviewDark",
+              "caption": "Drawer, dark theme.",
+              "theme": "dark"
+            }
+          ]
+        },
+        {
+          "componentId": "Chrome/Channel bar",
+          "preview": "ChannelBarPrev",
+          "caption": "Channel name bar."
+        }
+      ]
+    },
+    {
+      "name": "Widget",
+      "section": "Components",
+      "components": [
+        {
+          "componentId": "Widget/Home screen",
+          "preview": "WidgetPreview",
+          "caption": "Home-screen widget surface."
+        }
+      ]
+    }
+  ]
+}

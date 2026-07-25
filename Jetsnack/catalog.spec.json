@@ -1,0 +1,161 @@
+{
+  "$schema": "https://raw.githubusercontent.com/yschimke/compose-ai-tools/main/scripts/design-artifacts/catalog.spec.schema.json",
+  "$comment": "Jetsnack sticker sheet. Jetsnack is the custom-design-system sample: it does NOT use Material 3 — JetsnackTheme supplies its own colour, gradient and typography tokens. That makes it the most interesting catalog of the set, because the extracted compose/theme token set is a bespoke system rather than a restatement of M3.",
+  "system": "jetsnack",
+  "title": "Jetsnack",
+  "library": ["custom design system (JetsnackTheme)"],
+  "module": ":app",
+  "modes": ["light", "dark"],
+  "breakpoints": [
+    { "size": "compact", "widthDp": 412 },
+    { "size": "medium", "widthDp": 700 }
+  ],
+  "display": {
+    "surface": "light",
+    "hero": "Snack/Card"
+  },
+  "groupOrder": ["Foundations", "Catalog", "Cart & checkout", "Search", "Screens"],
+  "groups": [
+    {
+      "name": "Foundations",
+      "section": "Themes",
+      "components": [
+        {
+          "componentId": "Foundations/Button",
+          "preview": "ButtonPreview",
+          "caption": "JetsnackButton — the gradient-filled primary action that defines the system's look.",
+          "variants": [
+            {
+              "preview": "RectangleButtonPreview",
+              "caption": "Rectangular variant.",
+              "props": { "shape": "rectangle" }
+            }
+          ]
+        },
+        {
+          "componentId": "Foundations/Card",
+          "preview": "CardPreview",
+          "caption": "JetsnackCard — the elevated surface every product tile is built on."
+        },
+        {
+          "componentId": "Foundations/Divider",
+          "preview": "DividerPreview",
+          "caption": "System divider."
+        },
+        {
+          "componentId": "Foundations/Icon button",
+          "preview": "GradientTintedIconButtonPreview",
+          "caption": "Gradient-tinted icon button — the system's gradient tokens applied to an icon affordance."
+        }
+      ]
+    },
+    {
+      "name": "Catalog",
+      "section": "Components",
+      "components": [
+        {
+          "componentId": "Snack/Card",
+          "preview": "SnackCardPreview",
+          "caption": "Product card as it appears in the feed."
+        },
+        {
+          "componentId": "Snack/Detail",
+          "preview": "SnackDetailPreview",
+          "caption": "Product detail — the collapsing-header screen that anchors the shared-element transition."
+        },
+        {
+          "componentId": "Catalog/Filters",
+          "preview": "FilterEnabledPreview",
+          "caption": "Filter chip, enabled.",
+          "variants": [
+            {
+              "preview": "FilterDisabledPreview",
+              "caption": "Filter chip, disabled.",
+              "state": "disabled"
+            }
+          ]
+        },
+        {
+          "componentId": "Catalog/Filter screen",
+          "preview": "FilterScreenPreview",
+          "caption": "Full filter sheet."
+        }
+      ]
+    },
+    {
+      "name": "Cart & checkout",
+      "section": "Components",
+      "components": [
+        {
+          "componentId": "Cart/Screen",
+          "preview": "CartPreview",
+          "caption": "Cart with line items and totals."
+        },
+        {
+          "componentId": "Cart/Quantity",
+          "preview": "QuantitySelectorPreview",
+          "caption": "Quantity stepper.",
+          "variants": [
+            {
+              "preview": "QuantitySelectorPreviewRtl",
+              "caption": "Same stepper under a right-to-left layout direction — mirroring proven by render, not by inspection.",
+              "props": { "layoutDirection": "rtl" }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Search",
+      "section": "Components",
+      "components": [
+        {
+          "componentId": "Search/Bar",
+          "preview": "SearchBarPreview",
+          "caption": "Search entry field."
+        },
+        {
+          "componentId": "Search/Categories",
+          "preview": "SearchCategoryPreview",
+          "caption": "Category tile grid."
+        },
+        {
+          "componentId": "Search/Results",
+          "preview": "SearchResultPreview",
+          "caption": "Search results list."
+        },
+        {
+          "componentId": "Search/Suggestions",
+          "preview": "PreviewSuggestions",
+          "caption": "Suggestion list shown before a query is entered."
+        }
+      ]
+    },
+    {
+      "name": "Screens",
+      "section": "Screens",
+      "components": [
+        {
+          "componentId": "Screens/Home",
+          "preview": "HomePreview",
+          "caption": "Home feed."
+        },
+        {
+          "componentId": "Screens/Profile",
+          "preview": "ProfilePreview",
+          "caption": "Profile screen."
+        },
+        {
+          "componentId": "Chrome/Bottom nav",
+          "preview": "JetsnackBottomNavPreview",
+          "caption": "Custom animated bottom navigation bar — Jetsnack's signature chrome."
+        },
+        {
+          "componentId": "Chrome/Destination bar",
+          "preview": "PreviewDestinationBar",
+          "caption": "Delivery destination bar pinned above the feed."
+        }
+      ]
+    }
+  ]
+}

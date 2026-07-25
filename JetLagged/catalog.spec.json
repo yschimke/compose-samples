@@ -1,0 +1,76 @@
+{
+  "$schema": "https://raw.githubusercontent.com/yschimke/compose-ai-tools/main/scripts/design-artifacts/catalog.spec.schema.json",
+  "$comment": "JetLagged sticker sheet. JetLagged is the custom-graphics sample: its surfaces are hand-drawn Canvas charts and custom layouts rather than stock components, which is exactly the category that benefits most from rendered stickers — there is no component library to read the intended output from.",
+  "system": "jetlagged",
+  "title": "JetLagged",
+  "library": ["custom Canvas drawing + custom layouts"],
+  "module": ":app",
+  "modes": ["light"],
+  "breakpoints": [{ "size": "compact", "widthDp": 412 }],
+  "display": {
+    "surface": "light",
+    "hero": "Charts/Sleep bar"
+  },
+  "groupOrder": ["Charts", "Cards", "Chrome"],
+  "groups": [
+    {
+      "name": "Charts",
+      "section": "Components",
+      "components": [
+        {
+          "componentId": "Charts/Sleep bar",
+          "preview": "SleepBarPreview",
+          "caption": "The sleep bar — a bespoke Canvas chart with per-stage gradients. Its correctness is only visible as pixels."
+        },
+        {
+          "componentId": "Charts/Detail legend",
+          "preview": "DetailLegend",
+          "caption": "Legend mapping each sleep stage to its colour token."
+        }
+      ]
+    },
+    {
+      "name": "Cards",
+      "section": "Components",
+      "components": [
+        {
+          "componentId": "Cards/Time asleep",
+          "preview": "AverageTimeAsleepCard",
+          "caption": "Average time asleep summary card."
+        },
+        {
+          "componentId": "Cards/Time in bed",
+          "preview": "AverageTimeInBedCard",
+          "caption": "Average time in bed summary card."
+        },
+        {
+          "componentId": "Cards/Heart rate",
+          "preview": "HeartRateCard",
+          "caption": "Heart-rate summary card."
+        },
+        {
+          "componentId": "Cards/Wellness",
+          "preview": "WellnessCard",
+          "caption": "Wellness summary card."
+        }
+      ]
+    },
+    {
+      "name": "Chrome",
+      "section": "Components",
+      "components": [
+        {
+          "componentId": "Chrome/Header",
+          "preview": "JetLaggedHeader",
+          "caption": "Screen header."
+        },
+        {
+          "componentId": "Motion/Fading circle",
+          "preview": "FadingCirclePreview",
+          "caption": "The loading indicator's fading-circle animation, captured as a still frame.",
+          "section": "Animations"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "$schema": "https://raw.githubusercontent.com/yschimke/compose-ai-tools/main/scripts/design-artifacts/catalog.spec.schema.json",
+  "$comment": "Reply sticker sheet. Reply is the canonical adaptive-layout sample: the same app is authored once and previewed across phone, tablet and desktop postures. The catalog is therefore organised by window size class rather than by component — the breakpoints ARE the feature.",
+  "system": "reply",
+  "title": "Reply",
+  "library": [
+    "androidx.compose.material3:material3",
+    "androidx.compose.material3.adaptive:adaptive"
+  ],
+  "module": ":app",
+  "modes": ["light", "dark"],
+  "breakpoints": [
+    { "size": "compact", "widthDp": 412 },
+    { "size": "medium", "widthDp": 700 },
+    { "size": "expanded", "widthDp": 1024 }
+  ],
+  "display": {
+    "surface": "light",
+    "hero": "Adaptive/Phone"
+  },
+  "groupOrder": ["Adaptive postures", "States"],
+  "groups": [
+    {
+      "name": "Adaptive postures",
+      "section": "Screens",
+      "components": [
+        {
+          "componentId": "Adaptive/Phone",
+          "preview": "ReplyAppPreview",
+          "caption": "Compact width — single pane with a bottom navigation bar.",
+          "variants": [
+            {
+              "preview": "ReplyAppPreviewTablet",
+              "caption": "Medium width, landscape — list/detail with a navigation rail.",
+              "props": { "posture": "tablet landscape" }
+            },
+            {
+              "preview": "ReplyAppPreviewTabletPortrait",
+              "caption": "Medium width, portrait.",
+              "props": { "posture": "tablet portrait" }
+            },
+            {
+              "preview": "ReplyAppPreviewDesktop",
+              "caption": "Expanded width, landscape — permanent navigation drawer alongside list/detail.",
+              "props": { "posture": "desktop landscape" }
+            },
+            {
+              "preview": "ReplyAppPreviewDesktopPortrait",
+              "caption": "Expanded width, portrait.",
+              "props": { "posture": "desktop portrait" }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "States",
+      "section": "Components",
+      "components": [
+        {
+          "componentId": "States/Coming soon",
+          "preview": "ComingSoonPreview",
+          "caption": "Placeholder shown for destinations that are not implemented in the sample."
+        }
+      ]
+    }
+  ]
+}
