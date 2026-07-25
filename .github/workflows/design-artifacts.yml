@@ -110,6 +110,18 @@ jobs:
       module: ${{ matrix.module }}
       working-directory: ${{ matrix.dir }}
       preview-annotations: ${{ matrix.preview-annotations || '' }}
+      # Carry the executable render bundle onto the delivery branch and split it
+      # per preview, so preview.coo.ee re-renders these live instead of replaying
+      # baked PNGs — that's what makes the device / theme / knob controls do
+      # anything. Both default off, which is why the six samples all badged
+      # "serves baked PNG snapshots only" on their first publish. These are
+      # Android (Robolectric) renders and the serve host runs an Android daemon
+      # (it already re-renders wear-m3, remote-m3 and meshcore-mobile:app live),
+      # so `full` split mode — each per-preview bundle keeping its re-render
+      # classpath — is the right tier here.
+      publish-live-bundle: true
+      split-per-preview: true
+      split-mode: full
       allow-incomplete: ${{ inputs.allow_incomplete || false }}
       commit-user-name: Yuri Schimke
       commit-user-email: yuri@schimke.ee
