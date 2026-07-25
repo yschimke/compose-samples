@@ -13,14 +13,12 @@ scan="$repo_root/.github/scripts/agent-attribution-scan.sh"
 # Strip git's comment lines (those starting with '#') before inspecting.
 msg_body="$(grep -v '^#' "$msg_file" || true)"
 
-# Allow auto-generated messages (merge, revert, fixup!, squash!) through
-# untouched — they're produced by git itself and not authored prose.
 first_line="$(printf '%s\n' "$msg_body" | sed -n '1{/^$/d;p;q;}')"
-case "$first_line" in
-  Merge\ *|Revert\ *|fixup!\ *|squash!\ *|amend!\ *)
-    exit 0
-    ;;
-esac
+
+# NOTE: auto-generated subjects (Merge, Revert, fixup!, …) get no exemption
+# here. This repo does not enforce Conventional Commits, so the only rule left
+# is the attribution check — and a merge or a revert carries an author identity
+# and a co-author trailer like any other commit.
 
 fail() {
   printf '\ncommit-msg hook rejected this commit:\n\n  %s\n\n' "$1" >&2
