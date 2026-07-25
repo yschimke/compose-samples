@@ -27,6 +27,12 @@ on:
       - '*/catalog*.spec.json'
       - '*/app/src/debug/**'
       - '.github/workflows/design-artifacts.yml'
+      # A compose-preview bump changes what discovery finds and how it renders —
+      # 0.17.23's defaulted-parameter discovery is exactly that — so the
+      # published catalogs go stale on a version change just as surely as on a
+      # spec edit. Without this the bump lands and the delivery branches keep
+      # serving the previous renderer's output until someone dispatches by hand.
+      - '*/gradle/libs.versions.toml'
 
 permissions:
   contents: read
