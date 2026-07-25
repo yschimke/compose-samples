@@ -35,3 +35,7 @@ proguard-project.txt
 *.iml
 .idea
 .kotlin/
+
+# compose-preview writes per-render archives into <moduleDir>/.compose-preview-history/.
+# Local scratch — never committed. Mirrors the ignore in yschimke/compose-ai-tools.
+.compose-preview-history/
