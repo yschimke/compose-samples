@@ -16,6 +16,7 @@
 
 package com.example.jetnews.catalog
 
+import android.content.res.Configuration
 import androidx.compose.animation.AnimatedContent
 import androidx.compose.animation.core.tween
 import androidx.compose.animation.fadeIn
@@ -34,6 +35,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.jetnews.data.posts.impl.post3
+import com.example.jetnews.ui.home.PostCardPopular
 import com.example.jetnews.ui.home.PostCardSimple
 import com.example.jetnews.ui.interests.SelectTopicButton
 import com.example.jetnews.ui.theme.JetnewsTheme
@@ -54,6 +56,33 @@ import kotlinx.coroutines.delay
  * Each fixture drives a *real* JetNews component through a real state change;
  * nothing here re-implements the animation.
  */
+
+/**
+ * Zero-argument catalog stand-in for `PostCardPopular`.
+ *
+ * The shipped previews for this card take their post via `@PreviewParameter`.
+ * Those render fine, but the renderer emits **no data products** for a preview
+ * with a `@PreviewParameter` argument — no semantics, layout, fonts or
+ * figma-svg — so the design-catalog completeness gate refuses to publish the
+ * component ("no semantics for: PostCard/Popular"). Calling the same composable
+ * with a literal fixture restores the full data-product set, so the card stays
+ * on the sticker sheet.
+ */
+@Preview(name = "Popular post card", showBackground = true, widthDp = 280)
+@Preview(
+    name = "Popular post card (dark)",
+    showBackground = true,
+    widthDp = 280,
+    uiMode = Configuration.UI_MODE_NIGHT_YES,
+)
+@Composable
+fun PopularPostCardCatalogPreview() {
+    JetnewsTheme {
+        Surface {
+            PostCardPopular(post = post3, navigateToPost = {})
+        }
+    }
+}
 
 /** Flips [state] every [everyMs] so a preview can record the transition. */
 @Composable

@@ -93,15 +93,8 @@
         },
         {
           "componentId": "PostCard/Popular",
-          "preview": "PreviewPostCardPopular",
-          "caption": "Popular-post card used by the horizontal carousel.",
-          "variants": [
-            {
-              "preview": "PreviewPostCardPopularLongText",
-              "caption": "Same card under long-title overflow — where truncation rules get proven.",
-              "props": { "content": "long title" }
-            }
-          ]
+          "preview": "PopularPostCardCatalogPreview",
+          "caption": "Popular-post card used by the horizontal carousel."
         },
         {
           "componentId": "Bookmark/Button",
