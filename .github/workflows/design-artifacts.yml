@@ -77,19 +77,35 @@ jobs:
             spec: Reply/catalog.spec.json
             dir: Reply
             module: ':app'
-          # jetcaster-wear is deliberately NOT here yet. 9 of its 12 previews
-          # take a @PreviewParameter, and the renderer emits no data products
-          # for such a preview, so the completeness gate refuses to publish the
-          # catalog. It needs zero-argument wrapper previews first — see the
-          # PostCard/Popular wrapper in JetNews for the pattern. Its spec is
-          # committed and validates (with the two Wear multipreview annotations
-          # passed via preview-annotations); only the wrappers are missing.
+          # 9 of jetcaster-wear's 12 previews take a @PreviewParameter. On
+          # 0.17.17 that meant no data products and a completeness-gate refusal,
+          # so this entry sat out. Two fixes have landed since — per-param IR in
+          # the bundle (compose-ai-tools#2729, v0.17.19) and semantics fetched by
+          # raw preview id rather than the sanitised one (#2744, v0.17.22, which
+          # cured the same `no semantics for: …` failure on wear-m3) — and the
+          # samples now build against 0.17.23. Whether that is enough is an
+          # empirical question, and fail-fast is off, so the honest way to answer
+          # it is to let the entry run: if it publishes, the workaround was never
+          # needed; if it fails, the error names what is actually left rather
+          # than leaving a stale assumption in a comment.
+          - system: jetcaster-wear
+            spec: Jetcaster/catalog.wear.spec.json
+            dir: Jetcaster
+            module: ':wear'
+            # Every preview here is annotated with @WearPreviewDevices /
+            # @WearPreviewFontScales — multipreviews from an external artifact,
+            # invisible to the build-free source scan. Without these the
+            # pre-flight reports "0 discovered @Preview function(s)" and fails
+            # every entry, which reads as a broken spec rather than a missing
+            # flag. The other samples need none, hence the empty default below.
+            preview-annotations: WearPreviewDevices WearPreviewFontScales
     uses: yschimke/compose-ai-tools/.github/workflows/design-artifacts-reusable.yml@main
     with:
       system: ${{ matrix.system }}
       spec: ${{ matrix.spec }}
       module: ${{ matrix.module }}
       working-directory: ${{ matrix.dir }}
+      preview-annotations: ${{ matrix.preview-annotations || '' }}
       allow-incomplete: ${{ inputs.allow_incomplete || false }}
       commit-user-name: Yuri Schimke
       commit-user-email: yuri@schimke.ee
