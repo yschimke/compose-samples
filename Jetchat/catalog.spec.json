@@ -1,20 +1,35 @@
 {
   "$schema": "https://raw.githubusercontent.com/yschimke/compose-ai-tools/main/scripts/design-artifacts/catalog.spec.schema.json",
-  "$comment": "Jetchat sticker sheet. Jetchat's distinguishing feature is that almost every surface has a dark counterpart authored as a separate @Preview function — so the catalog uses `theme` variants to fold each light/dark pair onto one swap card instead of listing them twice.",
+  "$comment": "Jetchat sticker sheet. Jetchat's distinguishing feature is that almost every surface has a dark counterpart authored as a separate @Preview function — so the catalog uses `theme` variants to fold each light/dark pair onto one swap card instead of listing them twice. NOTE: MessageItemPreview/WidgetPreview are Glance app-widget composables, not Compose UI — the renderer times out after 180s waiting for them and reports them as missing renders. They need the Glance render path, so they are out of this sheet.",
   "system": "jetchat",
   "title": "Jetchat",
-  "library": ["androidx.compose.material3:material3"],
+  "library": [
+    "androidx.compose.material3:material3"
+  ],
   "module": ":app",
-  "modes": ["light", "dark"],
+  "modes": [
+    "light",
+    "dark"
+  ],
   "breakpoints": [
-    { "size": "compact", "widthDp": 412 },
-    { "size": "medium", "widthDp": 700 }
+    {
+      "size": "compact",
+      "widthDp": 412
+    },
+    {
+      "size": "medium",
+      "widthDp": 700
+    }
   ],
   "display": {
     "surface": "light",
     "hero": "Conversation/Screen"
   },
-  "groupOrder": ["Conversation", "Profile", "Chrome", "Widget"],
+  "groupOrder": [
+    "Conversation",
+    "Profile",
+    "Chrome"
+  ],
   "groups": [
     {
       "name": "Conversation",
@@ -24,11 +39,6 @@
           "componentId": "Conversation/Screen",
           "preview": "ConversationPreview",
           "caption": "Conversation screen — message list, input bar and app bar together."
-        },
-        {
-          "componentId": "Conversation/Message",
-          "preview": "MessageItemPreview",
-          "caption": "Single message bubble."
         },
         {
           "componentId": "Conversation/Day header",
@@ -53,12 +63,16 @@
             {
               "preview": "ConvPreviewLandscapeMeDefault",
               "caption": "The same conversation in landscape.",
-              "props": { "orientation": "landscape" }
+              "props": {
+                "orientation": "landscape"
+              }
             },
             {
               "preview": "ConvPreviewPortraitOtherDefault",
               "caption": "Portrait, viewed as the other participant.",
-              "props": { "author": "other" }
+              "props": {
+                "author": "other"
+              }
             }
           ]
         }
@@ -93,13 +107,17 @@
             {
               "preview": "ProfilePreview480Other",
               "caption": "480dp, another user's profile.",
-              "props": { "subject": "other" }
+              "props": {
+                "subject": "other"
+              }
             },
             {
               "preview": "ProfilePreview480OtherDark",
               "caption": "480dp other user, dark theme.",
               "theme": "dark",
-              "props": { "subject": "other" }
+              "props": {
+                "subject": "other"
+              }
             }
           ]
         },
@@ -142,17 +160,6 @@
           "componentId": "Chrome/Channel bar",
           "preview": "ChannelBarPrev",
           "caption": "Channel name bar."
-        }
-      ]
-    },
-    {
-      "name": "Widget",
-      "section": "Components",
-      "components": [
-        {
-          "componentId": "Widget/Home screen",
-          "preview": "WidgetPreview",
-          "caption": "Home-screen widget surface."
         }
       ]
     }

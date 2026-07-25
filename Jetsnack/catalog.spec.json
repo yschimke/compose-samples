@@ -1,20 +1,37 @@
 {
   "$schema": "https://raw.githubusercontent.com/yschimke/compose-ai-tools/main/scripts/design-artifacts/catalog.spec.schema.json",
-  "$comment": "Jetsnack sticker sheet. Jetsnack is the custom-design-system sample: it does NOT use Material 3 — JetsnackTheme supplies its own colour, gradient and typography tokens. That makes it the most interesting catalog of the set, because the extracted compose/theme token set is a bespoke system rather than a restatement of M3.",
+  "$comment": "Jetsnack sticker sheet. Jetsnack is the custom-design-system sample: it does NOT use Material 3 — JetsnackTheme supplies its own colour, gradient and typography tokens. That makes it the most interesting catalog of the set, because the extracted compose/theme token set is a bespoke system rather than a restatement of M3. NOTE: HomePreview/CartPreview are excluded by the candidate join as having no static PNG (\"animated GIF / metadata sheet\"), so they cannot back a sticker and are out of this sheet. Their constituent components — snack cards, filters, the quantity stepper, the bottom bar — are all covered individually.",
   "system": "jetsnack",
   "title": "Jetsnack",
-  "library": ["custom design system (JetsnackTheme)"],
+  "library": [
+    "custom design system (JetsnackTheme)"
+  ],
   "module": ":app",
-  "modes": ["light", "dark"],
+  "modes": [
+    "light",
+    "dark"
+  ],
   "breakpoints": [
-    { "size": "compact", "widthDp": 412 },
-    { "size": "medium", "widthDp": 700 }
+    {
+      "size": "compact",
+      "widthDp": 412
+    },
+    {
+      "size": "medium",
+      "widthDp": 700
+    }
   ],
   "display": {
     "surface": "light",
     "hero": "Snack/Card"
   },
-  "groupOrder": ["Foundations", "Catalog", "Cart & checkout", "Search", "Screens"],
+  "groupOrder": [
+    "Foundations",
+    "Catalog",
+    "Cart & checkout",
+    "Search",
+    "Screens"
+  ],
   "groups": [
     {
       "name": "Foundations",
@@ -28,7 +45,9 @@
             {
               "preview": "RectangleButtonPreview",
               "caption": "Rectangular variant.",
-              "props": { "shape": "rectangle" }
+              "props": {
+                "shape": "rectangle"
+              }
             }
           ]
         },
@@ -87,11 +106,6 @@
       "section": "Components",
       "components": [
         {
-          "componentId": "Cart/Screen",
-          "preview": "CartPreview",
-          "caption": "Cart with line items and totals."
-        },
-        {
           "componentId": "Cart/Quantity",
           "preview": "QuantitySelectorPreview",
           "caption": "Quantity stepper.",
@@ -99,7 +113,9 @@
             {
               "preview": "QuantitySelectorPreviewRtl",
               "caption": "Same stepper under a right-to-left layout direction — mirroring proven by render, not by inspection.",
-              "props": { "layoutDirection": "rtl" }
+              "props": {
+                "layoutDirection": "rtl"
+              }
             }
           ]
         }
@@ -135,11 +151,6 @@
       "name": "Screens",
       "section": "Screens",
       "components": [
-        {
-          "componentId": "Screens/Home",
-          "preview": "HomePreview",
-          "caption": "Home feed."
-        },
         {
           "componentId": "Screens/Profile",
           "preview": "ProfilePreview",
