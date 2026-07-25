@@ -21,6 +21,17 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.serialization)
     alias(libs.plugins.compose)
+    alias(libs.plugins.composeai.preview)
+}
+
+// Renders every `@Preview` in this module to PNG outside Android Studio.
+// The catalog previews under `src/debug/` are what the design-artifact export
+// turns into JetNews' sticker sheet.
+composePreview {
+    variant.set("debug")
+    // Pinned rather than auto-detected: the sample compiles against SDK 37,
+    // which is outside Robolectric's supported render range on JDK 17.
+    sdkVersion.set(35)
 }
 
 android {
@@ -104,6 +115,8 @@ dependencies {
     implementation(libs.androidx.compose.ui.tooling.preview)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
     debugImplementation(libs.androidx.compose.ui.tooling)
+    // `@AnimatedPreview` for the catalog's motion fixtures in `src/debug`.
+    debugImplementation(libs.composeai.preview.annotations)
 
     implementation(libs.androidx.appcompat)
     implementation(libs.androidx.activity.ktx)

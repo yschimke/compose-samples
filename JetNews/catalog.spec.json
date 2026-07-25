@@ -1,0 +1,166 @@
+{
+  "$schema": "https://raw.githubusercontent.com/yschimke/compose-ai-tools/main/scripts/design-artifacts/catalog.spec.schema.json",
+  "$comment": "JetNews sticker sheet. Every entry points at a @Preview the sample already ships — adopting compose-preview here cost a plugin line and this file, no UI code changes. Grouping is by the feature JetNews exists to demonstrate: adaptive list/detail navigation, Material 3 theming, and reader typography.",
+  "system": "jetnews",
+  "title": "JetNews",
+  "library": [
+    "androidx.compose.material3:material3",
+    "androidx.compose.material3.adaptive:adaptive",
+    "androidx.navigation3:navigation3"
+  ],
+  "module": ":app",
+  "modes": ["light", "dark"],
+  "breakpoints": [
+    { "size": "compact", "widthDp": 412 },
+    { "size": "medium", "widthDp": 700 },
+    { "size": "expanded", "widthDp": 960 }
+  ],
+  "display": {
+    "surface": "light",
+    "hero": "Screens/Home feed"
+  },
+  "groupOrder": ["Adaptive navigation", "Reader", "Post cards", "Interests"],
+  "groups": [
+    {
+      "name": "Adaptive navigation",
+      "section": "Screens",
+      "components": [
+        {
+          "componentId": "Screens/Home feed",
+          "preview": "PreviewHomeListDrawerScreen",
+          "caption": "Home feed in the compact posture — navigation lives behind a modal drawer.",
+          "variants": [
+            {
+              "preview": "PreviewHomeListNavRailScreen",
+              "caption": "Expanded posture: the drawer is replaced by a persistent navigation rail.",
+              "props": { "posture": "expanded" }
+            }
+          ]
+        },
+        {
+          "componentId": "Screens/Article",
+          "preview": "PreviewPostDrawer",
+          "caption": "Article screen, compact posture.",
+          "variants": [
+            {
+              "preview": "PreviewPostNavRail",
+              "caption": "Article screen with the navigation rail at expanded width.",
+              "props": { "posture": "expanded" }
+            }
+          ]
+        },
+        {
+          "componentId": "Navigation/Drawer",
+          "preview": "PreviewAppDrawer",
+          "caption": "Modal navigation drawer — the compact-width navigation surface."
+        },
+        {
+          "componentId": "Navigation/Rail",
+          "preview": "PreviewAppNavRail",
+          "caption": "Navigation rail — the same destinations at expanded width."
+        }
+      ]
+    },
+    {
+      "name": "Reader",
+      "section": "Screens",
+      "components": [
+        {
+          "componentId": "Reader/Article body",
+          "preview": "PreviewPost",
+          "caption": "Long-form article body: the full Material 3 type scale, inline links, images and emoji."
+        }
+      ]
+    },
+    {
+      "name": "Post cards",
+      "section": "Components",
+      "components": [
+        {
+          "componentId": "PostCard/Top",
+          "preview": "PostCardTopPreviews",
+          "caption": "Featured post card, fanned out across phone, foldable and tablet widths and both font scales — one function, seven renders."
+        },
+        {
+          "componentId": "PostCard/Simple",
+          "preview": "SimplePostPreview",
+          "caption": "Standard feed row."
+        },
+        {
+          "componentId": "PostCard/History",
+          "preview": "HistoryPostPreview",
+          "caption": "Reading-history row with an overflow affordance."
+        },
+        {
+          "componentId": "PostCard/Popular",
+          "preview": "PreviewPostCardPopular",
+          "caption": "Popular-post card used by the horizontal carousel.",
+          "variants": [
+            {
+              "preview": "PreviewPostCardPopularLongText",
+              "caption": "Same card under long-title overflow — where truncation rules get proven.",
+              "props": { "content": "long title" }
+            }
+          ]
+        },
+        {
+          "componentId": "Bookmark/Button",
+          "preview": "BookmarkButtonPreview",
+          "caption": "Bookmark toggle, unset.",
+          "variants": [
+            {
+              "preview": "BookmarkButtonBookmarkedPreview",
+              "caption": "Bookmark toggle, set.",
+              "state": "selected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Interests",
+      "section": "Components",
+      "components": [
+        {
+          "componentId": "Interests/Screen",
+          "preview": "PreviewInterestsScreenDrawer",
+          "caption": "Interests screen with tabbed sections, compact posture.",
+          "variants": [
+            {
+              "preview": "PreviewInterestsScreenNavRail",
+              "caption": "Interests screen at expanded width.",
+              "props": { "posture": "expanded" }
+            }
+          ]
+        },
+        {
+          "componentId": "Interests/Topics tab",
+          "preview": "PreviewTopicsTab",
+          "caption": "Topics tab content."
+        },
+        {
+          "componentId": "Interests/People tab",
+          "preview": "PreviewPeopleTab",
+          "caption": "People tab content."
+        },
+        {
+          "componentId": "Interests/Publications tab",
+          "preview": "PreviewPublicationsTab",
+          "caption": "Publications tab content."
+        },
+        {
+          "componentId": "Interests/Select topic",
+          "preview": "SelectTopicButtonPreviewOff",
+          "caption": "Topic subscribe toggle, unselected.",
+          "variants": [
+            {
+              "preview": "SelectTopicButtonPreviewOn",
+              "caption": "Topic subscribe toggle, selected.",
+              "state": "selected"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

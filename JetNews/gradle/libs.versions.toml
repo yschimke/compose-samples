@@ -4,6 +4,7 @@
 #####
 [versions]
 accompanist = "0.37.3"
+composeAiPreview = "0.17.17"
 android-material3 = "1.14.0"
 androidGradlePlugin = "9.2.1"
 androidx-activity-compose = "1.13.0"
@@ -62,6 +63,7 @@ version-catalog-update = "1.1.0"
 
 [libraries]
 accompanist-adaptive = { module = "com.google.accompanist:accompanist-adaptive", version.ref = "accompanist" }
+composeai-preview-annotations = { module = "ee.schimke.composeai:preview-annotations", version.ref = "composeAiPreview" }
 accompanist-permissions = { module = "com.google.accompanist:accompanist-permissions", version.ref = "accompanist" }
 android-material3 = { module = "com.google.android.material:material", version.ref = "android-material3" }
 androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activity-compose" }
@@ -170,6 +172,7 @@ android-application = { id = "com.android.application", version.ref = "androidGr
 android-library = { id = "com.android.library", version.ref = "androidGradlePlugin" }
 android-test = { id = "com.android.test", version.ref = "androidGradlePlugin" }
 compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+composeai-preview = { id = "ee.schimke.composeai.preview", version.ref = "composeAiPreview" }
 gradle-versions = { id = "com.github.ben-manes.versions", version.ref = "gradle-versions" }
 hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
 kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
