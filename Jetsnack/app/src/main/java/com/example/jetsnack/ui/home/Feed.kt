@@ -47,9 +47,9 @@ import com.example.jetsnack.model.SnackCollection
 import com.example.jetsnack.model.SnackRepo
 import com.example.jetsnack.ui.components.FilterBar
 import com.example.jetsnack.ui.components.JetsnackDivider
+import com.example.jetsnack.ui.components.JetsnackPreviewWrapper
 import com.example.jetsnack.ui.components.JetsnackSurface
 import com.example.jetsnack.ui.components.SnackCollection
-import com.example.jetsnack.ui.theme.JetsnackTheme
 
 @Composable
 fun Feed(onSnackClick: (Long, String) -> Unit, modifier: Modifier = Modifier) {
@@ -141,7 +141,7 @@ private fun SnackCollectionList(
 @Preview("large font", fontScale = 2f)
 @Composable
 fun HomePreview() {
-    JetsnackTheme {
+    JetsnackPreviewWrapper {
         Feed(onSnackClick = { _, _ -> })
     }
 }

@@ -1,6 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/yschimke/compose-ai-tools/main/scripts/design-artifacts/catalog.spec.schema.json",
-  "$comment": "Jetsnack sticker sheet. Jetsnack is the custom-design-system sample: it does NOT use Material 3 — JetsnackTheme supplies its own colour, gradient and typography tokens, and deliberately pins MaterialTheme.colorScheme to an all-magenta debug palette so that accidental M3 usage is visible on screen. That makes it the most interesting catalog of the set, because the extracted compose/theme token set is a bespoke system rather than a restatement of M3. The Tokens group shows that palette as the app actually models it — including the seven gradient ramps, which have no M3 role to project onto and therefore appear nowhere in the @ThemeCatalog specimen sheets. NOTE ON THE FEED AND CART: the sample's own HomePreview (Feed.kt) and CartPreview (Cart.kt) do not render — they wrap the screen in bare JetsnackTheme, and every Jetsnack screen reaches DestinationBar, which throws IllegalStateException(\"No shared element scope\") without LocalSharedTransitionScope / LocalNavAnimatedVisibilityScope. Those two remain broken in main source (pre-existing, left untouched) and produce .error.json sidecars. The catalog instead references FeedScreenPreview / CartScreenPreview, debug-source previews of the same screens wrapped in the sample's own JetsnackPreviewWrapper, which supplies both scopes. The app tour covers the two animations no static preview can reach: the bottom bar's animated selection indicator and the shared-element filter-sheet transition.",
+  "$comment": "Jetsnack sticker sheet. Jetsnack is the custom-design-system sample: it does NOT use Material 3 — JetsnackTheme supplies its own colour, gradient and typography tokens, and deliberately pins MaterialTheme.colorScheme to an all-magenta debug palette so that accidental M3 usage is visible on screen. That makes it the most interesting catalog of the set, because the extracted compose/theme token set is a bespoke system rather than a restatement of M3. The Tokens group shows that palette as the app actually models it — including the seven gradient ramps, which have no M3 role to project onto and therefore appear nowhere in the @ThemeCatalog specimen sheets. NOTE ON THE FEED AND CART: the sample's own HomePreview (Feed.kt) and CartPreview (Cart.kt) used to fail to render — they wrapped the screen in bare JetsnackTheme, and every Jetsnack screen reaches DestinationBar, which throws IllegalStateException(\"No shared element scope\") without LocalSharedTransitionScope / LocalNavAnimatedVisibilityScope. Both now wrap in the sample's own JetsnackPreviewWrapper, which supplies JetsnackTheme plus both scopes, so all six of their configurations (default, dark theme, large font) render and no .error.json sidecars remain. The catalog still leads with FeedScreenPreview / CartScreenPreview, the debug-source previews of the same screens, and carries the repaired main-source previews alongside them as variants — those are the only full-screen specimens at fontScale 2, so they are what covers large-font layout for the feed and the cart. The app tour covers the two animations no static preview can reach: the bottom bar's animated selection indicator and the shared-element filter-sheet transition.",
   "system": "jetsnack",
   "title": "Jetsnack",
   "library": [
@@ -375,12 +375,24 @@
         {
           "componentId": "Screens/Feed",
           "preview": "FeedScreenPreview",
-          "caption": "The home feed — destination bar, filter row and the full stack of snack collections. See the $comment: the sample's own HomePreview does not render, so this is the debug-source equivalent wrapped in JetsnackPreviewWrapper."
+          "caption": "The home feed — destination bar, filter row and the full stack of snack collections. Debug-source specimen wrapped in JetsnackPreviewWrapper.",
+          "variants": [
+            {
+              "preview": "HomePreview",
+              "caption": "The sample's own main-source Feed preview, repaired to use JetsnackPreviewWrapper. Renders at default, dark theme and fontScale 2 — the large-font configuration is the only full-screen feed specimen at that text size."
+            }
+          ]
         },
         {
           "componentId": "Screens/Cart",
           "preview": "CartScreenPreview",
-          "caption": "The cart — order lines, summary and the checkout bar. Debug-source equivalent of the sample's non-rendering CartPreview."
+          "caption": "The cart — order lines, summary and the checkout bar. Debug-source specimen wrapped in JetsnackPreviewWrapper.",
+          "variants": [
+            {
+              "preview": "CartPreview",
+              "caption": "The sample's own main-source Cart preview, repaired to use JetsnackPreviewWrapper. Renders at default, dark theme and fontScale 2, where the order lines reflow and the checkout bar overlaps the inspired-by row."
+            }
+          ]
         },
         {
           "componentId": "Screens/Search",

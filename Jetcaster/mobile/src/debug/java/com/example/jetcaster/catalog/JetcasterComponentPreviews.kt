@@ -16,14 +16,26 @@
 
 package com.example.jetcaster.catalog
 
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.AlertDialogDefaults
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
+import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.example.jetcaster.R
 import com.example.jetcaster.core.domain.testing.PreviewCategories
 import com.example.jetcaster.core.domain.testing.PreviewEpisodes
 import com.example.jetcaster.core.domain.testing.PreviewPodcastEpisodes
@@ -55,6 +67,7 @@ import com.example.jetcaster.ui.podcast.PodcastDetailsTopAppBar
 import com.example.jetcaster.ui.shared.EpisodeListItem
 import com.example.jetcaster.ui.shared.Loading
 import com.example.jetcaster.ui.theme.JetcasterTheme
+import com.example.jetcaster.ui.tooling.SharedTransitionPreview
 import com.example.jetcaster.util.ToggleFollowPodcastIconButton
 import java.time.Duration
 import kotlinx.collections.immutable.toImmutableList
@@ -505,6 +518,53 @@ fun JetcasterHomeErrorPreview() = Wrap { HomeScreenError(onRetry = {}) }
 @Composable
 fun JetcasterOfflineDialogPreview() = Wrap { OfflineDialog(onRetry = {}) }
 
+// `OfflineDialog` wraps Material 3's `AlertDialog`, which composes into its *own* window. The
+// renderer still captures those pixels, so the preview above produces a perfectly good PNG — but the
+// semantics tree is read from the root window, which holds nothing but the empty `Wrap` surface. A
+// catalog entry backed by that preview therefore ships pixels with no semantics, and the
+// design-artifacts completeness gate refuses to publish it.
+//
+// This stand-in draws the same dialog *content* inline, into the captured window, so the sticker
+// carries a real semantics tree. The container is not re-styled by hand: shape, colour, tonal
+// elevation and the two content colours all come from `AlertDialogDefaults`, and the title, body and
+// action reuse the same string resources and `TextButton` as the real dialog, so it stays in sync
+// with the component it stands for. `States/Offline` in catalog.spec.json points here; the preview
+// above stays as the visual reference for the real windowed dialog.
+@Preview(name = "Offline state", showBackground = true, widthDp = 412, heightDp = 400)
+@Composable
+fun JetcasterOfflineStatePreview() = Wrap {
+    Box(Modifier.fillMaxWidth(), contentAlignment = Alignment.Center) {
+        Surface(
+            shape = AlertDialogDefaults.shape,
+            color = AlertDialogDefaults.containerColor,
+            tonalElevation = AlertDialogDefaults.TonalElevation,
+        ) {
+            Column(Modifier.padding(24.dp)) {
+                Text(
+                    text = stringResource(R.string.connection_error_title),
+                    style = MaterialTheme.typography.headlineSmall,
+                    color = AlertDialogDefaults.titleContentColor,
+                )
+                Spacer(Modifier.height(16.dp))
+                Text(
+                    text = stringResource(R.string.connection_error_message),
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = AlertDialogDefaults.textContentColor,
+                )
+                Spacer(Modifier.height(24.dp))
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.End,
+                ) {
+                    TextButton(onClick = {}) {
+                        Text(stringResource(R.string.retry_label))
+                    }
+                }
+            }
+        }
+    }
+}
+
 // ---------------------------------------------------------------- light mode
 //
 // JetcasterTheme used to resolve darkScheme unconditionally, so none of these were reachable. They
@@ -592,6 +652,36 @@ fun JetcasterHomeLibraryLightPreview() = JetcasterTheme(darkTheme = false) {
 }
 
 // ---------------------------------------------------------------- home screen
+
+// The starter screen, and so the catalog's hero: `HomeViewModel` opens on `HomeCategory.Discover`,
+// which is what you see when the app launches. `SharedTransitionPreview` is required rather than
+// decorative — the Discover tab's episode rows are shared elements, so `podcastCategory()` reads
+// LocalSharedTransitionScope / LocalAnimatedVisibilityScope and throws without them.
+@Preview(name = "Home — discover", showBackground = true, widthDp = 412, heightDp = 640)
+@Composable
+fun JetcasterHomeDiscoverPreview() = JetcasterTheme(darkTheme = true) {
+    SharedTransitionPreview {
+        HomeScreen(
+            isHomeAppBarExpanded = true,
+            isLoading = false,
+            featuredPodcasts = listOf(subscribedPodcast, unsubscribedPodcast).toImmutableList(),
+            homeCategories = HomeCategory.entries,
+            selectedHomeCategory = HomeCategory.Discover,
+            filterableCategoriesModel = FilterableCategoriesModel(
+                categories = PreviewCategories,
+                selectedCategory = PreviewCategories.first(),
+            ),
+            podcastCategoryFilterResult = PodcastCategoryFilterResult(
+                topPodcasts = listOf(subscribedPodcast, unsubscribedPodcast) + PreviewPodcasts,
+                episodes = library.episodes,
+            ),
+            library = library,
+            onHomeAction = {},
+            navigateToPodcastDetails = {},
+            navigateToPlayer = {},
+        )
+    }
+}
 
 @Preview(name = "Home — library", showBackground = true, widthDp = 412, heightDp = 900)
 @Composable

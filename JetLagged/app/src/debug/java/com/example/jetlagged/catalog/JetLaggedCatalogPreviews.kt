@@ -31,17 +31,21 @@ import com.example.jetlagged.ui.theme.JetLaggedTheme
  * Those composables are annotated `@Preview` in place, and Android Studio
  * renders them, because every parameter is defaulted
  * (`modifier: Modifier = Modifier`, `wellnessData: WellnessData = …`). The
- * compose-preview renderer, however, only discovers `@Preview` functions that
- * take **no parameters at all** — a defaulted parameter is enough for it to
- * skip the function silently. JetLagged's bundle came back with 3 previews
- * instead of 8, and the omission only surfaced at the very end of the pipeline
- * as `missing renders for: Cards/Time asleep, …`.
+ * headless renderer cannot: it resolves a preview through androidx's
+ * `getDeclaredComposableMethod(name)`, which looks up the method by name with
+ * no parameter types and so never matches the JVM signature Kotlin emits for a
+ * defaulted-parameter composable. Every such preview fails inside androidx with
+ * `NoSuchMethodException`, and the omission used to surface only at the end of
+ * the pipeline as `missing renders for: Cards/Time asleep, …`.
  *
  * The build-free spec validator does not catch this either: it scans source,
  * sees the `@Preview`, and reports the function as present.
  *
- * Wrapping each one in a genuinely zero-argument preview restores it. These
- * live in `src/debug`, so they never reach a release build.
+ * Wrapping each one in a genuinely zero-argument preview restores it, so the
+ * catalog covers the same composables even though the in-place annotations
+ * still fail. The main-source `@Preview`s stay: Android Studio renders them,
+ * and they are what the sample's actual audience uses. These wrappers live in
+ * `src/debug`, so they never reach a release build.
  */
 
 @Preview(name = "Average time asleep", showBackground = true, widthDp = 400)
@@ -50,9 +54,23 @@ fun AverageTimeAsleepCardCatalogPreview() {
     JetLaggedTheme { AverageTimeAsleepCard() }
 }
 
+/** Mirrors the main-source `@Preview(widthDp = 500, name = "larger screen")` on the same card. */
+@Preview(name = "Average time asleep — larger screen", showBackground = true, widthDp = 500)
+@Composable
+fun AverageTimeAsleepCardWideCatalogPreview() {
+    JetLaggedTheme { AverageTimeAsleepCard() }
+}
+
 @Preview(name = "Average time in bed", showBackground = true, widthDp = 400)
 @Composable
 fun AverageTimeInBedCardCatalogPreview() {
+    JetLaggedTheme { AverageTimeInBedCard() }
+}
+
+/** Mirrors the main-source `@Preview(widthDp = 500, name = "larger screen")` on the same card. */
+@Preview(name = "Average time in bed — larger screen", showBackground = true, widthDp = 500)
+@Composable
+fun AverageTimeInBedCardWideCatalogPreview() {
     JetLaggedTheme { AverageTimeInBedCard() }
 }
 

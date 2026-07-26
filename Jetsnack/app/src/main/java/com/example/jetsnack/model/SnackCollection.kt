@@ -17,7 +17,6 @@
 package com.example.jetsnack.model
 
 import androidx.compose.runtime.Immutable
-import kotlin.random.Random
 
 @Immutable
 data class SnackCollection(val id: Long, val name: String, val snacks: List<Snack>, val type: CollectionType = CollectionType.Normal)
@@ -53,33 +52,33 @@ private val tastyTreats = SnackCollection(
 )
 
 private val popular = SnackCollection(
-    id = Random.nextLong(),
+    id = 2L,
     name = "Popular on Jetsnack",
     snacks = snacks.subList(14, 19),
 )
 
 private val wfhFavs = tastyTreats.copy(
-    id = Random.nextLong(),
+    id = 3L,
     name = "WFH favourites",
 )
 
 private val newlyAdded = popular.copy(
-    id = Random.nextLong(),
+    id = 4L,
     name = "Newly Added",
 )
 
 private val exclusive = tastyTreats.copy(
-    id = Random.nextLong(),
+    id = 5L,
     name = "Only on Jetsnack",
 )
 
 private val also = tastyTreats.copy(
-    id = Random.nextLong(),
+    id = 6L,
     name = "Customers also bought",
 )
 
 private val inspiredByCart = tastyTreats.copy(
-    id = Random.nextLong(),
+    id = 7L,
     name = "Inspired by your cart",
 )
 
@@ -92,8 +91,8 @@ private val snackCollections = listOf(
 )
 
 private val related = listOf(
-    also.copy(id = Random.nextLong()),
-    popular.copy(id = Random.nextLong()),
+    also.copy(id = 8L),
+    popular.copy(id = 9L),
 )
 
 private val cart = listOf(

@@ -1,6 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/yschimke/compose-ai-tools/main/scripts/design-artifacts/catalog.spec.schema.json",
-  "$comment": "JetLagged sticker sheet. JetLagged is the custom-graphics sample: its surfaces are hand-drawn Canvas charts and custom layouts rather than stock components, which is exactly the category that benefits most from rendered stickers — there is no component library to read the intended output from. Two things shape this spec. First, the summary cards, the header and the screen are annotated @Preview in place, but every parameter is defaulted and the renderer only discovers genuinely zero-argument previews — so those entries point at zero-arg wrappers in app/src/debug rather than at the main-source previews, which come back as NoSuchMethodException sidecars. Second, the chart previews are driven from the fixed-week fixtures in JetLaggedSleepFixtures.kt rather than the app's now()-based sample data, so a visual diff means something; the Screens entries are the exception, because JetLaggedHomeScreenViewModel builds its own state and offers no seam to inject one.",
+  "$comment": "JetLagged sticker sheet. JetLagged is the custom-graphics sample: its surfaces are hand-drawn Canvas charts and custom layouts rather than stock components, which is exactly the category that benefits most from rendered stickers — there is no component library to read the intended output from. Two things shape this spec. First, the summary cards (AverageTimeInBedCard, AverageTimeAsleepCard and their 'larger screen' variants, HeartRateCard, WellnessCard), the header (JetLaggedHeader) and the screen (JetLaggedScreen, four device variants) are annotated @Preview in place, but every one of their parameters is defaulted, and this harness cannot render them: it resolves previews through androidx's getDeclaredComposableMethod(name), which matches by name with no parameter types and so never finds the JVM signature Kotlin emits for a defaulted-parameter composable. Those eleven main-source previews therefore fail inside androidx with NoSuchMethodException and are left as error sidecars on purpose — Android Studio renders them fine and they are what the sample's audience uses, so they stay in main source. Every entry here instead points at a zero-arg wrapper in app/src/debug that composes the very same composable, so the content is fully covered. Second, everything in this catalog is deterministic: the charts and the screens are driven from the fixed-week fixtures in JetLaggedSleepFixtures.kt rather than the app's now()-based sample data (the screens seed JetLaggedHomeScreenViewModel through its defaulted initialState parameter), and BubbleBackground seeds its scatter from a fixed value under LocalInspectionMode, so re-rendering unchanged code reproduces the PNGs byte for byte.",
   "system": "jetlagged",
   "title": "JetLagged",
   "library": [
@@ -27,7 +27,7 @@
   ],
   "display": {
     "surface": "light",
-    "hero": "Charts/Sleep bar"
+    "hero": "Home/Sleep dashboard"
   },
   "groupOrder": [
     "Home",
@@ -49,17 +49,23 @@
             {
               "preview": "JetLaggedScreenMediumPreview",
               "caption": "Medium width — the summary cards reflow into FlowColumns beside the graph instead of stacking under it.",
-              "props": { "windowSizeClass": "Medium" }
+              "props": {
+                "windowSizeClass": "Medium"
+              }
             },
             {
               "preview": "JetLaggedScreenExpandedPreview",
               "caption": "Expanded width — the FlowRow fits three columns across.",
-              "props": { "windowSizeClass": "Expanded" }
+              "props": {
+                "windowSizeClass": "Expanded"
+              }
             },
             {
               "preview": "JetLaggedScreenDarkPreview",
               "caption": "Compact width on the dark palette — red header, black card surfaces.",
-              "props": { "mode": "dark" }
+              "props": {
+                "mode": "dark"
+              }
             }
           ]
         }
@@ -77,27 +83,37 @@
             {
               "preview": "SleepBarShortNightPreview",
               "caption": "45 minutes in bed: the narrowest the bar can be asked to draw.",
-              "props": { "duration": "45 minutes" }
+              "props": {
+                "duration": "45 minutes"
+              }
             },
             {
               "preview": "SleepBarLongNightPreview",
               "caption": "Sixteen hours in bed, with every sleep stage present.",
-              "props": { "duration": "16 hours" }
+              "props": {
+                "duration": "16 hours"
+              }
             },
             {
               "preview": "SleepBarScoreBandsPreview",
               "caption": "The same night at scores 92 / 65 / 50 / 25, so the emoji ladder is reviewable at once.",
-              "props": { "sleepScore": "92, 65, 50, 25" }
+              "props": {
+                "sleepScore": "92, 65, 50, 25"
+              }
             },
             {
               "preview": "SleepBarDarkPreview",
               "caption": "The dark palette's sleep-stage gradient — reds and oranges rather than yellows.",
-              "props": { "mode": "dark" }
+              "props": {
+                "mode": "dark"
+              }
             },
             {
               "preview": "SleepBarPreview",
               "caption": "The sample's own in-place @Preview, on the app's live sample data.",
-              "props": { "data": "app sample data" }
+              "props": {
+                "data": "app sample data"
+              }
             }
           ]
         },
@@ -109,12 +125,16 @@
             {
               "preview": "JetLaggedSleepGraphCardSingleDayPreview",
               "caption": "A single night — the degenerate case for the layout's hour-axis maths.",
-              "props": { "range": "single day" }
+              "props": {
+                "range": "single day"
+              }
             },
             {
               "preview": "JetLaggedSleepGraphCardDarkPreview",
               "caption": "The week on the dark palette.",
-              "props": { "mode": "dark" }
+              "props": {
+                "mode": "dark"
+              }
             }
           ]
         },
@@ -131,7 +151,9 @@
             {
               "preview": "HeartRateGraphDarkPreview",
               "caption": "The same trace on the dark palette's wave gradient.",
-              "props": { "mode": "dark" }
+              "props": {
+                "mode": "dark"
+              }
             }
           ]
         },
@@ -143,7 +165,9 @@
             {
               "preview": "SleepStagePaletteDarkPreview",
               "caption": "The dark palette's four stage colours.",
-              "props": { "mode": "dark" }
+              "props": {
+                "mode": "dark"
+              }
             }
           ]
         },
@@ -161,12 +185,30 @@
         {
           "componentId": "Cards/Time asleep",
           "preview": "AverageTimeAsleepCardCatalogPreview",
-          "caption": "Average time asleep summary card."
+          "caption": "Average time asleep summary card.",
+          "variants": [
+            {
+              "preview": "AverageTimeAsleepCardWideCatalogPreview",
+              "caption": "The card in a 500dp frame — it wraps its content, so the extra width leaves it unchanged. Mirrors the main-source 'larger screen' preview.",
+              "props": {
+                "widthDp": "500"
+              }
+            }
+          ]
         },
         {
           "componentId": "Cards/Time in bed",
           "preview": "AverageTimeInBedCardCatalogPreview",
-          "caption": "Average time in bed summary card."
+          "caption": "Average time in bed summary card.",
+          "variants": [
+            {
+              "preview": "AverageTimeInBedCardWideCatalogPreview",
+              "caption": "The card in a 500dp frame — it wraps its content, so the extra width leaves it unchanged. Mirrors the main-source 'larger screen' preview.",
+              "props": {
+                "widthDp": "500"
+              }
+            }
+          ]
         },
         {
           "componentId": "Cards/Heart rate",
@@ -176,12 +218,16 @@
             {
               "preview": "HeartRateCardRestingPreview",
               "caption": "A resting 48 bpm — the two-digit case for the headline number.",
-              "props": { "averageBpm": "48" }
+              "props": {
+                "averageBpm": "48"
+              }
             },
             {
               "preview": "HeartRateCardDarkPreview",
               "caption": "The card on the dark palette.",
-              "props": { "mode": "dark" }
+              "props": {
+                "mode": "dark"
+              }
             }
           ]
         },
@@ -193,12 +239,18 @@
             {
               "preview": "WellnessCardRecordedPreview",
               "caption": "A heavily recorded night — three-digit counts, which is where the bubbles' text fitting shows.",
-              "props": { "snoring": "128", "coughing": "42", "respiration": "17" }
+              "props": {
+                "snoring": "128",
+                "coughing": "42",
+                "respiration": "17"
+              }
             },
             {
               "preview": "WellnessCardDarkPreview",
               "caption": "The same recorded night on the dark palette.",
-              "props": { "mode": "dark" }
+              "props": {
+                "mode": "dark"
+              }
             }
           ]
         },
@@ -220,7 +272,9 @@
             {
               "preview": "TwoLineInfoCardWidePreview",
               "caption": "Above 400dp the card flips from a stacked column to an icon-beside-text row.",
-              "props": { "widthDp": "520" }
+              "props": {
+                "widthDp": "520"
+              }
             }
           ]
         },
@@ -243,7 +297,9 @@
             {
               "preview": "JetLaggedHeaderDarkPreview",
               "caption": "The header on the dark palette.",
-              "props": { "mode": "dark" }
+              "props": {
+                "mode": "dark"
+              }
             }
           ]
         },
@@ -255,12 +311,16 @@
             {
               "preview": "JetLaggedHeaderTabsDayPreview",
               "caption": "Selected on Day — the indicator sits at the leading edge with no scroll offset.",
-              "props": { "selectedTab": "Day" }
+              "props": {
+                "selectedTab": "Day"
+              }
             },
             {
               "preview": "JetLaggedHeaderTabsOneYearPreview",
               "caption": "Selected on 1Y — the row has scrolled its last tab into view.",
-              "props": { "selectedTab": "1Y" }
+              "props": {
+                "selectedTab": "1Y"
+              }
             }
           ]
         }

@@ -22,6 +22,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.jetlagged.JetLaggedScreen
+import com.example.jetlagged.data.JetLaggedHomeScreenState
 import com.example.jetlagged.data.JetLaggedHomeScreenViewModel
 import com.example.jetlagged.ui.theme.JetLaggedTheme
 
@@ -40,20 +41,25 @@ import com.example.jetlagged.ui.theme.JetLaggedTheme
  * puts on screen — the whole point of a screen-level sticker is that it is not a re-assembly of the
  * parts.
  *
- * Note that the app's `sleepData` is built from `LocalDateTime.now()`, so the day-of-week labels
- * down the left edge of the graph rotate daily. The component previews avoid that with the fixed
- * fixtures in `JetLaggedSleepFixtures.kt`; the screen cannot, because `JetLaggedHomeScreenViewModel`
- * builds its own state and takes no seam for injecting one. Judge these on layout and palette, and
- * the fixture-backed `SleepGraphCard` previews on chart geometry.
+ * They are deterministic. The app's own `sleepData` is built from `LocalDateTime.now()`, so the
+ * day-of-week labels down the left edge of the graph would rotate daily; instead these previews seed
+ * the view model with the fixed week of `weekOfSleep` from `JetLaggedSleepFixtures.kt`, exactly as
+ * the component previews do. Nothing else on the screen is derived from the current date — the
+ * heart-rate trace and the wellness counts are hard-coded — and the bubble backgrounds seed their
+ * scatter from a fixed value under `LocalInspectionMode`, so the same unmodified code renders
+ * byte-identical PNGs from one day to the next.
  *
  * These live in the `debug` source set, so nothing here reaches a release build.
  */
+
+/** The fixed-week state these previews compose against, in place of the app's `now()`-based data. */
+private val fixtureState = JetLaggedHomeScreenState(sleepGraphData = weekOfSleep)
 
 @Composable
 private fun Screen(windowSizeClass: WindowWidthSizeClass, dark: Boolean = false) = JetLaggedTheme(isDarkTheme = dark) {
     JetLaggedScreen(
         windowSizeClass = windowSizeClass,
-        viewModel = remember { JetLaggedHomeScreenViewModel() },
+        viewModel = remember { JetLaggedHomeScreenViewModel(fixtureState) },
     )
 }
 
