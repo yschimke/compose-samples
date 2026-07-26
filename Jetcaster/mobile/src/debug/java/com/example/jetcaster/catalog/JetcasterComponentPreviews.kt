@@ -67,6 +67,7 @@ import com.example.jetcaster.ui.podcast.PodcastDetailsTopAppBar
 import com.example.jetcaster.ui.shared.EpisodeListItem
 import com.example.jetcaster.ui.shared.Loading
 import com.example.jetcaster.ui.theme.JetcasterTheme
+import com.example.jetcaster.ui.tooling.SharedTransitionPreview
 import com.example.jetcaster.util.ToggleFollowPodcastIconButton
 import java.time.Duration
 import kotlinx.collections.immutable.toImmutableList
@@ -651,6 +652,36 @@ fun JetcasterHomeLibraryLightPreview() = JetcasterTheme(darkTheme = false) {
 }
 
 // ---------------------------------------------------------------- home screen
+
+// The starter screen, and so the catalog's hero: `HomeViewModel` opens on `HomeCategory.Discover`,
+// which is what you see when the app launches. `SharedTransitionPreview` is required rather than
+// decorative — the Discover tab's episode rows are shared elements, so `podcastCategory()` reads
+// LocalSharedTransitionScope / LocalAnimatedVisibilityScope and throws without them.
+@Preview(name = "Home — discover", showBackground = true, widthDp = 412, heightDp = 640)
+@Composable
+fun JetcasterHomeDiscoverPreview() = JetcasterTheme(darkTheme = true) {
+    SharedTransitionPreview {
+        HomeScreen(
+            isHomeAppBarExpanded = true,
+            isLoading = false,
+            featuredPodcasts = listOf(subscribedPodcast, unsubscribedPodcast).toImmutableList(),
+            homeCategories = HomeCategory.entries,
+            selectedHomeCategory = HomeCategory.Discover,
+            filterableCategoriesModel = FilterableCategoriesModel(
+                categories = PreviewCategories,
+                selectedCategory = PreviewCategories.first(),
+            ),
+            podcastCategoryFilterResult = PodcastCategoryFilterResult(
+                topPodcasts = listOf(subscribedPodcast, unsubscribedPodcast) + PreviewPodcasts,
+                episodes = library.episodes,
+            ),
+            library = library,
+            onHomeAction = {},
+            navigateToPodcastDetails = {},
+            navigateToPlayer = {},
+        )
+    }
+}
 
 @Preview(name = "Home — library", showBackground = true, widthDp = 412, heightDp = 900)
 @Composable

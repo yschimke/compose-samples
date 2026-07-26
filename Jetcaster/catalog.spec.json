@@ -29,7 +29,7 @@
   "compareWith": "jetcaster-wear",
   "display": {
     "surface": "dark",
-    "hero": "Podcast/Card"
+    "hero": "Home/Discover"
   },
   "groupOrder": [
     "Home",
@@ -68,8 +68,17 @@
         },
         {
           "componentId": "Home/Discover",
-          "preview": "PreviewHome",
-          "caption": "The home screen on the Discover tab across the five sample devices — category chips, the top-podcast carousel and the episode list."
+          "preview": "JetcasterHomeDiscoverPreview",
+          "caption": "The starter screen: home on the Discover tab, which is the category HomeViewModel opens on — category chips over the top-podcast carousel and the episode list.",
+          "variants": [
+            {
+              "preview": "PreviewHome",
+              "caption": "The sample's own adaptive preview of the same tab, across the five sample devices and mid-refresh.",
+              "props": {
+                "isLoading": true
+              }
+            }
+          ]
         }
       ]
     },
