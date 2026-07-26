@@ -27,7 +27,7 @@
   ],
   "display": {
     "surface": "light",
-    "hero": "Charts/Sleep bar"
+    "hero": "Home/Sleep dashboard"
   },
   "groupOrder": [
     "Home",
@@ -49,17 +49,23 @@
             {
               "preview": "JetLaggedScreenMediumPreview",
               "caption": "Medium width — the summary cards reflow into FlowColumns beside the graph instead of stacking under it.",
-              "props": { "windowSizeClass": "Medium" }
+              "props": {
+                "windowSizeClass": "Medium"
+              }
             },
             {
               "preview": "JetLaggedScreenExpandedPreview",
               "caption": "Expanded width — the FlowRow fits three columns across.",
-              "props": { "windowSizeClass": "Expanded" }
+              "props": {
+                "windowSizeClass": "Expanded"
+              }
             },
             {
               "preview": "JetLaggedScreenDarkPreview",
               "caption": "Compact width on the dark palette — red header, black card surfaces.",
-              "props": { "mode": "dark" }
+              "props": {
+                "mode": "dark"
+              }
             }
           ]
         }
@@ -77,27 +83,37 @@
             {
               "preview": "SleepBarShortNightPreview",
               "caption": "45 minutes in bed: the narrowest the bar can be asked to draw.",
-              "props": { "duration": "45 minutes" }
+              "props": {
+                "duration": "45 minutes"
+              }
             },
             {
               "preview": "SleepBarLongNightPreview",
               "caption": "Sixteen hours in bed, with every sleep stage present.",
-              "props": { "duration": "16 hours" }
+              "props": {
+                "duration": "16 hours"
+              }
             },
             {
               "preview": "SleepBarScoreBandsPreview",
               "caption": "The same night at scores 92 / 65 / 50 / 25, so the emoji ladder is reviewable at once.",
-              "props": { "sleepScore": "92, 65, 50, 25" }
+              "props": {
+                "sleepScore": "92, 65, 50, 25"
+              }
             },
             {
               "preview": "SleepBarDarkPreview",
               "caption": "The dark palette's sleep-stage gradient — reds and oranges rather than yellows.",
-              "props": { "mode": "dark" }
+              "props": {
+                "mode": "dark"
+              }
             },
             {
               "preview": "SleepBarPreview",
               "caption": "The sample's own in-place @Preview, on the app's live sample data.",
-              "props": { "data": "app sample data" }
+              "props": {
+                "data": "app sample data"
+              }
             }
           ]
         },
@@ -109,12 +125,16 @@
             {
               "preview": "JetLaggedSleepGraphCardSingleDayPreview",
               "caption": "A single night — the degenerate case for the layout's hour-axis maths.",
-              "props": { "range": "single day" }
+              "props": {
+                "range": "single day"
+              }
             },
             {
               "preview": "JetLaggedSleepGraphCardDarkPreview",
               "caption": "The week on the dark palette.",
-              "props": { "mode": "dark" }
+              "props": {
+                "mode": "dark"
+              }
             }
           ]
         },
@@ -131,7 +151,9 @@
             {
               "preview": "HeartRateGraphDarkPreview",
               "caption": "The same trace on the dark palette's wave gradient.",
-              "props": { "mode": "dark" }
+              "props": {
+                "mode": "dark"
+              }
             }
           ]
         },
@@ -143,7 +165,9 @@
             {
               "preview": "SleepStagePaletteDarkPreview",
               "caption": "The dark palette's four stage colours.",
-              "props": { "mode": "dark" }
+              "props": {
+                "mode": "dark"
+              }
             }
           ]
         },
@@ -166,7 +190,9 @@
             {
               "preview": "AverageTimeAsleepCardWideCatalogPreview",
               "caption": "The card in a 500dp frame — it wraps its content, so the extra width leaves it unchanged. Mirrors the main-source 'larger screen' preview.",
-              "props": { "widthDp": "500" }
+              "props": {
+                "widthDp": "500"
+              }
             }
           ]
         },
@@ -178,7 +204,9 @@
             {
               "preview": "AverageTimeInBedCardWideCatalogPreview",
               "caption": "The card in a 500dp frame — it wraps its content, so the extra width leaves it unchanged. Mirrors the main-source 'larger screen' preview.",
-              "props": { "widthDp": "500" }
+              "props": {
+                "widthDp": "500"
+              }
             }
           ]
         },
@@ -190,12 +218,16 @@
             {
               "preview": "HeartRateCardRestingPreview",
               "caption": "A resting 48 bpm — the two-digit case for the headline number.",
-              "props": { "averageBpm": "48" }
+              "props": {
+                "averageBpm": "48"
+              }
             },
             {
               "preview": "HeartRateCardDarkPreview",
               "caption": "The card on the dark palette.",
-              "props": { "mode": "dark" }
+              "props": {
+                "mode": "dark"
+              }
             }
           ]
         },
@@ -207,12 +239,18 @@
             {
               "preview": "WellnessCardRecordedPreview",
               "caption": "A heavily recorded night — three-digit counts, which is where the bubbles' text fitting shows.",
-              "props": { "snoring": "128", "coughing": "42", "respiration": "17" }
+              "props": {
+                "snoring": "128",
+                "coughing": "42",
+                "respiration": "17"
+              }
             },
             {
               "preview": "WellnessCardDarkPreview",
               "caption": "The same recorded night on the dark palette.",
-              "props": { "mode": "dark" }
+              "props": {
+                "mode": "dark"
+              }
             }
           ]
         },
@@ -234,7 +272,9 @@
             {
               "preview": "TwoLineInfoCardWidePreview",
               "caption": "Above 400dp the card flips from a stacked column to an icon-beside-text row.",
-              "props": { "widthDp": "520" }
+              "props": {
+                "widthDp": "520"
+              }
             }
           ]
         },
@@ -257,7 +297,9 @@
             {
               "preview": "JetLaggedHeaderDarkPreview",
               "caption": "The header on the dark palette.",
-              "props": { "mode": "dark" }
+              "props": {
+                "mode": "dark"
+              }
             }
           ]
         },
@@ -269,12 +311,16 @@
             {
               "preview": "JetLaggedHeaderTabsDayPreview",
               "caption": "Selected on Day — the indicator sits at the leading edge with no scroll offset.",
-              "props": { "selectedTab": "Day" }
+              "props": {
+                "selectedTab": "Day"
+              }
             },
             {
               "preview": "JetLaggedHeaderTabsOneYearPreview",
               "caption": "Selected on 1Y — the row has scrolled its last tab into view.",
-              "props": { "selectedTab": "1Y" }
+              "props": {
+                "selectedTab": "1Y"
+              }
             }
           ]
         }
