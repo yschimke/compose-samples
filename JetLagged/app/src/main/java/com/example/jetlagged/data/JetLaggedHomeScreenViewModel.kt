@@ -20,7 +20,14 @@ import androidx.lifecycle.ViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 
-class JetLaggedHomeScreenViewModel : ViewModel() {
+/**
+ * Holds the home screen's state.
+ *
+ * [initialState] exists so that `@Preview`s (and tests) can compose the screen against fixed data
+ * instead of the `now()`-based sample data. It is defaulted, so `viewModel()` — which needs a
+ * no-argument constructor — and every production caller are unaffected.
+ */
+class JetLaggedHomeScreenViewModel(initialState: JetLaggedHomeScreenState = JetLaggedHomeScreenState()) : ViewModel() {
 
-    val uiState: StateFlow<JetLaggedHomeScreenState> = MutableStateFlow(JetLaggedHomeScreenState())
+    val uiState: StateFlow<JetLaggedHomeScreenState> = MutableStateFlow(initialState)
 }

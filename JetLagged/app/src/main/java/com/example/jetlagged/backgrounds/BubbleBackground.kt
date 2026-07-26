@@ -32,6 +32,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalInspectionMode
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.times
@@ -41,21 +42,26 @@ import kotlin.random.Random
 fun BubbleBackground(modifier: Modifier = Modifier, numberBubbles: Int, bubbleColor: Color) {
     val infiniteAnimation = rememberInfiniteTransition(label = "bubble position")
 
+    // Under tooling (`@Preview`, screenshot rendering) the bubbles are seeded from a fixed value so
+    // the same card renders identically every time; at runtime they stay randomly scattered.
+    val inspectionMode = LocalInspectionMode.current
+
     Box(modifier = modifier) {
-        val bubbles = remember(numberBubbles) {
+        val bubbles = remember(numberBubbles, inspectionMode) {
+            val random = if (inspectionMode) Random(numberBubbles) else Random
             List(numberBubbles) {
                 BackgroundBubbleData(
                     startPosition = Offset(
-                        x = Random.nextFloat(),
-                        y = Random.nextFloat(),
+                        x = random.nextFloat(),
+                        y = random.nextFloat(),
                     ),
                     endPosition = Offset(
-                        x = Random.nextFloat(),
-                        y = Random.nextFloat(),
+                        x = random.nextFloat(),
+                        y = random.nextFloat(),
                     ),
-                    durationMillis = Random.nextLong(3000L, 10000L),
+                    durationMillis = random.nextLong(3000L, 10000L),
                     easingFunction = EaseInOut,
-                    radius = Random.nextFloat() * 30.dp + 20.dp,
+                    radius = random.nextFloat() * 30.dp + 20.dp,
                 )
             }
         }
