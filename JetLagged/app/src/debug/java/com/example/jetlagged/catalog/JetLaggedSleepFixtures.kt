@@ -22,10 +22,10 @@ import com.example.jetlagged.sleep.SleepPeriod
 import com.example.jetlagged.sleep.SleepType
 import java.time.LocalDateTime
 
-/**
+/*
  * Deterministic sleep fixtures for the catalog previews.
  *
- * The app's own [com.example.jetlagged.data.sleepData] is built from `LocalDateTime.now()`, so the
+ * The app's own `com.example.jetlagged.data.sleepData` is built from `LocalDateTime.now()`, so the
  * day-of-week labels along the left edge of the time graph change every single day. That is fine in
  * the app — it is meant to read as "the last seven nights" — but it makes a rendered sticker sheet
  * churn: the same unmodified chart produces a different PNG tomorrow, and a visual diff cannot tell
