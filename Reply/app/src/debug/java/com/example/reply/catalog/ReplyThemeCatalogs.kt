@@ -48,10 +48,8 @@ import ee.schimke.composeai.preview.ThemeCatalog
  * These wrap [MaterialTheme] directly rather than `ContrastAwareReplyTheme`, precisely to pin the
  * scheme instead of re-entering the contrast selection the catalog is trying to enumerate.
  */
-private @Composable fun ReplyScheme(
-    scheme: androidx.compose.material3.ColorScheme,
-    content: @Composable () -> Unit,
-) = MaterialTheme(colorScheme = scheme, typography = replyTypography, shapes = shapes, content = content)
+@Composable private fun ReplyScheme(scheme: androidx.compose.material3.ColorScheme, content: @Composable () -> Unit) =
+    MaterialTheme(colorScheme = scheme, typography = replyTypography, shapes = shapes, content = content)
 
 @ThemeCatalog(name = "Light", group = "Reply")
 class ReplyLightThemeCatalog : PreviewWrapperProvider {
@@ -68,27 +66,23 @@ class ReplyDarkThemeCatalog : PreviewWrapperProvider {
 @ThemeCatalog(name = "Light — medium contrast", group = "Reply")
 class ReplyLightMediumContrastThemeCatalog : PreviewWrapperProvider {
     @Composable
-    override fun Wrap(content: @Composable () -> Unit) =
-        ReplyScheme(mediumContrastLightColorScheme, content)
+    override fun Wrap(content: @Composable () -> Unit) = ReplyScheme(mediumContrastLightColorScheme, content)
 }
 
 @ThemeCatalog(name = "Dark — medium contrast", group = "Reply")
 class ReplyDarkMediumContrastThemeCatalog : PreviewWrapperProvider {
     @Composable
-    override fun Wrap(content: @Composable () -> Unit) =
-        ReplyScheme(mediumContrastDarkColorScheme, content)
+    override fun Wrap(content: @Composable () -> Unit) = ReplyScheme(mediumContrastDarkColorScheme, content)
 }
 
 @ThemeCatalog(name = "Light — high contrast", group = "Reply")
 class ReplyLightHighContrastThemeCatalog : PreviewWrapperProvider {
     @Composable
-    override fun Wrap(content: @Composable () -> Unit) =
-        ReplyScheme(highContrastLightColorScheme, content)
+    override fun Wrap(content: @Composable () -> Unit) = ReplyScheme(highContrastLightColorScheme, content)
 }
 
 @ThemeCatalog(name = "Dark — high contrast", group = "Reply")
 class ReplyDarkHighContrastThemeCatalog : PreviewWrapperProvider {
     @Composable
-    override fun Wrap(content: @Composable () -> Unit) =
-        ReplyScheme(highContrastDarkColorScheme, content)
+    override fun Wrap(content: @Composable () -> Unit) = ReplyScheme(highContrastDarkColorScheme, content)
 }
