@@ -1,6 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/yschimke/compose-ai-tools/main/scripts/design-artifacts/catalog.spec.schema.json",
-  "$comment": "Jetcaster (mobile) sticker sheet. Jetcaster is the multi-form-factor sample — phone, Wear, TV and a Glance widget share one core. This catalog covers the phone tier; the Wear tier has its own sheet in catalog.wear.spec.json so the two can be compared side by side. Most entries here are dark, because dark is what Jetcaster is designed around, but light mode is now real: JetcasterTheme used to resolve darkScheme unconditionally and now follows the system setting. Wiring that up exposed a latent bug — the seven surfaceContainer/surfaceDim/surfaceBright roles in the light palette were byte-identical copies of their dark counterparts, so every Card drew a dark container under near-black text; they have been replaced with the Material 3 baseline light tonal steps. The four contrast schemes still have no code path that selects them (Material 3 reads contrast from UiModeManager at runtime, unavailable in preview, b/336693596), so those remain reachable only as @ThemeCatalogs. This module ships no app tour: Jetcaster's home is driven by Room plus live RSS fetches and the renderer has no network, so the app cold-starts with an empty database and no stable click targets, and the synthetic activity__MainActivity render is a near-empty frame for the same reason. The states below are therefore driven directly from the :core:domain-testing fixtures rather than through the running app.",
+  "$comment": "Jetcaster (mobile) sticker sheet. Jetcaster is the multi-form-factor sample — phone, Wear, TV and a Glance widget share one core. This catalog covers the phone tier; the Wear tier has its own sheet in catalog.wear.spec.json so the two can be compared side by side. Most entries here are dark, because dark is what Jetcaster is designed around, but light mode is now real: JetcasterTheme used to resolve darkScheme unconditionally and now follows the system setting. Wiring that up exposed a latent bug — the seven surfaceContainer/surfaceDim/surfaceBright roles in the light palette were byte-identical copies of their dark counterparts, so every Card drew a dark container under near-black text; they have been replaced with the Material 3 baseline light tonal steps. The four contrast schemes still have no code path that selects them (Material 3 reads contrast from UiModeManager at runtime, unavailable in preview, b/336693596), so those remain reachable only as @ThemeCatalogs. This module ships no app tour: Jetcaster's home is driven by Room plus live RSS fetches and the renderer has no network, so the app cold-starts with an empty database and no stable click targets, and the synthetic activity__MainActivity render is a near-empty frame for the same reason. The states below are therefore driven directly from the :core:domain-testing fixtures rather than through the running app. PreviewHome and PlayerScreenPreview used to be unrenderable — both read LocalSharedTransitionScope / LocalAnimatedVisibilityScope, which only JetcasterApp provides, and threw \"No SharedElementScope found\" for anyone (Android Studio included) who opened them outside the running NavHost; ui/tooling/SharedTransitionPreview.kt now supplies those two scopes, so both screens render on all five device configs and are catalogued here. States/Offline is backed by an inline stand-in rather than OfflineDialog itself: a Material 3 AlertDialog composes into its own window, so the pixels capture fine but the root semantics tree comes back empty.",
   "system": "jetcaster",
   "title": "Jetcaster",
   "library": [
@@ -65,6 +65,11 @@
               }
             }
           ]
+        },
+        {
+          "componentId": "Home/Discover",
+          "preview": "PreviewHome",
+          "caption": "The home screen on the Discover tab across the five sample devices — category chips, the top-podcast carousel and the episode list."
         }
       ]
     },
@@ -308,6 +313,11 @@
       "section": "Components",
       "components": [
         {
+          "componentId": "Player/Screen",
+          "preview": "PlayerScreenPreview",
+          "caption": "The now-playing screen across the five sample devices — the regular layout on phones and the book/two-pane layout once the width is expanded."
+        },
+        {
           "componentId": "Player/Transport",
           "preview": "PlayerButtonsPreview",
           "caption": "Transport controls as the sample's own preview drives them.",
@@ -446,8 +456,8 @@
         },
         {
           "componentId": "States/Offline",
-          "preview": "JetcasterOfflineDialogPreview",
-          "caption": "Offline dialog, shown when the feed refresh cannot reach the network."
+          "preview": "JetcasterOfflineStatePreview",
+          "caption": "Offline dialog, shown when the feed refresh cannot reach the network. Drawn inline from AlertDialogDefaults rather than through OfflineDialog's AlertDialog: a Material 3 dialog composes into its own window, so the root semantics tree the catalog reads comes back empty."
         }
       ]
     }

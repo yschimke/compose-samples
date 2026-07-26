@@ -98,6 +98,7 @@ import com.example.jetcaster.ui.LocalAnimatedVisibilityScope
 import com.example.jetcaster.ui.LocalSharedTransitionScope
 import com.example.jetcaster.ui.theme.JetcasterTheme
 import com.example.jetcaster.ui.tooling.DevicePreviews
+import com.example.jetcaster.ui.tooling.SharedTransitionPreview
 import com.example.jetcaster.util.isBookPosture
 import com.example.jetcaster.util.isSeparatingPosture
 import com.example.jetcaster.util.isTableTopPosture
@@ -909,38 +910,43 @@ fun PlayerButtonsPreview() {
 fun PlayerScreenPreview() {
     JetcasterTheme {
         BoxWithConstraints {
-            PlayerScreen(
-                PlayerUiState(
-                    episodePlayerState = EpisodePlayerState(
-                        currentEpisode = PlayerEpisode(
-                            title = "Title",
-                            duration = Duration.ofHours(2),
-                            podcastName = "Podcast",
-                        ),
-                        isPlaying = false,
-                        queue = listOf(
-                            PlayerEpisode(),
-                            PlayerEpisode(),
-                            PlayerEpisode(),
+            SharedTransitionPreview {
+                PlayerScreen(
+                    PlayerUiState(
+                        episodePlayerState = EpisodePlayerState(
+                            currentEpisode = PlayerEpisode(
+                                title = "Title",
+                                duration = Duration.ofHours(2),
+                                podcastName = "Podcast",
+                            ),
+                            isPlaying = false,
+                            queue = listOf(
+                                PlayerEpisode(),
+                                PlayerEpisode(),
+                                PlayerEpisode(),
+                            ),
                         ),
                     ),
-                ),
-                displayFeatures = emptyList(),
-                windowSizeClass = WindowSizeClass.BREAKPOINTS_V1.computeWindowSizeClass(maxWidth.value, maxHeight.value),
-                onBackPress = { },
-                onAddToQueue = {},
-                onStop = {},
-                playerControlActions = PlayerControlActions(
-                    onPlayPress = {},
-                    onPausePress = {},
-                    onAdvanceBy = {},
-                    onRewindBy = {},
-                    onSeekingStarted = {},
-                    onSeekingFinished = {},
-                    onNext = {},
-                    onPrevious = {},
-                ),
-            )
+                    displayFeatures = emptyList(),
+                    windowSizeClass = WindowSizeClass.BREAKPOINTS_V1.computeWindowSizeClass(
+                        maxWidth.value,
+                        maxHeight.value,
+                    ),
+                    onBackPress = { },
+                    onAddToQueue = {},
+                    onStop = {},
+                    playerControlActions = PlayerControlActions(
+                        onPlayPress = {},
+                        onPausePress = {},
+                        onAdvanceBy = {},
+                        onRewindBy = {},
+                        onSeekingStarted = {},
+                        onSeekingFinished = {},
+                        onNext = {},
+                        onPrevious = {},
+                    ),
+                )
+            }
         }
     }
 }

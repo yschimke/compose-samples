@@ -109,6 +109,7 @@ import com.example.jetcaster.ui.podcast.PodcastDetailsScreen
 import com.example.jetcaster.ui.podcast.PodcastDetailsViewModel
 import com.example.jetcaster.ui.theme.JetcasterTheme
 import com.example.jetcaster.ui.tooling.DevicePreviews
+import com.example.jetcaster.ui.tooling.SharedTransitionPreview
 import com.example.jetcaster.util.ToggleFollowPodcastIconButton
 import com.example.jetcaster.util.fullWidthItem
 import com.example.jetcaster.util.isCompact
@@ -754,25 +755,27 @@ private fun HomeAppBarPreview() {
 @Composable
 private fun PreviewHome() {
     JetcasterTheme {
-        HomeScreen(
-            isHomeAppBarExpanded = true,
-            isLoading = true,
-            featuredPodcasts = PreviewPodcasts.toImmutableList(),
-            homeCategories = HomeCategory.entries,
-            selectedHomeCategory = HomeCategory.Discover,
-            filterableCategoriesModel = FilterableCategoriesModel(
-                categories = PreviewCategories,
-                selectedCategory = PreviewCategories.firstOrNull(),
-            ),
-            podcastCategoryFilterResult = PodcastCategoryFilterResult(
-                topPodcasts = PreviewPodcasts,
-                episodes = PreviewPodcastEpisodes,
-            ),
-            library = LibraryInfo(),
-            onHomeAction = {},
-            navigateToPodcastDetails = {},
-            navigateToPlayer = {},
-        )
+        SharedTransitionPreview {
+            HomeScreen(
+                isHomeAppBarExpanded = true,
+                isLoading = true,
+                featuredPodcasts = PreviewPodcasts.toImmutableList(),
+                homeCategories = HomeCategory.entries,
+                selectedHomeCategory = HomeCategory.Discover,
+                filterableCategoriesModel = FilterableCategoriesModel(
+                    categories = PreviewCategories,
+                    selectedCategory = PreviewCategories.firstOrNull(),
+                ),
+                podcastCategoryFilterResult = PodcastCategoryFilterResult(
+                    topPodcasts = PreviewPodcasts,
+                    episodes = PreviewPodcastEpisodes,
+                ),
+                library = LibraryInfo(),
+                onHomeAction = {},
+                navigateToPodcastDetails = {},
+                navigateToPlayer = {},
+            )
+        }
     }
 }
 

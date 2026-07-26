@@ -30,19 +30,37 @@ val PreviewCategories = listOf(
     CategoryInfo(id = 3, name = "Comedy"),
 )
 
+/*
+ * These fixtures back every `@Preview` in the sample, so nothing in them may be derived from the
+ * wall clock: `lastEpisodeDate` is rendered as a relative "Updated …" label on the home carousel, and
+ * an `OffsetDateTime.now()` here would make that label — and therefore the rendered pixels — depend
+ * on when the preview happens to run. The dates below are pinned to the same period as
+ * [PreviewEpisodes], which puts them in the ">28 days" bucket permanently, so the label reads
+ * "Updated a while ago" today and will still read it in a year.
+ */
+private val PODCAST_1_LAST_EPISODE = OffsetDateTime.of(
+    2020, 6, 2, 9,
+    27, 0, 0, ZoneOffset.of("-0800"),
+)
+
+private val PODCAST_2_LAST_EPISODE = OffsetDateTime.of(
+    2020, 5, 19, 11,
+    0, 0, 0, ZoneOffset.of("-0800"),
+)
+
 val PreviewPodcasts = listOf(
     PodcastInfo(
         uri = "fakeUri://podcast/1",
         title = "Android Developers Backstage",
         author = "Android Developers",
         isSubscribed = true,
-        lastEpisodeDate = OffsetDateTime.now(),
+        lastEpisodeDate = PODCAST_1_LAST_EPISODE,
     ),
     PodcastInfo(
         uri = "fakeUri://podcast/2",
         title = "Google Developers podcast",
         author = "Google Developers",
-        lastEpisodeDate = OffsetDateTime.now(),
+        lastEpisodeDate = PODCAST_2_LAST_EPISODE,
     ),
 )
 
