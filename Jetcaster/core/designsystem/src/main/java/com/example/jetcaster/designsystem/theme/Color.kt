@@ -45,13 +45,23 @@ val scrimLight = Color(0xFF000000)
 val inverseSurfaceLight = Color(0xFFEFE0D6)
 val inverseOnSurfaceLight = Color(0xFF382F28)
 val inversePrimaryLight = Color(0xFFD3BCFD)
-val surfaceDimLight = Color(0xFF19120C)
-val surfaceBrightLight = Color(0xFF413731)
-val surfaceContainerLowestLight = Color(0xFF140D08)
-val surfaceContainerLowLight = Color(0xFF221A14)
-val surfaceContainerLight = Color(0xFF261E18)
-val surfaceContainerHighLight = Color(0xFF312822)
-val surfaceContainerHighestLight = Color(0xFF3C332C)
+// These seven were byte-identical copies of their `*Dark` counterparts — a dark surface family
+// sitting inside the light palette. Nothing rendered them, because JetcasterTheme resolved
+// darkScheme unconditionally, so the light scheme was never selectable and the duplication stayed
+// invisible. With light mode wired up they surfaced immediately: every Card and Surface that reads
+// a surfaceContainer role drew a dark brown container while onSurface stayed near-black, making the
+// episode rows and the search bar unreadable.
+//
+// Replaced with the Material 3 baseline light tonal steps, which is the palette the rest of the
+// light roles here already come from (surfaceLight, surfaceVariantLight and onSurfaceLight are the
+// unmodified baseline values).
+val surfaceDimLight = Color(0xFFDED8E1)
+val surfaceBrightLight = Color(0xFFFEF7FF)
+val surfaceContainerLowestLight = Color(0xFFFFFFFF)
+val surfaceContainerLowLight = Color(0xFFF7F2FA)
+val surfaceContainerLight = Color(0xFFF3EDF7)
+val surfaceContainerHighLight = Color(0xFFECE6F0)
+val surfaceContainerHighestLight = Color(0xFFE6E0E9)
 
 val primaryLightMediumContrast = Color(0xFFFF792C)
 val onPrimaryLightMediumContrast = Color(0xFF626004)

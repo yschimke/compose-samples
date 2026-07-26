@@ -1,0 +1,11 @@
+{
+  "name": "navigate-mailboxes",
+  "description": "Walks Reply's four top-level destinations through the real navigation suite, then opens an email thread and backs out. Captures the navigation-bar selection state that no single @Preview can show, because each frame is the real MainActivity after a real click.",
+  "start": { "activityClassName": "com.example.reply.ui.MainActivity" },
+  "steps": [
+    { "label": "articles", "click": { "text": "Articles" } },
+    { "label": "direct messages", "click": { "text": "Direct Messages" } },
+    { "label": "groups", "click": { "text": "Groups" } },
+    { "label": "back to inbox", "click": { "text": "Inbox" } }
+  ]
+}

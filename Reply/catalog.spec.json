@@ -18,7 +18,16 @@
     "surface": "light",
     "hero": "Adaptive/Phone"
   },
-  "groupOrder": ["Adaptive postures", "States"],
+  "groupOrder": [
+    "Adaptive postures",
+    "Mail",
+    "Email",
+    "Threads",
+    "App bars",
+    "Navigation",
+    "Identity",
+    "States"
+  ],
   "groups": [
     {
       "name": "Adaptive postures",
@@ -48,6 +57,161 @@
               "preview": "ReplyAppPreviewDesktopPortrait",
               "caption": "Expanded width, portrait.",
               "props": { "posture": "desktop portrait" }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mail",
+      "section": "Screens",
+      "components": [
+        {
+          "componentId": "Mail/List",
+          "preview": "ReplyEmailListPreview",
+          "caption": "The inbox list driven directly by the sample data.",
+          "variants": [
+            {
+              "preview": "ReplyEmailListSelectionPreview",
+              "caption": "Selection mode — two messages selected, one opened.",
+              "props": { "state": "selection" }
+            }
+          ]
+        },
+        {
+          "componentId": "Mail/Detail",
+          "preview": "ReplyEmailDetailPreview",
+          "caption": "Email detail, full screen.",
+          "variants": [
+            {
+              "preview": "ReplyEmailDetailPanePreview",
+              "caption": "Detail as the second pane of a list/detail layout.",
+              "props": { "isFullScreen": false }
+            },
+            {
+              "preview": "ReplyEmailDetailDarkPreview",
+              "caption": "Detail, dark theme.",
+              "props": { "theme": "dark" }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Email",
+      "section": "Components",
+      "components": [
+        {
+          "componentId": "Email/ListItem",
+          "preview": "ReplyEmailListItemPreview",
+          "caption": "Resting state of a message row.",
+          "variants": [
+            {
+              "preview": "ReplyEmailListItemOpenedPreview",
+              "caption": "Currently open in the detail pane.",
+              "props": { "isOpened": true }
+            },
+            {
+              "preview": "ReplyEmailListItemSelectedPreview",
+              "caption": "Selected — avatar swaps to a check.",
+              "props": { "isSelected": true }
+            },
+            {
+              "preview": "ReplyEmailListItemDarkPreview",
+              "caption": "Dark theme.",
+              "props": { "theme": "dark" }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Threads",
+      "section": "Components",
+      "components": [
+        {
+          "componentId": "Threads/ThreadItem",
+          "preview": "ReplyEmailThreadItemPreview",
+          "caption": "A single message within a thread, with its reply actions.",
+          "variants": [
+            {
+              "preview": "ReplyEmailThreadItemDarkPreview",
+              "caption": "Dark theme.",
+              "props": { "theme": "dark" }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "App bars",
+      "section": "Components",
+      "components": [
+        {
+          "componentId": "AppBars/Search",
+          "preview": "ReplyDockedSearchBarPreview",
+          "caption": "Docked search bar with the current account avatar."
+        },
+        {
+          "componentId": "AppBars/Detail",
+          "preview": "EmailDetailAppBarFullScreenPreview",
+          "caption": "Detail app bar, full screen — shows the back affordance.",
+          "variants": [
+            {
+              "preview": "EmailDetailAppBarPanePreview",
+              "caption": "Pane mode — back affordance drops away.",
+              "props": { "isFullScreen": false }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Navigation",
+      "section": "Components",
+      "components": [
+        {
+          "componentId": "Navigation/BottomBar",
+          "preview": "ReplyBottomNavigationBarPreview",
+          "caption": "Compact-width navigation bar."
+        },
+        {
+          "componentId": "Navigation/Rail",
+          "preview": "ReplyNavigationRailTopPreview",
+          "caption": "Medium-width navigation rail, content pinned to the top.",
+          "variants": [
+            {
+              "preview": "ReplyNavigationRailCenterPreview",
+              "caption": "Content centred — the position used on taller windows.",
+              "props": { "contentPosition": "CENTER" }
+            }
+          ]
+        },
+        {
+          "componentId": "Navigation/PermanentDrawer",
+          "preview": "PermanentNavigationDrawerContentPreview",
+          "caption": "Expanded-width permanent drawer."
+        },
+        {
+          "componentId": "Navigation/ModalDrawer",
+          "preview": "ModalNavigationDrawerContentPreview",
+          "caption": "Modal drawer, shown when the rail's menu is tapped."
+        }
+      ]
+    },
+    {
+      "name": "Identity",
+      "section": "Components",
+      "components": [
+        {
+          "componentId": "Identity/ProfileImage",
+          "preview": "ReplyProfileImagePreview",
+          "caption": "Sender avatar.",
+          "variants": [
+            {
+              "preview": "SelectedProfileImagePreview",
+              "caption": "The selected-state check that replaces the avatar.",
+              "props": { "isSelected": true }
             }
           ]
         }

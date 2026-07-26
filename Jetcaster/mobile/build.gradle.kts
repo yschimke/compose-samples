@@ -31,6 +31,16 @@ plugins {
 composePreview {
     variant.set("debug")
     sdkVersion.set(35)
+    // Jetcaster's MainActivity is a Hilt activity, so it must be attached to the manifest's
+    // @HiltAndroidApp Application. Without this the renderer pins android.app.Application and the
+    // synthetic activity render fails with "Hilt Activity must be attached to an @HiltAndroidApp
+    // Application" — an artefact of the harness rather than anything wrong with the app.
+    //
+    // Note the resulting activity__MainActivity.png is a near-empty dark frame, and that is honest:
+    // Jetcaster's home is driven by Room plus live RSS fetches, and the renderer has no network, so
+    // a cold start genuinely has nothing to show. That is also why this module ships no app tour —
+    // see the catalog.spec.json $comment.
+    useConsumerApplication.set(true)
 }
 
 android {
@@ -144,6 +154,8 @@ dependencies {
     implementation(libs.androidx.compose.ui)
     implementation(libs.androidx.compose.ui.tooling.preview)
     debugImplementation(libs.androidx.compose.ui.tooling)
+    // Catalog-only annotations (@ThemeCatalog); the debug source set holds the catalog previews.
+    debugImplementation(libs.composeai.preview.annotations)
 
     implementation(libs.androidx.lifecycle.runtime)
     implementation(libs.androidx.lifecycle.viewModelCompose)

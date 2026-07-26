@@ -1,0 +1,14 @@
+{
+  "name": "switch-sleep-ranges",
+  "description": "Drives the real MainActivity: walks the sleep card's Day/Month/1Y range tabs, then opens the custom gesture drawer from the header. JetLagged has essentially one destination — the drawer's other three entries are empty Surfaces — so the tab row is where the app's real interaction lives. Each frame is the actual screen after an actual click, which captures the PrimaryScrollableTabRow scrolling its selection into view and the drawer's translate/scale/rounded-corner transform on the home content; neither is reachable from a @Preview, because both are driven by click state rather than by a parameter. The drawer step is last because it stays open — closing it is a drag gesture or a predictive back, and the tour vocabulary is clicks.",
+  "start": {
+    "activityClassName": "com.example.jetlagged.MainActivity"
+  },
+  "steps": [
+    { "label": "day", "click": { "text": "Day" } },
+    { "label": "month", "click": { "text": "Month" } },
+    { "label": "one year", "click": { "text": "1Y" } },
+    { "label": "back to week", "click": { "text": "Week" } },
+    { "label": "open menu", "click": { "contentDescription": "Not implemented yet" } }
+  ]
+}

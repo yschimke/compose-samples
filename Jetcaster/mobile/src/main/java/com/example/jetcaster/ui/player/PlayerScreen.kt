@@ -573,7 +573,7 @@ private fun PlayerContentBookEnd(uiState: PlayerUiState, playerControlActions: P
 }
 
 @Composable
-private fun TopAppBar(onBackPress: () -> Unit, onAddToQueue: () -> Unit) {
+internal fun TopAppBar(onBackPress: () -> Unit, onAddToQueue: () -> Unit) {
     Row(Modifier.fillMaxWidth()) {
         IconButton(onClick = onBackPress) {
             Icon(
@@ -629,7 +629,7 @@ private fun PodcastDescription(title: String, podcastName: String) {
 }
 
 @Composable
-private fun PodcastInformation(
+internal fun PodcastInformation(
     title: String,
     name: String,
     summary: String,
@@ -671,7 +671,7 @@ fun Duration.formatString(): String {
 }
 
 @Composable
-private fun PlayerSlider(
+internal fun PlayerSlider(
     timeElapsed: Duration,
     episodeDuration: Duration?,
     onSeekingStarted: () -> Unit,
@@ -707,7 +707,7 @@ private fun PlayerSlider(
 
 @OptIn(ExperimentalMaterial3ExpressiveApi::class)
 @Composable
-private fun PlayerButtons(
+internal fun PlayerButtons(
     hasNext: Boolean,
     isPlaying: Boolean,
     onPlayPress: () -> Unit,

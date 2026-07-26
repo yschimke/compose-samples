@@ -120,6 +120,8 @@ dependencies {
 
     implementation(libs.androidx.compose.ui.tooling.preview)
     debugImplementation(libs.androidx.compose.ui.tooling)
+    // Catalog-only annotations (@ThemeCatalog); the debug source set holds the catalog previews.
+    debugImplementation(libs.composeai.preview.annotations)
 
     implementation(libs.androidx.compose.material3)
     implementation(libs.androidx.compose.material3.adaptive.navigationSuite)

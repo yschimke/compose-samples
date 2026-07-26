@@ -118,7 +118,7 @@ private fun CategoryPodcasts(
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-private fun CategoryPodcastRow(
+internal fun CategoryPodcastRow(
     podcasts: List<PodcastInfo>,
     onTogglePodcastFollowed: (PodcastInfo) -> Unit,
     navigateToPodcastDetails: (PodcastInfo) -> Unit,
@@ -147,7 +147,7 @@ private fun CategoryPodcastRow(
 }
 
 @Composable
-private fun TopPodcastRowItem(
+internal fun TopPodcastRowItem(
     podcastTitle: String,
     podcastImageUrl: String,
     isFollowed: Boolean,

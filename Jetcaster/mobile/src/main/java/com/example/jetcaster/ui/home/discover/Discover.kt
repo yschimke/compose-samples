@@ -85,7 +85,7 @@ fun LazyGridScope.discoverItems(
 }
 
 @Composable
-private fun PodcastCategoryTabs(
+internal fun PodcastCategoryTabs(
     filterableCategoriesModel: FilterableCategoriesModel,
     onCategorySelected: (CategoryInfo) -> Unit,
     modifier: Modifier = Modifier,
@@ -114,7 +114,7 @@ private fun PodcastCategoryTabs(
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-private fun ChoiceChipContent(text: String, selected: Boolean, onClick: () -> Unit, modifier: Modifier = Modifier) {
+internal fun ChoiceChipContent(text: String, selected: Boolean, onClick: () -> Unit, modifier: Modifier = Modifier) {
     FilterChip(
         selected = selected,
         onClick = onClick,

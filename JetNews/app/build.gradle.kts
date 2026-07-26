@@ -32,6 +32,11 @@ composePreview {
     // Pinned rather than auto-detected: the sample compiles against SDK 37,
     // which is outside Robolectric's supported render range on JDK 17.
     sdkVersion.set(35)
+    // `MainActivity.onCreate` casts `application` to `JetnewsApplication` to reach the
+    // DI container, so the renderer has to instantiate the manifest's own Application
+    // class rather than a stock `android.app.Application`. Without this, the activity
+    // render and every app tour die with a ClassCastException before first frame.
+    useConsumerApplication.set(true)
 }
 
 android {
