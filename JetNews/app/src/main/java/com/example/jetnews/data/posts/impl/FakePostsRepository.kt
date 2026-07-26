@@ -29,10 +29,19 @@ import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.withContext
 
 /**
- * Implementation of PostsRepository that returns a hardcoded list of
- * posts with resources after some delay in a background thread.
+ * Implementation of PostsRepository that returns a hardcoded list of posts with resources from a
+ * background thread.
+ *
+ * [networkDelayMs] simulates a slow network before the feed resolves. It is **off by default**.
+ * The delay is a teaching device — it exists so the loading state is reachable by hand — but it is
+ * not free: anything that captures the app shortly after launch (the preview harness's synthetic
+ * activity render, screenshot tests, a benchmark) lands on the indeterminate progress indicator
+ * instead of the feed. Worse, the indicator's sweep angle depends on how much real time elapsed
+ * before the capture, so the resulting image is not reproducible run to run.
+ *
+ * Pass [SIMULATED_SLOW_NETWORK_MS] to opt back in when you want to see the loading state.
  */
-class FakePostsRepository : PostsRepository {
+class FakePostsRepository(private val networkDelayMs: Long = 0L) : PostsRepository {
 
     // for now, store these in memory
     private val favorites = MutableStateFlow<Set<String>>(setOf())
@@ -54,7 +63,7 @@ class FakePostsRepository : PostsRepository {
 
     override suspend fun getPostsFeed(): Result<PostsFeed> {
         return withContext(Dispatchers.IO) {
-            delay(800) // pretend we're on a slow network
+            if (networkDelayMs > 0) delay(networkDelayMs)
             if (shouldRandomlyFail()) {
                 Result.Error(IllegalStateException())
             } else {
@@ -83,4 +92,9 @@ class FakePostsRepository : PostsRepository {
      * This will fail deterministically every 5 requests
      */
     private fun shouldRandomlyFail(): Boolean = ++requestCount % 5 == 0
+
+    companion object {
+        /** The delay this repository used to apply unconditionally; pass it to opt back in. */
+        const val SIMULATED_SLOW_NETWORK_MS = 800L
+    }
 }
