@@ -73,6 +73,7 @@ import com.example.jetsnack.model.SnackCollection
 import com.example.jetsnack.model.SnackRepo
 import com.example.jetsnack.ui.components.JetsnackButton
 import com.example.jetsnack.ui.components.JetsnackDivider
+import com.example.jetsnack.ui.components.JetsnackPreviewWrapper
 import com.example.jetsnack.ui.components.JetsnackSurface
 import com.example.jetsnack.ui.components.QuantitySelector
 import com.example.jetsnack.ui.components.SnackCollection
@@ -470,7 +471,7 @@ private fun CheckoutBar(modifier: Modifier = Modifier) {
 @Preview("large font", fontScale = 2f)
 @Composable
 private fun CartPreview() {
-    JetsnackTheme {
+    JetsnackPreviewWrapper {
         Cart(
             orderLines = SnackRepo.getCart(),
             removeSnack = {},
