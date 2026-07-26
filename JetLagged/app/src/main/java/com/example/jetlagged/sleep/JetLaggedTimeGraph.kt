@@ -36,7 +36,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.drawBehind
 import androidx.compose.ui.geometry.CornerRadius
 import androidx.compose.ui.graphics.Brush
-import androidx.compose.ui.platform.LocalLocale
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import com.example.jetlagged.BasicInformationalCard
@@ -109,7 +108,7 @@ private fun JetLaggedTimeGraph(sleepGraphData: SleepGraphData, modifier: Modifie
 private fun DayLabel(dayOfWeek: DayOfWeek) {
     Text(
         dayOfWeek.getDisplayName(
-            TextStyle.SHORT, LocalLocale.current.platformLocale,
+            TextStyle.SHORT, Locale.getDefault(),
         ),
         Modifier
             .height(24.dp)
