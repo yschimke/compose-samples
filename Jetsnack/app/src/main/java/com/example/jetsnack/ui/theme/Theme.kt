@@ -25,7 +25,7 @@ import androidx.compose.runtime.Immutable
 import androidx.compose.runtime.staticCompositionLocalOf
 import androidx.compose.ui.graphics.Color
 
-private val LightColorPalette = JetsnackColors(
+internal val LightColorPalette = JetsnackColors(
     brand = Shadow5,
     brandSecondary = Ocean3,
     uiBackground = Neutral0,
@@ -50,7 +50,7 @@ private val LightColorPalette = JetsnackColors(
     isDark = false,
 )
 
-private val DarkColorPalette = JetsnackColors(
+internal val DarkColorPalette = JetsnackColors(
     brand = Shadow1,
     brandSecondary = Ocean2,
     uiBackground = Neutral8,
