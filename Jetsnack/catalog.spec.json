@@ -1,6 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/yschimke/compose-ai-tools/main/scripts/design-artifacts/catalog.spec.schema.json",
-  "$comment": "Jetsnack sticker sheet. Jetsnack is the custom-design-system sample: it does NOT use Material 3 — JetsnackTheme supplies its own colour, gradient and typography tokens. That makes it the most interesting catalog of the set, because the extracted compose/theme token set is a bespoke system rather than a restatement of M3. NOTE: HomePreview/CartPreview are excluded by the candidate join as having no static PNG (\"animated GIF / metadata sheet\"), so they cannot back a sticker and are out of this sheet. Their constituent components — snack cards, filters, the quantity stepper, the bottom bar — are all covered individually.",
+  "$comment": "Jetsnack sticker sheet. Jetsnack is the custom-design-system sample: it does NOT use Material 3 — JetsnackTheme supplies its own colour, gradient and typography tokens, and deliberately pins MaterialTheme.colorScheme to an all-magenta debug palette so that accidental M3 usage is visible on screen. That makes it the most interesting catalog of the set, because the extracted compose/theme token set is a bespoke system rather than a restatement of M3. The Tokens group shows that palette as the app actually models it — including the seven gradient ramps, which have no M3 role to project onto and therefore appear nowhere in the @ThemeCatalog specimen sheets. NOTE ON THE FEED AND CART: the sample's own HomePreview (Feed.kt) and CartPreview (Cart.kt) do not render — they wrap the screen in bare JetsnackTheme, and every Jetsnack screen reaches DestinationBar, which throws IllegalStateException(\"No shared element scope\") without LocalSharedTransitionScope / LocalNavAnimatedVisibilityScope. Those two remain broken in main source (pre-existing, left untouched) and produce .error.json sidecars. The catalog instead references FeedScreenPreview / CartScreenPreview, debug-source previews of the same screens wrapped in the sample's own JetsnackPreviewWrapper, which supplies both scopes. The app tour covers the two animations no static preview can reach: the bottom bar's animated selection indicator and the shared-element filter-sheet transition.",
   "system": "jetsnack",
   "title": "Jetsnack",
   "library": [
@@ -27,9 +27,13 @@
   },
   "groupOrder": [
     "Foundations",
+    "Tokens",
+    "Layout",
     "Catalog",
     "Cart & checkout",
     "Search",
+    "Chrome",
+    "Feedback",
     "Screens"
   ],
   "groups": [
@@ -48,6 +52,11 @@
               "props": {
                 "shape": "rectangle"
               }
+            },
+            {
+              "preview": "JetsnackButtonDisabledPreview",
+              "caption": "Disabled — swaps interactivePrimary for the flatter interactiveSecondary ramp and drops the label to textHelp.",
+              "state": "disabled"
             }
           ]
         },
@@ -55,6 +64,20 @@
           "componentId": "Foundations/Card",
           "preview": "CardPreview",
           "caption": "JetsnackCard — the elevated surface every product tile is built on."
+        },
+        {
+          "componentId": "Foundations/Surface",
+          "preview": "JetsnackSurfaceFlatPreview",
+          "caption": "JetsnackSurface at rest — the primitive under every card, button and bar.",
+          "variants": [
+            {
+              "preview": "JetsnackSurfaceElevatedPreview",
+              "caption": "Elevated. Jetsnack composites a white overlay whose alpha is logarithmic in elevation, so the lift is a colour shift as well as a shadow.",
+              "props": {
+                "elevation": "8dp"
+              }
+            }
+          ]
         },
         {
           "componentId": "Foundations/Divider",
@@ -69,6 +92,56 @@
       ]
     },
     {
+      "name": "Tokens",
+      "section": "Themes",
+      "components": [
+        {
+          "componentId": "Tokens/Colour",
+          "preview": "JetsnackColorTokensLightPreview",
+          "caption": "The JetsnackColors palette as the app models it — brand, ui, text and icon roles, not M3 roles.",
+          "variants": [
+            {
+              "preview": "JetsnackColorTokensDarkPreview",
+              "caption": "Dark palette. Note it is not a mechanical inversion: textPrimary and iconPrimary switch from the brand purple to Shadow1.",
+              "mode": "dark"
+            }
+          ]
+        },
+        {
+          "componentId": "Tokens/Gradients",
+          "preview": "JetsnackGradientTokensPreview",
+          "caption": "The seven gradient ramps plus tornado1. These are the signature of the system and have no Material 3 equivalent, so they appear nowhere in the @ThemeCatalog specimen sheets.",
+          "variants": [
+            {
+              "preview": "JetsnackGradientTokensDarkPreview",
+              "caption": "Dark ramps.",
+              "mode": "dark"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Layout",
+      "section": "Components",
+      "components": [
+        {
+          "componentId": "Layout/Vertical grid",
+          "preview": "VerticalGridTwoColumnPreview",
+          "caption": "VerticalGrid — a custom Layout that divides width into equal columns and fills them column by column.",
+          "variants": [
+            {
+              "preview": "VerticalGridThreeColumnPreview",
+              "caption": "Three columns — the same six children reflowed.",
+              "props": {
+                "columns": 3
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "Catalog",
       "section": "Components",
       "components": [
@@ -78,9 +151,28 @@
           "caption": "Product card as it appears in the feed."
         },
         {
-          "componentId": "Snack/Detail",
-          "preview": "SnackDetailPreview",
-          "caption": "Product detail — the collapsing-header screen that anchors the shared-element transition."
+          "componentId": "Snack/Item",
+          "preview": "SnackItemPreview",
+          "caption": "The compact list form of a snack, used in the non-highlighted collections."
+        },
+        {
+          "componentId": "Snack/Image",
+          "preview": "SnackImagePreview",
+          "caption": "Circular product image. Under LocalInspectionMode the Coil request falls back to the shipped placeholder, so previews are deterministic and network-free."
+        },
+        {
+          "componentId": "Snack/Collection",
+          "preview": "SnackCollectionHighlightPreview",
+          "caption": "A whole collection row in its highlighted form — the gradient-backed cards that scroll with a parallax offset.",
+          "variants": [
+            {
+              "preview": "SnackCollectionNormalPreview",
+              "caption": "The same collection with highlight=false: plain circular items instead of gradient cards.",
+              "props": {
+                "highlight": false
+              }
+            }
+          ]
         },
         {
           "componentId": "Catalog/Filters",
@@ -95,9 +187,18 @@
           ]
         },
         {
-          "componentId": "Catalog/Filter screen",
-          "preview": "FilterScreenPreview",
-          "caption": "Full filter sheet."
+          "componentId": "Catalog/Filter bar",
+          "preview": "FilterBarPreview",
+          "caption": "The filter row above the feed, with the filter-sheet trigger visible.",
+          "variants": [
+            {
+              "preview": "FilterBarSheetOpenPreview",
+              "caption": "With the filter sheet open the trigger animates away — it is the shared element the sheet grows out of.",
+              "props": {
+                "filterScreenVisible": true
+              }
+            }
+          ]
         }
       ]
     },
@@ -116,8 +217,37 @@
               "props": {
                 "layoutDirection": "rtl"
               }
+            },
+            {
+              "preview": "QuantitySelectorSinglePreview",
+              "caption": "At a count of 1.",
+              "props": {
+                "count": 1
+              }
+            },
+            {
+              "preview": "QuantitySelectorManyPreview",
+              "caption": "At a count of 12 — the Crossfade'd number widens the row, which is the layout case worth seeing.",
+              "props": {
+                "count": 12
+              }
             }
           ]
+        },
+        {
+          "componentId": "Cart/Item",
+          "preview": "CartItemPreview",
+          "caption": "A single cart line: image, name, price, remove affordance and the quantity stepper."
+        },
+        {
+          "componentId": "Cart/Summary",
+          "preview": "SummaryItemPreview",
+          "caption": "Order summary — subtotal, shipping and total, formatted through the sample's own formatPrice."
+        },
+        {
+          "componentId": "Cart/Swipe to dismiss",
+          "preview": "SwipeDismissItemPreview",
+          "caption": "The swipe-to-remove affordance with its destructive background revealed."
         }
       ]
     },
@@ -133,17 +263,108 @@
         {
           "componentId": "Search/Categories",
           "preview": "SearchCategoryPreview",
-          "caption": "Category tile grid."
+          "caption": "Category tile.",
+          "variants": [
+            {
+              "preview": "SearchCategoriesPreview",
+              "caption": "The full category grid, driven by the shipped SearchRepo collections."
+            }
+          ]
         },
         {
           "componentId": "Search/Results",
           "preview": "SearchResultPreview",
-          "caption": "Search results list."
+          "caption": "A single search result row.",
+          "variants": [
+            {
+              "preview": "SearchResultsPreview",
+              "caption": "The results list."
+            }
+          ]
         },
         {
           "componentId": "Search/Suggestions",
           "preview": "PreviewSuggestions",
-          "caption": "Suggestion list shown before a query is entered."
+          "caption": "Suggestion list shown before a query is entered.",
+          "variants": [
+            {
+              "preview": "SearchSuggestionsPreview",
+              "caption": "The same list driven directly by SearchRepo.getSuggestions()."
+            }
+          ]
+        },
+        {
+          "componentId": "Search/No results",
+          "preview": "NoResultsPreview",
+          "caption": "The empty state, which quotes the query back to the user."
+        }
+      ]
+    },
+    {
+      "name": "Chrome",
+      "section": "Components",
+      "components": [
+        {
+          "componentId": "Chrome/Bottom nav",
+          "preview": "JetsnackBottomNavPreview",
+          "caption": "Custom animated bottom navigation bar — Jetsnack's signature chrome."
+        },
+        {
+          "componentId": "Chrome/Bottom nav selection",
+          "preview": "JetsnackBottomBarFeedPreview",
+          "caption": "The bar with Home selected. The selection indicator is a gradient pill that animates between destinations, so the selected tab is the only one showing its label.",
+          "variants": [
+            {
+              "preview": "JetsnackBottomBarSearchPreview",
+              "caption": "Search selected.",
+              "state": "search"
+            },
+            {
+              "preview": "JetsnackBottomBarCartPreview",
+              "caption": "Cart selected — the widest label, which is the layout case that stresses the pill.",
+              "state": "cart"
+            },
+            {
+              "preview": "JetsnackBottomBarProfilePreview",
+              "caption": "Profile selected.",
+              "state": "profile"
+            }
+          ]
+        },
+        {
+          "componentId": "Chrome/Bottom nav item",
+          "preview": "JetsnackBottomNavigationItemSelectedPreview",
+          "caption": "A single nav item, selected: icon and label laid out side by side.",
+          "variants": [
+            {
+              "preview": "JetsnackBottomNavigationItemUnselectedPreview",
+              "caption": "Unselected — the label collapses away and only the icon remains.",
+              "state": "unselected"
+            }
+          ]
+        },
+        {
+          "componentId": "Chrome/Destination bar",
+          "preview": "PreviewDestinationBar",
+          "caption": "Delivery destination bar pinned above the feed."
+        }
+      ]
+    },
+    {
+      "name": "Feedback",
+      "section": "Components",
+      "components": [
+        {
+          "componentId": "Feedback/Snackbar",
+          "preview": "JetsnackSnackbarPreview",
+          "caption": "JetsnackSnackbar — the M3 snackbar re-coloured onto uiBackground / textSecondary / brand.",
+          "variants": [
+            {
+              "preview": "JetsnackSnackbarWithActionPreview",
+              "caption": "With an action label, which picks up the brand colour.",
+              "state": "with-action"
+            }
+          ]
         }
       ]
     },
@@ -152,19 +373,34 @@
       "section": "Screens",
       "components": [
         {
+          "componentId": "Screens/Feed",
+          "preview": "FeedScreenPreview",
+          "caption": "The home feed — destination bar, filter row and the full stack of snack collections. See the $comment: the sample's own HomePreview does not render, so this is the debug-source equivalent wrapped in JetsnackPreviewWrapper."
+        },
+        {
+          "componentId": "Screens/Cart",
+          "preview": "CartScreenPreview",
+          "caption": "The cart — order lines, summary and the checkout bar. Debug-source equivalent of the sample's non-rendering CartPreview."
+        },
+        {
+          "componentId": "Screens/Search",
+          "preview": "SearchScreenPreview",
+          "caption": "The search destination in its resting state, showing the category grid beneath the search bar."
+        },
+        {
           "componentId": "Screens/Profile",
           "preview": "ProfilePreview",
           "caption": "Profile screen."
         },
         {
-          "componentId": "Chrome/Bottom nav",
-          "preview": "JetsnackBottomNavPreview",
-          "caption": "Custom animated bottom navigation bar — Jetsnack's signature chrome."
+          "componentId": "Snack/Detail",
+          "preview": "SnackDetailPreview",
+          "caption": "Product detail — the collapsing-header screen that anchors the shared-element transition."
         },
         {
-          "componentId": "Chrome/Destination bar",
-          "preview": "PreviewDestinationBar",
-          "caption": "Delivery destination bar pinned above the feed."
+          "componentId": "Catalog/Filter screen",
+          "preview": "FilterScreenPreview",
+          "caption": "Full filter sheet — sort, price, category and lifestyle sections."
         }
       ]
     }
