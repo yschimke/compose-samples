@@ -109,7 +109,7 @@ fun SleepBarLongNightPreview() = Wrap {
     SleepBar(sleepData = longNight, modifier = Modifier.fillMaxWidth())
 }
 
-@Preview(name = "SleepBar — score bands", showBackground = true, widthDp = 380, heightDp = 220)
+@Preview(name = "SleepBar — score bands", showBackground = true, widthDp = 380, heightDp = 300)
 @Composable
 fun SleepBarScoreBandsPreview() = Wrap {
     Column(verticalArrangement = Arrangement.spacedBy(16.dp)) {

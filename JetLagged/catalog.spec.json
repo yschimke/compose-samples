@@ -1,6 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/yschimke/compose-ai-tools/main/scripts/design-artifacts/catalog.spec.schema.json",
-  "$comment": "JetLagged sticker sheet. JetLagged is the custom-graphics sample: its surfaces are hand-drawn Canvas charts and custom layouts rather than stock components, which is exactly the category that benefits most from rendered stickers — there is no component library to read the intended output from. NOTE: the summary cards and header are annotated @Preview in place, but every parameter is defaulted and the renderer only discovers genuinely zero-argument previews — so those entries point at zero-arg wrappers in app/src/debug instead.",
+  "$comment": "JetLagged sticker sheet. JetLagged is the custom-graphics sample: its surfaces are hand-drawn Canvas charts and custom layouts rather than stock components, which is exactly the category that benefits most from rendered stickers — there is no component library to read the intended output from. Two things shape this spec. First, the summary cards, the header and the screen are annotated @Preview in place, but every parameter is defaulted and the renderer only discovers genuinely zero-argument previews — so those entries point at zero-arg wrappers in app/src/debug rather than at the main-source previews, which come back as NoSuchMethodException sidecars. Second, the chart previews are driven from the fixed-week fixtures in JetLaggedSleepFixtures.kt rather than the app's now()-based sample data, so a visual diff means something; the Screens entries are the exception, because JetLaggedHomeScreenViewModel builds its own state and offers no seam to inject one.",
   "system": "jetlagged",
   "title": "JetLagged",
   "library": [
@@ -8,12 +8,21 @@
   ],
   "module": ":app",
   "modes": [
-    "light"
+    "light",
+    "dark"
   ],
   "breakpoints": [
     {
       "size": "compact",
       "widthDp": 412
+    },
+    {
+      "size": "medium",
+      "widthDp": 700
+    },
+    {
+      "size": "expanded",
+      "widthDp": 1280
     }
   ],
   "display": {
@@ -21,19 +30,122 @@
     "hero": "Charts/Sleep bar"
   },
   "groupOrder": [
+    "Home",
     "Charts",
     "Cards",
-    "Chrome"
+    "Chrome",
+    "Motion"
   ],
   "groups": [
+    {
+      "name": "Home",
+      "section": "Screens",
+      "components": [
+        {
+          "componentId": "Home/Sleep dashboard",
+          "preview": "JetLaggedScreenCompactPreview",
+          "caption": "The whole app on a phone: header, sleep graph card, the two summary cards, wellness and heart rate in one scrolling column.",
+          "variants": [
+            {
+              "preview": "JetLaggedScreenMediumPreview",
+              "caption": "Medium width — the summary cards reflow into FlowColumns beside the graph instead of stacking under it.",
+              "props": { "windowSizeClass": "Medium" }
+            },
+            {
+              "preview": "JetLaggedScreenExpandedPreview",
+              "caption": "Expanded width — the FlowRow fits three columns across.",
+              "props": { "windowSizeClass": "Expanded" }
+            },
+            {
+              "preview": "JetLaggedScreenDarkPreview",
+              "caption": "Compact width on the dark palette — red header, black card surfaces.",
+              "props": { "mode": "dark" }
+            }
+          ]
+        }
+      ]
+    },
     {
       "name": "Charts",
       "section": "Components",
       "components": [
         {
           "componentId": "Charts/Sleep bar",
-          "preview": "SleepBarPreview",
-          "caption": "The sleep bar — a bespoke Canvas chart with per-stage gradients. Its correctness is only visible as pixels."
+          "preview": "SleepBarCatalogPreview",
+          "caption": "The sleep bar — a bespoke Canvas chart with per-stage gradients. Its correctness is only visible as pixels.",
+          "variants": [
+            {
+              "preview": "SleepBarShortNightPreview",
+              "caption": "45 minutes in bed: the narrowest the bar can be asked to draw.",
+              "props": { "duration": "45 minutes" }
+            },
+            {
+              "preview": "SleepBarLongNightPreview",
+              "caption": "Sixteen hours in bed, with every sleep stage present.",
+              "props": { "duration": "16 hours" }
+            },
+            {
+              "preview": "SleepBarScoreBandsPreview",
+              "caption": "The same night at scores 92 / 65 / 50 / 25, so the emoji ladder is reviewable at once.",
+              "props": { "sleepScore": "92, 65, 50, 25" }
+            },
+            {
+              "preview": "SleepBarDarkPreview",
+              "caption": "The dark palette's sleep-stage gradient — reds and oranges rather than yellows.",
+              "props": { "mode": "dark" }
+            },
+            {
+              "preview": "SleepBarPreview",
+              "caption": "The sample's own in-place @Preview, on the app's live sample data.",
+              "props": { "data": "app sample data" }
+            }
+          ]
+        },
+        {
+          "componentId": "Charts/Sleep graph card",
+          "preview": "JetLaggedSleepGraphCardPreview",
+          "caption": "A full week of nights in the custom time-graph layout, inside its card chrome.",
+          "variants": [
+            {
+              "preview": "JetLaggedSleepGraphCardSingleDayPreview",
+              "caption": "A single night — the degenerate case for the layout's hour-axis maths.",
+              "props": { "range": "single day" }
+            },
+            {
+              "preview": "JetLaggedSleepGraphCardDarkPreview",
+              "caption": "The week on the dark palette.",
+              "props": { "mode": "dark" }
+            }
+          ]
+        },
+        {
+          "componentId": "Charts/Time graph layout",
+          "preview": "TimeGraphPreview",
+          "caption": "The bare custom Layout without card chrome — the measure/place algorithm that decides where each bar starts."
+        },
+        {
+          "componentId": "Charts/Heart rate graph",
+          "preview": "HeartRateGraphPreview",
+          "caption": "The heart-rate trace: a smoothed Path with a translucent range band behind it.",
+          "variants": [
+            {
+              "preview": "HeartRateGraphDarkPreview",
+              "caption": "The same trace on the dark palette's wave gradient.",
+              "props": { "mode": "dark" }
+            }
+          ]
+        },
+        {
+          "componentId": "Charts/Sleep stage palette",
+          "preview": "SleepStagePalettePreview",
+          "caption": "Awake / REM / Light / Deep as swatches — the four colours every chart above is built from.",
+          "variants": [
+            {
+              "preview": "SleepStagePaletteDarkPreview",
+              "caption": "The dark palette's four stage colours.",
+              "props": { "mode": "dark" }
+            }
+          ]
         },
         {
           "componentId": "Charts/Detail legend",
@@ -59,12 +171,63 @@
         {
           "componentId": "Cards/Heart rate",
           "preview": "HeartRateCardCatalogPreview",
-          "caption": "Heart-rate summary card."
+          "caption": "Heart-rate summary card at the default 65 bpm.",
+          "variants": [
+            {
+              "preview": "HeartRateCardRestingPreview",
+              "caption": "A resting 48 bpm — the two-digit case for the headline number.",
+              "props": { "averageBpm": "48" }
+            },
+            {
+              "preview": "HeartRateCardDarkPreview",
+              "caption": "The card on the dark palette.",
+              "props": { "mode": "dark" }
+            }
+          ]
         },
         {
           "componentId": "Cards/Wellness",
           "preview": "WellnessCardCatalogPreview",
-          "caption": "Wellness summary card."
+          "caption": "Wellness summary card on the default sample values.",
+          "variants": [
+            {
+              "preview": "WellnessCardRecordedPreview",
+              "caption": "A heavily recorded night — three-digit counts, which is where the bubbles' text fitting shows.",
+              "props": { "snoring": "128", "coughing": "42", "respiration": "17" }
+            },
+            {
+              "preview": "WellnessCardDarkPreview",
+              "caption": "The same recorded night on the dark palette.",
+              "props": { "mode": "dark" }
+            }
+          ]
+        },
+        {
+          "componentId": "Cards/Wellness bubble",
+          "preview": "WellnessBubblePreview",
+          "caption": "One wellness bubble on its own — title, count and metric inside a circle."
+        },
+        {
+          "componentId": "Cards/Informational card",
+          "preview": "BasicInformationalCardPreview",
+          "caption": "The border-coloured card shell every summary card is built on."
+        },
+        {
+          "componentId": "Cards/Two-line info",
+          "preview": "TwoLineInfoCardPreview",
+          "caption": "Icon over two lines of text, stacked.",
+          "variants": [
+            {
+              "preview": "TwoLineInfoCardWidePreview",
+              "caption": "Above 400dp the card flips from a stacked column to an icon-beside-text row.",
+              "props": { "widthDp": "520" }
+            }
+          ]
+        },
+        {
+          "componentId": "Cards/Card heading",
+          "preview": "HomeScreenCardHeadingPreview",
+          "caption": "The heading style shared by every card."
         }
       ]
     },
@@ -75,13 +238,42 @@
         {
           "componentId": "Chrome/Header",
           "preview": "JetLaggedHeaderCatalogPreview",
-          "caption": "Screen header."
+          "caption": "Screen header — menu button and title over the moving-stripes background.",
+          "variants": [
+            {
+              "preview": "JetLaggedHeaderDarkPreview",
+              "caption": "The header on the dark palette.",
+              "props": { "mode": "dark" }
+            }
+          ]
         },
+        {
+          "componentId": "Chrome/Range tabs",
+          "preview": "JetLaggedHeaderTabsPreview",
+          "caption": "The Day/Week/Month/6M/1Y scrollable tab row, selected on Week.",
+          "variants": [
+            {
+              "preview": "JetLaggedHeaderTabsDayPreview",
+              "caption": "Selected on Day — the indicator sits at the leading edge with no scroll offset.",
+              "props": { "selectedTab": "Day" }
+            },
+            {
+              "preview": "JetLaggedHeaderTabsOneYearPreview",
+              "caption": "Selected on 1Y — the row has scrolled its last tab into view.",
+              "props": { "selectedTab": "1Y" }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Motion",
+      "section": "Animations",
+      "components": [
         {
           "componentId": "Motion/Fading circle",
           "preview": "FadingCirclePreview",
-          "caption": "The loading indicator's fading-circle animation, captured as a still frame.",
-          "section": "Animations"
+          "caption": "The loading indicator's fading-circle animation, captured as a still frame."
         }
       ]
     }

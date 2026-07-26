@@ -136,6 +136,8 @@ dependencies {
     implementation(libs.androidx.compose.ui.googlefonts)
     implementation(libs.androidx.compose.ui.tooling.preview)
     debugImplementation(libs.androidx.compose.ui.tooling)
+    // `@ThemeCatalog` lives in the debug catalog only — it never reaches a release build.
+    debugImplementation(libs.composeai.preview.annotations)
 
     implementation(libs.coil.kt.compose)
 
