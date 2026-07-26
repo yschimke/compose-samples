@@ -1,0 +1,118 @@
+name: Design Artifacts
+
+# Render each sample's `@Preview` catalog and publish its importable sticker
+# sheet to a clean `design-artifacts/<system>` branch, which the public preview
+# server (preview.coo.ee) serves at /<system>/.
+#
+# Every sample declares its inventory in a `catalog.spec.json` pointing at the
+# `@Preview` functions the sample already ships — adopting compose-preview here
+# cost a plugin line per module plus that file, with no UI code changes.
+#
+# The render → validate → generate → publish pipeline is delegated wholesale to
+# the reusable workflow in compose-ai-tools; this file is only the per-sample
+# matrix. Note that each sample is its OWN Gradle build (JetNews/gradlew,
+# Jetcaster/gradlew, …) with no build at the repo root, hence working-directory.
+
+on:
+  workflow_dispatch:
+    inputs:
+      allow_incomplete:
+        description: 'Publish even if some previews fail to render or lack semantics (use while tuning a spec).'
+        type: boolean
+        default: false
+  push:
+    branches:
+      - previews
+
+permissions:
+  contents: read
+
+concurrency:
+  group: design-artifacts-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    # Never let a fork of this fork push delivery branches here.
+    if: ${{ github.repository == 'yschimke/compose-samples' }}
+    name: ${{ matrix.system }}
+    permissions:
+      contents: write
+    strategy:
+      # One sample's render failing shouldn't stop the others publishing.
+      fail-fast: false
+      matrix:
+        include:
+          - system: jetnews
+            spec: JetNews/catalog.spec.json
+            dir: JetNews
+            module: ':app'
+          - system: jetcaster
+            spec: Jetcaster/catalog.spec.json
+            dir: Jetcaster
+            module: ':mobile'
+          - system: jetchat
+            spec: Jetchat/catalog.spec.json
+            dir: Jetchat
+            module: ':app'
+          - system: jetsnack
+            spec: Jetsnack/catalog.spec.json
+            dir: Jetsnack
+            module: ':app'
+          - system: jetlagged
+            spec: JetLagged/catalog.spec.json
+            dir: JetLagged
+            module: ':app'
+          - system: reply
+            spec: Reply/catalog.spec.json
+            dir: Reply
+            module: ':app'
+          # jetcaster-wear stays out, and this is measured rather than assumed.
+          # Enabled against 0.17.23 on 2026-07-25 (run 30165501068) to retest,
+          # since compose-ai-tools#2729 (per-param IR, v0.17.19) and #2744
+          # (--with-semantics fetched by raw preview id, v0.17.22 — which cured
+          # the same failure on wear-m3) had landed since the original 0.17.17
+          # finding. It still fails:
+          #
+          #   missing renders for: Podcast/Content, Player/Controls
+          #   no semantics for: Podcast/Row, Podcast/Details, Library/Screen,
+          #     Episode/Latest, Episode/Screen, Queue/Screen, Episode/Loading,
+          #     Podcast/Empty, Queue/Empty
+          #   incomplete render — refusing to publish
+          #
+          # Nine "no semantics" entries — exactly the nine previews that take a
+          # @PreviewParameter. Two entries fail differently, with no PNG at all.
+          # Re-enable when the daemon render path produces data products for a
+          # @PreviewParameter fan-out; until then zero-arg wrapper previews are
+          # the workaround (see the PostCard/Popular wrapper in JetNews). The
+          # spec is committed and validates with the preview-annotations wired
+          # below, so re-enabling is just restoring the matrix entry:
+          #
+          #   - system: jetcaster-wear
+          #     spec: Jetcaster/catalog.wear.spec.json
+          #     dir: Jetcaster
+          #     module: ':wear'
+          #     preview-annotations: WearPreviewDevices WearPreviewFontScales
+    uses: yschimke/compose-ai-tools/.github/workflows/design-artifacts-reusable.yml@main
+    with:
+      system: ${{ matrix.system }}
+      spec: ${{ matrix.spec }}
+      module: ${{ matrix.module }}
+      working-directory: ${{ matrix.dir }}
+      preview-annotations: ${{ matrix.preview-annotations || '' }}
+      # Carry the executable render bundle onto the delivery branch and split it
+      # per preview, so preview.coo.ee re-renders these live instead of replaying
+      # baked PNGs — that's what makes the device / theme / knob controls do
+      # anything. Both default off, which is why the six samples all badged
+      # "serves baked PNG snapshots only" on their first publish. These are
+      # Android (Robolectric) renders and the serve host runs an Android daemon
+      # (it already re-renders wear-m3, remote-m3 and meshcore-mobile:app live),
+      # so `full` split mode — each per-preview bundle keeping its re-render
+      # classpath — is the right tier here.
+      publish-live-bundle: true
+      split-per-preview: true
+      split-mode: full
+      allow-incomplete: ${{ inputs.allow_incomplete || false }}
+      commit-user-name: Yuri Schimke
+      commit-user-email: yuri@schimke.ee
+      timeout-minutes: 90
