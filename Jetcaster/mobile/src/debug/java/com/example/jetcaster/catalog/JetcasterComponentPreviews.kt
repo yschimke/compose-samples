@@ -80,9 +80,12 @@ import kotlinx.collections.immutable.toImmutableList
  * were file-`private` were widened to `internal` — the debug and main source sets are one Kotlin
  * compilation, so `internal` is the narrowest visibility that reaches them.
  *
- * Note that [JetcasterTheme] resolves to the dark scheme unconditionally, so there is no meaningful
- * light-mode `@Preview` here. Jetcaster's five other colour schemes are exposed instead as
- * `@ThemeCatalog`s — see `JetcasterThemeCatalogs.kt`.
+ * Most previews here are dark, because dark is what Jetcaster is designed around, but light mode is
+ * now real: [JetcasterTheme] used to resolve the dark scheme unconditionally and now follows the
+ * system setting, so the light half of the design system is reachable for the first time. The
+ * light-mode section below covers the surfaces where the palette swap actually changes something.
+ * The medium- and high-contrast schemes have no code path that selects them, so those remain
+ * exposed as `@ThemeCatalog`s — see `JetcasterThemeCatalogs.kt`.
  */
 
 // ---------------------------------------------------------------- sample data
@@ -125,8 +128,12 @@ private val library = LibraryInfo(
         PodcastToEpisodeInfo(podcast = unsubscribedPodcast, episode = longTitleEpisode),
 )
 
+// The mode is pinned explicitly rather than left to isSystemInDarkTheme(), so a render is never at
+// the mercy of the harness's default uiMode. Dark is the default because dark is what Jetcaster is
+// designed around; the light variants below exist to exercise the other half of the design system,
+// which JetcasterTheme only started resolving once it stopped hardcoding darkScheme.
 @Composable
-private fun Wrap(content: @Composable () -> Unit) = JetcasterTheme {
+private fun Wrap(dark: Boolean = true, content: @Composable () -> Unit) = JetcasterTheme(darkTheme = dark) {
     Surface { Box(Modifier.padding(8.dp)) { content() } }
 }
 
@@ -498,11 +505,97 @@ fun JetcasterHomeErrorPreview() = Wrap { HomeScreenError(onRetry = {}) }
 @Composable
 fun JetcasterOfflineDialogPreview() = Wrap { OfflineDialog(onRetry = {}) }
 
+// ---------------------------------------------------------------- light mode
+//
+// JetcasterTheme used to resolve darkScheme unconditionally, so none of these were reachable. They
+// cover the surfaces where swapping the palette actually changes something worth reviewing: filled
+// containers, selected-state colouring, and text over artwork.
+
+@Preview(name = "EpisodeListItem — light", showBackground = true, widthDp = 412)
+@Composable
+fun JetcasterEpisodeRowLightPreview() = Wrap(dark = false) {
+    EpisodeListItem(
+        episode = episode,
+        podcast = subscribedPodcast,
+        onClick = {},
+        onQueueEpisode = {},
+        showSummary = true,
+        modifier = Modifier.fillMaxWidth(),
+    )
+}
+
+@Preview(name = "PodcastDetails header — light", showBackground = true, widthDp = 412, heightDp = 640)
+@Composable
+fun JetcasterPodcastDetailsHeaderLightPreview() = Wrap(dark = false) {
+    PodcastDetailsHeaderItem(
+        podcast = subscribedPodcast,
+        toggleSubscribe = {},
+        modifier = Modifier.fillMaxWidth(),
+    )
+}
+
+@Preview(name = "PlayerButtons — light", showBackground = true, widthDp = 412, heightDp = 300)
+@Composable
+fun JetcasterPlayerButtonsLightPreview() = Wrap(dark = false) {
+    PlayerButtons(
+        hasNext = true,
+        isPlaying = true,
+        onPlayPress = {},
+        onPausePress = {},
+        onAdvanceBy = {},
+        onRewindBy = {},
+        onNext = {},
+        onPrevious = {},
+    )
+}
+
+@Preview(name = "PillToolbar — light", showBackground = true, widthDp = 412)
+@Composable
+fun JetcasterPillToolbarLightPreview() = Wrap(dark = false) {
+    PillToolbar(selectedHomeCategory = HomeCategory.Library, onHomeAction = {})
+}
+
+@Preview(name = "TopPodcastRowItem — light", showBackground = true, widthDp = 160)
+@Composable
+fun JetcasterTopPodcastRowItemLightPreview() = Wrap(dark = false) {
+    TopPodcastRowItem(
+        podcastTitle = subscribedPodcast.title,
+        podcastImageUrl = subscribedPodcast.imageUrl,
+        isFollowed = true,
+        onToggleFollowClicked = {},
+        modifier = Modifier.fillMaxWidth(),
+    )
+}
+
+@Preview(name = "Home — library, light", showBackground = true, widthDp = 412, heightDp = 900)
+@Composable
+fun JetcasterHomeLibraryLightPreview() = JetcasterTheme(darkTheme = false) {
+    HomeScreen(
+        isHomeAppBarExpanded = true,
+        isLoading = false,
+        featuredPodcasts = listOf(subscribedPodcast, unsubscribedPodcast).toImmutableList(),
+        homeCategories = HomeCategory.entries,
+        selectedHomeCategory = HomeCategory.Library,
+        filterableCategoriesModel = FilterableCategoriesModel(
+            categories = PreviewCategories,
+            selectedCategory = PreviewCategories.first(),
+        ),
+        podcastCategoryFilterResult = PodcastCategoryFilterResult(
+            topPodcasts = PreviewPodcasts,
+            episodes = PreviewPodcastEpisodes,
+        ),
+        library = library,
+        onHomeAction = {},
+        navigateToPodcastDetails = {},
+        navigateToPlayer = {},
+    )
+}
+
 // ---------------------------------------------------------------- home screen
 
 @Preview(name = "Home — library", showBackground = true, widthDp = 412, heightDp = 900)
 @Composable
-fun JetcasterHomeLibraryPreview() = JetcasterTheme {
+fun JetcasterHomeLibraryPreview() = JetcasterTheme(darkTheme = true) {
     HomeScreen(
         isHomeAppBarExpanded = true,
         isLoading = false,
@@ -526,7 +619,7 @@ fun JetcasterHomeLibraryPreview() = JetcasterTheme {
 
 @Preview(name = "Home — library, refreshing", showBackground = true, widthDp = 412, heightDp = 900)
 @Composable
-fun JetcasterHomeLoadingPreview() = JetcasterTheme {
+fun JetcasterHomeLoadingPreview() = JetcasterTheme(darkTheme = true) {
     HomeScreen(
         isHomeAppBarExpanded = true,
         isLoading = true,

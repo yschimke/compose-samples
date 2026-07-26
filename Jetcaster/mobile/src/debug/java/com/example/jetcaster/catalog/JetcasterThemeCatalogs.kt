@@ -36,14 +36,14 @@ import ee.schimke.composeai.preview.ThemeCatalog
  * `@ThemeCatalog` providers for Jetcaster's colour schemes.
  *
  * Jetcaster's design system defines six schemes — light and dark, each at standard, medium and high
- * contrast — but `JetcasterTheme` resolves exactly one of them: `darkScheme`. The other five are
- * dead ends as far as review is concerned. There is no `darkTheme` parameter to flip and no system
- * setting that reaches them, so five sixths of the sample's colour work has never been visible in
- * any `@Preview`, in the IDE or in CI.
+ * contrast. `JetcasterTheme` used to resolve exactly one of them, `darkScheme`, with no parameter to
+ * flip and no system setting that reached the others, so five sixths of the sample's colour work was
+ * invisible everywhere: in the app, in the IDE, and in CI.
  *
- * That also explains why the component previews in this package are dark-only: writing a "light
- * mode" `@Preview` for Jetcaster would be a lie, because the app has no light mode. The schemes are
- * real, they are maintained, and they ship — they are simply not wired to anything.
+ * Light and dark are now genuinely selectable — `JetcasterTheme` follows `isSystemInDarkTheme()` —
+ * so those two are covered by ordinary `@Preview`s as well. The four contrast variants still have no
+ * code path that selects them: Material 3 resolves contrast from `UiModeManager` at runtime, which
+ * is unavailable in preview (b/336693596), so they remain reachable only from here.
  *
  * Declaring each as a `@ThemeCatalog` renders it against a canned Material 3 role + type-scale grid,
  * so the full contrast ladder (3 levels × 2 modes) becomes reviewable as a matrix without changing
