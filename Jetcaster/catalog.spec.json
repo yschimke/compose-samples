@@ -1,6 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/yschimke/compose-ai-tools/main/scripts/design-artifacts/catalog.spec.schema.json",
-  "$comment": "Jetcaster (mobile) sticker sheet. Jetcaster is the multi-form-factor sample — phone, Wear, TV and a Glance widget share one core. This catalog covers the phone tier; the Wear tier has its own sheet in catalog.wear.spec.json so the two can be compared side by side.",
+  "$comment": "Jetcaster (mobile) sticker sheet. Jetcaster is the multi-form-factor sample — phone, Wear, TV and a Glance widget share one core. This catalog covers the phone tier; the Wear tier has its own sheet in catalog.wear.spec.json so the two can be compared side by side. Two things are worth knowing when reading this sheet. First, every entry here is dark: JetcasterTheme resolves darkScheme unconditionally and exposes no light path, so a 'light mode' preview would be fiction — the five other schemes the design system ships are surfaced as @ThemeCatalogs instead, which is the only place they are visible at all. Second, this module ships no app tour: Jetcaster's home is driven by Room plus live RSS fetches and the renderer has no network, so the app cold-starts with an empty database and no stable click targets, and the synthetic activity__MainActivity render is a near-empty frame for the same reason. The states below are therefore driven directly from the :core:domain-testing fixtures rather than through the running app.",
   "system": "jetcaster",
   "title": "Jetcaster",
   "library": [
@@ -8,7 +8,7 @@
     "androidx.compose.material3.adaptive:adaptive"
   ],
   "module": ":mobile",
-  "modes": ["light", "dark"],
+  "modes": ["dark"],
   "breakpoints": [
     { "size": "compact", "widthDp": 412 },
     { "size": "medium", "widthDp": 700 },
@@ -19,8 +19,113 @@
     "surface": "dark",
     "hero": "Podcast/Card"
   },
-  "groupOrder": ["Discover", "Player", "Chrome"],
+  "groupOrder": [
+    "Home",
+    "Podcast details",
+    "Discover",
+    "Episodes",
+    "Player",
+    "Chrome",
+    "States"
+  ],
   "groups": [
+    {
+      "name": "Home",
+      "section": "Screens",
+      "components": [
+        {
+          "componentId": "Home/Library",
+          "preview": "JetcasterHomeLibraryPreview",
+          "caption": "The full home screen on the Library tab, driven by fixture data rather than a live feed.",
+          "variants": [
+            {
+              "preview": "JetcasterHomeLoadingPreview",
+              "caption": "Refreshing — the loading state over an empty library.",
+              "props": { "isLoading": true }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Podcast details",
+      "section": "Screens",
+      "components": [
+        {
+          "componentId": "PodcastDetails/Screen",
+          "preview": "PodcastDetailsScreenPreview",
+          "caption": "Podcast details across the five sample devices — the sample's own adaptive preview.",
+          "variants": [
+            {
+              "preview": "JetcasterPodcastDetailsFullScreenPreview",
+              "caption": "Full screen, with the back affordance.",
+              "props": { "showBackButton": true }
+            },
+            {
+              "preview": "JetcasterPodcastDetailsPanePreview",
+              "caption": "As the supporting pane of a list/detail layout — back affordance drops away.",
+              "props": { "showBackButton": false }
+            },
+            {
+              "preview": "JetcasterPodcastDetailsContentPreview",
+              "caption": "Just the scrolling content: header, description, then the episode list.",
+              "props": { "scope": "content only" }
+            }
+          ]
+        },
+        {
+          "componentId": "PodcastDetails/Header",
+          "preview": "PodcastDetailsHeaderItemPreview",
+          "caption": "Podcast details header: artwork, title, and the follow affordance.",
+          "variants": [
+            {
+              "preview": "JetcasterPodcastDetailsHeaderPreview",
+              "caption": "Subscribed — the action row shows the unsubscribe path.",
+              "props": { "isSubscribed": true }
+            },
+            {
+              "preview": "JetcasterPodcastDetailsHeaderUnsubscribedPreview",
+              "caption": "Not subscribed.",
+              "props": { "isSubscribed": false }
+            },
+            {
+              "preview": "JetcasterPodcastDetailsHeaderLongTitlePreview",
+              "caption": "A title long enough to wrap and truncate.",
+              "props": { "title": "overflowing" }
+            }
+          ]
+        },
+        {
+          "componentId": "PodcastDetails/Description",
+          "preview": "JetcasterPodcastDescriptionPreview",
+          "caption": "Show notes short enough to fit inside the collapsed line limit.",
+          "variants": [
+            {
+              "preview": "JetcasterPodcastDescriptionOverflowPreview",
+              "caption": "Overflowing — the 'see more' affordance appears.",
+              "props": { "overflow": true }
+            }
+          ]
+        },
+        {
+          "componentId": "PodcastDetails/App bar",
+          "preview": "JetcasterPodcastDetailsTopAppBarPreview",
+          "caption": "Details app bar with the back affordance."
+        },
+        {
+          "componentId": "PodcastDetails/Subscribe",
+          "preview": "JetcasterSubscribeButtonsPreview",
+          "caption": "Subscribe action row, not yet subscribed.",
+          "variants": [
+            {
+              "preview": "JetcasterSubscribeButtonsSubscribedPreview",
+              "caption": "Subscribed.",
+              "props": { "isSubscribed": true }
+            }
+          ]
+        }
+      ]
+    },
     {
       "name": "Discover",
       "section": "Components",
@@ -32,19 +137,91 @@
           "parallel": "Podcast/Row"
         },
         {
-          "componentId": "Podcast/Details header",
-          "preview": "PodcastDetailsHeaderItemPreview",
-          "caption": "Podcast details header: artwork, title, and the follow affordance."
+          "componentId": "Podcast/Row item",
+          "preview": "JetcasterTopPodcastRowItemPreview",
+          "caption": "Carousel item, not followed.",
+          "variants": [
+            {
+              "preview": "JetcasterTopPodcastRowItemFollowedPreview",
+              "caption": "Followed — the toggle fills in.",
+              "props": { "isFollowed": true }
+            },
+            {
+              "preview": "JetcasterTopPodcastRowItemLongTitlePreview",
+              "caption": "A title long enough to truncate under the artwork.",
+              "props": { "title": "overflowing" }
+            }
+          ]
         },
+        {
+          "componentId": "Podcast/Row",
+          "preview": "JetcasterCategoryPodcastRowPreview",
+          "caption": "The horizontally scrolling row of podcasts within a category."
+        },
+        {
+          "componentId": "Discover/Category tabs",
+          "preview": "JetcasterCategoryTabsPreview",
+          "caption": "Scrollable category tabs with the second category selected."
+        },
+        {
+          "componentId": "Discover/Category chip",
+          "preview": "JetcasterCategoryChipPreview",
+          "caption": "Category chip, unselected.",
+          "variants": [
+            {
+              "preview": "JetcasterCategoryChipSelectedPreview",
+              "caption": "Selected.",
+              "props": { "selected": true }
+            }
+          ]
+        },
+        {
+          "componentId": "Podcast/Follow toggle",
+          "preview": "JetcasterFollowToggleUnfollowedPreview",
+          "caption": "The follow toggle in its resting state.",
+          "variants": [
+            {
+              "preview": "JetcasterFollowToggleFollowedPreview",
+              "caption": "Following — the icon swaps to a check.",
+              "props": { "isFollowed": true }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Episodes",
+      "section": "Components",
+      "components": [
         {
           "componentId": "Episode/List item",
           "preview": "EpisodeListItemPreview",
-          "caption": "Episode row with duration and download state.",
-          "parallel": "Episode/Screen",
+          "caption": "Episode row as the sample's own preview drives it.",
           "variants": [
             {
               "preview": "PreviewEpisodeListItem",
-              "caption": "Episode row in its alternate content configuration."
+              "caption": "The second shipped preview of the same row.",
+              "props": { "source": "sample" }
+            },
+            {
+              "preview": "JetcasterEpisodeRowPreview",
+              "caption": "Fixture-driven, with a real duration.",
+              "props": { "duration": "52m" }
+            },
+            {
+              "preview": "JetcasterEpisodeRowSummaryPreview",
+              "caption": "With the summary expanded.",
+              "props": { "showSummary": true }
+            },
+            {
+              "preview": "JetcasterEpisodeRowNoArtworkPreview",
+              "caption": "Artwork suppressed — the shape used inside podcast details, where the artwork is already in the header.",
+              "props": { "showPodcastImage": false }
+            },
+            {
+              "preview": "JetcasterEpisodeRowLongTitlePreview",
+              "caption": "A long title with no duration — the two-line truncation case.",
+              "props": { "duration": null }
             }
           ]
         }
@@ -57,29 +234,114 @@
         {
           "componentId": "Player/Transport",
           "preview": "PlayerButtonsPreview",
-          "caption": "Playback transport controls — the touch-target sizes here are what the a11y greenlines check.",
-          "parallel": "Player/Controls"
+          "caption": "Transport controls as the sample's own preview drives them.",
+          "variants": [
+            {
+              "preview": "JetcasterPlayerButtonsPlayingPreview",
+              "caption": "Playing — the primary action is pause.",
+              "props": { "isPlaying": true }
+            },
+            {
+              "preview": "JetcasterPlayerButtonsPausedPreview",
+              "caption": "Paused.",
+              "props": { "isPlaying": false }
+            },
+            {
+              "preview": "JetcasterPlayerButtonsNoQueuePreview",
+              "caption": "Empty queue — the skip-next affordance has nothing to advance to.",
+              "props": { "hasNext": false }
+            }
+          ]
+        },
+        {
+          "componentId": "Player/Slider",
+          "preview": "JetcasterPlayerSliderPreview",
+          "caption": "Scrubber at the start of an episode.",
+          "variants": [
+            {
+              "preview": "JetcasterPlayerSliderElapsedPreview",
+              "caption": "Eighteen minutes into a 52-minute episode.",
+              "props": { "timeElapsed": "18m" }
+            }
+          ]
+        },
+        {
+          "componentId": "Player/Episode information",
+          "preview": "JetcasterPodcastInformationPreview",
+          "caption": "Episode title, podcast name and summary as stacked on the player."
+        },
+        {
+          "componentId": "Player/App bar",
+          "preview": "JetcasterPlayerTopAppBarPreview",
+          "caption": "Player app bar: back, plus add-to-queue."
         }
       ]
     },
     {
       "name": "Chrome",
-      "section": "Screens",
+      "section": "Components",
       "components": [
         {
           "componentId": "Chrome/Home app bar",
           "preview": "HomeAppBarPreview",
-          "caption": "Home app bar with search and profile affordances."
+          "caption": "Home app bar as the sample's own preview drives it.",
+          "variants": [
+            {
+              "preview": "JetcasterHomeAppBarPreview",
+              "caption": "Collapsed.",
+              "props": { "isExpanded": false }
+            },
+            {
+              "preview": "JetcasterHomeAppBarExpandedPreview",
+              "caption": "Expanded — the search field opens out.",
+              "props": { "isExpanded": true }
+            }
+          ]
+        },
+        {
+          "componentId": "Chrome/Pill toolbar",
+          "preview": "JetcasterPillToolbarDiscoverPreview",
+          "caption": "The floating pill toolbar with Discover selected.",
+          "variants": [
+            {
+              "preview": "JetcasterPillToolbarLibraryPreview",
+              "caption": "Library selected — the selected pill takes the secondary colour.",
+              "props": { "selected": "Library" }
+            }
+          ]
         },
         {
           "componentId": "Chrome/Top app bar",
           "preview": "TopAppBarPreview",
-          "caption": "Standard top app bar."
-        },
+          "caption": "The shared top app bar."
+        }
+      ]
+    },
+    {
+      "name": "States",
+      "section": "Components",
+      "components": [
         {
           "componentId": "Chrome/Home error",
           "preview": "HomeScreenErrorPreview",
-          "caption": "Home in its error state — the failure path, rendered rather than described."
+          "caption": "Home error state as the sample's own preview drives it.",
+          "variants": [
+            {
+              "preview": "JetcasterHomeErrorPreview",
+              "caption": "The same error state with its retry affordance.",
+              "props": { "onRetry": "present" }
+            }
+          ]
+        },
+        {
+          "componentId": "States/Loading",
+          "preview": "JetcasterLoadingPreview",
+          "caption": "The shared loading indicator."
+        },
+        {
+          "componentId": "States/Offline",
+          "preview": "JetcasterOfflineDialogPreview",
+          "caption": "Offline dialog, shown when the feed refresh cannot reach the network."
         }
       ]
     }

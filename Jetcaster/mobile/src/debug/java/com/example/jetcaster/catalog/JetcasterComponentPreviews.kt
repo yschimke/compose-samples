@@ -111,7 +111,10 @@ private val longTitlePodcast = subscribedPodcast.copy(
 
 private val episode = PreviewEpisodes[0].copy(duration = Duration.ofMinutes(52))
 
+// A distinct `uri` matters: it is the LazyColumn key, and the shipped fixture list holds exactly one
+// episode, so a plain copy() of it collides with itself the moment two rows share a list.
 private val longTitleEpisode = PreviewEpisodes[0].copy(
+    uri = "fakeUri://episode/2",
     title = "Episode 141: A remarkably long episode title that has to wrap onto a second line " +
         "and then be truncated with an ellipsis",
     duration = null,

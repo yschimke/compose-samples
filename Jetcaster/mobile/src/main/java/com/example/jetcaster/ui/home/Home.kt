@@ -200,7 +200,7 @@ fun MainScreen(windowSizeClass: WindowSizeClass, navigateToPlayer: (EpisodeInfo)
 }
 
 @Composable
-private fun HomeScreenError(onRetry: () -> Unit, modifier: Modifier = Modifier) {
+internal fun HomeScreenError(onRetry: () -> Unit, modifier: Modifier = Modifier) {
     Surface(modifier = modifier) {
         Column(
             verticalArrangement = Arrangement.Center,
@@ -299,7 +299,7 @@ private fun HomeScreenReady(
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-private fun HomeAppBar(isExpanded: Boolean, modifier: Modifier = Modifier) {
+internal fun HomeAppBar(isExpanded: Boolean, modifier: Modifier = Modifier) {
     var queryText by remember {
         mutableStateOf("")
     }
@@ -360,7 +360,7 @@ private fun HomeScreenBackground(modifier: Modifier = Modifier, content: @Compos
 }
 
 @Composable
-private fun HomeScreen(
+internal fun HomeScreen(
     isHomeAppBarExpanded: Boolean,
     isLoading: Boolean,
     featuredPodcasts: ImmutableList<PodcastInfo>,
