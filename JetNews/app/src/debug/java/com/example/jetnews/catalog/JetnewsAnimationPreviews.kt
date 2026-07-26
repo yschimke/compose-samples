@@ -43,7 +43,7 @@ import com.example.jetnews.ui.utils.BookmarkButton
 import ee.schimke.composeai.preview.AnimatedPreview
 import kotlinx.coroutines.delay
 
-/**
+/*
  * Motion previews for the JetNews sticker sheet.
  *
  * These live in `src/debug` on purpose: they are catalog fixtures, not app code,

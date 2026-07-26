@@ -319,7 +319,7 @@ private val tabContainerModifier = Modifier
  * @param onTopicSelect (event) request a topic selection be changed
  */
 @Composable
-private fun TabWithTopics(topics: List<String>, selectedTopics: Set<String>, onTopicSelect: (String) -> Unit) {
+internal fun TabWithTopics(topics: List<String>, selectedTopics: Set<String>, onTopicSelect: (String) -> Unit) {
     InterestsAdaptiveContentLayout(
         topPadding = 16.dp,
         modifier = tabContainerModifier.verticalScroll(rememberScrollState()),
@@ -342,7 +342,11 @@ private fun TabWithTopics(topics: List<String>, selectedTopics: Set<String>, onT
  * @param onTopicSelect (event) request a topic+section selection be changed
  */
 @Composable
-private fun TabWithSections(sections: List<InterestSection>, selectedTopics: Set<TopicSelection>, onTopicSelect: (TopicSelection) -> Unit) {
+internal fun TabWithSections(
+    sections: List<InterestSection>,
+    selectedTopics: Set<TopicSelection>,
+    onTopicSelect: (TopicSelection) -> Unit,
+) {
     Column(tabContainerModifier.verticalScroll(rememberScrollState())) {
         sections.forEach { (section, topics) ->
             Text(

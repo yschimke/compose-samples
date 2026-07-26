@@ -1,6 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/yschimke/compose-ai-tools/main/scripts/design-artifacts/catalog.spec.schema.json",
-  "$comment": "JetNews sticker sheet. Every entry points at a @Preview the sample already ships — adopting compose-preview here cost a plugin line and this file, no UI code changes. Grouping is by the feature JetNews exists to demonstrate: adaptive list/detail navigation, Material 3 theming, and reader typography.",
+  "$comment": "JetNews sticker sheet. Most entries point at a @Preview the sample already shipped — adopting compose-preview here cost a plugin line and this file. The state-level variants (loading, empty, error, bookmarked, selected destination, expanded list/detail) come from catalog fixtures in src/debug, which drive the real screens with fixture data rather than re-implementing them. Grouping is by the feature JetNews exists to demonstrate: adaptive list/detail navigation, Material 3 theming, and reader typography.",
   "system": "jetnews",
   "title": "JetNews",
   "library": [
@@ -34,6 +34,43 @@
               "preview": "PreviewHomeListNavRailScreen",
               "caption": "Expanded posture: the drawer is replaced by a persistent navigation rail.",
               "props": { "posture": "expanded" }
+            },
+            {
+              "preview": "PreviewHomeFeedBookmarked",
+              "caption": "Three recommended posts bookmarked — every trailing toggle flips from outline to filled.",
+              "state": "selected"
+            },
+            {
+              "preview": "PreviewHomeFeedLoading",
+              "caption": "First load in flight: a full-screen indeterminate progress indicator.",
+              "state": "loading"
+            },
+            {
+              "preview": "PreviewHomeFeedEmpty",
+              "caption": "Loaded but empty — the manual \"tap to load content\" affordance.",
+              "state": "empty"
+            },
+            {
+              "preview": "PreviewHomeFeedError",
+              "caption": "A refresh that failed: the feed stays put and the error arrives as a snackbar.",
+              "state": "error"
+            },
+            {
+              "preview": "PreviewHomeFeedExpandedSearch",
+              "caption": "Expanded width promotes search from a top-bar icon to an inline text field.",
+              "props": { "posture": "medium" }
+            }
+          ]
+        },
+        {
+          "componentId": "Screens/App shell",
+          "preview": "PreviewJetnewsAppCompact",
+          "caption": "The whole app at compact width: one pane, drawer behind the top app bar. The only fixture that exercises JetnewsApp itself — navigation state, window size class and ListDetailScene included.",
+          "variants": [
+            {
+              "preview": "PreviewJetnewsAppExpanded",
+              "caption": "The same app at 1000dp: the drawer becomes a rail and ListDetailScene splits the window into the 334dp feed plus a detail pane with its placeholder.",
+              "props": { "posture": "expanded" }
             }
           ]
         },
@@ -46,18 +83,47 @@
               "preview": "PreviewPostNavRail",
               "caption": "Article screen with the navigation rail at expanded width.",
               "props": { "posture": "expanded" }
+            },
+            {
+              "preview": "PreviewPostScreenBookmarked",
+              "caption": "Article bookmarked — the bottom bar's toggle in its checked treatment.",
+              "state": "selected"
+            },
+            {
+              "preview": "PreviewPostScreenLoading",
+              "caption": "The article route before the post resolves.",
+              "state": "loading"
+            },
+            {
+              "preview": "PreviewPostScreenNotFound",
+              "caption": "A deep link to a post id that no longer exists.",
+              "state": "error"
             }
           ]
         },
         {
           "componentId": "Navigation/Drawer",
           "preview": "PreviewAppDrawer",
-          "caption": "Modal navigation drawer — the compact-width navigation surface."
+          "caption": "Modal navigation drawer — the compact-width navigation surface, Home active.",
+          "variants": [
+            {
+              "preview": "PreviewAppDrawerInterestsSelected",
+              "caption": "Interests active: the selected-item container moves to the second row.",
+              "state": "selected"
+            }
+          ]
         },
         {
           "componentId": "Navigation/Rail",
           "preview": "PreviewAppNavRail",
-          "caption": "Navigation rail — the same destinations at expanded width."
+          "caption": "Navigation rail — the same destinations at expanded width, Home active.",
+          "variants": [
+            {
+              "preview": "PreviewAppNavRailInterestsSelected",
+              "caption": "Interests active: the label follows the selected destination.",
+              "state": "selected"
+            }
+          ]
         }
       ]
     },
@@ -129,17 +195,38 @@
         {
           "componentId": "Interests/Topics tab",
           "preview": "PreviewTopicsTab",
-          "caption": "Topics tab content."
+          "caption": "Topics tab content, nothing subscribed.",
+          "variants": [
+            {
+              "preview": "PreviewTopicsTabSubscribed",
+              "caption": "Two topics subscribed — the selected chip treatment.",
+              "state": "selected"
+            }
+          ]
         },
         {
           "componentId": "Interests/People tab",
           "preview": "PreviewPeopleTab",
-          "caption": "People tab content."
+          "caption": "People tab content, nobody followed.",
+          "variants": [
+            {
+              "preview": "PreviewPeopleTabFollowed",
+              "caption": "The first two people followed.",
+              "state": "selected"
+            }
+          ]
         },
         {
           "componentId": "Interests/Publications tab",
           "preview": "PreviewPublicationsTab",
-          "caption": "Publications tab content."
+          "caption": "Publications tab content, nothing followed.",
+          "variants": [
+            {
+              "preview": "PreviewPublicationsTabFollowed",
+              "caption": "The first two publications followed.",
+              "state": "selected"
+            }
+          ]
         },
         {
           "componentId": "Interests/Select topic",

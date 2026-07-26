@@ -1,0 +1,19 @@
+{
+  "name": "browse-jetnews",
+  "description": "Drives the real MainActivity from the home feed, out through the modal navigation drawer, into Interests and across its three tabs. Every frame is the app after a real click, so it captures the drawer scrim, the selected-destination treatment and the tab-row selection that no single @Preview can produce. The tour stops on the Publications tab rather than navigating home again: JetnewsNavDisplay's crossfade never fully settles under the paused render clock, so the outgoing Home screen stays in the semantics tree and a second 'Open navigation drawer' click has two candidate targets.",
+  "start": { "activityClassName": "com.example.jetnews.ui.MainActivity" },
+  "steps": [
+    { "label": "home feed" },
+    { "label": "feed settled" },
+    { "label": "open the drawer", "click": { "contentDescription": "Open navigation drawer" } },
+    { "label": "drawer opening" },
+    { "label": "drawer open" },
+    { "label": "go to interests", "click": { "text": "Interests" } },
+    { "label": "crossfade" },
+    { "label": "interests settled" },
+    { "label": "people tab", "click": { "text": "People" } },
+    { "label": "people settled" },
+    { "label": "publications tab", "click": { "text": "Publications" } },
+    { "label": "publications settled" }
+  ]
+}
