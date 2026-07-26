@@ -125,6 +125,7 @@ dependencies {
     implementation(libs.androidx.compose.ui.googlefonts)
 
     debugImplementation(libs.androidx.compose.ui.test.manifest)
+    debugImplementation(libs.composeai.preview.annotations)
 
     androidTestImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.core)

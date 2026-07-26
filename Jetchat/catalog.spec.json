@@ -1,6 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/yschimke/compose-ai-tools/main/scripts/design-artifacts/catalog.spec.schema.json",
-  "$comment": "Jetchat sticker sheet. Jetchat's distinguishing feature is that almost every surface has a dark counterpart authored as a separate @Preview function — so the catalog uses `theme` variants to fold each light/dark pair onto one swap card instead of listing them twice. NOTE: MessageItemPreview/WidgetPreview are Glance app-widget composables, not Compose UI — the renderer times out after 180s waiting for them and reports them as missing renders. They need the Glance render path, so they are out of this sheet.",
+  "$comment": "Jetchat sticker sheet. Jetchat's distinguishing feature is that almost every surface has a dark counterpart authored as a separate @Preview function — so the catalog uses `theme` variants to fold each light/dark pair onto one swap card instead of listing them twice. The chat-specific state ladders (own vs other author, first/last in an author group, sticker attachment, formatted @mention / `code` / link spans) come from the debug-only previews in JetchatComponentPreviews.kt. NOTE: MessageItemPreview/WidgetPreview are Glance app-widget composables, not Compose UI — the renderer times out after 180s waiting for them and reports them as missing renders. They need the Glance render path, so they are out of this sheet.",
   "system": "jetchat",
   "title": "Jetchat",
   "library": [
@@ -27,6 +27,8 @@
   },
   "groupOrder": [
     "Conversation",
+    "Messages",
+    "Composer",
     "Profile",
     "Chrome"
   ],
@@ -38,22 +40,45 @@
         {
           "componentId": "Conversation/Screen",
           "preview": "ConversationPreview",
-          "caption": "Conversation screen — message list, input bar and app bar together."
+          "caption": "Conversation screen — message list, input bar and app bar together.",
+          "variants": [
+            {
+              "preview": "JetchatConversationContentDarkPreview",
+              "caption": "Conversation screen, dark theme.",
+              "theme": "dark"
+            },
+            {
+              "preview": "JetchatConversationContentMediumPreview",
+              "caption": "Conversation screen at the 700dp medium breakpoint.",
+              "props": {
+                "breakpoint": "medium"
+              }
+            }
+          ]
         },
         {
           "componentId": "Conversation/Day header",
           "preview": "DayHeaderPrev",
-          "caption": "Date separator between message groups."
-        },
-        {
-          "componentId": "Conversation/Input",
-          "preview": "UserInputPreview",
-          "caption": "Message composer with its emoji/attachment selectors."
+          "caption": "Date separator between message groups.",
+          "variants": [
+            {
+              "preview": "JetchatDayHeaderDarkPreview",
+              "caption": "Date separator, dark theme.",
+              "theme": "dark"
+            }
+          ]
         },
         {
           "componentId": "Conversation/Jump to bottom",
           "preview": "JumpToBottomPreview",
-          "caption": "Jump-to-bottom affordance that appears when scrolled away from the latest message."
+          "caption": "Jump-to-bottom affordance that appears when scrolled away from the latest message.",
+          "variants": [
+            {
+              "preview": "JetchatJumpToBottomDarkPreview",
+              "caption": "Jump-to-bottom pill, dark theme.",
+              "theme": "dark"
+            }
+          ]
         },
         {
           "componentId": "Conversation/Orientation",
@@ -73,6 +98,191 @@
               "props": {
                 "author": "other"
               }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Messages",
+      "section": "Components",
+      "components": [
+        {
+          "componentId": "Messages/Row",
+          "preview": "JetchatMessageOtherPreview",
+          "caption": "A single message row from another author — avatar, name, timestamp and bubble.",
+          "variants": [
+            {
+              "preview": "JetchatMessageMePreview",
+              "caption": "Own message: primary-tinted bubble, right-aligned author line, no avatar.",
+              "props": {
+                "author": "me"
+              }
+            },
+            {
+              "preview": "JetchatMessageContinuationPreview",
+              "caption": "Neither first nor last in the author's group — no avatar, no author/timestamp header.",
+              "props": {
+                "grouping": "continuation"
+              }
+            },
+            {
+              "preview": "JetchatMessageWithImagePreview",
+              "caption": "Message carrying the sticker attachment.",
+              "props": {
+                "content": "image"
+              }
+            },
+            {
+              "preview": "JetchatMessageLongTextPreview",
+              "caption": "Long body with an emoji and an https link — the widest formatter coverage.",
+              "props": {
+                "content": "long text + link"
+              }
+            },
+            {
+              "preview": "JetchatMessageOtherDarkPreview",
+              "caption": "Other author's message, dark theme.",
+              "theme": "dark"
+            },
+            {
+              "preview": "JetchatMessageMeDarkPreview",
+              "caption": "Own message, dark theme.",
+              "theme": "dark",
+              "props": {
+                "author": "me"
+              }
+            }
+          ]
+        },
+        {
+          "componentId": "Messages/Author and text",
+          "preview": "JetchatAuthorAndTextMessagePreview",
+          "caption": "Author name + timestamp header above the bubble, shown on the group head.",
+          "variants": [
+            {
+              "preview": "JetchatAuthorAndTextMessageContinuedPreview",
+              "caption": "Continuation row — the header is suppressed.",
+              "props": {
+                "grouping": "continuation"
+              }
+            }
+          ]
+        },
+        {
+          "componentId": "Messages/Bubble",
+          "preview": "JetchatChatItemBubbleOtherPreview",
+          "caption": "Message bubble as drawn for another author.",
+          "variants": [
+            {
+              "preview": "JetchatChatItemBubbleMePreview",
+              "caption": "Own bubble — primary container colour.",
+              "props": {
+                "author": "me"
+              }
+            },
+            {
+              "preview": "JetchatChatItemBubbleWithImagePreview",
+              "caption": "Bubble with the sticker image attached below the text.",
+              "props": {
+                "content": "image"
+              }
+            }
+          ]
+        },
+        {
+          "componentId": "Messages/Clickable text",
+          "preview": "JetchatClickableMessagePreview",
+          "caption": "Formatted message body — @mention and inline `code` spans.",
+          "variants": [
+            {
+              "preview": "JetchatClickableMessagePrimaryPreview",
+              "caption": "Own-message styling with an https link.",
+              "props": {
+                "author": "me"
+              }
+            }
+          ]
+        },
+        {
+          "componentId": "Messages/List",
+          "preview": "JetchatMessagesPreview",
+          "caption": "The full message list with author grouping and day headers.",
+          "variants": [
+            {
+              "preview": "JetchatMessagesDarkPreview",
+              "caption": "Message list, dark theme.",
+              "theme": "dark"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Composer",
+      "section": "Components",
+      "components": [
+        {
+          "componentId": "Conversation/Input",
+          "preview": "UserInputPreview",
+          "caption": "Message composer with its emoji/attachment selectors.",
+          "variants": [
+            {
+              "preview": "JetchatUserInputDarkPreview",
+              "caption": "Composer, dark theme.",
+              "theme": "dark"
+            }
+          ]
+        },
+        {
+          "componentId": "Composer/Emoji selector",
+          "preview": "JetchatEmojiSelectorPreview",
+          "caption": "Expanded emoji selector panel with its Emojis/Stickers tabs.",
+          "variants": [
+            {
+              "preview": "JetchatEmojiTablePreview",
+              "caption": "The emoji grid on its own.",
+              "props": {
+                "part": "table only"
+              }
+            }
+          ]
+        },
+        {
+          "componentId": "Composer/Selector tab",
+          "preview": "JetchatExtendedSelectorInnerButtonSelectedPreview",
+          "caption": "Selector tab in its selected state.",
+          "variants": [
+            {
+              "preview": "JetchatExtendedSelectorInnerButtonUnselectedPreview",
+              "caption": "Selector tab, unselected.",
+              "state": "unselected"
+            }
+          ]
+        },
+        {
+          "componentId": "Composer/Not available",
+          "preview": "JetchatFunctionalityNotAvailablePanelPreview",
+          "caption": "Placeholder panel shown for the unimplemented composer selectors.",
+          "variants": [
+            {
+              "preview": "JetchatFunctionalityNotAvailablePopupPreview",
+              "caption": "The same message as a dismissable alert instead of an inline panel.",
+              "props": {
+                "presentation": "popup"
+              }
+            }
+          ]
+        },
+        {
+          "componentId": "Composer/Record button",
+          "preview": "JetchatRecordButtonIdlePreview",
+          "caption": "Voice-record button at rest.",
+          "variants": [
+            {
+              "preview": "JetchatRecordButtonRecordingPreview",
+              "caption": "Recording — the button is scaled up and tinted.",
+              "state": "recording"
             }
           ]
         }
@@ -122,9 +332,87 @@
           ]
         },
         {
+          "componentId": "Profile/700dp",
+          "preview": "JetchatProfileScreenMediumPreview",
+          "caption": "Profile at the 700dp medium breakpoint, own profile.",
+          "variants": [
+            {
+              "preview": "JetchatProfileScreenMediumDarkPreview",
+              "caption": "700dp, another user, dark theme.",
+              "theme": "dark",
+              "props": {
+                "subject": "other"
+              }
+            }
+          ]
+        },
+        {
           "componentId": "Profile/FAB",
           "preview": "ProfileFabPreview",
-          "caption": "Profile action button."
+          "caption": "Profile action button.",
+          "variants": [
+            {
+              "preview": "JetchatProfileFabMeExtendedPreview",
+              "caption": "Own profile — the extended \"Edit Profile\" FAB.",
+              "props": {
+                "subject": "me"
+              }
+            },
+            {
+              "preview": "JetchatProfileFabMeCollapsedPreview",
+              "caption": "Own profile, collapsed to the icon after scrolling.",
+              "state": "collapsed",
+              "props": {
+                "subject": "me"
+              }
+            },
+            {
+              "preview": "JetchatProfileFabOtherCollapsedPreview",
+              "caption": "Another user's profile, collapsed.",
+              "state": "collapsed",
+              "props": {
+                "subject": "other"
+              }
+            }
+          ]
+        },
+        {
+          "componentId": "Profile/Animating FAB content",
+          "preview": "JetchatAnimatingFabContentExtendedPreview",
+          "caption": "The icon+label layout that animates between the FAB's two sizes.",
+          "variants": [
+            {
+              "preview": "JetchatAnimatingFabContentCollapsedPreview",
+              "caption": "Collapsed — the label is clipped away, leaving the icon.",
+              "state": "collapsed"
+            }
+          ]
+        },
+        {
+          "componentId": "Profile/Property",
+          "preview": "JetchatProfilePropertyPreview",
+          "caption": "Label/value pair used for every field on the profile screen.",
+          "variants": [
+            {
+              "preview": "JetchatProfilePropertyLinkPreview",
+              "caption": "Link styling for the Twitter handle.",
+              "props": {
+                "content": "link"
+              }
+            },
+            {
+              "preview": "JetchatProfilePropertyAwayPreview",
+              "caption": "Another user's away status and timezone.",
+              "props": {
+                "subject": "other"
+              }
+            }
+          ]
+        },
+        {
+          "componentId": "Profile/Error",
+          "preview": "JetchatProfileErrorPreview",
+          "caption": "Shown when the requested profile can't be resolved."
         }
       ]
     },
@@ -153,13 +441,58 @@
               "preview": "DrawerPreviewDark",
               "caption": "Drawer, dark theme.",
               "theme": "dark"
+            },
+            {
+              "preview": "JetchatDrawerContentChatSelectedPreview",
+              "caption": "Selection moved to the second chat row.",
+              "state": "chat selected"
+            },
+            {
+              "preview": "JetchatDrawerContentProfileSelectedPreview",
+              "caption": "A profile is the current destination, so no chat row is highlighted.",
+              "state": "profile selected"
+            },
+            {
+              "preview": "JetchatDrawerContentProfileSelectedDarkPreview",
+              "caption": "Profile selected, dark theme.",
+              "theme": "dark",
+              "state": "profile selected"
             }
           ]
         },
         {
+          "componentId": "Chrome/Drawer shell",
+          "preview": "JetchatDrawerOpenPreview",
+          "caption": "The modal drawer open over the conversation, scrim included."
+        },
+        {
           "componentId": "Chrome/Channel bar",
           "preview": "ChannelBarPrev",
-          "caption": "Channel name bar."
+          "caption": "Channel name bar.",
+          "variants": [
+            {
+              "preview": "JetchatChannelNameBarDarkPreview",
+              "caption": "Channel bar, dark theme.",
+              "theme": "dark"
+            },
+            {
+              "preview": "JetchatChannelNameBarLongNamePreview",
+              "caption": "A channel name long enough to test truncation.",
+              "props": {
+                "content": "long name"
+              }
+            }
+          ]
+        },
+        {
+          "componentId": "Chrome/Icon",
+          "preview": "JetchatIconPreview",
+          "caption": "The Jetchat mark used in the app bar and drawer header."
+        },
+        {
+          "componentId": "Chrome/Divider",
+          "preview": "JetchatDividerItemPreview",
+          "caption": "Section divider used between drawer groups."
         }
       ]
     }

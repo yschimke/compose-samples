@@ -5,7 +5,7 @@
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- *      http://www.apache.org/licenses/LICENSE-2.0
+ *     https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -13,6 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
+@file:OptIn(ExperimentalMaterial3Api::class)
 
 package com.example.compose.jetchat.catalog
 
@@ -26,6 +28,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.material3.DrawerValue
+import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
@@ -43,6 +46,7 @@ import com.example.compose.jetchat.R
 import com.example.compose.jetchat.components.AnimatingFabContent
 import com.example.compose.jetchat.components.DividerItem
 import com.example.compose.jetchat.components.JetchatDrawer
+import com.example.compose.jetchat.components.JetchatDrawerContent
 import com.example.compose.jetchat.components.JetchatIcon
 import com.example.compose.jetchat.conversation.AuthorAndTextMessage
 import com.example.compose.jetchat.conversation.ChannelNameBar
@@ -66,9 +70,10 @@ import com.example.compose.jetchat.data.meProfile
 import com.example.compose.jetchat.profile.ProfileError
 import com.example.compose.jetchat.profile.ProfileFab
 import com.example.compose.jetchat.profile.ProfileProperty
+import com.example.compose.jetchat.profile.ProfileScreen
 import com.example.compose.jetchat.theme.JetchatTheme
 
-/**
+/*
  * `@Preview`s for Jetchat's components and screens.
  *
  * Jetchat shipped previews for the whole conversation screen, the profile screen, the drawer
@@ -453,7 +458,54 @@ fun JetchatDrawerOpenPreview() {
     }
 }
 
+@Preview(name = "Drawer content — chat selected", showBackground = true, widthDp = 300, heightDp = 560)
+@Composable
+fun JetchatDrawerContentChatSelectedPreview() = Wrap {
+    // `droidcon-nyc` selected rather than the default `composers`: the selected pill moves to the
+    // second chat row, which is the only way to see that the selection is driven by `selectedMenu`.
+    JetchatDrawerContent(onProfileClicked = {}, onChatClicked = {}, selectedMenu = "droidcon-nyc")
+}
+
+@Preview(name = "Drawer content — profile selected", showBackground = true, widthDp = 300, heightDp = 560)
+@Composable
+fun JetchatDrawerContentProfileSelectedPreview() = Wrap {
+    // No chat row is highlighted at all when a profile is the current destination.
+    JetchatDrawerContent(onProfileClicked = {}, onChatClicked = {}, selectedMenu = colleagueProfile.userId)
+}
+
+@Preview(
+    name = "Drawer content — profile selected, dark",
+    showBackground = true,
+    widthDp = 300,
+    heightDp = 560,
+    uiMode = Configuration.UI_MODE_NIGHT_YES,
+)
+@Composable
+fun JetchatDrawerContentProfileSelectedDarkPreview() = Wrap(dark = true) {
+    JetchatDrawerContent(onProfileClicked = {}, onChatClicked = {}, selectedMenu = meProfile.userId)
+}
+
 // ---------------------------------------------------------------- profile
+
+@Preview(name = "Profile — medium width", showBackground = true, widthDp = 700, heightDp = 700)
+@Composable
+fun JetchatProfileScreenMediumPreview() {
+    // The sample's own profile previews stop at 480dp; the catalog's medium breakpoint is 700dp,
+    // where the header photo and the property column lay out differently.
+    JetchatTheme(isDynamicColor = false) { ProfileScreen(meProfile) }
+}
+
+@Preview(
+    name = "Profile — medium width, dark",
+    showBackground = true,
+    widthDp = 700,
+    heightDp = 700,
+    uiMode = Configuration.UI_MODE_NIGHT_YES,
+)
+@Composable
+fun JetchatProfileScreenMediumDarkPreview() {
+    JetchatTheme(isDarkTheme = true, isDynamicColor = false) { ProfileScreen(colleagueProfile) }
+}
 
 @Preview(name = "ProfileProperty", showBackground = true, widthDp = 340)
 @Composable

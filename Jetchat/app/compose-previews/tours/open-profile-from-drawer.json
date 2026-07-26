@@ -1,0 +1,11 @@
+{
+  "name": "open-profile-from-drawer",
+  "description": "Walks Jetchat's real navigation edge: launch the conversation, open the modal drawer from the app bar, and pick a recent profile to land on the profile fragment. Jetchat is a Fragment host driving Compose content, so the drawer-over-conversation state and the conversation-to-profile fragment transition are not reachable from any single @Preview — every frame here is the real NavActivity after a real click. The two label-only steps let the drawer's open animation settle before the next click; the renderer advances the animation clock one step at a time, so the drawer sheet is still sliding in at step 1.",
+  "start": { "activityClassName": "com.example.compose.jetchat.NavActivity" },
+  "steps": [
+    { "label": "open drawer", "click": { "contentDescription": "Open navigation drawer" } },
+    { "label": "drawer settling" },
+    { "label": "drawer open" },
+    { "label": "own profile", "click": { "text": "Ali Conors (you)" } }
+  ]
+}
