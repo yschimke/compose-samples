@@ -63,9 +63,7 @@
             {
               "preview": "JetLaggedScreenDarkPreview",
               "caption": "Compact width on the dark palette — red header, black card surfaces.",
-              "props": {
-                "mode": "dark"
-              }
+              "theme": "dark"
             }
           ]
         }
@@ -104,9 +102,7 @@
             {
               "preview": "SleepBarDarkPreview",
               "caption": "The dark palette's sleep-stage gradient — reds and oranges rather than yellows.",
-              "props": {
-                "mode": "dark"
-              }
+              "theme": "dark"
             },
             {
               "preview": "SleepBarPreview",
@@ -132,9 +128,7 @@
             {
               "preview": "JetLaggedSleepGraphCardDarkPreview",
               "caption": "The week on the dark palette.",
-              "props": {
-                "mode": "dark"
-              }
+              "theme": "dark"
             }
           ]
         },
@@ -151,9 +145,7 @@
             {
               "preview": "HeartRateGraphDarkPreview",
               "caption": "The same trace on the dark palette's wave gradient.",
-              "props": {
-                "mode": "dark"
-              }
+              "theme": "dark"
             }
           ]
         },
@@ -165,9 +157,7 @@
             {
               "preview": "SleepStagePaletteDarkPreview",
               "caption": "The dark palette's four stage colours.",
-              "props": {
-                "mode": "dark"
-              }
+              "theme": "dark"
             }
           ]
         },
@@ -225,9 +215,7 @@
             {
               "preview": "HeartRateCardDarkPreview",
               "caption": "The card on the dark palette.",
-              "props": {
-                "mode": "dark"
-              }
+              "theme": "dark"
             }
           ]
         },
@@ -248,9 +236,7 @@
             {
               "preview": "WellnessCardDarkPreview",
               "caption": "The same recorded night on the dark palette.",
-              "props": {
-                "mode": "dark"
-              }
+              "theme": "dark"
             }
           ]
         },
@@ -297,9 +283,7 @@
             {
               "preview": "JetLaggedHeaderDarkPreview",
               "caption": "The header on the dark palette.",
-              "props": {
-                "mode": "dark"
-              }
+              "theme": "dark"
             }
           ]
         },

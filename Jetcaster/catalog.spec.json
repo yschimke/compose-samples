@@ -62,9 +62,7 @@
             {
               "preview": "JetcasterHomeLibraryLightPreview",
               "caption": "Light mode — the full home screen against the corrected light surface palette.",
-              "props": {
-                "theme": "light"
-              }
+              "theme": "light"
             }
           ]
         },
@@ -151,9 +149,7 @@
             {
               "preview": "JetcasterPodcastDetailsHeaderLightPreview",
               "caption": "Light mode.",
-              "props": {
-                "theme": "light"
-              }
+              "theme": "light"
             }
           ]
         },
@@ -224,9 +220,7 @@
             {
               "preview": "JetcasterTopPodcastRowItemLightPreview",
               "caption": "Light mode.",
-              "props": {
-                "theme": "light"
-              }
+              "theme": "light"
             }
           ]
         },
@@ -317,9 +311,7 @@
             {
               "preview": "JetcasterEpisodeRowLightPreview",
               "caption": "Light mode — the surfaceContainer fix is most visible here.",
-              "props": {
-                "theme": "light"
-              }
+              "theme": "light"
             }
           ]
         }
@@ -369,9 +361,7 @@
             {
               "preview": "JetcasterPlayerButtonsLightPreview",
               "caption": "Light mode.",
-              "props": {
-                "theme": "light"
-              }
+              "theme": "light"
             }
           ]
         },
@@ -441,9 +431,7 @@
             {
               "preview": "JetcasterPillToolbarLightPreview",
               "caption": "Light mode.",
-              "props": {
-                "theme": "light"
-              }
+              "theme": "light"
             }
           ]
         },

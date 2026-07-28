@@ -42,7 +42,7 @@
       "components": [
         {
           "componentId": "Conversation/Screen",
-          "preview": "ConversationPreview",
+          "preview": "JetchatConversationContentLightPreview",
           "caption": "Conversation screen — message list, input bar and app bar together.",
           "variants": [
             {
@@ -79,7 +79,7 @@
         },
         {
           "componentId": "Conversation/Jump to bottom",
-          "preview": "JumpToBottomPreview",
+          "preview": "JetchatJumpToBottomLightPreview",
           "caption": "Jump-to-bottom affordance that appears when scrolled away from the latest message.",
           "variants": [
             {

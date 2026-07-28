@@ -24,6 +24,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.rememberLazyListState
@@ -309,13 +310,37 @@ fun JetchatMessagesDarkPreview() = Wrap(dark = true) {
 @Composable
 fun JetchatDayHeaderDarkPreview() = Wrap(dark = true) { DayHeader("Today") }
 
-@Preview(name = "JumpToBottom — dark", showBackground = true, uiMode = Configuration.UI_MODE_NIGHT_YES)
+@Preview(name = "JumpToBottom — light", showBackground = true, widthDp = 220, heightDp = 80)
+@Composable
+fun JetchatJumpToBottomLightPreview() = Wrap {
+    Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
+        JumpToBottom(enabled = true, onClicked = {}, modifier = Modifier.offset(y = 32.dp))
+    }
+}
+
+@Preview(
+    name = "JumpToBottom — dark",
+    showBackground = true,
+    widthDp = 220,
+    heightDp = 80,
+    uiMode = Configuration.UI_MODE_NIGHT_YES,
+)
 @Composable
 fun JetchatJumpToBottomDarkPreview() = Wrap(dark = true) {
-    JumpToBottom(enabled = true, onClicked = {})
+    Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
+        JumpToBottom(enabled = true, onClicked = {}, modifier = Modifier.offset(y = 32.dp))
+    }
 }
 
 // ---------------------------------------------------------------- conversation screen
+
+@Preview(name = "Conversation — light", showBackground = true, widthDp = 412, heightDp = 800)
+@Composable
+fun JetchatConversationContentLightPreview() {
+    JetchatTheme(isDarkTheme = false, isDynamicColor = false) {
+        ConversationContent(uiState = exampleUiState, navigateToProfile = {})
+    }
+}
 
 @Preview(name = "Conversation — dark", showBackground = true, widthDp = 412, heightDp = 800, uiMode = Configuration.UI_MODE_NIGHT_YES)
 @Composable

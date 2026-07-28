@@ -103,7 +103,7 @@
             {
               "preview": "JetsnackColorTokensDarkPreview",
               "caption": "Dark palette. Note it is not a mechanical inversion: textPrimary and iconPrimary switch from the brand purple to Shadow1.",
-              "mode": "dark"
+              "theme": "dark"
             }
           ]
         },
@@ -115,7 +115,7 @@
             {
               "preview": "JetsnackGradientTokensDarkPreview",
               "caption": "Dark ramps.",
-              "mode": "dark"
+              "theme": "dark"
             }
           ]
         }
@@ -267,7 +267,10 @@
           "variants": [
             {
               "preview": "SearchCategoriesPreview",
-              "caption": "The full category grid, driven by the shipped SearchRepo collections."
+              "caption": "The full category grid, driven by the shipped SearchRepo collections.",
+              "props": {
+                "scope": "full grid"
+              }
             }
           ]
         },
@@ -278,7 +281,10 @@
           "variants": [
             {
               "preview": "SearchResultsPreview",
-              "caption": "The results list."
+              "caption": "The results list.",
+              "props": {
+                "scope": "full list"
+              }
             }
           ]
         },
@@ -289,7 +295,10 @@
           "variants": [
             {
               "preview": "SearchSuggestionsPreview",
-              "caption": "The same list driven directly by SearchRepo.getSuggestions()."
+              "caption": "The same list driven directly by SearchRepo.getSuggestions().",
+              "props": {
+                "source": "repository"
+              }
             }
           ]
         },
