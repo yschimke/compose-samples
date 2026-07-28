@@ -181,6 +181,11 @@ jobs:
             spec: Jetsnack/catalog.spec.json
             dir: Jetsnack
             module: ':app'
+            # figma-svg makes this 113-preview catalog exceed the renderer's separate,
+            # fixed 180-second metadata subscriber deadline (compose-ai-tools#2857).
+            # PNG/SVG rendering still completes; publish while late auxiliary metadata
+            # is partial until that upstream deadline follows --timeout.
+            allowIncomplete: true
           - system: jetlagged
             spec: JetLagged/catalog.spec.json
             dir: JetLagged
@@ -238,7 +243,7 @@ jobs:
       fold-bundle: compose-m3-${{ matrix.system }}.png
       fold-spec: compose-ai-tools/samples/design-catalog-m3/catalog.spec.json
       fold-section: Material 3
-      allow-incomplete: ${{ inputs.allow_incomplete || false }}
+      allow-incomplete: ${{ matrix.allowIncomplete || inputs.allow_incomplete || false }}
       commit-user-name: Yuri Schimke
       commit-user-email: yuri@schimke.ee
       timeout-minutes: 90
