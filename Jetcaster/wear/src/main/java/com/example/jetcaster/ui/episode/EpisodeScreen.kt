@@ -57,10 +57,10 @@ import androidx.wear.compose.material3.lazy.transformedHeight
 import androidx.wear.compose.material3.placeholder
 import androidx.wear.compose.material3.placeholderShimmer
 import androidx.wear.compose.material3.rememberPlaceholderState
-import androidx.wear.compose.ui.tooling.preview.WearPreviewDevices
 import com.example.jetcaster.R
 import com.example.jetcaster.core.domain.testing.PreviewPlayerEpisodes
 import com.example.jetcaster.core.player.model.PlayerEpisode
+import com.example.jetcaster.ui.preview.JetcasterWearLargeRoundPreview
 import com.example.jetcaster.core.player.model.toPlayerEpisode
 import com.example.jetcaster.designsystem.component.HtmlTextContainer
 import com.example.jetcaster.ui.components.MediumDateFormatter
@@ -317,7 +317,6 @@ private fun TransformingLazyColumnScope.episodeInfoContent(episode: PlayerEpisod
     }
 }
 
-@WearPreviewDevices
 @Composable
 fun EpisodeScreenEmptyPreview() {
     val uiState: EpisodeScreenState = EpisodeScreenState.Empty
@@ -331,7 +330,7 @@ fun EpisodeScreenEmptyPreview() {
     )
 }
 
-@WearPreviewDevices
+@JetcasterWearLargeRoundPreview
 @Composable
 fun EpisodeScreenLoadingPreview() {
     val episode = PreviewPlayerEpisodes.first()
@@ -348,7 +347,7 @@ fun EpisodeScreenLoadingPreview() {
     )
 }
 
-@WearPreviewDevices
+@JetcasterWearLargeRoundPreview
 @Composable
 fun EpisodeScreenLoadedPreview() {
     val episode = PreviewPlayerEpisodes.first()

@@ -49,10 +49,10 @@ import androidx.wear.compose.material3.lazy.transformedHeight
 import androidx.wear.compose.material3.placeholder
 import androidx.wear.compose.material3.placeholderShimmer
 import androidx.wear.compose.material3.rememberPlaceholderState
-import androidx.wear.compose.ui.tooling.preview.WearPreviewDevices
 import coil.compose.AsyncImage
 import com.example.jetcaster.R
 import com.example.jetcaster.core.domain.testing.PreviewPodcasts
+import com.example.jetcaster.ui.preview.JetcasterWearLargeRoundPreview
 import com.example.jetcaster.core.model.PodcastInfo
 
 @Composable
@@ -222,7 +222,7 @@ fun MediaContent(
     )
 }
 
-@WearPreviewDevices
+@JetcasterWearLargeRoundPreview
 @Composable
 fun PodcastScreenLoadedPreview() {
     val columnState = rememberTransformingLazyColumnState()
@@ -235,7 +235,6 @@ fun PodcastScreenLoadedPreview() {
     )
 }
 
-@WearPreviewDevices
 @Composable
 fun PodcastScreenEmptyPreview() {
     PodcastScreenEmpty(onDismiss = {})

@@ -54,10 +54,10 @@ import androidx.wear.compose.material3.lazy.transformedHeight
 import androidx.wear.compose.material3.placeholder
 import androidx.wear.compose.material3.placeholderShimmer
 import androidx.wear.compose.material3.rememberPlaceholderState
-import androidx.wear.compose.ui.tooling.preview.WearPreviewDevices
 import com.example.jetcaster.R
 import com.example.jetcaster.core.domain.testing.PreviewPlayerEpisodes
 import com.example.jetcaster.core.player.model.PlayerEpisode
+import com.example.jetcaster.ui.preview.JetcasterWearLargeRoundPreview
 import com.example.jetcaster.ui.components.MediaContent
 
 @Composable fun QueueScreen(
@@ -257,7 +257,7 @@ fun ButtonsContent(
     }
 }
 
-@WearPreviewDevices
+@JetcasterWearLargeRoundPreview
 @Composable
 fun QueueScreenLoadedPreview() {
     val episode = PreviewPlayerEpisodes.first()
@@ -274,7 +274,6 @@ fun QueueScreenLoadedPreview() {
     )
 }
 
-@WearPreviewDevices
 @Composable
 fun QueueScreenEmptyPreview() {
     QueueScreenEmpty(onDismiss = {})

@@ -1,6 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/yschimke/compose-ai-tools/main/scripts/design-artifacts/catalog.spec.schema.json",
-  "$comment": "Jetcaster's Wear OS tier as its own sticker sheet. Wear is a separate design system — androidx.wear.compose.material3, round device frames, and its own layout idioms — so it gets a separate catalog rather than being folded into the phone sheet. compareWith pairs it against the phone catalog so the same feature can be read across form factors. The primary previews use @WearPreviewDevices, a multipreview annotation from an external artifact. The build-free spec validator only recognises annotations it can see in scanned source, so pass --preview-annotation WearPreviewDevices.",
+  "$comment": "Jetcaster's Wear OS tier as its own sticker sheet. Wear is a separate design system — androidx.wear.compose.material3, round device frames, and its own layout idioms — so it gets a separate catalog rather than being folded into the phone sheet. compareWith pairs it against the phone catalog so the same feature can be read across form factors. Primary functions use the local single-device @JetcasterWearLargeRoundPreview; small-round and largest-font captures are explicit catalog variants.",
   "system": "jetcaster-wear",
   "title": "Jetcaster for Wear OS",
   "library": [
@@ -31,9 +31,17 @@
           "parallel": "Podcast/Card",
           "variants": [
             {
+              "preview": "PodcastScreenSmallCatalogPreview",
+              "caption": "Podcast browse list on a small round display.",
+              "props": {
+                "device": "smallRound"
+              }
+            },
+            {
               "preview": "PodcastScreenLargestFontCatalogPreview",
               "caption": "Podcast browse list at Wear's largest 1.24× font scale.",
               "props": {
+                "device": "smallRound",
                 "fontScale": 1.24
               }
             }
@@ -45,9 +53,17 @@
           "caption": "Podcast details on Wear.",
           "variants": [
             {
+              "preview": "PodcastDetailsSmallCatalogPreview",
+              "caption": "Podcast details on a small round display.",
+              "props": {
+                "device": "smallRound"
+              }
+            },
+            {
               "preview": "PodcastDetailsLargestFontCatalogPreview",
               "caption": "Podcast details at Wear's largest 1.24× font scale.",
               "props": {
+                "device": "smallRound",
                 "fontScale": 1.24
               }
             }
@@ -56,12 +72,30 @@
         {
           "componentId": "Library/Screen",
           "preview": "LibraryScreenPreview",
-          "caption": "The user's library entry point."
+          "caption": "The user's library entry point.",
+          "variants": [
+            {
+              "preview": "LibraryScreenSmallCatalogPreview",
+              "caption": "Library entry point on a small round display.",
+              "props": {
+                "device": "smallRound"
+              }
+            }
+          ]
         },
         {
           "componentId": "Episode/Latest",
           "preview": "LatestEpisodeScreenLoadedPreview",
-          "caption": "Latest-episode screen — the primary Wear launch surface."
+          "caption": "Latest-episode screen — the primary Wear launch surface.",
+          "variants": [
+            {
+              "preview": "LatestEpisodeSmallCatalogPreview",
+              "caption": "Latest-episode screen on a small round display.",
+              "props": {
+                "device": "smallRound"
+              }
+            }
+          ]
         }
       ]
     },
@@ -76,9 +110,17 @@
           "parallel": "Episode/List item",
           "variants": [
             {
+              "preview": "EpisodeScreenSmallCatalogPreview",
+              "caption": "Episode detail on a small round display.",
+              "props": {
+                "device": "smallRound"
+              }
+            },
+            {
               "preview": "EpisodeScreenLargestFontCatalogPreview",
               "caption": "Episode detail at Wear's largest 1.24× font scale.",
               "props": {
+                "device": "smallRound",
                 "fontScale": 1.24
               }
             }
@@ -87,7 +129,16 @@
         {
           "componentId": "Queue/Screen",
           "preview": "QueueScreenLoadedPreview",
-          "caption": "Playback queue, populated."
+          "caption": "Playback queue, populated.",
+          "variants": [
+            {
+              "preview": "QueueScreenSmallCatalogPreview",
+              "caption": "Playback queue on a small round display.",
+              "props": {
+                "device": "smallRound"
+              }
+            }
+          ]
         }
       ]
     },
@@ -98,7 +149,16 @@
         {
           "componentId": "Podcast/Content",
           "preview": "PodcastContentPreview",
-          "caption": "Podcast content block as laid out for a round display."
+          "caption": "Podcast content block as laid out for a round display.",
+          "variants": [
+            {
+              "preview": "PodcastContentSmallCatalogPreview",
+              "caption": "Podcast content block on a small round display.",
+              "props": {
+                "device": "smallRound"
+              }
+            }
+          ]
         },
         {
           "componentId": "Player/Controls",
@@ -107,9 +167,17 @@
           "parallel": "Player/Transport",
           "variants": [
             {
+              "preview": "PlayerControlsSmallCatalogPreview",
+              "caption": "Media content and transport on a small round display.",
+              "props": {
+                "device": "smallRound"
+              }
+            },
+            {
               "preview": "PlayerControlsLargestFontCatalogPreview",
               "caption": "Media content and transport at Wear's largest 1.24× font scale.",
               "props": {
+                "device": "smallRound",
                 "fontScale": 1.24
               }
             }
@@ -127,21 +195,13 @@
           "caption": "Episode screen while loading.",
           "variants": [
             {
-              "preview": "EpisodeScreenEmptyPreview",
-              "caption": "Episode screen with nothing to show.",
-              "state": "empty"
+              "preview": "EpisodeLoadingSmallCatalogPreview",
+              "caption": "Episode loading state on a small round display.",
+              "props": {
+                "device": "smallRound"
+              }
             }
           ]
-        },
-        {
-          "componentId": "Podcast/Empty",
-          "preview": "PodcastScreenEmptyPreview",
-          "caption": "Podcast list with no subscriptions yet."
-        },
-        {
-          "componentId": "Queue/Empty",
-          "preview": "QueueScreenEmptyPreview",
-          "caption": "Empty playback queue."
         }
       ]
     }

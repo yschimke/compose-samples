@@ -20,10 +20,52 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.jetcaster.ui.components.MediaContentPreview
 import com.example.jetcaster.ui.episode.EpisodeScreenLoadedPreview
+import com.example.jetcaster.ui.episode.EpisodeScreenLoadingPreview
+import com.example.jetcaster.ui.latest_episodes.LatestEpisodeScreenLoadedPreview
+import com.example.jetcaster.ui.library.LibraryScreenPreview
+import com.example.jetcaster.ui.library.PodcastContentPreview
 import com.example.jetcaster.ui.podcast.PodcastDetailsScreenLoadedPreview
 import com.example.jetcaster.ui.podcasts.PodcastScreenLoadedPreview
+import com.example.jetcaster.ui.preview.JetcasterWearSmallRoundPreview
+import com.example.jetcaster.ui.queue.QueueScreenLoadedPreview
 
 private const val SMALL_ROUND_DEVICE = "id:wearos_small_round"
+
+@JetcasterWearSmallRoundPreview
+@Composable
+fun PodcastScreenSmallCatalogPreview() = PodcastScreenLoadedPreview()
+
+@JetcasterWearSmallRoundPreview
+@Composable
+fun PodcastDetailsSmallCatalogPreview() = PodcastDetailsScreenLoadedPreview()
+
+@JetcasterWearSmallRoundPreview
+@Composable
+fun LibraryScreenSmallCatalogPreview() = LibraryScreenPreview()
+
+@JetcasterWearSmallRoundPreview
+@Composable
+fun LatestEpisodeSmallCatalogPreview() = LatestEpisodeScreenLoadedPreview()
+
+@JetcasterWearSmallRoundPreview
+@Composable
+fun EpisodeScreenSmallCatalogPreview() = EpisodeScreenLoadedPreview()
+
+@JetcasterWearSmallRoundPreview
+@Composable
+fun QueueScreenSmallCatalogPreview() = QueueScreenLoadedPreview()
+
+@JetcasterWearSmallRoundPreview
+@Composable
+fun PodcastContentSmallCatalogPreview() = PodcastContentPreview()
+
+@JetcasterWearSmallRoundPreview
+@Composable
+fun PlayerControlsSmallCatalogPreview() = MediaContentPreview()
+
+@JetcasterWearSmallRoundPreview
+@Composable
+fun EpisodeLoadingSmallCatalogPreview() = EpisodeScreenLoadingPreview()
 
 @Preview(name = "Podcast screen — largest font", device = SMALL_ROUND_DEVICE, fontScale = 1.24f)
 @Composable

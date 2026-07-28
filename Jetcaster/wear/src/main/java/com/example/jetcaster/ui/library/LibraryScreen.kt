@@ -57,11 +57,11 @@ import androidx.wear.compose.material3.lazy.transformedHeight
 import androidx.wear.compose.material3.placeholder
 import androidx.wear.compose.material3.placeholderShimmer
 import androidx.wear.compose.material3.rememberPlaceholderState
-import androidx.wear.compose.ui.tooling.preview.WearPreviewDevices
 import coil.compose.AsyncImage
 import com.example.jetcaster.R
 import com.example.jetcaster.core.domain.testing.PreviewPlayerEpisodes
 import com.example.jetcaster.core.domain.testing.PreviewPodcasts
+import com.example.jetcaster.ui.preview.JetcasterWearLargeRoundPreview
 import com.example.jetcaster.core.model.PodcastInfo
 import com.example.jetcaster.core.player.model.PlayerEpisode
 
@@ -357,7 +357,7 @@ private fun QueueEmptyText(modifier: Modifier = Modifier) {
     )
 }
 
-@WearPreviewDevices
+@JetcasterWearLargeRoundPreview
 @Composable
 fun LibraryScreenPreview() {
     LibraryScreen(
@@ -374,7 +374,7 @@ fun LibraryScreenPreview() {
     )
 }
 
-@WearPreviewDevices
+@JetcasterWearLargeRoundPreview
 @Composable
 fun PodcastContentPreview() {
     AppScaffold {

@@ -35,10 +35,10 @@ import androidx.wear.compose.material3.FilledTonalButton
 import androidx.wear.compose.material3.ScreenScaffold
 import androidx.wear.compose.material3.SurfaceTransformation
 import androidx.wear.compose.material3.Text
-import androidx.wear.compose.ui.tooling.preview.WearPreviewDevices
 import coil.compose.AsyncImage
 import com.example.jetcaster.R
 import com.example.jetcaster.core.domain.testing.PreviewPlayerEpisodes
+import com.example.jetcaster.ui.preview.JetcasterWearLargeRoundPreview
 import com.example.jetcaster.core.player.model.PlayerEpisode
 import java.time.format.DateTimeFormatter
 import java.time.format.FormatStyle
@@ -104,7 +104,7 @@ fun MediaContent(
     )
 }
 
-@WearPreviewDevices
+@JetcasterWearLargeRoundPreview
 @Composable
 fun MediaContentPreview() {
     val episode = PreviewPlayerEpisodes.first()
