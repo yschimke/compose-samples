@@ -16,7 +16,6 @@
 
 package com.example.jetsnack.ui.home.cart
 
-import android.content.res.Configuration.UI_MODE_NIGHT_YES
 import androidx.compose.animation.core.animateDpAsState
 import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.foundation.background
@@ -61,7 +60,6 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
@@ -73,7 +71,6 @@ import com.example.jetsnack.model.SnackCollection
 import com.example.jetsnack.model.SnackRepo
 import com.example.jetsnack.ui.components.JetsnackButton
 import com.example.jetsnack.ui.components.JetsnackDivider
-import com.example.jetsnack.ui.components.JetsnackPreviewWrapper
 import com.example.jetsnack.ui.components.JetsnackSurface
 import com.example.jetsnack.ui.components.QuantitySelector
 import com.example.jetsnack.ui.components.SnackCollection
@@ -463,30 +460,5 @@ private fun CheckoutBar(modifier: Modifier = Modifier) {
                 )
             }
         }
-    }
-}
-
-@Preview("default", device = "spec:width=400dp,height=800dp,dpi=160")
-@Preview(
-    "dark theme",
-    uiMode = UI_MODE_NIGHT_YES,
-    device = "spec:width=400dp,height=800dp,dpi=160",
-)
-@Preview(
-    "large font",
-    fontScale = 2f,
-    device = "spec:width=700dp,height=800dp,dpi=160",
-)
-@Composable
-private fun CartPreview() {
-    JetsnackPreviewWrapper {
-        Cart(
-            orderLines = SnackRepo.getCart(),
-            removeSnack = {},
-            increaseItemCount = {},
-            decreaseItemCount = {},
-            inspiredByCart = SnackRepo.getInspiredByCart(),
-            onSnackClick = { _, _ -> },
-        )
     }
 }

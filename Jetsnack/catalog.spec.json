@@ -379,7 +379,7 @@
         },
         {
           "componentId": "Screens/Cart",
-          "preview": "CartPreview",
+          "preview": "CartScreenPreview",
           "caption": "The cart — order lines, summary and the checkout bar. Renders at default, dark theme and fontScale 2."
         },
         {
