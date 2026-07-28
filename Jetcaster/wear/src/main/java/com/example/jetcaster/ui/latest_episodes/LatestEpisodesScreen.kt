@@ -48,8 +48,9 @@ import androidx.wear.compose.material3.rememberPlaceholderState
 import com.example.jetcaster.R
 import com.example.jetcaster.core.domain.testing.PreviewPlayerEpisodes
 import com.example.jetcaster.core.player.model.PlayerEpisode
-import com.example.jetcaster.ui.preview.JetcasterWearLargeRoundPreview
 import com.example.jetcaster.ui.components.MediaContent
+import com.example.jetcaster.ui.preview.JetcasterListScreenPreview
+import com.example.jetcaster.ui.preview.JetcasterWearLargeRoundPreview
 
 @Composable fun LatestEpisodesScreen(
     onPlayButtonClick: () -> Unit,
@@ -234,14 +235,15 @@ fun LatestEpisodesListHeader(
 @Composable
 fun LatestEpisodeScreenLoadedPreview() {
     val episode = PreviewPlayerEpisodes.first()
-    val columnState = rememberTransformingLazyColumnState()
-    LatestEpisodesScreen(
-        episodeList = listOf(episode),
-        onPlayButtonClick = { },
-        onPlayEpisode = { },
-        onPlayEpisodes = { },
-        contentPadding = PaddingValues(),
-        scrollState = columnState,
-        placeholderState = rememberPlaceholderState(isVisible = false),
-    )
+    JetcasterListScreenPreview { columnState, contentPadding ->
+        LatestEpisodesScreen(
+            episodeList = listOf(episode),
+            onPlayButtonClick = { },
+            onPlayEpisode = { },
+            onPlayEpisodes = { },
+            contentPadding = contentPadding,
+            scrollState = columnState,
+            placeholderState = rememberPlaceholderState(isVisible = false),
+        )
+    }
 }

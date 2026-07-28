@@ -16,9 +16,7 @@
 
 package com.example.jetcaster.ui.components
 
-import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.runtime.Composable
@@ -29,17 +27,16 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextOverflow
-import androidx.wear.compose.material3.AppScaffold
 import androidx.wear.compose.material3.ButtonDefaults
 import androidx.wear.compose.material3.FilledTonalButton
-import androidx.wear.compose.material3.ScreenScaffold
 import androidx.wear.compose.material3.SurfaceTransformation
 import androidx.wear.compose.material3.Text
 import coil.compose.AsyncImage
 import com.example.jetcaster.R
 import com.example.jetcaster.core.domain.testing.PreviewPlayerEpisodes
-import com.example.jetcaster.ui.preview.JetcasterWearLargeRoundPreview
 import com.example.jetcaster.core.player.model.PlayerEpisode
+import com.example.jetcaster.ui.preview.JetcasterComponentPreview
+import com.example.jetcaster.ui.preview.JetcasterWearLargeRoundPreview
 import java.time.format.DateTimeFormatter
 import java.time.format.FormatStyle
 
@@ -104,22 +101,15 @@ fun MediaContent(
     )
 }
 
+// A single media row is a component, not a screen: framing it with `JetcasterComponentPreview`
+// centres it at its on-device width instead of hanging it off the top of a `ScreenScaffold`, where
+// the round display clipped the row.
 @JetcasterWearLargeRoundPreview
 @Composable
 fun MediaContentPreview() {
     val episode = PreviewPlayerEpisodes.first()
-    AppScaffold(modifier = Modifier) {
-        ScreenScaffold { contentPadding ->
-            Box(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .padding(contentPadding),
-            ) {
-                MediaContent(
-                    episode, onItemClick = { null },
-                )
-            }
-        }
+    JetcasterComponentPreview {
+        MediaContent(episode, onItemClick = { null })
     }
 }
 

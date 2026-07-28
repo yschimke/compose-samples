@@ -17,11 +17,9 @@
 package com.example.jetcaster.catalog
 
 import androidx.annotation.StringRes
-import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.wear.compose.foundation.lazy.rememberTransformingLazyColumnState
 import androidx.wear.compose.material3.AlertDialogContent
 import androidx.wear.compose.material3.Text
 import androidx.wear.compose.material3.rememberPlaceholderState
@@ -43,6 +41,8 @@ import com.example.jetcaster.ui.podcast.PodcastDetailsScreenState
 import com.example.jetcaster.ui.podcasts.PodcastScreenLoadedPreview
 import com.example.jetcaster.ui.podcasts.PodcastsScreen
 import com.example.jetcaster.ui.podcasts.PodcastsScreenState
+import com.example.jetcaster.ui.preview.JetcasterListScreenPreview
+import com.example.jetcaster.ui.preview.JetcasterScreenPreview
 import com.example.jetcaster.ui.preview.JetcasterWearLargeRoundPreview
 import com.example.jetcaster.ui.preview.JetcasterWearSmallRoundPreview
 import com.example.jetcaster.ui.queue.QueueScreen
@@ -57,12 +57,14 @@ fun PodcastScreenSmallCatalogPreview() = PodcastScreenLoadedPreview()
 
 @JetcasterWearLargeRoundPreview
 @Composable
-fun PodcastScreenLoadingCatalogPreview() = PodcastsScreen(
-    podcastsScreenState = PodcastsScreenState.Loading,
-    placeholderState = rememberPlaceholderState(isVisible = true),
-    onPodcastsItemClick = {},
-    onDismiss = {},
-)
+fun PodcastScreenLoadingCatalogPreview() = JetcasterScreenPreview {
+    PodcastsScreen(
+        podcastsScreenState = PodcastsScreenState.Loading,
+        placeholderState = rememberPlaceholderState(isVisible = true),
+        onPodcastsItemClick = {},
+        onDismiss = {},
+    )
+}
 
 @JetcasterWearLargeRoundPreview
 @Composable
@@ -74,14 +76,16 @@ fun PodcastDetailsSmallCatalogPreview() = PodcastDetailsScreenLoadedPreview()
 
 @JetcasterWearLargeRoundPreview
 @Composable
-fun PodcastDetailsLoadingCatalogPreview() = PodcastDetailsScreen(
-    uiState = PodcastDetailsScreenState.Loading,
-    placeholderState = rememberPlaceholderState(isVisible = true),
-    onPlayButtonClick = {},
-    onEpisodeItemClick = {},
-    onPlayEpisode = {},
-    onDismiss = {},
-)
+fun PodcastDetailsLoadingCatalogPreview() = JetcasterScreenPreview {
+    PodcastDetailsScreen(
+        uiState = PodcastDetailsScreenState.Loading,
+        placeholderState = rememberPlaceholderState(isVisible = true),
+        onPlayButtonClick = {},
+        onEpisodeItemClick = {},
+        onPlayEpisode = {},
+        onDismiss = {},
+    )
+}
 
 @JetcasterWearLargeRoundPreview
 @Composable
@@ -97,24 +101,28 @@ fun LibraryScreenSmallCatalogPreview() = LibraryScreenPreview()
 
 @JetcasterWearLargeRoundPreview
 @Composable
-fun LibraryScreenLoadingCatalogPreview() = LibraryScreen(
-    columnState = rememberTransformingLazyColumnState(),
-    contentPadding = PaddingValues(),
-    onLatestEpisodeClick = {},
-    onYourPodcastClick = {},
-    onUpNextClick = {},
-    placeholderState = rememberPlaceholderState(isVisible = true),
-    queue = emptyList(),
-)
+fun LibraryScreenLoadingCatalogPreview() = JetcasterListScreenPreview { columnState, contentPadding ->
+    LibraryScreen(
+        columnState = columnState,
+        contentPadding = contentPadding,
+        onLatestEpisodeClick = {},
+        onYourPodcastClick = {},
+        onUpNextClick = {},
+        placeholderState = rememberPlaceholderState(isVisible = true),
+        queue = emptyList(),
+    )
+}
 
 @JetcasterWearLargeRoundPreview
 @Composable
-fun LibraryScreenNoSubscriptionsCatalogPreview() = NoSubscribedPodcastScreen(
-    columnState = rememberTransformingLazyColumnState(),
-    contentPadding = PaddingValues(),
-    topPodcasts = PreviewPodcasts,
-    onTogglePodcastFollowed = {},
-)
+fun LibraryScreenNoSubscriptionsCatalogPreview() = JetcasterListScreenPreview { columnState, contentPadding ->
+    NoSubscribedPodcastScreen(
+        columnState = columnState,
+        contentPadding = contentPadding,
+        topPodcasts = PreviewPodcasts,
+        onTogglePodcastFollowed = {},
+    )
+}
 
 @JetcasterWearSmallRoundPreview
 @Composable
@@ -122,14 +130,16 @@ fun LatestEpisodeSmallCatalogPreview() = LatestEpisodeScreenLoadedPreview()
 
 @JetcasterWearLargeRoundPreview
 @Composable
-fun LatestEpisodeLoadingCatalogPreview() = LatestEpisodeScreen(
-    uiState = LatestEpisodeScreenState.Loading,
-    placeholderState = rememberPlaceholderState(isVisible = true),
-    onPlayButtonClick = {},
-    onDismiss = {},
-    onPlayEpisodes = {},
-    onPlayEpisode = {},
-)
+fun LatestEpisodeLoadingCatalogPreview() = JetcasterScreenPreview {
+    LatestEpisodeScreen(
+        uiState = LatestEpisodeScreenState.Loading,
+        placeholderState = rememberPlaceholderState(isVisible = true),
+        onPlayButtonClick = {},
+        onDismiss = {},
+        onPlayEpisodes = {},
+        onPlayEpisode = {},
+    )
+}
 
 @JetcasterWearLargeRoundPreview
 @Composable
@@ -153,15 +163,17 @@ fun QueueScreenSmallCatalogPreview() = QueueScreenLoadedPreview()
 
 @JetcasterWearLargeRoundPreview
 @Composable
-fun QueueScreenLoadingCatalogPreview() = QueueScreen(
-    uiState = QueueScreenState.Loading,
-    placeholderState = rememberPlaceholderState(isVisible = true),
-    onPlayButtonClick = {},
-    onPlayEpisodes = {},
-    onEpisodeItemClick = {},
-    onDeleteQueueEpisodes = {},
-    onDismiss = {},
-)
+fun QueueScreenLoadingCatalogPreview() = JetcasterScreenPreview {
+    QueueScreen(
+        uiState = QueueScreenState.Loading,
+        placeholderState = rememberPlaceholderState(isVisible = true),
+        onPlayButtonClick = {},
+        onPlayEpisodes = {},
+        onEpisodeItemClick = {},
+        onDeleteQueueEpisodes = {},
+        onDismiss = {},
+    )
+}
 
 @JetcasterWearLargeRoundPreview
 @Composable
@@ -202,12 +214,14 @@ fun PlayerControlsLargestFontCatalogPreview() = MediaContentPreview()
 
 @Composable
 private fun WearEmptyDialogCatalogPreview(@StringRes titleRes: Int, @StringRes textRes: Int? = null) {
-    if (textRes == null) {
-        AlertDialogContent(title = { Text(stringResource(titleRes)) })
-    } else {
-        AlertDialogContent(
-            title = { Text(stringResource(titleRes)) },
-            text = { Text(stringResource(textRes)) },
-        )
+    JetcasterScreenPreview {
+        if (textRes == null) {
+            AlertDialogContent(title = { Text(stringResource(titleRes)) })
+        } else {
+            AlertDialogContent(
+                title = { Text(stringResource(titleRes)) },
+                text = { Text(stringResource(textRes)) },
+            )
+        }
     }
 }

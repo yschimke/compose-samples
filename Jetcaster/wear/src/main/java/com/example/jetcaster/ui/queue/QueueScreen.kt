@@ -57,8 +57,10 @@ import androidx.wear.compose.material3.rememberPlaceholderState
 import com.example.jetcaster.R
 import com.example.jetcaster.core.domain.testing.PreviewPlayerEpisodes
 import com.example.jetcaster.core.player.model.PlayerEpisode
-import com.example.jetcaster.ui.preview.JetcasterWearLargeRoundPreview
 import com.example.jetcaster.ui.components.MediaContent
+import com.example.jetcaster.ui.preview.JetcasterListScreenPreview
+import com.example.jetcaster.ui.preview.JetcasterScreenPreview
+import com.example.jetcaster.ui.preview.JetcasterWearLargeRoundPreview
 
 @Composable fun QueueScreen(
     onPlayButtonClick: () -> Unit,
@@ -261,20 +263,21 @@ fun ButtonsContent(
 @Composable
 fun QueueScreenLoadedPreview() {
     val episode = PreviewPlayerEpisodes.first()
-    val columnState = rememberTransformingLazyColumnState()
-    QueueScreenLoaded(
-        episodeList = listOf(episode),
-        onPlayButtonClick = { },
-        onPlayEpisodes = { },
-        onDeleteQueueEpisodes = { },
-        onEpisodeItemClick = { },
-        columnState = columnState,
-        contentPadding = PaddingValues(),
-        placeholderState = rememberPlaceholderState(isVisible = false),
-    )
+    JetcasterListScreenPreview { columnState, contentPadding ->
+        QueueScreenLoaded(
+            episodeList = listOf(episode),
+            onPlayButtonClick = { },
+            onPlayEpisodes = { },
+            onDeleteQueueEpisodes = { },
+            onEpisodeItemClick = { },
+            columnState = columnState,
+            contentPadding = contentPadding,
+            placeholderState = rememberPlaceholderState(isVisible = false),
+        )
+    }
 }
 
 @Composable
 fun QueueScreenEmptyPreview() {
-    QueueScreenEmpty(onDismiss = {})
+    JetcasterScreenPreview { QueueScreenEmpty(onDismiss = {}) }
 }

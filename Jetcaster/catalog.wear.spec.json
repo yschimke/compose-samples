@@ -217,11 +217,11 @@
         {
           "componentId": "Podcast/Content",
           "preview": "PodcastContentPreview",
-          "caption": "Podcast content block as laid out for a round display.",
+          "caption": "Podcast content block, centred at its on-device width rather than pinned to a screen.",
           "variants": [
             {
               "preview": "PodcastContentSmallCatalogPreview",
-              "caption": "Podcast content block on a small round display.",
+              "caption": "Podcast content block at the small-round width.",
               "props": {
                 "device": "smallRound"
               }
@@ -231,12 +231,12 @@
         {
           "componentId": "Player/Controls",
           "preview": "MediaContentPreview",
-          "caption": "Media content and transport on a round face — where Wear's touch-target minimums bite hardest.",
+          "caption": "Media content and transport, centred at its on-device width — where Wear's touch-target minimums bite hardest.",
           "parallel": "Player/Transport",
           "variants": [
             {
               "preview": "PlayerControlsSmallCatalogPreview",
-              "caption": "Media content and transport on a small round display.",
+              "caption": "Media content and transport at the small-round width.",
               "props": {
                 "device": "smallRound"
               }
