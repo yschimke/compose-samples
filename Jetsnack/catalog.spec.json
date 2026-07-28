@@ -23,7 +23,7 @@
   ],
   "display": {
     "surface": "light",
-    "hero": "Snack/Card"
+    "hero": "Screens/Feed"
   },
   "groupOrder": [
     "Foundations",
