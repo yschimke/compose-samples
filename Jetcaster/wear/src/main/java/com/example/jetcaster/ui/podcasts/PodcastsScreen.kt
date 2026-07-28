@@ -52,8 +52,10 @@ import androidx.wear.compose.material3.rememberPlaceholderState
 import coil.compose.AsyncImage
 import com.example.jetcaster.R
 import com.example.jetcaster.core.domain.testing.PreviewPodcasts
-import com.example.jetcaster.ui.preview.JetcasterWearLargeRoundPreview
 import com.example.jetcaster.core.model.PodcastInfo
+import com.example.jetcaster.ui.preview.JetcasterListScreenPreview
+import com.example.jetcaster.ui.preview.JetcasterScreenPreview
+import com.example.jetcaster.ui.preview.JetcasterWearLargeRoundPreview
 
 @Composable
 fun PodcastsScreen(
@@ -225,17 +227,18 @@ fun MediaContent(
 @JetcasterWearLargeRoundPreview
 @Composable
 fun PodcastScreenLoadedPreview() {
-    val columnState = rememberTransformingLazyColumnState()
-    PodcastScreenLoaded(
-        podcastList = listOf(PreviewPodcasts.first()),
-        onPodcastsItemClick = {},
-        contentPadding = PaddingValues(),
-        columnState = columnState,
-        placeholderState = rememberPlaceholderState(isVisible = false),
-    )
+    JetcasterListScreenPreview { columnState, contentPadding ->
+        PodcastScreenLoaded(
+            podcastList = listOf(PreviewPodcasts.first()),
+            onPodcastsItemClick = {},
+            contentPadding = contentPadding,
+            columnState = columnState,
+            placeholderState = rememberPlaceholderState(isVisible = false),
+        )
+    }
 }
 
 @Composable
 fun PodcastScreenEmptyPreview() {
-    PodcastScreenEmpty(onDismiss = {})
+    JetcasterScreenPreview { PodcastScreenEmpty(onDismiss = {}) }
 }

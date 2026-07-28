@@ -46,11 +46,12 @@ import androidx.wear.compose.material3.placeholder
 import androidx.wear.compose.material3.placeholderShimmer
 import androidx.wear.compose.material3.rememberPlaceholderState
 import com.example.jetcaster.R
-import com.example.jetcaster.core.domain.testing.PreviewPodcastEpisodes
 import com.example.jetcaster.core.domain.testing.PreviewPlayerEpisodes
-import com.example.jetcaster.ui.preview.JetcasterWearLargeRoundPreview
+import com.example.jetcaster.core.domain.testing.PreviewPodcastEpisodes
 import com.example.jetcaster.core.player.model.PlayerEpisode
 import com.example.jetcaster.ui.components.MediaContent
+import com.example.jetcaster.ui.preview.JetcasterScreenPreview
+import com.example.jetcaster.ui.preview.JetcasterWearLargeRoundPreview
 
 @Composable fun PodcastDetailsScreen(
     onPlayButtonClick: () -> Unit,
@@ -225,15 +226,17 @@ fun ButtonsContent(
 @Composable
 fun PodcastDetailsScreenLoadedPreview() {
     val episode = PreviewPlayerEpisodes.first()
-    PodcastDetailsScreen(
-        uiState = PodcastDetailsScreenState.Loaded(
-            episodeList = listOf(episode),
-            podcast = PreviewPodcastEpisodes.first().podcast,
-        ),
-        onPlayButtonClick = { },
-        onEpisodeItemClick = {},
-        onPlayEpisode = {},
-        onDismiss = {},
-        placeholderState = rememberPlaceholderState(isVisible = false),
-    )
+    JetcasterScreenPreview {
+        PodcastDetailsScreen(
+            uiState = PodcastDetailsScreenState.Loaded(
+                episodeList = listOf(episode),
+                podcast = PreviewPodcastEpisodes.first().podcast,
+            ),
+            onPlayButtonClick = { },
+            onEpisodeItemClick = {},
+            onPlayEpisode = {},
+            onDismiss = {},
+            placeholderState = rememberPlaceholderState(isVisible = false),
+        )
+    }
 }

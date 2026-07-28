@@ -20,7 +20,6 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.runtime.Composable
@@ -40,7 +39,6 @@ import androidx.wear.compose.foundation.lazy.TransformingLazyColumn
 import androidx.wear.compose.foundation.lazy.TransformingLazyColumnState
 import androidx.wear.compose.foundation.lazy.items
 import androidx.wear.compose.foundation.lazy.rememberTransformingLazyColumnState
-import androidx.wear.compose.material3.AppScaffold
 import androidx.wear.compose.material3.ButtonDefaults
 import androidx.wear.compose.material3.FilledTonalButton
 import androidx.wear.compose.material3.Icon
@@ -61,9 +59,11 @@ import coil.compose.AsyncImage
 import com.example.jetcaster.R
 import com.example.jetcaster.core.domain.testing.PreviewPlayerEpisodes
 import com.example.jetcaster.core.domain.testing.PreviewPodcasts
-import com.example.jetcaster.ui.preview.JetcasterWearLargeRoundPreview
 import com.example.jetcaster.core.model.PodcastInfo
 import com.example.jetcaster.core.player.model.PlayerEpisode
+import com.example.jetcaster.ui.preview.JetcasterComponentPreview
+import com.example.jetcaster.ui.preview.JetcasterListScreenPreview
+import com.example.jetcaster.ui.preview.JetcasterWearLargeRoundPreview
 
 @Composable
 fun LibraryScreen(
@@ -360,36 +360,33 @@ private fun QueueEmptyText(modifier: Modifier = Modifier) {
 @JetcasterWearLargeRoundPreview
 @Composable
 fun LibraryScreenPreview() {
-    LibraryScreen(
-        columnState = rememberTransformingLazyColumnState(),
-        contentPadding = PaddingValues(),
-        modifier = Modifier,
-        onLatestEpisodeClick = {},
-        onYourPodcastClick = {},
-        onUpNextClick = {},
-        queue = listOf(
-            PreviewPlayerEpisodes.first(),
-        ),
-        placeholderState = rememberPlaceholderState(isVisible = false),
-    )
+    JetcasterListScreenPreview { columnState, contentPadding ->
+        LibraryScreen(
+            columnState = columnState,
+            contentPadding = contentPadding,
+            modifier = Modifier,
+            onLatestEpisodeClick = {},
+            onYourPodcastClick = {},
+            onUpNextClick = {},
+            queue = listOf(
+                PreviewPlayerEpisodes.first(),
+            ),
+            placeholderState = rememberPlaceholderState(isVisible = false),
+        )
+    }
 }
 
+// `PodcastContent` is a component, not a screen, so it is framed by
+// `JetcasterComponentPreview` — centred at its on-device width — rather than pinned to the top of
+// an `AppScaffold`/`ScreenScaffold`, where the round bezel clipped it.
 @JetcasterWearLargeRoundPreview
 @Composable
 fun PodcastContentPreview() {
-    AppScaffold {
-        ScreenScaffold {
-            Box(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .padding(it),
-            ) {
-                PodcastContent(
-                    podcast = PreviewPodcasts.first(),
-                    podcastArtworkPlaceholder = painterResource(id = R.drawable.music),
-                    onClick = {},
-                )
-            }
-        }
+    JetcasterComponentPreview {
+        PodcastContent(
+            podcast = PreviewPodcasts.first(),
+            podcastArtworkPlaceholder = painterResource(id = R.drawable.music),
+            onClick = {},
+        )
     }
 }

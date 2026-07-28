@@ -60,10 +60,12 @@ import androidx.wear.compose.material3.rememberPlaceholderState
 import com.example.jetcaster.R
 import com.example.jetcaster.core.domain.testing.PreviewPlayerEpisodes
 import com.example.jetcaster.core.player.model.PlayerEpisode
-import com.example.jetcaster.ui.preview.JetcasterWearLargeRoundPreview
 import com.example.jetcaster.core.player.model.toPlayerEpisode
 import com.example.jetcaster.designsystem.component.HtmlTextContainer
 import com.example.jetcaster.ui.components.MediumDateFormatter
+import com.example.jetcaster.ui.preview.JetcasterListScreenPreview
+import com.example.jetcaster.ui.preview.JetcasterScreenPreview
+import com.example.jetcaster.ui.preview.JetcasterWearLargeRoundPreview
 
 @Composable
 fun EpisodeScreen(
@@ -320,46 +322,50 @@ private fun TransformingLazyColumnScope.episodeInfoContent(episode: PlayerEpisod
 @Composable
 fun EpisodeScreenEmptyPreview() {
     val uiState: EpisodeScreenState = EpisodeScreenState.Empty
-    EpisodeScreen(
-        uiState = uiState,
-        onPlayButtonClick = { },
-        onPlayEpisode = { _ -> },
-        onAddToQueue = { _ -> },
-        onDismiss = {},
-        placeholderState = rememberPlaceholderState(isVisible = true),
-    )
+    JetcasterScreenPreview {
+        EpisodeScreen(
+            uiState = uiState,
+            onPlayButtonClick = { },
+            onPlayEpisode = { _ -> },
+            onAddToQueue = { _ -> },
+            onDismiss = {},
+            placeholderState = rememberPlaceholderState(isVisible = true),
+        )
+    }
 }
 
 @JetcasterWearLargeRoundPreview
 @Composable
 fun EpisodeScreenLoadingPreview() {
     val episode = PreviewPlayerEpisodes.first()
-    val columnState = rememberTransformingLazyColumnState()
-    EpisodeScreenLoaded(
-        title = episode.title,
-        episode = episode,
-        onPlayButtonClick = { },
-        onPlayEpisode = { },
-        onAddToQueue = { },
-        columnState = columnState,
-        contentPadding = PaddingValues(),
-        placeholderState = rememberPlaceholderState(isVisible = true),
-    )
+    JetcasterListScreenPreview { columnState, contentPadding ->
+        EpisodeScreenLoaded(
+            title = episode.title,
+            episode = episode,
+            onPlayButtonClick = { },
+            onPlayEpisode = { },
+            onAddToQueue = { },
+            columnState = columnState,
+            contentPadding = contentPadding,
+            placeholderState = rememberPlaceholderState(isVisible = true),
+        )
+    }
 }
 
 @JetcasterWearLargeRoundPreview
 @Composable
 fun EpisodeScreenLoadedPreview() {
     val episode = PreviewPlayerEpisodes.first()
-    val columnState = rememberTransformingLazyColumnState()
-    EpisodeScreenLoaded(
-        title = episode.title,
-        episode = episode,
-        onPlayButtonClick = { },
-        onPlayEpisode = { },
-        onAddToQueue = { },
-        columnState = columnState,
-        contentPadding = PaddingValues(),
-        placeholderState = rememberPlaceholderState(isVisible = false),
-    )
+    JetcasterListScreenPreview { columnState, contentPadding ->
+        EpisodeScreenLoaded(
+            title = episode.title,
+            episode = episode,
+            onPlayButtonClick = { },
+            onPlayEpisode = { },
+            onAddToQueue = { },
+            columnState = columnState,
+            contentPadding = contentPadding,
+            placeholderState = rememberPlaceholderState(isVisible = false),
+        )
+    }
 }
