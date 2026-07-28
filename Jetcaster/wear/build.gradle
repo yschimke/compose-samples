@@ -171,4 +171,6 @@ dependencies {
     debugImplementation(libs.androidx.compose.ui.tooling)
     debugImplementation libs.androidx.compose.ui.test.manifest
     debugImplementation composeBom
+    // Catalog-only annotation; the provider lives in src/debug.
+    debugImplementation libs.composeai.preview.annotations
 }

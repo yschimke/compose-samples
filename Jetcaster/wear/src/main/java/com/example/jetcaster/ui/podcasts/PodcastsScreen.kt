@@ -30,7 +30,6 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
-import androidx.compose.ui.tooling.preview.PreviewParameter
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.wear.compose.foundation.lazy.TransformingLazyColumn
@@ -51,11 +50,10 @@ import androidx.wear.compose.material3.placeholder
 import androidx.wear.compose.material3.placeholderShimmer
 import androidx.wear.compose.material3.rememberPlaceholderState
 import androidx.wear.compose.ui.tooling.preview.WearPreviewDevices
-import androidx.wear.compose.ui.tooling.preview.WearPreviewFontScales
 import coil.compose.AsyncImage
 import com.example.jetcaster.R
+import com.example.jetcaster.core.domain.testing.PreviewPodcasts
 import com.example.jetcaster.core.model.PodcastInfo
-import com.example.jetcaster.ui.preview.WearPreviewPodcasts
 
 @Composable
 fun PodcastsScreen(
@@ -225,12 +223,11 @@ fun MediaContent(
 }
 
 @WearPreviewDevices
-@WearPreviewFontScales
 @Composable
-fun PodcastScreenLoadedPreview(@PreviewParameter(WearPreviewPodcasts::class) podcasts: PodcastInfo) {
+fun PodcastScreenLoadedPreview() {
     val columnState = rememberTransformingLazyColumnState()
     PodcastScreenLoaded(
-        podcastList = listOf(podcasts),
+        podcastList = listOf(PreviewPodcasts.first()),
         onPodcastsItemClick = {},
         contentPadding = PaddingValues(),
         columnState = columnState,
@@ -239,7 +236,6 @@ fun PodcastScreenLoadedPreview(@PreviewParameter(WearPreviewPodcasts::class) pod
 }
 
 @WearPreviewDevices
-@WearPreviewFontScales
 @Composable
 fun PodcastScreenEmptyPreview() {
     PodcastScreenEmpty(onDismiss = {})

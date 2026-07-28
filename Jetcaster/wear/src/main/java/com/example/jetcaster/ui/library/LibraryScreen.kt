@@ -34,7 +34,6 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
-import androidx.compose.ui.tooling.preview.PreviewParameter
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.wear.compose.foundation.lazy.TransformingLazyColumn
@@ -59,13 +58,12 @@ import androidx.wear.compose.material3.placeholder
 import androidx.wear.compose.material3.placeholderShimmer
 import androidx.wear.compose.material3.rememberPlaceholderState
 import androidx.wear.compose.ui.tooling.preview.WearPreviewDevices
-import androidx.wear.compose.ui.tooling.preview.WearPreviewFontScales
 import coil.compose.AsyncImage
 import com.example.jetcaster.R
+import com.example.jetcaster.core.domain.testing.PreviewPlayerEpisodes
+import com.example.jetcaster.core.domain.testing.PreviewPodcasts
 import com.example.jetcaster.core.model.PodcastInfo
 import com.example.jetcaster.core.player.model.PlayerEpisode
-import com.example.jetcaster.ui.preview.WearPreviewEpisodes
-import com.example.jetcaster.ui.preview.WearPreviewPodcasts
 
 @Composable
 fun LibraryScreen(
@@ -360,12 +358,8 @@ private fun QueueEmptyText(modifier: Modifier = Modifier) {
 }
 
 @WearPreviewDevices
-@WearPreviewFontScales
 @Composable
-fun LibraryScreenPreview(
-    @PreviewParameter(WearPreviewEpisodes::class)
-    episode: PlayerEpisode,
-) {
+fun LibraryScreenPreview() {
     LibraryScreen(
         columnState = rememberTransformingLazyColumnState(),
         contentPadding = PaddingValues(),
@@ -374,16 +368,15 @@ fun LibraryScreenPreview(
         onYourPodcastClick = {},
         onUpNextClick = {},
         queue = listOf(
-            episode,
+            PreviewPlayerEpisodes.first(),
         ),
         placeholderState = rememberPlaceholderState(isVisible = false),
     )
 }
 
 @WearPreviewDevices
-@WearPreviewFontScales
 @Composable
-fun PodcastContentPreview(@PreviewParameter(WearPreviewPodcasts::class) podcasts: PodcastInfo, modifier: Modifier = Modifier) {
+fun PodcastContentPreview() {
     AppScaffold {
         ScreenScaffold {
             Box(
@@ -392,7 +385,7 @@ fun PodcastContentPreview(@PreviewParameter(WearPreviewPodcasts::class) podcasts
                     .padding(it),
             ) {
                 PodcastContent(
-                    podcast = podcasts,
+                    podcast = PreviewPodcasts.first(),
                     podcastArtworkPlaceholder = painterResource(id = R.drawable.music),
                     onClick = {},
                 )

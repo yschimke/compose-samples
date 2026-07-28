@@ -28,7 +28,6 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
-import androidx.compose.ui.tooling.preview.PreviewParameter
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
@@ -59,13 +58,12 @@ import androidx.wear.compose.material3.placeholder
 import androidx.wear.compose.material3.placeholderShimmer
 import androidx.wear.compose.material3.rememberPlaceholderState
 import androidx.wear.compose.ui.tooling.preview.WearPreviewDevices
-import androidx.wear.compose.ui.tooling.preview.WearPreviewFontScales
 import com.example.jetcaster.R
+import com.example.jetcaster.core.domain.testing.PreviewPlayerEpisodes
 import com.example.jetcaster.core.player.model.PlayerEpisode
 import com.example.jetcaster.core.player.model.toPlayerEpisode
 import com.example.jetcaster.designsystem.component.HtmlTextContainer
 import com.example.jetcaster.ui.components.MediumDateFormatter
-import com.example.jetcaster.ui.preview.WearPreviewEpisodes
 
 @Composable
 fun EpisodeScreen(
@@ -320,7 +318,6 @@ private fun TransformingLazyColumnScope.episodeInfoContent(episode: PlayerEpisod
 }
 
 @WearPreviewDevices
-@WearPreviewFontScales
 @Composable
 fun EpisodeScreenEmptyPreview() {
     val uiState: EpisodeScreenState = EpisodeScreenState.Empty
@@ -335,12 +332,9 @@ fun EpisodeScreenEmptyPreview() {
 }
 
 @WearPreviewDevices
-@WearPreviewFontScales
 @Composable
-fun EpisodeScreenLoadingPreview(
-    @PreviewParameter(WearPreviewEpisodes::class)
-    episode: PlayerEpisode,
-) {
+fun EpisodeScreenLoadingPreview() {
+    val episode = PreviewPlayerEpisodes.first()
     val columnState = rememberTransformingLazyColumnState()
     EpisodeScreenLoaded(
         title = episode.title,
@@ -355,12 +349,9 @@ fun EpisodeScreenLoadingPreview(
 }
 
 @WearPreviewDevices
-@WearPreviewFontScales
 @Composable
-fun EpisodeScreenLoadedPreview(
-    @PreviewParameter(WearPreviewEpisodes::class)
-    episode: PlayerEpisode,
-) {
+fun EpisodeScreenLoadedPreview() {
+    val episode = PreviewPlayerEpisodes.first()
     val columnState = rememberTransformingLazyColumnState()
     EpisodeScreenLoaded(
         title = episode.title,

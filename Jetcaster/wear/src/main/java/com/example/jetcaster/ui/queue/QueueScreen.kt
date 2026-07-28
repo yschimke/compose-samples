@@ -29,7 +29,6 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.tooling.preview.PreviewParameter
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
@@ -56,11 +55,10 @@ import androidx.wear.compose.material3.placeholder
 import androidx.wear.compose.material3.placeholderShimmer
 import androidx.wear.compose.material3.rememberPlaceholderState
 import androidx.wear.compose.ui.tooling.preview.WearPreviewDevices
-import androidx.wear.compose.ui.tooling.preview.WearPreviewFontScales
 import com.example.jetcaster.R
+import com.example.jetcaster.core.domain.testing.PreviewPlayerEpisodes
 import com.example.jetcaster.core.player.model.PlayerEpisode
 import com.example.jetcaster.ui.components.MediaContent
-import com.example.jetcaster.ui.preview.WearPreviewEpisodes
 
 @Composable fun QueueScreen(
     onPlayButtonClick: () -> Unit,
@@ -260,12 +258,9 @@ fun ButtonsContent(
 }
 
 @WearPreviewDevices
-@WearPreviewFontScales
 @Composable
-fun QueueScreenLoadedPreview(
-    @PreviewParameter(WearPreviewEpisodes::class)
-    episode: PlayerEpisode,
-) {
+fun QueueScreenLoadedPreview() {
+    val episode = PreviewPlayerEpisodes.first()
     val columnState = rememberTransformingLazyColumnState()
     QueueScreenLoaded(
         episodeList = listOf(episode),
@@ -280,7 +275,6 @@ fun QueueScreenLoadedPreview(
 }
 
 @WearPreviewDevices
-@WearPreviewFontScales
 @Composable
 fun QueueScreenEmptyPreview() {
     QueueScreenEmpty(onDismiss = {})

@@ -29,8 +29,11 @@ on:
       - '*/app/src/main/**'
       - '*/app/build.gradle.kts'
       - 'Jetcaster/mobile/src/main/**'
+      - 'Jetcaster/wear/src/debug/**'
+      - 'Jetcaster/wear/src/main/**'
       - 'Jetcaster/core/designsystem/src/main/**'
       - 'Jetcaster/mobile/build.gradle.kts'
+      - 'Jetcaster/wear/build.gradle'
       - '.github/scripts/m3-theme-overrides.mjs'
       - '.github/workflows/design-artifacts.yml'
       # A compose-preview bump changes what discovery finds and how it renders —
@@ -169,18 +172,22 @@ jobs:
             spec: JetNews/catalog.spec.json
             dir: JetNews
             module: ':app'
+            foldArtifact: compose-m3-jetnews
           - system: jetcaster
             spec: Jetcaster/catalog.spec.json
             dir: Jetcaster
             module: ':mobile'
+            foldArtifact: compose-m3-jetcaster
           - system: jetchat
             spec: Jetchat/catalog.spec.json
             dir: Jetchat
             module: ':app'
+            foldArtifact: compose-m3-jetchat
           - system: jetsnack
             spec: Jetsnack/catalog.spec.json
             dir: Jetsnack
             module: ':app'
+            foldArtifact: compose-m3-jetsnack
             # figma-svg makes this 113-preview catalog exceed the renderer's separate,
             # fixed 180-second metadata subscriber deadline (compose-ai-tools#2857).
             # PNG/SVG rendering still completes; publish while late auxiliary metadata
@@ -190,36 +197,17 @@ jobs:
             spec: JetLagged/catalog.spec.json
             dir: JetLagged
             module: ':app'
+            foldArtifact: compose-m3-jetlagged
           - system: reply
             spec: Reply/catalog.spec.json
             dir: Reply
             module: ':app'
-          # jetcaster-wear stays out, and this is measured rather than assumed.
-          # Enabled against 0.17.23 on 2026-07-25 (run 30165501068) to retest,
-          # since compose-ai-tools#2729 (per-param IR, v0.17.19) and #2744
-          # (--with-semantics fetched by raw preview id, v0.17.22 — which cured
-          # the same failure on wear-m3) had landed since the original 0.17.17
-          # finding. It still fails:
-          #
-          #   missing renders for: Podcast/Content, Player/Controls
-          #   no semantics for: Podcast/Row, Podcast/Details, Library/Screen,
-          #     Episode/Latest, Episode/Screen, Queue/Screen, Episode/Loading,
-          #     Podcast/Empty, Queue/Empty
-          #   incomplete render — refusing to publish
-          #
-          # Nine "no semantics" entries — exactly the nine previews that take a
-          # @PreviewParameter. Two entries fail differently, with no PNG at all.
-          # Re-enable when the daemon render path produces data products for a
-          # @PreviewParameter fan-out; until then zero-arg wrapper previews are
-          # the workaround (see the PostCard/Popular wrapper in JetNews). The
-          # spec is committed and validates with the preview-annotations wired
-          # below, so re-enabling is just restoring the matrix entry:
-          #
-          #   - system: jetcaster-wear
-          #     spec: Jetcaster/catalog.wear.spec.json
-          #     dir: Jetcaster
-          #     module: ':wear'
-          #     preview-annotations: WearPreviewDevices WearPreviewFontScales
+            foldArtifact: compose-m3-reply
+          - system: jetcaster-wear
+            spec: Jetcaster/catalog.wear.spec.json
+            dir: Jetcaster
+            module: ':wear'
+            preview-annotations: WearPreviewDevices
     uses: yschimke/compose-ai-tools/.github/workflows/design-artifacts-reusable.yml@main
     with:
       system: ${{ matrix.system }}
@@ -239,7 +227,10 @@ jobs:
       publish-live-bundle: true
       split-per-preview: true
       split-mode: full
-      fold-artifact: compose-m3-${{ matrix.system }}
+      # Phone/tablet apps fold in their re-themed mobile M3 section. Wear is a
+      # distinct design system with different theme locals and role names, so
+      # its matrix entry deliberately leaves this empty.
+      fold-artifact: ${{ matrix.foldArtifact || '' }}
       fold-bundle: compose-m3-${{ matrix.system }}.png
       fold-spec: compose-ai-tools/samples/design-catalog-m3/catalog.spec.json
       fold-section: Material 3
