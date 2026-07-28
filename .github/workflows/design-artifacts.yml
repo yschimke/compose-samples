@@ -27,8 +27,10 @@ on:
       - '*/catalog*.spec.json'
       - '*/app/src/debug/**'
       - '*/app/src/main/**'
+      - '*/app/build.gradle.kts'
       - 'Jetcaster/mobile/src/main/**'
       - 'Jetcaster/core/designsystem/src/main/**'
+      - 'Jetcaster/mobile/build.gradle.kts'
       - '.github/scripts/m3-theme-overrides.mjs'
       - '.github/workflows/design-artifacts.yml'
       # A compose-preview bump changes what discovery finds and how it renders —
