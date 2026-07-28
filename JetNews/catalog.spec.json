@@ -19,7 +19,7 @@
     "surface": "light",
     "hero": "Screens/Home feed"
   },
-  "groupOrder": ["Adaptive navigation", "Reader", "Post cards", "Interests"],
+  "groupOrder": ["Adaptive navigation", "Navigation", "Reader", "Interests screen", "Post cards", "Interests"],
   "groups": [
     {
       "name": "Adaptive navigation",
@@ -100,7 +100,13 @@
               "state": "error"
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "name": "Navigation",
+      "section": "Components",
+      "components": [
         {
           "componentId": "Navigation/Drawer",
           "preview": "PreviewAppDrawer",
@@ -177,8 +183,8 @@
       ]
     },
     {
-      "name": "Interests",
-      "section": "Components",
+      "name": "Interests screen",
+      "section": "Screens",
       "components": [
         {
           "componentId": "Interests/Screen",
@@ -191,7 +197,13 @@
               "props": { "posture": "expanded" }
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "name": "Interests",
+      "section": "Components",
+      "components": [
         {
           "componentId": "Interests/Topics tab",
           "preview": "PreviewTopicsTab",

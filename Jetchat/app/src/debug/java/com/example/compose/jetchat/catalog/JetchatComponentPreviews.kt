@@ -36,6 +36,7 @@ import androidx.compose.material3.Text
 import androidx.compose.material3.rememberDrawerState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.focus.FocusRequester
 import androidx.compose.ui.res.painterResource
@@ -393,36 +394,44 @@ fun JetchatExtendedSelectorInnerButtonUnselectedPreview() = Wrap {
 
 @Preview(name = "FunctionalityNotAvailablePanel", showBackground = true, widthDp = 412, heightDp = 340)
 @Composable
-fun JetchatFunctionalityNotAvailablePanelPreview() = Wrap { FunctionalityNotAvailablePanel() }
+fun JetchatFunctionalityNotAvailablePanelPreview() = Wrap {
+    FunctionalityNotAvailablePanel(showImmediately = true)
+}
 
 @Preview(name = "FunctionalityNotAvailablePopup", showBackground = true, widthDp = 412, heightDp = 300)
 @Composable
 fun JetchatFunctionalityNotAvailablePopupPreview() = Wrap { FunctionalityNotAvailablePopup(onDismiss = {}) }
 
-@Preview(name = "RecordButton — idle", showBackground = true, widthDp = 120, heightDp = 96)
+@Preview(name = "RecordButton — idle", showBackground = true, widthDp = 144, heightDp = 144)
 @Composable
 fun JetchatRecordButtonIdlePreview() = Wrap {
-    RecordButton(
-        recording = false,
-        swipeOffset = { 0f },
-        onSwipeOffsetChange = {},
-        onStartRecording = { true },
-        onFinishRecording = {},
-        onCancelRecording = {},
-    )
+    Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
+        RecordButton(
+            recording = false,
+            swipeOffset = { 0f },
+            onSwipeOffsetChange = {},
+            onStartRecording = { true },
+            onFinishRecording = {},
+            onCancelRecording = {},
+            modifier = Modifier.size(56.dp),
+        )
+    }
 }
 
-@Preview(name = "RecordButton — recording", showBackground = true, widthDp = 120, heightDp = 96)
+@Preview(name = "RecordButton — recording", showBackground = true, widthDp = 144, heightDp = 144)
 @Composable
 fun JetchatRecordButtonRecordingPreview() = Wrap {
-    RecordButton(
-        recording = true,
-        swipeOffset = { 0f },
-        onSwipeOffsetChange = {},
-        onStartRecording = { true },
-        onFinishRecording = {},
-        onCancelRecording = {},
-    )
+    Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
+        RecordButton(
+            recording = true,
+            swipeOffset = { 0f },
+            onSwipeOffsetChange = {},
+            onStartRecording = { true },
+            onFinishRecording = {},
+            onCancelRecording = {},
+            modifier = Modifier.size(56.dp),
+        )
+    }
 }
 
 // ---------------------------------------------------------------- chrome
@@ -487,7 +496,11 @@ fun JetchatDrawerContentProfileSelectedDarkPreview() = Wrap(dark = true) {
 
 // ---------------------------------------------------------------- profile
 
-@Preview(name = "Profile — medium width", showBackground = true, widthDp = 700, heightDp = 700)
+@Preview(
+    name = "Profile — medium width",
+    showBackground = true,
+    device = "spec:width=700dp,height=700dp,dpi=160",
+)
 @Composable
 fun JetchatProfileScreenMediumPreview() {
     // The sample's own profile previews stop at 480dp; the catalog's medium breakpoint is 700dp,
@@ -498,8 +511,7 @@ fun JetchatProfileScreenMediumPreview() {
 @Preview(
     name = "Profile — medium width, dark",
     showBackground = true,
-    widthDp = 700,
-    heightDp = 700,
+    device = "spec:width=700dp,height=700dp,dpi=160",
     uiMode = Configuration.UI_MODE_NIGHT_YES,
 )
 @Composable

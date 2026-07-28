@@ -374,25 +374,13 @@
       "components": [
         {
           "componentId": "Screens/Feed",
-          "preview": "FeedScreenPreview",
-          "caption": "The home feed — destination bar, filter row and the full stack of snack collections. Debug-source specimen wrapped in JetsnackPreviewWrapper.",
-          "variants": [
-            {
-              "preview": "HomePreview",
-              "caption": "The sample's own main-source Feed preview, repaired to use JetsnackPreviewWrapper. Renders at default, dark theme and fontScale 2 — the large-font configuration is the only full-screen feed specimen at that text size."
-            }
-          ]
+          "preview": "HomePreview",
+          "caption": "The home feed — destination bar, filter row and the full stack of snack collections. Renders at default, dark theme and fontScale 2."
         },
         {
           "componentId": "Screens/Cart",
-          "preview": "CartScreenPreview",
-          "caption": "The cart — order lines, summary and the checkout bar. Debug-source specimen wrapped in JetsnackPreviewWrapper.",
-          "variants": [
-            {
-              "preview": "CartPreview",
-              "caption": "The sample's own main-source Cart preview, repaired to use JetsnackPreviewWrapper. Renders at default, dark theme and fontScale 2, where the order lines reflow and the checkout bar overlaps the inspired-by row."
-            }
-          ]
+          "preview": "CartPreview",
+          "caption": "The cart — order lines, summary and the checkout bar. Renders at default, dark theme and fontScale 2."
         },
         {
           "componentId": "Screens/Search",

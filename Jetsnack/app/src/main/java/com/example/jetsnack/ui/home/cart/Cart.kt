@@ -466,9 +466,17 @@ private fun CheckoutBar(modifier: Modifier = Modifier) {
     }
 }
 
-@Preview("default")
-@Preview("dark theme", uiMode = UI_MODE_NIGHT_YES)
-@Preview("large font", fontScale = 2f)
+@Preview("default", device = "spec:width=400dp,height=800dp,dpi=160")
+@Preview(
+    "dark theme",
+    uiMode = UI_MODE_NIGHT_YES,
+    device = "spec:width=400dp,height=800dp,dpi=160",
+)
+@Preview(
+    "large font",
+    fontScale = 2f,
+    device = "spec:width=400dp,height=800dp,dpi=160",
+)
 @Composable
 private fun CartPreview() {
     JetsnackPreviewWrapper {

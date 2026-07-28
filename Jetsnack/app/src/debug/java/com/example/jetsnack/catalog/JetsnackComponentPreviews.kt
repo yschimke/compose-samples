@@ -423,11 +423,11 @@ private fun NavItem(selected: Boolean) = Wrap {
     )
 }
 
-@Preview("default")
+@Preview("default", device = "spec:width=400dp,height=800dp,dpi=160")
 @Composable
 fun JetsnackBottomNavigationItemSelectedPreview() = NavItem(selected = true)
 
-@Preview("default")
+@Preview("default", device = "spec:width=400dp,height=800dp,dpi=160")
 @Composable
 fun JetsnackBottomNavigationItemUnselectedPreview() = NavItem(selected = false)
 

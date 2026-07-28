@@ -57,7 +57,7 @@ import com.example.jetsnack.ui.snackdetail.nonSpatialExpressiveSpring
 import com.example.jetsnack.ui.snackdetail.spatialExpressiveSpring
 import com.example.jetsnack.ui.theme.JetsnackTheme
 
-@Preview
+@Preview(device = "spec:width=400dp,height=800dp,dpi=160")
 @Composable
 fun JetsnackApp() {
     JetsnackTheme {

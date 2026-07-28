@@ -27,9 +27,12 @@
   },
   "groupOrder": [
     "Conversation",
+    "Conversation orientations",
+    "Conversation components",
     "Messages",
     "Composer",
     "Profile",
+    "Profile components",
     "Chrome"
   ],
   "groups": [
@@ -55,7 +58,13 @@
               }
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "name": "Conversation components",
+      "section": "Components",
+      "components": [
         {
           "componentId": "Conversation/Day header",
           "preview": "DayHeaderPrev",
@@ -79,7 +88,13 @@
               "theme": "dark"
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "name": "Conversation orientations",
+      "section": "Screens",
+      "components": [
         {
           "componentId": "Conversation/Orientation",
           "preview": "ConvPreviewPortraitMeDefault",
@@ -345,7 +360,13 @@
               }
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "name": "Profile components",
+      "section": "Components",
+      "components": [
         {
           "componentId": "Profile/FAB",
           "preview": "ProfileFabPreview",

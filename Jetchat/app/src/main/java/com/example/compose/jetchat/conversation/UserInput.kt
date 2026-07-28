@@ -234,9 +234,11 @@ private fun SelectorExpanded(currentSelector: InputSelector, onCloseRequested: (
 }
 
 @Composable
-fun FunctionalityNotAvailablePanel() {
+fun FunctionalityNotAvailablePanel(showImmediately: Boolean = false) {
     AnimatedVisibility(
-        visibleState = remember { MutableTransitionState(false).apply { targetState = true } },
+        visibleState = remember {
+            MutableTransitionState(showImmediately).apply { targetState = true }
+        },
         enter = expandHorizontally() + fadeIn(),
         exit = shrinkHorizontally() + fadeOut(),
     ) {

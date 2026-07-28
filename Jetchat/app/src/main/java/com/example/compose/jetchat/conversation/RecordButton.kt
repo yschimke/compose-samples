@@ -34,6 +34,7 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.LocalContentColor
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.RichTooltip
 import androidx.compose.material3.Text
 import androidx.compose.material3.TooltipAnchorPosition
@@ -67,6 +68,7 @@ fun RecordButton(
     onCancelRecording: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
+    val recordingContainerColor = MaterialTheme.colorScheme.primary
     val transition = updateTransition(targetState = recording, label = "record")
     val scale = transition.animateFloat(
         transitionSpec = { spring(Spring.DampingRatioMediumBouncy, Spring.StiffnessLow) },
@@ -82,7 +84,7 @@ fun RecordButton(
         transitionSpec = { tween(200) },
         label = "record-scale",
         targetValueByState = { rec ->
-            if (rec) contentColorFor(LocalContentColor.current)
+            if (rec) contentColorFor(recordingContainerColor)
             else LocalContentColor.current
         },
     )
@@ -99,7 +101,7 @@ fun RecordButton(
                     scaleY = scale.value
                 }
                 .clip(CircleShape)
-                .background(LocalContentColor.current),
+                .background(recordingContainerColor),
         )
         val scope = rememberCoroutineScope()
         val tooltipState = remember { TooltipState() }

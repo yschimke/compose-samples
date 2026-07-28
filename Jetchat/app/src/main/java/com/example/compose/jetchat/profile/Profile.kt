@@ -261,7 +261,7 @@ fun ProfileFab(extended: Boolean, userIsMe: Boolean, modifier: Modifier = Modifi
     }
 }
 
-@Preview(widthDp = 640, heightDp = 360)
+@Preview(device = "spec:width=640dp,height=360dp,dpi=160")
 @Composable
 fun ConvPreviewLandscapeMeDefault() {
     JetchatTheme {
@@ -269,7 +269,7 @@ fun ConvPreviewLandscapeMeDefault() {
     }
 }
 
-@Preview(widthDp = 360, heightDp = 480)
+@Preview(device = "spec:width=360dp,height=480dp,dpi=160")
 @Composable
 fun ConvPreviewPortraitMeDefault() {
     JetchatTheme {
@@ -277,7 +277,7 @@ fun ConvPreviewPortraitMeDefault() {
     }
 }
 
-@Preview(widthDp = 360, heightDp = 480)
+@Preview(device = "spec:width=360dp,height=480dp,dpi=160")
 @Composable
 fun ConvPreviewPortraitOtherDefault() {
     JetchatTheme {

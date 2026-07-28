@@ -34,9 +34,11 @@
   "groupOrder": [
     "Home",
     "Podcast details",
+    "Podcast details components",
     "Discover",
     "Episodes",
     "Player",
+    "Player controls",
     "Chrome",
     "States"
   ],
@@ -113,7 +115,13 @@
               }
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "name": "Podcast details components",
+      "section": "Components",
+      "components": [
         {
           "componentId": "PodcastDetails/Header",
           "preview": "PodcastDetailsHeaderItemPreview",
@@ -319,13 +327,19 @@
     },
     {
       "name": "Player",
-      "section": "Components",
+      "section": "Screens",
       "components": [
         {
           "componentId": "Player/Screen",
           "preview": "PlayerScreenPreview",
           "caption": "The now-playing screen across the five sample devices — the regular layout on phones and the book/two-pane layout once the width is expanded."
-        },
+        }
+      ]
+    },
+    {
+      "name": "Player controls",
+      "section": "Components",
+      "components": [
         {
           "componentId": "Player/Transport",
           "preview": "PlayerButtonsPreview",
