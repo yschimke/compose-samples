@@ -84,6 +84,27 @@ fun PopularPostCardCatalogPreview() {
     }
 }
 
+/**
+ * Zero-argument version of the sample's parameterized long-text preview.
+ *
+ * Keeping this fixture argument-free gives the catalog exporter semantics and
+ * layout data while preserving the title-overflow case.
+ */
+@Preview(name = "Popular post card — long text", showBackground = true, widthDp = 280)
+@Composable
+fun PopularPostCardLongTextCatalogPreview() {
+    JetnewsTheme {
+        Surface {
+            PostCardPopular(
+                post = post3.copy(
+                    title = "A deliberately long popular-post title that must wrap and truncate inside the carousel card",
+                ),
+                navigateToPost = {},
+            )
+        }
+    }
+}
+
 /** Flips [state] every [everyMs] so a preview can record the transition. */
 @Composable
 private fun rememberToggling(everyMs: Long): Boolean {

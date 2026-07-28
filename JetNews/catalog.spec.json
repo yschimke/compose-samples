@@ -150,8 +150,8 @@
       "components": [
         {
           "componentId": "PostCard/Top",
-          "preview": "PostCardTopPreview",
-          "caption": "Featured post card."
+          "preview": "PostCardTopPreviews",
+          "caption": "Featured post card across the sample's dark, device and font-scale preview set."
         },
         {
           "componentId": "PostCard/Simple",
@@ -166,7 +166,16 @@
         {
           "componentId": "PostCard/Popular",
           "preview": "PopularPostCardCatalogPreview",
-          "caption": "Popular-post card used by the horizontal carousel."
+          "caption": "Popular-post card used by the horizontal carousel.",
+          "variants": [
+            {
+              "preview": "PopularPostCardLongTextCatalogPreview",
+              "caption": "A long title that wraps and truncates inside the narrow carousel card.",
+              "props": {
+                "content": "long title"
+              }
+            }
+          ]
         },
         {
           "componentId": "Bookmark/Button",

@@ -257,8 +257,8 @@
       "components": [
         {
           "componentId": "Search/Bar",
-          "preview": "SearchBarCatalogPreview",
-          "caption": "Search entry field."
+          "preview": "SearchBarPreview",
+          "caption": "Search entry field at default, dark theme and fontScale 2."
         },
         {
           "componentId": "Search/Categories",
@@ -290,8 +290,8 @@
         },
         {
           "componentId": "Search/Suggestions",
-          "preview": "SearchSuggestionsPreview",
-          "caption": "Suggestion list shown before a query is entered, driven by SearchRepo.getSuggestions()."
+          "preview": "PreviewSuggestions",
+          "caption": "Suggestion list shown before a query is entered, driven by SearchRepo.getSuggestions(), at default, dark theme and fontScale 2."
         },
         {
           "componentId": "Search/No results",
@@ -368,6 +368,11 @@
       "section": "Screens",
       "components": [
         {
+          "componentId": "Screens/App shell",
+          "preview": "JetsnackApp",
+          "caption": "The full app shell at its start destination: feed content, nested navigation, shared-transition scopes and bottom navigation together."
+        },
+        {
           "componentId": "Screens/Feed",
           "preview": "FeedScreenPreview",
           "caption": "The home feed — destination bar, filter row and the full stack of snack collections. Renders at default, dark theme and fontScale 2."
@@ -389,8 +394,8 @@
         },
         {
           "componentId": "Snack/Detail",
-          "preview": "SnackDetailCatalogPreview",
-          "caption": "Product detail — the collapsing-header screen that anchors the shared-element transition."
+          "preview": "SnackDetailPreview",
+          "caption": "Product detail — the collapsing-header screen that anchors the shared-element transition — at default, dark theme and fontScale 2."
         },
         {
           "componentId": "Catalog/Filter screen",

@@ -74,6 +74,16 @@
               "props": {
                 "selectedTab": "library"
               }
+            },
+            {
+              "preview": "PreviewHome",
+              "caption": "Refreshing Discover across the shipped phone, foldable, landscape and tablet device set.",
+              "theme": "light",
+              "props": {
+                "selectedTab": "discover",
+                "isLoading": true,
+                "deviceCoverage": "responsive"
+              }
             }
           ]
         }
@@ -100,6 +110,14 @@
               "caption": "Just the scrolling content: header, description, then the episode list.",
               "props": {
                 "scope": "content only"
+              }
+            },
+            {
+              "preview": "PodcastDetailsScreenPreview",
+              "caption": "Light mode across the shipped phone, foldable, landscape and tablet device set.",
+              "theme": "light",
+              "props": {
+                "deviceCoverage": "responsive"
               }
             }
           ]
@@ -313,8 +331,8 @@
       "components": [
         {
           "componentId": "Player/Screen",
-          "preview": "JetcasterPlayerScreenCatalogPreview",
-          "caption": "The now-playing screen at the compact catalog breakpoint."
+          "preview": "PlayerScreenPreview",
+          "caption": "The now-playing screen across the shipped phone, foldable, landscape and tablet device set."
         }
       ]
     },
