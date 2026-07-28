@@ -30,6 +30,10 @@ plugins {
 composePreview {
     variant.set("debug")
     sdkVersion.set(35)
+    // The animated app tour dominates auto-sharding's cost model, so auto resolves to one fork.
+    // Keep static catalog previews moving in parallel; otherwise their semantics capture queues
+    // behind the tour and hits compose-ai-tools' fixed 180-second attachment timeout.
+    shards.set(4)
 }
 
 android {
