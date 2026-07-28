@@ -48,6 +48,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.jetsnack.R
 import com.example.jetsnack.model.Filter
+import com.example.jetsnack.model.SearchCategory as SearchCategoryModel
 import com.example.jetsnack.model.SearchRepo
 import com.example.jetsnack.model.SnackRepo
 import com.example.jetsnack.model.snacks
@@ -70,7 +71,9 @@ import com.example.jetsnack.ui.home.cart.SummaryItem
 import com.example.jetsnack.ui.home.cart.SwipeDismissItem
 import com.example.jetsnack.ui.home.search.NoResults
 import com.example.jetsnack.ui.home.search.SearchBar
+import com.example.jetsnack.ui.home.search.SearchCategory
 import com.example.jetsnack.ui.home.search.SearchCategories
+import com.example.jetsnack.ui.home.search.SearchResult
 import com.example.jetsnack.ui.home.search.SearchResults
 import com.example.jetsnack.ui.home.search.SearchSuggestions
 import com.example.jetsnack.ui.snackdetail.SnackDetail
@@ -357,6 +360,20 @@ fun SearchBarCatalogPreview() = Wrap {
     )
 }
 
+@Preview("default")
+@Preview("dark theme", uiMode = UI_MODE_NIGHT_YES)
+@Preview("large font", fontScale = 2f, widthDp = 412, heightDp = 220)
+@Composable
+fun SearchCategoryCatalogPreview() = Wrap {
+    SearchCategory(
+        category = SearchCategoryModel(
+            name = "Desserts",
+            imageRes = R.drawable.desserts,
+        ),
+        gradient = JetsnackTheme.colors.gradient3_2,
+    )
+}
+
 @Preview("default", heightDp = 400)
 @Preview("dark theme", uiMode = UI_MODE_NIGHT_YES, heightDp = 400)
 @Composable
@@ -370,6 +387,18 @@ fun SearchSuggestionsPreview() = Wrap {
     SearchSuggestions(
         suggestions = SearchRepo.getSuggestions(),
         onSuggestionSelect = {},
+    )
+}
+
+@Preview("default")
+@Preview("dark theme", uiMode = UI_MODE_NIGHT_YES)
+@Preview("large font", fontScale = 2f, widthDp = 412, heightDp = 220)
+@Composable
+fun SearchResultCatalogPreview() = Wrap {
+    SearchResult(
+        snack = snacks[0],
+        onSnackClick = { _, _ -> },
+        showDivider = false,
     )
 }
 

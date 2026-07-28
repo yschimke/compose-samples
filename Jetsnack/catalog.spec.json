@@ -262,7 +262,7 @@
         },
         {
           "componentId": "Search/Categories",
-          "preview": "SearchCategoryPreview",
+          "preview": "SearchCategoryCatalogPreview",
           "caption": "Category tile.",
           "variants": [
             {
@@ -276,7 +276,7 @@
         },
         {
           "componentId": "Search/Results",
-          "preview": "SearchResultPreview",
+          "preview": "SearchResultCatalogPreview",
           "caption": "A single search result row.",
           "variants": [
             {

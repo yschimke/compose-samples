@@ -16,7 +16,6 @@
 
 package com.example.jetsnack.ui.home.search
 
-import android.content.res.Configuration
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
@@ -39,10 +38,8 @@ import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.Layout
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.Constraints
 import androidx.compose.ui.unit.dp
-import com.example.jetsnack.R
 import com.example.jetsnack.model.SearchCategory
 import com.example.jetsnack.model.SearchCategoryCollection
 import com.example.jetsnack.ui.components.SnackImage
@@ -94,7 +91,7 @@ private val CategoryShape = RoundedCornerShape(10.dp)
 private const val CategoryTextProportion = 0.55f
 
 @Composable
-private fun SearchCategory(category: SearchCategory, gradient: List<Color>, modifier: Modifier = Modifier) {
+internal fun SearchCategory(category: SearchCategory, gradient: List<Color>, modifier: Modifier = Modifier) {
     Layout(
         modifier = modifier
             .aspectRatio(1.45f)
@@ -140,21 +137,5 @@ private fun SearchCategory(category: SearchCategory, gradient: List<Color>, modi
                 y = (constraints.maxHeight - imagePlaceable.height) / 2, // centered
             )
         }
-    }
-}
-
-@Preview("default")
-@Preview("dark theme", uiMode = Configuration.UI_MODE_NIGHT_YES)
-@Preview("large font", fontScale = 2f, widthDp = 412, heightDp = 220)
-@Composable
-private fun SearchCategoryPreview() {
-    JetsnackTheme {
-        SearchCategory(
-            category = SearchCategory(
-                name = "Desserts",
-                imageRes = R.drawable.desserts,
-            ),
-            gradient = JetsnackTheme.colors.gradient3_2,
-        )
     }
 }
