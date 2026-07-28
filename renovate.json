@@ -1,21 +1,21 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:base", ":dependencyDashboard"
-  ],
-  "dependencyDashboardApproval": true,
+  "extends": ["github>yschimke/renovate-config"],
+  "baseBranches": ["previews"],
+  "enabledManagers": ["gradle"],
   "packageRules": [
     {
-      "groupName": "Androidx Lifecycle deps",
-      "matchPackagePatterns": ["androidx.lifecycle", "androidx.navigation:navigation-compose"]
-    },
-     {
-      "groupName": "Compose Dependencies",
-      "matchPackagePatterns": "^androidx\\..*compose\\."
+      "description": "This branch only auto-updates the preview tooling used by the six catalogs.",
+      "matchDepNames": ["/.*/"],
+      "enabled": false
     },
     {
-      "groupName": "Kotlin Dependencies",
-      "matchPackagePrefixes": ["org.jetbrains.kotlin"]
+      "groupName": "compose-ai-tools",
+      "matchDepNames": [
+        "ee.schimke.composeai.preview",
+        "ee.schimke.composeai:preview-annotations"
+      ],
+      "enabled": true
     }
   ]
 }
