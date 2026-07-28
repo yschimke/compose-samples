@@ -29,7 +29,7 @@
   "compareWith": "jetcaster-wear",
   "display": {
     "surface": "dark",
-    "hero": "Home/Discover"
+    "hero": "Home/Screen"
   },
   "groupOrder": [
     "Home",
@@ -48,34 +48,31 @@
       "section": "Screens",
       "components": [
         {
-          "componentId": "Home/Library",
-          "preview": "JetcasterHomeLibraryPreview",
-          "caption": "The full home screen on the Library tab, driven by fixture data rather than a live feed.",
+          "componentId": "Home/Screen",
+          "preview": "JetcasterHomeDiscoverPreview",
+          "caption": "The starter screen: home on the Discover tab, which is the category HomeViewModel opens on — category chips over the top-podcast carousel and the episode list.",
           "variants": [
+            {
+              "preview": "JetcasterHomeLibraryPreview",
+              "caption": "The full home screen on the Library tab, driven by fixture data rather than a live feed.",
+              "props": {
+                "selectedTab": "library"
+              }
+            },
             {
               "preview": "JetcasterHomeLoadingPreview",
               "caption": "Refreshing — the loading state over an empty library.",
               "props": {
+                "selectedTab": "library",
                 "isLoading": true
               }
             },
             {
               "preview": "JetcasterHomeLibraryLightPreview",
               "caption": "Light mode — the full home screen against the corrected light surface palette.",
-              "theme": "light"
-            }
-          ]
-        },
-        {
-          "componentId": "Home/Discover",
-          "preview": "JetcasterHomeDiscoverPreview",
-          "caption": "The starter screen: home on the Discover tab, which is the category HomeViewModel opens on — category chips over the top-podcast carousel and the episode list.",
-          "variants": [
-            {
-              "preview": "JetcasterHomeLoadingPreview",
-              "caption": "The same home surface mid-refresh.",
+              "theme": "light",
               "props": {
-                "isLoading": true
+                "selectedTab": "library"
               }
             }
           ]
@@ -300,6 +297,11 @@
               "props": {
                 "duration": null
               }
+            },
+            {
+              "preview": "JetcasterEpisodeRowLightPreview",
+              "caption": "Light mode.",
+              "theme": "light"
             }
           ]
         }

@@ -27,7 +27,6 @@
   },
   "groupOrder": [
     "Conversation",
-    "Conversation orientations",
     "Conversation components",
     "Messages",
     "Composer",
@@ -86,33 +85,6 @@
               "preview": "JetchatJumpToBottomDarkPreview",
               "caption": "Jump-to-bottom pill, dark theme.",
               "theme": "dark"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Conversation orientations",
-      "section": "Screens",
-      "components": [
-        {
-          "componentId": "Conversation/Orientation",
-          "preview": "ConvPreviewPortraitMeDefault",
-          "caption": "Conversation in portrait.",
-          "variants": [
-            {
-              "preview": "ConvPreviewLandscapeMeDefault",
-              "caption": "The same conversation in landscape.",
-              "props": {
-                "orientation": "landscape"
-              }
-            },
-            {
-              "preview": "ConvPreviewPortraitOtherDefault",
-              "caption": "Portrait, viewed as the other participant.",
-              "props": {
-                "author": "other"
-              }
             }
           ]
         }
@@ -308,31 +280,35 @@
       "section": "Screens",
       "components": [
         {
-          "componentId": "Profile/340dp",
+          "componentId": "Profile/Screen",
           "preview": "ProfilePreview340",
-          "caption": "Profile at 340dp — the narrowest supported width.",
+          "caption": "Own profile at 340dp — the narrowest supported width.",
           "variants": [
             {
               "preview": "ProfilePreview340MeDark",
               "caption": "340dp, dark theme.",
               "theme": "dark"
-            }
-          ]
-        },
-        {
-          "componentId": "Profile/480dp",
-          "preview": "ProfilePreview480Me",
-          "caption": "Profile at 480dp, own profile.",
-          "variants": [
+            },
+            {
+              "preview": "ProfilePreview480Me",
+              "caption": "Own profile at 480dp.",
+              "props": {
+                "widthDp": 480
+              }
+            },
             {
               "preview": "ProfilePreview480MeDark",
               "caption": "480dp own profile, dark theme.",
-              "theme": "dark"
+              "theme": "dark",
+              "props": {
+                "widthDp": 480
+              }
             },
             {
               "preview": "ProfilePreview480Other",
               "caption": "480dp, another user's profile.",
               "props": {
+                "widthDp": 480,
                 "subject": "other"
               }
             },
@@ -341,21 +317,49 @@
               "caption": "480dp other user, dark theme.",
               "theme": "dark",
               "props": {
+                "widthDp": 480,
                 "subject": "other"
               }
-            }
-          ]
-        },
-        {
-          "componentId": "Profile/700dp",
-          "preview": "JetchatProfileScreenMediumPreview",
-          "caption": "Profile at the 700dp medium breakpoint, own profile.",
-          "variants": [
+            },
+            {
+              "preview": "JetchatProfileScreenMediumPreview",
+              "caption": "Own profile at the 700dp medium breakpoint.",
+              "props": {
+                "widthDp": 700
+              }
+            },
             {
               "preview": "JetchatProfileScreenMediumDarkPreview",
               "caption": "700dp, another user, dark theme.",
               "theme": "dark",
               "props": {
+                "widthDp": 700,
+                "subject": "other"
+              }
+            },
+            {
+              "preview": "ConvPreviewPortraitMeDefault",
+              "caption": "Own profile in a short 360 × 480dp portrait window.",
+              "props": {
+                "widthDp": 360,
+                "heightDp": 480
+              }
+            },
+            {
+              "preview": "ConvPreviewLandscapeMeDefault",
+              "caption": "Own profile in a 640 × 360dp landscape window.",
+              "props": {
+                "widthDp": 640,
+                "heightDp": 360,
+                "orientation": "landscape"
+              }
+            },
+            {
+              "preview": "ConvPreviewPortraitOtherDefault",
+              "caption": "Another user's profile in a short portrait window.",
+              "props": {
+                "widthDp": 360,
+                "heightDp": 480,
                 "subject": "other"
               }
             }

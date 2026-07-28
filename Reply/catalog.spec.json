@@ -188,14 +188,18 @@
           ]
         },
         {
-          "componentId": "Navigation/PermanentDrawer",
+          "componentId": "Navigation/Drawer",
           "preview": "PermanentNavigationDrawerContentPreview",
-          "caption": "Expanded-width permanent drawer."
-        },
-        {
-          "componentId": "Navigation/ModalDrawer",
-          "preview": "ModalNavigationDrawerContentPreview",
-          "caption": "Modal drawer, shown when the rail's menu is tapped."
+          "caption": "Expanded-width permanent drawer.",
+          "variants": [
+            {
+              "preview": "ModalNavigationDrawerContentPreview",
+              "caption": "Modal presentation, shown when the rail's menu is tapped.",
+              "props": {
+                "presentation": "modal"
+              }
+            }
+          ]
         }
       ]
     },

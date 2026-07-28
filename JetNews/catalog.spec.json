@@ -217,7 +217,7 @@
           ]
         },
         {
-          "componentId": "Interests/People tab",
+          "componentId": "Interests/People and publications tab",
           "preview": "PreviewPeopleTab",
           "caption": "People tab content, nobody followed.",
           "variants": [
@@ -225,18 +225,21 @@
               "preview": "PreviewPeopleTabFollowed",
               "caption": "The first two people followed.",
               "state": "selected"
-            }
-          ]
-        },
-        {
-          "componentId": "Interests/Publications tab",
-          "preview": "PreviewPublicationsTab",
-          "caption": "Publications tab content, nothing followed.",
-          "variants": [
+            },
+            {
+              "preview": "PreviewPublicationsTab",
+              "caption": "Publications tab content, nothing followed.",
+              "props": {
+                "content": "publications"
+              }
+            },
             {
               "preview": "PreviewPublicationsTabFollowed",
               "caption": "The first two publications followed.",
-              "state": "selected"
+              "state": "selected",
+              "props": {
+                "content": "publications"
+              }
             }
           ]
         },

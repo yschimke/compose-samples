@@ -307,12 +307,7 @@
         {
           "componentId": "Chrome/Bottom nav",
           "preview": "JetsnackBottomBarFeedPreview",
-          "caption": "Custom animated bottom navigation bar — Jetsnack's signature chrome."
-        },
-        {
-          "componentId": "Chrome/Bottom nav selection",
-          "preview": "JetsnackBottomBarFeedPreview",
-          "caption": "The bar with Home selected. The selection indicator is a gradient pill that animates between destinations, so the selected tab is the only one showing its label.",
+          "caption": "Custom animated bottom navigation bar with Home selected — Jetsnack's signature chrome. The gradient selection pill makes the selected tab the only one showing its label.",
           "variants": [
             {
               "preview": "JetsnackBottomBarSearchPreview",
