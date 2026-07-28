@@ -306,7 +306,7 @@
       "components": [
         {
           "componentId": "Chrome/Bottom nav",
-          "preview": "JetsnackBottomNavPreview",
+          "preview": "JetsnackBottomBarFeedPreview",
           "caption": "Custom animated bottom navigation bar — Jetsnack's signature chrome."
         },
         {
@@ -374,7 +374,7 @@
       "components": [
         {
           "componentId": "Screens/Feed",
-          "preview": "HomePreview",
+          "preview": "FeedScreenPreview",
           "caption": "The home feed — destination bar, filter row and the full stack of snack collections. Renders at default, dark theme and fontScale 2."
         },
         {
@@ -389,7 +389,7 @@
         },
         {
           "componentId": "Screens/Profile",
-          "preview": "ProfilePreview",
+          "preview": "ProfileScreenPreview",
           "caption": "Profile screen."
         },
         {
@@ -399,7 +399,7 @@
         },
         {
           "componentId": "Catalog/Filter screen",
-          "preview": "FilterScreenPreview",
+          "preview": "FilterScreenCatalogPreview",
           "caption": "Full filter sheet — sort, price, category and lifestyle sections."
         }
       ]

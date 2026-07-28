@@ -19,10 +19,8 @@
 package com.example.jetsnack.ui.home
 
 import androidx.annotation.DrawableRes
-import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.AnimatedVisibilityScope
 import androidx.compose.animation.ExperimentalSharedTransitionApi
-import androidx.compose.animation.SharedTransitionLayout
 import androidx.compose.animation.SharedTransitionScope
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -64,7 +62,6 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.jetsnack.R
 import com.example.jetsnack.model.Filter
@@ -300,22 +297,6 @@ fun SortOption(text: String, @DrawableRes icon: Int?, onClickOption: () -> Unit,
                 contentDescription = null,
                 tint = JetsnackTheme.colors.brand,
             )
-        }
-    }
-}
-
-@Preview("filter screen")
-@Composable
-fun FilterScreenPreview() {
-    JetsnackTheme {
-        SharedTransitionLayout {
-            AnimatedVisibility(true) {
-                FilterScreen(
-                    animatedVisibilityScope = this,
-                    sharedTransitionScope = this@SharedTransitionLayout,
-                    onDismiss = {},
-                )
-            }
         }
     }
 }

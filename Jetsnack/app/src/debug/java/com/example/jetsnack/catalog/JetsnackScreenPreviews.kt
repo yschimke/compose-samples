@@ -17,16 +17,37 @@
 package com.example.jetsnack.catalog
 
 import android.content.res.Configuration.UI_MODE_NIGHT_YES
+import androidx.compose.animation.AnimatedVisibility
+import androidx.compose.animation.SharedTransitionLayout
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.jetsnack.model.SnackRepo
 import com.example.jetsnack.ui.components.JetsnackPreviewWrapper
+import com.example.jetsnack.ui.home.Feed
+import com.example.jetsnack.ui.home.FilterScreen
+import com.example.jetsnack.ui.home.Profile
 import com.example.jetsnack.ui.home.cart.Cart
 import com.example.jetsnack.ui.home.search.Search
 
 /*
  * Whole-screen `@Preview`s that must be captured early enough for strict catalog generation.
  */
+
+@Preview("default", device = "spec:width=400dp,height=800dp,dpi=160")
+@Preview(
+    "dark theme",
+    uiMode = UI_MODE_NIGHT_YES,
+    device = "spec:width=400dp,height=800dp,dpi=160",
+)
+@Preview(
+    "large font",
+    fontScale = 2f,
+    device = "spec:width=700dp,height=800dp,dpi=160",
+)
+@Composable
+fun FeedScreenPreview() = JetsnackPreviewWrapper {
+    Feed(onSnackClick = { _, _ -> })
+}
 
 @Preview("default", device = "spec:width=400dp,height=800dp,dpi=160")
 @Preview(
@@ -51,6 +72,14 @@ fun CartScreenPreview() = JetsnackPreviewWrapper {
     )
 }
 
+@Preview("default")
+@Preview("dark theme", uiMode = UI_MODE_NIGHT_YES)
+@Preview("large font", fontScale = 2f, widthDp = 412, heightDp = 800)
+@Composable
+fun ProfileScreenPreview() = JetsnackPreviewWrapper {
+    Profile()
+}
+
 @Preview("search", device = "spec:width=400dp,height=800dp,dpi=160")
 @Preview(
     "search dark",
@@ -60,4 +89,18 @@ fun CartScreenPreview() = JetsnackPreviewWrapper {
 @Composable
 fun SearchScreenPreview() = JetsnackPreviewWrapper {
     Search(onSnackClick = { _, _ -> })
+}
+
+@Preview("filter screen")
+@Composable
+fun FilterScreenCatalogPreview() = JetsnackPreviewWrapper {
+    SharedTransitionLayout {
+        AnimatedVisibility(true) {
+            FilterScreen(
+                animatedVisibilityScope = this,
+                sharedTransitionScope = this@SharedTransitionLayout,
+                onDismiss = {},
+            )
+        }
+    }
 }

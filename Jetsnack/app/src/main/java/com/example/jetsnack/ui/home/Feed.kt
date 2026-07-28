@@ -18,7 +18,6 @@
 
 package com.example.jetsnack.ui.home
 
-import android.content.res.Configuration
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.ExperimentalSharedTransitionApi
 import androidx.compose.animation.SharedTransitionLayout
@@ -40,14 +39,12 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.jetsnack.model.Filter
 import com.example.jetsnack.model.SnackCollection
 import com.example.jetsnack.model.SnackRepo
 import com.example.jetsnack.ui.components.FilterBar
 import com.example.jetsnack.ui.components.JetsnackDivider
-import com.example.jetsnack.ui.components.JetsnackPreviewWrapper
 import com.example.jetsnack.ui.components.JetsnackSurface
 import com.example.jetsnack.ui.components.SnackCollection
 
@@ -133,23 +130,5 @@ private fun SnackCollectionList(
                 index = index,
             )
         }
-    }
-}
-
-@Preview("default", device = "spec:width=400dp,height=800dp,dpi=160")
-@Preview(
-    "dark theme",
-    uiMode = Configuration.UI_MODE_NIGHT_YES,
-    device = "spec:width=400dp,height=800dp,dpi=160",
-)
-@Preview(
-    "large font",
-    fontScale = 2f,
-    device = "spec:width=700dp,height=800dp,dpi=160",
-)
-@Composable
-fun HomePreview() {
-    JetsnackPreviewWrapper {
-        Feed(onSnackClick = { _, _ -> })
     }
 }
