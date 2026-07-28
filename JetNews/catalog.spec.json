@@ -177,12 +177,26 @@
         {
           "componentId": "PostCard/Simple",
           "preview": "SimplePostPreview",
-          "caption": "Standard feed row."
+          "caption": "Standard feed row.",
+          "variants": [
+            {
+              "preview": "SimplePostBookmarkedCatalogPreview",
+              "caption": "Bookmarked — the trailing toggle uses its filled treatment.",
+              "state": "selected"
+            }
+          ]
         },
         {
           "componentId": "PostCard/History",
           "preview": "HistoryPostPreview",
-          "caption": "Reading-history row with an overflow affordance."
+          "caption": "Reading-history row with an overflow affordance.",
+          "variants": [
+            {
+              "preview": "HistoryPostActionsOpenCatalogPreview",
+              "caption": "Overflow action opened — the fewer-stories confirmation dialog.",
+              "state": "actions-open"
+            }
+          ]
         },
         {
           "componentId": "PostCard/Popular",

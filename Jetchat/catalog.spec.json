@@ -55,6 +55,11 @@
               "props": {
                 "breakpoint": "medium"
               }
+            },
+            {
+              "preview": "JetchatConversationContentEmptyPreview",
+              "caption": "Channel with no messages yet; composer and channel chrome remain available.",
+              "state": "empty"
             }
           ]
         }
@@ -109,9 +114,17 @@
             {
               "preview": "JetchatMessageContinuationPreview",
               "caption": "Neither first nor last in the author's group — no avatar, no author/timestamp header.",
-              "props": {
-                "grouping": "continuation"
-              }
+              "state": "continuation"
+            },
+            {
+              "preview": "JetchatMessageGroupHeadPreview",
+              "caption": "First visible row in an author group — avatar and author line are present, with compact spacing to the next bubble.",
+              "state": "group-head"
+            },
+            {
+              "preview": "JetchatMessageGroupTailPreview",
+              "caption": "Last row in an author group — no repeated identity, with the larger inter-author gap below.",
+              "state": "group-tail"
             },
             {
               "preview": "JetchatMessageWithImagePreview",
@@ -150,6 +163,7 @@
             {
               "preview": "JetchatAuthorAndTextMessageContinuedPreview",
               "caption": "Continuation row — the header is suppressed.",
+              "state": "continuation",
               "props": {
                 "grouping": "continuation"
               }
@@ -488,7 +502,14 @@
         {
           "componentId": "Chrome/Drawer shell",
           "preview": "JetchatDrawerOpenPreview",
-          "caption": "The modal drawer open over the conversation, scrim included."
+          "caption": "The modal drawer open over the conversation, scrim included.",
+          "variants": [
+            {
+              "preview": "JetchatDrawerClosedPreview",
+              "caption": "Drawer closed — the underlying conversation is interactive again.",
+              "state": "closed"
+            }
+          ]
         },
         {
           "componentId": "Chrome/Channel bar",

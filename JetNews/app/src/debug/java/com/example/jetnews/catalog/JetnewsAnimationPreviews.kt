@@ -35,6 +35,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.jetnews.data.posts.impl.post3
+import com.example.jetnews.ui.home.PostCardHistory
 import com.example.jetnews.ui.home.PostCardPopular
 import com.example.jetnews.ui.home.PostCardSimple
 import com.example.jetnews.ui.home.PostCardTopPreview
@@ -132,6 +133,35 @@ fun PostCardTopLargeFontCatalogPreview() = PostCardTopPreview()
 )
 @Composable
 fun PostCardTopMediumCatalogPreview() = PostCardTopPreview()
+
+@Preview(name = "Simple post card — bookmarked", showBackground = true, widthDp = 412)
+@Composable
+fun SimplePostBookmarkedCatalogPreview() {
+    JetnewsTheme {
+        Surface {
+            PostCardSimple(
+                post = post3,
+                navigateToPost = {},
+                isFavorite = true,
+                onToggleFavorite = {},
+            )
+        }
+    }
+}
+
+@Preview(name = "History post card — actions open", showBackground = true, widthDp = 412)
+@Composable
+fun HistoryPostActionsOpenCatalogPreview() {
+    JetnewsTheme {
+        Surface {
+            PostCardHistory(
+                post = post3,
+                navigateToPost = {},
+                initialDialogOpen = true,
+            )
+        }
+    }
+}
 
 /** Flips [state] every [everyMs] so a preview can record the transition. */
 @Composable

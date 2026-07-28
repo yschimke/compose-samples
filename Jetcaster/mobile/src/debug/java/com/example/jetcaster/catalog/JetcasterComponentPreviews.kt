@@ -396,6 +396,20 @@ fun JetcasterPodcastDetailsPanePreview() = Wrap {
     )
 }
 
+@Preview(name = "PodcastDetails screen — not subscribed", showBackground = true, widthDp = 412, heightDp = 900)
+@Composable
+fun JetcasterPodcastDetailsUnsubscribedPreview() = Wrap {
+    PodcastDetailsScreen(
+        podcast = unsubscribedPodcast,
+        episodes = listOf(episode, longTitleEpisode),
+        toggleSubscribe = {},
+        onQueueEpisode = {},
+        navigateToPlayer = {},
+        navigateBack = {},
+        showBackButton = true,
+    )
+}
+
 @Preview(
     name = "PodcastDetails screen — medium, light",
     showBackground = true,
@@ -489,6 +503,17 @@ fun JetcasterPlayerSliderPreview() = Wrap {
 fun JetcasterPlayerSliderElapsedPreview() = Wrap {
     PlayerSlider(
         timeElapsed = Duration.ofMinutes(18),
+        episodeDuration = Duration.ofMinutes(52),
+        onSeekingStarted = {},
+        onSeekingFinished = {},
+    )
+}
+
+@Preview(name = "PlayerSlider — complete", showBackground = true, widthDp = 412)
+@Composable
+fun JetcasterPlayerSliderCompletePreview() = Wrap {
+    PlayerSlider(
+        timeElapsed = Duration.ofMinutes(52),
         episodeDuration = Duration.ofMinutes(52),
         onSeekingStarted = {},
         onSeekingFinished = {},
@@ -752,6 +777,28 @@ fun JetcasterHomeLoadingPreview() = JetcasterTheme(darkTheme = true) {
             categories = PreviewCategories,
             selectedCategory = PreviewCategories.first(),
         ),
+        podcastCategoryFilterResult = PodcastCategoryFilterResult(),
+        library = LibraryInfo(),
+        onHomeAction = {},
+        navigateToPodcastDetails = {},
+        navigateToPlayer = {},
+    )
+}
+
+@Preview(name = "Home — empty library", showBackground = true, widthDp = 412, heightDp = 900)
+@Composable
+fun JetcasterHomeEmptyLibraryPreview() = JetcasterTheme(darkTheme = true) {
+    HomeScreen(
+        isHomeAppBarExpanded = true,
+        isLoading = false,
+        featuredPodcasts = PreviewPodcasts.take(0).toImmutableList(),
+        homeCategories = HomeCategory.entries,
+        selectedHomeCategory = HomeCategory.Library,
+        filterableCategoriesModel =
+            FilterableCategoriesModel(
+                categories = PreviewCategories,
+                selectedCategory = PreviewCategories.first(),
+            ),
         podcastCategoryFilterResult = PodcastCategoryFilterResult(),
         library = LibraryInfo(),
         onHomeAction = {},

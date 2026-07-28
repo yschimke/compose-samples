@@ -54,9 +54,15 @@ import com.example.reply.data.Email
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun ReplyDockedSearchBar(emails: List<Email>, onSearchItemSelected: (Email) -> Unit, modifier: Modifier = Modifier) {
-    var query by remember { mutableStateOf("") }
-    var expanded by remember { mutableStateOf(false) }
+fun ReplyDockedSearchBar(
+    emails: List<Email>,
+    onSearchItemSelected: (Email) -> Unit,
+    modifier: Modifier = Modifier,
+    initialQuery: String = "",
+    initialExpanded: Boolean = false,
+) {
+    var query by remember(initialQuery) { mutableStateOf(initialQuery) }
+    var expanded by remember(initialExpanded) { mutableStateOf(initialExpanded) }
     val searchResults = remember { mutableStateListOf<Email>() }
     val onExpandedChange: (Boolean) -> Unit = {
         expanded = it

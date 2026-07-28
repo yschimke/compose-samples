@@ -55,6 +55,7 @@ import com.example.compose.jetchat.conversation.ChannelNameBar
 import com.example.compose.jetchat.conversation.ChatItemBubble
 import com.example.compose.jetchat.conversation.ClickableMessage
 import com.example.compose.jetchat.conversation.ConversationContent
+import com.example.compose.jetchat.conversation.ConversationUiState
 import com.example.compose.jetchat.conversation.DayHeader
 import com.example.compose.jetchat.conversation.EmojiSelector
 import com.example.compose.jetchat.conversation.EmojiTable
@@ -158,6 +159,30 @@ fun JetchatMessageContinuationPreview() = Wrap {
         msg = otherMessage,
         isUserMe = false,
         isFirstMessageByAuthor = false,
+        isLastMessageByAuthor = false,
+    )
+}
+
+@Preview(name = "Message — group head", showBackground = true, widthDp = 400)
+@Composable
+fun JetchatMessageGroupHeadPreview() = Wrap {
+    Message(
+        onAuthorClick = {},
+        msg = otherMessage,
+        isUserMe = false,
+        isFirstMessageByAuthor = false,
+        isLastMessageByAuthor = true,
+    )
+}
+
+@Preview(name = "Message — group tail", showBackground = true, widthDp = 400)
+@Composable
+fun JetchatMessageGroupTailPreview() = Wrap {
+    Message(
+        onAuthorClick = {},
+        msg = otherMessage,
+        isUserMe = false,
+        isFirstMessageByAuthor = true,
         isLastMessageByAuthor = false,
     )
 }
@@ -358,6 +383,22 @@ fun JetchatConversationContentMediumPreview() {
     }
 }
 
+@Preview(name = "Conversation — empty", showBackground = true, widthDp = 412, heightDp = 800)
+@Composable
+fun JetchatConversationContentEmptyPreview() {
+    JetchatTheme(isDarkTheme = false, isDynamicColor = false) {
+        ConversationContent(
+            uiState =
+                ConversationUiState(
+                    channelName = "#composers",
+                    channelMembers = 42,
+                    initialMessages = emptyList(),
+                ),
+            navigateToProfile = {},
+        )
+    }
+}
+
 // ---------------------------------------------------------------- channel bar
 
 @Preview(name = "ChannelNameBar — dark", showBackground = true, widthDp = 412, uiMode = Configuration.UI_MODE_NIGHT_YES)
@@ -482,6 +523,21 @@ fun JetchatDrawerOpenPreview() {
     // The modal drawer shell (scrim + sheet over the conversation), not just its content.
     JetchatDrawer(
         drawerState = rememberDrawerState(initialValue = DrawerValue.Open),
+        selectedMenu = "composers",
+        onProfileClicked = {},
+        onChatClicked = {},
+    ) {
+        Surface(Modifier.fillMaxSize()) {
+            ConversationContent(uiState = exampleUiState, navigateToProfile = {})
+        }
+    }
+}
+
+@Preview(name = "Drawer shell — closed", showBackground = true, widthDp = 412, heightDp = 800)
+@Composable
+fun JetchatDrawerClosedPreview() {
+    JetchatDrawer(
+        drawerState = rememberDrawerState(initialValue = DrawerValue.Closed),
         selectedMenu = "composers",
         onProfileClicked = {},
         onChatClicked = {},

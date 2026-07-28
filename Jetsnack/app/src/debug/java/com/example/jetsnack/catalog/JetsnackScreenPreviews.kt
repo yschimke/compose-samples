@@ -72,6 +72,19 @@ fun CartScreenPreview() = JetsnackPreviewWrapper {
     )
 }
 
+@Preview("empty", device = "spec:width=400dp,height=800dp,dpi=160")
+@Composable
+fun CartScreenEmptyPreview() = JetsnackPreviewWrapper {
+    Cart(
+        orderLines = emptyList(),
+        removeSnack = {},
+        increaseItemCount = {},
+        decreaseItemCount = {},
+        inspiredByCart = SnackRepo.getInspiredByCart(),
+        onSnackClick = { _, _ -> },
+    )
+}
+
 @Preview("default")
 @Preview("dark theme", uiMode = UI_MODE_NIGHT_YES)
 @Preview("large font", fontScale = 2f, widthDp = 412, heightDp = 800)

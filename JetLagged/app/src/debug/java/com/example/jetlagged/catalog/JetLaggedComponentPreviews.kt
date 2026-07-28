@@ -347,6 +347,14 @@ fun JetLaggedHeaderTabsPreview() = Wrap { HeaderTabs(SleepTab.Week) }
 @Composable
 fun JetLaggedHeaderTabsDayPreview() = Wrap { HeaderTabs(SleepTab.Day) }
 
+@Preview(name = "HeaderTabs — Month", showBackground = true, widthDp = 400, heightDp = 72)
+@Composable
+fun JetLaggedHeaderTabsMonthPreview() = Wrap { HeaderTabs(SleepTab.Month) }
+
+@Preview(name = "HeaderTabs — 6M", showBackground = true, widthDp = 400, heightDp = 72)
+@Composable
+fun JetLaggedHeaderTabsSixMonthsPreview() = Wrap { HeaderTabs(SleepTab.SixMonths) }
+
 @Preview(name = "HeaderTabs — 1Y", showBackground = true, widthDp = 400, heightDp = 72)
 @Composable
 fun JetLaggedHeaderTabsOneYearPreview() = Wrap { HeaderTabs(SleepTab.OneYear) }

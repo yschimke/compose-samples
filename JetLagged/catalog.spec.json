@@ -208,6 +208,7 @@
             {
               "preview": "HeartRateCardRestingPreview",
               "caption": "A resting 48 bpm — the two-digit case for the headline number.",
+              "state": "resting",
               "props": {
                 "averageBpm": "48"
               }
@@ -227,6 +228,7 @@
             {
               "preview": "WellnessCardRecordedPreview",
               "caption": "A heavily recorded night — three-digit counts, which is where the bubbles' text fitting shows.",
+              "state": "recorded",
               "props": {
                 "snoring": "128",
                 "coughing": "42",
@@ -295,16 +297,22 @@
             {
               "preview": "JetLaggedHeaderTabsDayPreview",
               "caption": "Selected on Day — the indicator sits at the leading edge with no scroll offset.",
-              "props": {
-                "selectedTab": "Day"
-              }
+              "state": "day"
+            },
+            {
+              "preview": "JetLaggedHeaderTabsMonthPreview",
+              "caption": "Selected on Month — a centred tab with content on both sides.",
+              "state": "month"
+            },
+            {
+              "preview": "JetLaggedHeaderTabsSixMonthsPreview",
+              "caption": "Selected on 6M — the indicator approaches the trailing edge.",
+              "state": "six-months"
             },
             {
               "preview": "JetLaggedHeaderTabsOneYearPreview",
               "caption": "Selected on 1Y — the row has scrolled its last tab into view.",
-              "props": {
-                "selectedTab": "1Y"
-              }
+              "state": "one-year"
             }
           ]
         }

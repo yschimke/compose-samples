@@ -19,6 +19,8 @@ package com.example.jetsnack.catalog
 import android.content.res.Configuration.UI_MODE_NIGHT_YES
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.background
+import androidx.compose.foundation.interaction.MutableInteractionSource
+import androidx.compose.foundation.interaction.PressInteraction
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -37,8 +39,11 @@ import androidx.compose.material3.SnackbarDuration
 import androidx.compose.material3.SnackbarVisuals
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
@@ -55,6 +60,7 @@ import com.example.jetsnack.model.snacks
 import com.example.jetsnack.ui.LocalSharedTransitionScope
 import com.example.jetsnack.ui.components.FilterBar
 import com.example.jetsnack.ui.components.JetsnackButton
+import com.example.jetsnack.ui.components.JetsnackGradientTintedIconButton
 import com.example.jetsnack.ui.components.JetsnackPreviewWrapper
 import com.example.jetsnack.ui.components.JetsnackSnackbar
 import com.example.jetsnack.ui.components.JetsnackSurface
@@ -71,8 +77,8 @@ import com.example.jetsnack.ui.home.cart.SummaryItem
 import com.example.jetsnack.ui.home.cart.SwipeDismissItem
 import com.example.jetsnack.ui.home.search.NoResults
 import com.example.jetsnack.ui.home.search.SearchBar
-import com.example.jetsnack.ui.home.search.SearchCategory
 import com.example.jetsnack.ui.home.search.SearchCategories
+import com.example.jetsnack.ui.home.search.SearchCategory
 import com.example.jetsnack.ui.home.search.SearchResult
 import com.example.jetsnack.ui.home.search.SearchResults
 import com.example.jetsnack.ui.home.search.SearchSuggestions
@@ -141,6 +147,22 @@ fun JetsnackButtonDisabledPreview() = Wrap {
     JetsnackButton(onClick = {}, enabled = false) {
         Text("Add to cart")
     }
+}
+
+@Preview("pressed")
+@Composable
+fun JetsnackGradientIconButtonPressedPreview() = Wrap {
+    val interactionSource = remember { MutableInteractionSource() }
+    LaunchedEffect(interactionSource) {
+        interactionSource.emit(PressInteraction.Press(Offset.Zero))
+    }
+    JetsnackGradientTintedIconButton(
+        iconResourceId = R.drawable.ic_add,
+        onClick = {},
+        contentDescription = "Add",
+        modifier = Modifier.padding(4.dp),
+        interactionSource = interactionSource,
+    )
 }
 
 // ------------------------------------------------------------------ quantity stepper states
@@ -284,6 +306,17 @@ fun FilterBarSheetOpenPreview() = Wrap {
     )
 }
 
+@Preview("no filters selected")
+@Composable
+fun FilterBarInactivePreview() = Wrap {
+    FilterBar(
+        filters = previewFilters().map { Filter(name = it.name) },
+        onShowFilters = {},
+        filterScreenVisible = false,
+        sharedTransitionScope = LocalSharedTransitionScope.current!!,
+    )
+}
+
 /**
  * Fresh [Filter] instances per preview. The shipped `filters` list holds `MutableState` that a
  * preview toggling selection would mutate for every *other* preview in the same render run.
@@ -304,6 +337,30 @@ private fun previewFilters() = listOf(
 fun CartItemPreview() = Wrap {
     CartItem(
         orderLine = cart.first(),
+        removeSnack = {},
+        increaseItemCount = {},
+        decreaseItemCount = {},
+        onSnackClick = { _, _ -> },
+    )
+}
+
+@Preview("count — one")
+@Composable
+fun CartItemSinglePreview() = Wrap {
+    CartItem(
+        orderLine = cart.first().copy(count = 1),
+        removeSnack = {},
+        increaseItemCount = {},
+        decreaseItemCount = {},
+        onSnackClick = { _, _ -> },
+    )
+}
+
+@Preview("count — many")
+@Composable
+fun CartItemManyPreview() = Wrap {
+    CartItem(
+        orderLine = cart.first().copy(count = 12),
         removeSnack = {},
         increaseItemCount = {},
         decreaseItemCount = {},
@@ -357,6 +414,45 @@ fun SearchBarCatalogPreview() = Wrap {
         onSearchFocusChange = {},
         onClearQuery = {},
         searching = false,
+    )
+}
+
+@Preview("catalog — focused")
+@Composable
+fun SearchBarFocusedCatalogPreview() = Wrap {
+    SearchBar(
+        query = TextFieldValue(),
+        onQueryChange = {},
+        searchFocused = true,
+        onSearchFocusChange = {},
+        onClearQuery = {},
+        searching = false,
+    )
+}
+
+@Preview("catalog — query")
+@Composable
+fun SearchBarQueryCatalogPreview() = Wrap {
+    SearchBar(
+        query = TextFieldValue("donut"),
+        onQueryChange = {},
+        searchFocused = true,
+        onSearchFocusChange = {},
+        onClearQuery = {},
+        searching = false,
+    )
+}
+
+@Preview("catalog — searching")
+@Composable
+fun SearchBarSearchingCatalogPreview() = Wrap {
+    SearchBar(
+        query = TextFieldValue("donut"),
+        onQueryChange = {},
+        searchFocused = true,
+        onSearchFocusChange = {},
+        onClearQuery = {},
+        searching = true,
     )
 }
 
@@ -415,6 +511,16 @@ fun SearchResultCatalogPreview() = Wrap {
         snack = snacks[0],
         onSnackClick = { _, _ -> },
         showDivider = false,
+    )
+}
+
+@Preview("with divider")
+@Composable
+fun SearchResultWithDividerCatalogPreview() = Wrap {
+    SearchResult(
+        snack = snacks[0],
+        onSnackClick = { _, _ -> },
+        showDivider = true,
     )
 }
 

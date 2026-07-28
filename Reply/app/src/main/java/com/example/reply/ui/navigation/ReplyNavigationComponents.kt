@@ -174,6 +174,7 @@ fun ReplyNavigationRail(
     navigationContentPosition: ReplyNavigationContentPosition,
     navigateToTopLevelDestination: (ReplyTopLevelDestination) -> Unit,
     onDrawerClicked: () -> Unit = {},
+    selectedDestination: ReplyTopLevelDestination? = null,
 ) {
     NavigationRail(
         modifier = Modifier.fillMaxHeight(),
@@ -217,7 +218,7 @@ fun ReplyNavigationRail(
         ) {
             TOP_LEVEL_DESTINATIONS.forEach { replyDestination ->
                 NavigationRailItem(
-                    selected = currentDestination.hasRoute(replyDestination),
+                    selected = isSelected(currentDestination, selectedDestination, replyDestination),
                     onClick = { navigateToTopLevelDestination(replyDestination) },
                     icon = {
                         Icon(
@@ -234,11 +235,15 @@ fun ReplyNavigationRail(
 }
 
 @Composable
-fun ReplyBottomNavigationBar(currentDestination: NavDestination?, navigateToTopLevelDestination: (ReplyTopLevelDestination) -> Unit) {
+fun ReplyBottomNavigationBar(
+    currentDestination: NavDestination?,
+    navigateToTopLevelDestination: (ReplyTopLevelDestination) -> Unit,
+    selectedDestination: ReplyTopLevelDestination? = null,
+) {
     NavigationBar(modifier = Modifier.fillMaxWidth()) {
         TOP_LEVEL_DESTINATIONS.forEach { replyDestination ->
             NavigationBarItem(
-                selected = currentDestination.hasRoute(replyDestination),
+                selected = isSelected(currentDestination, selectedDestination, replyDestination),
                 onClick = { navigateToTopLevelDestination(replyDestination) },
                 icon = {
                     Icon(
@@ -256,6 +261,7 @@ fun PermanentNavigationDrawerContent(
     currentDestination: NavDestination?,
     navigationContentPosition: ReplyNavigationContentPosition,
     navigateToTopLevelDestination: (ReplyTopLevelDestination) -> Unit,
+    selectedDestination: ReplyTopLevelDestination? = null,
 ) {
     PermanentDrawerSheet(
         modifier = Modifier.sizeIn(minWidth = 200.dp, maxWidth = 300.dp),
@@ -308,7 +314,7 @@ fun PermanentNavigationDrawerContent(
                 ) {
                     TOP_LEVEL_DESTINATIONS.forEach { replyDestination ->
                         NavigationDrawerItem(
-                            selected = currentDestination.hasRoute(replyDestination),
+                            selected = isSelected(currentDestination, selectedDestination, replyDestination),
                             label = {
                                 Text(
                                     text = stringResource(id = replyDestination.iconTextId),
@@ -342,6 +348,7 @@ fun ModalNavigationDrawerContent(
     navigationContentPosition: ReplyNavigationContentPosition,
     navigateToTopLevelDestination: (ReplyTopLevelDestination) -> Unit,
     onDrawerClicked: () -> Unit = {},
+    selectedDestination: ReplyTopLevelDestination? = null,
 ) {
     ModalDrawerSheet {
         // TODO remove custom nav drawer content positioning when NavDrawer component supports it. ticket : b/232495216
@@ -404,7 +411,7 @@ fun ModalNavigationDrawerContent(
                 ) {
                     TOP_LEVEL_DESTINATIONS.forEach { replyDestination ->
                         NavigationDrawerItem(
-                            selected = currentDestination.hasRoute(replyDestination),
+                            selected = isSelected(currentDestination, selectedDestination, replyDestination),
                             label = {
                                 Text(
                                     text = stringResource(id = replyDestination.iconTextId),
@@ -476,3 +483,10 @@ enum class LayoutType {
 }
 
 fun NavDestination?.hasRoute(destination: ReplyTopLevelDestination): Boolean = this?.hasRoute(destination.route::class) ?: false
+
+private fun isSelected(
+    currentDestination: NavDestination?,
+    selectedDestination: ReplyTopLevelDestination?,
+    candidate: ReplyTopLevelDestination,
+): Boolean = selectedDestination?.let { it.route == candidate.route }
+    ?: currentDestination.hasRoute(candidate)

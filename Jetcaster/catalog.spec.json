@@ -55,6 +55,7 @@
             {
               "preview": "JetcasterHomeLibraryPreview",
               "caption": "The full home screen on the Library tab, driven by fixture data rather than a live feed.",
+              "state": "library",
               "props": {
                 "selectedTab": "library"
               }
@@ -62,15 +63,25 @@
             {
               "preview": "JetcasterHomeLoadingPreview",
               "caption": "Refreshing — the loading state over an empty library.",
+              "state": "loading",
               "props": {
                 "selectedTab": "library",
                 "isLoading": true
               }
             },
             {
+              "preview": "JetcasterHomeEmptyLibraryPreview",
+              "caption": "Library loaded with no subscribed podcasts or queued episodes.",
+              "state": "empty",
+              "props": {
+                "selectedTab": "library"
+              }
+            },
+            {
               "preview": "JetcasterHomeLibraryLightPreview",
               "caption": "Light mode — the full home screen against the corrected light surface palette.",
               "theme": "light",
+              "state": "library",
               "props": {
                 "selectedTab": "library"
               }
@@ -121,6 +132,11 @@
               }
             },
             {
+              "preview": "JetcasterPodcastDetailsUnsubscribedPreview",
+              "caption": "Full details screen before the listener subscribes.",
+              "state": "unsubscribed"
+            },
+            {
               "preview": "JetcasterPodcastDetailsMediumLightPreview",
               "caption": "Light mode at the medium catalog breakpoint.",
               "theme": "light",
@@ -152,6 +168,7 @@
             {
               "preview": "JetcasterPodcastDetailsHeaderPreview",
               "caption": "Subscribed — the action row shows the unsubscribe path.",
+              "state": "subscribed",
               "props": {
                 "isSubscribed": true
               }
@@ -159,6 +176,7 @@
             {
               "preview": "JetcasterPodcastDetailsHeaderUnsubscribedPreview",
               "caption": "Not subscribed.",
+              "state": "unsubscribed",
               "props": {
                 "isSubscribed": false
               }
@@ -185,9 +203,7 @@
             {
               "preview": "JetcasterPodcastDescriptionOverflowPreview",
               "caption": "Overflowing — the 'see more' affordance appears.",
-              "props": {
-                "overflow": true
-              }
+              "state": "overflowing"
             }
           ]
         },
@@ -204,6 +220,7 @@
             {
               "preview": "JetcasterSubscribeButtonsSubscribedPreview",
               "caption": "Subscribed.",
+              "state": "subscribed",
               "props": {
                 "isSubscribed": true
               }
@@ -230,6 +247,7 @@
             {
               "preview": "JetcasterTopPodcastRowItemFollowedPreview",
               "caption": "Followed — the toggle fills in.",
+              "state": "followed",
               "props": {
                 "isFollowed": true
               }
@@ -266,6 +284,7 @@
             {
               "preview": "JetcasterCategoryChipSelectedPreview",
               "caption": "Selected.",
+              "state": "selected",
               "props": {
                 "selected": true
               }
@@ -280,6 +299,7 @@
             {
               "preview": "JetcasterFollowToggleFollowedPreview",
               "caption": "Following — the icon swaps to a check.",
+              "state": "followed",
               "props": {
                 "isFollowed": true
               }
@@ -314,6 +334,7 @@
             {
               "preview": "JetcasterEpisodeRowSummaryPreview",
               "caption": "With the summary expanded.",
+              "state": "expanded",
               "props": {
                 "showSummary": true
               }
@@ -380,6 +401,7 @@
             {
               "preview": "JetcasterPlayerButtonsPlayingPreview",
               "caption": "Playing — the primary action is pause.",
+              "state": "playing",
               "props": {
                 "isPlaying": true
               }
@@ -387,6 +409,7 @@
             {
               "preview": "JetcasterPlayerButtonsPausedPreview",
               "caption": "Paused.",
+              "state": "paused",
               "props": {
                 "isPlaying": false
               }
@@ -394,6 +417,7 @@
             {
               "preview": "JetcasterPlayerButtonsNoQueuePreview",
               "caption": "Empty queue — the skip-next affordance has nothing to advance to.",
+              "state": "queue-empty",
               "props": {
                 "hasNext": false
               }
@@ -413,9 +437,12 @@
             {
               "preview": "JetcasterPlayerSliderElapsedPreview",
               "caption": "Eighteen minutes into a 52-minute episode.",
-              "props": {
-                "timeElapsed": "18m"
-              }
+              "state": "in-progress"
+            },
+            {
+              "preview": "JetcasterPlayerSliderCompletePreview",
+              "caption": "Playback complete — the scrubber reaches the end of the track.",
+              "state": "complete"
             }
           ]
         },
@@ -443,6 +470,7 @@
             {
               "preview": "JetcasterHomeAppBarPreview",
               "caption": "Collapsed.",
+              "state": "collapsed",
               "props": {
                 "isExpanded": false
               }
@@ -450,6 +478,7 @@
             {
               "preview": "JetcasterHomeAppBarExpandedPreview",
               "caption": "Expanded — the search field opens out.",
+              "state": "expanded",
               "props": {
                 "isExpanded": true
               }
@@ -464,6 +493,7 @@
             {
               "preview": "JetcasterPillToolbarLibraryPreview",
               "caption": "Library selected — the selected pill takes the secondary colour.",
+              "state": "library",
               "props": {
                 "selected": "Library"
               }

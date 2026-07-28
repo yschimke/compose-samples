@@ -74,7 +74,12 @@
             {
               "preview": "ReplyEmailListSelectionPreview",
               "caption": "Selection mode — two messages selected, one opened.",
-              "props": { "state": "selection" }
+              "state": "selection"
+            },
+            {
+              "preview": "ReplyEmailListEmptyPreview",
+              "caption": "Inbox with no messages.",
+              "state": "empty"
             }
           ]
         },
@@ -109,12 +114,18 @@
             {
               "preview": "ReplyEmailListItemOpenedPreview",
               "caption": "Currently open in the detail pane.",
+              "state": "opened",
               "props": { "isOpened": true }
             },
             {
               "preview": "ReplyEmailListItemSelectedPreview",
               "caption": "Selected — avatar swaps to a check.",
-              "props": { "isSelected": true }
+              "state": "selected"
+            },
+            {
+              "preview": "ReplyEmailListItemOpenedSelectedPreview",
+              "caption": "The row is both open in the detail pane and selected for a bulk action.",
+              "state": "opened-selected"
             },
             {
               "preview": "ReplyEmailListItemDarkPreview",
@@ -150,7 +161,19 @@
         {
           "componentId": "AppBars/Search",
           "preview": "ReplyDockedSearchBarPreview",
-          "caption": "Docked search bar with the current account avatar."
+          "caption": "Docked search bar with the current account avatar.",
+          "variants": [
+            {
+              "preview": "ReplyDockedSearchBarExpandedPreview",
+              "caption": "Focused and expanded, before a query is entered.",
+              "state": "expanded"
+            },
+            {
+              "preview": "ReplyDockedSearchBarResultsPreview",
+              "caption": "Expanded with a query and matching email results.",
+              "state": "results"
+            }
+          ]
         },
         {
           "componentId": "AppBars/Detail",
@@ -173,7 +196,19 @@
         {
           "componentId": "Navigation/BottomBar",
           "preview": "ReplyBottomNavigationBarPreview",
-          "caption": "Compact-width navigation bar."
+          "caption": "Compact-width navigation bar.",
+          "variants": [
+            {
+              "preview": "ReplyBottomNavigationBarInboxPreview",
+              "caption": "Inbox selected.",
+              "state": "inbox"
+            },
+            {
+              "preview": "ReplyBottomNavigationBarArticlesPreview",
+              "caption": "Articles selected.",
+              "state": "articles"
+            }
+          ]
         },
         {
           "componentId": "Navigation/Rail",
@@ -184,6 +219,11 @@
               "preview": "ReplyNavigationRailCenterPreview",
               "caption": "Content centred — the position used on taller windows.",
               "props": { "contentPosition": "CENTER" }
+            },
+            {
+              "preview": "ReplyNavigationRailInboxPreview",
+              "caption": "Top-positioned rail with Inbox selected.",
+              "state": "inbox"
             }
           ]
         },
@@ -198,6 +238,11 @@
               "props": {
                 "presentation": "modal"
               }
+            },
+            {
+              "preview": "PermanentNavigationDrawerInboxPreview",
+              "caption": "Permanent drawer with Inbox selected.",
+              "state": "inbox"
             }
           ]
         }
@@ -215,7 +260,7 @@
             {
               "preview": "SelectedProfileImagePreview",
               "caption": "The selected-state check that replaces the avatar.",
-              "props": { "isSelected": true }
+              "state": "selected"
             }
           ]
         }

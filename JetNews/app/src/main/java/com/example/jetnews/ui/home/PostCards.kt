@@ -128,8 +128,8 @@ fun PostCardSimple(post: Post, navigateToPost: (String) -> Unit, isFavorite: Boo
 }
 
 @Composable
-fun PostCardHistory(post: Post, navigateToPost: (String) -> Unit) {
-    var openDialog by remember { mutableStateOf(false) }
+fun PostCardHistory(post: Post, navigateToPost: (String) -> Unit, initialDialogOpen: Boolean = false) {
+    var openDialog by remember(initialDialogOpen) { mutableStateOf(initialDialogOpen) }
 
     Row(
         Modifier

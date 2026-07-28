@@ -39,6 +39,7 @@ import com.example.reply.ui.navigation.ModalNavigationDrawerContent
 import com.example.reply.ui.navigation.PermanentNavigationDrawerContent
 import com.example.reply.ui.navigation.ReplyBottomNavigationBar
 import com.example.reply.ui.navigation.ReplyNavigationRail
+import com.example.reply.ui.navigation.TOP_LEVEL_DESTINATIONS
 import com.example.reply.ui.theme.ContrastAwareReplyTheme
 import com.example.reply.ui.utils.ReplyNavigationContentPosition
 
@@ -98,6 +99,18 @@ fun ReplyEmailListItemSelectedPreview() = Wrap {
     ReplyEmailListItem(email = email, navigateToDetail = {}, toggleSelection = {}, isSelected = true)
 }
 
+@Preview(name = "EmailListItem — opened and selected", showBackground = true, widthDp = 400)
+@Composable
+fun ReplyEmailListItemOpenedSelectedPreview() = Wrap {
+    ReplyEmailListItem(
+        email = email,
+        navigateToDetail = {},
+        toggleSelection = {},
+        isOpened = true,
+        isSelected = true,
+    )
+}
+
 @Preview(name = "EmailListItem — dark", showBackground = true, widthDp = 400, uiMode = Configuration.UI_MODE_NIGHT_YES)
 @Composable
 fun ReplyEmailListItemDarkPreview() = Wrap(dark = true) {
@@ -122,6 +135,27 @@ fun ReplyEmailThreadItemDarkPreview() = Wrap(dark = true) {
 @Composable
 fun ReplyDockedSearchBarPreview() = Wrap {
     ReplyDockedSearchBar(emails = emails, onSearchItemSelected = {})
+}
+
+@Preview(name = "SearchBar — expanded", showBackground = true, widthDp = 400, heightDp = 180)
+@Composable
+fun ReplyDockedSearchBarExpandedPreview() = Wrap {
+    ReplyDockedSearchBar(
+        emails = emails,
+        onSearchItemSelected = {},
+        initialExpanded = true,
+    )
+}
+
+@Preview(name = "SearchBar — results", showBackground = true, widthDp = 400, heightDp = 420)
+@Composable
+fun ReplyDockedSearchBarResultsPreview() = Wrap {
+    ReplyDockedSearchBar(
+        emails = emails,
+        onSearchItemSelected = {},
+        initialQuery = email.subject.take(4),
+        initialExpanded = true,
+    )
 }
 
 @Preview(name = "DetailAppBar — full screen", showBackground = true, widthDp = 400)
@@ -164,6 +198,19 @@ fun ReplyEmailListSelectionPreview() = Wrap {
     )
 }
 
+@Preview(name = "EmailList — empty", showBackground = true, widthDp = 400, heightDp = 700)
+@Composable
+fun ReplyEmailListEmptyPreview() = Wrap {
+    ReplyEmailList(
+        emails = emptyList(),
+        openedEmail = null,
+        selectedEmailIds = emptySet(),
+        toggleEmailSelection = {},
+        emailLazyListState = rememberLazyListState(),
+        navigateToDetail = { _, _ -> },
+    )
+}
+
 @Preview(name = "EmailDetail — full screen", showBackground = true, widthDp = 400, heightDp = 700)
 @Composable
 fun ReplyEmailDetailPreview() = Wrap {
@@ -190,6 +237,26 @@ fun ReplyBottomNavigationBarPreview() = Wrap {
     ReplyBottomNavigationBar(currentDestination = null, navigateToTopLevelDestination = {})
 }
 
+@Preview(name = "BottomNavigationBar — Inbox selected", showBackground = true, widthDp = 400)
+@Composable
+fun ReplyBottomNavigationBarInboxPreview() = Wrap {
+    ReplyBottomNavigationBar(
+        currentDestination = null,
+        navigateToTopLevelDestination = {},
+        selectedDestination = TOP_LEVEL_DESTINATIONS[0],
+    )
+}
+
+@Preview(name = "BottomNavigationBar — Articles selected", showBackground = true, widthDp = 400)
+@Composable
+fun ReplyBottomNavigationBarArticlesPreview() = Wrap {
+    ReplyBottomNavigationBar(
+        currentDestination = null,
+        navigateToTopLevelDestination = {},
+        selectedDestination = TOP_LEVEL_DESTINATIONS[1],
+    )
+}
+
 @Preview(name = "NavigationRail — top", showBackground = true, widthDp = 120, heightDp = 600)
 @Composable
 fun ReplyNavigationRailTopPreview() = Wrap {
@@ -210,6 +277,17 @@ fun ReplyNavigationRailCenterPreview() = Wrap {
     )
 }
 
+@Preview(name = "NavigationRail — Inbox selected", showBackground = true, widthDp = 120, heightDp = 600)
+@Composable
+fun ReplyNavigationRailInboxPreview() = Wrap {
+    ReplyNavigationRail(
+        currentDestination = null,
+        navigationContentPosition = ReplyNavigationContentPosition.TOP,
+        navigateToTopLevelDestination = {},
+        selectedDestination = TOP_LEVEL_DESTINATIONS[0],
+    )
+}
+
 @Preview(name = "PermanentDrawer", showBackground = true, widthDp = 300, heightDp = 700)
 @Composable
 fun PermanentNavigationDrawerContentPreview() = Wrap {
@@ -217,6 +295,17 @@ fun PermanentNavigationDrawerContentPreview() = Wrap {
         currentDestination = null,
         navigationContentPosition = ReplyNavigationContentPosition.TOP,
         navigateToTopLevelDestination = {},
+    )
+}
+
+@Preview(name = "PermanentDrawer — Inbox selected", showBackground = true, widthDp = 300, heightDp = 700)
+@Composable
+fun PermanentNavigationDrawerInboxPreview() = Wrap {
+    PermanentNavigationDrawerContent(
+        currentDestination = null,
+        navigationContentPosition = ReplyNavigationContentPosition.TOP,
+        navigateToTopLevelDestination = {},
+        selectedDestination = TOP_LEVEL_DESTINATIONS[0],
     )
 }
 

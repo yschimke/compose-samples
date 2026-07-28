@@ -18,7 +18,7 @@
     "surface": "dark",
     "hero": "Podcast/Screen"
   },
-  "groupOrder": ["Browse", "Playback", "Components", "States"],
+  "groupOrder": ["Browse", "Playback", "Components"],
   "groups": [
     {
       "name": "Browse",
@@ -44,6 +44,16 @@
                 "device": "smallRound",
                 "fontScale": 1.24
               }
+            },
+            {
+              "preview": "PodcastScreenLoadingCatalogPreview",
+              "caption": "Podcast browse list while subscriptions load.",
+              "state": "loading"
+            },
+            {
+              "preview": "PodcastScreenEmptyCatalogPreview",
+              "caption": "No followed podcasts — the dismissable empty-state dialog.",
+              "state": "empty"
             }
           ]
         },
@@ -66,6 +76,16 @@
                 "device": "smallRound",
                 "fontScale": 1.24
               }
+            },
+            {
+              "preview": "PodcastDetailsLoadingCatalogPreview",
+              "caption": "Podcast and episode data still loading.",
+              "state": "loading"
+            },
+            {
+              "preview": "PodcastDetailsEmptyCatalogPreview",
+              "caption": "Podcast has no episodes to display.",
+              "state": "empty"
             }
           ]
         },
@@ -80,6 +100,16 @@
               "props": {
                 "device": "smallRound"
               }
+            },
+            {
+              "preview": "LibraryScreenLoadingCatalogPreview",
+              "caption": "Library loading placeholders.",
+              "state": "loading"
+            },
+            {
+              "preview": "LibraryScreenNoSubscriptionsCatalogPreview",
+              "caption": "No subscriptions — recommended podcasts become follow actions.",
+              "state": "no-subscriptions"
             }
           ]
         },
@@ -94,6 +124,16 @@
               "props": {
                 "device": "smallRound"
               }
+            },
+            {
+              "preview": "LatestEpisodeLoadingCatalogPreview",
+              "caption": "Latest episodes still loading.",
+              "state": "loading"
+            },
+            {
+              "preview": "LatestEpisodeEmptyCatalogPreview",
+              "caption": "No latest episodes are available.",
+              "state": "empty"
             }
           ]
         }
@@ -123,6 +163,24 @@
                 "device": "smallRound",
                 "fontScale": 1.24
               }
+            },
+            {
+              "preview": "EpisodeScreenLoadingPreview",
+              "caption": "Episode metadata loading with placeholder treatments.",
+              "state": "loading"
+            },
+            {
+              "preview": "EpisodeLoadingSmallCatalogPreview",
+              "caption": "Episode loading on a small round display.",
+              "state": "loading",
+              "props": {
+                "device": "smallRound"
+              }
+            },
+            {
+              "preview": "EpisodeScreenEmptyCatalogPreview",
+              "caption": "The requested episode is unavailable.",
+              "state": "empty"
             }
           ]
         },
@@ -137,6 +195,16 @@
               "props": {
                 "device": "smallRound"
               }
+            },
+            {
+              "preview": "QueueScreenLoadingCatalogPreview",
+              "caption": "Playback queue while episodes load.",
+              "state": "loading"
+            },
+            {
+              "preview": "QueueScreenEmptyCatalogPreview",
+              "caption": "Playback queue with no episodes.",
+              "state": "empty"
             }
           ]
         }
@@ -179,26 +247,6 @@
               "props": {
                 "device": "smallRound",
                 "fontScale": 1.24
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "States",
-      "section": "Screens",
-      "components": [
-        {
-          "componentId": "Episode/Loading",
-          "preview": "EpisodeScreenLoadingPreview",
-          "caption": "Episode screen while loading.",
-          "variants": [
-            {
-              "preview": "EpisodeLoadingSmallCatalogPreview",
-              "caption": "Episode loading state on a small round display.",
-              "props": {
-                "device": "smallRound"
               }
             }
           ]

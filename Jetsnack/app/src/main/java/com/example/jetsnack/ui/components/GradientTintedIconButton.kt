@@ -46,9 +46,8 @@ fun JetsnackGradientTintedIconButton(
     contentDescription: String?,
     modifier: Modifier = Modifier,
     colors: List<Color> = JetsnackTheme.colors.interactiveSecondary,
+    interactionSource: MutableInteractionSource = remember { MutableInteractionSource() },
 ) {
-    val interactionSource = remember { MutableInteractionSource() }
-
     // This should use a layer + srcIn but needs investigation
     val border = Modifier.fadeInDiagonalGradientBorder(
         showBorder = true,

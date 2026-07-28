@@ -87,7 +87,14 @@
         {
           "componentId": "Foundations/Icon button",
           "preview": "GradientTintedIconButtonPreview",
-          "caption": "Gradient-tinted icon button — the system's gradient tokens applied to an icon affordance."
+          "caption": "Gradient-tinted icon button — the system's gradient tokens applied to an icon affordance.",
+          "variants": [
+            {
+              "preview": "JetsnackGradientIconButtonPressedPreview",
+              "caption": "Pressed — the background fills with the gradient while the icon tint flattens for contrast.",
+              "state": "pressed"
+            }
+          ]
         }
       ]
     },
@@ -168,6 +175,7 @@
             {
               "preview": "SnackCollectionNormalPreview",
               "caption": "The same collection with highlight=false: plain circular items instead of gradient cards.",
+              "state": "normal",
               "props": {
                 "highlight": false
               }
@@ -192,11 +200,14 @@
           "caption": "The filter row above the feed, with the filter-sheet trigger visible.",
           "variants": [
             {
+              "preview": "FilterBarInactivePreview",
+              "caption": "No filters selected.",
+              "state": "inactive"
+            },
+            {
               "preview": "FilterBarSheetOpenPreview",
               "caption": "With the filter sheet open the trigger animates away — it is the shared element the sheet grows out of.",
-              "props": {
-                "filterScreenVisible": true
-              }
+              "state": "sheet-open"
             }
           ]
         }
@@ -221,6 +232,7 @@
             {
               "preview": "QuantitySelectorSinglePreview",
               "caption": "At a count of 1.",
+              "state": "minimum",
               "props": {
                 "count": 1
               }
@@ -228,6 +240,7 @@
             {
               "preview": "QuantitySelectorManyPreview",
               "caption": "At a count of 12 — the Crossfade'd number widens the row, which is the layout case worth seeing.",
+              "state": "many",
               "props": {
                 "count": 12
               }
@@ -237,7 +250,19 @@
         {
           "componentId": "Cart/Item",
           "preview": "CartItemPreview",
-          "caption": "A single cart line: image, name, price, remove affordance and the quantity stepper."
+          "caption": "A single cart line: image, name, price, remove affordance and the quantity stepper.",
+          "variants": [
+            {
+              "preview": "CartItemSinglePreview",
+              "caption": "Minimum quantity of one.",
+              "state": "minimum"
+            },
+            {
+              "preview": "CartItemManyPreview",
+              "caption": "Double-digit quantity, exercising the wider animated count.",
+              "state": "many"
+            }
+          ]
         },
         {
           "componentId": "Cart/Summary",
@@ -260,6 +285,21 @@
           "preview": "SearchBarCatalogPreview",
           "caption": "Search entry field.",
           "variants": [
+            {
+              "preview": "SearchBarFocusedCatalogPreview",
+              "caption": "Focused but empty — the back affordance replaces the search hint.",
+              "state": "focused"
+            },
+            {
+              "preview": "SearchBarQueryCatalogPreview",
+              "caption": "Focused with an entered query.",
+              "state": "query"
+            },
+            {
+              "preview": "SearchBarSearchingCatalogPreview",
+              "caption": "Search in flight — a progress indicator replaces the balancing spacer.",
+              "state": "searching"
+            },
             {
               "preview": "SearchBarDarkCatalogPreview",
               "caption": "Search entry field in dark mode.",
@@ -293,6 +333,11 @@
           "preview": "SearchResultCatalogPreview",
           "caption": "A single search result row.",
           "variants": [
+            {
+              "preview": "SearchResultWithDividerCatalogPreview",
+              "caption": "Middle-of-list state with the trailing divider visible.",
+              "state": "with-divider"
+            },
             {
               "preview": "SearchResultsPreview",
               "caption": "The results list.",
@@ -408,7 +453,14 @@
         {
           "componentId": "Screens/Cart",
           "preview": "CartScreenPreview",
-          "caption": "The cart — order lines, summary and the checkout bar. Renders at default, dark theme and fontScale 2."
+          "caption": "The cart — order lines, summary and the checkout bar. Renders at default, dark theme and fontScale 2.",
+          "variants": [
+            {
+              "preview": "CartScreenEmptyPreview",
+              "caption": "Empty cart — no order rows, while recommendations and checkout chrome keep their layout.",
+              "state": "empty"
+            }
+          ]
         },
         {
           "componentId": "Screens/Search",

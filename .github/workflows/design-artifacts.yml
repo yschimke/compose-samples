@@ -207,11 +207,6 @@ jobs:
             spec: Jetcaster/catalog.wear.spec.json
             dir: Jetcaster
             module: ':wear'
-            # WearThemeCatalog's synthetic sheet currently loses semantics in
-            # the bundle pass (#2872). Its PNG and theme tokens still render;
-            # tolerate only that auxiliary metadata while keeping the catalog
-            # completeness checks for every image.
-            allowIncomplete: true
     uses: yschimke/compose-ai-tools/.github/workflows/design-artifacts-reusable.yml@main
     with:
       system: ${{ matrix.system }}
