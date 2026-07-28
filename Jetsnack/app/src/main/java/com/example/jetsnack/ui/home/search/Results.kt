@@ -162,7 +162,7 @@ fun NoResults(query: String, modifier: Modifier = Modifier) {
 
 @Preview("default")
 @Preview("dark theme", uiMode = Configuration.UI_MODE_NIGHT_YES)
-@Preview("large font", fontScale = 2f)
+@Preview("large font", fontScale = 2f, widthDp = 412, heightDp = 220)
 @Composable
 private fun SearchResultPreview() {
     JetsnackTheme {

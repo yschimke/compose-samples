@@ -105,7 +105,7 @@ private val ButtonShape = RoundedCornerShape(percent = 50)
 
 @Preview("default", "round")
 @Preview("dark theme", "round", uiMode = UI_MODE_NIGHT_YES)
-@Preview("large font", "round", fontScale = 2f)
+@Preview("large font", "round", fontScale = 2f, widthDp = 412, heightDp = 120)
 @Composable
 private fun ButtonPreview() {
     JetsnackTheme {
@@ -117,7 +117,7 @@ private fun ButtonPreview() {
 
 @Preview("default", "rectangle")
 @Preview("dark theme", "rectangle", uiMode = UI_MODE_NIGHT_YES)
-@Preview("large font", "rectangle", fontScale = 2f)
+@Preview("large font", "rectangle", fontScale = 2f, widthDp = 412, heightDp = 120)
 @Composable
 private fun RectangleButtonPreview() {
     JetsnackTheme {

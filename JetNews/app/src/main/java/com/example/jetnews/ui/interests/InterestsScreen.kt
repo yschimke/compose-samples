@@ -552,7 +552,10 @@ private fun InterestsAdaptiveContentLayout(
 
 @Preview("Interests screen", "Interests")
 @Preview("Interests screen (dark)", "Interests", uiMode = UI_MODE_NIGHT_YES)
-@Preview("Interests screen (big font)", "Interests", fontScale = 1.5f)
+@Preview(
+    "Interests screen (big font)", "Interests",
+    fontScale = 1.5f, widthDp = 412, heightDp = 900,
+)
 @Composable
 fun PreviewInterestsScreenDrawer() {
     JetnewsTheme {
@@ -579,7 +582,7 @@ fun PreviewInterestsScreenDrawer() {
 )
 @Preview(
     "Interests screen navrail (big font)", "Interests",
-    fontScale = 1.5f, device = Devices.PIXEL_C,
+    fontScale = 1.5f, widthDp = 700, heightDp = 900,
 )
 @Composable
 fun PreviewInterestsScreenNavRail() {

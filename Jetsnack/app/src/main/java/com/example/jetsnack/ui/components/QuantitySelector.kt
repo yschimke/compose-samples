@@ -81,7 +81,7 @@ fun QuantitySelector(count: Int, decreaseItemCount: () -> Unit, increaseItemCoun
 
 @Preview("default")
 @Preview("dark theme", uiMode = UI_MODE_NIGHT_YES)
-@Preview("large font", fontScale = 2f)
+@Preview("large font", fontScale = 2f, widthDp = 412, heightDp = 120)
 @Composable
 fun QuantitySelectorPreview() {
     JetsnackTheme {

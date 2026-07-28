@@ -72,8 +72,8 @@
           "caption": "The starter screen: home on the Discover tab, which is the category HomeViewModel opens on — category chips over the top-podcast carousel and the episode list.",
           "variants": [
             {
-              "preview": "PreviewHome",
-              "caption": "The sample's own adaptive preview of the same tab, across the five sample devices and mid-refresh.",
+              "preview": "JetcasterHomeLoadingPreview",
+              "caption": "The same home surface mid-refresh.",
               "props": {
                 "isLoading": true
               }
@@ -88,16 +88,9 @@
       "components": [
         {
           "componentId": "PodcastDetails/Screen",
-          "preview": "PodcastDetailsScreenPreview",
-          "caption": "Podcast details across the five sample devices — the sample's own adaptive preview.",
+          "preview": "JetcasterPodcastDetailsFullScreenPreview",
+          "caption": "Podcast details at the compact catalog breakpoint.",
           "variants": [
-            {
-              "preview": "JetcasterPodcastDetailsFullScreenPreview",
-              "caption": "Full screen, with the back affordance.",
-              "props": {
-                "showBackButton": true
-              }
-            },
             {
               "preview": "JetcasterPodcastDetailsPanePreview",
               "caption": "As the supporting pane of a list/detail layout — back affordance drops away.",
@@ -307,11 +300,6 @@
               "props": {
                 "duration": null
               }
-            },
-            {
-              "preview": "JetcasterEpisodeRowLightPreview",
-              "caption": "Light mode — the surfaceContainer fix is most visible here.",
-              "theme": "light"
             }
           ]
         }
@@ -323,8 +311,8 @@
       "components": [
         {
           "componentId": "Player/Screen",
-          "preview": "PlayerScreenPreview",
-          "caption": "The now-playing screen across the five sample devices — the regular layout on phones and the book/two-pane layout once the width is expanded."
+          "preview": "JetcasterPlayerScreenCatalogPreview",
+          "caption": "The now-playing screen at the compact catalog breakpoint."
         }
       ]
     },

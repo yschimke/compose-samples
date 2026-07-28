@@ -55,6 +55,7 @@ import com.example.jetcaster.ui.home.category.TopPodcastRowItem
 import com.example.jetcaster.ui.home.discover.ChoiceChipContent
 import com.example.jetcaster.ui.home.discover.PodcastCategoryTabs
 import com.example.jetcaster.ui.player.PlayerButtons
+import com.example.jetcaster.ui.player.PlayerScreenPreview
 import com.example.jetcaster.ui.player.PlayerSlider
 import com.example.jetcaster.ui.player.PodcastInformation
 import com.example.jetcaster.ui.player.TopAppBar
@@ -395,6 +396,10 @@ fun JetcasterPodcastDetailsPanePreview() = Wrap {
 }
 
 // ---------------------------------------------------------------- player
+
+@Preview(name = "Player screen — catalog", showBackground = true, widthDp = 412, heightDp = 900)
+@Composable
+fun JetcasterPlayerScreenCatalogPreview() = PlayerScreenPreview()
 
 @Preview(name = "PlayerButtons — playing", showBackground = true, widthDp = 412, heightDp = 300)
 @Composable

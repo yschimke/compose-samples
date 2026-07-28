@@ -666,7 +666,12 @@ private fun HomeTopAppBar(
 
 @Preview("Home list drawer screen")
 @Preview("Home list drawer screen (dark)", uiMode = UI_MODE_NIGHT_YES)
-@Preview("Home list drawer screen (big font)", fontScale = 1.5f)
+@Preview(
+    "Home list drawer screen (big font)",
+    fontScale = 1.5f,
+    widthDp = 412,
+    heightDp = 900,
+)
 @Composable
 fun PreviewHomeListDrawerScreen() {
     val postsFeed = runBlocking {
@@ -700,7 +705,7 @@ fun PreviewHomeListDrawerScreen() {
     uiMode = UI_MODE_NIGHT_YES,
     device = Devices.NEXUS_7_2013,
 )
-@Preview("Home list navrail screen (big font)", fontScale = 1.5f, device = Devices.NEXUS_7_2013)
+@Preview("Home list navrail screen (big font)", fontScale = 1.5f, widthDp = 700, heightDp = 900)
 @Composable
 fun PreviewHomeListNavRailScreen() {
     val postsFeed = runBlocking {

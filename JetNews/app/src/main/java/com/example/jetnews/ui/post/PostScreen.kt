@@ -403,7 +403,7 @@ fun sharePost(post: Post, context: Context) {
 
 @Preview("Post screen")
 @Preview("Post screen (dark)", uiMode = UI_MODE_NIGHT_YES)
-@Preview("Post screen (big font)", fontScale = 1.5f)
+@Preview("Post screen (big font)", fontScale = 1.5f, widthDp = 412, heightDp = 900)
 @Composable
 fun PreviewPostDrawer() {
     JetnewsTheme {
@@ -420,7 +420,7 @@ fun PreviewPostDrawer() {
     uiMode = UI_MODE_NIGHT_YES,
     device = Devices.PIXEL_C,
 )
-@Preview("Post screen navrail (big font)", fontScale = 1.5f, device = Devices.PIXEL_C)
+@Preview("Post screen navrail (big font)", fontScale = 1.5f, widthDp = 700, heightDp = 900)
 @Composable
 fun PreviewPostNavRail() {
     JetnewsTheme {

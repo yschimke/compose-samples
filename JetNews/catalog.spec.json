@@ -150,8 +150,8 @@
       "components": [
         {
           "componentId": "PostCard/Top",
-          "preview": "PostCardTopPreviews",
-          "caption": "Featured post card, fanned out across phone, foldable and tablet widths and both font scales — one function, seven renders."
+          "preview": "PostCardTopPreview",
+          "caption": "Featured post card."
         },
         {
           "componentId": "PostCard/Simple",

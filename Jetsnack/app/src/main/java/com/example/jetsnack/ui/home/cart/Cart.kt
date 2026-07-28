@@ -475,7 +475,7 @@ private fun CheckoutBar(modifier: Modifier = Modifier) {
 @Preview(
     "large font",
     fontScale = 2f,
-    device = "spec:width=400dp,height=800dp,dpi=160",
+    device = "spec:width=700dp,height=800dp,dpi=160",
 )
 @Composable
 private fun CartPreview() {
