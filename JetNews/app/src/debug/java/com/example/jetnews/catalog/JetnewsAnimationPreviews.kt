@@ -37,6 +37,7 @@ import androidx.compose.ui.unit.dp
 import com.example.jetnews.data.posts.impl.post3
 import com.example.jetnews.ui.home.PostCardPopular
 import com.example.jetnews.ui.home.PostCardSimple
+import com.example.jetnews.ui.home.PostCardTopPreview
 import com.example.jetnews.ui.interests.SelectTopicButton
 import com.example.jetnews.ui.theme.JetnewsTheme
 import com.example.jetnews.ui.utils.BookmarkButton
@@ -104,6 +105,33 @@ fun PopularPostCardLongTextCatalogPreview() {
         }
     }
 }
+
+@Preview(
+    name = "Featured post card — dark",
+    showBackground = true,
+    widthDp = 412,
+    uiMode = Configuration.UI_MODE_NIGHT_YES,
+)
+@Composable
+fun PostCardTopDarkCatalogPreview() = PostCardTopPreview()
+
+@Preview(
+    name = "Featured post card — large font",
+    showBackground = true,
+    widthDp = 412,
+    fontScale = 1.5f,
+)
+@Composable
+fun PostCardTopLargeFontCatalogPreview() = PostCardTopPreview()
+
+@Preview(
+    name = "Featured post card — medium",
+    showBackground = true,
+    widthDp = 700,
+    heightDp = 900,
+)
+@Composable
+fun PostCardTopMediumCatalogPreview() = PostCardTopPreview()
 
 /** Flips [state] every [everyMs] so a preview can record the transition. */
 @Composable

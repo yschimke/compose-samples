@@ -150,8 +150,29 @@
       "components": [
         {
           "componentId": "PostCard/Top",
-          "preview": "PostCardTopPreviews",
-          "caption": "Featured post card across the sample's dark, device and font-scale preview set."
+          "preview": "PostCardTopPreview",
+          "caption": "Featured post card.",
+          "variants": [
+            {
+              "preview": "PostCardTopDarkCatalogPreview",
+              "caption": "Featured post card in dark mode.",
+              "theme": "dark"
+            },
+            {
+              "preview": "PostCardTopLargeFontCatalogPreview",
+              "caption": "Featured post card at 1.5× font scale.",
+              "props": {
+                "fontScale": 1.5
+              }
+            },
+            {
+              "preview": "PostCardTopMediumCatalogPreview",
+              "caption": "Featured post card at the medium catalog breakpoint.",
+              "props": {
+                "posture": "medium"
+              }
+            }
+          ]
         },
         {
           "componentId": "PostCard/Simple",

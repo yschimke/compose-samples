@@ -360,6 +360,14 @@ fun SearchBarCatalogPreview() = Wrap {
     )
 }
 
+@Preview("catalog — dark", uiMode = UI_MODE_NIGHT_YES)
+@Composable
+fun SearchBarDarkCatalogPreview() = SearchBarCatalogPreview()
+
+@Preview("catalog — large font", fontScale = 2f, widthDp = 412, heightDp = 220)
+@Composable
+fun SearchBarLargeFontCatalogPreview() = SearchBarCatalogPreview()
+
 @Preview("default")
 @Preview("dark theme", uiMode = UI_MODE_NIGHT_YES)
 @Preview("large font", fontScale = 2f, widthDp = 412, heightDp = 220)
@@ -389,6 +397,14 @@ fun SearchSuggestionsPreview() = Wrap {
         onSuggestionSelect = {},
     )
 }
+
+@Preview("suggestions — dark", uiMode = UI_MODE_NIGHT_YES, heightDp = 400)
+@Composable
+fun SearchSuggestionsDarkPreview() = SearchSuggestionsPreview()
+
+@Preview("suggestions — large font", fontScale = 2f, widthDp = 412, heightDp = 500)
+@Composable
+fun SearchSuggestionsLargeFontPreview() = SearchSuggestionsPreview()
 
 @Preview("default")
 @Preview("dark theme", uiMode = UI_MODE_NIGHT_YES)
@@ -427,6 +443,22 @@ fun SnackDetailCatalogPreview() {
         )
     }
 }
+
+@Preview(
+    "catalog — dark",
+    uiMode = UI_MODE_NIGHT_YES,
+    device = "spec:width=400dp,height=800dp,dpi=160",
+)
+@Composable
+fun SnackDetailDarkCatalogPreview() = SnackDetailCatalogPreview()
+
+@Preview(
+    "catalog — large font",
+    fontScale = 2f,
+    device = "spec:width=400dp,height=800dp,dpi=160",
+)
+@Composable
+fun SnackDetailLargeFontCatalogPreview() = SnackDetailCatalogPreview()
 
 // ------------------------------------------------------------------ bottom navigation
 

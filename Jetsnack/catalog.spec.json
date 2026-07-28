@@ -257,8 +257,22 @@
       "components": [
         {
           "componentId": "Search/Bar",
-          "preview": "SearchBarPreview",
-          "caption": "Search entry field at default, dark theme and fontScale 2."
+          "preview": "SearchBarCatalogPreview",
+          "caption": "Search entry field.",
+          "variants": [
+            {
+              "preview": "SearchBarDarkCatalogPreview",
+              "caption": "Search entry field in dark mode.",
+              "theme": "dark"
+            },
+            {
+              "preview": "SearchBarLargeFontCatalogPreview",
+              "caption": "Search entry field at 2× font scale.",
+              "props": {
+                "fontScale": 2
+              }
+            }
+          ]
         },
         {
           "componentId": "Search/Categories",
@@ -290,8 +304,22 @@
         },
         {
           "componentId": "Search/Suggestions",
-          "preview": "PreviewSuggestions",
-          "caption": "Suggestion list shown before a query is entered, driven by SearchRepo.getSuggestions(), at default, dark theme and fontScale 2."
+          "preview": "SearchSuggestionsPreview",
+          "caption": "Suggestion list shown before a query is entered, driven by SearchRepo.getSuggestions().",
+          "variants": [
+            {
+              "preview": "SearchSuggestionsDarkPreview",
+              "caption": "Suggestion list in dark mode.",
+              "theme": "dark"
+            },
+            {
+              "preview": "SearchSuggestionsLargeFontPreview",
+              "caption": "Suggestion list at 2× font scale.",
+              "props": {
+                "fontScale": 2
+              }
+            }
+          ]
         },
         {
           "componentId": "Search/No results",
@@ -394,8 +422,22 @@
         },
         {
           "componentId": "Snack/Detail",
-          "preview": "SnackDetailPreview",
-          "caption": "Product detail — the collapsing-header screen that anchors the shared-element transition — at default, dark theme and fontScale 2."
+          "preview": "SnackDetailCatalogPreview",
+          "caption": "Product detail — the collapsing-header screen that anchors the shared-element transition.",
+          "variants": [
+            {
+              "preview": "SnackDetailDarkCatalogPreview",
+              "caption": "Product detail in dark mode.",
+              "theme": "dark"
+            },
+            {
+              "preview": "SnackDetailLargeFontCatalogPreview",
+              "caption": "Product detail at 2× font scale.",
+              "props": {
+                "fontScale": 2
+              }
+            }
+          ]
         },
         {
           "componentId": "Catalog/Filter screen",

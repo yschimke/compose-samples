@@ -76,13 +76,21 @@
               }
             },
             {
-              "preview": "PreviewHome",
-              "caption": "Refreshing Discover across the shipped phone, foldable, landscape and tablet device set.",
-              "theme": "light",
+              "preview": "JetcasterHomeLoadingMediumPreview",
+              "caption": "Refreshing Library at the medium catalog breakpoint.",
+              "state": "loading",
               "props": {
-                "selectedTab": "discover",
-                "isLoading": true,
-                "deviceCoverage": "responsive"
+                "selectedTab": "library",
+                "posture": "medium"
+              }
+            },
+            {
+              "preview": "JetcasterHomeLoadingExpandedPreview",
+              "caption": "Refreshing Library at the expanded catalog breakpoint.",
+              "state": "loading",
+              "props": {
+                "selectedTab": "library",
+                "posture": "expanded"
               }
             }
           ]
@@ -113,11 +121,19 @@
               }
             },
             {
-              "preview": "PodcastDetailsScreenPreview",
-              "caption": "Light mode across the shipped phone, foldable, landscape and tablet device set.",
+              "preview": "JetcasterPodcastDetailsMediumLightPreview",
+              "caption": "Light mode at the medium catalog breakpoint.",
               "theme": "light",
               "props": {
-                "deviceCoverage": "responsive"
+                "posture": "medium"
+              }
+            },
+            {
+              "preview": "JetcasterPodcastDetailsExpandedLightPreview",
+              "caption": "Light mode at the expanded catalog breakpoint.",
+              "theme": "light",
+              "props": {
+                "posture": "expanded"
               }
             }
           ]
@@ -331,8 +347,24 @@
       "components": [
         {
           "componentId": "Player/Screen",
-          "preview": "PlayerScreenPreview",
-          "caption": "The now-playing screen across the shipped phone, foldable, landscape and tablet device set."
+          "preview": "JetcasterPlayerScreenCatalogPreview",
+          "caption": "The now-playing screen at the compact catalog breakpoint.",
+          "variants": [
+            {
+              "preview": "JetcasterPlayerScreenMediumPreview",
+              "caption": "The now-playing screen at the medium catalog breakpoint.",
+              "props": {
+                "posture": "medium"
+              }
+            },
+            {
+              "preview": "JetcasterPlayerScreenExpandedPreview",
+              "caption": "The now-playing screen at the expanded catalog breakpoint.",
+              "props": {
+                "posture": "expanded"
+              }
+            }
+          ]
         }
       ]
     },

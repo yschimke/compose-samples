@@ -64,6 +64,7 @@ import com.example.jetcaster.ui.podcast.PodcastDetailsDescription
 import com.example.jetcaster.ui.podcast.PodcastDetailsHeaderItem
 import com.example.jetcaster.ui.podcast.PodcastDetailsHeaderItemButtons
 import com.example.jetcaster.ui.podcast.PodcastDetailsScreen
+import com.example.jetcaster.ui.podcast.PodcastDetailsScreenPreview
 import com.example.jetcaster.ui.podcast.PodcastDetailsTopAppBar
 import com.example.jetcaster.ui.shared.EpisodeListItem
 import com.example.jetcaster.ui.shared.Loading
@@ -395,11 +396,37 @@ fun JetcasterPodcastDetailsPanePreview() = Wrap {
     )
 }
 
+@Preview(
+    name = "PodcastDetails screen — medium, light",
+    showBackground = true,
+    widthDp = 700,
+    heightDp = 840,
+)
+@Composable
+fun JetcasterPodcastDetailsMediumLightPreview() = PodcastDetailsScreenPreview()
+
+@Preview(
+    name = "PodcastDetails screen — expanded, light",
+    showBackground = true,
+    widthDp = 960,
+    heightDp = 840,
+)
+@Composable
+fun JetcasterPodcastDetailsExpandedLightPreview() = PodcastDetailsScreenPreview()
+
 // ---------------------------------------------------------------- player
 
 @Preview(name = "Player screen — catalog", showBackground = true, widthDp = 412, heightDp = 900)
 @Composable
 fun JetcasterPlayerScreenCatalogPreview() = PlayerScreenPreview()
+
+@Preview(name = "Player screen — medium", showBackground = true, widthDp = 700, heightDp = 840)
+@Composable
+fun JetcasterPlayerScreenMediumPreview() = PlayerScreenPreview()
+
+@Preview(name = "Player screen — expanded", showBackground = true, widthDp = 960, heightDp = 840)
+@Composable
+fun JetcasterPlayerScreenExpandedPreview() = PlayerScreenPreview()
 
 @Preview(name = "PlayerButtons — playing", showBackground = true, widthDp = 412, heightDp = 300)
 @Composable
@@ -732,3 +759,11 @@ fun JetcasterHomeLoadingPreview() = JetcasterTheme(darkTheme = true) {
         navigateToPlayer = {},
     )
 }
+
+@Preview(name = "Home — refreshing, medium", showBackground = true, widthDp = 700, heightDp = 840)
+@Composable
+fun JetcasterHomeLoadingMediumPreview() = JetcasterHomeLoadingPreview()
+
+@Preview(name = "Home — refreshing, expanded", showBackground = true, widthDp = 960, heightDp = 840)
+@Composable
+fun JetcasterHomeLoadingExpandedPreview() = JetcasterHomeLoadingPreview()
