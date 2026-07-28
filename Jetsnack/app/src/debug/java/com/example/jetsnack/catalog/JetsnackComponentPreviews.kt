@@ -43,6 +43,7 @@ import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontFamily
+import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.jetsnack.R
@@ -68,9 +69,11 @@ import com.example.jetsnack.ui.home.cart.CartItem
 import com.example.jetsnack.ui.home.cart.SummaryItem
 import com.example.jetsnack.ui.home.cart.SwipeDismissItem
 import com.example.jetsnack.ui.home.search.NoResults
+import com.example.jetsnack.ui.home.search.SearchBar
 import com.example.jetsnack.ui.home.search.SearchCategories
 import com.example.jetsnack.ui.home.search.SearchResults
 import com.example.jetsnack.ui.home.search.SearchSuggestions
+import com.example.jetsnack.ui.snackdetail.SnackDetail
 import com.example.jetsnack.ui.theme.DarkColorPalette
 import com.example.jetsnack.ui.theme.JetsnackColors
 import com.example.jetsnack.ui.theme.JetsnackTheme
@@ -341,6 +344,19 @@ fun SwipeDismissItemPreview() = Wrap {
 
 // ------------------------------------------------------------------ search surfaces
 
+@Preview("catalog")
+@Composable
+fun SearchBarCatalogPreview() = Wrap {
+    SearchBar(
+        query = TextFieldValue(),
+        onQueryChange = {},
+        searchFocused = false,
+        onSearchFocusChange = {},
+        onClearQuery = {},
+        searching = false,
+    )
+}
+
 @Preview("default", heightDp = 400)
 @Preview("dark theme", uiMode = UI_MODE_NIGHT_YES, heightDp = 400)
 @Composable
@@ -369,6 +385,18 @@ fun SearchResultsPreview() = Wrap {
 @Composable
 fun NoResultsPreview() = Wrap {
     NoResults(query = "kombucha")
+}
+
+@Preview("catalog", device = "spec:width=400dp,height=800dp,dpi=160")
+@Composable
+fun SnackDetailCatalogPreview() {
+    JetsnackPreviewWrapper {
+        SnackDetail(
+            snackId = 1L,
+            origin = "details",
+            upPress = {},
+        )
+    }
 }
 
 // ------------------------------------------------------------------ bottom navigation

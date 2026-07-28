@@ -257,7 +257,7 @@
       "components": [
         {
           "componentId": "Search/Bar",
-          "preview": "SearchBarPreview",
+          "preview": "SearchBarCatalogPreview",
           "caption": "Search entry field."
         },
         {
@@ -290,17 +290,8 @@
         },
         {
           "componentId": "Search/Suggestions",
-          "preview": "PreviewSuggestions",
-          "caption": "Suggestion list shown before a query is entered.",
-          "variants": [
-            {
-              "preview": "SearchSuggestionsPreview",
-              "caption": "The same list driven directly by SearchRepo.getSuggestions().",
-              "props": {
-                "source": "repository"
-              }
-            }
-          ]
+          "preview": "SearchSuggestionsPreview",
+          "caption": "Suggestion list shown before a query is entered, driven by SearchRepo.getSuggestions()."
         },
         {
           "componentId": "Search/No results",
@@ -403,7 +394,7 @@
         },
         {
           "componentId": "Snack/Detail",
-          "preview": "SnackDetailPreview",
+          "preview": "SnackDetailCatalogPreview",
           "caption": "Product detail — the collapsing-header screen that anchors the shared-element transition."
         },
         {

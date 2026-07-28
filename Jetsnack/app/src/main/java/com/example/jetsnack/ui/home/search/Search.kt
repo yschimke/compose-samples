@@ -160,7 +160,7 @@ class SearchState(
 }
 
 @Composable
-private fun SearchBar(
+internal fun SearchBar(
     query: TextFieldValue,
     onQueryChange: (TextFieldValue) -> Unit,
     searchFocused: Boolean,
