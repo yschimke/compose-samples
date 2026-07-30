@@ -28,6 +28,7 @@ import androidx.compose.animation.SharedTransitionScope
 import androidx.compose.animation.core.animateDp
 import androidx.compose.animation.fadeIn
 import androidx.compose.animation.fadeOut
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
@@ -439,13 +440,6 @@ private fun HighlightSnackItem(
 }
 
 @Composable
-fun debugPlaceholder(@DrawableRes debugPreview: Int) = if (LocalInspectionMode.current) {
-    painterResource(id = debugPreview)
-} else {
-    null
-}
-
-@Composable
 fun SnackImage(
     @DrawableRes
     imageRes: Int,
@@ -458,17 +452,24 @@ fun SnackImage(
         shape = CircleShape,
         modifier = modifier,
     ) {
-
-        AsyncImage(
-            model = ImageRequest.Builder(LocalContext.current)
-                .data(imageRes)
-                .crossfade(true)
-                .build(),
-            placeholder = debugPlaceholder(debugPreview = R.drawable.placeholder),
-            contentDescription = contentDescription,
-            modifier = Modifier.fillMaxSize(),
-            contentScale = ContentScale.Crop,
-        )
+        if (LocalInspectionMode.current) {
+            Image(
+                painter = painterResource(imageRes),
+                contentDescription = contentDescription,
+                modifier = Modifier.fillMaxSize(),
+                contentScale = ContentScale.Crop,
+            )
+        } else {
+            AsyncImage(
+                model = ImageRequest.Builder(LocalContext.current)
+                    .data(imageRes)
+                    .crossfade(true)
+                    .build(),
+                contentDescription = contentDescription,
+                modifier = Modifier.fillMaxSize(),
+                contentScale = ContentScale.Crop,
+            )
+        }
     }
 }
 
