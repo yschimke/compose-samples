@@ -10,12 +10,14 @@
       "enabled": false
     },
     {
+      "description": "compose-ai-tools ships the ee.schimke.composeai.preview Gradle plugin and the preview-annotations artifact as one release, and that release IS the renderer behind the published catalogs — the samples' own UI code is upstream Google's and barely moves, so a stale pin here is the main way /jetnews, /jetcaster & co. go stale. Automerge once CI on `previews` is green: design-artifacts.yml already re-renders and republishes every delivery branch on push to `previews` whenever */gradle/libs.versions.toml moves, and a Renovate merge is made with the app's token, which does raise `push` — so the bump lands and the catalogs regenerate with nobody in the loop. platformAutomerge stays false via the shared preset, so Renovate waits for every check instead of merging ahead of them. Deliberately left on the preset's weekly schedule rather than `at any time` (which cadence / meshcore-mobile / homeassistant-remotecompose use): a republish here is seven systems x re-theme + publish, and compose-ai-tools releases several times a day.",
       "groupName": "compose-ai-tools",
       "matchDepNames": [
         "ee.schimke.composeai.preview",
         "ee.schimke.composeai:preview-annotations"
       ],
-      "enabled": true
+      "enabled": true,
+      "automerge": true
     }
   ]
 }
