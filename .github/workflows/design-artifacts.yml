@@ -23,6 +23,25 @@ on:
   push:
     branches:
       - previews
+    paths:
+      - '*/catalog*.spec.json'
+      - '*/app/src/debug/**'
+      - '*/app/src/main/**'
+      - '*/app/build.gradle.kts'
+      - 'Jetcaster/mobile/src/main/**'
+      - 'Jetcaster/wear/src/debug/**'
+      - 'Jetcaster/wear/src/main/**'
+      - 'Jetcaster/core/designsystem/src/main/**'
+      - 'Jetcaster/mobile/build.gradle.kts'
+      - 'Jetcaster/wear/build.gradle'
+      - '.github/scripts/m3-theme-overrides.mjs'
+      - '.github/workflows/design-artifacts.yml'
+      # A compose-preview bump changes what discovery finds and how it renders —
+      # 0.17.23's defaulted-parameter discovery is exactly that — so the
+      # published catalogs go stale on a version change just as surely as on a
+      # spec edit. Without this the bump lands and the delivery branches keep
+      # serving the previous renderer's output until someone dispatches by hand.
+      - '*/gradle/libs.versions.toml'
 
 permissions:
   contents: read
@@ -32,7 +51,119 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  # Re-theme the published compose-m3 catalog under each sample's resolved light/dark palette,
+  # then hand the drop-in bundle to the reusable publisher to fold in as a Material 3 tab.
+  # The palette payload is derived from the Kotlin theme sources by
+  # .github/scripts/m3-theme-overrides.mjs, so it cannot drift in a separately-maintained JSON file.
+  retheme_m3:
+    if: ${{ github.repository == 'yschimke/compose-samples' }}
+    name: re-theme M3 for ${{ matrix.system }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      matrix:
+        system: [jetnews, jetcaster, jetchat, jetsnack, jetlagged, reply]
+    steps:
+      - name: Check out compose-samples
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          # The catalogs, their specs and m3-theme-overrides.mjs all live on
+          # `previews`; none of them exist on `main`. A push run would check the
+          # right commit out anyway, but a `workflow_dispatch` (and any future
+          # `schedule`) can only ever run the copy of this file on the DEFAULT
+          # branch and would otherwise check out `main` and find nothing.
+          ref: previews
+          persist-credentials: false
+
+      - name: Set up JDK 21
+        uses: actions/setup-java@03ad4de0992f5dab5e18fcb136590ce7c4a0ac95 # v5.6.0
+        with:
+          distribution: temurin
+          java-version: '21'
+
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@3f131e8634966bd73d06cc69884922b02e6faf92 # v6.2.0
+
+      - name: Set up Node
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 24
+
+      - name: Install desktop render dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            xvfb libgl1 libglx-mesa0 libgl1-mesa-dri libfreetype6 libfontconfig1 fontconfig
+
+      # bundle render --res/--svg and bundle repack currently ship from main.
+      - name: Check out compose-ai-tools
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          repository: yschimke/compose-ai-tools
+          ref: main
+          path: compose-ai-tools
+          persist-credentials: false
+
+      - name: Build compose-preview CLI
+        working-directory: compose-ai-tools
+        run: ./gradlew :cli:installDist --no-daemon
+
+      - name: Fetch the published compose-m3 bundle
+        run: |
+          set -euo pipefail
+          git clone --depth 1 --branch design-artifacts/compose-m3 \
+            https://github.com/yschimke/compose-ai-tools.git compose-m3-artifacts
+          test -f compose-m3-artifacts/bundle/compose-m3-bundle.png
+          test -d compose-m3-artifacts/bundle/res
+
+      - name: Re-theme compose-m3
+        env:
+          SYSTEM: ${{ matrix.system }}
+          LIBGL_ALWAYS_SOFTWARE: '1'
+          JAVA_TOOL_OPTIONS: -Dcomposeai.figma.embedFonts=true
+        run: |
+          set -euo pipefail
+          cli="$GITHUB_WORKSPACE/compose-ai-tools/cli/build/install/compose-preview/bin/compose-preview"
+          source_bundle="$GITHUB_WORKSPACE/compose-m3-artifacts/bundle/compose-m3-bundle.png"
+          renders="$GITHUB_WORKSPACE/compose-m3-$SYSTEM-renders"
+          output="$GITHUB_WORKSPACE/compose-m3-$SYSTEM.png"
+          colors="$(node .github/scripts/m3-theme-overrides.mjs "$SYSTEM" colors)"
+          fonts="$(node .github/scripts/m3-theme-overrides.mjs "$SYSTEM" fonts)"
+          knobs=(--knob "theme.colors=$colors")
+          if [ -n "$fonts" ]; then knobs+=(--knob "theme.fonts=$fonts"); fi
+
+          # The M3 metadata sheets cannot use the knob path, so bundle render returns non-zero for
+          # those known entries. Require broad PNG + SVG success before repacking.
+          xvfb-run -a -s "-screen 0 2000x1400x24" \
+            "$cli" bundle render "$source_bundle" \
+              "${knobs[@]}" \
+              --res compose-m3-artifacts/bundle/res \
+              --svg \
+              -o "$renders" || echo "bundle render exited non-zero for metadata sheets"
+          png_count="$(find "$renders" -maxdepth 1 -name '*.png' | wc -l)"
+          svg_count="$(find "$renders" -maxdepth 1 -name '*.svg' | wc -l)"
+          if [ "$png_count" -lt 70 ] || [ "$svg_count" -lt "$png_count" ]; then
+            echo "::error::$SYSTEM re-themed only $png_count PNG(s) and $svg_count SVG(s)"
+            exit 1
+          fi
+
+          "$cli" bundle repack "$source_bundle" --renders "$renders" -o "$output"
+          bytes="$(stat -c %s "$output")"
+          if [ "$bytes" -ge $((25 * 1024 * 1024)) ]; then
+            echo "::error::$output is $bytes bytes; folded bundles must stay below 25 MiB"
+            exit 1
+          fi
+
+      - name: Upload re-themed compose-m3 bundle
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: compose-m3-${{ matrix.system }}
+          path: compose-m3-${{ matrix.system }}.png
+          if-no-files-found: error
+
   publish:
+    needs: retheme_m3
     # Never let a fork of this fork push delivery branches here.
     if: ${{ github.repository == 'yschimke/compose-samples' }}
     name: ${{ matrix.system }}
@@ -47,58 +178,53 @@ jobs:
             spec: JetNews/catalog.spec.json
             dir: JetNews
             module: ':app'
+            foldArtifact: compose-m3-jetnews
           - system: jetcaster
             spec: Jetcaster/catalog.spec.json
             dir: Jetcaster
             module: ':mobile'
+            foldArtifact: compose-m3-jetcaster
           - system: jetchat
             spec: Jetchat/catalog.spec.json
             dir: Jetchat
             module: ':app'
+            foldArtifact: compose-m3-jetchat
           - system: jetsnack
             spec: Jetsnack/catalog.spec.json
             dir: Jetsnack
             module: ':app'
+            foldArtifact: compose-m3-jetsnack
+            # figma-svg makes this 113-preview catalog exceed the renderer's separate,
+            # fixed 180-second metadata subscriber deadline (compose-ai-tools#2857).
+            # PNG/SVG rendering still completes; publish while late auxiliary metadata
+            # is partial until that upstream deadline follows --timeout.
+            allowIncomplete: true
           - system: jetlagged
             spec: JetLagged/catalog.spec.json
             dir: JetLagged
             module: ':app'
+            foldArtifact: compose-m3-jetlagged
           - system: reply
             spec: Reply/catalog.spec.json
             dir: Reply
             module: ':app'
-          # jetcaster-wear stays out, and this is measured rather than assumed.
-          # Enabled against 0.17.23 on 2026-07-25 (run 30165501068) to retest,
-          # since compose-ai-tools#2729 (per-param IR, v0.17.19) and #2744
-          # (--with-semantics fetched by raw preview id, v0.17.22 — which cured
-          # the same failure on wear-m3) had landed since the original 0.17.17
-          # finding. It still fails:
-          #
-          #   missing renders for: Podcast/Content, Player/Controls
-          #   no semantics for: Podcast/Row, Podcast/Details, Library/Screen,
-          #     Episode/Latest, Episode/Screen, Queue/Screen, Episode/Loading,
-          #     Podcast/Empty, Queue/Empty
-          #   incomplete render — refusing to publish
-          #
-          # Nine "no semantics" entries — exactly the nine previews that take a
-          # @PreviewParameter. Two entries fail differently, with no PNG at all.
-          # Re-enable when the daemon render path produces data products for a
-          # @PreviewParameter fan-out; until then zero-arg wrapper previews are
-          # the workaround (see the PostCard/Popular wrapper in JetNews). The
-          # spec is committed and validates with the preview-annotations wired
-          # below, so re-enabling is just restoring the matrix entry:
-          #
-          #   - system: jetcaster-wear
-          #     spec: Jetcaster/catalog.wear.spec.json
-          #     dir: Jetcaster
-          #     module: ':wear'
-          #     preview-annotations: WearPreviewDevices WearPreviewFontScales
+            foldArtifact: compose-m3-reply
+          - system: jetcaster-wear
+            spec: Jetcaster/catalog.wear.spec.json
+            dir: Jetcaster
+            module: ':wear'
     uses: yschimke/compose-ai-tools/.github/workflows/design-artifacts-reusable.yml@main
     with:
       system: ${{ matrix.system }}
       spec: ${{ matrix.spec }}
       module: ${{ matrix.module }}
       working-directory: ${{ matrix.dir }}
+      # Render `previews`, the branch the catalogs live on — not whatever ref
+      # triggered this. Only matters for triggers that can't imply the ref: a
+      # `workflow_dispatch` is offered solely for the default branch's copy of
+      # this file and would otherwise render a `main` that carries no
+      # catalog.spec.json at all. See the note on the retheme checkout above.
+      ref: previews
       preview-annotations: ${{ matrix.preview-annotations || '' }}
       # Carry the executable render bundle onto the delivery branch and split it
       # per preview, so preview.coo.ee re-renders these live instead of replaying
@@ -112,7 +238,14 @@ jobs:
       publish-live-bundle: true
       split-per-preview: true
       split-mode: full
-      allow-incomplete: ${{ inputs.allow_incomplete || false }}
+      # Phone/tablet apps fold in their re-themed mobile M3 section. Wear is a
+      # distinct design system with different theme locals and role names, so
+      # its matrix entry deliberately leaves this empty.
+      fold-artifact: ${{ matrix.foldArtifact || '' }}
+      fold-bundle: compose-m3-${{ matrix.system }}.png
+      fold-spec: compose-ai-tools/samples/design-catalog-m3/catalog.spec.json
+      fold-section: Material 3
+      allow-incomplete: ${{ matrix.allowIncomplete || inputs.allow_incomplete || false }}
       commit-user-name: Yuri Schimke
       commit-user-email: yuri@schimke.ee
       timeout-minutes: 90
