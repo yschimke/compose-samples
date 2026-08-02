@@ -68,6 +68,12 @@ jobs:
       - name: Check out compose-samples
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
+          # The catalogs, their specs and m3-theme-overrides.mjs all live on
+          # `previews`; none of them exist on `main`. A push run would check the
+          # right commit out anyway, but a `workflow_dispatch` (and any future
+          # `schedule`) can only ever run the copy of this file on the DEFAULT
+          # branch and would otherwise check out `main` and find nothing.
+          ref: previews
           persist-credentials: false
 
       - name: Set up JDK 21
@@ -213,6 +219,12 @@ jobs:
       spec: ${{ matrix.spec }}
       module: ${{ matrix.module }}
       working-directory: ${{ matrix.dir }}
+      # Render `previews`, the branch the catalogs live on — not whatever ref
+      # triggered this. Only matters for triggers that can't imply the ref: a
+      # `workflow_dispatch` is offered solely for the default branch's copy of
+      # this file and would otherwise render a `main` that carries no
+      # catalog.spec.json at all. See the note on the retheme checkout above.
+      ref: previews
       preview-annotations: ${{ matrix.preview-annotations || '' }}
       # Carry the executable render bundle onto the delivery branch and split it
       # per preview, so preview.coo.ee re-renders these live instead of replaying
