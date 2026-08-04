@@ -1,5 +1,5 @@
 [versions]
-composeAiPreview = "0.19.25"
+composeAiPreview = "0.19.30"
 accompanist = "0.37.3"
 android-material3 = "1.14.0"
 androidGradlePlugin = "9.2.1"
