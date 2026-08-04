@@ -101,10 +101,12 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.compose.jetchat.FunctionalityNotAvailablePopup
 import com.example.compose.jetchat.R
+import com.example.compose.jetchat.theme.JetchatTheme
 import kotlin.math.absoluteValue
 import kotlin.time.Duration
 import kotlin.time.Duration.Companion.seconds
@@ -126,8 +128,11 @@ enum class EmojiStickerSelector {
 
 @Preview
 @Composable
+@PreviewLightDark
 fun UserInputPreview() {
-    UserInput(onMessageSent = {})
+    JetchatTheme(isDynamicColor = false) {
+        UserInput(onMessageSent = {})
+    }
 }
 
 @OptIn(ExperimentalFoundationApi::class)

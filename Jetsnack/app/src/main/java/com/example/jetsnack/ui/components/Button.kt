@@ -45,6 +45,7 @@ import androidx.compose.ui.graphics.RectangleShape
 import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.tooling.preview.PreviewLightDark
 import com.example.jetsnack.ui.theme.JetsnackTheme
 
 @Composable
@@ -107,6 +108,7 @@ private val ButtonShape = RoundedCornerShape(percent = 50)
 @Preview("dark theme", "round", uiMode = UI_MODE_NIGHT_YES)
 @Preview("large font", "round", fontScale = 2f, widthDp = 412, heightDp = 120)
 @Composable
+@PreviewLightDark
 private fun ButtonPreview() {
     JetsnackTheme {
         JetsnackButton(onClick = {}) {

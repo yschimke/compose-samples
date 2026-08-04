@@ -23,6 +23,8 @@ import androidx.compose.animation.core.infiniteRepeatable
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.remember
@@ -31,8 +33,10 @@ import androidx.compose.ui.draw.drawWithCache
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
+import com.example.jetlagged.ui.theme.JetLaggedTheme
 import kotlin.math.ceil
 
 @Composable
@@ -83,6 +87,14 @@ fun FadingCircleBackground(bubbleSize: Dp, color: Color) {
 
 @Preview
 @Composable
+@PreviewLightDark
 fun FadingCirclePreview() {
-    FadingCircleBackground(bubbleSize = 30.dp, color = Color.Red)
+    JetLaggedTheme {
+        Surface(color = MaterialTheme.colorScheme.background) {
+            FadingCircleBackground(
+                bubbleSize = 30.dp,
+                color = JetLaggedTheme.extraColors.sleepChartPrimary,
+            )
+        }
+    }
 }

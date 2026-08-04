@@ -30,6 +30,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
 import com.example.compose.jetchat.R
 import com.example.compose.jetchat.theme.JetchatTheme
@@ -63,6 +64,7 @@ fun JetchatAppBar(
 @OptIn(ExperimentalMaterial3Api::class)
 @Preview
 @Composable
+@PreviewLightDark
 fun JetchatAppBarPreview() {
     JetchatTheme {
         JetchatAppBar(title = { Text("Preview!") })

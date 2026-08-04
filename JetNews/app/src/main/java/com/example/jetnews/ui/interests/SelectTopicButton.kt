@@ -29,6 +29,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.ColorFilter
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
 import com.example.jetnews.R
 import com.example.jetnews.ui.theme.JetnewsTheme
@@ -69,6 +70,7 @@ fun SelectTopicButton(modifier: Modifier = Modifier, selected: Boolean = false) 
 @Preview("Off")
 @Preview("Off (dark)", uiMode = UI_MODE_NIGHT_YES)
 @Composable
+@PreviewLightDark
 fun SelectTopicButtonPreviewOff() {
     SelectTopicButtonPreviewTemplate(
         selected = false,

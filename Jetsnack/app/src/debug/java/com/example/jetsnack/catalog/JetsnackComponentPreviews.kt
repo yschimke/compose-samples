@@ -50,6 +50,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
 import com.example.jetsnack.R
 import com.example.jetsnack.model.Filter
@@ -123,6 +124,7 @@ private fun Wrap(content: @Composable () -> Unit) = JetsnackPreviewWrapper {
 @Preview("default")
 @Preview("dark theme", uiMode = UI_MODE_NIGHT_YES)
 @Composable
+@PreviewLightDark
 fun JetsnackSurfaceFlatPreview() = Wrap {
     JetsnackSurface(shape = RoundedCornerShape(12.dp), elevation = 0.dp) {
         Text("Flat surface — elevation 0dp", Modifier.padding(16.dp))
@@ -196,6 +198,7 @@ private class PreviewSnackbarData(override val visuals: SnackbarVisuals) : Snack
 @Preview("default")
 @Preview("dark theme", uiMode = UI_MODE_NIGHT_YES)
 @Composable
+@PreviewLightDark
 fun JetsnackSnackbarPreview() = Wrap {
     JetsnackSnackbar(
         snackbarData = PreviewSnackbarData(
@@ -230,6 +233,7 @@ private fun GridCell(index: Int) {
 
 @Preview("default")
 @Composable
+@PreviewLightDark
 fun VerticalGridTwoColumnPreview() = Wrap {
     VerticalGrid(columns = 2) { repeat(6) { GridCell(it) } }
 }
@@ -245,12 +249,14 @@ fun VerticalGridThreeColumnPreview() = Wrap {
 @Preview("default")
 @Preview("dark theme", uiMode = UI_MODE_NIGHT_YES)
 @Composable
+@PreviewLightDark
 fun SnackItemPreview() = Wrap {
     SnackItem(snack = snack, snackCollectionId = 1L, onSnackClick = { _, _ -> })
 }
 
 @Preview("default")
 @Composable
+@PreviewLightDark
 fun SnackImagePreview() = Wrap {
     SnackImage(
         imageRes = snack.imageRes,
@@ -263,6 +269,7 @@ fun SnackImagePreview() = Wrap {
 @Preview("default", heightDp = 320)
 @Preview("dark theme", uiMode = UI_MODE_NIGHT_YES, heightDp = 320)
 @Composable
+@PreviewLightDark
 fun SnackCollectionHighlightPreview() = Wrap {
     SnackCollection(
         snackCollection = SnackRepo.getSnacks().first(),
@@ -286,6 +293,7 @@ fun SnackCollectionNormalPreview() = Wrap {
 @Preview("default")
 @Preview("dark theme", uiMode = UI_MODE_NIGHT_YES)
 @Composable
+@PreviewLightDark
 fun FilterBarPreview() = Wrap {
     FilterBar(
         filters = previewFilters(),
@@ -334,6 +342,7 @@ private fun previewFilters() = listOf(
 @Preview("default")
 @Preview("dark theme", uiMode = UI_MODE_NIGHT_YES)
 @Composable
+@PreviewLightDark
 fun CartItemPreview() = Wrap {
     CartItem(
         orderLine = cart.first(),
@@ -371,12 +380,14 @@ fun CartItemManyPreview() = Wrap {
 @Preview("default")
 @Preview("dark theme", uiMode = UI_MODE_NIGHT_YES)
 @Composable
+@PreviewLightDark
 fun SummaryItemPreview() = Wrap {
     SummaryItem(subtotal = 134500L, shippingCosts = 36000L)
 }
 
 @Preview("default")
 @Composable
+@PreviewLightDark
 fun SwipeDismissItemPreview() = Wrap {
     SwipeDismissItem(
         background = { progress ->
@@ -406,6 +417,7 @@ fun SwipeDismissItemPreview() = Wrap {
 
 @Preview("catalog")
 @Composable
+@PreviewLightDark
 fun SearchBarCatalogPreview() = Wrap {
     SearchBar(
         query = TextFieldValue(),
@@ -468,6 +480,7 @@ fun SearchBarLargeFontCatalogPreview() = SearchBarCatalogPreview()
 @Preview("dark theme", uiMode = UI_MODE_NIGHT_YES)
 @Preview("large font", fontScale = 2f, widthDp = 412, heightDp = 220)
 @Composable
+@PreviewLightDark
 fun SearchCategoryCatalogPreview() = Wrap {
     SearchCategory(
         category = SearchCategoryModel(
@@ -487,6 +500,7 @@ fun SearchCategoriesPreview() = Wrap {
 
 @Preview("default", heightDp = 400)
 @Composable
+@PreviewLightDark
 fun SearchSuggestionsPreview() = Wrap {
     SearchSuggestions(
         suggestions = SearchRepo.getSuggestions(),
@@ -506,6 +520,7 @@ fun SearchSuggestionsLargeFontPreview() = SearchSuggestionsPreview()
 @Preview("dark theme", uiMode = UI_MODE_NIGHT_YES)
 @Preview("large font", fontScale = 2f, widthDp = 412, heightDp = 220)
 @Composable
+@PreviewLightDark
 fun SearchResultCatalogPreview() = Wrap {
     SearchResult(
         snack = snacks[0],
@@ -534,12 +549,14 @@ fun SearchResultsPreview() = Wrap {
 @Preview("default")
 @Preview("dark theme", uiMode = UI_MODE_NIGHT_YES)
 @Composable
+@PreviewLightDark
 fun NoResultsPreview() = Wrap {
     NoResults(query = "kombucha")
 }
 
 @Preview("catalog", device = "spec:width=400dp,height=800dp,dpi=160")
 @Composable
+@PreviewLightDark
 fun SnackDetailCatalogPreview() {
     JetsnackPreviewWrapper {
         SnackDetail(
@@ -580,6 +597,7 @@ private fun BottomBar(current: HomeSections) = Wrap {
 @Preview("default")
 @Preview("dark theme", uiMode = UI_MODE_NIGHT_YES)
 @Composable
+@PreviewLightDark
 fun JetsnackBottomBarFeedPreview() = BottomBar(HomeSections.FEED)
 
 @Preview("default")
@@ -620,6 +638,7 @@ private fun NavItem(selected: Boolean) = Wrap {
 
 @Preview("default", device = "spec:width=400dp,height=800dp,dpi=160")
 @Composable
+@PreviewLightDark
 fun JetsnackBottomNavigationItemSelectedPreview() = NavItem(selected = true)
 
 @Preview("default", device = "spec:width=400dp,height=800dp,dpi=160")
@@ -672,8 +691,9 @@ private fun ColorTokens(colors: JetsnackColors) = ProvideJetsnackColors(colors) 
 
 @Preview("light tokens", heightDp = 560)
 @Composable
-fun JetsnackColorTokensLightPreview() = JetsnackTheme(darkTheme = false) {
-    ColorTokens(LightColorPalette)
+@PreviewLightDark
+fun JetsnackColorTokensLightPreview() = JetsnackTheme {
+    ColorTokens(JetsnackTheme.colors)
 }
 
 @Preview("dark tokens", heightDp = 560)
@@ -715,8 +735,9 @@ private fun GradientTokens(colors: JetsnackColors) = ProvideJetsnackColors(color
 
 @Preview("light gradients", heightDp = 470)
 @Composable
-fun JetsnackGradientTokensPreview() = JetsnackTheme(darkTheme = false) {
-    GradientTokens(LightColorPalette)
+@PreviewLightDark
+fun JetsnackGradientTokensPreview() = JetsnackTheme {
+    GradientTokens(JetsnackTheme.colors)
 }
 
 @Preview("dark gradients", heightDp = 470)

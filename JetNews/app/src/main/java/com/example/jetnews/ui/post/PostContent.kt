@@ -63,6 +63,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.text.style.TextIndent
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -332,6 +333,7 @@ private val ColorScheme.codeBlockBackground: Color
 @Preview("Post content")
 @Preview("Post content (dark)", uiMode = UI_MODE_NIGHT_YES)
 @Composable
+@PreviewLightDark
 fun PreviewPost() {
     JetnewsTheme {
         Surface {

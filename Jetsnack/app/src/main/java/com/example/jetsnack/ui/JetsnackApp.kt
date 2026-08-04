@@ -38,6 +38,7 @@ import androidx.compose.runtime.compositionLocalOf
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.navigation.NavBackStackEntry
 import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
@@ -59,6 +60,7 @@ import com.example.jetsnack.ui.theme.JetsnackTheme
 
 @Preview(device = "spec:width=400dp,height=800dp,dpi=160")
 @Composable
+@PreviewLightDark
 fun JetsnackApp() {
     JetsnackTheme {
         val jetsnackNavController = rememberJetsnackNavController()

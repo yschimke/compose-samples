@@ -52,13 +52,13 @@ import ee.schimke.composeai.preview.ThemeCatalog
 private fun JetchatScheme(scheme: ColorScheme, content: @Composable () -> Unit) =
     MaterialTheme(colorScheme = scheme, typography = JetchatTypography, content = content)
 
-@ThemeCatalog(name = "Light", group = "Jetchat")
+@ThemeCatalog(name = "Jetchat · Light", group = "Jetchat")
 class JetchatLightThemeCatalog : PreviewWrapperProvider {
     @Composable
     override fun Wrap(content: @Composable () -> Unit) = JetchatScheme(JetchatLightColorScheme, content)
 }
 
-@ThemeCatalog(name = "Dark", group = "Jetchat")
+@ThemeCatalog(name = "Jetchat · Dark", group = "Jetchat")
 class JetchatDarkThemeCatalog : PreviewWrapperProvider {
     @Composable
     override fun Wrap(content: @Composable () -> Unit) = JetchatScheme(JetchatDarkColorScheme, content)

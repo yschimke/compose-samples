@@ -65,6 +65,7 @@ import androidx.compose.ui.semantics.heading
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.tooling.preview.Devices
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.constrainHeight
 import androidx.compose.ui.unit.constrainWidth
@@ -557,6 +558,7 @@ private fun InterestsAdaptiveContentLayout(
     fontScale = 1.5f, widthDp = 412, heightDp = 900,
 )
 @Composable
+@PreviewLightDark
 fun PreviewInterestsScreenDrawer() {
     JetnewsTheme {
         val tabContent = getFakeTabsContent()
@@ -606,6 +608,7 @@ fun PreviewInterestsScreenNavRail() {
 @Preview("Interests screen topics tab", "Topics")
 @Preview("Interests screen topics tab (dark)", "Topics", uiMode = UI_MODE_NIGHT_YES)
 @Composable
+@PreviewLightDark
 fun PreviewTopicsTab() {
     val topics = runBlocking {
         (FakeInterestsRepository().getTopics() as Result.Success).data
@@ -620,6 +623,7 @@ fun PreviewTopicsTab() {
 @Preview("Interests screen people tab", "People")
 @Preview("Interests screen people tab (dark)", "People", uiMode = UI_MODE_NIGHT_YES)
 @Composable
+@PreviewLightDark
 fun PreviewPeopleTab() {
     val people = runBlocking {
         (FakeInterestsRepository().getPeople() as Result.Success).data

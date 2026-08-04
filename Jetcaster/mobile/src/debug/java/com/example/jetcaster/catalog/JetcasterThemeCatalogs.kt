@@ -63,13 +63,13 @@ private fun JetcasterScheme(scheme: ColorScheme, content: @Composable () -> Unit
 )
 
 /** The scheme the app actually ships with — every other catalog here is currently unreachable. */
-@ThemeCatalog(name = "Dark", group = "Jetcaster")
+@ThemeCatalog(name = "Jetcaster · Dark", group = "Jetcaster")
 class JetcasterDarkThemeCatalog : PreviewWrapperProvider {
     @Composable
     override fun Wrap(content: @Composable () -> Unit) = JetcasterScheme(darkScheme, content)
 }
 
-@ThemeCatalog(name = "Light", group = "Jetcaster")
+@ThemeCatalog(name = "Jetcaster · Light", group = "Jetcaster")
 class JetcasterLightThemeCatalog : PreviewWrapperProvider {
     @Composable
     override fun Wrap(content: @Composable () -> Unit) = JetcasterScheme(lightScheme, content)

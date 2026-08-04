@@ -36,6 +36,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
 import androidx.navigation3.runtime.NavKey
 import com.example.jetnews.R
@@ -97,6 +98,7 @@ private fun JetNewsLogo(modifier: Modifier = Modifier) {
 @Preview("Drawer contents")
 @Preview("Drawer contents (dark)", uiMode = UI_MODE_NIGHT_YES)
 @Composable
+@PreviewLightDark
 fun PreviewAppDrawer() {
     JetnewsTheme {
         AppDrawer(

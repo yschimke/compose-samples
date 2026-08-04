@@ -16,6 +16,7 @@
 
 package com.example.jetcaster.catalog
 
+import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -34,6 +35,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
 import com.example.jetcaster.R
 import com.example.jetcaster.core.domain.testing.PreviewCategories
@@ -143,12 +145,10 @@ private val library = LibraryInfo(
         PodcastToEpisodeInfo(podcast = unsubscribedPodcast, episode = longTitleEpisode),
 )
 
-// The mode is pinned explicitly rather than left to isSystemInDarkTheme(), so a render is never at
-// the mercy of the harness's default uiMode. Dark is the default because dark is what Jetcaster is
-// designed around; the light variants below exist to exercise the other half of the design system,
-// which JetcasterTheme only started resolving once it stopped hardcoding darkScheme.
+// Follow the preview configuration by default so light/dark multipreviews and live uiMode
+// overrides reach the app theme. Individual palette specimens can still pass an explicit mode.
 @Composable
-private fun Wrap(dark: Boolean = true, content: @Composable () -> Unit) = JetcasterTheme(darkTheme = dark) {
+private fun Wrap(dark: Boolean = isSystemInDarkTheme(), content: @Composable () -> Unit) = JetcasterTheme(darkTheme = dark) {
     Surface { Box(Modifier.padding(8.dp)) { content() } }
 }
 
@@ -156,6 +156,7 @@ private fun Wrap(dark: Boolean = true, content: @Composable () -> Unit) = Jetcas
 
 @Preview(name = "FollowToggle — not following", showBackground = true)
 @Composable
+@PreviewLightDark
 fun JetcasterFollowToggleUnfollowedPreview() = Wrap {
     ToggleFollowPodcastIconButton(isFollowed = false, onClick = {})
 }
@@ -168,6 +169,7 @@ fun JetcasterFollowToggleFollowedPreview() = Wrap {
 
 @Preview(name = "SubscribeButtons — not subscribed", showBackground = true, widthDp = 412)
 @Composable
+@PreviewLightDark
 fun JetcasterSubscribeButtonsPreview() = Wrap {
     PodcastDetailsHeaderItemButtons(isSubscribed = false, onClick = {}, modifier = Modifier.fillMaxWidth())
 }
@@ -182,6 +184,7 @@ fun JetcasterSubscribeButtonsSubscribedPreview() = Wrap {
 
 @Preview(name = "TopPodcastRowItem — not following", showBackground = true, widthDp = 160)
 @Composable
+@PreviewLightDark
 fun JetcasterTopPodcastRowItemPreview() = Wrap {
     TopPodcastRowItem(
         podcastTitle = unsubscribedPodcast.title,
@@ -218,6 +221,7 @@ fun JetcasterTopPodcastRowItemLongTitlePreview() = Wrap {
 
 @Preview(name = "CategoryPodcastRow", showBackground = true, widthDp = 412, heightDp = 200)
 @Composable
+@PreviewLightDark
 fun JetcasterCategoryPodcastRowPreview() = Wrap {
     CategoryPodcastRow(
         podcasts = listOf(subscribedPodcast, unsubscribedPodcast, longTitlePodcast),
@@ -229,6 +233,7 @@ fun JetcasterCategoryPodcastRowPreview() = Wrap {
 
 @Preview(name = "CategoryChip — unselected", showBackground = true)
 @Composable
+@PreviewLightDark
 fun JetcasterCategoryChipPreview() = Wrap {
     ChoiceChipContent(text = "Comedy", selected = false, onClick = {})
 }
@@ -241,6 +246,7 @@ fun JetcasterCategoryChipSelectedPreview() = Wrap {
 
 @Preview(name = "CategoryTabs", showBackground = true, widthDp = 412)
 @Composable
+@PreviewLightDark
 fun JetcasterCategoryTabsPreview() = Wrap {
     PodcastCategoryTabs(
         filterableCategoriesModel = FilterableCategoriesModel(
@@ -339,6 +345,7 @@ fun JetcasterPodcastDetailsHeaderLongTitlePreview() = Wrap {
 
 @Preview(name = "PodcastDetails description — short", showBackground = true, widthDp = 412)
 @Composable
+@PreviewLightDark
 fun JetcasterPodcastDescriptionPreview() = Wrap {
     PodcastDetailsDescription(podcast = unsubscribedPodcast, modifier = Modifier.fillMaxWidth())
 }
@@ -351,6 +358,7 @@ fun JetcasterPodcastDescriptionOverflowPreview() = Wrap {
 
 @Preview(name = "PodcastDetails app bar", showBackground = true, widthDp = 412)
 @Composable
+@PreviewLightDark
 fun JetcasterPodcastDetailsTopAppBarPreview() = Wrap {
     PodcastDetailsTopAppBar(navigateBack = {}, modifier = Modifier.fillMaxWidth())
 }
@@ -370,6 +378,7 @@ fun JetcasterPodcastDetailsContentPreview() = Wrap {
 
 @Preview(name = "PodcastDetails screen — full screen", showBackground = true, widthDp = 412, heightDp = 900)
 @Composable
+@PreviewLightDark
 fun JetcasterPodcastDetailsFullScreenPreview() = Wrap {
     PodcastDetailsScreen(
         podcast = subscribedPodcast,
@@ -432,6 +441,7 @@ fun JetcasterPodcastDetailsExpandedLightPreview() = PodcastDetailsScreenPreview(
 
 @Preview(name = "Player screen — catalog", showBackground = true, widthDp = 412, heightDp = 900)
 @Composable
+@PreviewLightDark
 fun JetcasterPlayerScreenCatalogPreview() = PlayerScreenPreview()
 
 @Preview(name = "Player screen — medium", showBackground = true, widthDp = 700, heightDp = 840)
@@ -489,6 +499,7 @@ fun JetcasterPlayerButtonsNoQueuePreview() = Wrap {
 
 @Preview(name = "PlayerSlider — start", showBackground = true, widthDp = 412)
 @Composable
+@PreviewLightDark
 fun JetcasterPlayerSliderPreview() = Wrap {
     PlayerSlider(
         timeElapsed = Duration.ZERO,
@@ -522,12 +533,14 @@ fun JetcasterPlayerSliderCompletePreview() = Wrap {
 
 @Preview(name = "Player app bar", showBackground = true, widthDp = 412)
 @Composable
+@PreviewLightDark
 fun JetcasterPlayerTopAppBarPreview() = Wrap {
     TopAppBar(onBackPress = {}, onAddToQueue = {})
 }
 
 @Preview(name = "PodcastInformation", showBackground = true, widthDp = 412, heightDp = 420)
 @Composable
+@PreviewLightDark
 fun JetcasterPodcastInformationPreview() = Wrap {
     PodcastInformation(
         title = episode.title,
@@ -553,6 +566,7 @@ fun JetcasterHomeAppBarExpandedPreview() = Wrap {
 
 @Preview(name = "PillToolbar — Discover selected", showBackground = true, widthDp = 412)
 @Composable
+@PreviewLightDark
 fun JetcasterPillToolbarDiscoverPreview() = Wrap {
     PillToolbar(selectedHomeCategory = HomeCategory.Discover, onHomeAction = {})
 }
@@ -565,6 +579,7 @@ fun JetcasterPillToolbarLibraryPreview() = Wrap {
 
 @Preview(name = "Loading", showBackground = true, widthDp = 412, heightDp = 300)
 @Composable
+@PreviewLightDark
 fun JetcasterLoadingPreview() = Wrap { Loading(modifier = Modifier.fillMaxWidth()) }
 
 @Preview(name = "Home — error", showBackground = true, widthDp = 412, heightDp = 400)
@@ -589,6 +604,7 @@ fun JetcasterOfflineDialogPreview() = Wrap { OfflineDialog(onRetry = {}) }
 // above stays as the visual reference for the real windowed dialog.
 @Preview(name = "Offline state", showBackground = true, widthDp = 412, heightDp = 400)
 @Composable
+@PreviewLightDark
 fun JetcasterOfflineStatePreview() = Wrap {
     Box(Modifier.fillMaxWidth(), contentAlignment = Alignment.Center) {
         Surface(
@@ -716,7 +732,8 @@ fun JetcasterHomeLibraryLightPreview() = JetcasterTheme(darkTheme = false) {
 // LocalSharedTransitionScope / LocalAnimatedVisibilityScope and throws without them.
 @Preview(name = "Home — discover", showBackground = true, widthDp = 412, heightDp = 640)
 @Composable
-fun JetcasterHomeDiscoverPreview() = JetcasterTheme(darkTheme = true) {
+@PreviewLightDark
+fun JetcasterHomeDiscoverPreview() = JetcasterTheme {
     SharedTransitionPreview {
         HomeScreen(
             isHomeAppBarExpanded = true,
@@ -742,7 +759,7 @@ fun JetcasterHomeDiscoverPreview() = JetcasterTheme(darkTheme = true) {
 
 @Preview(name = "Home — library", showBackground = true, widthDp = 412, heightDp = 900)
 @Composable
-fun JetcasterHomeLibraryPreview() = JetcasterTheme(darkTheme = true) {
+fun JetcasterHomeLibraryPreview() = JetcasterTheme {
     HomeScreen(
         isHomeAppBarExpanded = true,
         isLoading = false,
@@ -766,7 +783,7 @@ fun JetcasterHomeLibraryPreview() = JetcasterTheme(darkTheme = true) {
 
 @Preview(name = "Home — library, refreshing", showBackground = true, widthDp = 412, heightDp = 900)
 @Composable
-fun JetcasterHomeLoadingPreview() = JetcasterTheme(darkTheme = true) {
+fun JetcasterHomeLoadingPreview() = JetcasterTheme {
     HomeScreen(
         isHomeAppBarExpanded = true,
         isLoading = true,
@@ -787,7 +804,7 @@ fun JetcasterHomeLoadingPreview() = JetcasterTheme(darkTheme = true) {
 
 @Preview(name = "Home — empty library", showBackground = true, widthDp = 412, heightDp = 900)
 @Composable
-fun JetcasterHomeEmptyLibraryPreview() = JetcasterTheme(darkTheme = true) {
+fun JetcasterHomeEmptyLibraryPreview() = JetcasterTheme {
     HomeScreen(
         isHomeAppBarExpanded = true,
         isLoading = false,

@@ -51,13 +51,13 @@ import ee.schimke.composeai.preview.ThemeCatalog
 @Composable private fun ReplyScheme(scheme: androidx.compose.material3.ColorScheme, content: @Composable () -> Unit) =
     MaterialTheme(colorScheme = scheme, typography = replyTypography, shapes = shapes, content = content)
 
-@ThemeCatalog(name = "Light", group = "Reply")
+@ThemeCatalog(name = "Reply · Light", group = "Reply")
 class ReplyLightThemeCatalog : PreviewWrapperProvider {
     @Composable
     override fun Wrap(content: @Composable () -> Unit) = ReplyScheme(lightScheme, content)
 }
 
-@ThemeCatalog(name = "Dark", group = "Reply")
+@ThemeCatalog(name = "Reply · Dark", group = "Reply")
 class ReplyDarkThemeCatalog : PreviewWrapperProvider {
     @Composable
     override fun Wrap(content: @Composable () -> Unit) = ReplyScheme(darkScheme, content)

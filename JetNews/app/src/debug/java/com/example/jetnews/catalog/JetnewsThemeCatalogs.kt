@@ -48,13 +48,13 @@ import ee.schimke.composeai.preview.ThemeCatalog
 private fun JetnewsScheme(scheme: ColorScheme, content: @Composable () -> Unit) =
     MaterialTheme(colorScheme = scheme, shapes = JetnewsShapes, typography = JetnewsTypography, content = content)
 
-@ThemeCatalog(name = "Light", group = "JetNews")
+@ThemeCatalog(name = "JetNews · Light", group = "JetNews")
 class JetnewsLightThemeCatalog : PreviewWrapperProvider {
     @Composable
     override fun Wrap(content: @Composable () -> Unit) = JetnewsScheme(LightColors, content)
 }
 
-@ThemeCatalog(name = "Dark", group = "JetNews")
+@ThemeCatalog(name = "JetNews · Dark", group = "JetNews")
 class JetnewsDarkThemeCatalog : PreviewWrapperProvider {
     @Composable
     override fun Wrap(content: @Composable () -> Unit) = JetnewsScheme(DarkColors, content)

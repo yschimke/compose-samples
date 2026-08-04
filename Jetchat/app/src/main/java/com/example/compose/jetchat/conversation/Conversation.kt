@@ -85,6 +85,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
 import com.example.compose.jetchat.FunctionalityNotAvailablePopup
 import com.example.compose.jetchat.R
@@ -548,6 +549,7 @@ fun ConversationPreview() {
 
 @Preview
 @Composable
+@PreviewLightDark
 fun ChannelBarPrev() {
     JetchatTheme {
         ChannelNameBar(channelName = "composers", channelMembers = 52)
@@ -556,8 +558,11 @@ fun ChannelBarPrev() {
 
 @Preview
 @Composable
+@PreviewLightDark
 fun DayHeaderPrev() {
-    DayHeader("Aug 6")
+    JetchatTheme(isDynamicColor = false) {
+        Surface { DayHeader("Aug 6") }
+    }
 }
 
 private val JumpToBottomThreshold = 56.dp

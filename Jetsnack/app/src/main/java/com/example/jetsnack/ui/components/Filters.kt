@@ -49,6 +49,7 @@ import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
 import com.example.jetsnack.R
 import com.example.jetsnack.model.Filter
@@ -174,6 +175,7 @@ private fun FilterDisabledPreview() {
 @Preview("dark theme", uiMode = Configuration.UI_MODE_NIGHT_YES)
 @Preview("large font", fontScale = 2f, widthDp = 412, heightDp = 120)
 @Composable
+@PreviewLightDark
 private fun FilterEnabledPreview() {
     JetsnackTheme {
         FilterChip(Filter(name = "Demo", enabled = true))

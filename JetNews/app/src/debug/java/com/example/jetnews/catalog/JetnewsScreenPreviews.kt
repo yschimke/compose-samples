@@ -30,6 +30,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.tooling.preview.PreviewLightDark
 import com.example.jetnews.R
 import com.example.jetnews.data.AppContainer
 import com.example.jetnews.data.Result
@@ -379,6 +380,7 @@ fun PreviewPublicationsTabFollowed() {
  */
 @Preview("App — compact (single pane)", widthDp = 412, heightDp = 900)
 @Composable
+@PreviewLightDark
 fun PreviewJetnewsAppCompact() {
     JetnewsApp(
         appContainer = remember { PreviewAppContainer() },

@@ -67,6 +67,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Devices
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.core.net.toUri
@@ -405,6 +406,7 @@ fun sharePost(post: Post, context: Context) {
 @Preview("Post screen (dark)", uiMode = UI_MODE_NIGHT_YES)
 @Preview("Post screen (big font)", fontScale = 1.5f, widthDp = 412, heightDp = 900)
 @Composable
+@PreviewLightDark
 fun PreviewPostDrawer() {
     JetnewsTheme {
         val post = runBlocking {

@@ -83,6 +83,7 @@ import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Devices
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
 import androidx.core.net.toUri
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
@@ -673,6 +674,7 @@ private fun HomeTopAppBar(
     heightDp = 900,
 )
 @Composable
+@PreviewLightDark
 fun PreviewHomeListDrawerScreen() {
     val postsFeed = runBlocking {
         (BlockingFakePostsRepository().getPostsFeed() as Result.Success).data

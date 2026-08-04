@@ -44,6 +44,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.SnackbarHost
 import androidx.compose.material3.SnackbarHostState
+import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.material3.ToggleButton
 import androidx.compose.material3.ToggleButtonColors
@@ -65,6 +66,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.example.jetcaster.R
@@ -77,6 +79,7 @@ import com.example.jetcaster.designsystem.component.PodcastImage
 import com.example.jetcaster.designsystem.theme.Keyline1
 import com.example.jetcaster.ui.shared.EpisodeListItem
 import com.example.jetcaster.ui.shared.Loading
+import com.example.jetcaster.ui.theme.JetcasterTheme
 import com.example.jetcaster.ui.tooling.DevicePreviews
 import com.example.jetcaster.util.fullWidthItem
 import kotlinx.coroutines.launch
@@ -383,11 +386,16 @@ fun PodcastDetailsTopAppBar(navigateBack: () -> Unit, modifier: Modifier = Modif
 
 @Preview
 @Composable
+@PreviewLightDark
 fun PodcastDetailsHeaderItemPreview() {
-    PodcastDetailsHeaderItem(
-        podcast = PreviewPodcasts[0],
-        toggleSubscribe = { },
-    )
+    JetcasterTheme {
+        Surface {
+            PodcastDetailsHeaderItem(
+                podcast = PreviewPodcasts[0],
+                toggleSubscribe = { },
+            )
+        }
+    }
 }
 
 @DevicePreviews
