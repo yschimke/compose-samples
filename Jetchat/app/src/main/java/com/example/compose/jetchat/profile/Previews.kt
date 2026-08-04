@@ -18,12 +18,14 @@ package com.example.compose.jetchat.profile
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.tooling.preview.PreviewLightDark
 import com.example.compose.jetchat.data.colleagueProfile
 import com.example.compose.jetchat.data.meProfile
 import com.example.compose.jetchat.theme.JetchatTheme
 
 @Preview(device = "spec:width=340dp,height=800dp,dpi=160", name = "340 width - Me")
 @Composable
+@PreviewLightDark
 fun ProfilePreview340() {
     JetchatTheme {
         ProfileScreen(meProfile)

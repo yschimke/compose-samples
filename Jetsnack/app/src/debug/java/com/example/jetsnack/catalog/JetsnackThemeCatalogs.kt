@@ -98,13 +98,13 @@ private fun JetsnackPalette(colors: JetsnackColors, content: @Composable () -> U
     )
 }
 
-@ThemeCatalog(name = "Light", group = "Jetsnack")
+@ThemeCatalog(name = "Jetsnack · Light", group = "Jetsnack")
 class JetsnackLightThemeCatalog : PreviewWrapperProvider {
     @Composable
     override fun Wrap(content: @Composable () -> Unit) = JetsnackPalette(LightColorPalette, content)
 }
 
-@ThemeCatalog(name = "Dark", group = "Jetsnack")
+@ThemeCatalog(name = "Jetsnack · Dark", group = "Jetsnack")
 class JetsnackDarkThemeCatalog : PreviewWrapperProvider {
     @Composable
     override fun Wrap(content: @Composable () -> Unit) = JetsnackPalette(DarkColorPalette, content)

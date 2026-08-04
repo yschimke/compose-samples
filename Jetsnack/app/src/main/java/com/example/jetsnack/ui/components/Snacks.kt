@@ -67,6 +67,7 @@ import androidx.compose.ui.platform.LocalInspectionMode
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.Density
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
@@ -477,6 +478,7 @@ fun SnackImage(
 @Preview("dark theme", uiMode = UI_MODE_NIGHT_YES)
 @Preview("large font", fontScale = 2f, widthDp = 412, heightDp = 300)
 @Composable
+@PreviewLightDark
 fun SnackCardPreview() {
     val snack = snacks.first()
     JetsnackPreviewWrapper {

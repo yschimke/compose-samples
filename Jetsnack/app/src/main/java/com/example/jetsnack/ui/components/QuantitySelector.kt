@@ -32,6 +32,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.LayoutDirection
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -83,6 +84,7 @@ fun QuantitySelector(count: Int, decreaseItemCount: () -> Unit, increaseItemCoun
 @Preview("dark theme", uiMode = UI_MODE_NIGHT_YES)
 @Preview("large font", fontScale = 2f, widthDp = 412, heightDp = 120)
 @Composable
+@PreviewLightDark
 fun QuantitySelectorPreview() {
     JetsnackTheme {
         JetsnackSurface {

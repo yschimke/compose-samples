@@ -59,6 +59,7 @@ import androidx.compose.ui.platform.rememberNestedScrollInteropConnection
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import com.example.compose.jetchat.FunctionalityNotAvailablePopup
@@ -287,6 +288,7 @@ fun ConvPreviewPortraitOtherDefault() {
 
 @Preview
 @Composable
+@PreviewLightDark
 fun ProfileFabPreview() {
     JetchatTheme {
         ProfileFab(extended = true, userIsMe = false)

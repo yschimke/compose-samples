@@ -41,6 +41,7 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -73,6 +74,7 @@ import androidx.compose.ui.text.TextLayoutResult
 import androidx.compose.ui.text.drawText
 import androidx.compose.ui.text.rememberTextMeasurer
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.util.lerp
 import com.example.jetlagged.data.sleepData
@@ -109,7 +111,7 @@ fun SleepBar(sleepData: SleepDayData, modifier: Modifier = Modifier) {
                 animationSpec = tween(animationDuration),
             ),
             content = {
-                DetailLegend()
+                DetailLegendContent()
             },
             visible = { it },
         )
@@ -292,7 +294,15 @@ private fun generateSleepPath(
 
 @Preview
 @Composable
+@PreviewLightDark
 private fun DetailLegend() {
+    JetLaggedTheme {
+        Surface { DetailLegendContent() }
+    }
+}
+
+@Composable
+private fun DetailLegendContent() {
     Row(
         modifier = Modifier.padding(top = 8.dp),
         horizontalArrangement = Arrangement.spacedBy(8.dp),

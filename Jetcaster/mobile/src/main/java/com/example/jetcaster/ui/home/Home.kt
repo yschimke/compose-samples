@@ -88,6 +88,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
@@ -221,6 +222,7 @@ internal fun HomeScreenError(onRetry: () -> Unit, modifier: Modifier = Modifier)
 
 @Preview
 @Composable
+@PreviewLightDark
 fun HomeScreenErrorPreview() {
     JetcasterTheme {
         HomeScreenError(onRetry = {})
@@ -743,6 +745,7 @@ private fun lastUpdated(updated: OffsetDateTime): String {
 
 @Preview
 @Composable
+@PreviewLightDark
 private fun HomeAppBarPreview() {
     JetcasterTheme {
         HomeAppBar(
@@ -781,6 +784,7 @@ private fun PreviewHome() {
 
 @Composable
 @Preview
+@PreviewLightDark
 private fun PreviewPodcastCard() {
     JetcasterTheme {
         FollowedPodcastCarouselItem(

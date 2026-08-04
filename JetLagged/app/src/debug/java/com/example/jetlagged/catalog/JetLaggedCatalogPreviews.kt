@@ -16,8 +16,12 @@
 
 package com.example.jetlagged.catalog
 
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Box
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.tooling.preview.PreviewLightDark
 import com.example.jetlagged.AverageTimeAsleepCard
 import com.example.jetlagged.AverageTimeInBedCard
 import com.example.jetlagged.WellnessCard
@@ -50,6 +54,7 @@ import com.example.jetlagged.ui.theme.JetLaggedTheme
 
 @Preview(name = "Average time asleep", showBackground = true, widthDp = 400)
 @Composable
+@PreviewLightDark
 fun AverageTimeAsleepCardCatalogPreview() {
     JetLaggedTheme { AverageTimeAsleepCard() }
 }
@@ -63,6 +68,7 @@ fun AverageTimeAsleepCardWideCatalogPreview() {
 
 @Preview(name = "Average time in bed", showBackground = true, widthDp = 400)
 @Composable
+@PreviewLightDark
 fun AverageTimeInBedCardCatalogPreview() {
     JetLaggedTheme { AverageTimeInBedCard() }
 }
@@ -76,18 +82,25 @@ fun AverageTimeInBedCardWideCatalogPreview() {
 
 @Preview(name = "Heart rate", showBackground = true, widthDp = 400)
 @Composable
+@PreviewLightDark
 fun HeartRateCardCatalogPreview() {
     JetLaggedTheme { HeartRateCard() }
 }
 
 @Preview(name = "Wellness", showBackground = true, widthDp = 400)
 @Composable
+@PreviewLightDark
 fun WellnessCardCatalogPreview() {
     JetLaggedTheme { WellnessCard() }
 }
 
 @Preview(name = "Header", showBackground = true, widthDp = 400)
 @Composable
+@PreviewLightDark
 fun JetLaggedHeaderCatalogPreview() {
-    JetLaggedTheme { JetLaggedHeader() }
+    JetLaggedTheme {
+        Box(Modifier.background(JetLaggedTheme.extraColors.header)) {
+            JetLaggedHeader()
+        }
+    }
 }

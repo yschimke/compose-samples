@@ -42,13 +42,13 @@ import ee.schimke.composeai.preview.ThemeCatalog
  * These live in the `debug` source set, so nothing here reaches a release build.
  */
 
-@ThemeCatalog(name = "Light", group = "JetLagged")
+@ThemeCatalog(name = "JetLagged · Light", group = "JetLagged")
 class JetLaggedLightThemeCatalog : PreviewWrapperProvider {
     @Composable
     override fun Wrap(content: @Composable () -> Unit) = JetLaggedTheme(isDarkTheme = false, content = content)
 }
 
-@ThemeCatalog(name = "Dark", group = "JetLagged")
+@ThemeCatalog(name = "JetLagged · Dark", group = "JetLagged")
 class JetLaggedDarkThemeCatalog : PreviewWrapperProvider {
     @Composable
     override fun Wrap(content: @Composable () -> Unit) = JetLaggedTheme(isDarkTheme = true, content = content)

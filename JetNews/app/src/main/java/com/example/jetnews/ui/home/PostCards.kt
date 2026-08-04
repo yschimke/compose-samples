@@ -44,6 +44,7 @@ import androidx.compose.ui.semantics.customActions
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
 import com.example.jetnews.R
 import com.example.jetnews.data.posts.impl.post3
@@ -193,6 +194,7 @@ fun PostCardHistory(post: Post, navigateToPost: (String) -> Unit, initialDialogO
 
 @Preview("Bookmark Button")
 @Composable
+@PreviewLightDark
 fun BookmarkButtonPreview() {
     JetnewsTheme {
         Surface {
@@ -214,6 +216,7 @@ fun BookmarkButtonBookmarkedPreview() {
 @Preview("Simple post card")
 @Preview("Simple post card (dark)", uiMode = UI_MODE_NIGHT_YES)
 @Composable
+@PreviewLightDark
 fun SimplePostPreview() {
     JetnewsTheme {
         Surface {
@@ -224,6 +227,7 @@ fun SimplePostPreview() {
 
 @Preview("Post History card")
 @Composable
+@PreviewLightDark
 fun HistoryPostPreview() {
     JetnewsTheme {
         Surface {

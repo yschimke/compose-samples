@@ -18,6 +18,7 @@ package com.example.jetlagged.catalog
 
 import android.content.res.Configuration
 import androidx.compose.foundation.background
+import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -41,6 +42,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
 import com.example.jetlagged.BasicInformationalCard
 import com.example.jetlagged.HomeScreenCardHeading
@@ -83,7 +85,7 @@ import com.example.jetlagged.ui.theme.SmallHeadingStyle
  */
 
 @Composable
-private fun Wrap(dark: Boolean = false, content: @Composable () -> Unit) = JetLaggedTheme(isDarkTheme = dark) {
+private fun Wrap(dark: Boolean = isSystemInDarkTheme(), content: @Composable () -> Unit) = JetLaggedTheme(isDarkTheme = dark) {
     Surface(color = MaterialTheme.colorScheme.background) {
         Box(Modifier.padding(8.dp)) { content() }
     }
@@ -93,6 +95,7 @@ private fun Wrap(dark: Boolean = false, content: @Composable () -> Unit) = JetLa
 
 @Preview(name = "SleepBar", showBackground = true, widthDp = 380, heightDp = 80)
 @Composable
+@PreviewLightDark
 fun SleepBarCatalogPreview() = Wrap {
     SleepBar(sleepData = singleNight, modifier = Modifier.fillMaxWidth())
 }
@@ -153,6 +156,7 @@ private fun SleepStageSwatches() {
 
 @Preview(name = "Sleep stage palette", showBackground = true, widthDp = 380, heightDp = 100)
 @Composable
+@PreviewLightDark
 fun SleepStagePalettePreview() = Wrap { SleepStageSwatches() }
 
 @Preview(
@@ -169,6 +173,7 @@ fun SleepStagePaletteDarkPreview() = Wrap(dark = true) { SleepStageSwatches() }
 
 @Preview(name = "SleepGraphCard — week", showBackground = true, widthDp = 700, heightDp = 460)
 @Composable
+@PreviewLightDark
 fun JetLaggedSleepGraphCardPreview() = Wrap {
     JetLaggedSleepGraphCard(sleepState = weekOfSleep)
 }
@@ -197,6 +202,7 @@ fun JetLaggedSleepGraphCardDarkPreview() = Wrap(dark = true) {
  */
 @Preview(name = "TimeGraph — bare layout", showBackground = true, widthDp = 760, heightDp = 340)
 @Composable
+@PreviewLightDark
 fun TimeGraphPreview() = Wrap {
     val graph = weekOfSleep
     val hours = (graph.earliestStartHour..23) + (0..graph.latestEndHour)
@@ -243,6 +249,7 @@ fun TimeGraphPreview() = Wrap {
 
 @Preview(name = "HeartRateGraph", showBackground = true, widthDp = 420, heightDp = 120)
 @Composable
+@PreviewLightDark
 fun HeartRateGraphPreview() = Wrap {
     HeartRateGraph(listData = HeartRateOverallData().listData)
 }
@@ -279,6 +286,7 @@ fun HeartRateCardRestingPreview() = Wrap {
 
 @Preview(name = "BasicInformationalCard", showBackground = true, widthDp = 320, heightDp = 160)
 @Composable
+@PreviewLightDark
 fun BasicInformationalCardPreview() = Wrap {
     BasicInformationalCard(borderColor = MaterialTheme.colorScheme.primary) {
         Box(Modifier.padding(24.dp)) { HomeScreenCardHeading(text = "Sleep") }
@@ -287,6 +295,7 @@ fun BasicInformationalCardPreview() = Wrap {
 
 @Preview(name = "TwoLineInfoCard", showBackground = true, widthDp = 240, heightDp = 240)
 @Composable
+@PreviewLightDark
 fun TwoLineInfoCardPreview() = Wrap {
     TwoLineInfoCard(
         borderColor = JetLaggedTheme.extraColors.bed,
@@ -329,18 +338,21 @@ fun WellnessCardDarkPreview() = Wrap(dark = true) {
 
 @Preview(name = "WellnessBubble", showBackground = true, widthDp = 140, heightDp = 140)
 @Composable
+@PreviewLightDark
 fun WellnessBubblePreview() = Wrap {
     WellnessBubble(titleText = "Snoring", countText = "128", metric = "min")
 }
 
 @Preview(name = "CardHeading", showBackground = true, widthDp = 320, heightDp = 60)
 @Composable
+@PreviewLightDark
 fun HomeScreenCardHeadingPreview() = Wrap { HomeScreenCardHeading(text = "Wellness") }
 
 // ---------------------------------------------------------------- chrome
 
 @Preview(name = "HeaderTabs — Week", showBackground = true, widthDp = 400, heightDp = 72)
 @Composable
+@PreviewLightDark
 fun JetLaggedHeaderTabsPreview() = Wrap { HeaderTabs(SleepTab.Week) }
 
 @Preview(name = "HeaderTabs — Day", showBackground = true, widthDp = 400, heightDp = 72)

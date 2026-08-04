@@ -17,10 +17,12 @@
 package com.example.jetlagged.catalog
 
 import android.content.res.Configuration
+import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.windowsizeclass.WindowWidthSizeClass
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.tooling.preview.PreviewLightDark
 import com.example.jetlagged.JetLaggedScreen
 import com.example.jetlagged.data.JetLaggedHomeScreenState
 import com.example.jetlagged.data.JetLaggedHomeScreenViewModel
@@ -56,7 +58,7 @@ import com.example.jetlagged.ui.theme.JetLaggedTheme
 private val fixtureState = JetLaggedHomeScreenState(sleepGraphData = weekOfSleep)
 
 @Composable
-private fun Screen(windowSizeClass: WindowWidthSizeClass, dark: Boolean = false) = JetLaggedTheme(isDarkTheme = dark) {
+private fun Screen(windowSizeClass: WindowWidthSizeClass, dark: Boolean = isSystemInDarkTheme()) = JetLaggedTheme(isDarkTheme = dark) {
     JetLaggedScreen(
         windowSizeClass = windowSizeClass,
         viewModel = remember { JetLaggedHomeScreenViewModel(fixtureState) },
@@ -65,6 +67,7 @@ private fun Screen(windowSizeClass: WindowWidthSizeClass, dark: Boolean = false)
 
 @Preview(name = "Home — compact", showBackground = true, widthDp = 412, heightDp = 1100)
 @Composable
+@PreviewLightDark
 fun JetLaggedScreenCompactPreview() = Screen(WindowWidthSizeClass.Compact)
 
 /** Above compact the cards reflow into `FlowColumn`s beside the graph rather than stacking. */

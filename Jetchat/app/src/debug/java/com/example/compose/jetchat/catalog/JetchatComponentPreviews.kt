@@ -19,6 +19,7 @@
 package com.example.compose.jetchat.catalog
 
 import android.content.res.Configuration
+import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -42,6 +43,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.focus.FocusRequester
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
 import com.example.compose.jetchat.FunctionalityNotAvailablePopup
 import com.example.compose.jetchat.R
@@ -118,7 +120,7 @@ private val richMessage = initialMessages[3]
 private val longMessage = initialMessages[4]
 
 @Composable
-private fun Wrap(dark: Boolean = false, content: @Composable () -> Unit) {
+private fun Wrap(dark: Boolean = isSystemInDarkTheme(), content: @Composable () -> Unit) {
     JetchatTheme(isDarkTheme = dark, isDynamicColor = false) {
         Surface { Box(Modifier.padding(8.dp)) { content() } }
     }
@@ -128,6 +130,7 @@ private fun Wrap(dark: Boolean = false, content: @Composable () -> Unit) {
 
 @Preview(name = "Message — other author", showBackground = true, widthDp = 400)
 @Composable
+@PreviewLightDark
 fun JetchatMessageOtherPreview() = Wrap {
     Message(
         onAuthorClick = {},
@@ -249,6 +252,7 @@ fun JetchatMessageMeDarkPreview() = Wrap(dark = true) {
 
 @Preview(name = "AuthorAndTextMessage — group head", showBackground = true, widthDp = 340)
 @Composable
+@PreviewLightDark
 fun JetchatAuthorAndTextMessagePreview() = Wrap {
     AuthorAndTextMessage(
         msg = otherMessage,
@@ -273,6 +277,7 @@ fun JetchatAuthorAndTextMessageContinuedPreview() = Wrap {
 
 @Preview(name = "ChatItemBubble — other author", showBackground = true, widthDp = 340)
 @Composable
+@PreviewLightDark
 fun JetchatChatItemBubbleOtherPreview() = Wrap {
     ChatItemBubble(message = otherMessage, isUserMe = false, authorClicked = {})
 }
@@ -291,6 +296,7 @@ fun JetchatChatItemBubbleWithImagePreview() = Wrap {
 
 @Preview(name = "ClickableMessage — mention and code", showBackground = true, widthDp = 340)
 @Composable
+@PreviewLightDark
 fun JetchatClickableMessagePreview() = Wrap {
     ClickableMessage(message = richMessage, isUserMe = false, authorClicked = {})
 }
@@ -305,6 +311,7 @@ fun JetchatClickableMessagePrimaryPreview() = Wrap {
 
 @Preview(name = "Messages", showBackground = true, widthDp = 400, heightDp = 640)
 @Composable
+@PreviewLightDark
 fun JetchatMessagesPreview() = Wrap {
     Messages(
         messages = initialMessages,
@@ -337,6 +344,7 @@ fun JetchatDayHeaderDarkPreview() = Wrap(dark = true) { DayHeader("Today") }
 
 @Preview(name = "JumpToBottom — light", showBackground = true, widthDp = 220, heightDp = 80)
 @Composable
+@PreviewLightDark
 fun JetchatJumpToBottomLightPreview() = Wrap {
     Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
         JumpToBottom(enabled = true, onClicked = {}, modifier = Modifier.offset(y = 32.dp))
@@ -361,8 +369,9 @@ fun JetchatJumpToBottomDarkPreview() = Wrap(dark = true) {
 
 @Preview(name = "Conversation — light", showBackground = true, widthDp = 412, heightDp = 800)
 @Composable
+@PreviewLightDark
 fun JetchatConversationContentLightPreview() {
-    JetchatTheme(isDarkTheme = false, isDynamicColor = false) {
+    JetchatTheme(isDynamicColor = false) {
         ConversationContent(uiState = exampleUiState, navigateToProfile = {})
     }
 }
@@ -386,7 +395,7 @@ fun JetchatConversationContentMediumPreview() {
 @Preview(name = "Conversation — empty", showBackground = true, widthDp = 412, heightDp = 800)
 @Composable
 fun JetchatConversationContentEmptyPreview() {
-    JetchatTheme(isDarkTheme = false, isDynamicColor = false) {
+    JetchatTheme(isDynamicColor = false) {
         ConversationContent(
             uiState =
                 ConversationUiState(
@@ -424,6 +433,7 @@ fun JetchatUserInputDarkPreview() = Wrap(dark = true) { UserInput(onMessageSent 
 
 @Preview(name = "EmojiSelector", showBackground = true, widthDp = 412, heightDp = 320)
 @Composable
+@PreviewLightDark
 fun JetchatEmojiSelectorPreview() = Wrap {
     EmojiSelector(onTextAdded = {}, focusRequester = remember { FocusRequester() })
 }
@@ -434,6 +444,7 @@ fun JetchatEmojiTablePreview() = Wrap { EmojiTable(onTextAdded = {}) }
 
 @Preview(name = "SelectorInnerButton — selected", showBackground = true, widthDp = 220)
 @Composable
+@PreviewLightDark
 fun JetchatExtendedSelectorInnerButtonSelectedPreview() = Wrap {
     Row(Modifier.fillMaxWidth()) {
         ExtendedSelectorInnerButton(
@@ -460,6 +471,7 @@ fun JetchatExtendedSelectorInnerButtonUnselectedPreview() = Wrap {
 
 @Preview(name = "FunctionalityNotAvailablePanel", showBackground = true, widthDp = 412, heightDp = 340)
 @Composable
+@PreviewLightDark
 fun JetchatFunctionalityNotAvailablePanelPreview() = Wrap {
     FunctionalityNotAvailablePanel(showImmediately = true)
 }
@@ -470,6 +482,7 @@ fun JetchatFunctionalityNotAvailablePopupPreview() = Wrap { FunctionalityNotAvai
 
 @Preview(name = "RecordButton — idle", showBackground = true, widthDp = 144, heightDp = 144)
 @Composable
+@PreviewLightDark
 fun JetchatRecordButtonIdlePreview() = Wrap {
     Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
         RecordButton(
@@ -504,12 +517,14 @@ fun JetchatRecordButtonRecordingPreview() = Wrap {
 
 @Preview(name = "JetchatIcon", showBackground = true, widthDp = 96, heightDp = 96)
 @Composable
+@PreviewLightDark
 fun JetchatIconPreview() = Wrap {
     JetchatIcon(contentDescription = "Jetchat", modifier = Modifier.size(48.dp))
 }
 
 @Preview(name = "DividerItem", showBackground = true, widthDp = 300, heightDp = 48)
 @Composable
+@PreviewLightDark
 fun JetchatDividerItemPreview() = Wrap {
     Column(Modifier.fillMaxWidth()) {
         Text("Chats", style = MaterialTheme.typography.bodySmall)
@@ -519,6 +534,7 @@ fun JetchatDividerItemPreview() = Wrap {
 
 @Preview(name = "Drawer shell — open", showBackground = true, widthDp = 412, heightDp = 800)
 @Composable
+@PreviewLightDark
 fun JetchatDrawerOpenPreview() {
     // The modal drawer shell (scrim + sheet over the conversation), not just its content.
     JetchatDrawer(
@@ -602,6 +618,7 @@ fun JetchatProfileScreenMediumDarkPreview() {
 
 @Preview(name = "ProfileProperty", showBackground = true, widthDp = 340)
 @Composable
+@PreviewLightDark
 fun JetchatProfilePropertyPreview() = Wrap {
     Column {
         ProfileProperty(label = "Display name", value = meProfile.displayName)
@@ -626,6 +643,7 @@ fun JetchatProfilePropertyAwayPreview() = Wrap {
 
 @Preview(name = "ProfileError", showBackground = true, widthDp = 340, heightDp = 80)
 @Composable
+@PreviewLightDark
 fun JetchatProfileErrorPreview() = Wrap { ProfileError() }
 
 @Preview(name = "ProfileFab — me, extended", showBackground = true, widthDp = 220, heightDp = 96)
@@ -648,6 +666,7 @@ fun JetchatProfileFabOtherCollapsedPreview() = Wrap {
 
 @Preview(name = "AnimatingFabContent — extended", showBackground = true, widthDp = 220, heightDp = 64)
 @Composable
+@PreviewLightDark
 fun JetchatAnimatingFabContentExtendedPreview() = Wrap {
     AnimatingFabContent(
         icon = { Icon(painterResource(id = R.drawable.ic_create), contentDescription = null) },

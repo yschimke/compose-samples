@@ -17,6 +17,7 @@
 package com.example.reply.catalog
 
 import android.content.res.Configuration
+import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
@@ -25,6 +26,7 @@ import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
 import com.example.reply.data.local.LocalEmailsDataProvider
 import com.example.reply.ui.ReplyEmailDetail
@@ -63,7 +65,7 @@ private val threadEmail = LocalEmailsDataProvider.allEmails[1]
 private val emails = LocalEmailsDataProvider.allEmails
 
 @Composable
-private fun Wrap(dark: Boolean = false, content: @Composable () -> Unit) = ContrastAwareReplyTheme(darkTheme = dark) {
+private fun Wrap(dark: Boolean = isSystemInDarkTheme(), content: @Composable () -> Unit) = ContrastAwareReplyTheme(darkTheme = dark) {
     Surface { Box(Modifier.padding(8.dp)) { content() } }
 }
 
@@ -71,6 +73,7 @@ private fun Wrap(dark: Boolean = false, content: @Composable () -> Unit) = Contr
 
 @Preview(name = "ProfileImage", showBackground = true)
 @Composable
+@PreviewLightDark
 fun ReplyProfileImagePreview() = Wrap {
     ReplyProfileImage(email.sender.avatar, email.sender.fullName, Modifier.padding(4.dp))
 }
@@ -83,6 +86,7 @@ fun SelectedProfileImagePreview() = Wrap { SelectedProfileImage(Modifier.padding
 
 @Preview(name = "EmailListItem", showBackground = true, widthDp = 400)
 @Composable
+@PreviewLightDark
 fun ReplyEmailListItemPreview() = Wrap {
     ReplyEmailListItem(email = email, navigateToDetail = {}, toggleSelection = {})
 }
@@ -121,6 +125,7 @@ fun ReplyEmailListItemDarkPreview() = Wrap(dark = true) {
 
 @Preview(name = "EmailThreadItem", showBackground = true, widthDp = 400)
 @Composable
+@PreviewLightDark
 fun ReplyEmailThreadItemPreview() = Wrap { ReplyEmailThreadItem(email = threadEmail) }
 
 @Preview(name = "EmailThreadItem — dark", showBackground = true, widthDp = 400, uiMode = Configuration.UI_MODE_NIGHT_YES)
@@ -133,6 +138,7 @@ fun ReplyEmailThreadItemDarkPreview() = Wrap(dark = true) {
 
 @Preview(name = "SearchBar", showBackground = true, widthDp = 400)
 @Composable
+@PreviewLightDark
 fun ReplyDockedSearchBarPreview() = Wrap {
     ReplyDockedSearchBar(emails = emails, onSearchItemSelected = {})
 }
@@ -160,6 +166,7 @@ fun ReplyDockedSearchBarResultsPreview() = Wrap {
 
 @Preview(name = "DetailAppBar — full screen", showBackground = true, widthDp = 400)
 @Composable
+@PreviewLightDark
 fun EmailDetailAppBarFullScreenPreview() = Wrap {
     EmailDetailAppBar(email = email, isFullScreen = true, onBackPressed = {})
 }
@@ -174,6 +181,7 @@ fun EmailDetailAppBarPanePreview() = Wrap {
 
 @Preview(name = "EmailList", showBackground = true, widthDp = 400, heightDp = 700)
 @Composable
+@PreviewLightDark
 fun ReplyEmailListPreview() = Wrap {
     ReplyEmailList(
         emails = emails,
@@ -213,6 +221,7 @@ fun ReplyEmailListEmptyPreview() = Wrap {
 
 @Preview(name = "EmailDetail — full screen", showBackground = true, widthDp = 400, heightDp = 700)
 @Composable
+@PreviewLightDark
 fun ReplyEmailDetailPreview() = Wrap {
     ReplyEmailDetail(email = email, modifier = Modifier.fillMaxSize())
 }
@@ -233,6 +242,7 @@ fun ReplyEmailDetailDarkPreview() = Wrap(dark = true) {
 
 @Preview(name = "BottomNavigationBar", showBackground = true, widthDp = 400)
 @Composable
+@PreviewLightDark
 fun ReplyBottomNavigationBarPreview() = Wrap {
     ReplyBottomNavigationBar(currentDestination = null, navigateToTopLevelDestination = {})
 }
@@ -259,6 +269,7 @@ fun ReplyBottomNavigationBarArticlesPreview() = Wrap {
 
 @Preview(name = "NavigationRail — top", showBackground = true, widthDp = 120, heightDp = 600)
 @Composable
+@PreviewLightDark
 fun ReplyNavigationRailTopPreview() = Wrap {
     ReplyNavigationRail(
         currentDestination = null,
@@ -290,6 +301,7 @@ fun ReplyNavigationRailInboxPreview() = Wrap {
 
 @Preview(name = "PermanentDrawer", showBackground = true, widthDp = 300, heightDp = 700)
 @Composable
+@PreviewLightDark
 fun PermanentNavigationDrawerContentPreview() = Wrap {
     PermanentNavigationDrawerContent(
         currentDestination = null,
