@@ -403,7 +403,6 @@ fun sharePost(post: Post, context: Context) {
 }
 
 @Preview("Post screen")
-@Preview("Post screen (dark)", uiMode = UI_MODE_NIGHT_YES)
 @Preview("Post screen (big font)", fontScale = 1.5f, widthDp = 412, heightDp = 900)
 @Composable
 @PreviewLightDark

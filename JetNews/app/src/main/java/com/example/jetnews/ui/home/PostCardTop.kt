@@ -89,7 +89,7 @@ fun PostCardTop(post: Post, modifier: Modifier = Modifier) {
  *
  * Learn more about Preview features in the [documentation](https://d.android.com/jetpack/compose/tooling#preview)
  */
-@Preview
+@Preview(name = "Post card top")
 @Composable
 @PreviewLightDark
 fun PostCardTopPreview() {

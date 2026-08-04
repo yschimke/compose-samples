@@ -96,7 +96,6 @@ private fun JetNewsLogo(modifier: Modifier = Modifier) {
 }
 
 @Preview("Drawer contents")
-@Preview("Drawer contents (dark)", uiMode = UI_MODE_NIGHT_YES)
 @Composable
 @PreviewLightDark
 fun PreviewAppDrawer() {

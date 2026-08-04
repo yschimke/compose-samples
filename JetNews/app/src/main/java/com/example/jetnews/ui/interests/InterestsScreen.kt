@@ -552,7 +552,6 @@ private fun InterestsAdaptiveContentLayout(
 }
 
 @Preview("Interests screen", "Interests")
-@Preview("Interests screen (dark)", "Interests", uiMode = UI_MODE_NIGHT_YES)
 @Preview(
     "Interests screen (big font)", "Interests",
     fontScale = 1.5f, widthDp = 412, heightDp = 900,
@@ -606,7 +605,6 @@ fun PreviewInterestsScreenNavRail() {
 }
 
 @Preview("Interests screen topics tab", "Topics")
-@Preview("Interests screen topics tab (dark)", "Topics", uiMode = UI_MODE_NIGHT_YES)
 @Composable
 @PreviewLightDark
 fun PreviewTopicsTab() {
@@ -621,7 +619,6 @@ fun PreviewTopicsTab() {
 }
 
 @Preview("Interests screen people tab", "People")
-@Preview("Interests screen people tab (dark)", "People", uiMode = UI_MODE_NIGHT_YES)
 @Composable
 @PreviewLightDark
 fun PreviewPeopleTab() {

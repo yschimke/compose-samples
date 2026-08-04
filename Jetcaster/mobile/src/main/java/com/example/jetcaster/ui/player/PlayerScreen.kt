@@ -879,7 +879,7 @@ private fun FullScreenLoading(modifier: Modifier = Modifier) {
     }
 }
 
-@Preview
+@Preview(name = "Player top app bar")
 @Composable
 @PreviewLightDark
 fun TopAppBarPreview() {
@@ -893,7 +893,7 @@ fun TopAppBarPreview() {
     }
 }
 
-@Preview
+@Preview(name = "Player buttons")
 @Composable
 @PreviewLightDark
 fun PlayerButtonsPreview() {

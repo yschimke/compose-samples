@@ -62,7 +62,7 @@ fun JetchatAppBar(
 }
 
 @OptIn(ExperimentalMaterial3Api::class)
-@Preview
+@Preview(name = "App bar")
 @Composable
 @PreviewLightDark
 fun JetchatAppBarPreview() {

@@ -547,7 +547,7 @@ fun ConversationPreview() {
     }
 }
 
-@Preview
+@Preview(name = "Channel bar")
 @Composable
 @PreviewLightDark
 fun ChannelBarPrev() {
@@ -556,7 +556,7 @@ fun ChannelBarPrev() {
     }
 }
 
-@Preview
+@Preview(name = "Day header")
 @Composable
 @PreviewLightDark
 fun DayHeaderPrev() {

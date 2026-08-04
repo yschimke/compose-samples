@@ -219,7 +219,7 @@ fun DividerItem(modifier: Modifier = Modifier) {
 }
 
 @Composable
-@Preview
+@Preview(name = "Drawer")
 @PreviewLightDark
 fun DrawerPreview() {
     JetchatTheme {

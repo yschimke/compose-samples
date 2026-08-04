@@ -172,7 +172,6 @@ private fun FilterDisabledPreview() {
 }
 
 @Preview("default")
-@Preview("dark theme", uiMode = Configuration.UI_MODE_NIGHT_YES)
 @Preview("large font", fontScale = 2f, widthDp = 412, heightDp = 120)
 @Composable
 @PreviewLightDark

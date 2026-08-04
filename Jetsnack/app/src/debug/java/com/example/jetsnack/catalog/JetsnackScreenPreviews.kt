@@ -36,11 +36,6 @@ import com.example.jetsnack.ui.home.search.Search
 
 @Preview("default", device = "spec:width=400dp,height=800dp,dpi=160")
 @Preview(
-    "dark theme",
-    uiMode = UI_MODE_NIGHT_YES,
-    device = "spec:width=400dp,height=800dp,dpi=160",
-)
-@Preview(
     "large font",
     fontScale = 2f,
     device = "spec:width=700dp,height=800dp,dpi=160",
@@ -52,11 +47,6 @@ fun FeedScreenPreview() = JetsnackPreviewWrapper {
 }
 
 @Preview("default", device = "spec:width=400dp,height=800dp,dpi=160")
-@Preview(
-    "dark theme",
-    uiMode = UI_MODE_NIGHT_YES,
-    device = "spec:width=400dp,height=800dp,dpi=160",
-)
 @Preview(
     "large font",
     fontScale = 2f,
@@ -89,7 +79,6 @@ fun CartScreenEmptyPreview() = JetsnackPreviewWrapper {
 }
 
 @Preview("default")
-@Preview("dark theme", uiMode = UI_MODE_NIGHT_YES)
 @Preview("large font", fontScale = 2f, widthDp = 412, heightDp = 800)
 @Composable
 @PreviewLightDark
@@ -98,11 +87,6 @@ fun ProfileScreenPreview() = JetsnackPreviewWrapper {
 }
 
 @Preview("search", device = "spec:width=400dp,height=800dp,dpi=160")
-@Preview(
-    "search dark",
-    uiMode = UI_MODE_NIGHT_YES,
-    device = "spec:width=400dp,height=800dp,dpi=160",
-)
 @Composable
 @PreviewLightDark
 fun SearchScreenPreview() = JetsnackPreviewWrapper {

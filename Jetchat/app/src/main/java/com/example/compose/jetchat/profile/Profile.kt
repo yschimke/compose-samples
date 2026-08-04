@@ -286,7 +286,7 @@ fun ConvPreviewPortraitOtherDefault() {
     }
 }
 
-@Preview
+@Preview(name = "Profile FAB")
 @Composable
 @PreviewLightDark
 fun ProfileFabPreview() {

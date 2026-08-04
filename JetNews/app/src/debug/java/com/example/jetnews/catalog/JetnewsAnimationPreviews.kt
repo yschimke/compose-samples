@@ -72,12 +72,6 @@ import kotlinx.coroutines.delay
  * on the sticker sheet.
  */
 @Preview(name = "Popular post card", showBackground = true, widthDp = 280)
-@Preview(
-    name = "Popular post card (dark)",
-    showBackground = true,
-    widthDp = 280,
-    uiMode = Configuration.UI_MODE_NIGHT_YES,
-)
 @Composable
 @PreviewLightDark
 fun PopularPostCardCatalogPreview() {

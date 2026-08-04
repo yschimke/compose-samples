@@ -105,7 +105,6 @@ fun JetsnackButton(
 private val ButtonShape = RoundedCornerShape(percent = 50)
 
 @Preview("default", "round")
-@Preview("dark theme", "round", uiMode = UI_MODE_NIGHT_YES)
 @Preview("large font", "round", fontScale = 2f, widthDp = 412, heightDp = 120)
 @Composable
 @PreviewLightDark

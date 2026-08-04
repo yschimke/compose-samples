@@ -122,7 +122,6 @@ private fun Wrap(content: @Composable () -> Unit) = JetsnackPreviewWrapper {
 // ------------------------------------------------------------------ surface
 
 @Preview("default")
-@Preview("dark theme", uiMode = UI_MODE_NIGHT_YES)
 @Composable
 @PreviewLightDark
 fun JetsnackSurfaceFlatPreview() = Wrap {
@@ -196,7 +195,6 @@ private class PreviewSnackbarData(override val visuals: SnackbarVisuals) : Snack
 }
 
 @Preview("default")
-@Preview("dark theme", uiMode = UI_MODE_NIGHT_YES)
 @Composable
 @PreviewLightDark
 fun JetsnackSnackbarPreview() = Wrap {
@@ -247,7 +245,6 @@ fun VerticalGridThreeColumnPreview() = Wrap {
 // ------------------------------------------------------------------ snack surfaces
 
 @Preview("default")
-@Preview("dark theme", uiMode = UI_MODE_NIGHT_YES)
 @Composable
 @PreviewLightDark
 fun SnackItemPreview() = Wrap {
@@ -267,7 +264,6 @@ fun SnackImagePreview() = Wrap {
 }
 
 @Preview("default", heightDp = 320)
-@Preview("dark theme", uiMode = UI_MODE_NIGHT_YES, heightDp = 320)
 @Composable
 @PreviewLightDark
 fun SnackCollectionHighlightPreview() = Wrap {
@@ -291,7 +287,6 @@ fun SnackCollectionNormalPreview() = Wrap {
 // ------------------------------------------------------------------ filter bar
 
 @Preview("default")
-@Preview("dark theme", uiMode = UI_MODE_NIGHT_YES)
 @Composable
 @PreviewLightDark
 fun FilterBarPreview() = Wrap {
@@ -340,7 +335,6 @@ private fun previewFilters() = listOf(
 // ------------------------------------------------------------------ cart rows
 
 @Preview("default")
-@Preview("dark theme", uiMode = UI_MODE_NIGHT_YES)
 @Composable
 @PreviewLightDark
 fun CartItemPreview() = Wrap {
@@ -378,7 +372,6 @@ fun CartItemManyPreview() = Wrap {
 }
 
 @Preview("default")
-@Preview("dark theme", uiMode = UI_MODE_NIGHT_YES)
 @Composable
 @PreviewLightDark
 fun SummaryItemPreview() = Wrap {
@@ -477,7 +470,6 @@ fun SearchBarDarkCatalogPreview() = SearchBarCatalogPreview()
 fun SearchBarLargeFontCatalogPreview() = SearchBarCatalogPreview()
 
 @Preview("default")
-@Preview("dark theme", uiMode = UI_MODE_NIGHT_YES)
 @Preview("large font", fontScale = 2f, widthDp = 412, heightDp = 220)
 @Composable
 @PreviewLightDark
@@ -517,7 +509,6 @@ fun SearchSuggestionsDarkPreview() = SearchSuggestionsPreview()
 fun SearchSuggestionsLargeFontPreview() = SearchSuggestionsPreview()
 
 @Preview("default")
-@Preview("dark theme", uiMode = UI_MODE_NIGHT_YES)
 @Preview("large font", fontScale = 2f, widthDp = 412, heightDp = 220)
 @Composable
 @PreviewLightDark
@@ -547,7 +538,6 @@ fun SearchResultsPreview() = Wrap {
 }
 
 @Preview("default")
-@Preview("dark theme", uiMode = UI_MODE_NIGHT_YES)
 @Composable
 @PreviewLightDark
 fun NoResultsPreview() = Wrap {
@@ -595,7 +585,6 @@ private fun BottomBar(current: HomeSections) = Wrap {
 }
 
 @Preview("default")
-@Preview("dark theme", uiMode = UI_MODE_NIGHT_YES)
 @Composable
 @PreviewLightDark
 fun JetsnackBottomBarFeedPreview() = BottomBar(HomeSections.FEED)
