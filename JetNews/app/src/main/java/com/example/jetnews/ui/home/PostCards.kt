@@ -214,7 +214,6 @@ fun BookmarkButtonBookmarkedPreview() {
 }
 
 @Preview("Simple post card")
-@Preview("Simple post card (dark)", uiMode = UI_MODE_NIGHT_YES)
 @Composable
 @PreviewLightDark
 fun SimplePostPreview() {

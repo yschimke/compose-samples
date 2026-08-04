@@ -384,7 +384,7 @@ fun PodcastDetailsTopAppBar(navigateBack: () -> Unit, modifier: Modifier = Modif
     )
 }
 
-@Preview
+@Preview(name = "Podcast details header")
 @Composable
 @PreviewLightDark
 fun PodcastDetailsHeaderItemPreview() {

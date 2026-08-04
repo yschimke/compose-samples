@@ -331,7 +331,6 @@ private val ColorScheme.codeBlockBackground: Color
     get() = onSurface.copy(alpha = .15f)
 
 @Preview("Post content")
-@Preview("Post content (dark)", uiMode = UI_MODE_NIGHT_YES)
 @Composable
 @PreviewLightDark
 fun PreviewPost() {

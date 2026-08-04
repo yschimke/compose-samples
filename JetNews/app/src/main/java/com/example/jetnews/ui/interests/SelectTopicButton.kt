@@ -68,7 +68,6 @@ fun SelectTopicButton(modifier: Modifier = Modifier, selected: Boolean = false) 
 }
 
 @Preview("Off")
-@Preview("Off (dark)", uiMode = UI_MODE_NIGHT_YES)
 @Composable
 @PreviewLightDark
 fun SelectTopicButtonPreviewOff() {

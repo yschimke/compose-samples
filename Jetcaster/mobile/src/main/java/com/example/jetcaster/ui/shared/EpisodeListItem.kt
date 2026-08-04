@@ -287,16 +287,7 @@ private fun EpisodeListItemImage(podcast: PodcastInfo, modifier: Modifier = Modi
     )
 }
 
-@Preview(
-    name = "Light Mode",
-    showBackground = true,
-    uiMode = Configuration.UI_MODE_NIGHT_NO,
-)
-@Preview(
-    name = "Dark Mode",
-    showBackground = true,
-    uiMode = Configuration.UI_MODE_NIGHT_YES,
-)
+@Preview(name = "Episode list item", showBackground = true)
 @Composable
 @PreviewLightDark
 private fun EpisodeListItemPreview() {

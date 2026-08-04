@@ -220,7 +220,7 @@ internal fun HomeScreenError(onRetry: () -> Unit, modifier: Modifier = Modifier)
     }
 }
 
-@Preview
+@Preview(name = "Home screen error")
 @Composable
 @PreviewLightDark
 fun HomeScreenErrorPreview() {
@@ -743,7 +743,7 @@ private fun lastUpdated(updated: OffsetDateTime): String {
     }
 }
 
-@Preview
+@Preview(name = "Home app bar")
 @Composable
 @PreviewLightDark
 private fun HomeAppBarPreview() {
@@ -783,7 +783,7 @@ private fun PreviewHome() {
 }
 
 @Composable
-@Preview
+@Preview(name = "Podcast card")
 @PreviewLightDark
 private fun PreviewPodcastCard() {
     JetcasterTheme {

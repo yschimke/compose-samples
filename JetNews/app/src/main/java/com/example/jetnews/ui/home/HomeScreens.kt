@@ -666,7 +666,6 @@ private fun HomeTopAppBar(
 }
 
 @Preview("Home list drawer screen")
-@Preview("Home list drawer screen (dark)", uiMode = UI_MODE_NIGHT_YES)
 @Preview(
     "Home list drawer screen (big font)",
     fontScale = 1.5f,

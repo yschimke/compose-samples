@@ -80,7 +80,6 @@ fun AppNavRail(
 }
 
 @Preview("Drawer contents")
-@Preview("Drawer contents (dark)", uiMode = Configuration.UI_MODE_NIGHT_YES)
 @Composable
 @PreviewLightDark
 fun PreviewAppNavRail() {

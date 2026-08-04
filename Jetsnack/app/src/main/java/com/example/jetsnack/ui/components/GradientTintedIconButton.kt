@@ -97,7 +97,6 @@ fun JetsnackGradientTintedIconButton(
 }
 
 @Preview("default")
-@Preview("dark theme", uiMode = Configuration.UI_MODE_NIGHT_YES)
 @Composable
 @PreviewLightDark
 private fun GradientTintedIconButtonPreview() {

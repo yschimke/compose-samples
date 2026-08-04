@@ -126,7 +126,7 @@ enum class EmojiStickerSelector {
     STICKER,
 }
 
-@Preview
+@Preview(name = "User input")
 @Composable
 @PreviewLightDark
 fun UserInputPreview() {
