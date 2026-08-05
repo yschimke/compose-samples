@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="284" viewBox="0 0 400 284" text-rendering="geometricPrecision" font-family="ComposeAI Missing Font">
+<defs><style>@font-face{font-family:'ComposeAI Missing Font';font-style:normal;font-weight:400;src:url(data:font/ttf;base64,AAEAAAAKAIAAAwAgT1MvMlmAUEgAAACsAAAAYGNtYXAA4AGDAAABDAAAAExnbHlmBzUEwQAAAVgAAAA4aGVhZGHaQ6EAAAGQAAAANmhoZWEF3gJHAAAByAAAACRobXR4BXgAUAAAAewAAAAIbG9jYQAcAAAAAAH0AAAABm1heHAABQAJAAAB/AAAACBuYW1lDioecAAAAhwAAADEcG9zdP+fADIAAALgAAAAIAAEArwBkAAFAAACigJYAAAASwKKAlgAAAFeADIBLAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABDQUlUAEAATQBzAyD/OAAAAyAAyAAAAAEAAAAAAfQCvAAAACAAAQAAAAEAAwABAAAADAAEAEAAAAAMAAgAAgAEAE0AYQBlAGcAc///AAAATQBhAGUAZwBz////tP+g/5z/mv+OAAEAAAAAAAAAAAAAAAAAAgBQAAACbAK8AAMABwAAAQEBAQEBAQEAUAIcAAD95AA8AAABpAAAAAAAAAK8AAD9gAJEAAD9vAABAAAAAQAA7DkivV8PPPUACwPoAAAAAAAAAAAAAAAAAAAAAABQAAACbAK8AAAACAACAAAAAAAAAAEAAAMg/zgAAAK8AFAAUAJsAAEAAAAAAAAAAAAAAAAAAAACArwAAAK8AFAAAAAAABwAAAABAAAAAgAIAAIAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAABAA2AAMAAQQJAAEALAAAAAMAAQQJAAIADgAsAAMAAQQJAAQALAA6AAMAAQQJAAYAKABmAEMAbwBtAHAAbwBzAGUAQQBJACAATQBpAHMAcwBpAG4AZwAgAEYAbwBuAHQAUgBlAGcAdQBsAGEAcgBDAG8AbQBwAG8AcwBlAEEASQAgAE0AaQBzAHMAaQBuAGcAIABGAG8AbgB0AEMAbwBtAHAAbwBzAGUAQQBJAE0AaQBzAHMAaQBuAGcARgBvAG4AdAADAAAAAAAA/5wAMgAAAAAAAAAAAAAAAAAAAAAAAAAA) format('truetype');}</style></defs>
+<defs>
+  <filter id="shadow-16" x="-50%" y="-50%" width="200%" height="200%">
+    <feDropShadow dx="0" dy="8" stdDeviation="9.6" flood-color="#000000" flood-opacity="0.26"/>
+  </filter>
+</defs>
+<g transform="translate(16, 16)">
+  <rect x="0" y="0" width="368" height="252" fill="#FFFFFF"/>
+  <g id="Root">
+    <g id="ReusableComposeNode">
+      <rect x="0" y="0" width="367" height="252" fill="#FBFDFD"/>
+      <clipPath id="clip-0"><rect x="63" y="63" width="126" height="126" rx="42" ry="42"/></clipPath>
+      <g id="ReusableComposeNode" filter="url(#shadow-16)">
+        <rect x="63" y="63" width="126" height="126" rx="42" ry="42" fill="#FFDE9C"/>
+        <g clip-path="url(#clip-0)">
+          <g id="ReusableComposeNode">
+            <g id="ReusableComposeNode">
+              <g transform="translate(95 95) scale(0.06 0.06)">
+                <path d="M80 880 L80 160 Q 80 127 103.5 103.5 Q 127 80 160 80 L800 80 Q 833 80 856.5 103.5 Q 880 127 880 160 L880 640 Q 880 673 856.5 696.5 Q 833 720 800 720 L240 720 L80 880 Z M206 640 L800 640 Q 800 640 800 640 Q 800 640 800 640 L800 160 Q 800 160 800 160 Q 800 160 800 160 L160 160 Q 160 160 160 160 Q 160 160 160 160 L160 685 L206 640 Z M160 640 L160 640 L160 160 Q 160 160 160 160 Q 160 160 160 160 L160 160 Q 160 160 160 160 Q 160 160 160 160 L160 640 Q 160 640 160 640 Q 160 640 160 640 Z" fill="#261900"/>
+              </g>
+            </g>
+            <g id="ReusableComposeNode" opacity="0">
+              <g id="ReusableComposeNode">
+                <text x="189" y="138.92" font-size="36.75" font-family="&apos;FontListFontFamily(fonts=[Font(GoogleFont(&quot;Montserrat&quot;, bestEffort=true), weight=FontWeight(weight=400), style=Normal), ResourceFont(resId=2131296260, weight=FontWeight(weight=400), style=Normal, loadingStrategy=Blocking), Font(GoogleFont(&quot;Montserrat&quot;, bestEffort=true), weight=FontWeight(weight=300), style=Normal), ResourceFont(resId=2131296258, weight=FontWeight(weight=300), style=Normal, loadingStrategy=Blocking), Font(GoogleFont(&quot;Montserrat&quot;, bestEffort=true), weight=FontWeight(weight=500), style=Normal), ResourceFont(resId=2131296259, weight=FontWeight(weight=500), style=Normal, loadingStrategy=Blocking), Font(GoogleFont(&quot;Montserrat&quot;, bestEffort=true), weight=FontWeight(weight=600), style=Normal), ResourceFont(resId=2131296261, weight=FontWeight(weight=600), style=Normal, loadingStrategy=Blocking)])&apos;, sans-serif" font-weight="600" letter-spacing="0.26" fill="#261900">Message</text>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</g>
+</svg>

@@ -1,0 +1,91 @@
+{
+  "$schema": "https://github.com/yschimke/design-parity/schema/dtcg-tokens.schema.json",
+  "color": {
+    "primary": {
+      "$type": "color",
+      "$value": "#1546f6ff"
+    },
+    "onPrimary": {
+      "$type": "color",
+      "$value": "#ffffffff"
+    },
+    "primaryContainer": {
+      "$type": "color",
+      "$value": "#dde1ffff"
+    },
+    "secondary": {
+      "$type": "color",
+      "$value": "#3648eaff"
+    },
+    "secondaryContainer": {
+      "$type": "color",
+      "$value": "#dee0ffff"
+    },
+    "tertiary": {
+      "$type": "color",
+      "$value": "#7a5900ff"
+    },
+    "error": {
+      "$type": "color",
+      "$value": "#ba1b1bff"
+    },
+    "surface": {
+      "$type": "color",
+      "$value": "#fbfdfdff"
+    },
+    "onSurface": {
+      "$type": "color",
+      "$value": "#191c1dff"
+    },
+    "surfaceVariant": {
+      "$type": "color",
+      "$value": "#e2e1ecff"
+    },
+    "outline": {
+      "$type": "color",
+      "$value": "#767680ff"
+    }
+  },
+  "type": {
+    "displaySmall": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "FontListFontFamily(fonts=[Font(GoogleFont(\"Montserrat",
+        "fontSize": 36,
+        "fontWeight": 400,
+        "letterSpacing": 0,
+        "lineHeight": 44
+      }
+    },
+    "titleLarge": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "FontListFontFamily(fonts=[Font(GoogleFont(\"Montserrat",
+        "fontSize": 22,
+        "fontWeight": 600,
+        "letterSpacing": 0,
+        "lineHeight": 28
+      }
+    },
+    "bodyLarge": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "FontListFontFamily(fonts=[Font(GoogleFont(\"Karla",
+        "fontSize": 16,
+        "fontWeight": 400,
+        "letterSpacing": 0.15,
+        "lineHeight": 24
+      }
+    },
+    "labelSmall": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "FontListFontFamily(fonts=[Font(GoogleFont(\"Montserrat",
+        "fontSize": 11,
+        "fontWeight": 600,
+        "letterSpacing": 0.5,
+        "lineHeight": 16
+      }
+    }
+  }
+}

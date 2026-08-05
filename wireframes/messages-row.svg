@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 280" width="1050" height="280" role="img" aria-label="Messages/Row layout wireframe">
+  <title>Messages/Row — layout wireframe (slots + tokens)</title>
+  <rect width="1050" height="280" fill="#ffffff"/>
+  <g>
+    <rect x="0" y="0" width="1050" height="280" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="1050" height="280" fill="none" fill-opacity="0" stroke="#2E7D6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="1050" height="280" fill="#FBFDFD" fill-opacity="1" stroke="#8E6BA8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="3" y="12" font-family="system-ui, sans-serif" font-size="9" fill="#8E6BA8">#FFFBFDFD</text>
+  </g>
+  <g>
+    <rect x="21" y="21" width="1008" height="238" fill="none" fill-opacity="0" stroke="#B0813B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="21" y="42" width="1008" height="217" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M117.99375,42 H118.00625 A54.99375,54.99375 0 0 1 173,96.99375 V97.00625 A54.99375,54.99375 0 0 1 118.00625,152 H117.99375 A54.99375,54.99375 0 0 1 63,97.00625 V96.99375 A54.99375,54.99375 0 0 1 117.99375,42 Z" fill="none" fill-opacity="0" stroke="#7A5900" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="66" y="54" font-family="system-ui, sans-serif" font-size="9" fill="#7A5900">◻ #FF7A5900  pad ·</text>
+  </g>
+  <g>
+    <rect x="215" y="42" width="772" height="217" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="215" y="42" width="448" height="62" fill="none" fill-opacity="0" stroke="#4F8A4A" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="215" y="42" width="300" height="52" fill="none" fill-opacity="0" stroke="#7A7A33" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="536" y="54" width="127" height="37" fill="none" fill-opacity="0" stroke="#7A7A33" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="215" y="104" width="671" height="134" fill="none" fill-opacity="0" stroke="#4F8A4A" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M225.5,104 H833.5 A52.5,52.5 0 0 1 886,156.5 V185.5 A52.5,52.5 0 0 1 833.5,238 H267.5 A52.5,52.5 0 0 1 215,185.5 V114.5 A10.5,10.5 0 0 1 225.5,104 Z" fill="#E2E1EC" fill-opacity="1" stroke="#7A7A33" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="218" y="116" font-family="system-ui, sans-serif" font-size="9" fill="#7A7A33">#FFE2E1EC</text>
+  </g>
+  <g>
+    <rect x="257" y="146" width="587" height="50" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+</svg>

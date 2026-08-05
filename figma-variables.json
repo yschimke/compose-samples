@@ -1,0 +1,86 @@
+{
+  "name": "Jetchat",
+  "modes": {
+    "value": "Value"
+  },
+  "defaultModeId": "value",
+  "variables": [
+    {
+      "name": "color/primary",
+      "resolvedType": "COLOR",
+      "valuesByMode": {
+        "value": "#1546f6ff"
+      }
+    },
+    {
+      "name": "color/onPrimary",
+      "resolvedType": "COLOR",
+      "valuesByMode": {
+        "value": "#ffffffff"
+      }
+    },
+    {
+      "name": "color/primaryContainer",
+      "resolvedType": "COLOR",
+      "valuesByMode": {
+        "value": "#dde1ffff"
+      }
+    },
+    {
+      "name": "color/secondary",
+      "resolvedType": "COLOR",
+      "valuesByMode": {
+        "value": "#3648eaff"
+      }
+    },
+    {
+      "name": "color/secondaryContainer",
+      "resolvedType": "COLOR",
+      "valuesByMode": {
+        "value": "#dee0ffff"
+      }
+    },
+    {
+      "name": "color/tertiary",
+      "resolvedType": "COLOR",
+      "valuesByMode": {
+        "value": "#7a5900ff"
+      }
+    },
+    {
+      "name": "color/error",
+      "resolvedType": "COLOR",
+      "valuesByMode": {
+        "value": "#ba1b1bff"
+      }
+    },
+    {
+      "name": "color/surface",
+      "resolvedType": "COLOR",
+      "valuesByMode": {
+        "value": "#fbfdfdff"
+      }
+    },
+    {
+      "name": "color/onSurface",
+      "resolvedType": "COLOR",
+      "valuesByMode": {
+        "value": "#191c1dff"
+      }
+    },
+    {
+      "name": "color/surfaceVariant",
+      "resolvedType": "COLOR",
+      "valuesByMode": {
+        "value": "#e2e1ecff"
+      }
+    },
+    {
+      "name": "color/outline",
+      "resolvedType": "COLOR",
+      "valuesByMode": {
+        "value": "#767680ff"
+      }
+    }
+  ]
+}

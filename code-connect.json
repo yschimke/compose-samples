@@ -1,0 +1,289 @@
+{
+  "system": "jetchat",
+  "title": "Jetchat",
+  "label": "Compose",
+  "source": {
+    "repo": "yschimke/compose-samples",
+    "ref": "previews",
+    "module": ":app"
+  },
+  "generatedAt": "2026-08-05T23:24:54.536Z",
+  "mappings": [
+    {
+      "componentId": "Conversation/Screen",
+      "figmaLayerName": "Conversation/Screen",
+      "componentName": "JetchatConversationContentLightPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/compose/jetchat/catalog/JetchatComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "JetchatConversationContentLightPreview",
+      "figmaSvg": "figma/conversation-screen.svg"
+    },
+    {
+      "componentId": "Conversation/Day header",
+      "figmaLayerName": "Conversation/Day header",
+      "componentName": "DayHeaderPrev",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/compose/jetchat/conversation/Conversation.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "DayHeaderPrev",
+      "figmaSvg": "figma/conversation-day-header.svg"
+    },
+    {
+      "componentId": "Conversation/Jump to bottom",
+      "figmaLayerName": "Conversation/Jump to bottom",
+      "componentName": "JetchatJumpToBottomLightPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/compose/jetchat/catalog/JetchatComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "JetchatJumpToBottomLightPreview",
+      "figmaSvg": "figma/conversation-jump-to-bottom.svg"
+    },
+    {
+      "componentId": "Messages/Row",
+      "figmaLayerName": "Messages/Row",
+      "componentName": "JetchatMessageOtherPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/compose/jetchat/catalog/JetchatComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "JetchatMessageOtherPreview",
+      "figmaSvg": "figma/messages-row.svg"
+    },
+    {
+      "componentId": "Messages/Author and text",
+      "figmaLayerName": "Messages/Author and text",
+      "componentName": "JetchatAuthorAndTextMessagePreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/compose/jetchat/catalog/JetchatComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "JetchatAuthorAndTextMessagePreview",
+      "figmaSvg": "figma/messages-author-and-text.svg"
+    },
+    {
+      "componentId": "Messages/Bubble",
+      "figmaLayerName": "Messages/Bubble",
+      "componentName": "JetchatChatItemBubbleOtherPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/compose/jetchat/catalog/JetchatComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "JetchatChatItemBubbleOtherPreview",
+      "figmaSvg": "figma/messages-bubble.svg"
+    },
+    {
+      "componentId": "Messages/Clickable text",
+      "figmaLayerName": "Messages/Clickable text",
+      "componentName": "JetchatClickableMessagePreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/compose/jetchat/catalog/JetchatComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "JetchatClickableMessagePreview",
+      "figmaSvg": "figma/messages-clickable-text.svg"
+    },
+    {
+      "componentId": "Messages/List",
+      "figmaLayerName": "Messages/List",
+      "componentName": "JetchatMessagesPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/compose/jetchat/catalog/JetchatComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "JetchatMessagesPreview",
+      "figmaSvg": "figma/messages-list.svg"
+    },
+    {
+      "componentId": "Conversation/Input",
+      "figmaLayerName": "Conversation/Input",
+      "componentName": "UserInputPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/compose/jetchat/conversation/UserInput.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "UserInputPreview",
+      "figmaSvg": "figma/conversation-input.svg"
+    },
+    {
+      "componentId": "Composer/Emoji selector",
+      "figmaLayerName": "Composer/Emoji selector",
+      "componentName": "JetchatEmojiSelectorPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/compose/jetchat/catalog/JetchatComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "JetchatEmojiSelectorPreview",
+      "figmaSvg": "figma/composer-emoji-selector.svg"
+    },
+    {
+      "componentId": "Composer/Selector tab",
+      "figmaLayerName": "Composer/Selector tab",
+      "componentName": "JetchatExtendedSelectorInnerButtonSelectedPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/compose/jetchat/catalog/JetchatComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "JetchatExtendedSelectorInnerButtonSelectedPreview",
+      "figmaSvg": "figma/composer-selector-tab.svg"
+    },
+    {
+      "componentId": "Composer/Not available",
+      "figmaLayerName": "Composer/Not available",
+      "componentName": "JetchatFunctionalityNotAvailablePanelPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/compose/jetchat/catalog/JetchatComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "JetchatFunctionalityNotAvailablePanelPreview",
+      "figmaSvg": "figma/composer-not-available.svg"
+    },
+    {
+      "componentId": "Composer/Record button",
+      "figmaLayerName": "Composer/Record button",
+      "componentName": "JetchatRecordButtonIdlePreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/compose/jetchat/catalog/JetchatComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "JetchatRecordButtonIdlePreview",
+      "figmaSvg": "figma/composer-record-button.svg"
+    },
+    {
+      "componentId": "Profile/Screen",
+      "figmaLayerName": "Profile/Screen",
+      "componentName": "ProfilePreview340",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/compose/jetchat/profile/Previews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "ProfilePreview340",
+      "figmaSvg": "figma/profile-screen.svg"
+    },
+    {
+      "componentId": "Profile/FAB",
+      "figmaLayerName": "Profile/FAB",
+      "componentName": "ProfileFabPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/compose/jetchat/profile/Profile.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "ProfileFabPreview",
+      "figmaSvg": "figma/profile-fab.svg"
+    },
+    {
+      "componentId": "Profile/Animating FAB content",
+      "figmaLayerName": "Profile/Animating FAB content",
+      "componentName": "JetchatAnimatingFabContentExtendedPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/compose/jetchat/catalog/JetchatComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "JetchatAnimatingFabContentExtendedPreview",
+      "figmaSvg": "figma/profile-animating-fab-content.svg"
+    },
+    {
+      "componentId": "Profile/Property",
+      "figmaLayerName": "Profile/Property",
+      "componentName": "JetchatProfilePropertyPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/compose/jetchat/catalog/JetchatComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "JetchatProfilePropertyPreview",
+      "figmaSvg": "figma/profile-property.svg"
+    },
+    {
+      "componentId": "Profile/Error",
+      "figmaLayerName": "Profile/Error",
+      "componentName": "JetchatProfileErrorPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/compose/jetchat/catalog/JetchatComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "JetchatProfileErrorPreview",
+      "figmaSvg": "figma/profile-error.svg"
+    },
+    {
+      "componentId": "Chrome/App bar",
+      "figmaLayerName": "Chrome/App bar",
+      "componentName": "JetchatAppBarPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/compose/jetchat/components/JetchatAppBar.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "JetchatAppBarPreview",
+      "figmaSvg": "figma/chrome-app-bar.svg"
+    },
+    {
+      "componentId": "Chrome/Drawer",
+      "figmaLayerName": "Chrome/Drawer",
+      "componentName": "DrawerPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/compose/jetchat/components/JetchatDrawer.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "DrawerPreview",
+      "figmaSvg": "figma/chrome-drawer.svg"
+    },
+    {
+      "componentId": "Chrome/Drawer shell",
+      "figmaLayerName": "Chrome/Drawer shell",
+      "componentName": "JetchatDrawer",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/compose/jetchat/components/JetchatScaffold.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "JetchatDrawerOpenPreview",
+      "codeSnippet": "JetchatDrawer(\n    selectedMenu = TODO(\"String\"),\n    onProfileClicked = { },\n    onChatClicked = { },\n    content = { },\n)",
+      "imports": [
+        "import com.example.compose.jetchat.components.JetchatDrawer"
+      ],
+      "parameters": [
+        {
+          "name": "drawerState",
+          "type": "DrawerState",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "selectedMenu",
+          "type": "String",
+          "hasDefault": false,
+          "composableSlot": false
+        },
+        {
+          "name": "onProfileClicked",
+          "type": "(String) -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        },
+        {
+          "name": "onChatClicked",
+          "type": "(String) -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "figma/chrome-drawer-shell.svg"
+    },
+    {
+      "componentId": "Chrome/Channel bar",
+      "figmaLayerName": "Chrome/Channel bar",
+      "componentName": "ChannelBarPrev",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/compose/jetchat/conversation/Conversation.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "ChannelBarPrev",
+      "figmaSvg": "figma/chrome-channel-bar.svg"
+    },
+    {
+      "componentId": "Chrome/Icon",
+      "figmaLayerName": "Chrome/Icon",
+      "componentName": "JetchatIconPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/compose/jetchat/catalog/JetchatComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "JetchatIconPreview",
+      "figmaSvg": "figma/chrome-icon.svg"
+    },
+    {
+      "componentId": "Chrome/Divider",
+      "figmaLayerName": "Chrome/Divider",
+      "componentName": "JetchatDividerItemPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/compose/jetchat/catalog/JetchatComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "JetchatDividerItemPreview",
+      "figmaSvg": "figma/chrome-divider.svg"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="284" viewBox="0 0 400 284" text-rendering="geometricPrecision" font-family="ComposeAI Missing Font">
+<defs><style>@font-face{font-family:'ComposeAI Missing Font';font-style:normal;font-weight:400;src:url(data:font/ttf;base64,AAEAAAAKAIAAAwAgT1MvMllTUEkAAACsAAAAYGNtYXACFwK/AAABDAAAAHxnbHlmBzUEwQAAAYgAAAA4aGVhZGHaQ6EAAAHAAAAANmhoZWEF3gJHAAAB+AAAACRobXR4BXgAUAAAAhwAAAAIbG9jYQAcAAAAAAIkAAAABm1heHAABQAJAAACLAAAACBuYW1lDioecAAAAkwAAADEcG9zdP+fADIAAAMQAAAAIAAEArwBkAAFAAACigJYAAAASwKKAlgAAAFeADIBLAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABDQUlUAEAAIAB0AyD/OAAAAyAAyAAAAAEAAAAAAfQCvAAAACAAAQAAAAEAAwABAAAADAAEAHAAAAAYABAAAwAIACAARQBQAGQAZQBmAGkAbABvAHIAdP//AAAAIABFAFAAZABlAGYAaQBsAG8AcgB0////4f+8/7H/nf+c/5v/mP+V/5L/j/+NAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgBQAAACbAK8AAMABwAAAQEBAQEBAQEAUAIcAAD95AA8AAABpAAAAAAAAAK8AAD9gAJEAAD9vAABAAAAAQAA6iUek18PPPUACwPoAAAAAAAAAAAAAAAAAAAAAABQAAACbAK8AAAACAACAAAAAAAAAAEAAAMg/zgAAAK8AFAAUAJsAAEAAAAAAAAAAAAAAAAAAAACArwAAAK8AFAAAAAAABwAAAABAAAAAgAIAAIAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAABAA2AAMAAQQJAAEALAAAAAMAAQQJAAIADgAsAAMAAQQJAAQALAA6AAMAAQQJAAYAKABmAEMAbwBtAHAAbwBzAGUAQQBJACAATQBpAHMAcwBpAG4AZwAgAEYAbwBuAHQAUgBlAGcAdQBsAGEAcgBDAG8AbQBwAG8AcwBlAEEASQAgAE0AaQBzAHMAaQBuAGcAIABGAG8AbgB0AEMAbwBtAHAAbwBzAGUAQQBJAE0AaQBzAHMAaQBuAGcARgBvAG4AdAADAAAAAAAA/5wAMgAAAAAAAAAAAAAAAAAAAAAAAAAA) format('truetype');}</style></defs>
+<defs>
+  <filter id="shadow-16" x="-50%" y="-50%" width="200%" height="200%">
+    <feDropShadow dx="0" dy="8" stdDeviation="9.6" flood-color="#000000" flood-opacity="0.26"/>
+  </filter>
+</defs>
+<g transform="translate(16, 16)">
+  <rect x="0" y="0" width="368" height="252" fill="#FFFFFF"/>
+  <g id="Root">
+    <clipPath id="clip-0"><rect x="0" y="0" width="367" height="252"/></clipPath>
+    <g id="ReusableComposeNode">
+      <rect x="0" y="0" width="367" height="252" fill="#FBFDFD"/>
+      <g clip-path="url(#clip-0)">
+        <clipPath id="clip-1"><rect x="63" y="63" width="126" height="126" rx="42" ry="42"/></clipPath>
+        <g id="ReusableComposeNode" filter="url(#shadow-16)">
+          <rect x="63" y="63" width="126" height="126" rx="42" ry="42" fill="#FFDE9C"/>
+          <g clip-path="url(#clip-1)">
+            <g id="ReusableComposeNode">
+              <g id="ReusableComposeNode">
+                <g transform="translate(95 95) scale(0.06 0.06)">
+                  <path d="M200 760 L257 760 L648 369 L591 312 L200 703 L200 760 Z M120 840 L120 670 L648 143 Q 660 132 674.5 126 Q 689 120 705 120 Q 721 120 736 126 Q 751 132 762 144 L817 200 Q 829 211 834.5 226 Q 840 241 840 256 Q 840 272 834.5 286.5 Q 829 301 817 313 L290 840 L120 840 Z M760 256 L760 256 L704 200 L704 200 L760 256 Z M619 341 L591 312 L591 312 L648 369 L648 369 L619 341 Z" fill="#261900"/>
+                </g>
+              </g>
+              <g id="ReusableComposeNode" opacity="0">
+                <g id="ReusableComposeNode">
+                  <text x="189" y="138.92" font-size="36.75" font-family="&apos;FontListFontFamily(fonts=[Font(GoogleFont(&quot;Montserrat&quot;, bestEffort=true), weight=FontWeight(weight=400), style=Normal), ResourceFont(resId=2131296260, weight=FontWeight(weight=400), style=Normal, loadingStrategy=Blocking), Font(GoogleFont(&quot;Montserrat&quot;, bestEffort=true), weight=FontWeight(weight=300), style=Normal), ResourceFont(resId=2131296258, weight=FontWeight(weight=300), style=Normal, loadingStrategy=Blocking), Font(GoogleFont(&quot;Montserrat&quot;, bestEffort=true), weight=FontWeight(weight=500), style=Normal), ResourceFont(resId=2131296259, weight=FontWeight(weight=500), style=Normal, loadingStrategy=Blocking), Font(GoogleFont(&quot;Montserrat&quot;, bestEffort=true), weight=FontWeight(weight=600), style=Normal), ResourceFont(resId=2131296261, weight=FontWeight(weight=600), style=Normal, loadingStrategy=Blocking)])&apos;, sans-serif" font-weight="600" letter-spacing="0.26" fill="#261900">Edit Profile</text>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</g>
+</svg>
