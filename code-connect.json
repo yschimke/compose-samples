@@ -1,0 +1,193 @@
+{
+  "system": "jetlagged",
+  "title": "JetLagged",
+  "label": "Compose",
+  "source": {
+    "repo": "yschimke/compose-samples",
+    "ref": "previews",
+    "module": ":app"
+  },
+  "generatedAt": "2026-08-05T23:22:35.913Z",
+  "mappings": [
+    {
+      "componentId": "Home/Sleep dashboard",
+      "figmaLayerName": "Home/Sleep dashboard",
+      "componentName": "JetLaggedScreenCompactPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetlagged/catalog/JetLaggedScreenPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "JetLaggedScreenCompactPreview",
+      "figmaSvg": "figma/home-sleep-dashboard.svg"
+    },
+    {
+      "componentId": "Charts/Sleep bar",
+      "figmaLayerName": "Charts/Sleep bar",
+      "componentName": "SleepBarCatalogPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetlagged/catalog/JetLaggedComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "SleepBarCatalogPreview",
+      "figmaSvg": "figma/charts-sleep-bar.svg"
+    },
+    {
+      "componentId": "Charts/Sleep graph card",
+      "figmaLayerName": "Charts/Sleep graph card",
+      "componentName": "JetLaggedSleepGraphCardPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetlagged/catalog/JetLaggedComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "JetLaggedSleepGraphCardPreview",
+      "figmaSvg": "figma/charts-sleep-graph-card.svg"
+    },
+    {
+      "componentId": "Charts/Time graph layout",
+      "figmaLayerName": "Charts/Time graph layout",
+      "componentName": "TimeGraphPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetlagged/catalog/JetLaggedComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "TimeGraphPreview",
+      "figmaSvg": "figma/charts-time-graph-layout.svg"
+    },
+    {
+      "componentId": "Charts/Heart rate graph",
+      "figmaLayerName": "Charts/Heart rate graph",
+      "componentName": "HeartRateGraphPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetlagged/catalog/JetLaggedComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "HeartRateGraphPreview",
+      "figmaSvg": "figma/charts-heart-rate-graph.svg"
+    },
+    {
+      "componentId": "Charts/Sleep stage palette",
+      "figmaLayerName": "Charts/Sleep stage palette",
+      "componentName": "SleepStagePalettePreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetlagged/catalog/JetLaggedComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "SleepStagePalettePreview",
+      "figmaSvg": "figma/charts-sleep-stage-palette.svg"
+    },
+    {
+      "componentId": "Charts/Detail legend",
+      "figmaLayerName": "Charts/Detail legend",
+      "componentName": "DetailLegend",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetlagged/sleep/SleepBar.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "DetailLegend",
+      "figmaSvg": "figma/charts-detail-legend.svg"
+    },
+    {
+      "componentId": "Cards/Time asleep",
+      "figmaLayerName": "Cards/Time asleep",
+      "componentName": "AverageTimeAsleepCardCatalogPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetlagged/catalog/JetLaggedCatalogPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "AverageTimeAsleepCardCatalogPreview",
+      "figmaSvg": "figma/cards-time-asleep.svg"
+    },
+    {
+      "componentId": "Cards/Time in bed",
+      "figmaLayerName": "Cards/Time in bed",
+      "componentName": "AverageTimeInBedCardCatalogPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetlagged/catalog/JetLaggedCatalogPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "AverageTimeInBedCardCatalogPreview",
+      "figmaSvg": "figma/cards-time-in-bed.svg"
+    },
+    {
+      "componentId": "Cards/Heart rate",
+      "figmaLayerName": "Cards/Heart rate",
+      "componentName": "HeartRateCardCatalogPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetlagged/catalog/JetLaggedCatalogPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "HeartRateCardCatalogPreview",
+      "figmaSvg": "figma/cards-heart-rate.svg"
+    },
+    {
+      "componentId": "Cards/Wellness",
+      "figmaLayerName": "Cards/Wellness",
+      "componentName": "WellnessCardCatalogPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetlagged/catalog/JetLaggedCatalogPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "WellnessCardCatalogPreview",
+      "figmaSvg": "figma/cards-wellness.svg"
+    },
+    {
+      "componentId": "Cards/Wellness bubble",
+      "figmaLayerName": "Cards/Wellness bubble",
+      "componentName": "WellnessBubblePreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetlagged/catalog/JetLaggedComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "WellnessBubblePreview",
+      "figmaSvg": "figma/cards-wellness-bubble.svg"
+    },
+    {
+      "componentId": "Cards/Informational card",
+      "figmaLayerName": "Cards/Informational card",
+      "componentName": "BasicInformationalCardPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetlagged/catalog/JetLaggedComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "BasicInformationalCardPreview",
+      "figmaSvg": "figma/cards-informational-card.svg"
+    },
+    {
+      "componentId": "Cards/Two-line info",
+      "figmaLayerName": "Cards/Two-line info",
+      "componentName": "TwoLineInfoCardPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetlagged/catalog/JetLaggedComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "TwoLineInfoCardPreview",
+      "figmaSvg": "figma/cards-two-line-info.svg"
+    },
+    {
+      "componentId": "Cards/Card heading",
+      "figmaLayerName": "Cards/Card heading",
+      "componentName": "HomeScreenCardHeadingPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetlagged/catalog/JetLaggedComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "HomeScreenCardHeadingPreview",
+      "figmaSvg": "figma/cards-card-heading.svg"
+    },
+    {
+      "componentId": "Chrome/Header",
+      "figmaLayerName": "Chrome/Header",
+      "componentName": "JetLaggedHeaderCatalogPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetlagged/catalog/JetLaggedCatalogPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "JetLaggedHeaderCatalogPreview",
+      "figmaSvg": "figma/chrome-header.svg"
+    },
+    {
+      "componentId": "Chrome/Range tabs",
+      "figmaLayerName": "Chrome/Range tabs",
+      "componentName": "JetLaggedHeaderTabsPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetlagged/catalog/JetLaggedComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "JetLaggedHeaderTabsPreview",
+      "figmaSvg": "figma/chrome-range-tabs.svg"
+    },
+    {
+      "componentId": "Motion/Fading circle",
+      "figmaLayerName": "Motion/Fading circle",
+      "componentName": "FadingCirclePreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetlagged/backgrounds/FadingCircleBackground.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "FadingCirclePreview",
+      "figmaSvg": "figma/motion-fading-circle.svg"
+    }
+  ]
+}

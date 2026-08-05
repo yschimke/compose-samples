@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 487 53" width="487" height="53" role="img" aria-label="Charts/Detail legend layout wireframe">
+  <title>Charts/Detail legend — layout wireframe (slots + tokens)</title>
+  <rect width="487" height="53" fill="#ffffff"/>
+  <g>
+    <rect x="0" y="0" width="487" height="53" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="487" height="53" fill="none" fill-opacity="0" stroke="#2E7D6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="487" height="53" fill="#FFFFFF" fill-opacity="1" stroke="#8E6BA8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="3" y="12" font-family="system-ui, sans-serif" font-size="9" fill="#8E6BA8">#FFFFFFFF</text>
+  </g>
+  <g>
+    <rect x="0" y="21" width="487" height="32" fill="none" fill-opacity="0" stroke="#B0813B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="21" width="122" height="32" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M12.99375,24 H13.00625 A12.99375,12.99375 0 0 1 26,36.99375 V37.00625 A12.99375,12.99375 0 0 1 13.00625,50 H12.99375 A12.99375,12.99375 0 0 1 0,37.00625 V36.99375 A12.99375,12.99375 0 0 1 12.99375,24 Z" fill="#FFEAC1" fill-opacity="1" stroke="#A85B6B" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="3" y="36" font-family="system-ui, sans-serif" font-size="9" fill="#A85B6B">#FFFFEAC1</text>
+  </g>
+  <g>
+    <rect x="37" y="21" width="85" height="32" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="143" y="21" width="97" height="32" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M155.99375,24 H156.00625 A12.99375,12.99375 0 0 1 169,36.99375 V37.00625 A12.99375,12.99375 0 0 1 156.00625,50 H155.99375 A12.99375,12.99375 0 0 1 143,37.00625 V36.99375 A12.99375,12.99375 0 0 1 155.99375,24 Z" fill="#FFDD9A" fill-opacity="1" stroke="#A85B6B" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="146" y="36" font-family="system-ui, sans-serif" font-size="9" fill="#A85B6B">#FFFFDD9A</text>
+  </g>
+  <g>
+    <rect x="180" y="21" width="60" height="32" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="261" y="21" width="101" height="32" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M273.99375,24 H274.00625 A12.99375,12.99375 0 0 1 287,36.99375 V37.00625 A12.99375,12.99375 0 0 1 274.00625,50 H273.99375 A12.99375,12.99375 0 0 1 261,37.00625 V36.99375 A12.99375,12.99375 0 0 1 273.99375,24 Z" fill="#FFCB66" fill-opacity="1" stroke="#A85B6B" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="264" y="36" font-family="system-ui, sans-serif" font-size="9" fill="#A85B6B">#FFFFCB66</text>
+  </g>
+  <g>
+    <rect x="298" y="21" width="64" height="32" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="383" y="21" width="104" height="32" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M395.99375,24 H396.00625 A12.99375,12.99375 0 0 1 409,36.99375 V37.00625 A12.99375,12.99375 0 0 1 396.00625,50 H395.99375 A12.99375,12.99375 0 0 1 383,37.00625 V36.99375 A12.99375,12.99375 0 0 1 395.99375,24 Z" fill="#FF973C" fill-opacity="1" stroke="#A85B6B" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="386" y="36" font-family="system-ui, sans-serif" font-size="9" fill="#A85B6B">#FFFF973C</text>
+  </g>
+  <g>
+    <rect x="420" y="21" width="67" height="32" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+</svg>

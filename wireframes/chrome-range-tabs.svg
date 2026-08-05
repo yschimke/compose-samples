@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1265 124" width="1265" height="124" role="img" aria-label="Chrome/Range tabs layout wireframe">
+  <title>Chrome/Range tabs — layout wireframe (slots + tokens)</title>
+  <rect width="1265" height="124" fill="#ffffff"/>
+  <g>
+    <rect x="0" y="0" width="1050" height="124" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="1050" height="124" fill="none" fill-opacity="0" stroke="#2E7D6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="1050" height="124" fill="#FEF7FF" fill-opacity="1" stroke="#8E6BA8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="3" y="12" font-family="system-ui, sans-serif" font-size="9" fill="#8E6BA8">#FFFEF7FF</text>
+  </g>
+  <g>
+    <rect x="21" y="21" width="1008" height="82" fill="none" fill-opacity="0" stroke="#B0813B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="21" y="21" width="1008" height="82" fill="#FFFFFF" fill-opacity="1" stroke="#3B72A8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="24" y="33" font-family="system-ui, sans-serif" font-size="9" fill="#3B72A8">#FFFFFFFF</text>
+  </g>
+  <g>
+    <rect x="21" y="21" width="1008" height="82" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="21" y="21" width="1244" height="82" fill="none" fill-opacity="0" stroke="#4F8A4A" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M99,21 H243 A41,41 0 0 1 284,62 V62 A41,41 0 0 1 243,103 H99 A41,41 0 0 1 58,62 V62 A41,41 0 0 1 99,21 Z" fill="none" fill-opacity="0" stroke="#7A7A33" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="61" y="33" font-family="system-ui, sans-serif" font-size="9" fill="#7A7A33">pad ·</text>
+  </g>
+  <g>
+    <rect x="132" y="37" width="78" height="50" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M335,21 H479 A41,41 0 0 1 520,62 V62 A41,41 0 0 1 479,103 H335 A41,41 0 0 1 294,62 V62 A41,41 0 0 1 335,21 Z" fill="none" fill-opacity="0" stroke="#7A7A33" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="297" y="33" font-family="system-ui, sans-serif" font-size="9" fill="#7A7A33">pad ·</text>
+  </g>
+  <g>
+    <rect x="350" y="37" width="114" height="50" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M571,21 H715 A41,41 0 0 1 756,62 V62 A41,41 0 0 1 715,103 H571 A41,41 0 0 1 530,62 V62 A41,41 0 0 1 571,21 Z" fill="none" fill-opacity="0" stroke="#7A7A33" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="533" y="33" font-family="system-ui, sans-serif" font-size="9" fill="#7A7A33">pad ·</text>
+  </g>
+  <g>
+    <rect x="578" y="37" width="131" height="50" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M807,21 H951 A41,41 0 0 1 992,62 V62 A41,41 0 0 1 951,103 H807 A41,41 0 0 1 766,62 V62 A41,41 0 0 1 807,21 Z" fill="none" fill-opacity="0" stroke="#7A7A33" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="769" y="33" font-family="system-ui, sans-serif" font-size="9" fill="#7A7A33">pad ·</text>
+  </g>
+  <g>
+    <rect x="846" y="37" width="66" height="50" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M1044,21 H1188 A41,41 0 0 1 1229,62 V62 A41,41 0 0 1 1188,103 H1044 A41,41 0 0 1 1003,62 V62 A41,41 0 0 1 1044,21 Z" fill="none" fill-opacity="0" stroke="#7A7A33" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="1006" y="33" font-family="system-ui, sans-serif" font-size="9" fill="#7A7A33">pad ·</text>
+  </g>
+  <g>
+    <rect x="1090" y="37" width="53" height="50" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M406.25,21 H406.75 A26.25,26.25 0 0 1 433,47.25 V76.75 A26.25,26.25 0 0 1 406.75,103 H406.25 A26.25,26.25 0 0 1 380,76.75 V47.25 A26.25,26.25 0 0 1 406.25,21 Z" fill="none" fill-opacity="0" stroke="#FFCB66" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="383" y="33" font-family="system-ui, sans-serif" font-size="9" fill="#FFCB66">◻ #FFFFCB66  pad ·</text>
+  </g>
+</svg>

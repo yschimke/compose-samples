@@ -1,0 +1,490 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>JetLagged — design catalog</title>
+<style>
+  :root { color-scheme: light dark; --bg:#0f0f10; --panel:#1b1b1d; --fg:#e8e8ea; --muted:#9b9ba1; --line:#2a2a2d; --accent:#7dd87d; }
+  * { box-sizing: border-box; }
+  body { margin:0; font:14px/1.5 system-ui, -apple-system, Segoe UI, Roboto, sans-serif; background:var(--bg); color:var(--fg); }
+  header.top { padding:24px clamp(16px,4vw,40px); border-bottom:1px solid var(--line); }
+  header.top h1 { margin:0 0 6px; font-size:22px; }
+  header.top .subtitle { color:var(--muted); font-size:13px; }
+  header.top code { background:var(--panel); padding:1px 6px; border-radius:5px; }
+  header.top .pagelink { color:var(--accent); text-decoration:none; font-size:13px; }
+  header.top .pagelink:hover { text-decoration:underline; }
+  .layout { display:grid; grid-template-columns:240px 1fr; align-items:start; }
+  nav.index { position:sticky; top:0; align-self:start; max-height:100vh; overflow:auto; padding:20px 12px; border-right:1px solid var(--line); }
+  nav.index .nav-head { display:flex; justify-content:space-between; font-weight:600; text-decoration:none; color:var(--fg); padding:6px 8px; border-radius:6px; }
+  nav.index .nav-head span { color:var(--muted); font-weight:400; }
+  nav.index .nav-head:hover { background:var(--panel); }
+  nav.index ul { list-style:none; margin:2px 0 14px; padding:0 0 0 8px; }
+  nav.index li a { display:block; color:var(--muted); text-decoration:none; padding:3px 8px; border-radius:5px; font-size:13px; }
+  nav.index li a:hover { color:var(--fg); background:var(--panel); }
+  main { padding:8px clamp(16px,4vw,40px) 64px; min-width:0; }
+  .group { padding-top:24px; }
+  .group h2 { font-size:16px; border-bottom:1px solid var(--line); padding-bottom:8px; position:sticky; top:0; background:var(--bg); }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(180px,1fr)); gap:16px; }
+  .card { background:var(--panel); border:1px solid var(--line); border-radius:12px; overflow:hidden; }
+  /* Theme-aware checkerboard so a transparent component sticker reads on the backing that matches
+     its baked theme — a light-theme component (dark strokes/text) on a LIGHT check, a dark-theme (or
+     theme-less) one on the default dark check — instead of light-mode content washing out on a fixed
+     dark backing. --ck-a / --ck-b are the two check colours; [data-bg=light] swaps them. Full-screen
+     stickers carry their own round and just sit on top. Shared by the grid hero and zoom variants. */
+  .shot, .state-shot { --ck-a:#161617; --ck-b:#202022;
+    background-color:var(--ck-a);
+    background-image:
+      linear-gradient(45deg,var(--ck-b) 25%,transparent 25%),
+      linear-gradient(-45deg,var(--ck-b) 25%,transparent 25%),
+      linear-gradient(45deg,transparent 75%,var(--ck-b) 75%),
+      linear-gradient(-45deg,transparent 75%,var(--ck-b) 75%);
+    background-size:16px 16px; background-position:0 0,0 8px,8px -8px,-8px 0; }
+  .shot[data-bg="light"], .state-shot[data-bg="light"] { --ck-a:#e9e9ef; --ck-b:#ffffff; }
+  .shot { margin:0; display:grid; place-items:center; min-height:120px; padding:12px; }
+  .shot img { max-width:100%; max-height:240px; height:auto; display:block; }
+  a.shot { cursor:zoom-in; text-decoration:none; }
+  /* Framed mode (set by the crop script below): the hero is sized to the component's content bbox
+     — read from the figma-svg's translate + viewBox — and the PNG is absolutely-positioned so only
+     the component shows. A wear sticker rendered on a 454² device canvas is displayed cropped to
+     the component instead of floating in an empty frame; a no-op for close-cropped (phone) renders
+     where the bbox already fills the frame. */
+  .shot--framed { overflow:hidden; padding:0; min-height:0; position:relative; place-items:stretch;
+    margin:16px auto; border-radius:8px; max-width:100%; }
+  .shot--framed img { position:absolute; max-width:none; max-height:none; }
+  .shot--missing { color:var(--muted); font-style:italic; }
+  .meta { padding:10px 12px 12px; border-top:1px solid var(--line); }
+  .meta h3 { margin:0; font-size:13px; font-weight:600; word-break:break-word; }
+  .meta h3 a.ctitle { color:inherit; text-decoration:none; }
+  .meta h3 a.ctitle:hover { text-decoration:underline; }
+  .meta .sub { color:var(--muted); font-size:12px; margin-top:2px; display:flex; flex-wrap:wrap; justify-content:space-between; gap:8px; }
+  .meta .sub .wf { color:#7dd87d; text-decoration:none; white-space:nowrap; }
+  .meta .sub .wf:hover { text-decoration:underline; }
+  .statechip { font-size:11px; padding:1px 7px; border-radius:999px; border:1px solid var(--line); color:var(--muted); text-decoration:none; white-space:nowrap; }
+  .statechip:hover { color:var(--fg); border-color:var(--muted); }
+  .greenlines { margin-top:8px; display:flex; flex-wrap:wrap; gap:4px; }
+  .chip { font-size:11px; padding:1px 7px; border-radius:999px; border:1px solid var(--accent); color:var(--accent); }
+  .chip--warn { border-color:#e0c060; color:#e0c060; }
+  .chip--error { border-color:#e08080; color:#e08080; }
+  /* Single-component zoom view — a pure-CSS :target overlay, one per component. */
+  .detail { display:none; }
+  .detail:target { display:flex; position:fixed; inset:0; z-index:50; align-items:center; justify-content:center; padding:clamp(12px,4vw,40px); }
+  .detail-scrim { position:absolute; inset:0; background:rgba(0,0,0,0.72); }
+  .detail-panel { position:relative; z-index:1; background:var(--panel); border:1px solid var(--line); border-radius:14px;
+    max-width:min(960px,94vw); max-height:88vh; overflow:auto; padding:20px 24px; }
+  .detail-panel h3 { margin:0 0 4px; font-size:15px; word-break:break-word; }
+  .detail-caption { color:var(--muted); font-size:13px; margin-bottom:14px; }
+  .detail-x { position:absolute; top:8px; right:14px; color:var(--muted); text-decoration:none; font-size:24px; line-height:1; }
+  .detail-x:hover { color:var(--fg); }
+  .detail-states { display:flex; flex-wrap:wrap; gap:18px; }
+  figure.state { margin:0; }
+  figure.state figcaption { font-size:12px; color:var(--muted); margin-bottom:6px; text-transform:capitalize; }
+  .state-shots { display:flex; flex-wrap:wrap; gap:10px; }
+  .state-shot { display:flex; flex-direction:column; align-items:center; gap:5px;
+    border:1px solid var(--line); border-radius:10px; padding:12px; }
+  .state-shot img { max-width:220px; max-height:220px; height:auto; display:block; }
+  .state-shot span { font-size:11px; color:var(--muted); text-transform:capitalize; }
+  @media (max-width:720px){ .layout{ grid-template-columns:1fr; } nav.index{ position:static; max-height:none; border-right:0; border-bottom:1px solid var(--line);} }
+</style>
+</head>
+<body>
+<header class="top">
+  <h1>JetLagged</h1>
+  <div class="subtitle">system <code>jetlagged</code> · custom Canvas drawing + custom layouts · rendered by compose-preview 0.19.38 · 2026-08-05T23:22:34.955Z · 18 components</div>
+  <div class="subtitle"><a class="pagelink" href="compare.html">PNG vs SVG compare ↗</a></div>
+</header>
+<div class="layout">
+  <nav class="index"><section class="nav-group">
+      <a class="nav-head" href="#g-home">Home <span>1</span></a>
+      <ul><li><a href="#c-home-sleep-dashboard">Home/Sleep dashboard</a></li></ul>
+    </section><section class="nav-group">
+      <a class="nav-head" href="#g-charts">Charts <span>6</span></a>
+      <ul><li><a href="#c-charts-sleep-bar">Charts/Sleep bar</a></li><li><a href="#c-charts-sleep-graph-card">Charts/Sleep graph card</a></li><li><a href="#c-charts-time-graph-layout">Charts/Time graph layout</a></li><li><a href="#c-charts-heart-rate-graph">Charts/Heart rate graph</a></li><li><a href="#c-charts-sleep-stage-palette">Charts/Sleep stage palette</a></li><li><a href="#c-charts-detail-legend">Charts/Detail legend</a></li></ul>
+    </section><section class="nav-group">
+      <a class="nav-head" href="#g-cards">Cards <span>8</span></a>
+      <ul><li><a href="#c-cards-time-asleep">Cards/Time asleep</a></li><li><a href="#c-cards-time-in-bed">Cards/Time in bed</a></li><li><a href="#c-cards-heart-rate">Cards/Heart rate</a></li><li><a href="#c-cards-wellness">Cards/Wellness</a></li><li><a href="#c-cards-wellness-bubble">Cards/Wellness bubble</a></li><li><a href="#c-cards-informational-card">Cards/Informational card</a></li><li><a href="#c-cards-two-line-info">Cards/Two-line info</a></li><li><a href="#c-cards-card-heading">Cards/Card heading</a></li></ul>
+    </section><section class="nav-group">
+      <a class="nav-head" href="#g-chrome">Chrome <span>2</span></a>
+      <ul><li><a href="#c-chrome-header">Chrome/Header</a></li><li><a href="#c-chrome-range-tabs">Chrome/Range tabs</a></li></ul>
+    </section><section class="nav-group">
+      <a class="nav-head" href="#g-motion">Motion <span>1</span></a>
+      <ul><li><a href="#c-motion-fading-circle">Motion/Fading circle</a></li></ul>
+    </section></nav>
+  <main><section class="group" id="g-home">
+      <h2>Home</h2>
+      <div class="grid"><article class="card" id="c-home-sleep-dashboard">
+  <a class="shot" href="#d-home-sleep-dashboard" aria-label="Zoom Home/Sleep dashboard"><img loading="lazy" src="images/home-sleep-dashboard/ideal__default__compact.png" alt="Home/Sleep dashboard" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-home-sleep-dashboard">Home/Sleep dashboard</a></h3>
+    <div class="sub">1082×2888<a class="statechip" href="#d-home-sleep-dashboard">+2 variants</a><a class="wf" href="wireframes/home-sleep-dashboard.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/home-sleep-dashboard.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">button</span><span class="chip chip--info">tab</span><span class="chip chip--info">tab</span><span class="chip chip--info">tab</span><span class="chip chip--info">tab</span><span class="chip chip--info">tab</span></div>
+  </div>
+</article></div>
+    </section>
+<section class="group" id="g-charts">
+      <h2>Charts</h2>
+      <div class="grid"><article class="card" id="c-charts-sleep-bar">
+  <a class="shot" href="#d-charts-sleep-bar" aria-label="Zoom Charts/Sleep bar"><img loading="lazy" src="images/charts-sleep-bar/ideal__default__dark.png" alt="Charts/Sleep bar" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-charts-sleep-bar">Charts/Sleep bar</a></h3>
+    <div class="sub">1050×105<a class="statechip" href="#d-charts-sleep-bar">+4 variants</a><a class="wf" href="wireframes/charts-sleep-bar.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/charts-sleep-bar.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-charts-sleep-graph-card">
+  <a class="shot" href="#d-charts-sleep-graph-card" aria-label="Zoom Charts/Sleep graph card"><img loading="lazy" src="images/charts-sleep-graph-card/ideal__default__medium.png" alt="Charts/Sleep graph card" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-charts-sleep-graph-card">Charts/Sleep graph card</a></h3>
+    <div class="sub">1838×1208<a class="statechip" href="#d-charts-sleep-graph-card">+1 variant</a><a class="wf" href="wireframes/charts-sleep-graph-card.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/charts-sleep-graph-card.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">tab</span><span class="chip chip--info">tab</span><span class="chip chip--info">tab</span><span class="chip chip--info">tab</span><span class="chip chip--info">tab</span></div>
+  </div>
+</article>
+<article class="card" id="c-charts-time-graph-layout">
+  <a class="shot" href="#d-charts-time-graph-layout" aria-label="Zoom Charts/Time graph layout"><img loading="lazy" src="images/charts-time-graph-layout/ideal__default__medium.png" alt="Charts/Time graph layout" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-charts-time-graph-layout">Charts/Time graph layout</a></h3>
+    <div class="sub">1995×893<a class="wf" href="wireframes/charts-time-graph-layout.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/charts-time-graph-layout.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-charts-heart-rate-graph">
+  <a class="shot" href="#d-charts-heart-rate-graph" aria-label="Zoom Charts/Heart rate graph"><img loading="lazy" src="images/charts-heart-rate-graph/ideal__default__compact.png" alt="Charts/Heart rate graph" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-charts-heart-rate-graph">Charts/Heart rate graph</a></h3>
+    <div class="sub">1103×315<a class="wf" href="wireframes/charts-heart-rate-graph.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/charts-heart-rate-graph.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-charts-sleep-stage-palette">
+  <a class="shot" href="#d-charts-sleep-stage-palette" aria-label="Zoom Charts/Sleep stage palette"><img loading="lazy" src="images/charts-sleep-stage-palette/ideal__default__compact.png" alt="Charts/Sleep stage palette" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-charts-sleep-stage-palette">Charts/Sleep stage palette</a></h3>
+    <div class="sub">998×263<a class="wf" href="wireframes/charts-sleep-stage-palette.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/charts-sleep-stage-palette.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-charts-detail-legend">
+  <a class="shot" href="#d-charts-detail-legend" aria-label="Zoom Charts/Detail legend"><img loading="lazy" src="images/charts-detail-legend/ideal__default.png" alt="Charts/Detail legend" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-charts-detail-legend">Charts/Detail legend</a></h3>
+    <div class="sub">487×53<a class="wf" href="wireframes/charts-detail-legend.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/charts-detail-legend.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article></div>
+    </section>
+<section class="group" id="g-cards">
+      <h2>Cards</h2>
+      <div class="grid"><article class="card" id="c-cards-time-asleep">
+  <a class="shot" href="#d-cards-time-asleep" aria-label="Zoom Cards/Time asleep"><img loading="lazy" src="images/cards-time-asleep/ideal__default__compact.png" alt="Cards/Time asleep" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-cards-time-asleep">Cards/Time asleep</a></h3>
+    <div class="sub">1050×525<a class="statechip" href="#d-cards-time-asleep">+1 variant</a><a class="wf" href="wireframes/cards-time-asleep.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/cards-time-asleep.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-cards-time-in-bed">
+  <a class="shot" href="#d-cards-time-in-bed" aria-label="Zoom Cards/Time in bed"><img loading="lazy" src="images/cards-time-in-bed/ideal__default__compact.png" alt="Cards/Time in bed" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-cards-time-in-bed">Cards/Time in bed</a></h3>
+    <div class="sub">1050×525<a class="statechip" href="#d-cards-time-in-bed">+1 variant</a><a class="wf" href="wireframes/cards-time-in-bed.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/cards-time-in-bed.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-cards-heart-rate">
+  <a class="shot" href="#d-cards-heart-rate" aria-label="Zoom Cards/Heart rate"><img loading="lazy" src="images/cards-heart-rate/ideal__default__dark.png" alt="Cards/Heart rate" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-cards-heart-rate">Cards/Heart rate</a></h3>
+    <div class="sub">1050×683<a class="statechip" href="#d-cards-heart-rate">+1 variant</a><a class="wf" href="wireframes/cards-heart-rate.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/cards-heart-rate.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-cards-wellness">
+  <a class="shot" href="#d-cards-wellness" aria-label="Zoom Cards/Wellness"><img loading="lazy" src="images/cards-wellness/ideal__default__dark.png" alt="Cards/Wellness" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-cards-wellness">Cards/Wellness</a></h3>
+    <div class="sub">1050×2100<a class="statechip" href="#d-cards-wellness">+1 variant</a><a class="wf" href="wireframes/cards-wellness.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/cards-wellness.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-cards-wellness-bubble">
+  <a class="shot" href="#d-cards-wellness-bubble" aria-label="Zoom Cards/Wellness bubble"><img loading="lazy" src="images/cards-wellness-bubble/ideal__default__compact.png" alt="Cards/Wellness bubble" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-cards-wellness-bubble">Cards/Wellness bubble</a></h3>
+    <div class="sub">368×368<a class="wf" href="wireframes/cards-wellness-bubble.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/cards-wellness-bubble.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-cards-informational-card">
+  <a class="shot" href="#d-cards-informational-card" aria-label="Zoom Cards/Informational card"><img loading="lazy" src="images/cards-informational-card/ideal__default__dark.png" alt="Cards/Informational card" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-cards-informational-card">Cards/Informational card</a></h3>
+    <div class="sub">1050×306<a class="wf" href="wireframes/cards-informational-card.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/cards-informational-card.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-cards-two-line-info">
+  <a class="shot" href="#d-cards-two-line-info" aria-label="Zoom Cards/Two-line info"><img loading="lazy" src="images/cards-two-line-info/ideal__default__compact.png" alt="Cards/Two-line info" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-cards-two-line-info">Cards/Two-line info</a></h3>
+    <div class="sub">630×630<a class="statechip" href="#d-cards-two-line-info">+1 variant</a><a class="wf" href="wireframes/cards-two-line-info.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/cards-two-line-info.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-cards-card-heading">
+  <a class="shot" href="#d-cards-card-heading" aria-label="Zoom Cards/Card heading"><img loading="lazy" src="images/cards-card-heading/ideal__default__dark.png" alt="Cards/Card heading" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-cards-card-heading">Cards/Card heading</a></h3>
+    <div class="sub">1050×138<a class="wf" href="wireframes/cards-card-heading.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/cards-card-heading.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article></div>
+    </section>
+<section class="group" id="g-chrome">
+      <h2>Chrome</h2>
+      <div class="grid"><article class="card" id="c-chrome-header">
+  <a class="shot" href="#d-chrome-header" aria-label="Zoom Chrome/Header"><img loading="lazy" src="images/chrome-header/ideal__default__dark.png" alt="Chrome/Header" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-chrome-header">Chrome/Header</a></h3>
+    <div class="sub">1050×394<a class="wf" href="wireframes/chrome-header.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/chrome-header.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">button</span></div>
+  </div>
+</article>
+<article class="card" id="c-chrome-range-tabs">
+  <a class="shot" href="#d-chrome-range-tabs" aria-label="Zoom Chrome/Range tabs"><img loading="lazy" src="images/chrome-range-tabs/ideal__default__dark.png" alt="Chrome/Range tabs" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-chrome-range-tabs">Chrome/Range tabs</a></h3>
+    <div class="sub">1050×124<a class="statechip" href="#d-chrome-range-tabs">+4 states</a><a class="wf" href="wireframes/chrome-range-tabs.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/chrome-range-tabs.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">tab</span><span class="chip chip--info">tab</span><span class="chip chip--info">tab</span><span class="chip chip--info">tab</span><span class="chip chip--info">tab</span></div>
+  </div>
+</article></div>
+    </section>
+<section class="group" id="g-motion">
+      <h2>Motion</h2>
+      <div class="grid"><article class="card" id="c-motion-fading-circle">
+  <a class="shot" href="#d-motion-fading-circle" aria-label="Zoom Motion/Fading circle"><img loading="lazy" src="images/motion-fading-circle/ideal__default.png" alt="Motion/Fading circle" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-motion-fading-circle">Motion/Fading circle</a></h3>
+    <div class="sub">1050×2100<a class="wf" href="wireframes/motion-fading-circle.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/motion-fading-circle.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article></div>
+    </section></main>
+</div>
+<div class="detail" id="d-home-sleep-dashboard" role="dialog" aria-label="Home/Sleep dashboard">
+  <a class="detail-scrim" href="#c-home-sleep-dashboard" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-home-sleep-dashboard" aria-label="Close">×</a>
+    <h3>Home/Sleep dashboard</h3>
+    <div class="detail-caption">The whole app on a phone: header, sleep graph card, the two summary cards, wellness and heart rate in one scrolling column.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/home-sleep-dashboard/ideal__default__dark.png" alt="Home/Sleep dashboard default" /><span>dark</span></div><div class="state-shot"><img loading="lazy" src="images/home-sleep-dashboard/ideal__default__compact.png" alt="Home/Sleep dashboard default" /><span>compact</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/home-sleep-dashboard/ideal__default__light.png" alt="Home/Sleep dashboard default" /><span>light</span></div><div class="state-shot"><img loading="lazy" src="images/home-sleep-dashboard/ideal__default__dark__compact.png" alt="Home/Sleep dashboard default" /><span>dark</span></div></div></figure><figure class="state"><figcaption>windowSizeClass=Medium</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/home-sleep-dashboard/ideal__default__medium__windowsizeclass-medium.png" alt="Home/Sleep dashboard windowSizeClass=Medium" /><span>medium</span></div></div></figure><figure class="state"><figcaption>windowSizeClass=Expanded</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/home-sleep-dashboard/ideal__default__expanded__windowsizeclass-expanded.png" alt="Home/Sleep dashboard windowSizeClass=Expanded" /><span>expanded</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-charts-sleep-bar" role="dialog" aria-label="Charts/Sleep bar">
+  <a class="detail-scrim" href="#c-charts-sleep-bar" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-charts-sleep-bar" aria-label="Close">×</a>
+    <h3>Charts/Sleep bar</h3>
+    <div class="detail-caption">The sleep bar — a bespoke Canvas chart with per-stage gradients. Its correctness is only visible as pixels.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/charts-sleep-bar/ideal__default__dark.png" alt="Charts/Sleep bar default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/charts-sleep-bar/ideal__default__light.png" alt="Charts/Sleep bar default" /><span>light</span></div><div class="state-shot"><img loading="lazy" src="images/charts-sleep-bar/ideal__default__compact.png" alt="Charts/Sleep bar default" /><span>compact</span></div><div class="state-shot"><img loading="lazy" src="images/charts-sleep-bar/ideal__default__dark__compact.png" alt="Charts/Sleep bar default" /><span>dark</span></div></div></figure><figure class="state"><figcaption>duration=45 minutes</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/charts-sleep-bar/ideal__default__dark__compact__duration-45-minutes.png" alt="Charts/Sleep bar duration=45 minutes" /><span>dark</span></div></div></figure><figure class="state"><figcaption>duration=16 hours</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/charts-sleep-bar/ideal__default__dark__compact__duration-16-hours.png" alt="Charts/Sleep bar duration=16 hours" /><span>dark</span></div></div></figure><figure class="state"><figcaption>sleepScore=92, 65, 50, 25</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/charts-sleep-bar/ideal__default__compact__sleepscore-92-65-50-25.png" alt="Charts/Sleep bar sleepScore=92, 65, 50, 25" /><span>compact</span></div></div></figure><figure class="state"><figcaption>data=app sample data</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/charts-sleep-bar/ideal__default__data-app-sample-data.png" alt="Charts/Sleep bar data=app sample data" /><span>default</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-charts-sleep-graph-card" role="dialog" aria-label="Charts/Sleep graph card">
+  <a class="detail-scrim" href="#c-charts-sleep-graph-card" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-charts-sleep-graph-card" aria-label="Close">×</a>
+    <h3>Charts/Sleep graph card</h3>
+    <div class="detail-caption">A full week of nights in the custom time-graph layout, inside its card chrome.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/charts-sleep-graph-card/ideal__default__dark.png" alt="Charts/Sleep graph card default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/charts-sleep-graph-card/ideal__default__light.png" alt="Charts/Sleep graph card default" /><span>light</span></div><div class="state-shot"><img loading="lazy" src="images/charts-sleep-graph-card/ideal__default__medium.png" alt="Charts/Sleep graph card default" /><span>medium</span></div><div class="state-shot"><img loading="lazy" src="images/charts-sleep-graph-card/ideal__default__dark__medium.png" alt="Charts/Sleep graph card default" /><span>dark</span></div></div></figure><figure class="state"><figcaption>range=single day</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/charts-sleep-graph-card/ideal__default__medium__range-single-day.png" alt="Charts/Sleep graph card range=single day" /><span>medium</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-charts-time-graph-layout" role="dialog" aria-label="Charts/Time graph layout">
+  <a class="detail-scrim" href="#c-charts-time-graph-layout" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-charts-time-graph-layout" aria-label="Close">×</a>
+    <h3>Charts/Time graph layout</h3>
+    <div class="detail-caption">The bare custom Layout without card chrome — the measure/place algorithm that decides where each bar starts.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/charts-time-graph-layout/ideal__default__dark.png" alt="Charts/Time graph layout default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/charts-time-graph-layout/ideal__default__light.png" alt="Charts/Time graph layout default" /><span>light</span></div><div class="state-shot"><img loading="lazy" src="images/charts-time-graph-layout/ideal__default__medium.png" alt="Charts/Time graph layout default" /><span>medium</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-charts-heart-rate-graph" role="dialog" aria-label="Charts/Heart rate graph">
+  <a class="detail-scrim" href="#c-charts-heart-rate-graph" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-charts-heart-rate-graph" aria-label="Close">×</a>
+    <h3>Charts/Heart rate graph</h3>
+    <div class="detail-caption">The heart-rate trace: a smoothed Path with a translucent range band behind it.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/charts-heart-rate-graph/ideal__default__dark.png" alt="Charts/Heart rate graph default" /><span>dark</span></div><div class="state-shot"><img loading="lazy" src="images/charts-heart-rate-graph/ideal__default__compact.png" alt="Charts/Heart rate graph default" /><span>compact</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/charts-heart-rate-graph/ideal__default__light.png" alt="Charts/Heart rate graph default" /><span>light</span></div><div class="state-shot"><img loading="lazy" src="images/charts-heart-rate-graph/ideal__default__dark__compact.png" alt="Charts/Heart rate graph default" /><span>dark</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-charts-sleep-stage-palette" role="dialog" aria-label="Charts/Sleep stage palette">
+  <a class="detail-scrim" href="#c-charts-sleep-stage-palette" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-charts-sleep-stage-palette" aria-label="Close">×</a>
+    <h3>Charts/Sleep stage palette</h3>
+    <div class="detail-caption">Awake / REM / Light / Deep as swatches — the four colours every chart above is built from.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/charts-sleep-stage-palette/ideal__default__dark.png" alt="Charts/Sleep stage palette default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/charts-sleep-stage-palette/ideal__default__light.png" alt="Charts/Sleep stage palette default" /><span>light</span></div><div class="state-shot"><img loading="lazy" src="images/charts-sleep-stage-palette/ideal__default__compact.png" alt="Charts/Sleep stage palette default" /><span>compact</span></div><div class="state-shot"><img loading="lazy" src="images/charts-sleep-stage-palette/ideal__default__dark__compact.png" alt="Charts/Sleep stage palette default" /><span>dark</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-charts-detail-legend" role="dialog" aria-label="Charts/Detail legend">
+  <a class="detail-scrim" href="#c-charts-detail-legend" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-charts-detail-legend" aria-label="Close">×</a>
+    <h3>Charts/Detail legend</h3>
+    <div class="detail-caption">Legend mapping each sleep stage to its colour token.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/charts-detail-legend/ideal__default.png" alt="Charts/Detail legend default" /><span>default</span></div><div class="state-shot"><img loading="lazy" src="images/charts-detail-legend/ideal__default__dark.png" alt="Charts/Detail legend default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/charts-detail-legend/ideal__default__light.png" alt="Charts/Detail legend default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-cards-time-asleep" role="dialog" aria-label="Cards/Time asleep">
+  <a class="detail-scrim" href="#c-cards-time-asleep" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-cards-time-asleep" aria-label="Close">×</a>
+    <h3>Cards/Time asleep</h3>
+    <div class="detail-caption">Average time asleep summary card.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/cards-time-asleep/ideal__default__compact.png" alt="Cards/Time asleep default" /><span>compact</span></div><div class="state-shot"><img loading="lazy" src="images/cards-time-asleep/ideal__default__dark.png" alt="Cards/Time asleep default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/cards-time-asleep/ideal__default__light.png" alt="Cards/Time asleep default" /><span>light</span></div></div></figure><figure class="state"><figcaption>widthDp=500</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/cards-time-asleep/ideal__default__compact__widthdp-500.png" alt="Cards/Time asleep widthDp=500" /><span>compact</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-cards-time-in-bed" role="dialog" aria-label="Cards/Time in bed">
+  <a class="detail-scrim" href="#c-cards-time-in-bed" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-cards-time-in-bed" aria-label="Close">×</a>
+    <h3>Cards/Time in bed</h3>
+    <div class="detail-caption">Average time in bed summary card.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/cards-time-in-bed/ideal__default__compact.png" alt="Cards/Time in bed default" /><span>compact</span></div><div class="state-shot"><img loading="lazy" src="images/cards-time-in-bed/ideal__default__dark.png" alt="Cards/Time in bed default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/cards-time-in-bed/ideal__default__light.png" alt="Cards/Time in bed default" /><span>light</span></div></div></figure><figure class="state"><figcaption>widthDp=500</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/cards-time-in-bed/ideal__default__compact__widthdp-500.png" alt="Cards/Time in bed widthDp=500" /><span>compact</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-cards-heart-rate" role="dialog" aria-label="Cards/Heart rate">
+  <a class="detail-scrim" href="#c-cards-heart-rate" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-cards-heart-rate" aria-label="Close">×</a>
+    <h3>Cards/Heart rate</h3>
+    <div class="detail-caption">Heart-rate summary card at the default 65 bpm.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/cards-heart-rate/ideal__default__dark.png" alt="Cards/Heart rate default" /><span>dark</span></div><div class="state-shot"><img loading="lazy" src="images/cards-heart-rate/ideal__default__compact.png" alt="Cards/Heart rate default" /><span>compact</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/cards-heart-rate/ideal__default__light.png" alt="Cards/Heart rate default" /><span>light</span></div><div class="state-shot"><img loading="lazy" src="images/cards-heart-rate/ideal__default__dark__compact.png" alt="Cards/Heart rate default" /><span>dark</span></div></div></figure><figure class="state"><figcaption>averageBpm=48</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/cards-heart-rate/ideal__resting__compact__averagebpm-48.png" alt="Cards/Heart rate averageBpm=48" /><span>compact</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-cards-wellness" role="dialog" aria-label="Cards/Wellness">
+  <a class="detail-scrim" href="#c-cards-wellness" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-cards-wellness" aria-label="Close">×</a>
+    <h3>Cards/Wellness</h3>
+    <div class="detail-caption">Wellness summary card on the default sample values.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/cards-wellness/ideal__default__dark.png" alt="Cards/Wellness default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/cards-wellness/ideal__default__light.png" alt="Cards/Wellness default" /><span>light</span></div><div class="state-shot"><img loading="lazy" src="images/cards-wellness/ideal__default__compact.png" alt="Cards/Wellness default" /><span>compact</span></div><div class="state-shot"><img loading="lazy" src="images/cards-wellness/ideal__default__dark__compact.png" alt="Cards/Wellness default" /><span>dark</span></div></div></figure><figure class="state"><figcaption>coughing=42, respiration=17, snoring=128</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/cards-wellness/ideal__recorded__dark__compact__coughing-42__respiration-17__snoring-128.png" alt="Cards/Wellness coughing=42, respiration=17, snoring=128" /><span>dark</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-cards-wellness-bubble" role="dialog" aria-label="Cards/Wellness bubble">
+  <a class="detail-scrim" href="#c-cards-wellness-bubble" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-cards-wellness-bubble" aria-label="Close">×</a>
+    <h3>Cards/Wellness bubble</h3>
+    <div class="detail-caption">One wellness bubble on its own — title, count and metric inside a circle.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/cards-wellness-bubble/ideal__default__dark.png" alt="Cards/Wellness bubble default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/cards-wellness-bubble/ideal__default__light.png" alt="Cards/Wellness bubble default" /><span>light</span></div><div class="state-shot"><img loading="lazy" src="images/cards-wellness-bubble/ideal__default__compact.png" alt="Cards/Wellness bubble default" /><span>compact</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-cards-informational-card" role="dialog" aria-label="Cards/Informational card">
+  <a class="detail-scrim" href="#c-cards-informational-card" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-cards-informational-card" aria-label="Close">×</a>
+    <h3>Cards/Informational card</h3>
+    <div class="detail-caption">The border-coloured card shell every summary card is built on.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/cards-informational-card/ideal__default__compact.png" alt="Cards/Informational card default" /><span>compact</span></div><div class="state-shot"><img loading="lazy" src="images/cards-informational-card/ideal__default__dark.png" alt="Cards/Informational card default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/cards-informational-card/ideal__default__light.png" alt="Cards/Informational card default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-cards-two-line-info" role="dialog" aria-label="Cards/Two-line info">
+  <a class="detail-scrim" href="#c-cards-two-line-info" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-cards-two-line-info" aria-label="Close">×</a>
+    <h3>Cards/Two-line info</h3>
+    <div class="detail-caption">Icon over two lines of text, stacked.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/cards-two-line-info/ideal__default__dark.png" alt="Cards/Two-line info default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/cards-two-line-info/ideal__default__light.png" alt="Cards/Two-line info default" /><span>light</span></div><div class="state-shot"><img loading="lazy" src="images/cards-two-line-info/ideal__default__compact.png" alt="Cards/Two-line info default" /><span>compact</span></div></div></figure><figure class="state"><figcaption>widthDp=520</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/cards-two-line-info/ideal__default__compact__widthdp-520.png" alt="Cards/Two-line info widthDp=520" /><span>compact</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-cards-card-heading" role="dialog" aria-label="Cards/Card heading">
+  <a class="detail-scrim" href="#c-cards-card-heading" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-cards-card-heading" aria-label="Close">×</a>
+    <h3>Cards/Card heading</h3>
+    <div class="detail-caption">The heading style shared by every card.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/cards-card-heading/ideal__default__compact.png" alt="Cards/Card heading default" /><span>compact</span></div><div class="state-shot"><img loading="lazy" src="images/cards-card-heading/ideal__default__dark.png" alt="Cards/Card heading default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/cards-card-heading/ideal__default__light.png" alt="Cards/Card heading default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-chrome-header" role="dialog" aria-label="Chrome/Header">
+  <a class="detail-scrim" href="#c-chrome-header" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-chrome-header" aria-label="Close">×</a>
+    <h3>Chrome/Header</h3>
+    <div class="detail-caption">Screen header — menu button and title over the moving-stripes background.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/chrome-header/ideal__default__dark.png" alt="Chrome/Header default" /><span>dark</span></div><div class="state-shot"><img loading="lazy" src="images/chrome-header/ideal__default__compact.png" alt="Chrome/Header default" /><span>compact</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/chrome-header/ideal__default__light.png" alt="Chrome/Header default" /><span>light</span></div><div class="state-shot"><img loading="lazy" src="images/chrome-header/ideal__default__dark__compact.png" alt="Chrome/Header default" /><span>dark</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-chrome-range-tabs" role="dialog" aria-label="Chrome/Range tabs">
+  <a class="detail-scrim" href="#c-chrome-range-tabs" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-chrome-range-tabs" aria-label="Close">×</a>
+    <h3>Chrome/Range tabs</h3>
+    <div class="detail-caption">The Day/Week/Month/6M/1Y scrollable tab row, selected on Week.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/chrome-range-tabs/ideal__default__dark.png" alt="Chrome/Range tabs default" /><span>dark</span></div><div class="state-shot"><img loading="lazy" src="images/chrome-range-tabs/ideal__default__compact.png" alt="Chrome/Range tabs default" /><span>compact</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/chrome-range-tabs/ideal__default__light.png" alt="Chrome/Range tabs default" /><span>light</span></div></div></figure><figure class="state"><figcaption>day</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/chrome-range-tabs/ideal__day__compact.png" alt="Chrome/Range tabs day" /><span>compact</span></div></div></figure><figure class="state"><figcaption>month</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/chrome-range-tabs/ideal__month__compact.png" alt="Chrome/Range tabs month" /><span>compact</span></div></div></figure><figure class="state"><figcaption>six-months</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/chrome-range-tabs/ideal__six-months__compact.png" alt="Chrome/Range tabs six-months" /><span>compact</span></div></div></figure><figure class="state"><figcaption>one-year</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/chrome-range-tabs/ideal__one-year__compact.png" alt="Chrome/Range tabs one-year" /><span>compact</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-motion-fading-circle" role="dialog" aria-label="Motion/Fading circle">
+  <a class="detail-scrim" href="#c-motion-fading-circle" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-motion-fading-circle" aria-label="Close">×</a>
+    <h3>Motion/Fading circle</h3>
+    <div class="detail-caption">The loading indicator&#39;s fading-circle animation, captured as a still frame.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/motion-fading-circle/ideal__default.png" alt="Motion/Fading circle default" /><span>default</span></div><div class="state-shot"><img loading="lazy" src="images/motion-fading-circle/ideal__default__dark.png" alt="Motion/Fading circle default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/motion-fading-circle/ideal__default__light.png" alt="Motion/Fading circle default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<script>
+// Crop each component's hero (and its zoom-view default capture) to the component's content bbox,
+// read from its figma-svg's root translate + viewBox. A wear sticker rendered on a 454² device
+// canvas then displays cropped to the component instead of floating in an empty frame. A no-op for
+// close-cropped renders (the bbox already fills the frame) and for components with no figma-svg.
+(function () {
+  function parseBox(svgText) {
+    var t = /translate\(\s*(-?\d+)\s*,\s*(-?\d+)\s*\)/.exec(svgText);
+    var v = /viewBox="0 0 (\d+(?:\.\d+)?) (\d+(?:\.\d+)?)"/.exec(svgText);
+    if (!v) return null;
+    return { tx: t ? +t[1] : 0, ty: t ? +t[2] : 0, vw: +v[1], vh: +v[2] };
+  }
+  function frame(shot, box) {
+    var img = shot.querySelector("img");
+    if (!img) return;
+    function apply() {
+      var rw = img.naturalWidth || img.width, rh = img.naturalHeight || img.height;
+      if (!(rw > 0 && rh > 0)) return;
+      if (box.vw >= rw * 0.9 && box.vh >= rh * 0.9) return; // already close-cropped
+      var cap = 240, scale = Math.min(1, cap / Math.max(box.vw, box.vh));
+      var dw = Math.max(1, Math.round(box.vw * scale));
+      shot.classList.add("shot--framed");
+      // Size the window by aspect-ratio at its natural (capped) width, with max-width:100% so it
+      // shrinks to a narrow grid card instead of overflowing it; frame the render in PERCENTAGES of
+      // the box so the whole thing scales as one. (A fixed-px window overflowed the card and clipped
+      // wide components.) Height stays auto — the img keeps the render's aspect.
+      var pct = function (n, d) { return +(n / d * 100).toFixed(4); };
+      shot.style.width = dw + "px";
+      shot.style.aspectRatio = box.vw + " / " + box.vh;
+      img.style.width = pct(rw, box.vw) + "%";
+      // (tx,ty) is negative for a centred component, so it shifts the render to bring the component's
+      // top-left to the clip origin; as a % of the box axis it scales with the shrunk window.
+      img.style.left = pct(box.tx, box.vw) + "%";
+      img.style.top = pct(box.ty, box.vh) + "%";
+    }
+    if (img.complete) apply();
+    else img.addEventListener("load", apply);
+  }
+  document.querySelectorAll(".card").forEach(function (card) {
+    var link = card.querySelector('a.wf[href^="figma/"]');
+    if (!link) return;
+    var hero = card.querySelector("a.shot");
+    if (!hero) return;
+    fetch(link.getAttribute("href"))
+      .then(function (r) { return r.ok ? r.text() : null; })
+      .then(function (txt) {
+        if (!txt) return;
+        var box = parseBox(txt);
+        if (box) frame(hero, box);
+      })
+      .catch(function () {});
+  });
+})();
+</script>
+</body>
+</html>
