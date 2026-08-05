@@ -16,6 +16,7 @@
 
 package com.example.jetcaster.catalog
 
+import android.content.res.Configuration
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -182,9 +183,18 @@ fun JetcasterSubscribeButtonsSubscribedPreview() = Wrap {
 
 // ---------------------------------------------------------------- discover surfaces
 
-@Preview(name = "TopPodcastRowItem — not following", showBackground = true, widthDp = 160)
+@Preview(
+    name = "TopPodcastRowItem — not following · light",
+    showBackground = true,
+    widthDp = 160,
+)
+@Preview(
+    name = "TopPodcastRowItem — not following · dark",
+    showBackground = true,
+    widthDp = 160,
+    uiMode = Configuration.UI_MODE_NIGHT_YES,
+)
 @Composable
-@PreviewLightDark
 fun JetcasterTopPodcastRowItemPreview() = Wrap {
     TopPodcastRowItem(
         podcastTitle = unsubscribedPodcast.title,
