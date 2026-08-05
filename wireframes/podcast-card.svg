@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 336 336" width="336" height="336" role="img" aria-label="Podcast/Card layout wireframe">
+  <title>Podcast/Card — layout wireframe (slots + tokens)</title>
+  <rect width="336" height="336" fill="#ffffff"/>
+  <g>
+    <rect x="0" y="0" width="336" height="336" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="336" height="336" fill="none" fill-opacity="0" stroke="#2E7D6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="336" height="336" fill="none" fill-opacity="0" stroke="#8E6BA8" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M21,0 H315 A21,21 0 0 1 336,21 V315 A21,21 0 0 1 315,336 H21 A21,21 0 0 1 0,315 V21 A21,21 0 0 1 21,0 Z" fill="#FF792C" fill-opacity="1" stroke="#B0813B" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="3" y="12" font-family="system-ui, sans-serif" font-size="9" fill="#B0813B">#FFFF792C</text>
+  </g>
+  <g>
+    <path d="M63.5,11 H63.5 A52.5,52.5 0 0 1 116,63.5 V63.5 A52.5,52.5 0 0 1 63.5,116 H63.5 A52.5,52.5 0 0 1 11,63.5 V63.5 A52.5,52.5 0 0 1 63.5,11 Z" fill="#F3EDF7" fill-opacity="1" stroke="#B0813B" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="14" y="23" font-family="system-ui, sans-serif" font-size="9" fill="#B0813B">#FFF3EDF7</text>
+  </g>
+  <g>
+    <rect x="32" y="32" width="63" height="63" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="336" height="336" fill="none" fill-opacity="0" stroke="#B0813B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+</svg>

@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 252" width="1050" height="252" role="img" aria-label="Discover/Category tabs layout wireframe">
+  <title>Discover/Category tabs — layout wireframe (slots + tokens)</title>
+  <rect width="1050" height="252" fill="#ffffff"/>
+  <g>
+    <rect x="0" y="0" width="1050" height="252" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="1050" height="252" fill="none" fill-opacity="0" stroke="#2E7D6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="1050" height="252" fill="#FEF7FF" fill-opacity="1" stroke="#8E6BA8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="3" y="12" font-family="system-ui, sans-serif" font-size="9" fill="#8E6BA8">#FFFEF7FF</text>
+  </g>
+  <g>
+    <rect x="21" y="21" width="1008" height="210" fill="none" fill-opacity="0" stroke="#B0813B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="21" y="21" width="1008" height="210" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M116,84 H231 A42,42 0 0 1 273,126 V126 A42,42 0 0 1 231,168 H116 A42,42 0 0 1 74,126 V126 A42,42 0 0 1 116,84 Z" fill="#F3EDF7" fill-opacity="1" stroke="#A85B6B" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="77" y="96" font-family="system-ui, sans-serif" font-size="9" fill="#A85B6B">#FFF3EDF7  pad ·</text>
+  </g>
+  <g>
+    <rect x="95" y="84" width="157" height="84" fill="none" fill-opacity="0" stroke="#4F8A4A" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="116" y="104" width="115" height="45" fill="none" fill-opacity="0" stroke="#7A7A33" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="116" y="104" width="115" height="45" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M337,84 H488 A42,42 0 0 1 530,126 V126 A42,42 0 0 1 488,168 H337 A42,42 0 0 1 295,126 V126 A42,42 0 0 1 337,84 Z" fill="#998700" fill-opacity="1" stroke="#A85B6B" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="298" y="96" font-family="system-ui, sans-serif" font-size="9" fill="#A85B6B">#FF998700  pad ·</text>
+  </g>
+  <g>
+    <rect x="316" y="84" width="193" height="84" fill="none" fill-opacity="0" stroke="#4F8A4A" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="316" y="103" width="47" height="47" fill="none" fill-opacity="0" stroke="#7A7A33" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="316" y="103" width="47" height="47" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="316" y="103" width="47" height="47" fill="none" fill-opacity="0" stroke="#2E7D6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="316" y="103" width="47" height="47" fill="none" fill-opacity="0" stroke="#8E6BA8" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="384" y="104" width="104" height="45" fill="none" fill-opacity="0" stroke="#7A7A33" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="384" y="104" width="104" height="45" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M594,84 H752 A42,42 0 0 1 794,126 V126 A42,42 0 0 1 752,168 H594 A42,42 0 0 1 552,126 V126 A42,42 0 0 1 594,84 Z" fill="#F3EDF7" fill-opacity="1" stroke="#A85B6B" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="555" y="96" font-family="system-ui, sans-serif" font-size="9" fill="#A85B6B">#FFF3EDF7  pad ·</text>
+  </g>
+  <g>
+    <rect x="573" y="84" width="200" height="84" fill="none" fill-opacity="0" stroke="#4F8A4A" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="594" y="104" width="158" height="45" fill="none" fill-opacity="0" stroke="#7A7A33" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="594" y="104" width="158" height="45" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+</svg>

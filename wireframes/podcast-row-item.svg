@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 378" width="420" height="378" role="img" aria-label="Podcast/Row item layout wireframe">
+  <title>Podcast/Row item — layout wireframe (slots + tokens)</title>
+  <rect width="420" height="378" fill="#ffffff"/>
+  <g>
+    <rect x="0" y="0" width="420" height="378" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="420" height="378" fill="none" fill-opacity="0" stroke="#2E7D6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="420" height="378" fill="#FEF7FF" fill-opacity="1" stroke="#8E6BA8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="3" y="12" font-family="system-ui, sans-serif" font-size="9" fill="#8E6BA8">#FFFEF7FF</text>
+  </g>
+  <g>
+    <rect x="21" y="21" width="378" height="336" fill="none" fill-opacity="0" stroke="#B0813B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M63,0 H357 A42,42 0 0 1 399,42 V336 A42,42 0 0 1 357,378 H63 A42,42 0 0 1 21,336 V42 A42,42 0 0 1 63,0 Z" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1.5" stroke-opacity="1"/>
+  </g>
+  <g>
+    <path d="M42,0 H378 A21,21 0 0 1 399,21 V357 A21,21 0 0 1 378,378 H42 A21,21 0 0 1 21,357 V21 A21,21 0 0 1 42,0 Z" fill="#FF792C" fill-opacity="1" stroke="#A85B6B" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="24" y="12" font-family="system-ui, sans-serif" font-size="9" fill="#A85B6B">#FFFF792C</text>
+  </g>
+  <g>
+    <path d="M58.25,11 H110.75 A26.25,26.25 0 0 1 137,37.25 V89.75 A26.25,26.25 0 0 1 110.75,116 H58.25 A26.25,26.25 0 0 1 32,89.75 V37.25 A26.25,26.25 0 0 1 58.25,11 Z" fill="#FFE523" fill-opacity="1" stroke="#A85B6B" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="35" y="23" font-family="system-ui, sans-serif" font-size="9" fill="#A85B6B">#FFFFE523</text>
+  </g>
+  <g>
+    <rect x="53" y="32" width="63" height="63" fill="none" fill-opacity="0" stroke="#4F8A4A" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="21" y="0" width="378" height="378" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="63" y="238" width="336" height="98" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+</svg>

@@ -1,0 +1,253 @@
+{
+  "system": "jetcaster",
+  "title": "Jetcaster",
+  "label": "Compose",
+  "source": {
+    "repo": "yschimke/compose-samples",
+    "ref": "previews",
+    "module": ":mobile"
+  },
+  "generatedAt": "2026-08-05T23:26:04.573Z",
+  "mappings": [
+    {
+      "componentId": "Home/Screen",
+      "figmaLayerName": "Home/Screen",
+      "componentName": "JetcasterHomeDiscoverPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/mobile/src/debug/java/com/example/jetcaster/catalog/JetcasterComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "JetcasterHomeDiscoverPreview",
+      "figmaSvg": "figma/home-screen.svg"
+    },
+    {
+      "componentId": "PodcastDetails/Screen",
+      "figmaLayerName": "PodcastDetails/Screen",
+      "componentName": "JetcasterPodcastDetailsFullScreenPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/mobile/src/debug/java/com/example/jetcaster/catalog/JetcasterComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "JetcasterPodcastDetailsFullScreenPreview",
+      "figmaSvg": "figma/podcastdetails-screen.svg"
+    },
+    {
+      "componentId": "PodcastDetails/Header",
+      "figmaLayerName": "PodcastDetails/Header",
+      "componentName": "PodcastDetailsHeaderItemPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/mobile/src/main/java/com/example/jetcaster/ui/podcast/PodcastDetailsScreen.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "PodcastDetailsHeaderItemPreview",
+      "figmaSvg": "figma/podcastdetails-header.svg"
+    },
+    {
+      "componentId": "PodcastDetails/Description",
+      "figmaLayerName": "PodcastDetails/Description",
+      "componentName": "JetcasterPodcastDescriptionPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/mobile/src/debug/java/com/example/jetcaster/catalog/JetcasterComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "JetcasterPodcastDescriptionPreview",
+      "figmaSvg": "figma/podcastdetails-description.svg"
+    },
+    {
+      "componentId": "PodcastDetails/App bar",
+      "figmaLayerName": "PodcastDetails/App bar",
+      "componentName": "JetcasterPodcastDetailsTopAppBarPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/mobile/src/debug/java/com/example/jetcaster/catalog/JetcasterComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "JetcasterPodcastDetailsTopAppBarPreview",
+      "figmaSvg": "figma/podcastdetails-app-bar.svg"
+    },
+    {
+      "componentId": "PodcastDetails/Subscribe",
+      "figmaLayerName": "PodcastDetails/Subscribe",
+      "componentName": "JetcasterSubscribeButtonsPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/mobile/src/debug/java/com/example/jetcaster/catalog/JetcasterComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "JetcasterSubscribeButtonsPreview",
+      "figmaSvg": "figma/podcastdetails-subscribe.svg"
+    },
+    {
+      "componentId": "Podcast/Card",
+      "figmaLayerName": "Podcast/Card",
+      "componentName": "PreviewPodcastCard",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/mobile/src/main/java/com/example/jetcaster/ui/home/Home.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "PreviewPodcastCard",
+      "figmaSvg": "figma/podcast-card.svg"
+    },
+    {
+      "componentId": "Podcast/Row item",
+      "figmaLayerName": "Podcast/Row item",
+      "componentName": "JetcasterTopPodcastRowItemPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/mobile/src/debug/java/com/example/jetcaster/catalog/JetcasterComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "JetcasterTopPodcastRowItemPreview",
+      "figmaSvg": "figma/podcast-row-item.svg"
+    },
+    {
+      "componentId": "Podcast/Row",
+      "figmaLayerName": "Podcast/Row",
+      "componentName": "JetcasterCategoryPodcastRowPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/mobile/src/debug/java/com/example/jetcaster/catalog/JetcasterComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "JetcasterCategoryPodcastRowPreview",
+      "figmaSvg": "figma/podcast-row.svg"
+    },
+    {
+      "componentId": "Discover/Category tabs",
+      "figmaLayerName": "Discover/Category tabs",
+      "componentName": "JetcasterCategoryTabsPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/mobile/src/debug/java/com/example/jetcaster/catalog/JetcasterComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "JetcasterCategoryTabsPreview",
+      "figmaSvg": "figma/discover-category-tabs.svg"
+    },
+    {
+      "componentId": "Discover/Category chip",
+      "figmaLayerName": "Discover/Category chip",
+      "componentName": "JetcasterCategoryChipPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/mobile/src/debug/java/com/example/jetcaster/catalog/JetcasterComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "JetcasterCategoryChipPreview",
+      "figmaSvg": "figma/discover-category-chip.svg"
+    },
+    {
+      "componentId": "Podcast/Follow toggle",
+      "figmaLayerName": "Podcast/Follow toggle",
+      "componentName": "JetcasterFollowToggleUnfollowedPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/mobile/src/debug/java/com/example/jetcaster/catalog/JetcasterComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "JetcasterFollowToggleUnfollowedPreview",
+      "figmaSvg": "figma/podcast-follow-toggle.svg"
+    },
+    {
+      "componentId": "Episode/List item",
+      "figmaLayerName": "Episode/List item",
+      "componentName": "EpisodeListItemPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/mobile/src/main/java/com/example/jetcaster/ui/shared/EpisodeListItem.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "EpisodeListItemPreview",
+      "figmaSvg": "figma/episode-list-item.svg"
+    },
+    {
+      "componentId": "Player/Screen",
+      "figmaLayerName": "Player/Screen",
+      "componentName": "JetcasterPlayerScreenCatalogPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/mobile/src/debug/java/com/example/jetcaster/catalog/JetcasterComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "JetcasterPlayerScreenCatalogPreview",
+      "figmaSvg": "figma/player-screen.svg"
+    },
+    {
+      "componentId": "Player/Transport",
+      "figmaLayerName": "Player/Transport",
+      "componentName": "PlayerButtonsPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/mobile/src/main/java/com/example/jetcaster/ui/player/PlayerScreen.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "PlayerButtonsPreview",
+      "figmaSvg": "figma/player-transport.svg"
+    },
+    {
+      "componentId": "Player/Slider",
+      "figmaLayerName": "Player/Slider",
+      "componentName": "JetcasterPlayerSliderPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/mobile/src/debug/java/com/example/jetcaster/catalog/JetcasterComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "JetcasterPlayerSliderPreview",
+      "figmaSvg": "figma/player-slider.svg"
+    },
+    {
+      "componentId": "Player/Episode information",
+      "figmaLayerName": "Player/Episode information",
+      "componentName": "JetcasterPodcastInformationPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/mobile/src/debug/java/com/example/jetcaster/catalog/JetcasterComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "JetcasterPodcastInformationPreview",
+      "figmaSvg": "figma/player-episode-information.svg"
+    },
+    {
+      "componentId": "Player/App bar",
+      "figmaLayerName": "Player/App bar",
+      "componentName": "JetcasterPlayerTopAppBarPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/mobile/src/debug/java/com/example/jetcaster/catalog/JetcasterComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "JetcasterPlayerTopAppBarPreview",
+      "figmaSvg": "figma/player-app-bar.svg"
+    },
+    {
+      "componentId": "Chrome/Home app bar",
+      "figmaLayerName": "Chrome/Home app bar",
+      "componentName": "HomeAppBarPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/mobile/src/main/java/com/example/jetcaster/ui/home/Home.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "HomeAppBarPreview",
+      "figmaSvg": "figma/chrome-home-app-bar.svg"
+    },
+    {
+      "componentId": "Chrome/Pill toolbar",
+      "figmaLayerName": "Chrome/Pill toolbar",
+      "componentName": "JetcasterPillToolbarDiscoverPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/mobile/src/debug/java/com/example/jetcaster/catalog/JetcasterComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "JetcasterPillToolbarDiscoverPreview",
+      "figmaSvg": "figma/chrome-pill-toolbar.svg"
+    },
+    {
+      "componentId": "Chrome/Top app bar",
+      "figmaLayerName": "Chrome/Top app bar",
+      "componentName": "TopAppBarPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/mobile/src/main/java/com/example/jetcaster/ui/player/PlayerScreen.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "TopAppBarPreview",
+      "figmaSvg": "figma/chrome-top-app-bar.svg"
+    },
+    {
+      "componentId": "Chrome/Home error",
+      "figmaLayerName": "Chrome/Home error",
+      "componentName": "HomeScreenErrorPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/mobile/src/main/java/com/example/jetcaster/ui/home/Home.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "HomeScreenErrorPreview",
+      "figmaSvg": "figma/chrome-home-error.svg"
+    },
+    {
+      "componentId": "States/Loading",
+      "figmaLayerName": "States/Loading",
+      "componentName": "JetcasterLoadingPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/mobile/src/debug/java/com/example/jetcaster/catalog/JetcasterComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "JetcasterLoadingPreview",
+      "figmaSvg": "figma/states-loading.svg"
+    },
+    {
+      "componentId": "States/Offline",
+      "figmaLayerName": "States/Offline",
+      "componentName": "JetcasterOfflineStatePreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/mobile/src/debug/java/com/example/jetcaster/catalog/JetcasterComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "JetcasterOfflineStatePreview",
+      "figmaSvg": "figma/states-offline.svg"
+    }
+  ]
+}

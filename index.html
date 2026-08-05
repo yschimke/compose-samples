@@ -1,0 +1,616 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Jetcaster — design catalog</title>
+<style>
+  :root { color-scheme: light dark; --bg:#0f0f10; --panel:#1b1b1d; --fg:#e8e8ea; --muted:#9b9ba1; --line:#2a2a2d; --accent:#7dd87d; }
+  * { box-sizing: border-box; }
+  body { margin:0; font:14px/1.5 system-ui, -apple-system, Segoe UI, Roboto, sans-serif; background:var(--bg); color:var(--fg); }
+  header.top { padding:24px clamp(16px,4vw,40px); border-bottom:1px solid var(--line); }
+  header.top h1 { margin:0 0 6px; font-size:22px; }
+  header.top .subtitle { color:var(--muted); font-size:13px; }
+  header.top code { background:var(--panel); padding:1px 6px; border-radius:5px; }
+  header.top .pagelink { color:var(--accent); text-decoration:none; font-size:13px; }
+  header.top .pagelink:hover { text-decoration:underline; }
+  .layout { display:grid; grid-template-columns:240px 1fr; align-items:start; }
+  nav.index { position:sticky; top:0; align-self:start; max-height:100vh; overflow:auto; padding:20px 12px; border-right:1px solid var(--line); }
+  nav.index .nav-head { display:flex; justify-content:space-between; font-weight:600; text-decoration:none; color:var(--fg); padding:6px 8px; border-radius:6px; }
+  nav.index .nav-head span { color:var(--muted); font-weight:400; }
+  nav.index .nav-head:hover { background:var(--panel); }
+  nav.index ul { list-style:none; margin:2px 0 14px; padding:0 0 0 8px; }
+  nav.index li a { display:block; color:var(--muted); text-decoration:none; padding:3px 8px; border-radius:5px; font-size:13px; }
+  nav.index li a:hover { color:var(--fg); background:var(--panel); }
+  main { padding:8px clamp(16px,4vw,40px) 64px; min-width:0; }
+  .group { padding-top:24px; }
+  .group h2 { font-size:16px; border-bottom:1px solid var(--line); padding-bottom:8px; position:sticky; top:0; background:var(--bg); }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(180px,1fr)); gap:16px; }
+  .card { background:var(--panel); border:1px solid var(--line); border-radius:12px; overflow:hidden; }
+  /* Theme-aware checkerboard so a transparent component sticker reads on the backing that matches
+     its baked theme — a light-theme component (dark strokes/text) on a LIGHT check, a dark-theme (or
+     theme-less) one on the default dark check — instead of light-mode content washing out on a fixed
+     dark backing. --ck-a / --ck-b are the two check colours; [data-bg=light] swaps them. Full-screen
+     stickers carry their own round and just sit on top. Shared by the grid hero and zoom variants. */
+  .shot, .state-shot { --ck-a:#161617; --ck-b:#202022;
+    background-color:var(--ck-a);
+    background-image:
+      linear-gradient(45deg,var(--ck-b) 25%,transparent 25%),
+      linear-gradient(-45deg,var(--ck-b) 25%,transparent 25%),
+      linear-gradient(45deg,transparent 75%,var(--ck-b) 75%),
+      linear-gradient(-45deg,transparent 75%,var(--ck-b) 75%);
+    background-size:16px 16px; background-position:0 0,0 8px,8px -8px,-8px 0; }
+  .shot[data-bg="light"], .state-shot[data-bg="light"] { --ck-a:#e9e9ef; --ck-b:#ffffff; }
+  .shot { margin:0; display:grid; place-items:center; min-height:120px; padding:12px; }
+  .shot img { max-width:100%; max-height:240px; height:auto; display:block; }
+  a.shot { cursor:zoom-in; text-decoration:none; }
+  /* Framed mode (set by the crop script below): the hero is sized to the component's content bbox
+     — read from the figma-svg's translate + viewBox — and the PNG is absolutely-positioned so only
+     the component shows. A wear sticker rendered on a 454² device canvas is displayed cropped to
+     the component instead of floating in an empty frame; a no-op for close-cropped (phone) renders
+     where the bbox already fills the frame. */
+  .shot--framed { overflow:hidden; padding:0; min-height:0; position:relative; place-items:stretch;
+    margin:16px auto; border-radius:8px; max-width:100%; }
+  .shot--framed img { position:absolute; max-width:none; max-height:none; }
+  .shot--missing { color:var(--muted); font-style:italic; }
+  .meta { padding:10px 12px 12px; border-top:1px solid var(--line); }
+  .meta h3 { margin:0; font-size:13px; font-weight:600; word-break:break-word; }
+  .meta h3 a.ctitle { color:inherit; text-decoration:none; }
+  .meta h3 a.ctitle:hover { text-decoration:underline; }
+  .meta .sub { color:var(--muted); font-size:12px; margin-top:2px; display:flex; flex-wrap:wrap; justify-content:space-between; gap:8px; }
+  .meta .sub .wf { color:#7dd87d; text-decoration:none; white-space:nowrap; }
+  .meta .sub .wf:hover { text-decoration:underline; }
+  .statechip { font-size:11px; padding:1px 7px; border-radius:999px; border:1px solid var(--line); color:var(--muted); text-decoration:none; white-space:nowrap; }
+  .statechip:hover { color:var(--fg); border-color:var(--muted); }
+  .greenlines { margin-top:8px; display:flex; flex-wrap:wrap; gap:4px; }
+  .chip { font-size:11px; padding:1px 7px; border-radius:999px; border:1px solid var(--accent); color:var(--accent); }
+  .chip--warn { border-color:#e0c060; color:#e0c060; }
+  .chip--error { border-color:#e08080; color:#e08080; }
+  /* Single-component zoom view — a pure-CSS :target overlay, one per component. */
+  .detail { display:none; }
+  .detail:target { display:flex; position:fixed; inset:0; z-index:50; align-items:center; justify-content:center; padding:clamp(12px,4vw,40px); }
+  .detail-scrim { position:absolute; inset:0; background:rgba(0,0,0,0.72); }
+  .detail-panel { position:relative; z-index:1; background:var(--panel); border:1px solid var(--line); border-radius:14px;
+    max-width:min(960px,94vw); max-height:88vh; overflow:auto; padding:20px 24px; }
+  .detail-panel h3 { margin:0 0 4px; font-size:15px; word-break:break-word; }
+  .detail-caption { color:var(--muted); font-size:13px; margin-bottom:14px; }
+  .detail-x { position:absolute; top:8px; right:14px; color:var(--muted); text-decoration:none; font-size:24px; line-height:1; }
+  .detail-x:hover { color:var(--fg); }
+  .detail-states { display:flex; flex-wrap:wrap; gap:18px; }
+  figure.state { margin:0; }
+  figure.state figcaption { font-size:12px; color:var(--muted); margin-bottom:6px; text-transform:capitalize; }
+  .state-shots { display:flex; flex-wrap:wrap; gap:10px; }
+  .state-shot { display:flex; flex-direction:column; align-items:center; gap:5px;
+    border:1px solid var(--line); border-radius:10px; padding:12px; }
+  .state-shot img { max-width:220px; max-height:220px; height:auto; display:block; }
+  .state-shot span { font-size:11px; color:var(--muted); text-transform:capitalize; }
+  @media (max-width:720px){ .layout{ grid-template-columns:1fr; } nav.index{ position:static; max-height:none; border-right:0; border-bottom:1px solid var(--line);} }
+</style>
+</head>
+<body>
+<header class="top">
+  <h1>Jetcaster</h1>
+  <div class="subtitle">system <code>jetcaster</code> · androidx.compose.material3:material3, androidx.compose.material3.adaptive:adaptive · rendered by compose-preview 0.19.38 · 2026-08-05T23:26:01.157Z · 24 components</div>
+  <div class="subtitle"><a class="pagelink" href="compare.html">PNG vs SVG compare ↗</a></div>
+</header>
+<div class="layout">
+  <nav class="index"><section class="nav-group">
+      <a class="nav-head" href="#g-home">Home <span>1</span></a>
+      <ul><li><a href="#c-home-screen">Home/Screen</a></li></ul>
+    </section><section class="nav-group">
+      <a class="nav-head" href="#g-podcast-details">Podcast details <span>1</span></a>
+      <ul><li><a href="#c-podcastdetails-screen">PodcastDetails/Screen</a></li></ul>
+    </section><section class="nav-group">
+      <a class="nav-head" href="#g-podcast-details-components">Podcast details components <span>4</span></a>
+      <ul><li><a href="#c-podcastdetails-header">PodcastDetails/Header</a></li><li><a href="#c-podcastdetails-description">PodcastDetails/Description</a></li><li><a href="#c-podcastdetails-app-bar">PodcastDetails/App bar</a></li><li><a href="#c-podcastdetails-subscribe">PodcastDetails/Subscribe</a></li></ul>
+    </section><section class="nav-group">
+      <a class="nav-head" href="#g-discover">Discover <span>6</span></a>
+      <ul><li><a href="#c-podcast-card">Podcast/Card</a></li><li><a href="#c-podcast-row-item">Podcast/Row item</a></li><li><a href="#c-podcast-row">Podcast/Row</a></li><li><a href="#c-discover-category-tabs">Discover/Category tabs</a></li><li><a href="#c-discover-category-chip">Discover/Category chip</a></li><li><a href="#c-podcast-follow-toggle">Podcast/Follow toggle</a></li></ul>
+    </section><section class="nav-group">
+      <a class="nav-head" href="#g-episodes">Episodes <span>1</span></a>
+      <ul><li><a href="#c-episode-list-item">Episode/List item</a></li></ul>
+    </section><section class="nav-group">
+      <a class="nav-head" href="#g-player">Player <span>1</span></a>
+      <ul><li><a href="#c-player-screen">Player/Screen</a></li></ul>
+    </section><section class="nav-group">
+      <a class="nav-head" href="#g-player-controls">Player controls <span>4</span></a>
+      <ul><li><a href="#c-player-transport">Player/Transport</a></li><li><a href="#c-player-slider">Player/Slider</a></li><li><a href="#c-player-episode-information">Player/Episode information</a></li><li><a href="#c-player-app-bar">Player/App bar</a></li></ul>
+    </section><section class="nav-group">
+      <a class="nav-head" href="#g-chrome">Chrome <span>3</span></a>
+      <ul><li><a href="#c-chrome-home-app-bar">Chrome/Home app bar</a></li><li><a href="#c-chrome-pill-toolbar">Chrome/Pill toolbar</a></li><li><a href="#c-chrome-top-app-bar">Chrome/Top app bar</a></li></ul>
+    </section><section class="nav-group">
+      <a class="nav-head" href="#g-states">States <span>3</span></a>
+      <ul><li><a href="#c-chrome-home-error">Chrome/Home error</a></li><li><a href="#c-states-loading">States/Loading</a></li><li><a href="#c-states-offline">States/Offline</a></li></ul>
+    </section></nav>
+  <main><section class="group" id="g-home">
+      <h2>Home</h2>
+      <div class="grid"><article class="card" id="c-home-screen">
+  <a class="shot" href="#d-home-screen" aria-label="Zoom Home/Screen"><img loading="lazy" src="images/home-screen/ideal__default__compact.png" alt="Home/Screen" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-home-screen">Home/Screen</a></h3>
+    <div class="sub">1082×1680<a class="statechip" href="#d-home-screen">+4 variants</a><a class="wf" href="wireframes/home-screen.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/home-screen.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">checkbox</span><span class="chip chip--info">checkbox</span><span class="chip chip--info">checkbox</span><span class="chip chip--info">checkbox</span><span class="chip chip--info">checkbox</span><span class="chip chip--info">checkbox</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span></div>
+  </div>
+</article></div>
+    </section>
+<section class="group" id="g-podcast-details">
+      <h2>Podcast details</h2>
+      <div class="grid"><article class="card" id="c-podcastdetails-screen">
+  <a class="shot" href="#d-podcastdetails-screen" aria-label="Zoom PodcastDetails/Screen"><img loading="lazy" src="images/podcastdetails-screen/ideal__default__compact.png" alt="PodcastDetails/Screen" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-podcastdetails-screen">PodcastDetails/Screen</a></h3>
+    <div class="sub">1082×2363<a class="statechip" href="#d-podcastdetails-screen">+5 variants</a><a class="wf" href="wireframes/podcastdetails-screen.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/podcastdetails-screen.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">checkbox</span><span class="chip chip--info">checkbox</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span></div>
+  </div>
+</article></div>
+    </section>
+<section class="group" id="g-podcast-details-components">
+      <h2>Podcast details components</h2>
+      <div class="grid"><article class="card" id="c-podcastdetails-header">
+  <a class="shot" href="#d-podcastdetails-header" aria-label="Zoom PodcastDetails/Header"><img loading="lazy" src="images/podcastdetails-header/ideal__default__dark.png" alt="PodcastDetails/Header" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-podcastdetails-header">PodcastDetails/Header</a></h3>
+    <div class="sub">1050×1413<a class="statechip" href="#d-podcastdetails-header">+3 variants</a><a class="wf" href="wireframes/podcastdetails-header.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/podcastdetails-header.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">checkbox</span><span class="chip chip--info">checkbox</span></div>
+  </div>
+</article>
+<article class="card" id="c-podcastdetails-description">
+  <a class="shot" href="#d-podcastdetails-description" aria-label="Zoom PodcastDetails/Description"><img loading="lazy" src="images/podcastdetails-description/ideal__default__compact.png" alt="PodcastDetails/Description" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-podcastdetails-description">PodcastDetails/Description</a></h3>
+    <div class="sub">1082×140<a class="statechip" href="#d-podcastdetails-description">+1 state</a><a class="wf" href="wireframes/podcastdetails-description.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/podcastdetails-description.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-podcastdetails-app-bar">
+  <a class="shot" href="#d-podcastdetails-app-bar" aria-label="Zoom PodcastDetails/App bar"><img loading="lazy" src="images/podcastdetails-app-bar/ideal__default__compact.png" alt="PodcastDetails/App bar" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-podcastdetails-app-bar">PodcastDetails/App bar</a></h3>
+    <div class="sub">1082×210<a class="wf" href="wireframes/podcastdetails-app-bar.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/podcastdetails-app-bar.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">button</span></div>
+  </div>
+</article>
+<article class="card" id="c-podcastdetails-subscribe">
+  <a class="shot" href="#d-podcastdetails-subscribe" aria-label="Zoom PodcastDetails/Subscribe"><img loading="lazy" src="images/podcastdetails-subscribe/ideal__default__compact.png" alt="PodcastDetails/Subscribe" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-podcastdetails-subscribe">PodcastDetails/Subscribe</a></h3>
+    <div class="sub">1082×189<a class="statechip" href="#d-podcastdetails-subscribe">+1 variant</a><a class="wf" href="wireframes/podcastdetails-subscribe.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/podcastdetails-subscribe.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">checkbox</span><span class="chip chip--info">checkbox</span></div>
+  </div>
+</article></div>
+    </section>
+<section class="group" id="g-discover">
+      <h2>Discover</h2>
+      <div class="grid"><article class="card" id="c-podcast-card">
+  <a class="shot" href="#d-podcast-card" aria-label="Zoom Podcast/Card"><img loading="lazy" src="images/podcast-card/ideal__default__dark.png" alt="Podcast/Card" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-podcast-card">Podcast/Card</a></h3>
+    <div class="sub">336×336<a class="wf" href="wireframes/podcast-card.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/podcast-card.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">checkbox</span></div>
+  </div>
+</article>
+<article class="card" id="c-podcast-row-item">
+  <a class="shot" href="#d-podcast-row-item" aria-label="Zoom Podcast/Row item"><img loading="lazy" src="images/podcast-row-item/ideal__default__dark__compact.png" alt="Podcast/Row item" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-podcast-row-item">Podcast/Row item</a></h3>
+    <div class="sub">420×378<a class="statechip" href="#d-podcast-row-item">+2 variants</a><a class="wf" href="wireframes/podcast-row-item.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/podcast-row-item.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">checkbox</span></div>
+  </div>
+</article>
+<article class="card" id="c-podcast-row">
+  <a class="shot" href="#d-podcast-row" aria-label="Zoom Podcast/Row"><img loading="lazy" src="images/podcast-row/ideal__default__compact.png" alt="Podcast/Row" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-podcast-row">Podcast/Row</a></h3>
+    <div class="sub">1082×525<a class="wf" href="wireframes/podcast-row.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/podcast-row.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">checkbox</span><span class="chip chip--info">checkbox</span><span class="chip chip--info">checkbox</span></div>
+  </div>
+</article>
+<article class="card" id="c-discover-category-tabs">
+  <a class="shot" href="#d-discover-category-tabs" aria-label="Zoom Discover/Category tabs"><img loading="lazy" src="images/discover-category-tabs/ideal__default__compact.png" alt="Discover/Category tabs" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-discover-category-tabs">Discover/Category tabs</a></h3>
+    <div class="sub">1082×252<a class="wf" href="wireframes/discover-category-tabs.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/discover-category-tabs.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">checkbox</span><span class="chip chip--info">checkbox</span><span class="chip chip--info">checkbox</span></div>
+  </div>
+</article>
+<article class="card" id="c-discover-category-chip">
+  <a class="shot" href="#d-discover-category-chip" aria-label="Zoom Discover/Category chip"><img loading="lazy" src="images/discover-category-chip/ideal__default.png" alt="Discover/Category chip" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-discover-category-chip">Discover/Category chip</a></h3>
+    <div class="sub">284×168<a class="statechip" href="#d-discover-category-chip">+1 variant</a><a class="wf" href="wireframes/discover-category-chip.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/discover-category-chip.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">checkbox</span></div>
+  </div>
+</article>
+<article class="card" id="c-podcast-follow-toggle">
+  <a class="shot" href="#d-podcast-follow-toggle" aria-label="Zoom Podcast/Follow toggle"><img loading="lazy" src="images/podcast-follow-toggle/ideal__default__dark.png" alt="Podcast/Follow toggle" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-podcast-follow-toggle">Podcast/Follow toggle</a></h3>
+    <div class="sub">168×168<a class="statechip" href="#d-podcast-follow-toggle">+1 variant</a><a class="wf" href="wireframes/podcast-follow-toggle.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/podcast-follow-toggle.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">checkbox</span></div>
+  </div>
+</article></div>
+    </section>
+<section class="group" id="g-episodes">
+      <h2>Episodes</h2>
+      <div class="grid"><article class="card" id="c-episode-list-item">
+  <a class="shot" href="#d-episode-list-item" aria-label="Zoom Episode/List item"><img loading="lazy" src="images/episode-list-item/ideal__default__dark.png" alt="Episode/List item" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-episode-list-item">Episode/List item</a></h3>
+    <div class="sub">1050×454<a class="statechip" href="#d-episode-list-item">+5 variants</a><a class="wf" href="wireframes/episode-list-item.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/episode-list-item.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span></div>
+  </div>
+</article></div>
+    </section>
+<section class="group" id="g-player">
+      <h2>Player</h2>
+      <div class="grid"><article class="card" id="c-player-screen">
+  <a class="shot" href="#d-player-screen" aria-label="Zoom Player/Screen"><img loading="lazy" src="images/player-screen/ideal__default__compact.png" alt="Player/Screen" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-player-screen">Player/Screen</a></h3>
+    <div class="sub">1082×2363<a class="statechip" href="#d-player-screen">+2 variants</a><a class="wf" href="wireframes/player-screen.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/player-screen.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">checkbox</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span></div>
+  </div>
+</article></div>
+    </section>
+<section class="group" id="g-player-controls">
+      <h2>Player controls</h2>
+      <div class="grid"><article class="card" id="c-player-transport">
+  <a class="shot" href="#d-player-transport" aria-label="Zoom Player/Transport"><img loading="lazy" src="images/player-transport/ideal__default__dark.png" alt="Player/Transport" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-player-transport">Player/Transport</a></h3>
+    <div class="sub">757×620<a class="statechip" href="#d-player-transport">+3 variants</a><a class="wf" href="wireframes/player-transport.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/player-transport.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">checkbox</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span></div>
+  </div>
+</article>
+<article class="card" id="c-player-slider">
+  <a class="shot" href="#d-player-slider" aria-label="Zoom Player/Slider"><img loading="lazy" src="images/player-slider/ideal__default__compact.png" alt="Player/Slider" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-player-slider">Player/Slider</a></h3>
+    <div class="sub">1082×213<a class="statechip" href="#d-player-slider">+2 states</a><a class="wf" href="wireframes/player-slider.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/player-slider.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-player-episode-information">
+  <a class="shot" href="#d-player-episode-information" aria-label="Zoom Player/Episode information"><img loading="lazy" src="images/player-episode-information/ideal__default__compact.png" alt="Player/Episode information" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-player-episode-information">Player/Episode information</a></h3>
+    <div class="sub">1082×1103<a class="wf" href="wireframes/player-episode-information.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/player-episode-information.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-player-app-bar">
+  <a class="shot" href="#d-player-app-bar" aria-label="Zoom Player/App bar"><img loading="lazy" src="images/player-app-bar/ideal__default__compact.png" alt="Player/App bar" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-player-app-bar">Player/App bar</a></h3>
+    <div class="sub">1082×168<a class="wf" href="wireframes/player-app-bar.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/player-app-bar.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span></div>
+  </div>
+</article></div>
+    </section>
+<section class="group" id="g-chrome">
+      <h2>Chrome</h2>
+      <div class="grid"><article class="card" id="c-chrome-home-app-bar">
+  <a class="shot" href="#d-chrome-home-app-bar" aria-label="Zoom Chrome/Home app bar"><img loading="lazy" src="images/chrome-home-app-bar/ideal__default__dark.png" alt="Chrome/Home app bar" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-chrome-home-app-bar">Chrome/Home app bar</a></h3>
+    <div class="sub">1050×210<a class="statechip" href="#d-chrome-home-app-bar">+2 variants</a><a class="wf" href="wireframes/chrome-home-app-bar.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/chrome-home-app-bar.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-chrome-pill-toolbar">
+  <a class="shot" href="#d-chrome-pill-toolbar" aria-label="Zoom Chrome/Pill toolbar"><img loading="lazy" src="images/chrome-pill-toolbar/ideal__default__compact.png" alt="Chrome/Pill toolbar" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-chrome-pill-toolbar">Chrome/Pill toolbar</a></h3>
+    <div class="sub">1082×210<a class="statechip" href="#d-chrome-pill-toolbar">+1 variant</a><a class="wf" href="wireframes/chrome-pill-toolbar.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/chrome-pill-toolbar.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">button</span><span class="chip chip--info">button</span></div>
+  </div>
+</article>
+<article class="card" id="c-chrome-top-app-bar">
+  <a class="shot" href="#d-chrome-top-app-bar" aria-label="Zoom Chrome/Top app bar"><img loading="lazy" src="images/chrome-top-app-bar/ideal__default__dark.png" alt="Chrome/Top app bar" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-chrome-top-app-bar">Chrome/Top app bar</a></h3>
+    <div class="sub">1050×126<a class="wf" href="wireframes/chrome-top-app-bar.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/chrome-top-app-bar.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span></div>
+  </div>
+</article></div>
+    </section>
+<section class="group" id="g-states">
+      <h2>States</h2>
+      <div class="grid"><article class="card" id="c-chrome-home-error">
+  <a class="shot" href="#d-chrome-home-error" aria-label="Zoom Chrome/Home error"><img loading="lazy" src="images/chrome-home-error/ideal__default__dark.png" alt="Chrome/Home error" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-chrome-home-error">Chrome/Home error</a></h3>
+    <div class="sub">1050×2100<a class="statechip" href="#d-chrome-home-error">+1 variant</a><a class="wf" href="wireframes/chrome-home-error.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/chrome-home-error.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">button</span></div>
+  </div>
+</article>
+<article class="card" id="c-states-loading">
+  <a class="shot" href="#d-states-loading" aria-label="Zoom States/Loading"><img loading="lazy" src="images/states-loading/ideal__default__compact.png" alt="States/Loading" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-states-loading">States/Loading</a></h3>
+    <div class="sub">1082×788<a class="wf" href="wireframes/states-loading.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/states-loading.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-states-offline">
+  <a class="shot" href="#d-states-offline" aria-label="Zoom States/Offline"><img loading="lazy" src="images/states-offline/ideal__default__compact.png" alt="States/Offline" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-states-offline">States/Offline</a></h3>
+    <div class="sub">1082×1050<a class="wf" href="wireframes/states-offline.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/states-offline.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">button</span></div>
+  </div>
+</article></div>
+    </section></main>
+</div>
+<div class="detail" id="d-home-screen" role="dialog" aria-label="Home/Screen">
+  <a class="detail-scrim" href="#c-home-screen" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-home-screen" aria-label="Close">×</a>
+    <h3>Home/Screen</h3>
+    <div class="detail-caption">The starter screen: home on the Discover tab, which is the category HomeViewModel opens on — category chips over the top-podcast carousel and the episode list.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/home-screen/ideal__default__dark.png" alt="Home/Screen default" /><span>dark</span></div><div class="state-shot"><img loading="lazy" src="images/home-screen/ideal__default__compact.png" alt="Home/Screen default" /><span>compact</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/home-screen/ideal__default__light.png" alt="Home/Screen default" /><span>light</span></div></div></figure><figure class="state"><figcaption>selectedTab=library</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/home-screen/ideal__library__compact__selectedtab-library.png" alt="Home/Screen selectedTab=library" /><span>compact</span></div><div class="state-shot"><img loading="lazy" src="images/home-screen/ideal__empty__compact__selectedtab-library.png" alt="Home/Screen selectedTab=library" /><span>compact</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/home-screen/ideal__library__light__compact__selectedtab-library.png" alt="Home/Screen selectedTab=library" /><span>light</span></div></div></figure><figure class="state"><figcaption>isLoading=true, selectedTab=library</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/home-screen/ideal__loading__compact__isloading-true__selectedtab-library.png" alt="Home/Screen isLoading=true, selectedTab=library" /><span>compact</span></div></div></figure><figure class="state"><figcaption>posture=medium, selectedTab=library</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/home-screen/ideal__loading__medium__posture-medium__selectedtab-library.png" alt="Home/Screen posture=medium, selectedTab=library" /><span>medium</span></div></div></figure><figure class="state"><figcaption>posture=expanded, selectedTab=library</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/home-screen/ideal__loading__expanded__posture-expanded__selectedtab-library.png" alt="Home/Screen posture=expanded, selectedTab=library" /><span>expanded</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-podcastdetails-screen" role="dialog" aria-label="PodcastDetails/Screen">
+  <a class="detail-scrim" href="#c-podcastdetails-screen" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-podcastdetails-screen" aria-label="Close">×</a>
+    <h3>PodcastDetails/Screen</h3>
+    <div class="detail-caption">Podcast details at the compact catalog breakpoint.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/podcastdetails-screen/ideal__default__dark.png" alt="PodcastDetails/Screen default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/podcastdetails-screen/ideal__default__light.png" alt="PodcastDetails/Screen default" /><span>light</span></div><div class="state-shot"><img loading="lazy" src="images/podcastdetails-screen/ideal__default__compact.png" alt="PodcastDetails/Screen default" /><span>compact</span></div></div></figure><figure class="state"><figcaption>showBackButton=false</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/podcastdetails-screen/ideal__default__compact__showbackbutton-false.png" alt="PodcastDetails/Screen showBackButton=false" /><span>compact</span></div></div></figure><figure class="state"><figcaption>scope=content only</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/podcastdetails-screen/ideal__default__compact__scope-content-only.png" alt="PodcastDetails/Screen scope=content only" /><span>compact</span></div></div></figure><figure class="state"><figcaption>unsubscribed</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/podcastdetails-screen/ideal__unsubscribed__compact.png" alt="PodcastDetails/Screen unsubscribed" /><span>compact</span></div></div></figure><figure class="state"><figcaption>posture=medium</figcaption><div class="state-shots"><div class="state-shot" data-bg="light"><img loading="lazy" src="images/podcastdetails-screen/ideal__default__light__medium__posture-medium.png" alt="PodcastDetails/Screen posture=medium" /><span>light</span></div></div></figure><figure class="state"><figcaption>posture=expanded</figcaption><div class="state-shots"><div class="state-shot" data-bg="light"><img loading="lazy" src="images/podcastdetails-screen/ideal__default__light__expanded__posture-expanded.png" alt="PodcastDetails/Screen posture=expanded" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-podcastdetails-header" role="dialog" aria-label="PodcastDetails/Header">
+  <a class="detail-scrim" href="#c-podcastdetails-header" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-podcastdetails-header" aria-label="Close">×</a>
+    <h3>PodcastDetails/Header</h3>
+    <div class="detail-caption">Podcast details header: artwork, title, and the follow affordance.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/podcastdetails-header/ideal__default__dark.png" alt="PodcastDetails/Header default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/podcastdetails-header/ideal__default__light.png" alt="PodcastDetails/Header default" /><span>light</span></div><div class="state-shot"><img loading="lazy" src="images/podcastdetails-header/ideal__default.png" alt="PodcastDetails/Header default" /><span>default</span></div></div></figure><figure class="state"><figcaption>isSubscribed=true</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/podcastdetails-header/ideal__subscribed__compact__issubscribed-true.png" alt="PodcastDetails/Header isSubscribed=true" /><span>compact</span></div></div></figure><figure class="state"><figcaption>isSubscribed=false</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/podcastdetails-header/ideal__unsubscribed__compact__issubscribed-false.png" alt="PodcastDetails/Header isSubscribed=false" /><span>compact</span></div></div></figure><figure class="state"><figcaption>title=overflowing</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/podcastdetails-header/ideal__default__compact__title-overflowing.png" alt="PodcastDetails/Header title=overflowing" /><span>compact</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-podcastdetails-description" role="dialog" aria-label="PodcastDetails/Description">
+  <a class="detail-scrim" href="#c-podcastdetails-description" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-podcastdetails-description" aria-label="Close">×</a>
+    <h3>PodcastDetails/Description</h3>
+    <div class="detail-caption">Show notes short enough to fit inside the collapsed line limit.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/podcastdetails-description/ideal__default__dark.png" alt="PodcastDetails/Description default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/podcastdetails-description/ideal__default__light.png" alt="PodcastDetails/Description default" /><span>light</span></div><div class="state-shot"><img loading="lazy" src="images/podcastdetails-description/ideal__default__compact.png" alt="PodcastDetails/Description default" /><span>compact</span></div></div></figure><figure class="state"><figcaption>overflowing</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/podcastdetails-description/ideal__overflowing__compact.png" alt="PodcastDetails/Description overflowing" /><span>compact</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-podcastdetails-app-bar" role="dialog" aria-label="PodcastDetails/App bar">
+  <a class="detail-scrim" href="#c-podcastdetails-app-bar" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-podcastdetails-app-bar" aria-label="Close">×</a>
+    <h3>PodcastDetails/App bar</h3>
+    <div class="detail-caption">Details app bar with the back affordance.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/podcastdetails-app-bar/ideal__default__dark.png" alt="PodcastDetails/App bar default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/podcastdetails-app-bar/ideal__default__light.png" alt="PodcastDetails/App bar default" /><span>light</span></div><div class="state-shot"><img loading="lazy" src="images/podcastdetails-app-bar/ideal__default__compact.png" alt="PodcastDetails/App bar default" /><span>compact</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-podcastdetails-subscribe" role="dialog" aria-label="PodcastDetails/Subscribe">
+  <a class="detail-scrim" href="#c-podcastdetails-subscribe" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-podcastdetails-subscribe" aria-label="Close">×</a>
+    <h3>PodcastDetails/Subscribe</h3>
+    <div class="detail-caption">Subscribe action row, not yet subscribed.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/podcastdetails-subscribe/ideal__default__dark.png" alt="PodcastDetails/Subscribe default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/podcastdetails-subscribe/ideal__default__light.png" alt="PodcastDetails/Subscribe default" /><span>light</span></div><div class="state-shot"><img loading="lazy" src="images/podcastdetails-subscribe/ideal__default__compact.png" alt="PodcastDetails/Subscribe default" /><span>compact</span></div></div></figure><figure class="state"><figcaption>isSubscribed=true</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/podcastdetails-subscribe/ideal__subscribed__compact__issubscribed-true.png" alt="PodcastDetails/Subscribe isSubscribed=true" /><span>compact</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-podcast-card" role="dialog" aria-label="Podcast/Card">
+  <a class="detail-scrim" href="#c-podcast-card" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-podcast-card" aria-label="Close">×</a>
+    <h3>Podcast/Card</h3>
+    <div class="detail-caption">Podcast card as it appears in the discover carousel — artwork drives the surrounding dynamic colour.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/podcast-card/ideal__default__dark.png" alt="Podcast/Card default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/podcast-card/ideal__default__light.png" alt="Podcast/Card default" /><span>light</span></div><div class="state-shot"><img loading="lazy" src="images/podcast-card/ideal__default.png" alt="Podcast/Card default" /><span>default</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-podcast-row-item" role="dialog" aria-label="Podcast/Row item">
+  <a class="detail-scrim" href="#c-podcast-row-item" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-podcast-row-item" aria-label="Close">×</a>
+    <h3>Podcast/Row item</h3>
+    <div class="detail-caption">Carousel item, not followed.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/podcast-row-item/ideal__default__dark__compact.png" alt="Podcast/Row item default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/podcast-row-item/ideal__default__light__compact.png" alt="Podcast/Row item default" /><span>light</span></div></div></figure><figure class="state"><figcaption>isFollowed=true</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/podcast-row-item/ideal__followed__compact__isfollowed-true.png" alt="Podcast/Row item isFollowed=true" /><span>compact</span></div></div></figure><figure class="state"><figcaption>title=overflowing</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/podcast-row-item/ideal__default__compact__title-overflowing.png" alt="Podcast/Row item title=overflowing" /><span>compact</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-podcast-row" role="dialog" aria-label="Podcast/Row">
+  <a class="detail-scrim" href="#c-podcast-row" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-podcast-row" aria-label="Close">×</a>
+    <h3>Podcast/Row</h3>
+    <div class="detail-caption">The horizontally scrolling row of podcasts within a category.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/podcast-row/ideal__default__compact.png" alt="Podcast/Row default" /><span>compact</span></div><div class="state-shot"><img loading="lazy" src="images/podcast-row/ideal__default__dark.png" alt="Podcast/Row default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/podcast-row/ideal__default__light.png" alt="Podcast/Row default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-discover-category-tabs" role="dialog" aria-label="Discover/Category tabs">
+  <a class="detail-scrim" href="#c-discover-category-tabs" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-discover-category-tabs" aria-label="Close">×</a>
+    <h3>Discover/Category tabs</h3>
+    <div class="detail-caption">Scrollable category tabs with the second category selected.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/discover-category-tabs/ideal__default__compact.png" alt="Discover/Category tabs default" /><span>compact</span></div><div class="state-shot"><img loading="lazy" src="images/discover-category-tabs/ideal__default__dark.png" alt="Discover/Category tabs default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/discover-category-tabs/ideal__default__light.png" alt="Discover/Category tabs default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-discover-category-chip" role="dialog" aria-label="Discover/Category chip">
+  <a class="detail-scrim" href="#c-discover-category-chip" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-discover-category-chip" aria-label="Close">×</a>
+    <h3>Discover/Category chip</h3>
+    <div class="detail-caption">Category chip, unselected.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/discover-category-chip/ideal__default.png" alt="Discover/Category chip default" /><span>default</span></div><div class="state-shot"><img loading="lazy" src="images/discover-category-chip/ideal__default__dark.png" alt="Discover/Category chip default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/discover-category-chip/ideal__default__light.png" alt="Discover/Category chip default" /><span>light</span></div></div></figure><figure class="state"><figcaption>selected=true</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/discover-category-chip/ideal__selected__selected-true.png" alt="Discover/Category chip selected=true" /><span>selected</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-podcast-follow-toggle" role="dialog" aria-label="Podcast/Follow toggle">
+  <a class="detail-scrim" href="#c-podcast-follow-toggle" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-podcast-follow-toggle" aria-label="Close">×</a>
+    <h3>Podcast/Follow toggle</h3>
+    <div class="detail-caption">The follow toggle in its resting state.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/podcast-follow-toggle/ideal__default__dark.png" alt="Podcast/Follow toggle default" /><span>dark</span></div><div class="state-shot"><img loading="lazy" src="images/podcast-follow-toggle/ideal__default.png" alt="Podcast/Follow toggle default" /><span>default</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/podcast-follow-toggle/ideal__default__light.png" alt="Podcast/Follow toggle default" /><span>light</span></div></div></figure><figure class="state"><figcaption>isFollowed=true</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/podcast-follow-toggle/ideal__followed__isfollowed-true.png" alt="Podcast/Follow toggle isFollowed=true" /><span>followed</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-episode-list-item" role="dialog" aria-label="Episode/List item">
+  <a class="detail-scrim" href="#c-episode-list-item" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-episode-list-item" aria-label="Close">×</a>
+    <h3>Episode/List item</h3>
+    <div class="detail-caption">Episode row as the sample&#39;s own preview drives it.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/episode-list-item/ideal__default__dark.png" alt="Episode/List item default" /><span>dark</span></div><div class="state-shot"><img loading="lazy" src="images/episode-list-item/ideal__default.png" alt="Episode/List item default" /><span>default</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/episode-list-item/ideal__default__light.png" alt="Episode/List item default" /><span>light</span></div></div></figure><figure class="state"><figcaption>source=sample</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/episode-list-item/ideal__default__source-sample.png" alt="Episode/List item source=sample" /><span>default</span></div></div></figure><figure class="state"><figcaption>duration=52m</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/episode-list-item/ideal__default__compact__duration-52m.png" alt="Episode/List item duration=52m" /><span>compact</span></div></div></figure><figure class="state"><figcaption>showSummary=true</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/episode-list-item/ideal__expanded__compact__showsummary-true.png" alt="Episode/List item showSummary=true" /><span>compact</span></div></div></figure><figure class="state"><figcaption>showPodcastImage=false</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/episode-list-item/ideal__default__compact__showpodcastimage-false.png" alt="Episode/List item showPodcastImage=false" /><span>compact</span></div></div></figure><figure class="state"><figcaption>duration=null</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/episode-list-item/ideal__default__compact__duration-null.png" alt="Episode/List item duration=null" /><span>compact</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-player-screen" role="dialog" aria-label="Player/Screen">
+  <a class="detail-scrim" href="#c-player-screen" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-player-screen" aria-label="Close">×</a>
+    <h3>Player/Screen</h3>
+    <div class="detail-caption">The now-playing screen at the compact catalog breakpoint.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/player-screen/ideal__default__dark.png" alt="Player/Screen default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/player-screen/ideal__default__light.png" alt="Player/Screen default" /><span>light</span></div><div class="state-shot"><img loading="lazy" src="images/player-screen/ideal__default__compact.png" alt="Player/Screen default" /><span>compact</span></div></div></figure><figure class="state"><figcaption>posture=medium</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/player-screen/ideal__default__medium__posture-medium.png" alt="Player/Screen posture=medium" /><span>medium</span></div></div></figure><figure class="state"><figcaption>posture=expanded</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/player-screen/ideal__default__expanded__posture-expanded.png" alt="Player/Screen posture=expanded" /><span>expanded</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-player-transport" role="dialog" aria-label="Player/Transport">
+  <a class="detail-scrim" href="#c-player-transport" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-player-transport" aria-label="Close">×</a>
+    <h3>Player/Transport</h3>
+    <div class="detail-caption">Transport controls as the sample&#39;s own preview drives them.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/player-transport/ideal__default__dark.png" alt="Player/Transport default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/player-transport/ideal__default__light.png" alt="Player/Transport default" /><span>light</span></div><div class="state-shot"><img loading="lazy" src="images/player-transport/ideal__default.png" alt="Player/Transport default" /><span>default</span></div></div></figure><figure class="state"><figcaption>isPlaying=true</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/player-transport/ideal__playing__compact__isplaying-true.png" alt="Player/Transport isPlaying=true" /><span>compact</span></div></div></figure><figure class="state"><figcaption>isPlaying=false</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/player-transport/ideal__paused__compact__isplaying-false.png" alt="Player/Transport isPlaying=false" /><span>compact</span></div></div></figure><figure class="state"><figcaption>hasNext=false</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/player-transport/ideal__queue-empty__compact__hasnext-false.png" alt="Player/Transport hasNext=false" /><span>compact</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-player-slider" role="dialog" aria-label="Player/Slider">
+  <a class="detail-scrim" href="#c-player-slider" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-player-slider" aria-label="Close">×</a>
+    <h3>Player/Slider</h3>
+    <div class="detail-caption">Scrubber at the start of an episode.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/player-slider/ideal__default__dark.png" alt="Player/Slider default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/player-slider/ideal__default__light.png" alt="Player/Slider default" /><span>light</span></div><div class="state-shot"><img loading="lazy" src="images/player-slider/ideal__default__compact.png" alt="Player/Slider default" /><span>compact</span></div></div></figure><figure class="state"><figcaption>in-progress</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/player-slider/ideal__in-progress__compact.png" alt="Player/Slider in-progress" /><span>compact</span></div></div></figure><figure class="state"><figcaption>complete</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/player-slider/ideal__complete__compact.png" alt="Player/Slider complete" /><span>compact</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-player-episode-information" role="dialog" aria-label="Player/Episode information">
+  <a class="detail-scrim" href="#c-player-episode-information" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-player-episode-information" aria-label="Close">×</a>
+    <h3>Player/Episode information</h3>
+    <div class="detail-caption">Episode title, podcast name and summary as stacked on the player.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/player-episode-information/ideal__default__dark.png" alt="Player/Episode information default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/player-episode-information/ideal__default__light.png" alt="Player/Episode information default" /><span>light</span></div><div class="state-shot"><img loading="lazy" src="images/player-episode-information/ideal__default__compact.png" alt="Player/Episode information default" /><span>compact</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-player-app-bar" role="dialog" aria-label="Player/App bar">
+  <a class="detail-scrim" href="#c-player-app-bar" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-player-app-bar" aria-label="Close">×</a>
+    <h3>Player/App bar</h3>
+    <div class="detail-caption">Player app bar: back, plus add-to-queue.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/player-app-bar/ideal__default__dark.png" alt="Player/App bar default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/player-app-bar/ideal__default__light.png" alt="Player/App bar default" /><span>light</span></div><div class="state-shot"><img loading="lazy" src="images/player-app-bar/ideal__default__compact.png" alt="Player/App bar default" /><span>compact</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-chrome-home-app-bar" role="dialog" aria-label="Chrome/Home app bar">
+  <a class="detail-scrim" href="#c-chrome-home-app-bar" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-chrome-home-app-bar" aria-label="Close">×</a>
+    <h3>Chrome/Home app bar</h3>
+    <div class="detail-caption">Home app bar as the sample&#39;s own preview drives it.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/chrome-home-app-bar/ideal__default__dark.png" alt="Chrome/Home app bar default" /><span>dark</span></div><div class="state-shot"><img loading="lazy" src="images/chrome-home-app-bar/ideal__default.png" alt="Chrome/Home app bar default" /><span>default</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/chrome-home-app-bar/ideal__default__light.png" alt="Chrome/Home app bar default" /><span>light</span></div></div></figure><figure class="state"><figcaption>isExpanded=false</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/chrome-home-app-bar/ideal__collapsed__compact__isexpanded-false.png" alt="Chrome/Home app bar isExpanded=false" /><span>compact</span></div></div></figure><figure class="state"><figcaption>isExpanded=true</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/chrome-home-app-bar/ideal__expanded__compact__isexpanded-true.png" alt="Chrome/Home app bar isExpanded=true" /><span>compact</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-chrome-pill-toolbar" role="dialog" aria-label="Chrome/Pill toolbar">
+  <a class="detail-scrim" href="#c-chrome-pill-toolbar" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-chrome-pill-toolbar" aria-label="Close">×</a>
+    <h3>Chrome/Pill toolbar</h3>
+    <div class="detail-caption">The floating pill toolbar with Discover selected.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/chrome-pill-toolbar/ideal__default__dark.png" alt="Chrome/Pill toolbar default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/chrome-pill-toolbar/ideal__default__light.png" alt="Chrome/Pill toolbar default" /><span>light</span></div><div class="state-shot"><img loading="lazy" src="images/chrome-pill-toolbar/ideal__default__compact.png" alt="Chrome/Pill toolbar default" /><span>compact</span></div></div></figure><figure class="state"><figcaption>selected=Library</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/chrome-pill-toolbar/ideal__library__compact__selected-library.png" alt="Chrome/Pill toolbar selected=Library" /><span>compact</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-chrome-top-app-bar" role="dialog" aria-label="Chrome/Top app bar">
+  <a class="detail-scrim" href="#c-chrome-top-app-bar" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-chrome-top-app-bar" aria-label="Close">×</a>
+    <h3>Chrome/Top app bar</h3>
+    <div class="detail-caption">The shared top app bar.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/chrome-top-app-bar/ideal__default__dark.png" alt="Chrome/Top app bar default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/chrome-top-app-bar/ideal__default__light.png" alt="Chrome/Top app bar default" /><span>light</span></div><div class="state-shot"><img loading="lazy" src="images/chrome-top-app-bar/ideal__default.png" alt="Chrome/Top app bar default" /><span>default</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-chrome-home-error" role="dialog" aria-label="Chrome/Home error">
+  <a class="detail-scrim" href="#c-chrome-home-error" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-chrome-home-error" aria-label="Close">×</a>
+    <h3>Chrome/Home error</h3>
+    <div class="detail-caption">Home error state as the sample&#39;s own preview drives it.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/chrome-home-error/ideal__default__dark.png" alt="Chrome/Home error default" /><span>dark</span></div><div class="state-shot"><img loading="lazy" src="images/chrome-home-error/ideal__default.png" alt="Chrome/Home error default" /><span>default</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/chrome-home-error/ideal__default__light.png" alt="Chrome/Home error default" /><span>light</span></div></div></figure><figure class="state"><figcaption>onRetry=present</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/chrome-home-error/ideal__default__compact__onretry-present.png" alt="Chrome/Home error onRetry=present" /><span>compact</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-states-loading" role="dialog" aria-label="States/Loading">
+  <a class="detail-scrim" href="#c-states-loading" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-states-loading" aria-label="Close">×</a>
+    <h3>States/Loading</h3>
+    <div class="detail-caption">The shared loading indicator.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/states-loading/ideal__default__dark.png" alt="States/Loading default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/states-loading/ideal__default__light.png" alt="States/Loading default" /><span>light</span></div><div class="state-shot"><img loading="lazy" src="images/states-loading/ideal__default__compact.png" alt="States/Loading default" /><span>compact</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-states-offline" role="dialog" aria-label="States/Offline">
+  <a class="detail-scrim" href="#c-states-offline" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-states-offline" aria-label="Close">×</a>
+    <h3>States/Offline</h3>
+    <div class="detail-caption">Offline dialog, shown when the feed refresh cannot reach the network. Drawn inline from AlertDialogDefaults rather than through OfflineDialog&#39;s AlertDialog: a Material 3 dialog composes into its own window, so the root semantics tree the catalog reads comes back empty.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/states-offline/ideal__default__dark.png" alt="States/Offline default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/states-offline/ideal__default__light.png" alt="States/Offline default" /><span>light</span></div><div class="state-shot"><img loading="lazy" src="images/states-offline/ideal__default__compact.png" alt="States/Offline default" /><span>compact</span></div></div></figure></div>
+  </div>
+</div>
+<script>
+// Crop each component's hero (and its zoom-view default capture) to the component's content bbox,
+// read from its figma-svg's root translate + viewBox. A wear sticker rendered on a 454² device
+// canvas then displays cropped to the component instead of floating in an empty frame. A no-op for
+// close-cropped renders (the bbox already fills the frame) and for components with no figma-svg.
+(function () {
+  function parseBox(svgText) {
+    var t = /translate\(\s*(-?\d+)\s*,\s*(-?\d+)\s*\)/.exec(svgText);
+    var v = /viewBox="0 0 (\d+(?:\.\d+)?) (\d+(?:\.\d+)?)"/.exec(svgText);
+    if (!v) return null;
+    return { tx: t ? +t[1] : 0, ty: t ? +t[2] : 0, vw: +v[1], vh: +v[2] };
+  }
+  function frame(shot, box) {
+    var img = shot.querySelector("img");
+    if (!img) return;
+    function apply() {
+      var rw = img.naturalWidth || img.width, rh = img.naturalHeight || img.height;
+      if (!(rw > 0 && rh > 0)) return;
+      if (box.vw >= rw * 0.9 && box.vh >= rh * 0.9) return; // already close-cropped
+      var cap = 240, scale = Math.min(1, cap / Math.max(box.vw, box.vh));
+      var dw = Math.max(1, Math.round(box.vw * scale));
+      shot.classList.add("shot--framed");
+      // Size the window by aspect-ratio at its natural (capped) width, with max-width:100% so it
+      // shrinks to a narrow grid card instead of overflowing it; frame the render in PERCENTAGES of
+      // the box so the whole thing scales as one. (A fixed-px window overflowed the card and clipped
+      // wide components.) Height stays auto — the img keeps the render's aspect.
+      var pct = function (n, d) { return +(n / d * 100).toFixed(4); };
+      shot.style.width = dw + "px";
+      shot.style.aspectRatio = box.vw + " / " + box.vh;
+      img.style.width = pct(rw, box.vw) + "%";
+      // (tx,ty) is negative for a centred component, so it shifts the render to bring the component's
+      // top-left to the clip origin; as a % of the box axis it scales with the shrunk window.
+      img.style.left = pct(box.tx, box.vw) + "%";
+      img.style.top = pct(box.ty, box.vh) + "%";
+    }
+    if (img.complete) apply();
+    else img.addEventListener("load", apply);
+  }
+  document.querySelectorAll(".card").forEach(function (card) {
+    var link = card.querySelector('a.wf[href^="figma/"]');
+    if (!link) return;
+    var hero = card.querySelector("a.shot");
+    if (!hero) return;
+    fetch(link.getAttribute("href"))
+      .then(function (r) { return r.ok ? r.text() : null; })
+      .then(function (txt) {
+        if (!txt) return;
+        var box = parseBox(txt);
+        if (box) frame(hero, box);
+      })
+      .catch(function () {});
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1114" height="221" viewBox="0 0 1114 221" text-rendering="geometricPrecision" font-family="sans-serif">
+<g transform="translate(16, 16)">
+  <rect x="0" y="0" width="1082" height="189" fill="#FFFFFF"/>
+  <g id="Root">
+    <g id="ReusableComposeNode">
+      <rect x="0" y="0" width="1081" height="189" fill="#FEF7FF"/>
+      <g id="ReusableComposeNode">
+        <g id="ReusableComposeNode">
+          <rect x="21" y="21" width="200" height="147" rx="39.37" ry="39.37" fill="#FFE523"/>
+          <g id="ReusableComposeNode">
+            <g transform="translate(90 63) scale(0.06 0.06)">
+              <path d="M440 520 L200 520 L200 440 L440 440 L440 200 L520 200 L520 440 L760 440 L760 520 L520 520 L520 760 L440 760 L440 520 Z" fill="#332D00"/>
+            </g>
+          </g>
+        </g>
+        <clipPath id="clip-0"><rect x="253" y="21" width="147" height="147" rx="262.5" ry="262.5"/></clipPath>
+        <g id="ReusableComposeNode">
+          <rect x="253" y="21" width="147" height="147" rx="262.5" ry="262.5" fill="#EFE0D6"/>
+          <g clip-path="url(#clip-0)">
+            <g id="ReusableComposeNode">
+              <g transform="translate(295 63) scale(0.06 0.06)">
+                <path d="M160 760 L160 680 L240 680 L240 400 Q 240 317 290 252.5 Q 340 188 420 168 L420 140 Q 420 115 437.5 97.5 Q 455 80 480 80 Q 505 80 522.5 97.5 Q 540 115 540 140 L540 168 Q 620 188 670 252.5 Q 720 317 720 400 L720 680 L800 680 L800 760 L160 760 Z M480 880 Q 447 880 423.5 856.5 Q 400 833 400 800 L560 800 Q 560 833 536.5 856.5 Q 513 880 480 880 Z" fill="#E7E0EB"/>
+              </g>
+            </g>
+          </g>
+        </g>
+        <g id="ReusableComposeNode">
+        </g>
+        <g id="ReusableComposeNode">
+        </g>
+      </g>
+    </g>
+  </g>
+</g>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="368" height="368" viewBox="0 0 368 368" text-rendering="geometricPrecision" font-family="sans-serif">
+<defs>
+  <linearGradient id="gf-0" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#000000" stop-opacity="0"/>
+    <stop offset="1" stop-color="#000000"/>
+  </linearGradient>
+</defs>
+<g transform="translate(16, 16)">
+  <g id="Root">
+    <g id="ReusableComposeNode">
+      <g id="ReusableComposeNode">
+        <rect x="0" y="0" width="336" height="336" rx="21" ry="21" fill="#FF792C"/>
+      </g>
+      <g id="ReusableComposeNode">
+        <rect x="11" y="11" width="105" height="105" rx="52.5" ry="52.5" fill="#F3EDF7"/>
+        <g id="ReusableComposeNode">
+          <g transform="translate(32 32) scale(0.06 0.06)">
+            <path d="M382 720 L154 492 L211 435 L382 606 L749 239 L806 296 L382 720 Z" fill="#FFE523"/>
+          </g>
+        </g>
+      </g>
+      <g id="ReusableComposeNode">
+        <rect x="0" y="0" width="336" height="336" fill="url(#gf-0)"/>
+      </g>
+    </g>
+  </g>
+</g>
+</svg>

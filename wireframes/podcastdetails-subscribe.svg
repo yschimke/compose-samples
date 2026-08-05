@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 189" width="1050" height="189" role="img" aria-label="PodcastDetails/Subscribe layout wireframe">
+  <title>PodcastDetails/Subscribe — layout wireframe (slots + tokens)</title>
+  <rect width="1050" height="189" fill="#ffffff"/>
+  <g>
+    <rect x="0" y="0" width="1050" height="189" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="1050" height="189" fill="none" fill-opacity="0" stroke="#2E7D6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="1050" height="189" fill="#FEF7FF" fill-opacity="1" stroke="#8E6BA8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="3" y="12" font-family="system-ui, sans-serif" font-size="9" fill="#8E6BA8">#FFFEF7FF</text>
+  </g>
+  <g>
+    <rect x="21" y="21" width="1008" height="147" fill="none" fill-opacity="0" stroke="#B0813B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="21" y="21" width="1008" height="147" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M60.375,21 H181.625 A39.375,39.375 0 0 1 221,60.375 V128.625 A39.375,39.375 0 0 1 181.625,168 H60.375 A39.375,39.375 0 0 1 21,128.625 V60.375 A39.375,39.375 0 0 1 60.375,21 Z" fill="#FFE523" fill-opacity="1" stroke="#A85B6B" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="24" y="33" font-family="system-ui, sans-serif" font-size="9" fill="#A85B6B">#FFFFE523</text>
+  </g>
+  <g>
+    <rect x="63" y="47" width="116" height="95" fill="none" fill-opacity="0" stroke="#4F8A4A" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="90" y="63" width="63" height="63" fill="none" fill-opacity="0" stroke="#7A7A33" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M326.5,21 H326.5 A73.5,73.5 0 0 1 400,94.5 V94.5 A73.5,73.5 0 0 1 326.5,168 H326.5 A73.5,73.5 0 0 1 253,94.5 V94.5 A73.5,73.5 0 0 1 326.5,21 Z" fill="#EFE0D6" fill-opacity="1" stroke="#A85B6B" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="256" y="33" font-family="system-ui, sans-serif" font-size="9" fill="#A85B6B">#FFEFE0D6</text>
+  </g>
+  <g>
+    <rect x="295" y="47" width="63" height="95" fill="none" fill-opacity="0" stroke="#4F8A4A" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="295" y="63" width="63" height="63" fill="none" fill-opacity="0" stroke="#7A7A33" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+</svg>

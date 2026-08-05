@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1114" height="242" viewBox="0 0 1114 242" text-rendering="geometricPrecision" font-family="sans-serif">
+<g transform="translate(16, 16)">
+  <rect x="0" y="0" width="1082" height="210" fill="#FFFFFF"/>
+  <g id="Root">
+    <g id="ReusableComposeNode">
+      <rect x="0" y="0" width="1081" height="210" fill="#FEF7FF"/>
+      <g id="ReusableComposeNode">
+        <image href="ideal__default__compact.figma-raster/593.png" x="21" y="21" width="1039" height="168"/>
+        <g id="ReusableComposeNode">
+          <g id="ReusableComposeNode">
+            <g transform="translate(64 74) scale(0.06 0.06)">
+              <path d="M313 520 L537 744 L480 800 L160 480 L480 160 L537 216 L313 440 L800 440 L800 520 L313 520 Z" fill="#1D1B20"/>
+            </g>
+          </g>
+          <g id="ReusableComposeNode">
+          </g>
+          <g id="ReusableComposeNode">
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</g>
+</svg>
