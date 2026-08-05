@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 294" width="1050" height="294" role="img" aria-label="PostCard/Simple layout wireframe">
+  <title>PostCard/Simple — layout wireframe (slots + tokens)</title>
+  <rect width="1050" height="294" fill="#ffffff"/>
+  <g>
+    <rect x="0" y="0" width="1050" height="294" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="1050" height="294" fill="none" fill-opacity="0" stroke="#2E7D6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="1050" height="294" fill="#FAF8FF" fill-opacity="1" stroke="#8E6BA8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="3" y="12" font-family="system-ui, sans-serif" font-size="9" fill="#8E6BA8">#FFFAF8FF</text>
+  </g>
+  <g>
+    <rect x="0" y="0" width="1050" height="294" fill="none" fill-opacity="0" stroke="#B0813B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M52.5,42 H136.5 A10.5,10.5 0 0 1 147,52.5 V136.5 A10.5,10.5 0 0 1 136.5,147 H52.5 A10.5,10.5 0 0 1 42,136.5 V52.5 A10.5,10.5 0 0 1 52.5,42 Z" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="45" y="54" font-family="system-ui, sans-serif" font-size="9" fill="#3B72A8">pad 16.0dp</text>
+  </g>
+  <g>
+    <rect x="189" y="26" width="703" height="242" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="189" y="26" width="703" height="189" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="189" y="215" width="596" height="53" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="189" y="215" width="596" height="53" fill="none" fill-opacity="0" stroke="#4F8A4A" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M971.5,16 H971.5 A52.5,52.5 0 0 1 1024,68.5 V68.5 A52.5,52.5 0 0 1 971.5,121 H971.5 A52.5,52.5 0 0 1 919,68.5 V68.5 A52.5,52.5 0 0 1 971.5,16 Z" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="922" y="28" font-family="system-ui, sans-serif" font-size="9" fill="#3B72A8">pad ·</text>
+  </g>
+  <g>
+    <rect x="940" y="37" width="63" height="63" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+</svg>

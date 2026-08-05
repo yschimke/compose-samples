@@ -1,0 +1,325 @@
+{
+  "system": "jetnews",
+  "title": "JetNews",
+  "label": "Compose",
+  "source": {
+    "repo": "yschimke/compose-samples",
+    "ref": "previews",
+    "module": ":app"
+  },
+  "generatedAt": "2026-08-05T23:24:27.225Z",
+  "mappings": [
+    {
+      "componentId": "Screens/Home feed",
+      "figmaLayerName": "Screens/Home feed",
+      "componentName": "HomeFeedScreen",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetnews/ui/home/HomeScreens.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "PreviewHomeListDrawerScreen",
+      "codeSnippet": "HomeFeedScreen(\n    uiState = TODO(\"HomeUiState\"),\n    showTopAppBar = TODO(\"Boolean\"),\n    onToggleFavorite = { },\n    onSelectPost = { },\n    onRefreshPosts = { },\n    onErrorDismiss = { },\n    openDrawer = { },\n    homeListLazyListState = TODO(\"LazyListState\"),\n    snackbarHostState = TODO(\"SnackbarHostState\"),\n    onSearchInputChanged = { },\n)",
+      "imports": [
+        "import com.example.jetnews.ui.home.HomeFeedScreen"
+      ],
+      "parameters": [
+        {
+          "name": "uiState",
+          "type": "HomeUiState",
+          "hasDefault": false,
+          "composableSlot": false
+        },
+        {
+          "name": "showTopAppBar",
+          "type": "Boolean",
+          "hasDefault": false,
+          "composableSlot": false
+        },
+        {
+          "name": "onToggleFavorite",
+          "type": "(String) -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        },
+        {
+          "name": "onSelectPost",
+          "type": "(String) -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        },
+        {
+          "name": "onRefreshPosts",
+          "type": "() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        },
+        {
+          "name": "onErrorDismiss",
+          "type": "(Long) -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        },
+        {
+          "name": "openDrawer",
+          "type": "() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        },
+        {
+          "name": "homeListLazyListState",
+          "type": "LazyListState",
+          "hasDefault": false,
+          "composableSlot": false
+        },
+        {
+          "name": "snackbarHostState",
+          "type": "SnackbarHostState",
+          "hasDefault": false,
+          "composableSlot": false
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "searchInput",
+          "type": "String",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "onSearchInputChanged",
+          "type": "(String) -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "figma/screens-home-feed.svg"
+    },
+    {
+      "componentId": "Screens/App shell",
+      "figmaLayerName": "Screens/App shell",
+      "componentName": "JetnewsApp",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetnews/ui/JetnewsApp.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "PreviewJetnewsAppCompact",
+      "codeSnippet": "JetnewsApp(\n    appContainer = TODO(\"AppContainer\"),\n    isBackEnabled = TODO(\"Boolean\"),\n    initialBackStack = TODO(\"List<NavKey>\"),\n)",
+      "imports": [
+        "import com.example.jetnews.ui.JetnewsApp"
+      ],
+      "parameters": [
+        {
+          "name": "appContainer",
+          "type": "AppContainer",
+          "hasDefault": false,
+          "composableSlot": false
+        },
+        {
+          "name": "isBackEnabled",
+          "type": "Boolean",
+          "hasDefault": false,
+          "composableSlot": false
+        },
+        {
+          "name": "initialBackStack",
+          "type": "List<NavKey>",
+          "hasDefault": false,
+          "composableSlot": false
+        }
+      ],
+      "figmaSvg": "figma/screens-app-shell.svg"
+    },
+    {
+      "componentId": "Screens/Article",
+      "figmaLayerName": "Screens/Article",
+      "componentName": "PreviewPostDrawer",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetnews/ui/post/PostScreen.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "PreviewPostDrawer",
+      "figmaSvg": "figma/screens-article.svg"
+    },
+    {
+      "componentId": "Navigation/Drawer",
+      "figmaLayerName": "Navigation/Drawer",
+      "componentName": "PreviewAppDrawer",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetnews/ui/AppDrawer.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "PreviewAppDrawer",
+      "figmaSvg": "figma/navigation-drawer.svg"
+    },
+    {
+      "componentId": "Navigation/Rail",
+      "figmaLayerName": "Navigation/Rail",
+      "componentName": "PreviewAppNavRail",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetnews/ui/components/AppNavRail.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "PreviewAppNavRail",
+      "figmaSvg": "figma/navigation-rail.svg"
+    },
+    {
+      "componentId": "Reader/Article body",
+      "figmaLayerName": "Reader/Article body",
+      "componentName": "PreviewPost",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetnews/ui/post/PostContent.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "PreviewPost",
+      "figmaSvg": "figma/reader-article-body.svg"
+    },
+    {
+      "componentId": "Interests/Screen",
+      "figmaLayerName": "Interests/Screen",
+      "componentName": "PreviewInterestsScreenDrawer",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetnews/ui/interests/InterestsScreen.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "PreviewInterestsScreenDrawer",
+      "figmaSvg": "figma/interests-screen.svg"
+    },
+    {
+      "componentId": "PostCard/Top",
+      "figmaLayerName": "PostCard/Top",
+      "componentName": "PostCardTopPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetnews/ui/home/PostCardTop.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "PostCardTopPreview",
+      "figmaSvg": "figma/postcard-top.svg"
+    },
+    {
+      "componentId": "PostCard/Simple",
+      "figmaLayerName": "PostCard/Simple",
+      "componentName": "SimplePostPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetnews/ui/home/PostCards.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "SimplePostPreview",
+      "figmaSvg": "figma/postcard-simple.svg"
+    },
+    {
+      "componentId": "PostCard/History",
+      "figmaLayerName": "PostCard/History",
+      "componentName": "HistoryPostPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetnews/ui/home/PostCards.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "HistoryPostPreview",
+      "figmaSvg": "figma/postcard-history.svg"
+    },
+    {
+      "componentId": "PostCard/Popular",
+      "figmaLayerName": "PostCard/Popular",
+      "componentName": "PopularPostCardCatalogPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetnews/catalog/JetnewsAnimationPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "PopularPostCardCatalogPreview",
+      "figmaSvg": "figma/postcard-popular.svg"
+    },
+    {
+      "componentId": "Bookmark/Button",
+      "figmaLayerName": "Bookmark/Button",
+      "componentName": "BookmarkButtonPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetnews/ui/home/PostCards.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "BookmarkButtonPreview",
+      "figmaSvg": "figma/bookmark-button.svg"
+    },
+    {
+      "componentId": "Interests/Topics tab",
+      "figmaLayerName": "Interests/Topics tab",
+      "componentName": "TabWithSections",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetnews/ui/interests/InterestsScreen.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "PreviewTopicsTab",
+      "codeSnippet": "TabWithSections(\n    sections = TODO(\"List<InterestSection>\"),\n    selectedTopics = TODO(\"Set<TopicSelection>\"),\n    onTopicSelect = { },\n)",
+      "imports": [
+        "import com.example.jetnews.ui.interests.TabWithSections"
+      ],
+      "parameters": [
+        {
+          "name": "sections",
+          "type": "List<InterestSection>",
+          "hasDefault": false,
+          "composableSlot": false
+        },
+        {
+          "name": "selectedTopics",
+          "type": "Set<TopicSelection>",
+          "hasDefault": false,
+          "composableSlot": false
+        },
+        {
+          "name": "onTopicSelect",
+          "type": "(TopicSelection) -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "figma/interests-topics-tab.svg"
+    },
+    {
+      "componentId": "Interests/People and publications tab",
+      "figmaLayerName": "Interests/People and publications tab",
+      "componentName": "TabWithTopics",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetnews/ui/interests/InterestsScreen.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "PreviewPeopleTab",
+      "codeSnippet": "TabWithTopics(\n    topics = TODO(\"List<String>\"),\n    selectedTopics = TODO(\"Set<String>\"),\n    onTopicSelect = { },\n)",
+      "imports": [
+        "import com.example.jetnews.ui.interests.TabWithTopics"
+      ],
+      "parameters": [
+        {
+          "name": "topics",
+          "type": "List<String>",
+          "hasDefault": false,
+          "composableSlot": false
+        },
+        {
+          "name": "selectedTopics",
+          "type": "Set<String>",
+          "hasDefault": false,
+          "composableSlot": false
+        },
+        {
+          "name": "onTopicSelect",
+          "type": "(String) -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "figma/interests-people-and-publications-tab.svg"
+    },
+    {
+      "componentId": "Interests/Select topic",
+      "figmaLayerName": "Interests/Select topic",
+      "componentName": "SelectTopicButtonPreviewTemplate",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetnews/ui/interests/SelectTopicButton.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "SelectTopicButtonPreviewOff",
+      "codeSnippet": "SelectTopicButtonPreviewTemplate(\n    selected = TODO(\"Boolean\"),\n)",
+      "imports": [
+        "import com.example.jetnews.ui.interests.SelectTopicButtonPreviewTemplate"
+      ],
+      "parameters": [
+        {
+          "name": "selected",
+          "type": "Boolean",
+          "hasDefault": false,
+          "composableSlot": false
+        }
+      ],
+      "figmaSvg": "figma/interests-select-topic.svg"
+    }
+  ]
+}
