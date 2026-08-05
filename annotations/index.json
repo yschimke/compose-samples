@@ -1,0 +1,3633 @@
+{
+  "schema": "compose-preview-annotations/v1",
+  "previews": {
+    "podcast-screen__ideal__default__compact": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 24,
+          "y": 161,
+          "width": 406,
+          "height": 104
+        },
+        "label": "r 26dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "26"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 52,
+          "y": 181,
+          "width": 64,
+          "height": 64
+        },
+        "label": "r 16dp",
+        "role": "Android Developers Backstage",
+        "detail": {
+          "cornerRadius": "16"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 154,
+          "y": 91,
+          "width": 145,
+          "height": 38
+        },
+        "label": "text 16sp/24",
+        "role": "Podcasts",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 128,
+          "y": 184,
+          "width": 274,
+          "height": 29
+        },
+        "label": "text 12sp/16",
+        "role": "Android Developers Backstage",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 128,
+          "y": 215,
+          "width": 238,
+          "height": 27
+        },
+        "label": "text 11sp/16",
+        "role": "Android Developers",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      }
+    ],
+    "podcast-screen__ideal__default__compact__device-smallround": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 24,
+          "y": 161,
+          "width": 406,
+          "height": 104
+        },
+        "label": "r 26dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "26"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 52,
+          "y": 181,
+          "width": 64,
+          "height": 64
+        },
+        "label": "r 16dp",
+        "role": "Android Developers Backstage",
+        "detail": {
+          "cornerRadius": "16"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 154,
+          "y": 91,
+          "width": 145,
+          "height": 38
+        },
+        "label": "text 16sp/24",
+        "role": "Podcasts",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 128,
+          "y": 184,
+          "width": 274,
+          "height": 29
+        },
+        "label": "text 12sp/16",
+        "role": "Android Developers Backstage",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 128,
+          "y": 215,
+          "width": 238,
+          "height": 27
+        },
+        "label": "text 11sp/16",
+        "role": "Android Developers",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      }
+    ],
+    "podcast-screen__ideal__default__compact__device-smallround__fontscale-1.24": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 24,
+          "y": 161,
+          "width": 406,
+          "height": 104
+        },
+        "label": "r 26dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "26"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 52,
+          "y": 181,
+          "width": 64,
+          "height": 64
+        },
+        "label": "r 16dp",
+        "role": "Android Developers Backstage",
+        "detail": {
+          "cornerRadius": "16"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 154,
+          "y": 91,
+          "width": 145,
+          "height": 38
+        },
+        "label": "text 16sp/24",
+        "role": "Podcasts",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 128,
+          "y": 184,
+          "width": 274,
+          "height": 29
+        },
+        "label": "text 12sp/16",
+        "role": "Android Developers Backstage",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 128,
+          "y": 215,
+          "width": 238,
+          "height": 27
+        },
+        "label": "text 11sp/16",
+        "role": "Android Developers",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      }
+    ],
+    "podcast-screen__ideal__loading__compact": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 24,
+          "y": 161,
+          "width": 406,
+          "height": 104
+        },
+        "label": "r 26dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "26"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 52,
+          "y": 181,
+          "width": 64,
+          "height": 64
+        },
+        "label": "r 16dp",
+        "role": "Android Developers Backstage",
+        "detail": {
+          "cornerRadius": "16"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 154,
+          "y": 91,
+          "width": 145,
+          "height": 38
+        },
+        "label": "text 16sp/24",
+        "role": "Podcasts",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 128,
+          "y": 184,
+          "width": 274,
+          "height": 29
+        },
+        "label": "text 12sp/16",
+        "role": "Android Developers Backstage",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 128,
+          "y": 215,
+          "width": 238,
+          "height": 27
+        },
+        "label": "text 11sp/16",
+        "role": "Android Developers",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      }
+    ],
+    "podcast-screen__ideal__empty__compact": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 24,
+          "y": 161,
+          "width": 406,
+          "height": 104
+        },
+        "label": "r 26dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "26"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 52,
+          "y": 181,
+          "width": 64,
+          "height": 64
+        },
+        "label": "r 16dp",
+        "role": "Android Developers Backstage",
+        "detail": {
+          "cornerRadius": "16"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 154,
+          "y": 91,
+          "width": 145,
+          "height": 38
+        },
+        "label": "text 16sp/24",
+        "role": "Podcasts",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 128,
+          "y": 184,
+          "width": 274,
+          "height": 29
+        },
+        "label": "text 12sp/16",
+        "role": "Android Developers Backstage",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 128,
+          "y": 215,
+          "width": 238,
+          "height": 27
+        },
+        "label": "text 11sp/16",
+        "role": "Android Developers",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      }
+    ],
+    "podcast-details__ideal__default__compact": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 24,
+          "y": 161,
+          "width": 406,
+          "height": 104
+        },
+        "label": "r 26dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "26"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 25,
+          "y": 273,
+          "width": 403,
+          "height": 103
+        },
+        "label": "r 26dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "26"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 52,
+          "y": 292,
+          "width": 64,
+          "height": 64
+        },
+        "label": "r 16dp",
+        "role": "Episode 140: Lorem ipsum dolor",
+        "detail": {
+          "cornerRadius": "16"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 58,
+          "y": 91,
+          "width": 337,
+          "height": 38
+        },
+        "label": "text 16sp/24",
+        "role": "Android Developers Backstage",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 112,
+          "y": 199,
+          "width": 178,
+          "height": 29
+        },
+        "label": "text 12sp/16",
+        "role": "Play episodes",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 128,
+          "y": 295,
+          "width": 273,
+          "height": 29
+        },
+        "label": "text 12sp/16",
+        "role": "Episode 140: Lorem ipsum dolor",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 128,
+          "y": 326,
+          "width": 138,
+          "height": 27
+        },
+        "label": "text 11sp/16",
+        "role": "Jun 2, 2020",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      }
+    ],
+    "podcast-details__ideal__default__compact__device-smallround": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 24,
+          "y": 161,
+          "width": 406,
+          "height": 104
+        },
+        "label": "r 26dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "26"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 25,
+          "y": 273,
+          "width": 403,
+          "height": 103
+        },
+        "label": "r 26dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "26"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 52,
+          "y": 292,
+          "width": 64,
+          "height": 64
+        },
+        "label": "r 16dp",
+        "role": "Episode 140: Lorem ipsum dolor",
+        "detail": {
+          "cornerRadius": "16"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 58,
+          "y": 91,
+          "width": 337,
+          "height": 38
+        },
+        "label": "text 16sp/24",
+        "role": "Android Developers Backstage",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 112,
+          "y": 199,
+          "width": 178,
+          "height": 29
+        },
+        "label": "text 12sp/16",
+        "role": "Play episodes",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 128,
+          "y": 295,
+          "width": 273,
+          "height": 29
+        },
+        "label": "text 12sp/16",
+        "role": "Episode 140: Lorem ipsum dolor",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 128,
+          "y": 326,
+          "width": 138,
+          "height": 27
+        },
+        "label": "text 11sp/16",
+        "role": "Jun 2, 2020",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      }
+    ],
+    "podcast-details__ideal__default__compact__device-smallround__fontscale-1.24": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 24,
+          "y": 161,
+          "width": 406,
+          "height": 104
+        },
+        "label": "r 26dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "26"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 25,
+          "y": 273,
+          "width": 403,
+          "height": 103
+        },
+        "label": "r 26dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "26"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 52,
+          "y": 292,
+          "width": 64,
+          "height": 64
+        },
+        "label": "r 16dp",
+        "role": "Episode 140: Lorem ipsum dolor",
+        "detail": {
+          "cornerRadius": "16"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 58,
+          "y": 91,
+          "width": 337,
+          "height": 38
+        },
+        "label": "text 16sp/24",
+        "role": "Android Developers Backstage",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 112,
+          "y": 199,
+          "width": 178,
+          "height": 29
+        },
+        "label": "text 12sp/16",
+        "role": "Play episodes",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 128,
+          "y": 295,
+          "width": 273,
+          "height": 29
+        },
+        "label": "text 12sp/16",
+        "role": "Episode 140: Lorem ipsum dolor",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 128,
+          "y": 326,
+          "width": 138,
+          "height": 27
+        },
+        "label": "text 11sp/16",
+        "role": "Jun 2, 2020",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      }
+    ],
+    "podcast-details__ideal__loading__compact": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 24,
+          "y": 161,
+          "width": 406,
+          "height": 104
+        },
+        "label": "r 26dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "26"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 25,
+          "y": 273,
+          "width": 403,
+          "height": 103
+        },
+        "label": "r 26dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "26"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 52,
+          "y": 292,
+          "width": 64,
+          "height": 64
+        },
+        "label": "r 16dp",
+        "role": "Episode 140: Lorem ipsum dolor",
+        "detail": {
+          "cornerRadius": "16"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 58,
+          "y": 91,
+          "width": 337,
+          "height": 38
+        },
+        "label": "text 16sp/24",
+        "role": "Android Developers Backstage",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 112,
+          "y": 199,
+          "width": 178,
+          "height": 29
+        },
+        "label": "text 12sp/16",
+        "role": "Play episodes",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 128,
+          "y": 295,
+          "width": 273,
+          "height": 29
+        },
+        "label": "text 12sp/16",
+        "role": "Episode 140: Lorem ipsum dolor",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 128,
+          "y": 326,
+          "width": 138,
+          "height": 27
+        },
+        "label": "text 11sp/16",
+        "role": "Jun 2, 2020",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      }
+    ],
+    "podcast-details__ideal__empty__compact": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 24,
+          "y": 161,
+          "width": 406,
+          "height": 104
+        },
+        "label": "r 26dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "26"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 25,
+          "y": 273,
+          "width": 403,
+          "height": 103
+        },
+        "label": "r 26dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "26"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 52,
+          "y": 292,
+          "width": 64,
+          "height": 64
+        },
+        "label": "r 16dp",
+        "role": "Episode 140: Lorem ipsum dolor",
+        "detail": {
+          "cornerRadius": "16"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 58,
+          "y": 91,
+          "width": 337,
+          "height": 38
+        },
+        "label": "text 16sp/24",
+        "role": "Android Developers Backstage",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 112,
+          "y": 199,
+          "width": 178,
+          "height": 29
+        },
+        "label": "text 12sp/16",
+        "role": "Play episodes",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 128,
+          "y": 295,
+          "width": 273,
+          "height": 29
+        },
+        "label": "text 12sp/16",
+        "role": "Episode 140: Lorem ipsum dolor",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 128,
+          "y": 326,
+          "width": 138,
+          "height": 27
+        },
+        "label": "text 11sp/16",
+        "role": "Jun 2, 2020",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      }
+    ],
+    "library-screen__ideal__default__compact": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 24,
+          "y": 161,
+          "width": 406,
+          "height": 104
+        },
+        "label": "r 26dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "26"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 52,
+          "y": 181,
+          "width": 64,
+          "height": 64
+        },
+        "label": "r 16dp",
+        "detail": {
+          "cornerRadius": "16"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 25,
+          "y": 273,
+          "width": 403,
+          "height": 103
+        },
+        "label": "r 26dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "26"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 52,
+          "y": 292,
+          "width": 64,
+          "height": 64
+        },
+        "label": "r 16dp",
+        "detail": {
+          "cornerRadius": "16"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 135,
+          "y": 91,
+          "width": 184,
+          "height": 38
+        },
+        "label": "text 16sp/24",
+        "role": "Your library",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 128,
+          "y": 199,
+          "width": 204,
+          "height": 29
+        },
+        "label": "text 12sp/16",
+        "role": "Latest episodes",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 128,
+          "y": 310,
+          "width": 117,
+          "height": 29
+        },
+        "label": "text 12sp/16",
+        "role": "Podcasts",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 184,
+          "y": 409,
+          "width": 85,
+          "height": 29
+        },
+        "label": "text 16sp/24",
+        "role": "Queue",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      }
+    ],
+    "library-screen__ideal__default__compact__device-smallround": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 24,
+          "y": 161,
+          "width": 406,
+          "height": 104
+        },
+        "label": "r 26dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "26"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 52,
+          "y": 181,
+          "width": 64,
+          "height": 64
+        },
+        "label": "r 16dp",
+        "detail": {
+          "cornerRadius": "16"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 25,
+          "y": 273,
+          "width": 403,
+          "height": 103
+        },
+        "label": "r 26dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "26"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 52,
+          "y": 292,
+          "width": 64,
+          "height": 64
+        },
+        "label": "r 16dp",
+        "detail": {
+          "cornerRadius": "16"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 135,
+          "y": 91,
+          "width": 184,
+          "height": 38
+        },
+        "label": "text 16sp/24",
+        "role": "Your library",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 128,
+          "y": 199,
+          "width": 204,
+          "height": 29
+        },
+        "label": "text 12sp/16",
+        "role": "Latest episodes",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 128,
+          "y": 310,
+          "width": 117,
+          "height": 29
+        },
+        "label": "text 12sp/16",
+        "role": "Podcasts",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 184,
+          "y": 409,
+          "width": 85,
+          "height": 29
+        },
+        "label": "text 16sp/24",
+        "role": "Queue",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      }
+    ],
+    "library-screen__ideal__loading__compact": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 24,
+          "y": 161,
+          "width": 406,
+          "height": 104
+        },
+        "label": "r 26dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "26"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 52,
+          "y": 181,
+          "width": 64,
+          "height": 64
+        },
+        "label": "r 16dp",
+        "detail": {
+          "cornerRadius": "16"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 25,
+          "y": 273,
+          "width": 403,
+          "height": 103
+        },
+        "label": "r 26dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "26"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 52,
+          "y": 292,
+          "width": 64,
+          "height": 64
+        },
+        "label": "r 16dp",
+        "detail": {
+          "cornerRadius": "16"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 135,
+          "y": 91,
+          "width": 184,
+          "height": 38
+        },
+        "label": "text 16sp/24",
+        "role": "Your library",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 128,
+          "y": 199,
+          "width": 204,
+          "height": 29
+        },
+        "label": "text 12sp/16",
+        "role": "Latest episodes",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 128,
+          "y": 310,
+          "width": 117,
+          "height": 29
+        },
+        "label": "text 12sp/16",
+        "role": "Podcasts",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 184,
+          "y": 409,
+          "width": 85,
+          "height": 29
+        },
+        "label": "text 16sp/24",
+        "role": "Queue",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      }
+    ],
+    "library-screen__ideal__no-subscriptions__compact": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 24,
+          "y": 161,
+          "width": 406,
+          "height": 104
+        },
+        "label": "r 26dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "26"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 52,
+          "y": 181,
+          "width": 64,
+          "height": 64
+        },
+        "label": "r 16dp",
+        "detail": {
+          "cornerRadius": "16"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 25,
+          "y": 273,
+          "width": 403,
+          "height": 103
+        },
+        "label": "r 26dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "26"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 52,
+          "y": 292,
+          "width": 64,
+          "height": 64
+        },
+        "label": "r 16dp",
+        "detail": {
+          "cornerRadius": "16"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 135,
+          "y": 91,
+          "width": 184,
+          "height": 38
+        },
+        "label": "text 16sp/24",
+        "role": "Your library",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 128,
+          "y": 199,
+          "width": 204,
+          "height": 29
+        },
+        "label": "text 12sp/16",
+        "role": "Latest episodes",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 128,
+          "y": 310,
+          "width": 117,
+          "height": 29
+        },
+        "label": "text 12sp/16",
+        "role": "Podcasts",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 184,
+          "y": 409,
+          "width": 85,
+          "height": 29
+        },
+        "label": "text 16sp/24",
+        "role": "Queue",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      }
+    ],
+    "episode-latest__ideal__default__compact": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 24,
+          "y": 161,
+          "width": 406,
+          "height": 104
+        },
+        "label": "r 26dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "26"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 25,
+          "y": 273,
+          "width": 403,
+          "height": 103
+        },
+        "label": "r 26dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "26"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 52,
+          "y": 292,
+          "width": 64,
+          "height": 64
+        },
+        "label": "r 16dp",
+        "role": "Episode 140: Lorem ipsum dolor",
+        "detail": {
+          "cornerRadius": "16"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 102,
+          "y": 91,
+          "width": 250,
+          "height": 38
+        },
+        "label": "text 16sp/24",
+        "role": "Latest episodes",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 112,
+          "y": 199,
+          "width": 178,
+          "height": 29
+        },
+        "label": "text 12sp/16",
+        "role": "Play episodes",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 128,
+          "y": 295,
+          "width": 273,
+          "height": 29
+        },
+        "label": "text 12sp/16",
+        "role": "Episode 140: Lorem ipsum dolor",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 128,
+          "y": 326,
+          "width": 138,
+          "height": 27
+        },
+        "label": "text 11sp/16",
+        "role": "Jun 2, 2020",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      }
+    ],
+    "episode-latest__ideal__default__compact__device-smallround": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 24,
+          "y": 161,
+          "width": 406,
+          "height": 104
+        },
+        "label": "r 26dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "26"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 25,
+          "y": 273,
+          "width": 403,
+          "height": 103
+        },
+        "label": "r 26dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "26"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 52,
+          "y": 292,
+          "width": 64,
+          "height": 64
+        },
+        "label": "r 16dp",
+        "role": "Episode 140: Lorem ipsum dolor",
+        "detail": {
+          "cornerRadius": "16"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 102,
+          "y": 91,
+          "width": 250,
+          "height": 38
+        },
+        "label": "text 16sp/24",
+        "role": "Latest episodes",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 112,
+          "y": 199,
+          "width": 178,
+          "height": 29
+        },
+        "label": "text 12sp/16",
+        "role": "Play episodes",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 128,
+          "y": 295,
+          "width": 273,
+          "height": 29
+        },
+        "label": "text 12sp/16",
+        "role": "Episode 140: Lorem ipsum dolor",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 128,
+          "y": 326,
+          "width": 138,
+          "height": 27
+        },
+        "label": "text 11sp/16",
+        "role": "Jun 2, 2020",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      }
+    ],
+    "episode-latest__ideal__loading__compact": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 24,
+          "y": 161,
+          "width": 406,
+          "height": 104
+        },
+        "label": "r 26dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "26"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 25,
+          "y": 273,
+          "width": 403,
+          "height": 103
+        },
+        "label": "r 26dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "26"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 52,
+          "y": 292,
+          "width": 64,
+          "height": 64
+        },
+        "label": "r 16dp",
+        "role": "Episode 140: Lorem ipsum dolor",
+        "detail": {
+          "cornerRadius": "16"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 102,
+          "y": 91,
+          "width": 250,
+          "height": 38
+        },
+        "label": "text 16sp/24",
+        "role": "Latest episodes",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 112,
+          "y": 199,
+          "width": 178,
+          "height": 29
+        },
+        "label": "text 12sp/16",
+        "role": "Play episodes",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 128,
+          "y": 295,
+          "width": 273,
+          "height": 29
+        },
+        "label": "text 12sp/16",
+        "role": "Episode 140: Lorem ipsum dolor",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 128,
+          "y": 326,
+          "width": 138,
+          "height": 27
+        },
+        "label": "text 11sp/16",
+        "role": "Jun 2, 2020",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      }
+    ],
+    "episode-latest__ideal__empty__compact": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 24,
+          "y": 161,
+          "width": 406,
+          "height": 104
+        },
+        "label": "r 26dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "26"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 25,
+          "y": 273,
+          "width": 403,
+          "height": 103
+        },
+        "label": "r 26dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "26"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 52,
+          "y": 292,
+          "width": 64,
+          "height": 64
+        },
+        "label": "r 16dp",
+        "role": "Episode 140: Lorem ipsum dolor",
+        "detail": {
+          "cornerRadius": "16"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 102,
+          "y": 91,
+          "width": 250,
+          "height": 38
+        },
+        "label": "text 16sp/24",
+        "role": "Latest episodes",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 112,
+          "y": 199,
+          "width": 178,
+          "height": 29
+        },
+        "label": "text 12sp/16",
+        "role": "Play episodes",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 128,
+          "y": 295,
+          "width": 273,
+          "height": 29
+        },
+        "label": "text 12sp/16",
+        "role": "Episode 140: Lorem ipsum dolor",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 128,
+          "y": 326,
+          "width": 138,
+          "height": 27
+        },
+        "label": "text 11sp/16",
+        "role": "Jun 2, 2020",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      }
+    ],
+    "episode-screen__ideal__default__compact": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 48,
+          "y": 161,
+          "width": 358,
+          "height": 104
+        },
+        "label": "pad t 0dp e 0dp b 16dp s 0dp",
+        "detail": {
+          "padding.start": "0",
+          "padding.top": "0",
+          "padding.end": "0",
+          "padding.bottom": "16"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 48,
+          "y": 161,
+          "width": 245,
+          "height": 104
+        },
+        "label": "r 16dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "16"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 301,
+          "y": 161,
+          "width": 105,
+          "height": 104
+        },
+        "label": "r 26dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "26"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 155,
+          "y": 305,
+          "width": 145,
+          "height": 29
+        },
+        "label": "pad 0dp/8dp",
+        "role": "Jun 2, 2020",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "0",
+          "padding.end": "8",
+          "padding.bottom": "0"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 40,
+          "y": 342,
+          "width": 374,
+          "height": 157
+        },
+        "label": "pad 0dp/8dp",
+        "role": "In this episode, Romain, Chet and Tor talked with Mady Melor and Artur Tsurkan from the System UI team about... Bubbles!",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "0",
+          "padding.end": "8",
+          "padding.bottom": "0"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 58,
+          "y": 91,
+          "width": 337,
+          "height": 38
+        },
+        "label": "text 16sp/24",
+        "role": "Episode 140: Lorem ipsum dolor",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 155,
+          "y": 305,
+          "width": 145,
+          "height": 29
+        },
+        "label": "text 12sp/16",
+        "role": "Jun 2, 2020",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 40,
+          "y": 342,
+          "width": 374,
+          "height": 157
+        },
+        "label": "text 12sp/16",
+        "role": "In this episode, Romain, Chet and Tor talked with Mady Melor and Artur Tsurkan from the System UI team about... Bubbles!",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      }
+    ],
+    "episode-screen__ideal__default__compact__device-smallround": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 48,
+          "y": 161,
+          "width": 358,
+          "height": 104
+        },
+        "label": "pad t 0dp e 0dp b 16dp s 0dp",
+        "detail": {
+          "padding.start": "0",
+          "padding.top": "0",
+          "padding.end": "0",
+          "padding.bottom": "16"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 48,
+          "y": 161,
+          "width": 245,
+          "height": 104
+        },
+        "label": "r 16dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "16"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 301,
+          "y": 161,
+          "width": 105,
+          "height": 104
+        },
+        "label": "r 26dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "26"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 155,
+          "y": 305,
+          "width": 145,
+          "height": 29
+        },
+        "label": "pad 0dp/8dp",
+        "role": "Jun 2, 2020",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "0",
+          "padding.end": "8",
+          "padding.bottom": "0"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 40,
+          "y": 342,
+          "width": 374,
+          "height": 157
+        },
+        "label": "pad 0dp/8dp",
+        "role": "In this episode, Romain, Chet and Tor talked with Mady Melor and Artur Tsurkan from the System UI team about... Bubbles!",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "0",
+          "padding.end": "8",
+          "padding.bottom": "0"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 58,
+          "y": 91,
+          "width": 337,
+          "height": 38
+        },
+        "label": "text 16sp/24",
+        "role": "Episode 140: Lorem ipsum dolor",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 155,
+          "y": 305,
+          "width": 145,
+          "height": 29
+        },
+        "label": "text 12sp/16",
+        "role": "Jun 2, 2020",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 40,
+          "y": 342,
+          "width": 374,
+          "height": 157
+        },
+        "label": "text 12sp/16",
+        "role": "In this episode, Romain, Chet and Tor talked with Mady Melor and Artur Tsurkan from the System UI team about... Bubbles!",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      }
+    ],
+    "episode-screen__ideal__default__compact__device-smallround__fontscale-1.24": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 48,
+          "y": 161,
+          "width": 358,
+          "height": 104
+        },
+        "label": "pad t 0dp e 0dp b 16dp s 0dp",
+        "detail": {
+          "padding.start": "0",
+          "padding.top": "0",
+          "padding.end": "0",
+          "padding.bottom": "16"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 48,
+          "y": 161,
+          "width": 245,
+          "height": 104
+        },
+        "label": "r 16dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "16"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 301,
+          "y": 161,
+          "width": 105,
+          "height": 104
+        },
+        "label": "r 26dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "26"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 155,
+          "y": 305,
+          "width": 145,
+          "height": 29
+        },
+        "label": "pad 0dp/8dp",
+        "role": "Jun 2, 2020",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "0",
+          "padding.end": "8",
+          "padding.bottom": "0"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 40,
+          "y": 342,
+          "width": 374,
+          "height": 157
+        },
+        "label": "pad 0dp/8dp",
+        "role": "In this episode, Romain, Chet and Tor talked with Mady Melor and Artur Tsurkan from the System UI team about... Bubbles!",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "0",
+          "padding.end": "8",
+          "padding.bottom": "0"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 58,
+          "y": 91,
+          "width": 337,
+          "height": 38
+        },
+        "label": "text 16sp/24",
+        "role": "Episode 140: Lorem ipsum dolor",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 155,
+          "y": 305,
+          "width": 145,
+          "height": 29
+        },
+        "label": "text 12sp/16",
+        "role": "Jun 2, 2020",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 40,
+          "y": 342,
+          "width": 374,
+          "height": 157
+        },
+        "label": "text 12sp/16",
+        "role": "In this episode, Romain, Chet and Tor talked with Mady Melor and Artur Tsurkan from the System UI team about... Bubbles!",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      }
+    ],
+    "episode-screen__ideal__loading__compact": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 48,
+          "y": 161,
+          "width": 358,
+          "height": 104
+        },
+        "label": "pad t 0dp e 0dp b 16dp s 0dp",
+        "detail": {
+          "padding.start": "0",
+          "padding.top": "0",
+          "padding.end": "0",
+          "padding.bottom": "16"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 48,
+          "y": 161,
+          "width": 245,
+          "height": 104
+        },
+        "label": "r 16dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "16"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 301,
+          "y": 161,
+          "width": 105,
+          "height": 104
+        },
+        "label": "r 26dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "26"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 155,
+          "y": 305,
+          "width": 145,
+          "height": 29
+        },
+        "label": "pad 0dp/8dp",
+        "role": "Jun 2, 2020",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "0",
+          "padding.end": "8",
+          "padding.bottom": "0"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 40,
+          "y": 342,
+          "width": 374,
+          "height": 157
+        },
+        "label": "pad 0dp/8dp",
+        "role": "In this episode, Romain, Chet and Tor talked with Mady Melor and Artur Tsurkan from the System UI team about... Bubbles!",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "0",
+          "padding.end": "8",
+          "padding.bottom": "0"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 58,
+          "y": 91,
+          "width": 337,
+          "height": 38
+        },
+        "label": "text 16sp/24",
+        "role": "Episode 140: Lorem ipsum dolor",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 155,
+          "y": 305,
+          "width": 145,
+          "height": 29
+        },
+        "label": "text 12sp/16",
+        "role": "Jun 2, 2020",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 40,
+          "y": 342,
+          "width": 374,
+          "height": 157
+        },
+        "label": "text 12sp/16",
+        "role": "In this episode, Romain, Chet and Tor talked with Mady Melor and Artur Tsurkan from the System UI team about... Bubbles!",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      }
+    ],
+    "episode-screen__ideal__loading__compact__device-smallround": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 48,
+          "y": 161,
+          "width": 358,
+          "height": 104
+        },
+        "label": "pad t 0dp e 0dp b 16dp s 0dp",
+        "detail": {
+          "padding.start": "0",
+          "padding.top": "0",
+          "padding.end": "0",
+          "padding.bottom": "16"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 48,
+          "y": 161,
+          "width": 245,
+          "height": 104
+        },
+        "label": "r 16dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "16"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 301,
+          "y": 161,
+          "width": 105,
+          "height": 104
+        },
+        "label": "r 26dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "26"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 155,
+          "y": 305,
+          "width": 145,
+          "height": 29
+        },
+        "label": "pad 0dp/8dp",
+        "role": "Jun 2, 2020",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "0",
+          "padding.end": "8",
+          "padding.bottom": "0"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 40,
+          "y": 342,
+          "width": 374,
+          "height": 157
+        },
+        "label": "pad 0dp/8dp",
+        "role": "In this episode, Romain, Chet and Tor talked with Mady Melor and Artur Tsurkan from the System UI team about... Bubbles!",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "0",
+          "padding.end": "8",
+          "padding.bottom": "0"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 58,
+          "y": 91,
+          "width": 337,
+          "height": 38
+        },
+        "label": "text 16sp/24",
+        "role": "Episode 140: Lorem ipsum dolor",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 155,
+          "y": 305,
+          "width": 145,
+          "height": 29
+        },
+        "label": "text 12sp/16",
+        "role": "Jun 2, 2020",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 40,
+          "y": 342,
+          "width": 374,
+          "height": 157
+        },
+        "label": "text 12sp/16",
+        "role": "In this episode, Romain, Chet and Tor talked with Mady Melor and Artur Tsurkan from the System UI team about... Bubbles!",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      }
+    ],
+    "episode-screen__ideal__empty__compact": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 48,
+          "y": 161,
+          "width": 358,
+          "height": 104
+        },
+        "label": "pad t 0dp e 0dp b 16dp s 0dp",
+        "detail": {
+          "padding.start": "0",
+          "padding.top": "0",
+          "padding.end": "0",
+          "padding.bottom": "16"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 48,
+          "y": 161,
+          "width": 245,
+          "height": 104
+        },
+        "label": "r 16dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "16"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 301,
+          "y": 161,
+          "width": 105,
+          "height": 104
+        },
+        "label": "r 26dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "26"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 155,
+          "y": 305,
+          "width": 145,
+          "height": 29
+        },
+        "label": "pad 0dp/8dp",
+        "role": "Jun 2, 2020",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "0",
+          "padding.end": "8",
+          "padding.bottom": "0"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 40,
+          "y": 342,
+          "width": 374,
+          "height": 157
+        },
+        "label": "pad 0dp/8dp",
+        "role": "In this episode, Romain, Chet and Tor talked with Mady Melor and Artur Tsurkan from the System UI team about... Bubbles!",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "0",
+          "padding.end": "8",
+          "padding.bottom": "0"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 58,
+          "y": 91,
+          "width": 337,
+          "height": 38
+        },
+        "label": "text 16sp/24",
+        "role": "Episode 140: Lorem ipsum dolor",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 155,
+          "y": 305,
+          "width": 145,
+          "height": 29
+        },
+        "label": "text 12sp/16",
+        "role": "Jun 2, 2020",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 40,
+          "y": 342,
+          "width": 374,
+          "height": 157
+        },
+        "label": "text 12sp/16",
+        "role": "In this episode, Romain, Chet and Tor talked with Mady Melor and Artur Tsurkan from the System UI team about... Bubbles!",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      }
+    ],
+    "queue-screen__ideal__default__compact": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 48,
+          "y": 161,
+          "width": 245,
+          "height": 104
+        },
+        "label": "r 16dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "16"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 301,
+          "y": 161,
+          "width": 105,
+          "height": 104
+        },
+        "label": "r 26dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "26"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 34,
+          "y": 305,
+          "width": 385,
+          "height": 98
+        },
+        "label": "r 26dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "26"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 61,
+          "y": 323,
+          "width": 61,
+          "height": 61
+        },
+        "label": "r 16dp",
+        "role": "Episode 140: Lorem ipsum dolor",
+        "detail": {
+          "cornerRadius": "16"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 172,
+          "y": 91,
+          "width": 109,
+          "height": 38
+        },
+        "label": "text 16sp/24",
+        "role": "Queue",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 133,
+          "y": 326,
+          "width": 259,
+          "height": 28
+        },
+        "label": "text 12sp/16",
+        "role": "Episode 140: Lorem ipsum dolor",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 133,
+          "y": 356,
+          "width": 131,
+          "height": 25
+        },
+        "label": "text 11sp/16",
+        "role": "Jun 2, 2020",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      }
+    ],
+    "queue-screen__ideal__default__compact__device-smallround": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 48,
+          "y": 161,
+          "width": 245,
+          "height": 104
+        },
+        "label": "r 16dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "16"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 301,
+          "y": 161,
+          "width": 105,
+          "height": 104
+        },
+        "label": "r 26dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "26"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 34,
+          "y": 305,
+          "width": 385,
+          "height": 98
+        },
+        "label": "r 26dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "26"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 61,
+          "y": 323,
+          "width": 61,
+          "height": 61
+        },
+        "label": "r 16dp",
+        "role": "Episode 140: Lorem ipsum dolor",
+        "detail": {
+          "cornerRadius": "16"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 172,
+          "y": 91,
+          "width": 109,
+          "height": 38
+        },
+        "label": "text 16sp/24",
+        "role": "Queue",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 133,
+          "y": 326,
+          "width": 259,
+          "height": 28
+        },
+        "label": "text 12sp/16",
+        "role": "Episode 140: Lorem ipsum dolor",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 133,
+          "y": 356,
+          "width": 131,
+          "height": 25
+        },
+        "label": "text 11sp/16",
+        "role": "Jun 2, 2020",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      }
+    ],
+    "queue-screen__ideal__loading__compact": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 48,
+          "y": 161,
+          "width": 245,
+          "height": 104
+        },
+        "label": "r 16dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "16"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 301,
+          "y": 161,
+          "width": 105,
+          "height": 104
+        },
+        "label": "r 26dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "26"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 34,
+          "y": 305,
+          "width": 385,
+          "height": 98
+        },
+        "label": "r 26dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "26"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 61,
+          "y": 323,
+          "width": 61,
+          "height": 61
+        },
+        "label": "r 16dp",
+        "role": "Episode 140: Lorem ipsum dolor",
+        "detail": {
+          "cornerRadius": "16"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 172,
+          "y": 91,
+          "width": 109,
+          "height": 38
+        },
+        "label": "text 16sp/24",
+        "role": "Queue",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 133,
+          "y": 326,
+          "width": 259,
+          "height": 28
+        },
+        "label": "text 12sp/16",
+        "role": "Episode 140: Lorem ipsum dolor",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 133,
+          "y": 356,
+          "width": 131,
+          "height": 25
+        },
+        "label": "text 11sp/16",
+        "role": "Jun 2, 2020",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      }
+    ],
+    "queue-screen__ideal__empty__compact": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 48,
+          "y": 161,
+          "width": 245,
+          "height": 104
+        },
+        "label": "r 16dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "16"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 301,
+          "y": 161,
+          "width": 105,
+          "height": 104
+        },
+        "label": "r 26dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "26"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 34,
+          "y": 305,
+          "width": 385,
+          "height": 98
+        },
+        "label": "r 26dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "26"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 61,
+          "y": 323,
+          "width": 61,
+          "height": 61
+        },
+        "label": "r 16dp",
+        "role": "Episode 140: Lorem ipsum dolor",
+        "detail": {
+          "cornerRadius": "16"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 172,
+          "y": 91,
+          "width": 109,
+          "height": 38
+        },
+        "label": "text 16sp/24",
+        "role": "Queue",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 133,
+          "y": 326,
+          "width": 259,
+          "height": 28
+        },
+        "label": "text 12sp/16",
+        "role": "Episode 140: Lorem ipsum dolor",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 133,
+          "y": 356,
+          "width": 131,
+          "height": 25
+        },
+        "label": "text 11sp/16",
+        "role": "Jun 2, 2020",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      }
+    ],
+    "podcast-content__ideal__default__compact": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 24,
+          "y": 175,
+          "width": 407,
+          "height": 104
+        },
+        "label": "r 26dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "26"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 52,
+          "y": 195,
+          "width": 64,
+          "height": 64
+        },
+        "label": "r 16dp",
+        "role": "Latest episodes",
+        "detail": {
+          "cornerRadius": "16"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 128,
+          "y": 197,
+          "width": 275,
+          "height": 61
+        },
+        "label": "text 12sp/16",
+        "role": "Android Developers Backstage",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      }
+    ],
+    "podcast-content__ideal__default__compact__device-smallround": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 24,
+          "y": 175,
+          "width": 407,
+          "height": 104
+        },
+        "label": "r 26dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "26"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 52,
+          "y": 195,
+          "width": 64,
+          "height": 64
+        },
+        "label": "r 16dp",
+        "role": "Latest episodes",
+        "detail": {
+          "cornerRadius": "16"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 128,
+          "y": 197,
+          "width": 275,
+          "height": 61
+        },
+        "label": "text 12sp/16",
+        "role": "Android Developers Backstage",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      }
+    ],
+    "player-controls__ideal__default__compact": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 24,
+          "y": 175,
+          "width": 407,
+          "height": 104
+        },
+        "label": "r 26dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "26"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 52,
+          "y": 195,
+          "width": 64,
+          "height": 64
+        },
+        "label": "r 16dp",
+        "role": "Episode 140: Lorem ipsum dolor",
+        "detail": {
+          "cornerRadius": "16"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 128,
+          "y": 198,
+          "width": 275,
+          "height": 29
+        },
+        "label": "text 12sp/16",
+        "role": "Episode 140: Lorem ipsum dolor",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 128,
+          "y": 229,
+          "width": 139,
+          "height": 27
+        },
+        "label": "text 11sp/16",
+        "role": "Jun 2, 2020",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      }
+    ],
+    "player-controls__ideal__default__compact__device-smallround": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 24,
+          "y": 175,
+          "width": 407,
+          "height": 104
+        },
+        "label": "r 26dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "26"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 52,
+          "y": 195,
+          "width": 64,
+          "height": 64
+        },
+        "label": "r 16dp",
+        "role": "Episode 140: Lorem ipsum dolor",
+        "detail": {
+          "cornerRadius": "16"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 128,
+          "y": 198,
+          "width": 275,
+          "height": 29
+        },
+        "label": "text 12sp/16",
+        "role": "Episode 140: Lorem ipsum dolor",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 128,
+          "y": 229,
+          "width": 139,
+          "height": 27
+        },
+        "label": "text 11sp/16",
+        "role": "Jun 2, 2020",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      }
+    ],
+    "player-controls__ideal__default__compact__device-smallround__fontscale-1.24": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 24,
+          "y": 175,
+          "width": 407,
+          "height": 104
+        },
+        "label": "r 26dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "26"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 52,
+          "y": 195,
+          "width": 64,
+          "height": 64
+        },
+        "label": "r 16dp",
+        "role": "Episode 140: Lorem ipsum dolor",
+        "detail": {
+          "cornerRadius": "16"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 128,
+          "y": 198,
+          "width": 275,
+          "height": 29
+        },
+        "label": "text 12sp/16",
+        "role": "Episode 140: Lorem ipsum dolor",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 128,
+          "y": 229,
+          "width": 139,
+          "height": 27
+        },
+        "label": "text 11sp/16",
+        "role": "Jun 2, 2020",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "2131296257"
+        }
+      }
+    ]
+  },
+  "references": {}
+}

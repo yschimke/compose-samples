@@ -1,0 +1,149 @@
+{
+  "$schema": "https://github.com/yschimke/design-parity/schema/dtcg-tokens.schema.json",
+  "color": {
+    "primary": {
+      "$type": "color",
+      "$value": "#f0fcb0ff"
+    },
+    "primaryDim": {
+      "$type": "color",
+      "$value": "#f0fcb0ff"
+    },
+    "primaryContainer": {
+      "$type": "color",
+      "$value": "#313002ff"
+    },
+    "onPrimary": {
+      "$type": "color",
+      "$value": "#542104ff"
+    },
+    "onPrimaryContainer": {
+      "$type": "color",
+      "$value": "#fdfcceff"
+    },
+    "secondary": {
+      "$type": "color",
+      "$value": "#ffe523ff"
+    },
+    "secondaryDim": {
+      "$type": "color",
+      "$value": "#ffe523ff"
+    },
+    "secondaryContainer": {
+      "$type": "color",
+      "$value": "#998700ff"
+    },
+    "tertiary": {
+      "$type": "color",
+      "$value": "#ff9ad8ff"
+    },
+    "tertiaryContainer": {
+      "$type": "color",
+      "$value": "#660014ff"
+    },
+    "background": {
+      "$type": "color",
+      "$value": "#151218ff"
+    },
+    "onBackground": {
+      "$type": "color",
+      "$value": "#e7e0e8ff"
+    },
+    "surfaceContainerLow": {
+      "$type": "color",
+      "$value": "#221a14ff"
+    },
+    "surfaceContainer": {
+      "$type": "color",
+      "$value": "#261e18ff"
+    },
+    "surfaceContainerHigh": {
+      "$type": "color",
+      "$value": "#312822ff"
+    },
+    "onSurface": {
+      "$type": "color",
+      "$value": "#e1dae5ff"
+    },
+    "onSurfaceVariant": {
+      "$type": "color",
+      "$value": "#cbc4cfff"
+    },
+    "outline": {
+      "$type": "color",
+      "$value": "#948f99ff"
+    },
+    "outlineVariant": {
+      "$type": "color",
+      "$value": "#49454eff"
+    },
+    "error": {
+      "$type": "color",
+      "$value": "#ffb4abff"
+    },
+    "onError": {
+      "$type": "color",
+      "$value": "#690005ff"
+    }
+  },
+  "type": {
+    "displaySmall": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "FontListFontFamily(fonts=[ResourceFont(resId=2131296256",
+        "fontSize": 36,
+        "fontWeight": 400,
+        "lineHeight": 44
+      }
+    },
+    "titleLarge": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "FontListFontFamily(fonts=[ResourceFont(resId=2131296256",
+        "fontSize": 22,
+        "fontWeight": 400,
+        "lineHeight": 28
+      }
+    },
+    "titleMedium": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "FontListFontFamily(fonts=[ResourceFont(resId=2131296256",
+        "fontSize": 16,
+        "fontWeight": 500,
+        "letterSpacing": 0.15,
+        "lineHeight": 24
+      }
+    },
+    "bodyLarge": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "FontListFontFamily(fonts=[ResourceFont(resId=2131296256",
+        "fontSize": 16,
+        "fontWeight": 500,
+        "letterSpacing": 0.5,
+        "lineHeight": 24
+      }
+    },
+    "bodyMedium": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "FontListFontFamily(fonts=[ResourceFont(resId=2131296256",
+        "fontSize": 14,
+        "fontWeight": 500,
+        "letterSpacing": 0.25,
+        "lineHeight": 20
+      }
+    },
+    "labelSmall": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "FontListFontFamily(fonts=[ResourceFont(resId=2131296256",
+        "fontSize": 11,
+        "fontWeight": 500,
+        "letterSpacing": 0.5,
+        "lineHeight": 16
+      }
+    }
+  }
+}

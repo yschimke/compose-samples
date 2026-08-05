@@ -1,0 +1,309 @@
+{
+  "system": "jetcaster-wear",
+  "title": "Jetcaster for Wear OS",
+  "label": "Compose",
+  "source": {
+    "repo": "yschimke/compose-samples",
+    "ref": "previews",
+    "module": ":wear"
+  },
+  "generatedAt": "2026-08-05T23:25:18.299Z",
+  "mappings": [
+    {
+      "componentId": "Podcast/Screen",
+      "figmaLayerName": "Podcast/Screen",
+      "componentName": "JetcasterListScreenPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/wear/src/main/java/com/example/jetcaster/ui/preview/JetcasterWearPreviewScaffolds.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "PodcastScreenLoadedPreview",
+      "codeSnippet": "JetcasterListScreenPreview(\n    content = { },\n)",
+      "imports": [
+        "import com.example.jetcaster.ui.preview.JetcasterListScreenPreview"
+      ],
+      "parameters": [
+        {
+          "name": "content",
+          "type": "(TransformingLazyColumnState, PaddingValues) -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "figma/podcast-screen.svg"
+    },
+    {
+      "componentId": "Podcast/Details",
+      "figmaLayerName": "Podcast/Details",
+      "componentName": "JetcasterScreenPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/wear/src/main/java/com/example/jetcaster/ui/preview/JetcasterWearPreviewScaffolds.kt",
+      "label": "Compose",
+      "confidence": "LOW",
+      "previewName": "PodcastDetailsScreenLoadedPreview",
+      "codeSnippet": "JetcasterScreenPreview(\n    content = { },\n)",
+      "imports": [
+        "import com.example.jetcaster.ui.preview.JetcasterScreenPreview"
+      ],
+      "parameters": [
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "figma/podcast-details.svg"
+    },
+    {
+      "componentId": "Library/Screen",
+      "figmaLayerName": "Library/Screen",
+      "componentName": "JetcasterListScreenPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/wear/src/main/java/com/example/jetcaster/ui/preview/JetcasterWearPreviewScaffolds.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "LibraryScreenPreview",
+      "codeSnippet": "JetcasterListScreenPreview(\n    content = { },\n)",
+      "imports": [
+        "import com.example.jetcaster.ui.preview.JetcasterListScreenPreview"
+      ],
+      "parameters": [
+        {
+          "name": "content",
+          "type": "(TransformingLazyColumnState, PaddingValues) -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "figma/library-screen.svg"
+    },
+    {
+      "componentId": "Episode/Latest",
+      "figmaLayerName": "Episode/Latest",
+      "componentName": "JetcasterListScreenPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/wear/src/main/java/com/example/jetcaster/ui/preview/JetcasterWearPreviewScaffolds.kt",
+      "label": "Compose",
+      "confidence": "LOW",
+      "previewName": "LatestEpisodeScreenLoadedPreview",
+      "codeSnippet": "JetcasterListScreenPreview(\n    content = { },\n)",
+      "imports": [
+        "import com.example.jetcaster.ui.preview.JetcasterListScreenPreview"
+      ],
+      "parameters": [
+        {
+          "name": "content",
+          "type": "(TransformingLazyColumnState, PaddingValues) -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "figma/episode-latest.svg"
+    },
+    {
+      "componentId": "Episode/Screen",
+      "figmaLayerName": "Episode/Screen",
+      "componentName": "EpisodeScreenLoaded",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/wear/src/main/java/com/example/jetcaster/ui/episode/EpisodeScreen.kt",
+      "label": "Compose",
+      "confidence": "MEDIUM",
+      "previewName": "EpisodeScreenLoadedPreview",
+      "codeSnippet": "EpisodeScreenLoaded(\n    title = TODO(\"String\"),\n    episode = TODO(\"PlayerEpisode\"),\n    onPlayButtonClick = { },\n    onPlayEpisode = { },\n    onAddToQueue = { },\n    columnState = TODO(\"TransformingLazyColumnState\"),\n    contentPadding = TODO(\"PaddingValues\"),\n    placeholderState = TODO(\"PlaceholderState\"),\n)",
+      "imports": [
+        "import com.example.jetcaster.ui.episode.EpisodeScreenLoaded"
+      ],
+      "parameters": [
+        {
+          "name": "title",
+          "type": "String",
+          "hasDefault": false,
+          "composableSlot": false
+        },
+        {
+          "name": "episode",
+          "type": "PlayerEpisode",
+          "hasDefault": false,
+          "composableSlot": false
+        },
+        {
+          "name": "onPlayButtonClick",
+          "type": "() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        },
+        {
+          "name": "onPlayEpisode",
+          "type": "(PlayerEpisode) -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        },
+        {
+          "name": "onAddToQueue",
+          "type": "(PlayerEpisode) -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        },
+        {
+          "name": "columnState",
+          "type": "TransformingLazyColumnState",
+          "hasDefault": false,
+          "composableSlot": false
+        },
+        {
+          "name": "contentPadding",
+          "type": "PaddingValues",
+          "hasDefault": false,
+          "composableSlot": false
+        },
+        {
+          "name": "placeholderState",
+          "type": "PlaceholderState",
+          "hasDefault": false,
+          "composableSlot": false
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        }
+      ],
+      "figmaSvg": "figma/episode-screen.svg"
+    },
+    {
+      "componentId": "Queue/Screen",
+      "figmaLayerName": "Queue/Screen",
+      "componentName": "QueueScreenLoaded",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/wear/src/main/java/com/example/jetcaster/ui/queue/QueueScreen.kt",
+      "label": "Compose",
+      "confidence": "MEDIUM",
+      "previewName": "QueueScreenLoadedPreview",
+      "codeSnippet": "QueueScreenLoaded(\n    episodeList = TODO(\"List<PlayerEpisode>\"),\n    onPlayButtonClick = { },\n    onPlayEpisodes = { },\n    onDeleteQueueEpisodes = { },\n    onEpisodeItemClick = { },\n    columnState = TODO(\"TransformingLazyColumnState\"),\n    contentPadding = TODO(\"PaddingValues\"),\n    placeholderState = TODO(\"PlaceholderState\"),\n)",
+      "imports": [
+        "import com.example.jetcaster.ui.queue.QueueScreenLoaded"
+      ],
+      "parameters": [
+        {
+          "name": "episodeList",
+          "type": "List<PlayerEpisode>",
+          "hasDefault": false,
+          "composableSlot": false
+        },
+        {
+          "name": "onPlayButtonClick",
+          "type": "() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        },
+        {
+          "name": "onPlayEpisodes",
+          "type": "(List<PlayerEpisode>) -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        },
+        {
+          "name": "onDeleteQueueEpisodes",
+          "type": "() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        },
+        {
+          "name": "onEpisodeItemClick",
+          "type": "(PlayerEpisode) -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        },
+        {
+          "name": "columnState",
+          "type": "TransformingLazyColumnState",
+          "hasDefault": false,
+          "composableSlot": false
+        },
+        {
+          "name": "contentPadding",
+          "type": "PaddingValues",
+          "hasDefault": false,
+          "composableSlot": false
+        },
+        {
+          "name": "placeholderState",
+          "type": "PlaceholderState",
+          "hasDefault": false,
+          "composableSlot": false
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        }
+      ],
+      "figmaSvg": "figma/queue-screen.svg"
+    },
+    {
+      "componentId": "Podcast/Content",
+      "figmaLayerName": "Podcast/Content",
+      "componentName": "JetcasterComponentPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/wear/src/main/java/com/example/jetcaster/ui/preview/JetcasterWearPreviewScaffolds.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "PodcastContentPreview",
+      "codeSnippet": "JetcasterComponentPreview(\n    content = { },\n)",
+      "imports": [
+        "import com.example.jetcaster.ui.preview.JetcasterComponentPreview"
+      ],
+      "parameters": [
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "figma/podcast-content.svg"
+    },
+    {
+      "componentId": "Player/Controls",
+      "figmaLayerName": "Player/Controls",
+      "componentName": "MediaContent",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/wear/src/main/java/com/example/jetcaster/ui/components/MediaContent.kt",
+      "label": "Compose",
+      "confidence": "MEDIUM",
+      "previewName": "MediaContentPreview",
+      "codeSnippet": "MediaContent(\n    episode = TODO(\"PlayerEpisode\"),\n    onItemClick = { },\n)",
+      "imports": [
+        "import com.example.jetcaster.ui.components.MediaContent"
+      ],
+      "parameters": [
+        {
+          "name": "episode",
+          "type": "PlayerEpisode",
+          "hasDefault": false,
+          "composableSlot": false
+        },
+        {
+          "name": "onItemClick",
+          "type": "(PlayerEpisode) -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "episodeArtworkPlaceholder",
+          "type": "Painter",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "transformation",
+          "type": "SurfaceTransformation?",
+          "hasDefault": true,
+          "composableSlot": false
+        }
+      ],
+      "figmaSvg": "figma/player-controls.svg"
+    }
+  ]
+}

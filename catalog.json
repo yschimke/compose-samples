@@ -1,0 +1,1060 @@
+{
+  "schema": "design-parity-catalog/v1",
+  "system": "jetcaster-wear",
+  "title": "Jetcaster for Wear OS",
+  "components": [
+    {
+      "componentId": "Podcast/Screen",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/podcast-screen/ideal__default__compact.png",
+          "state": "default",
+          "width": 454,
+          "height": 454,
+          "size": "compact",
+          "livePreview": "https://preview.coo.ee/jetcaster-wear/p/podcast-screen__ideal__default__compact",
+          "previewId": "com.example.jetcaster.ui.podcasts.PodcastsScreenKt.PodcastScreenLoadedPreview_Large_Round"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/podcast-screen/ideal__default__compact__device-smallround.png",
+          "state": "default",
+          "width": 384,
+          "height": 384,
+          "size": "compact",
+          "props": {
+            "device": "smallRound"
+          },
+          "livePreview": "https://preview.coo.ee/jetcaster-wear/p/podcast-screen__ideal__default__compact__device-smallround",
+          "previewId": "com.example.jetcaster.catalog.JetcasterWearCatalogPreviewsKt.PodcastScreenSmallCatalogPreview_Small_Round"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/podcast-screen/ideal__default__compact__device-smallround__fontscale-1.24.png",
+          "state": "default",
+          "width": 384,
+          "height": 384,
+          "size": "compact",
+          "props": {
+            "device": "smallRound",
+            "fontScale": 1.24
+          },
+          "livePreview": "https://preview.coo.ee/jetcaster-wear/p/podcast-screen__ideal__default__compact__device-smallround__fontscale-1.24",
+          "previewId": "com.example.jetcaster.catalog.JetcasterWearCatalogPreviewsKt.PodcastScreenLargestFontCatalogPreview_Podcast_screen___largest_font"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/podcast-screen/ideal__loading__compact.png",
+          "state": "loading",
+          "width": 454,
+          "height": 454,
+          "size": "compact",
+          "livePreview": "https://preview.coo.ee/jetcaster-wear/p/podcast-screen__ideal__loading__compact",
+          "previewId": "com.example.jetcaster.catalog.JetcasterWearCatalogPreviewsKt.PodcastScreenLoadingCatalogPreview_Large_Round"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/podcast-screen/ideal__empty__compact.png",
+          "state": "empty",
+          "width": 454,
+          "height": 454,
+          "size": "compact",
+          "livePreview": "https://preview.coo.ee/jetcaster-wear/p/podcast-screen__ideal__empty__compact",
+          "previewId": "com.example.jetcaster.catalog.JetcasterWearCatalogPreviewsKt.PodcastScreenEmptyCatalogPreview_Large_Round"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 24,
+              "y": 161,
+              "width": 406,
+              "height": 104
+            }
+          },
+          "bounds": {
+            "x": 24,
+            "y": 161,
+            "width": 406,
+            "height": 104
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 24,
+            "y": 161,
+            "width": 406,
+            "height": 104
+          },
+          "role": "Button",
+          "cornerRadius": 26
+        },
+        {
+          "bounds": {
+            "x": 52,
+            "y": 181,
+            "width": 64,
+            "height": 64
+          },
+          "role": "Image",
+          "label": "Android Developers Backstage",
+          "cornerRadius": 16
+        }
+      ],
+      "section": "Screens",
+      "group": "Browse",
+      "caption": "Podcast browse list on a round face — the Wear counterpart of the phone's discover carousel.",
+      "wireframe": "wireframes/podcast-screen.svg",
+      "sourceFile": "src/main/java/com/example/jetcaster/ui/podcasts/PodcastsScreen.kt"
+    },
+    {
+      "componentId": "Podcast/Details",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/podcast-details/ideal__default__compact.png",
+          "state": "default",
+          "width": 454,
+          "height": 454,
+          "size": "compact",
+          "livePreview": "https://preview.coo.ee/jetcaster-wear/p/podcast-details__ideal__default__compact",
+          "previewId": "com.example.jetcaster.ui.podcast.PodcastDetailsScreenKt.PodcastDetailsScreenLoadedPreview_Large_Round"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/podcast-details/ideal__default__compact__device-smallround.png",
+          "state": "default",
+          "width": 384,
+          "height": 384,
+          "size": "compact",
+          "props": {
+            "device": "smallRound"
+          },
+          "livePreview": "https://preview.coo.ee/jetcaster-wear/p/podcast-details__ideal__default__compact__device-smallround",
+          "previewId": "com.example.jetcaster.catalog.JetcasterWearCatalogPreviewsKt.PodcastDetailsSmallCatalogPreview_Small_Round"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/podcast-details/ideal__default__compact__device-smallround__fontscale-1.24.png",
+          "state": "default",
+          "width": 384,
+          "height": 384,
+          "size": "compact",
+          "props": {
+            "device": "smallRound",
+            "fontScale": 1.24
+          },
+          "livePreview": "https://preview.coo.ee/jetcaster-wear/p/podcast-details__ideal__default__compact__device-smallround__fontscale-1.24",
+          "previewId": "com.example.jetcaster.catalog.JetcasterWearCatalogPreviewsKt.PodcastDetailsLargestFontCatalogPreview_Podcast_details___largest_font"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/podcast-details/ideal__loading__compact.png",
+          "state": "loading",
+          "width": 454,
+          "height": 454,
+          "size": "compact",
+          "livePreview": "https://preview.coo.ee/jetcaster-wear/p/podcast-details__ideal__loading__compact",
+          "previewId": "com.example.jetcaster.catalog.JetcasterWearCatalogPreviewsKt.PodcastDetailsLoadingCatalogPreview_Large_Round"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/podcast-details/ideal__empty__compact.png",
+          "state": "empty",
+          "width": 454,
+          "height": 454,
+          "size": "compact",
+          "livePreview": "https://preview.coo.ee/jetcaster-wear/p/podcast-details__ideal__empty__compact",
+          "previewId": "com.example.jetcaster.catalog.JetcasterWearCatalogPreviewsKt.PodcastDetailsEmptyCatalogPreview_Large_Round"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 24,
+              "y": 161,
+              "width": 406,
+              "height": 104
+            }
+          },
+          "bounds": {
+            "x": 24,
+            "y": 161,
+            "width": 406,
+            "height": 104
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 25,
+              "y": 273,
+              "width": 403,
+              "height": 103
+            }
+          },
+          "bounds": {
+            "x": 25,
+            "y": 273,
+            "width": 403,
+            "height": 103
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 24,
+            "y": 161,
+            "width": 406,
+            "height": 104
+          },
+          "role": "Button",
+          "cornerRadius": 26
+        },
+        {
+          "bounds": {
+            "x": 25,
+            "y": 273,
+            "width": 403,
+            "height": 103
+          },
+          "role": "Button",
+          "cornerRadius": 26
+        },
+        {
+          "bounds": {
+            "x": 52,
+            "y": 292,
+            "width": 64,
+            "height": 64
+          },
+          "role": "Image",
+          "label": "Episode 140: Lorem ipsum dolor",
+          "cornerRadius": 16
+        }
+      ],
+      "section": "Screens",
+      "group": "Browse",
+      "caption": "Podcast details on Wear.",
+      "wireframe": "wireframes/podcast-details.svg",
+      "sourceFile": "src/main/java/com/example/jetcaster/ui/podcast/PodcastDetailsScreen.kt"
+    },
+    {
+      "componentId": "Library/Screen",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/library-screen/ideal__default__compact.png",
+          "state": "default",
+          "width": 454,
+          "height": 454,
+          "size": "compact",
+          "livePreview": "https://preview.coo.ee/jetcaster-wear/p/library-screen__ideal__default__compact",
+          "previewId": "com.example.jetcaster.ui.library.LibraryScreenKt.LibraryScreenPreview_Large_Round"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/library-screen/ideal__default__compact__device-smallround.png",
+          "state": "default",
+          "width": 384,
+          "height": 384,
+          "size": "compact",
+          "props": {
+            "device": "smallRound"
+          },
+          "livePreview": "https://preview.coo.ee/jetcaster-wear/p/library-screen__ideal__default__compact__device-smallround",
+          "previewId": "com.example.jetcaster.catalog.JetcasterWearCatalogPreviewsKt.LibraryScreenSmallCatalogPreview_Small_Round"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/library-screen/ideal__loading__compact.png",
+          "state": "loading",
+          "width": 454,
+          "height": 454,
+          "size": "compact",
+          "livePreview": "https://preview.coo.ee/jetcaster-wear/p/library-screen__ideal__loading__compact",
+          "previewId": "com.example.jetcaster.catalog.JetcasterWearCatalogPreviewsKt.LibraryScreenLoadingCatalogPreview_Large_Round"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/library-screen/ideal__no-subscriptions__compact.png",
+          "state": "no-subscriptions",
+          "width": 454,
+          "height": 454,
+          "size": "compact",
+          "livePreview": "https://preview.coo.ee/jetcaster-wear/p/library-screen__ideal__no-subscriptions__compact",
+          "previewId": "com.example.jetcaster.catalog.JetcasterWearCatalogPreviewsKt.LibraryScreenNoSubscriptionsCatalogPreview_Large_Round"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 24,
+              "y": 161,
+              "width": 406,
+              "height": 104
+            }
+          },
+          "bounds": {
+            "x": 24,
+            "y": 161,
+            "width": 406,
+            "height": 104
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 25,
+              "y": 273,
+              "width": 403,
+              "height": 103
+            }
+          },
+          "bounds": {
+            "x": 25,
+            "y": 273,
+            "width": 403,
+            "height": 103
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 24,
+            "y": 161,
+            "width": 406,
+            "height": 104
+          },
+          "role": "Button",
+          "cornerRadius": 26
+        },
+        {
+          "bounds": {
+            "x": 52,
+            "y": 181,
+            "width": 64,
+            "height": 64
+          },
+          "cornerRadius": 16
+        },
+        {
+          "bounds": {
+            "x": 25,
+            "y": 273,
+            "width": 403,
+            "height": 103
+          },
+          "role": "Button",
+          "cornerRadius": 26
+        },
+        {
+          "bounds": {
+            "x": 52,
+            "y": 292,
+            "width": 64,
+            "height": 64
+          },
+          "cornerRadius": 16
+        }
+      ],
+      "section": "Screens",
+      "group": "Browse",
+      "caption": "The user's library entry point.",
+      "wireframe": "wireframes/library-screen.svg",
+      "sourceFile": "src/main/java/com/example/jetcaster/ui/library/LibraryScreen.kt"
+    },
+    {
+      "componentId": "Episode/Latest",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/episode-latest/ideal__default__compact.png",
+          "state": "default",
+          "width": 454,
+          "height": 454,
+          "size": "compact",
+          "livePreview": "https://preview.coo.ee/jetcaster-wear/p/episode-latest__ideal__default__compact",
+          "previewId": "com.example.jetcaster.ui.latest_episodes.LatestEpisodesScreenKt.LatestEpisodeScreenLoadedPreview_Large_Round"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/episode-latest/ideal__default__compact__device-smallround.png",
+          "state": "default",
+          "width": 384,
+          "height": 384,
+          "size": "compact",
+          "props": {
+            "device": "smallRound"
+          },
+          "livePreview": "https://preview.coo.ee/jetcaster-wear/p/episode-latest__ideal__default__compact__device-smallround",
+          "previewId": "com.example.jetcaster.catalog.JetcasterWearCatalogPreviewsKt.LatestEpisodeSmallCatalogPreview_Small_Round"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/episode-latest/ideal__loading__compact.png",
+          "state": "loading",
+          "width": 454,
+          "height": 454,
+          "size": "compact",
+          "livePreview": "https://preview.coo.ee/jetcaster-wear/p/episode-latest__ideal__loading__compact",
+          "previewId": "com.example.jetcaster.catalog.JetcasterWearCatalogPreviewsKt.LatestEpisodeLoadingCatalogPreview_Large_Round"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/episode-latest/ideal__empty__compact.png",
+          "state": "empty",
+          "width": 454,
+          "height": 454,
+          "size": "compact",
+          "livePreview": "https://preview.coo.ee/jetcaster-wear/p/episode-latest__ideal__empty__compact",
+          "previewId": "com.example.jetcaster.catalog.JetcasterWearCatalogPreviewsKt.LatestEpisodeEmptyCatalogPreview_Large_Round"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 24,
+              "y": 161,
+              "width": 406,
+              "height": 104
+            }
+          },
+          "bounds": {
+            "x": 24,
+            "y": 161,
+            "width": 406,
+            "height": 104
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 25,
+              "y": 273,
+              "width": 403,
+              "height": 103
+            }
+          },
+          "bounds": {
+            "x": 25,
+            "y": 273,
+            "width": 403,
+            "height": 103
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 24,
+            "y": 161,
+            "width": 406,
+            "height": 104
+          },
+          "role": "Button",
+          "cornerRadius": 26
+        },
+        {
+          "bounds": {
+            "x": 25,
+            "y": 273,
+            "width": 403,
+            "height": 103
+          },
+          "role": "Button",
+          "cornerRadius": 26
+        },
+        {
+          "bounds": {
+            "x": 52,
+            "y": 292,
+            "width": 64,
+            "height": 64
+          },
+          "role": "Image",
+          "label": "Episode 140: Lorem ipsum dolor",
+          "cornerRadius": 16
+        }
+      ],
+      "section": "Screens",
+      "group": "Browse",
+      "caption": "Latest-episode screen — the primary Wear launch surface.",
+      "wireframe": "wireframes/episode-latest.svg",
+      "sourceFile": "src/main/java/com/example/jetcaster/ui/latest_episodes/LatestEpisodesScreen.kt"
+    },
+    {
+      "componentId": "Episode/Screen",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/episode-screen/ideal__default__compact.png",
+          "state": "default",
+          "width": 454,
+          "height": 454,
+          "size": "compact",
+          "livePreview": "https://preview.coo.ee/jetcaster-wear/p/episode-screen__ideal__default__compact",
+          "previewId": "com.example.jetcaster.ui.episode.EpisodeScreenKt.EpisodeScreenLoadedPreview_Large_Round"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/episode-screen/ideal__default__compact__device-smallround.png",
+          "state": "default",
+          "width": 384,
+          "height": 384,
+          "size": "compact",
+          "props": {
+            "device": "smallRound"
+          },
+          "livePreview": "https://preview.coo.ee/jetcaster-wear/p/episode-screen__ideal__default__compact__device-smallround",
+          "previewId": "com.example.jetcaster.catalog.JetcasterWearCatalogPreviewsKt.EpisodeScreenSmallCatalogPreview_Small_Round"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/episode-screen/ideal__default__compact__device-smallround__fontscale-1.24.png",
+          "state": "default",
+          "width": 384,
+          "height": 384,
+          "size": "compact",
+          "props": {
+            "device": "smallRound",
+            "fontScale": 1.24
+          },
+          "livePreview": "https://preview.coo.ee/jetcaster-wear/p/episode-screen__ideal__default__compact__device-smallround__fontscale-1.24",
+          "previewId": "com.example.jetcaster.catalog.JetcasterWearCatalogPreviewsKt.EpisodeScreenLargestFontCatalogPreview_Episode_screen___largest_font"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/episode-screen/ideal__loading__compact.png",
+          "state": "loading",
+          "width": 454,
+          "height": 454,
+          "size": "compact",
+          "livePreview": "https://preview.coo.ee/jetcaster-wear/p/episode-screen__ideal__loading__compact",
+          "previewId": "com.example.jetcaster.ui.episode.EpisodeScreenKt.EpisodeScreenLoadingPreview_Large_Round"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/episode-screen/ideal__loading__compact__device-smallround.png",
+          "state": "loading",
+          "width": 384,
+          "height": 384,
+          "size": "compact",
+          "props": {
+            "device": "smallRound"
+          },
+          "livePreview": "https://preview.coo.ee/jetcaster-wear/p/episode-screen__ideal__loading__compact__device-smallround",
+          "previewId": "com.example.jetcaster.catalog.JetcasterWearCatalogPreviewsKt.EpisodeLoadingSmallCatalogPreview_Small_Round"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/episode-screen/ideal__empty__compact.png",
+          "state": "empty",
+          "width": 454,
+          "height": 454,
+          "size": "compact",
+          "livePreview": "https://preview.coo.ee/jetcaster-wear/p/episode-screen__ideal__empty__compact",
+          "previewId": "com.example.jetcaster.catalog.JetcasterWearCatalogPreviewsKt.EpisodeScreenEmptyCatalogPreview_Large_Round"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 48,
+              "y": 161,
+              "width": 245,
+              "height": 104
+            }
+          },
+          "bounds": {
+            "x": 48,
+            "y": 161,
+            "width": 245,
+            "height": 104
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 301,
+              "y": 161,
+              "width": 105,
+              "height": 104
+            }
+          },
+          "bounds": {
+            "x": 301,
+            "y": 161,
+            "width": 105,
+            "height": 104
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 48,
+            "y": 161,
+            "width": 358,
+            "height": 104
+          },
+          "padding": {
+            "start": 0,
+            "top": 0,
+            "end": 0,
+            "bottom": 16
+          }
+        },
+        {
+          "bounds": {
+            "x": 48,
+            "y": 161,
+            "width": 245,
+            "height": 104
+          },
+          "role": "Button",
+          "cornerRadius": 16
+        },
+        {
+          "bounds": {
+            "x": 301,
+            "y": 161,
+            "width": 105,
+            "height": 104
+          },
+          "role": "Button",
+          "cornerRadius": 26
+        },
+        {
+          "bounds": {
+            "x": 155,
+            "y": 305,
+            "width": 145,
+            "height": 29
+          },
+          "label": "Jun 2, 2020",
+          "padding": {
+            "start": 8,
+            "top": 0,
+            "end": 8,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 40,
+            "y": 342,
+            "width": 374,
+            "height": 157
+          },
+          "label": "In this episode, Romain, Chet and Tor talked with Mady Melor and Artur Tsurkan from the System UI team about... Bubbles!",
+          "padding": {
+            "start": 8,
+            "top": 0,
+            "end": 8,
+            "bottom": 0
+          }
+        }
+      ],
+      "section": "Screens",
+      "group": "Playback",
+      "caption": "Episode detail with playback controls, loaded.",
+      "wireframe": "wireframes/episode-screen.svg",
+      "sourceFile": "src/main/java/com/example/jetcaster/ui/episode/EpisodeScreen.kt"
+    },
+    {
+      "componentId": "Queue/Screen",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/queue-screen/ideal__default__compact.png",
+          "state": "default",
+          "width": 454,
+          "height": 454,
+          "size": "compact",
+          "livePreview": "https://preview.coo.ee/jetcaster-wear/p/queue-screen__ideal__default__compact",
+          "previewId": "com.example.jetcaster.ui.queue.QueueScreenKt.QueueScreenLoadedPreview_Large_Round"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/queue-screen/ideal__default__compact__device-smallround.png",
+          "state": "default",
+          "width": 384,
+          "height": 384,
+          "size": "compact",
+          "props": {
+            "device": "smallRound"
+          },
+          "livePreview": "https://preview.coo.ee/jetcaster-wear/p/queue-screen__ideal__default__compact__device-smallround",
+          "previewId": "com.example.jetcaster.catalog.JetcasterWearCatalogPreviewsKt.QueueScreenSmallCatalogPreview_Small_Round"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/queue-screen/ideal__loading__compact.png",
+          "state": "loading",
+          "width": 454,
+          "height": 454,
+          "size": "compact",
+          "livePreview": "https://preview.coo.ee/jetcaster-wear/p/queue-screen__ideal__loading__compact",
+          "previewId": "com.example.jetcaster.catalog.JetcasterWearCatalogPreviewsKt.QueueScreenLoadingCatalogPreview_Large_Round"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/queue-screen/ideal__empty__compact.png",
+          "state": "empty",
+          "width": 454,
+          "height": 454,
+          "size": "compact",
+          "livePreview": "https://preview.coo.ee/jetcaster-wear/p/queue-screen__ideal__empty__compact",
+          "previewId": "com.example.jetcaster.catalog.JetcasterWearCatalogPreviewsKt.QueueScreenEmptyCatalogPreview_Large_Round"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 48,
+              "y": 161,
+              "width": 245,
+              "height": 104
+            }
+          },
+          "bounds": {
+            "x": 48,
+            "y": 161,
+            "width": 245,
+            "height": 104
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 301,
+              "y": 161,
+              "width": 105,
+              "height": 104
+            }
+          },
+          "bounds": {
+            "x": 301,
+            "y": 161,
+            "width": 105,
+            "height": 104
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 34,
+              "y": 305,
+              "width": 385,
+              "height": 98
+            }
+          },
+          "bounds": {
+            "x": 34,
+            "y": 305,
+            "width": 385,
+            "height": 98
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 48,
+            "y": 161,
+            "width": 245,
+            "height": 104
+          },
+          "role": "Button",
+          "cornerRadius": 16
+        },
+        {
+          "bounds": {
+            "x": 301,
+            "y": 161,
+            "width": 105,
+            "height": 104
+          },
+          "role": "Button",
+          "cornerRadius": 26
+        },
+        {
+          "bounds": {
+            "x": 34,
+            "y": 305,
+            "width": 385,
+            "height": 98
+          },
+          "role": "Button",
+          "cornerRadius": 26
+        },
+        {
+          "bounds": {
+            "x": 61,
+            "y": 323,
+            "width": 61,
+            "height": 61
+          },
+          "role": "Image",
+          "label": "Episode 140: Lorem ipsum dolor",
+          "cornerRadius": 16
+        }
+      ],
+      "section": "Screens",
+      "group": "Playback",
+      "caption": "Playback queue, populated.",
+      "wireframe": "wireframes/queue-screen.svg",
+      "sourceFile": "src/main/java/com/example/jetcaster/ui/queue/QueueScreen.kt"
+    },
+    {
+      "componentId": "Podcast/Content",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/podcast-content/ideal__default__compact.png",
+          "state": "default",
+          "width": 454,
+          "height": 454,
+          "size": "compact",
+          "livePreview": "https://preview.coo.ee/jetcaster-wear/p/podcast-content__ideal__default__compact",
+          "previewId": "com.example.jetcaster.ui.library.LibraryScreenKt.PodcastContentPreview_Large_Round"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/podcast-content/ideal__default__compact__device-smallround.png",
+          "state": "default",
+          "width": 384,
+          "height": 384,
+          "size": "compact",
+          "props": {
+            "device": "smallRound"
+          },
+          "livePreview": "https://preview.coo.ee/jetcaster-wear/p/podcast-content__ideal__default__compact__device-smallround",
+          "previewId": "com.example.jetcaster.catalog.JetcasterWearCatalogPreviewsKt.PodcastContentSmallCatalogPreview_Small_Round"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 24,
+              "y": 175,
+              "width": 407,
+              "height": 104
+            }
+          },
+          "bounds": {
+            "x": 24,
+            "y": 175,
+            "width": 407,
+            "height": 104
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 24,
+            "y": 175,
+            "width": 407,
+            "height": 104
+          },
+          "role": "Button",
+          "cornerRadius": 26
+        },
+        {
+          "bounds": {
+            "x": 52,
+            "y": 195,
+            "width": 64,
+            "height": 64
+          },
+          "role": "Image",
+          "label": "Latest episodes",
+          "cornerRadius": 16
+        }
+      ],
+      "section": "Components",
+      "group": "Components",
+      "caption": "Podcast content block, centred at its on-device width rather than pinned to a screen.",
+      "wireframe": "wireframes/podcast-content.svg",
+      "sourceFile": "src/main/java/com/example/jetcaster/ui/library/LibraryScreen.kt"
+    },
+    {
+      "componentId": "Player/Controls",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/player-controls/ideal__default__compact.png",
+          "state": "default",
+          "width": 454,
+          "height": 454,
+          "size": "compact",
+          "livePreview": "https://preview.coo.ee/jetcaster-wear/p/player-controls__ideal__default__compact",
+          "previewId": "com.example.jetcaster.ui.components.MediaContentKt.MediaContentPreview_Large_Round"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/player-controls/ideal__default__compact__device-smallround.png",
+          "state": "default",
+          "width": 384,
+          "height": 384,
+          "size": "compact",
+          "props": {
+            "device": "smallRound"
+          },
+          "livePreview": "https://preview.coo.ee/jetcaster-wear/p/player-controls__ideal__default__compact__device-smallround",
+          "previewId": "com.example.jetcaster.catalog.JetcasterWearCatalogPreviewsKt.PlayerControlsSmallCatalogPreview_Small_Round"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/player-controls/ideal__default__compact__device-smallround__fontscale-1.24.png",
+          "state": "default",
+          "width": 384,
+          "height": 384,
+          "size": "compact",
+          "props": {
+            "device": "smallRound",
+            "fontScale": 1.24
+          },
+          "livePreview": "https://preview.coo.ee/jetcaster-wear/p/player-controls__ideal__default__compact__device-smallround__fontscale-1.24",
+          "previewId": "com.example.jetcaster.catalog.JetcasterWearCatalogPreviewsKt.PlayerControlsLargestFontCatalogPreview_Player_controls___largest_font"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 24,
+              "y": 175,
+              "width": 407,
+              "height": 104
+            }
+          },
+          "bounds": {
+            "x": 24,
+            "y": 175,
+            "width": 407,
+            "height": 104
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 24,
+            "y": 175,
+            "width": 407,
+            "height": 104
+          },
+          "role": "Button",
+          "cornerRadius": 26
+        },
+        {
+          "bounds": {
+            "x": 52,
+            "y": 195,
+            "width": 64,
+            "height": 64
+          },
+          "role": "Image",
+          "label": "Episode 140: Lorem ipsum dolor",
+          "cornerRadius": 16
+        }
+      ],
+      "section": "Components",
+      "group": "Components",
+      "caption": "Media content and transport, centred at its on-device width — where Wear's touch-target minimums bite hardest.",
+      "wireframe": "wireframes/player-controls.svg",
+      "sourceFile": "src/main/java/com/example/jetcaster/ui/components/MediaContent.kt"
+    }
+  ],
+  "library": [
+    "androidx.wear.compose:compose-material3",
+    "androidx.wear.compose:compose-foundation"
+  ],
+  "renderer": "compose-preview 0.19.38",
+  "generatedAt": "2026-08-05T23:25:17.491Z",
+  "display": {
+    "surface": "dark",
+    "hero": "Podcast/Screen"
+  },
+  "tokensFile": "tokens.dtcg.json",
+  "liveBundle": {
+    "path": "bundle/",
+    "file": "bundle.png"
+  },
+  "source": {
+    "repo": "yschimke/compose-samples",
+    "ref": "previews",
+    "module": ":wear"
+  }
+}
