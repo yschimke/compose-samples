@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1270 737" width="1270" height="737" role="img" aria-label="Search/Categories layout wireframe">
+  <title>Search/Categories — layout wireframe (slots + tokens)</title>
+  <rect width="1270" height="737" fill="#ffffff"/>
+  <g>
+    <rect x="0" y="0" width="1050" height="737" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="1050" height="737" fill="none" fill-opacity="0" stroke="#2E7D6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="1050" height="737" fill="none" fill-opacity="0" stroke="#8E6BA8" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="1050" height="737" fill="none" fill-opacity="0" stroke="#B0813B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="1050" height="737" fill="#FFFFFF" fill-opacity="1" stroke="#3B72A8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="3" y="12" font-family="system-ui, sans-serif" font-size="9" fill="#3B72A8">#FFFFFFFF</text>
+  </g>
+  <g>
+    <rect x="21" y="21" width="1008" height="695" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M47.25,21 H1002.75 A26.25,26.25 0 0 1 1029,47.25 V689.75 A26.25,26.25 0 0 1 1002.75,716 H47.25 A26.25,26.25 0 0 1 21,689.75 V47.25 A26.25,26.25 0 0 1 47.25,21 Z" fill="none" fill-opacity="0" stroke="#4F8A4A" stroke-width="1.5" stroke-opacity="1"/>
+  </g>
+  <g>
+    <rect x="53" y="342" width="511" height="52" fill="none" fill-opacity="0" stroke="#7A7A33" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M922.4975,21 H922.5025 A347.4975,347.4975 0 0 1 1270,368.4975 V368.5025 A347.4975,347.4975 0 0 1 922.5025,716 H922.4975 A347.4975,347.4975 0 0 1 575,368.5025 V368.4975 A347.4975,347.4975 0 0 1 922.4975,21 Z" fill="#FFFFFF" fill-opacity="1" stroke="#7A7A33" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="578" y="33" font-family="system-ui, sans-serif" font-size="9" fill="#7A7A33">#FFFFFFFF</text>
+  </g>
+  <g>
+    <rect x="575" y="21" width="695" height="695" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+</svg>

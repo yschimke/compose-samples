@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 200" width="680" height="200" role="img" aria-label="Foundations/Surface layout wireframe">
+  <title>Foundations/Surface — layout wireframe (slots + tokens)</title>
+  <rect width="680" height="200" fill="#ffffff"/>
+  <g>
+    <rect x="0" y="0" width="680" height="200" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="680" height="200" fill="none" fill-opacity="0" stroke="#2E7D6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="680" height="200" fill="none" fill-opacity="0" stroke="#8E6BA8" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="680" height="200" fill="none" fill-opacity="0" stroke="#B0813B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="680" height="200" fill="#FFFFFF" fill-opacity="1" stroke="#3B72A8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="3" y="12" font-family="system-ui, sans-serif" font-size="9" fill="#3B72A8">#FFFFFFFF</text>
+  </g>
+  <g>
+    <rect x="21" y="21" width="638" height="158" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M52.5,21 H627.5 A31.5,31.5 0 0 1 659,52.5 V147.5 A31.5,31.5 0 0 1 627.5,179 H52.5 A31.5,31.5 0 0 1 21,147.5 V52.5 A31.5,31.5 0 0 1 52.5,21 Z" fill="#FFFFFF" fill-opacity="1" stroke="#4F8A4A" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="24" y="33" font-family="system-ui, sans-serif" font-size="9" fill="#4F8A4A">#FFFFFFFF</text>
+  </g>
+  <g>
+    <rect x="63" y="63" width="554" height="74" fill="none" fill-opacity="0" stroke="#7A7A33" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+</svg>

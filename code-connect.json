@@ -1,0 +1,357 @@
+{
+  "system": "jetsnack",
+  "title": "Jetsnack",
+  "label": "Compose",
+  "source": {
+    "repo": "yschimke/compose-samples",
+    "ref": "previews",
+    "module": ":app"
+  },
+  "generatedAt": "2026-08-05T23:25:29.689Z",
+  "mappings": [
+    {
+      "componentId": "Foundations/Button",
+      "figmaLayerName": "Foundations/Button",
+      "componentName": "ButtonPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetsnack/ui/components/Button.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "ButtonPreview",
+      "figmaSvg": "figma/foundations-button.svg"
+    },
+    {
+      "componentId": "Foundations/Card",
+      "figmaLayerName": "Foundations/Card",
+      "componentName": "CardPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetsnack/ui/components/Card.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "CardPreview",
+      "figmaSvg": "figma/foundations-card.svg"
+    },
+    {
+      "componentId": "Foundations/Surface",
+      "figmaLayerName": "Foundations/Surface",
+      "componentName": "JetsnackSurfaceFlatPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "JetsnackSurfaceFlatPreview",
+      "figmaSvg": "figma/foundations-surface.svg"
+    },
+    {
+      "componentId": "Foundations/Divider",
+      "figmaLayerName": "Foundations/Divider",
+      "componentName": "DividerPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetsnack/ui/components/Divider.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "DividerPreview",
+      "figmaSvg": "figma/foundations-divider.svg"
+    },
+    {
+      "componentId": "Foundations/Icon button",
+      "figmaLayerName": "Foundations/Icon button",
+      "componentName": "GradientTintedIconButtonPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetsnack/ui/components/GradientTintedIconButton.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "GradientTintedIconButtonPreview",
+      "figmaSvg": "figma/foundations-icon-button.svg"
+    },
+    {
+      "componentId": "Tokens/Colour",
+      "figmaLayerName": "Tokens/Colour",
+      "componentName": "JetsnackColorTokensLightPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "JetsnackColorTokensLightPreview",
+      "figmaSvg": "figma/tokens-colour.svg"
+    },
+    {
+      "componentId": "Tokens/Gradients",
+      "figmaLayerName": "Tokens/Gradients",
+      "componentName": "JetsnackGradientTokensPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "JetsnackGradientTokensPreview",
+      "figmaSvg": "figma/tokens-gradients.svg"
+    },
+    {
+      "componentId": "Layout/Vertical grid",
+      "figmaLayerName": "Layout/Vertical grid",
+      "componentName": "VerticalGridTwoColumnPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "VerticalGridTwoColumnPreview",
+      "figmaSvg": "figma/layout-vertical-grid.svg"
+    },
+    {
+      "componentId": "Snack/Card",
+      "figmaLayerName": "Snack/Card",
+      "componentName": "getColors",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetsnack/ui/theme/Theme.kt",
+      "label": "Compose",
+      "confidence": "LOW",
+      "previewName": "SnackCardPreview",
+      "codeSnippet": "getColors()",
+      "imports": [
+        "import com.example.jetsnack.ui.theme.getColors"
+      ],
+      "figmaSvg": "figma/snack-card.svg"
+    },
+    {
+      "componentId": "Snack/Item",
+      "figmaLayerName": "Snack/Item",
+      "componentName": "SnackItemPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "SnackItemPreview",
+      "figmaSvg": "figma/snack-item.svg"
+    },
+    {
+      "componentId": "Snack/Image",
+      "figmaLayerName": "Snack/Image",
+      "componentName": "SnackImagePreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "SnackImagePreview",
+      "figmaSvg": "figma/snack-image.svg"
+    },
+    {
+      "componentId": "Snack/Collection",
+      "figmaLayerName": "Snack/Collection",
+      "componentName": "SnackCollectionHighlightPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "SnackCollectionHighlightPreview",
+      "figmaSvg": "figma/snack-collection.svg"
+    },
+    {
+      "componentId": "Catalog/Filters",
+      "figmaLayerName": "Catalog/Filters",
+      "componentName": "FilterEnabledPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetsnack/ui/components/Filters.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "FilterEnabledPreview",
+      "figmaSvg": "figma/catalog-filters.svg"
+    },
+    {
+      "componentId": "Catalog/Filter bar",
+      "figmaLayerName": "Catalog/Filter bar",
+      "componentName": "FilterBarPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "FilterBarPreview",
+      "figmaSvg": "figma/catalog-filter-bar.svg"
+    },
+    {
+      "componentId": "Cart/Quantity",
+      "figmaLayerName": "Cart/Quantity",
+      "componentName": "QuantitySelectorPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetsnack/ui/components/QuantitySelector.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "QuantitySelectorPreview",
+      "figmaSvg": "figma/cart-quantity.svg"
+    },
+    {
+      "componentId": "Cart/Item",
+      "figmaLayerName": "Cart/Item",
+      "componentName": "CartItemPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "CartItemPreview",
+      "figmaSvg": "figma/cart-item.svg"
+    },
+    {
+      "componentId": "Cart/Summary",
+      "figmaLayerName": "Cart/Summary",
+      "componentName": "SummaryItemPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "SummaryItemPreview",
+      "figmaSvg": "figma/cart-summary.svg"
+    },
+    {
+      "componentId": "Cart/Swipe to dismiss",
+      "figmaLayerName": "Cart/Swipe to dismiss",
+      "componentName": "SwipeDismissItemPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "SwipeDismissItemPreview",
+      "figmaSvg": "figma/cart-swipe-to-dismiss.svg"
+    },
+    {
+      "componentId": "Search/Bar",
+      "figmaLayerName": "Search/Bar",
+      "componentName": "SearchBarCatalogPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "SearchBarCatalogPreview",
+      "figmaSvg": "figma/search-bar.svg"
+    },
+    {
+      "componentId": "Search/Categories",
+      "figmaLayerName": "Search/Categories",
+      "componentName": "SearchCategoryCatalogPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "SearchCategoryCatalogPreview",
+      "figmaSvg": "figma/search-categories.svg"
+    },
+    {
+      "componentId": "Search/Results",
+      "figmaLayerName": "Search/Results",
+      "componentName": "SearchResultCatalogPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "SearchResultCatalogPreview",
+      "figmaSvg": "figma/search-results.svg"
+    },
+    {
+      "componentId": "Search/Suggestions",
+      "figmaLayerName": "Search/Suggestions",
+      "componentName": "SearchSuggestionsPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "SearchSuggestionsPreview",
+      "figmaSvg": "figma/search-suggestions.svg"
+    },
+    {
+      "componentId": "Search/No results",
+      "figmaLayerName": "Search/No results",
+      "componentName": "NoResultsPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "NoResultsPreview",
+      "figmaSvg": "figma/search-no-results.svg"
+    },
+    {
+      "componentId": "Chrome/Bottom nav",
+      "figmaLayerName": "Chrome/Bottom nav",
+      "componentName": "JetsnackBottomBarFeedPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "JetsnackBottomBarFeedPreview",
+      "figmaSvg": "figma/chrome-bottom-nav.svg"
+    },
+    {
+      "componentId": "Chrome/Bottom nav item",
+      "figmaLayerName": "Chrome/Bottom nav item",
+      "componentName": "JetsnackBottomNavigationItemSelectedPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "JetsnackBottomNavigationItemSelectedPreview",
+      "figmaSvg": "figma/chrome-bottom-nav-item.svg"
+    },
+    {
+      "componentId": "Chrome/Destination bar",
+      "figmaLayerName": "Chrome/Destination bar",
+      "componentName": "PreviewDestinationBar",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetsnack/ui/home/DestinationBar.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "PreviewDestinationBar",
+      "figmaSvg": "figma/chrome-destination-bar.svg"
+    },
+    {
+      "componentId": "Feedback/Snackbar",
+      "figmaLayerName": "Feedback/Snackbar",
+      "componentName": "JetsnackSnackbarPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "JetsnackSnackbarPreview",
+      "figmaSvg": "figma/feedback-snackbar.svg"
+    },
+    {
+      "componentId": "Screens/App shell",
+      "figmaLayerName": "Screens/App shell",
+      "componentName": "JetsnackApp",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetsnack/ui/JetsnackApp.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "JetsnackApp",
+      "figmaSvg": "figma/screens-app-shell.svg"
+    },
+    {
+      "componentId": "Screens/Feed",
+      "figmaLayerName": "Screens/Feed",
+      "componentName": "FeedScreenPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetsnack/catalog/JetsnackScreenPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "FeedScreenPreview",
+      "figmaSvg": "figma/screens-feed.svg"
+    },
+    {
+      "componentId": "Screens/Cart",
+      "figmaLayerName": "Screens/Cart",
+      "componentName": "CartScreenPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetsnack/catalog/JetsnackScreenPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "CartScreenPreview",
+      "figmaSvg": "figma/screens-cart.svg"
+    },
+    {
+      "componentId": "Screens/Search",
+      "figmaLayerName": "Screens/Search",
+      "componentName": "SearchScreenPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetsnack/catalog/JetsnackScreenPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "SearchScreenPreview",
+      "figmaSvg": "figma/screens-search.svg"
+    },
+    {
+      "componentId": "Screens/Profile",
+      "figmaLayerName": "Screens/Profile",
+      "componentName": "ProfileScreenPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetsnack/catalog/JetsnackScreenPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "ProfileScreenPreview",
+      "figmaSvg": "figma/screens-profile.svg"
+    },
+    {
+      "componentId": "Snack/Detail",
+      "figmaLayerName": "Snack/Detail",
+      "componentName": "SnackDetailCatalogPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "SnackDetailCatalogPreview",
+      "figmaSvg": "figma/snack-detail.svg"
+    },
+    {
+      "componentId": "Catalog/Filter screen",
+      "figmaLayerName": "Catalog/Filter screen",
+      "componentName": "FilterScreenCatalogPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetsnack/catalog/JetsnackScreenPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "FilterScreenCatalogPreview",
+      "figmaSvg": "figma/catalog-filter-screen.svg"
+    }
+  ]
+}

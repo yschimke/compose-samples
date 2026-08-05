@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 1115" width="1050" height="1115" role="img" aria-label="Tokens/Gradients layout wireframe">
+  <title>Tokens/Gradients — layout wireframe (slots + tokens)</title>
+  <rect width="1050" height="1115" fill="#ffffff"/>
+  <g>
+    <rect x="0" y="0" width="1050" height="1115" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="1050" height="1115" fill="none" fill-opacity="0" stroke="#2E7D6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="1050" height="1115" fill="#FFFFFF" fill-opacity="1" stroke="#8E6BA8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="3" y="12" font-family="system-ui, sans-serif" font-size="9" fill="#8E6BA8">#FFFFFFFF</text>
+  </g>
+  <g>
+    <rect x="32" y="32" width="986" height="1051" fill="none" fill-opacity="0" stroke="#B0813B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="32" y="43" width="986" height="105" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="32" y="43" width="221" height="37" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M42.5,85 H1007.5 A10.5,10.5 0 0 1 1018,95.5 V137.5 A10.5,10.5 0 0 1 1007.5,148 H42.5 A10.5,10.5 0 0 1 32,137.5 V95.5 A10.5,10.5 0 0 1 42.5,85 Z" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="35" y="97" font-family="system-ui, sans-serif" font-size="9" fill="#A85B6B">pad ·</text>
+  </g>
+  <g>
+    <rect x="32" y="175" width="986" height="105" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="32" y="175" width="221" height="37" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M42.5,217 H1007.5 A10.5,10.5 0 0 1 1018,227.5 V269.5 A10.5,10.5 0 0 1 1007.5,280 H42.5 A10.5,10.5 0 0 1 32,269.5 V227.5 A10.5,10.5 0 0 1 42.5,217 Z" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="35" y="229" font-family="system-ui, sans-serif" font-size="9" fill="#A85B6B">pad ·</text>
+  </g>
+  <g>
+    <rect x="32" y="307" width="986" height="105" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="32" y="307" width="221" height="37" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M42.5,349 H1007.5 A10.5,10.5 0 0 1 1018,359.5 V401.5 A10.5,10.5 0 0 1 1007.5,412 H42.5 A10.5,10.5 0 0 1 32,401.5 V359.5 A10.5,10.5 0 0 1 42.5,349 Z" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="35" y="361" font-family="system-ui, sans-serif" font-size="9" fill="#A85B6B">pad ·</text>
+  </g>
+  <g>
+    <rect x="32" y="439" width="986" height="105" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="32" y="439" width="221" height="37" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M42.5,481 H1007.5 A10.5,10.5 0 0 1 1018,491.5 V533.5 A10.5,10.5 0 0 1 1007.5,544 H42.5 A10.5,10.5 0 0 1 32,533.5 V491.5 A10.5,10.5 0 0 1 42.5,481 Z" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="35" y="493" font-family="system-ui, sans-serif" font-size="9" fill="#A85B6B">pad ·</text>
+  </g>
+  <g>
+    <rect x="32" y="571" width="986" height="105" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="32" y="571" width="642" height="37" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M42.5,613 H1007.5 A10.5,10.5 0 0 1 1018,623.5 V665.5 A10.5,10.5 0 0 1 1007.5,676 H42.5 A10.5,10.5 0 0 1 32,665.5 V623.5 A10.5,10.5 0 0 1 42.5,613 Z" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="35" y="625" font-family="system-ui, sans-serif" font-size="9" fill="#A85B6B">pad ·</text>
+  </g>
+  <g>
+    <rect x="32" y="703" width="986" height="105" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="32" y="703" width="682" height="37" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M42.5,745 H1007.5 A10.5,10.5 0 0 1 1018,755.5 V797.5 A10.5,10.5 0 0 1 1007.5,808 H42.5 A10.5,10.5 0 0 1 32,797.5 V755.5 A10.5,10.5 0 0 1 42.5,745 Z" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="35" y="757" font-family="system-ui, sans-serif" font-size="9" fill="#A85B6B">pad ·</text>
+  </g>
+  <g>
+    <rect x="32" y="835" width="986" height="105" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="32" y="835" width="221" height="37" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M42.5,877 H1007.5 A10.5,10.5 0 0 1 1018,887.5 V929.5 A10.5,10.5 0 0 1 1007.5,940 H42.5 A10.5,10.5 0 0 1 32,929.5 V887.5 A10.5,10.5 0 0 1 42.5,877 Z" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="35" y="889" font-family="system-ui, sans-serif" font-size="9" fill="#A85B6B">pad ·</text>
+  </g>
+  <g>
+    <rect x="32" y="967" width="986" height="105" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="32" y="967" width="161" height="37" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M42.5,1009 H1007.5 A10.5,10.5 0 0 1 1018,1019.5 V1061.5 A10.5,10.5 0 0 1 1007.5,1072 H42.5 A10.5,10.5 0 0 1 32,1061.5 V1019.5 A10.5,10.5 0 0 1 42.5,1009 Z" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="35" y="1021" font-family="system-ui, sans-serif" font-size="9" fill="#A85B6B">pad ·</text>
+  </g>
+</svg>

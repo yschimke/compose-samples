@@ -1,0 +1,86 @@
+{
+  "name": "Jetsnack",
+  "modes": {
+    "value": "Value"
+  },
+  "defaultModeId": "value",
+  "variables": [
+    {
+      "name": "color/primary",
+      "resolvedType": "COLOR",
+      "valuesByMode": {
+        "value": "#4b30edff"
+      }
+    },
+    {
+      "name": "color/onPrimary",
+      "resolvedType": "COLOR",
+      "valuesByMode": {
+        "value": "#ffffffff"
+      }
+    },
+    {
+      "name": "color/primaryContainer",
+      "resolvedType": "COLOR",
+      "valuesByMode": {
+        "value": "#eaddffff"
+      }
+    },
+    {
+      "name": "color/secondary",
+      "resolvedType": "COLOR",
+      "valuesByMode": {
+        "value": "#86f7faff"
+      }
+    },
+    {
+      "name": "color/secondaryContainer",
+      "resolvedType": "COLOR",
+      "valuesByMode": {
+        "value": "#e8def8ff"
+      }
+    },
+    {
+      "name": "color/tertiary",
+      "resolvedType": "COLOR",
+      "valuesByMode": {
+        "value": "#005687ff"
+      }
+    },
+    {
+      "name": "color/error",
+      "resolvedType": "COLOR",
+      "valuesByMode": {
+        "value": "#d00036ff"
+      }
+    },
+    {
+      "name": "color/surface",
+      "resolvedType": "COLOR",
+      "valuesByMode": {
+        "value": "#ffffffff"
+      }
+    },
+    {
+      "name": "color/onSurface",
+      "resolvedType": "COLOR",
+      "valuesByMode": {
+        "value": "#000000de"
+      }
+    },
+    {
+      "name": "color/surfaceVariant",
+      "resolvedType": "COLOR",
+      "valuesByMode": {
+        "value": "#f6f6f6ff"
+      }
+    },
+    {
+      "name": "color/outline",
+      "resolvedType": "COLOR",
+      "valuesByMode": {
+        "value": "#0000001f"
+      }
+    }
+  ]
+}

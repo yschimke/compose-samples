@@ -1,0 +1,89 @@
+{
+  "$schema": "https://github.com/yschimke/design-parity/schema/dtcg-tokens.schema.json",
+  "color": {
+    "primary": {
+      "$type": "color",
+      "$value": "#4b30edff"
+    },
+    "onPrimary": {
+      "$type": "color",
+      "$value": "#ffffffff"
+    },
+    "primaryContainer": {
+      "$type": "color",
+      "$value": "#eaddffff"
+    },
+    "secondary": {
+      "$type": "color",
+      "$value": "#86f7faff"
+    },
+    "secondaryContainer": {
+      "$type": "color",
+      "$value": "#e8def8ff"
+    },
+    "tertiary": {
+      "$type": "color",
+      "$value": "#005687ff"
+    },
+    "error": {
+      "$type": "color",
+      "$value": "#d00036ff"
+    },
+    "surface": {
+      "$type": "color",
+      "$value": "#ffffffff"
+    },
+    "onSurface": {
+      "$type": "color",
+      "$value": "#000000de"
+    },
+    "surfaceVariant": {
+      "$type": "color",
+      "$value": "#f6f6f6ff"
+    },
+    "outline": {
+      "$type": "color",
+      "$value": "#0000001f"
+    }
+  },
+  "type": {
+    "displaySmall": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "FontListFontFamily(fonts=[ResourceFont(resId=2131165186",
+        "fontSize": 48,
+        "fontWeight": 400,
+        "lineHeight": 59
+      }
+    },
+    "titleLarge": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "FontListFontFamily(fonts=[ResourceFont(resId=2131165186",
+        "fontSize": 20,
+        "fontWeight": 600,
+        "lineHeight": 24
+      }
+    },
+    "bodyLarge": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "FontListFontFamily(fonts=[ResourceFont(resId=2131165185",
+        "fontSize": 16,
+        "fontWeight": 400,
+        "letterSpacing": 0.15,
+        "lineHeight": 28
+      }
+    },
+    "labelSmall": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "FontListFontFamily(fonts=[ResourceFont(resId=2131165186",
+        "fontSize": 12,
+        "fontWeight": 600,
+        "letterSpacing": 1,
+        "lineHeight": 16
+      }
+    }
+  }
+}
