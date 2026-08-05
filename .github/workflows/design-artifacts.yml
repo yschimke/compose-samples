@@ -28,6 +28,7 @@ on:
       - '*/app/src/debug/**'
       - '*/app/src/main/**'
       - '*/app/build.gradle.kts'
+      - 'Jetcaster/mobile/src/debug/**'
       - 'Jetcaster/mobile/src/main/**'
       - 'Jetcaster/wear/src/debug/**'
       - 'Jetcaster/wear/src/main/**'
