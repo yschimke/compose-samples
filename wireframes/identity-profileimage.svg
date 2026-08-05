@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 169 169" width="169" height="169" role="img" aria-label="Identity/ProfileImage layout wireframe">
+  <title>Identity/ProfileImage — layout wireframe (slots + tokens)</title>
+  <rect width="169" height="169" fill="#ffffff"/>
+  <g>
+    <rect x="0" y="0" width="169" height="169" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="169" height="169" fill="none" fill-opacity="0" stroke="#2E7D6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="169" height="169" fill="#FFF8F4" fill-opacity="1" stroke="#8E6BA8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="3" y="12" font-family="system-ui, sans-serif" font-size="9" fill="#8E6BA8">#FFFFF8F4</text>
+  </g>
+  <g>
+    <rect x="21" y="21" width="127" height="127" fill="none" fill-opacity="0" stroke="#B0813B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M84.5,32 H84.5 A52.5,52.5 0 0 1 137,84.5 V84.5 A52.5,52.5 0 0 1 84.5,137 H84.5 A52.5,52.5 0 0 1 32,84.5 V84.5 A52.5,52.5 0 0 1 84.5,32 Z" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="35" y="44" font-family="system-ui, sans-serif" font-size="9" fill="#3B72A8">pad 4.0dp</text>
+  </g>
+</svg>

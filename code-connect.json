@@ -1,0 +1,133 @@
+{
+  "system": "reply",
+  "title": "Reply",
+  "label": "Compose",
+  "source": {
+    "repo": "yschimke/compose-samples",
+    "ref": "previews",
+    "module": ":app"
+  },
+  "generatedAt": "2026-08-05T23:22:11.431Z",
+  "mappings": [
+    {
+      "componentId": "Adaptive/Phone",
+      "figmaLayerName": "Adaptive/Phone",
+      "componentName": "ReplyAppPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/reply/ui/MainActivity.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "ReplyAppPreview",
+      "figmaSvg": "figma/adaptive-phone.svg"
+    },
+    {
+      "componentId": "Mail/List",
+      "figmaLayerName": "Mail/List",
+      "componentName": "ReplyEmailListPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/reply/catalog/ReplyComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "ReplyEmailListPreview",
+      "figmaSvg": "figma/mail-list.svg"
+    },
+    {
+      "componentId": "Mail/Detail",
+      "figmaLayerName": "Mail/Detail",
+      "componentName": "ReplyEmailDetailPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/reply/catalog/ReplyComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "ReplyEmailDetailPreview",
+      "figmaSvg": "figma/mail-detail.svg"
+    },
+    {
+      "componentId": "Email/ListItem",
+      "figmaLayerName": "Email/ListItem",
+      "componentName": "ReplyEmailListItemPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/reply/catalog/ReplyComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "ReplyEmailListItemPreview",
+      "figmaSvg": "figma/email-listitem.svg"
+    },
+    {
+      "componentId": "Threads/ThreadItem",
+      "figmaLayerName": "Threads/ThreadItem",
+      "componentName": "ReplyEmailThreadItemPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/reply/catalog/ReplyComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "ReplyEmailThreadItemPreview",
+      "figmaSvg": "figma/threads-threaditem.svg"
+    },
+    {
+      "componentId": "AppBars/Search",
+      "figmaLayerName": "AppBars/Search",
+      "componentName": "ReplyDockedSearchBarPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/reply/catalog/ReplyComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "ReplyDockedSearchBarPreview",
+      "figmaSvg": "figma/appbars-search.svg"
+    },
+    {
+      "componentId": "AppBars/Detail",
+      "figmaLayerName": "AppBars/Detail",
+      "componentName": "EmailDetailAppBarFullScreenPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/reply/catalog/ReplyComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "EmailDetailAppBarFullScreenPreview",
+      "figmaSvg": "figma/appbars-detail.svg"
+    },
+    {
+      "componentId": "Navigation/BottomBar",
+      "figmaLayerName": "Navigation/BottomBar",
+      "componentName": "ReplyBottomNavigationBarPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/reply/catalog/ReplyComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "ReplyBottomNavigationBarPreview",
+      "figmaSvg": "figma/navigation-bottombar.svg"
+    },
+    {
+      "componentId": "Navigation/Rail",
+      "figmaLayerName": "Navigation/Rail",
+      "componentName": "ReplyNavigationRailTopPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/reply/catalog/ReplyComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "ReplyNavigationRailTopPreview",
+      "figmaSvg": "figma/navigation-rail.svg"
+    },
+    {
+      "componentId": "Navigation/Drawer",
+      "figmaLayerName": "Navigation/Drawer",
+      "componentName": "PermanentNavigationDrawerContentPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/reply/catalog/ReplyComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "PermanentNavigationDrawerContentPreview",
+      "figmaSvg": "figma/navigation-drawer.svg"
+    },
+    {
+      "componentId": "Identity/ProfileImage",
+      "figmaLayerName": "Identity/ProfileImage",
+      "componentName": "ReplyProfileImagePreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/reply/catalog/ReplyComponentPreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "ReplyProfileImagePreview",
+      "figmaSvg": "figma/identity-profileimage.svg"
+    },
+    {
+      "componentId": "States/Coming soon",
+      "figmaLayerName": "States/Coming soon",
+      "componentName": "ComingSoonPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/reply/ui/EmptyComingSoon.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "ComingSoonPreview",
+      "figmaSvg": "figma/states-coming-soon.svg"
+    }
+  ]
+}
