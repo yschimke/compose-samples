@@ -187,11 +187,6 @@
               "props": {
                 "title": "overflowing"
               }
-            },
-            {
-              "preview": "JetcasterPodcastDetailsHeaderLightPreview",
-              "caption": "Light mode.",
-              "theme": "light"
             }
           ]
         },
@@ -258,11 +253,6 @@
               "props": {
                 "title": "overflowing"
               }
-            },
-            {
-              "preview": "JetcasterTopPodcastRowItemLightPreview",
-              "caption": "Light mode.",
-              "theme": "light"
             }
           ]
         },
@@ -352,11 +342,6 @@
               "props": {
                 "duration": null
               }
-            },
-            {
-              "preview": "JetcasterEpisodeRowLightPreview",
-              "caption": "Light mode.",
-              "theme": "light"
             }
           ]
         }
@@ -421,11 +406,6 @@
               "props": {
                 "hasNext": false
               }
-            },
-            {
-              "preview": "JetcasterPlayerButtonsLightPreview",
-              "caption": "Light mode.",
-              "theme": "light"
             }
           ]
         },
@@ -497,11 +477,6 @@
               "props": {
                 "selected": "Library"
               }
-            },
-            {
-              "preview": "JetcasterPillToolbarLightPreview",
-              "caption": "Light mode.",
-              "theme": "light"
             }
           ]
         },

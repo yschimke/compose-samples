@@ -644,62 +644,6 @@ fun JetcasterOfflineStatePreview() = Wrap {
 // cover the surfaces where swapping the palette actually changes something worth reviewing: filled
 // containers, selected-state colouring, and text over artwork.
 
-@Preview(name = "EpisodeListItem — light", showBackground = true, widthDp = 412)
-@Composable
-fun JetcasterEpisodeRowLightPreview() = Wrap(dark = false) {
-    EpisodeListItem(
-        episode = episode,
-        podcast = subscribedPodcast,
-        onClick = {},
-        onQueueEpisode = {},
-        showSummary = true,
-        modifier = Modifier.fillMaxWidth(),
-    )
-}
-
-@Preview(name = "PodcastDetails header — light", showBackground = true, widthDp = 412, heightDp = 640)
-@Composable
-fun JetcasterPodcastDetailsHeaderLightPreview() = Wrap(dark = false) {
-    PodcastDetailsHeaderItem(
-        podcast = subscribedPodcast,
-        toggleSubscribe = {},
-        modifier = Modifier.fillMaxWidth(),
-    )
-}
-
-@Preview(name = "PlayerButtons — light", showBackground = true, widthDp = 412, heightDp = 300)
-@Composable
-fun JetcasterPlayerButtonsLightPreview() = Wrap(dark = false) {
-    PlayerButtons(
-        hasNext = true,
-        isPlaying = true,
-        onPlayPress = {},
-        onPausePress = {},
-        onAdvanceBy = {},
-        onRewindBy = {},
-        onNext = {},
-        onPrevious = {},
-    )
-}
-
-@Preview(name = "PillToolbar — light", showBackground = true, widthDp = 412)
-@Composable
-fun JetcasterPillToolbarLightPreview() = Wrap(dark = false) {
-    PillToolbar(selectedHomeCategory = HomeCategory.Library, onHomeAction = {})
-}
-
-@Preview(name = "TopPodcastRowItem — light", showBackground = true, widthDp = 160)
-@Composable
-fun JetcasterTopPodcastRowItemLightPreview() = Wrap(dark = false) {
-    TopPodcastRowItem(
-        podcastTitle = subscribedPodcast.title,
-        podcastImageUrl = subscribedPodcast.imageUrl,
-        isFollowed = true,
-        onToggleFollowClicked = {},
-        modifier = Modifier.fillMaxWidth(),
-    )
-}
-
 @Preview(name = "Home — library, light", showBackground = true, widthDp = 412, heightDp = 900)
 @Composable
 fun JetcasterHomeLibraryLightPreview() = JetcasterTheme(darkTheme = false) {
