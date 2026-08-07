@@ -1,11 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="368" height="368" viewBox="0 0 368 368" text-rendering="geometricPrecision" font-family="sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="336" height="336" viewBox="0 0 336 336" text-rendering="geometricPrecision" font-family="sans-serif">
 <defs>
   <linearGradient id="gf-0" x1="0" y1="0" x2="0" y2="1">
     <stop offset="0" stop-color="#000000" stop-opacity="0"/>
     <stop offset="1" stop-color="#000000"/>
   </linearGradient>
 </defs>
-<g transform="translate(16, 16)">
+<g transform="translate(0, 0)">
   <g id="Root">
     <g id="ReusableComposeNode">
       <g id="ReusableComposeNode">

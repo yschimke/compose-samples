@@ -1,13 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="977" height="179" viewBox="0 0 977 179" text-rendering="geometricPrecision" font-family="ComposeAI Missing Font">
+<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="210" viewBox="0 0 1050 210" text-rendering="geometricPrecision" font-family="ComposeAI Missing Font">
 <defs><style>@font-face{font-family:'ComposeAI Missing Font';font-style:normal;font-weight:400;src:url(data:font/ttf;base64,AAEAAAAKAIAAAwAgT1MvMlkzT9UAAACsAAAAYGNtYXAADAAmAAABDAAAACRnbHlmBzUEwQAAATAAAAA4aGVhZGHaQ6EAAAFoAAAANmhoZWEF3gJHAAABoAAAACRobXR4BXgAUAAAAcQAAAAIbG9jYQAcAAAAAAHMAAAABm1heHAABQAJAAAB1AAAACBuYW1lDioecAAAAfQAAADEcG9zdP+fADIAAAK4AAAAIAAEArwBkAAFAAACigJYAAAASwKKAlgAAAFeADIBLAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABDQUlUAEAAAAAAAyD/OAAAAyAAyAAAAAEAAAAAAfQCvAAAACAAAQAAAAEAAwABAAAADAAEABgAAAACAAIAAAAA//8AAP//AAEAAAACAFAAAAJsArwAAwAHAAABAQEBAQEBAQBQAhwAAP3kADwAAAGkAAAAAAAAArwAAP2AAkQAAP28AAEAAAABAADueyfFXw889QALA+gAAAAAAAAAAAAAAAAAAAAAAFAAAAJsArwAAAAIAAIAAAAAAAAAAQAAAyD/OAAAArwAUABQAmwAAQAAAAAAAAAAAAAAAAAAAAICvAAAArwAUAAAAAAAHAAAAAEAAAACAAgAAgAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAEADYAAwABBAkAAQAsAAAAAwABBAkAAgAOACwAAwABBAkABAAsADoAAwABBAkABgAoAGYAQwBvAG0AcABvAHMAZQBBAEkAIABNAGkAcwBzAGkAbgBnACAARgBvAG4AdABSAGUAZwB1AGwAYQByAEMAbwBtAHAAbwBzAGUAQQBJACAATQBpAHMAcwBpAG4AZwAgAEYAbwBuAHQAQwBvAG0AcABvAHMAZQBBAEkATQBpAHMAcwBpAG4AZwBGAG8AbgB0AAMAAAAAAAD/nAAyAAAAAAAAAAAAAAAAAAAAAAAAAAA=) format('truetype');}</style></defs>
-<g transform="translate(-47, -26)">
+<g transform="translate(0, 0)">
   <g id="Root">
     <g id="ReusableComposeNode">
       <g id="ReusableComposeNode">
         <rect x="63" y="42" width="945" height="147" fill="#ECE6F0"/>
       </g>
       <g id="ReusableComposeNode">
-        <image href="chrome-home-app-bar.figma-raster/2884.png" x="63" y="42" width="945" height="147"/>
+        <image href="chrome-home-app-bar.figma-raster/2861.png" x="63" y="42" width="945" height="147"/>
       </g>
     </g>
   </g>

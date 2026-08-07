@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1082" height="221" viewBox="0 0 1082 221" text-rendering="geometricPrecision" font-family="sans-serif">
-<g transform="translate(16, 16)">
+<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="189" viewBox="0 0 1050 189" text-rendering="geometricPrecision" font-family="sans-serif">
+<g transform="translate(0, 0)">
   <g id="Root">
     <g id="ReusableComposeNode">
       <rect x="0" y="0" width="1050" height="189" fill="#261604"/>
@@ -22,8 +22,6 @@
               </g>
             </g>
           </g>
-        </g>
-        <g id="ReusableComposeNode">
         </g>
         <g id="ReusableComposeNode">
         </g>

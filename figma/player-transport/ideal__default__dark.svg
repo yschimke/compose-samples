@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="747" height="610" viewBox="0 0 747 610" text-rendering="geometricPrecision" font-family="sans-serif">
-<g transform="translate(-5, 16)">
+<svg xmlns="http://www.w3.org/2000/svg" width="757" height="620" viewBox="0 0 757 620" text-rendering="geometricPrecision" font-family="sans-serif">
+<g transform="translate(0, 0)">
   <g id="Root">
     <g id="ReusableComposeNode">
       <g id="ReusableComposeNode">
@@ -42,8 +42,6 @@
               <path d="M660 680 L660 280 Q 660 263 671.5 251.5 Q 683 240 700 240 Q 717 240 728.5 251.5 Q 740 263 740 280 L740 680 Q 740 697 728.5 708.5 Q 717 720 700 720 Q 683 720 671.5 708.5 Q 660 697 660 680 Z M220 645 L220 315 Q 220 297 232 286 Q 244 275 260 275 Q 265 275 271 276 Q 277 277 282 281 L530 447 Q 539 453 543.5 461.5 Q 548 470 548 480 Q 548 490 543.5 498.5 Q 539 507 530 513 L282 679 Q 277 683 271 684 Q 265 685 260 685 Q 244 685 232 674 Q 220 663 220 645 Z" fill="#FBEDE4"/>
             </g>
           </g>
-        </g>
-        <g id="ReusableComposeNode">
         </g>
       </g>
     </g>
