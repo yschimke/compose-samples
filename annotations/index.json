@@ -1,7 +1,7 @@
 {
   "schema": "compose-preview-annotations/v1",
   "previews": {
-    "podcast-screen__ideal__default__compact": [
+    "podcast-screen__ideal__default__largeround": [
       {
         "kind": "layout",
         "bounds": {
@@ -88,7 +88,7 @@
         }
       }
     ],
-    "podcast-screen__ideal__default__compact__device-smallround": [
+    "podcast-screen__ideal__default__smallround__device-smallround": [
       {
         "kind": "layout",
         "bounds": {
@@ -175,7 +175,7 @@
         }
       }
     ],
-    "podcast-screen__ideal__default__compact__device-smallround__fontscale-1.24": [
+    "podcast-screen__ideal__default__smallround__device-smallround__fontscale-1.24": [
       {
         "kind": "layout",
         "bounds": {
@@ -262,7 +262,7 @@
         }
       }
     ],
-    "podcast-screen__ideal__loading__compact": [
+    "podcast-screen__ideal__loading__largeround": [
       {
         "kind": "layout",
         "bounds": {
@@ -349,7 +349,7 @@
         }
       }
     ],
-    "podcast-screen__ideal__empty__compact": [
+    "podcast-screen__ideal__empty__largeround": [
       {
         "kind": "layout",
         "bounds": {
@@ -436,7 +436,7 @@
         }
       }
     ],
-    "podcast-details__ideal__default__compact": [
+    "podcast-details__ideal__default__largeround": [
       {
         "kind": "layout",
         "bounds": {
@@ -556,7 +556,7 @@
         }
       }
     ],
-    "podcast-details__ideal__default__compact__device-smallround": [
+    "podcast-details__ideal__default__smallround__device-smallround": [
       {
         "kind": "layout",
         "bounds": {
@@ -676,7 +676,7 @@
         }
       }
     ],
-    "podcast-details__ideal__default__compact__device-smallround__fontscale-1.24": [
+    "podcast-details__ideal__default__smallround__device-smallround__fontscale-1.24": [
       {
         "kind": "layout",
         "bounds": {
@@ -796,7 +796,7 @@
         }
       }
     ],
-    "podcast-details__ideal__loading__compact": [
+    "podcast-details__ideal__loading__largeround": [
       {
         "kind": "layout",
         "bounds": {
@@ -916,7 +916,7 @@
         }
       }
     ],
-    "podcast-details__ideal__empty__compact": [
+    "podcast-details__ideal__empty__largeround": [
       {
         "kind": "layout",
         "bounds": {
@@ -1036,7 +1036,7 @@
         }
       }
     ],
-    "library-screen__ideal__default__compact": [
+    "library-screen__ideal__default__largeround": [
       {
         "kind": "layout",
         "bounds": {
@@ -1168,7 +1168,7 @@
         }
       }
     ],
-    "library-screen__ideal__default__compact__device-smallround": [
+    "library-screen__ideal__default__smallround__device-smallround": [
       {
         "kind": "layout",
         "bounds": {
@@ -1300,7 +1300,7 @@
         }
       }
     ],
-    "library-screen__ideal__loading__compact": [
+    "library-screen__ideal__loading__largeround": [
       {
         "kind": "layout",
         "bounds": {
@@ -1432,7 +1432,7 @@
         }
       }
     ],
-    "library-screen__ideal__no-subscriptions__compact": [
+    "library-screen__ideal__no-subscriptions__largeround": [
       {
         "kind": "layout",
         "bounds": {
@@ -1564,7 +1564,7 @@
         }
       }
     ],
-    "episode-latest__ideal__default__compact": [
+    "episode-latest__ideal__default__largeround": [
       {
         "kind": "layout",
         "bounds": {
@@ -1684,7 +1684,7 @@
         }
       }
     ],
-    "episode-latest__ideal__default__compact__device-smallround": [
+    "episode-latest__ideal__default__smallround__device-smallround": [
       {
         "kind": "layout",
         "bounds": {
@@ -1804,7 +1804,7 @@
         }
       }
     ],
-    "episode-latest__ideal__loading__compact": [
+    "episode-latest__ideal__loading__largeround": [
       {
         "kind": "layout",
         "bounds": {
@@ -1924,7 +1924,7 @@
         }
       }
     ],
-    "episode-latest__ideal__empty__compact": [
+    "episode-latest__ideal__empty__largeround": [
       {
         "kind": "layout",
         "bounds": {
@@ -2044,7 +2044,7 @@
         }
       }
     ],
-    "episode-screen__ideal__default__compact": [
+    "episode-screen__ideal__default__largeround": [
       {
         "kind": "layout",
         "bounds": {
@@ -2181,7 +2181,7 @@
         }
       }
     ],
-    "episode-screen__ideal__default__compact__device-smallround": [
+    "episode-screen__ideal__default__smallround__device-smallround": [
       {
         "kind": "layout",
         "bounds": {
@@ -2318,7 +2318,7 @@
         }
       }
     ],
-    "episode-screen__ideal__default__compact__device-smallround__fontscale-1.24": [
+    "episode-screen__ideal__default__smallround__device-smallround__fontscale-1.24": [
       {
         "kind": "layout",
         "bounds": {
@@ -2455,7 +2455,7 @@
         }
       }
     ],
-    "episode-screen__ideal__loading__compact": [
+    "episode-screen__ideal__loading__largeround": [
       {
         "kind": "layout",
         "bounds": {
@@ -2592,7 +2592,7 @@
         }
       }
     ],
-    "episode-screen__ideal__loading__compact__device-smallround": [
+    "episode-screen__ideal__loading__smallround__device-smallround": [
       {
         "kind": "layout",
         "bounds": {
@@ -2729,7 +2729,7 @@
         }
       }
     ],
-    "episode-screen__ideal__empty__compact": [
+    "episode-screen__ideal__empty__largeround": [
       {
         "kind": "layout",
         "bounds": {
@@ -2866,7 +2866,7 @@
         }
       }
     ],
-    "queue-screen__ideal__default__compact": [
+    "queue-screen__ideal__default__largeround": [
       {
         "kind": "layout",
         "bounds": {
@@ -2981,7 +2981,7 @@
         }
       }
     ],
-    "queue-screen__ideal__default__compact__device-smallround": [
+    "queue-screen__ideal__default__smallround__device-smallround": [
       {
         "kind": "layout",
         "bounds": {
@@ -3096,7 +3096,7 @@
         }
       }
     ],
-    "queue-screen__ideal__loading__compact": [
+    "queue-screen__ideal__loading__largeround": [
       {
         "kind": "layout",
         "bounds": {
@@ -3211,7 +3211,7 @@
         }
       }
     ],
-    "queue-screen__ideal__empty__compact": [
+    "queue-screen__ideal__empty__largeround": [
       {
         "kind": "layout",
         "bounds": {
@@ -3326,7 +3326,7 @@
         }
       }
     ],
-    "podcast-content__ideal__default__compact": [
+    "podcast-content__ideal__default__largeround": [
       {
         "kind": "layout",
         "bounds": {
@@ -3375,7 +3375,7 @@
         }
       }
     ],
-    "podcast-content__ideal__default__compact__device-smallround": [
+    "podcast-content__ideal__default__smallround__device-smallround": [
       {
         "kind": "layout",
         "bounds": {
@@ -3424,7 +3424,7 @@
         }
       }
     ],
-    "player-controls__ideal__default__compact": [
+    "player-controls__ideal__default__largeround": [
       {
         "kind": "layout",
         "bounds": {
@@ -3492,7 +3492,7 @@
         }
       }
     ],
-    "player-controls__ideal__default__compact__device-smallround": [
+    "player-controls__ideal__default__smallround__device-smallround": [
       {
         "kind": "layout",
         "bounds": {
@@ -3560,7 +3560,7 @@
         }
       }
     ],
-    "player-controls__ideal__default__compact__device-smallround__fontscale-1.24": [
+    "player-controls__ideal__default__smallround__device-smallround__fontscale-1.24": [
       {
         "kind": "layout",
         "bounds": {

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="384" height="384" viewBox="0 0 384 384" text-rendering="geometricPrecision" font-family="ComposeAI Missing Font">
+<defs><style>@font-face{font-family:'ComposeAI Missing Font';font-style:normal;font-weight:400;src:url(data:font/ttf;base64,AAEAAAAKAIAAAwAgT1MvMlkzT9UAAACsAAAAYGNtYXAADAAmAAABDAAAACRnbHlmBzUEwQAAATAAAAA4aGVhZGHaQ6EAAAFoAAAANmhoZWEF3gJHAAABoAAAACRobXR4BXgAUAAAAcQAAAAIbG9jYQAcAAAAAAHMAAAABm1heHAABQAJAAAB1AAAACBuYW1lDioecAAAAfQAAADEcG9zdP+fADIAAAK4AAAAIAAEArwBkAAFAAACigJYAAAASwKKAlgAAAFeADIBLAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABDQUlUAEAAAAAAAyD/OAAAAyAAyAAAAAEAAAAAAfQCvAAAACAAAQAAAAEAAwABAAAADAAEABgAAAACAAIAAAAA//8AAP//AAEAAAACAFAAAAJsArwAAwAHAAABAQEBAQEBAQBQAhwAAP3kADwAAAGkAAAAAAAAArwAAP2AAkQAAP28AAEAAAABAADueyfFXw889QALA+gAAAAAAAAAAAAAAAAAAAAAAFAAAAJsArwAAAAIAAIAAAAAAAAAAQAAAyD/OAAAArwAUABQAmwAAQAAAAAAAAAAAAAAAAAAAAICvAAAArwAUAAAAAAAHAAAAAEAAAACAAgAAgAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAEADYAAwABBAkAAQAsAAAAAwABBAkAAgAOACwAAwABBAkABAAsADoAAwABBAkABgAoAGYAQwBvAG0AcABvAHMAZQBBAEkAIABNAGkAcwBzAGkAbgBnACAARgBvAG4AdABSAGUAZwB1AGwAYQByAEMAbwBtAHAAbwBzAGUAQQBJACAATQBpAHMAcwBpAG4AZwAgAEYAbwBuAHQAQwBvAG0AcABvAHMAZQBBAEkATQBpAHMAcwBpAG4AZwBGAG8AbgB0AAMAAAAAAAD/nAAyAAAAAAAAAAAAAAAAAAAAAAAAAAA=) format('truetype');}</style></defs>
+<clipPath id="deviceRound"><circle cx="192" cy="192" r="192"/></clipPath>
+<g transform="translate(0, 0)" clip-path="url(#deviceRound)">
+  <g id="Root">
+    <g id="ReusableComposeNode">
+        <rect x="0" y="0" width="384" height="384" fill="#151218"/>
+      <g id="ReusableComposeNode">
+        <g id="ReusableComposeNode">
+          <g id="ReusableComposeNode">
+            <g id="Row">
+              <image href="ideal__loading__smallround__device-smallround.figma-raster/282.png" x="20" y="51" width="344" height="95"/>
+            </g>
+            <g id="ButtonGroupKt">
+              <g id="Box Placeholder">
+                <rect x="40" y="154" width="200" height="104" rx="52" ry="52" fill="#39312D"/>
+              </g>
+              <g id="Box Placeholder">
+                <rect x="248" y="154" width="96" height="104" rx="48" ry="48" fill="#39312D"/>
+              </g>
+            </g>
+          </g>
+          <g id="ReusableComposeNode">
+            <g id="ReusableComposeNode">
+              <image href="ideal__loading__smallround__device-smallround.figma-raster/277.png" x="363" y="137" width="21" height="110"/>
+            </g>
+          </g>
+        </g>
+        <g id="ReusableComposeNode">
+          <path id="curve-c0" d="M 152.44 37.22 A 159.74 159.74 0 0 1 231.55 37.22" fill="none"/><text font-size="30" font-weight="599" fill="#CBC4CC" dominant-baseline="alphabetic"><textPath href="#curve-c0" startOffset="50%" text-anchor="middle">10:10</textPath></text>
+          <g id="ReusableComposeNode">
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</g>
+</svg>
