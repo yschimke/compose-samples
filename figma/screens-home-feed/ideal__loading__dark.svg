@@ -1,14 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1082" height="2132" viewBox="0 0 1082 2132" text-rendering="geometricPrecision" font-family="sans-serif">
-<g transform="translate(16, 16)">
+<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="2100" viewBox="0 0 1050 2100" text-rendering="geometricPrecision" font-family="sans-serif">
+<g transform="translate(0, 0)">
   <g id="Root">
     <g id="ReusableComposeNode">
         <rect x="0" y="0" width="1050" height="2100" fill="#121318"/>
       <g id="ReusableComposeNode">
         <g id="Spacer">
-          <image href="ideal__loading__dark.figma-raster/156.png" x="473" y="998" width="105" height="105"/>
+          <image href="ideal__loading__dark.figma-raster/190.png" x="473" y="998" width="105" height="105"/>
         </g>
         <g id="Box">
-          <image href="ideal__loading__dark.figma-raster/135.png" x="0" y="0" width="1050" height="168"/>
+          <image href="ideal__loading__dark.figma-raster/169.png" x="0" y="0" width="1050" height="168"/>
           <g id="TopAppBar">
             <g id="BoxKt">
               <g transform="translate(43 53) scale(2.62 2.62)">
@@ -34,8 +34,6 @@
               </g>
             </g>
           </g>
-        </g>
-        <g id="Box">
         </g>
         <g id="Box">
         </g>

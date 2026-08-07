@@ -1,0 +1,19 @@
+{
+  "schema": "compose-preview-activity/v1",
+  "generatedAt": "2026-08-07T23:06:05.140Z",
+  "windowDays": 30,
+  "code": {
+    "repo": "yschimke/compose-samples",
+    "ref": "previews",
+    "events": [
+      {
+        "sha": "41a2b096ca90ae3e371068e30c9dccf4d05c5f50",
+        "subject": "chore(deps): update compose-ai-tools to 0.19.45 (#24)",
+        "at": "2026-08-07T23:50:01+01:00",
+        "author": "Yuri Schimke",
+        "previewIds": [],
+        "components": []
+      }
+    ]
+  }
+}
