@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1082" height="221" viewBox="0 0 1082 221" text-rendering="geometricPrecision" font-family="sans-serif">
-<g transform="translate(16, 16)">
+<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="189" viewBox="0 0 1050 189" text-rendering="geometricPrecision" font-family="sans-serif">
+<g transform="translate(0, 0)">
   <g id="Root">
     <g id="ReusableComposeNode">
         <rect x="0" y="0" width="1050" height="189" fill="#FFFFFF"/>
@@ -13,15 +13,15 @@
           </g>
           <clipPath id="clip-0"><rect x="210" y="73" width="629" height="43"/></clipPath>
           <g id="ReusableComposeNode">
-            <image href="ideal__searching.figma-raster/952.png" x="210" y="73" width="629" height="43" clip-path="url(#clip-0)"/>
+            <image href="ideal__searching.figma-raster/969.png" x="210" y="73" width="629" height="43" clip-path="url(#clip-0)"/>
             <g clip-path="url(#clip-0)">
               <g id="ReusableComposeNode">
-                <image href="ideal__searching.figma-raster/953.png" x="210" y="73" width="629" height="43"/>
+                <image href="ideal__searching.figma-raster/970.png" x="210" y="73" width="629" height="43"/>
               </g>
             </g>
           </g>
           <g id="ReusableComposeNode">
-            <image href="ideal__searching.figma-raster/954.png" x="855" y="47" width="95" height="95"/>
+            <image href="ideal__searching.figma-raster/971.png" x="855" y="47" width="95" height="95"/>
           </g>
         </g>
       </g>

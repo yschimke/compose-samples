@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="389" height="389" viewBox="0 0 389 389" text-rendering="geometricPrecision" font-family="sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="357" height="357" viewBox="0 0 357 357" text-rendering="geometricPrecision" font-family="sans-serif">
 <defs>
   <filter id="shadow-11" x="-50%" y="-50%" width="200%" height="200%">
     <feDropShadow dx="0" dy="5.5" stdDeviation="6.6" flood-color="#000000" flood-opacity="0.26"/>
   </filter>
 </defs>
-<g transform="translate(16, 16)">
+<g transform="translate(0, 0)">
   <g id="Root">
     <g id="ReusableComposeNode">
         <rect x="0" y="0" width="357" height="357" fill="#FFFFFF"/>
@@ -13,7 +13,7 @@
           <rect x="21" y="21" width="315" height="315" rx="157.5" ry="157.5" fill="#FFFFFF"/>
         <g clip-path="url(#clip-0)">
           <g id="ReusableComposeNode">
-            <image href="snack-image.figma-raster/326.png" x="21" y="21" width="315" height="315"/>
+            <image href="snack-image.figma-raster/238.png" x="21" y="21" width="315" height="315"/>
           </g>
         </g>
       </g>
