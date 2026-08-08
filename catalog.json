@@ -6124,8 +6124,8 @@
   "library": [
     "androidx.compose.material3:material3"
   ],
-  "renderer": "compose-preview 0.19.45",
-  "generatedAt": "2026-08-07T23:04:59.491Z",
+  "renderer": "compose-preview 0.19.46",
+  "generatedAt": "2026-08-08T00:33:31.097Z",
   "display": {
     "surface": "light",
     "hero": "Conversation/Screen"

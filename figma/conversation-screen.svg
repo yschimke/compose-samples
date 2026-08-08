@@ -27,7 +27,7 @@
                 </g>
                 <g id="Row">
                   <g id="ImageKt">
-                    <image href="conversation-screen.figma-raster/787.png" x="42" y="950" width="110" height="110"/>
+                    <image href="conversation-screen.figma-raster/910.png" x="42" y="950" width="110" height="110"/>
                   </g>
                   <g id="Column">
                     <g id="Row">
@@ -55,7 +55,7 @@
                           <path d="M204.5,1157 H561.5 A52.5,52.5 0 0 1 614,1209.5 V1524.5 A52.5,52.5 0 0 1 561.5,1577 H246.5 A52.5,52.5 0 0 1 194,1524.5 V1167.5 A10.5,10.5 0 0 1 204.5,1157 Z" fill="#1546F6"/>
                         <g clip-path="url(#clip-2)">
                           <g id="ImageKt">
-                            <image href="conversation-screen.figma-raster/798.png" x="194" y="1157" width="420" height="420"/>
+                            <image href="conversation-screen.figma-raster/921.png" x="194" y="1157" width="420" height="420"/>
                           </g>
                         </g>
                       </g>
@@ -95,7 +95,7 @@
                 </g>
                 <g id="Row">
                   <g id="ImageKt">
-                    <image href="conversation-screen.figma-raster/815.png" x="42" y="357" width="110" height="110"/>
+                    <image href="conversation-screen.figma-raster/938.png" x="42" y="357" width="110" height="110"/>
                   </g>
                   <g id="Column">
                     <g id="Row">
@@ -150,7 +150,7 @@
                 <g id="Row">
                   <g id="Box">
                     <g id="CoreTextFieldKt">
-                      <image href="conversation-screen.figma-raster/754.png" x="84" y="1796" width="809" height="63"/>
+                      <image href="conversation-screen.figma-raster/877.png" x="84" y="1796" width="809" height="63"/>
                     </g>
                     <g id="Empty">
                       <text x="84" y="1847.99" font-size="42" font-family="Karla" font-weight="400" letter-spacing="0.39" fill="#45464F">Message #composers</text>
@@ -206,7 +206,7 @@
             </g>
           </g>
           <g id="Box">
-            <image href="conversation-screen.figma-raster/720.png" x="0" y="0" width="1050" height="168"/>
+            <image href="conversation-screen.figma-raster/843.png" x="0" y="0" width="1050" height="168"/>
             <g id="TopAppBar">
               <g id="Box">
                 <g id="BoxKt">
