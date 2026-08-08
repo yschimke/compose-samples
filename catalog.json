@@ -1041,8 +1041,8 @@
     "androidx.wear.compose:compose-material3",
     "androidx.wear.compose:compose-foundation"
   ],
-  "renderer": "compose-preview 0.19.45",
-  "generatedAt": "2026-08-07T23:04:31.180Z",
+  "renderer": "compose-preview 0.19.46",
+  "generatedAt": "2026-08-08T00:33:13.992Z",
   "display": {
     "surface": "dark",
     "hero": "Podcast/Screen"
