@@ -1,15 +1,15 @@
 {
   "schema": "compose-preview-activity/v1",
-  "generatedAt": "2026-08-07T23:03:56.765Z",
+  "generatedAt": "2026-08-08T00:31:53.229Z",
   "windowDays": 30,
   "code": {
     "repo": "yschimke/compose-samples",
     "ref": "previews",
     "events": [
       {
-        "sha": "41a2b096ca90ae3e371068e30c9dccf4d05c5f50",
-        "subject": "chore(deps): update compose-ai-tools to 0.19.45 (#24)",
-        "at": "2026-08-07T23:50:01+01:00",
+        "sha": "9e4663c1c2f370798433ea382075e854fe67f2b5",
+        "subject": "chore(deps): update compose-ai-tools to 0.19.46 (#25)",
+        "at": "2026-08-08T01:17:12+01:00",
         "author": "Yuri Schimke",
         "previewIds": [],
         "components": []
