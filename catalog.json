@@ -9549,8 +9549,8 @@
   "library": [
     "custom design system (JetsnackTheme)"
   ],
-  "renderer": "compose-preview 0.19.45",
-  "generatedAt": "2026-08-07T23:06:40.559Z",
+  "renderer": "compose-preview 0.19.46",
+  "generatedAt": "2026-08-08T00:34:01.628Z",
   "display": {
     "surface": "light",
     "hero": "Screens/Feed"
