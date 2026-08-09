@@ -143,7 +143,8 @@
       "group": "Foundations",
       "caption": "JetsnackButton — the gradient-filled primary action that defines the system's look.",
       "wireframe": "wireframes/foundations-button.svg",
-      "sourceFile": "src/main/java/com/example/jetsnack/ui/components/Button.kt"
+      "sourceFile": "src/main/java/com/example/jetsnack/ui/components/Button.kt",
+      "bodyLine": 111
     },
     {
       "componentId": "Foundations/Card",
@@ -221,7 +222,8 @@
       "group": "Foundations",
       "caption": "JetsnackCard — the elevated surface every product tile is built on.",
       "wireframe": "wireframes/foundations-card.svg",
-      "sourceFile": "src/main/java/com/example/jetsnack/ui/components/Card.kt"
+      "sourceFile": "src/main/java/com/example/jetsnack/ui/components/Card.kt",
+      "bodyLine": 59
     },
     {
       "componentId": "Foundations/Surface",
@@ -312,7 +314,8 @@
       "group": "Foundations",
       "caption": "JetsnackSurface at rest — the primitive under every card, button and bar.",
       "wireframe": "wireframes/foundations-surface.svg",
-      "sourceFile": "src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt"
+      "sourceFile": "src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt",
+      "bodyLine": 127
     },
     {
       "componentId": "Foundations/Divider",
@@ -353,7 +356,8 @@
       "group": "Foundations",
       "caption": "System divider.",
       "wireframe": "wireframes/foundations-divider.svg",
-      "sourceFile": "src/main/java/com/example/jetsnack/ui/components/Divider.kt"
+      "sourceFile": "src/main/java/com/example/jetsnack/ui/components/Divider.kt",
+      "bodyLine": 51
     },
     {
       "componentId": "Foundations/Icon button",
@@ -419,7 +423,8 @@
       "group": "Foundations",
       "caption": "Gradient-tinted icon button — the system's gradient tokens applied to an icon affordance.",
       "wireframe": "wireframes/foundations-icon-button.svg",
-      "sourceFile": "src/main/java/com/example/jetsnack/ui/components/GradientTintedIconButton.kt"
+      "sourceFile": "src/main/java/com/example/jetsnack/ui/components/GradientTintedIconButton.kt",
+      "bodyLine": 102
     },
     {
       "componentId": "Tokens/Colour",
@@ -596,7 +601,8 @@
       "group": "Tokens",
       "caption": "The JetsnackColors palette as the app models it — brand, ui, text and icon roles, not M3 roles.",
       "wireframe": "wireframes/tokens-colour.svg",
-      "sourceFile": "src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt"
+      "sourceFile": "src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt",
+      "bodyLine": 684
     },
     {
       "componentId": "Tokens/Gradients",
@@ -758,7 +764,8 @@
       "group": "Tokens",
       "caption": "The seven gradient ramps plus tornado1. These are the signature of the system and have no Material 3 equivalent, so they appear nowhere in the @ThemeCatalog specimen sheets.",
       "wireframe": "wireframes/tokens-gradients.svg",
-      "sourceFile": "src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt"
+      "sourceFile": "src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt",
+      "bodyLine": 728
     },
     {
       "componentId": "Layout/Vertical grid",
@@ -992,7 +999,8 @@
       "group": "Layout",
       "caption": "VerticalGrid — a custom Layout that divides width into equal columns and fills them column by column.",
       "wireframe": "wireframes/layout-vertical-grid.svg",
-      "sourceFile": "src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt"
+      "sourceFile": "src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt",
+      "bodyLine": 235
     },
     {
       "componentId": "Snack/Card",
@@ -1100,7 +1108,8 @@
       "group": "Catalog",
       "caption": "Product card as it appears in the feed.",
       "wireframe": "wireframes/snack-card.svg",
-      "sourceFile": "src/main/java/com/example/jetsnack/ui/components/Snacks.kt"
+      "sourceFile": "src/main/java/com/example/jetsnack/ui/components/Snacks.kt",
+      "bodyLine": 481
     },
     {
       "componentId": "Snack/Item",
@@ -1195,7 +1204,8 @@
       "group": "Catalog",
       "caption": "The compact list form of a snack, used in the non-highlighted collections.",
       "wireframe": "wireframes/snack-item.svg",
-      "sourceFile": "src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt"
+      "sourceFile": "src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt",
+      "bodyLine": 250
     },
     {
       "componentId": "Snack/Image",
@@ -1246,7 +1256,8 @@
       "group": "Catalog",
       "caption": "Circular product image. Under LocalInspectionMode the Coil request falls back to the shipped placeholder, so previews are deterministic and network-free.",
       "wireframe": "wireframes/snack-image.svg",
-      "sourceFile": "src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt"
+      "sourceFile": "src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt",
+      "bodyLine": 257
     },
     {
       "componentId": "Snack/Collection",
@@ -1439,7 +1450,8 @@
       "group": "Catalog",
       "caption": "A whole collection row in its highlighted form — the gradient-backed cards that scroll with a parallax offset.",
       "wireframe": "wireframes/snack-collection.svg",
-      "sourceFile": "src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt"
+      "sourceFile": "src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt",
+      "bodyLine": 269
     },
     {
       "componentId": "Catalog/Filters",
@@ -1557,7 +1569,8 @@
       "group": "Catalog",
       "caption": "Filter chip, enabled.",
       "wireframe": "wireframes/catalog-filters.svg",
-      "sourceFile": "src/main/java/com/example/jetsnack/ui/components/Filters.kt"
+      "sourceFile": "src/main/java/com/example/jetsnack/ui/components/Filters.kt",
+      "bodyLine": 178
     },
     {
       "componentId": "Catalog/Filter bar",
@@ -1758,7 +1771,8 @@
       "group": "Catalog",
       "caption": "The filter row above the feed, with the filter-sheet trigger visible.",
       "wireframe": "wireframes/catalog-filter-bar.svg",
-      "sourceFile": "src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt"
+      "sourceFile": "src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt",
+      "bodyLine": 292
     },
     {
       "componentId": "Cart/Quantity",
@@ -1907,7 +1921,8 @@
       "group": "Cart & checkout",
       "caption": "Quantity stepper.",
       "wireframe": "wireframes/cart-quantity.svg",
-      "sourceFile": "src/main/java/com/example/jetsnack/ui/components/QuantitySelector.kt"
+      "sourceFile": "src/main/java/com/example/jetsnack/ui/components/QuantitySelector.kt",
+      "bodyLine": 87
     },
     {
       "componentId": "Cart/Item",
@@ -2111,7 +2126,8 @@
       "group": "Cart & checkout",
       "caption": "A single cart line: image, name, price, remove affordance and the quantity stepper.",
       "wireframe": "wireframes/cart-item.svg",
-      "sourceFile": "src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt"
+      "sourceFile": "src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt",
+      "bodyLine": 340
     },
     {
       "componentId": "Cart/Summary",
@@ -2183,7 +2199,8 @@
       "group": "Cart & checkout",
       "caption": "Order summary — subtotal, shipping and total, formatted through the sample's own formatPrice.",
       "wireframe": "wireframes/cart-summary.svg",
-      "sourceFile": "src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt"
+      "sourceFile": "src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt",
+      "bodyLine": 377
     },
     {
       "componentId": "Cart/Swipe to dismiss",
@@ -2256,7 +2273,8 @@
       "group": "Cart & checkout",
       "caption": "The swipe-to-remove affordance with its destructive background revealed.",
       "wireframe": "wireframes/cart-swipe-to-dismiss.svg",
-      "sourceFile": "src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt"
+      "sourceFile": "src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt",
+      "bodyLine": 384
     },
     {
       "componentId": "Search/Bar",
@@ -2353,7 +2371,8 @@
       "group": "Search",
       "caption": "Search entry field.",
       "wireframe": "wireframes/search-bar.svg",
-      "sourceFile": "src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt"
+      "sourceFile": "src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt",
+      "bodyLine": 414
     },
     {
       "componentId": "Search/Categories",
@@ -2465,7 +2484,8 @@
       "group": "Search",
       "caption": "Category tile.",
       "wireframe": "wireframes/search-categories.svg",
-      "sourceFile": "src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt"
+      "sourceFile": "src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt",
+      "bodyLine": 476
     },
     {
       "componentId": "Search/Results",
@@ -2607,7 +2627,8 @@
       "group": "Search",
       "caption": "A single search result row.",
       "wireframe": "wireframes/search-results.svg",
-      "sourceFile": "src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt"
+      "sourceFile": "src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt",
+      "bodyLine": 515
     },
     {
       "componentId": "Search/Suggestions",
@@ -2812,7 +2833,8 @@
       "group": "Search",
       "caption": "Suggestion list shown before a query is entered, driven by SearchRepo.getSuggestions().",
       "wireframe": "wireframes/search-suggestions.svg",
-      "sourceFile": "src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt"
+      "sourceFile": "src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt",
+      "bodyLine": 496
     },
     {
       "componentId": "Search/No results",
@@ -2853,7 +2875,8 @@
       "group": "Search",
       "caption": "The empty state, which quotes the query back to the user.",
       "wireframe": "wireframes/search-no-results.svg",
-      "sourceFile": "src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt"
+      "sourceFile": "src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt",
+      "bodyLine": 543
     },
     {
       "componentId": "Chrome/Bottom nav",
@@ -3053,7 +3076,8 @@
       "group": "Chrome",
       "caption": "Custom animated bottom navigation bar with Home selected — Jetsnack's signature chrome. The gradient selection pill makes the selected tab the only one showing its label.",
       "wireframe": "wireframes/chrome-bottom-nav.svg",
-      "sourceFile": "src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt"
+      "sourceFile": "src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt",
+      "bodyLine": 590
     },
     {
       "componentId": "Chrome/Bottom nav item",
@@ -3120,7 +3144,8 @@
       "group": "Chrome",
       "caption": "A single nav item, selected: icon and label laid out side by side.",
       "wireframe": "wireframes/chrome-bottom-nav-item.svg",
-      "sourceFile": "src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt"
+      "sourceFile": "src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt",
+      "bodyLine": 631
     },
     {
       "componentId": "Chrome/Destination bar",
@@ -3219,7 +3244,8 @@
       "group": "Chrome",
       "caption": "Delivery destination bar pinned above the feed.",
       "wireframe": "wireframes/chrome-destination-bar.svg",
-      "sourceFile": "src/main/java/com/example/jetsnack/ui/home/DestinationBar.kt"
+      "sourceFile": "src/main/java/com/example/jetsnack/ui/home/DestinationBar.kt",
+      "bodyLine": 114
     },
     {
       "componentId": "Feedback/Snackbar",
@@ -3295,7 +3321,8 @@
       "group": "Feedback",
       "caption": "JetsnackSnackbar — the M3 snackbar re-coloured onto uiBackground / textSecondary / brand.",
       "wireframe": "wireframes/feedback-snackbar.svg",
-      "sourceFile": "src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt"
+      "sourceFile": "src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt",
+      "bodyLine": 200
     },
     {
       "componentId": "Screens/App shell",
@@ -4260,7 +4287,8 @@
       "group": "Screens",
       "caption": "The full app shell at its start destination: feed content, nested navigation, shared-transition scopes and bottom navigation together.",
       "wireframe": "wireframes/screens-app-shell.svg",
-      "sourceFile": "src/main/java/com/example/jetsnack/ui/JetsnackApp.kt"
+      "sourceFile": "src/main/java/com/example/jetsnack/ui/JetsnackApp.kt",
+      "bodyLine": 64
     },
     {
       "componentId": "Screens/Feed",
@@ -5106,7 +5134,8 @@
       "group": "Screens",
       "caption": "The home feed — destination bar, filter row and the full stack of snack collections. Renders at default, dark theme and fontScale 2.",
       "wireframe": "wireframes/screens-feed.svg",
-      "sourceFile": "src/debug/java/com/example/jetsnack/catalog/JetsnackScreenPreviews.kt"
+      "sourceFile": "src/debug/java/com/example/jetsnack/catalog/JetsnackScreenPreviews.kt",
+      "bodyLine": 45
     },
     {
       "componentId": "Screens/Cart",
@@ -5959,7 +5988,8 @@
       "group": "Screens",
       "caption": "The cart — order lines, summary and the checkout bar. Renders at default, dark theme and fontScale 2.",
       "wireframe": "wireframes/screens-cart.svg",
-      "sourceFile": "src/debug/java/com/example/jetsnack/catalog/JetsnackScreenPreviews.kt"
+      "sourceFile": "src/debug/java/com/example/jetsnack/catalog/JetsnackScreenPreviews.kt",
+      "bodyLine": 57
     },
     {
       "componentId": "Screens/Search",
@@ -6451,7 +6481,8 @@
       "group": "Screens",
       "caption": "The search destination in its resting state, showing the category grid beneath the search bar.",
       "wireframe": "wireframes/screens-search.svg",
-      "sourceFile": "src/debug/java/com/example/jetsnack/catalog/JetsnackScreenPreviews.kt"
+      "sourceFile": "src/debug/java/com/example/jetsnack/catalog/JetsnackScreenPreviews.kt",
+      "bodyLine": 92
     },
     {
       "componentId": "Screens/Profile",
@@ -6504,7 +6535,8 @@
       "group": "Screens",
       "caption": "Profile screen.",
       "wireframe": "wireframes/screens-profile.svg",
-      "sourceFile": "src/debug/java/com/example/jetsnack/catalog/JetsnackScreenPreviews.kt"
+      "sourceFile": "src/debug/java/com/example/jetsnack/catalog/JetsnackScreenPreviews.kt",
+      "bodyLine": 85
     },
     {
       "componentId": "Snack/Detail",
@@ -7190,7 +7222,8 @@
       "group": "Screens",
       "caption": "Product detail — the collapsing-header screen that anchors the shared-element transition.",
       "wireframe": "wireframes/snack-detail.svg",
-      "sourceFile": "src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt"
+      "sourceFile": "src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt",
+      "bodyLine": 550
     },
     {
       "componentId": "Catalog/Filter screen",
@@ -8020,7 +8053,8 @@
       "group": "Screens",
       "caption": "Full filter sheet — sort, price, category and lifestyle sections.",
       "wireframe": "wireframes/catalog-filter-screen.svg",
-      "sourceFile": "src/debug/java/com/example/jetsnack/catalog/JetsnackScreenPreviews.kt"
+      "sourceFile": "src/debug/java/com/example/jetsnack/catalog/JetsnackScreenPreviews.kt",
+      "bodyLine": 99
     },
     {
       "componentId": "Button/Filled",
@@ -8171,6 +8205,7 @@
       "caption": "Highest emphasis; the primary action; the disabled state folds in as an @OverrideVariant (enabled = false).",
       "wireframe": "wireframes/button-filled.svg",
       "sourceFile": "src/main/kotlin/com/example/designcatalogm3/CatalogButtons.kt",
+      "bodyLine": 20,
       "section": "Material 3"
     },
     {
@@ -8231,6 +8266,7 @@
       "caption": "Secondary, still prominent.",
       "wireframe": "wireframes/button-tonal.svg",
       "sourceFile": "src/main/kotlin/com/example/designcatalogm3/CatalogButtons.kt",
+      "bodyLine": 25,
       "section": "Material 3"
     },
     {
@@ -8306,6 +8342,7 @@
       "caption": "Medium emphasis on a busy surface.",
       "wireframe": "wireframes/button-outlined.svg",
       "sourceFile": "src/main/kotlin/com/example/designcatalogm3/CatalogButtons.kt",
+      "bodyLine": 35,
       "section": "Material 3"
     },
     {
@@ -8366,6 +8403,7 @@
       "caption": "Outlined alternative needing separation.",
       "wireframe": "wireframes/button-elevated.svg",
       "sourceFile": "src/main/kotlin/com/example/designcatalogm3/CatalogButtons.kt",
+      "bodyLine": 44,
       "section": "Material 3"
     },
     {
@@ -8426,6 +8464,7 @@
       "caption": "Lowest emphasis; inline actions.",
       "wireframe": "wireframes/button-text.svg",
       "sourceFile": "src/main/kotlin/com/example/designcatalogm3/CatalogButtons.kt",
+      "bodyLine": 53,
       "section": "Material 3"
     },
     {
@@ -8468,6 +8507,7 @@
       "group": "Communication",
       "wireframe": "wireframes/progress-linear.svg",
       "sourceFile": "src/main/kotlin/com/example/designcatalogm3/CatalogCommunication.kt",
+      "bodyLine": 12,
       "section": "Material 3"
     },
     {
@@ -8495,6 +8535,7 @@
       "group": "Communication",
       "wireframe": "wireframes/progress-circular.svg",
       "sourceFile": "src/main/kotlin/com/example/designcatalogm3/CatalogCommunication.kt",
+      "bodyLine": 17,
       "section": "Material 3"
     },
     {
@@ -8538,6 +8579,7 @@
       "group": "Communication",
       "wireframe": "wireframes/badge.svg",
       "sourceFile": "src/main/kotlin/com/example/designcatalogm3/CatalogCommunication.kt",
+      "bodyLine": 22,
       "section": "Material 3"
     },
     {
@@ -8575,6 +8617,7 @@
       "group": "Containment",
       "wireframe": "wireframes/card-elevated.svg",
       "sourceFile": "src/main/kotlin/com/example/designcatalogm3/CatalogContainment.kt",
+      "bodyLine": 15,
       "section": "Material 3"
     },
     {
@@ -8612,6 +8655,7 @@
       "group": "Containment",
       "wireframe": "wireframes/card-outlined.svg",
       "sourceFile": "src/main/kotlin/com/example/designcatalogm3/CatalogContainment.kt",
+      "bodyLine": 20,
       "section": "Material 3"
     },
     {
@@ -8649,6 +8693,7 @@
       "group": "Containment",
       "wireframe": "wireframes/card-filled.svg",
       "sourceFile": "src/main/kotlin/com/example/designcatalogm3/CatalogContainment.kt",
+      "bodyLine": 25,
       "section": "Material 3"
     },
     {
@@ -8685,6 +8730,28 @@
           "width": 653,
           "height": 253,
           "theme": "light"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/card-slots/ideal__default__dark__locale-ar.png",
+          "state": "default",
+          "width": 653,
+          "height": 253,
+          "theme": "dark",
+          "props": {
+            "locale": "ar"
+          }
+        },
+        {
+          "variant": "ideal",
+          "path": "images/card-slots/ideal__default__light__locale-ar.png",
+          "state": "default",
+          "width": 653,
+          "height": 253,
+          "theme": "light",
+          "props": {
+            "locale": "ar"
+          }
         }
       ],
       "greenlines": [],
@@ -8703,6 +8770,7 @@
       "caption": "A card with named PreviewSlot regions a structured-screen builder fills.",
       "wireframe": "wireframes/card-slots.svg",
       "sourceFile": "src/main/kotlin/com/example/designcatalogm3/CatalogContainment.kt",
+      "bodyLine": 37,
       "section": "Material 3"
     },
     {
@@ -8762,6 +8830,7 @@
       "group": "Containment",
       "wireframe": "wireframes/fab.svg",
       "sourceFile": "src/main/kotlin/com/example/designcatalogm3/CatalogContainment.kt",
+      "bodyLine": 55,
       "section": "Material 3"
     },
     {
@@ -8842,6 +8911,7 @@
       "caption": "Checked; the unchecked state folds in as an @OverrideVariant (checked = false).",
       "wireframe": "wireframes/checkbox-checked.svg",
       "sourceFile": "src/main/kotlin/com/example/designcatalogm3/CatalogSelection.kt",
+      "bodyLine": 22,
       "section": "Material 3"
     },
     {
@@ -8992,6 +9062,7 @@
       "caption": "On; the off state folds in as an @OverrideVariant (checked = false).",
       "wireframe": "wireframes/switch-on.svg",
       "sourceFile": "src/main/kotlin/com/example/designcatalogm3/CatalogSelection.kt",
+      "bodyLine": 32,
       "section": "Material 3"
     },
     {
@@ -9051,6 +9122,7 @@
       "caption": "Selected; the unselected state folds in as an @OverrideVariant (selected = false).",
       "wireframe": "wireframes/radiobutton-selected.svg",
       "sourceFile": "src/main/kotlin/com/example/designcatalogm3/CatalogSelection.kt",
+      "bodyLine": 42,
       "section": "Material 3"
     },
     {
@@ -9102,6 +9174,7 @@
       "group": "Selection",
       "wireframe": "wireframes/slider.svg",
       "sourceFile": "src/main/kotlin/com/example/designcatalogm3/CatalogSelection.kt",
+      "bodyLine": 47,
       "section": "Material 3"
     },
     {
@@ -9177,6 +9250,7 @@
       "caption": "Selected; the unselected state folds in as an @OverrideVariant (selected = false).",
       "wireframe": "wireframes/chip-filter-selected.svg",
       "sourceFile": "src/main/kotlin/com/example/designcatalogm3/CatalogSelection.kt",
+      "bodyLine": 57,
       "section": "Material 3"
     },
     {
@@ -9236,6 +9310,7 @@
       "group": "Selection",
       "wireframe": "wireframes/chip-assist.svg",
       "sourceFile": "src/main/kotlin/com/example/designcatalogm3/CatalogSelection.kt",
+      "bodyLine": 62,
       "section": "Material 3"
     },
     {
@@ -9285,6 +9360,7 @@
       "caption": "Single-choice toggle: selected + unselected segments.",
       "wireframe": "wireframes/segmentedbutton.svg",
       "sourceFile": "src/main/kotlin/com/example/designcatalogm3/CatalogStates.kt",
+      "bodyLine": 50,
       "section": "Material 3"
     },
     {
@@ -9390,6 +9466,7 @@
       "caption": "Full-screen layout with the OS status bar — TopAppBar, a list, and a FAB, captured with showSystemUi on a phone.",
       "wireframe": "wireframes/template-appscaffold.svg",
       "sourceFile": "src/main/kotlin/com/example/designcatalogm3/CatalogTemplates.kt",
+      "bodyLine": 65,
       "section": "Material 3"
     },
     {
@@ -9417,6 +9494,7 @@
       "group": "Text fields",
       "wireframe": "wireframes/textfield-filled.svg",
       "sourceFile": "src/main/kotlin/com/example/designcatalogm3/CatalogTextFields.kt",
+      "bodyLine": 12,
       "section": "Material 3"
     },
     {
@@ -9459,6 +9537,7 @@
       "group": "Text fields",
       "wireframe": "wireframes/textfield-outlined.svg",
       "sourceFile": "src/main/kotlin/com/example/designcatalogm3/CatalogTextFields.kt",
+      "bodyLine": 17,
       "section": "Material 3"
     },
     {
@@ -9487,6 +9566,7 @@
       "caption": "maxLines=2 + ellipsis overflow — exercises the textOverflow product.",
       "wireframe": "wireframes/text-maxlines-truncated.svg",
       "sourceFile": "src/main/kotlin/com/example/designcatalogm3/CatalogText.kt",
+      "bodyLine": 16,
       "section": "Material 3"
     },
     {
@@ -9515,6 +9595,7 @@
       "caption": "Generic serif family (Noto Serif) — pins the Wasm tier’s font interception.",
       "wireframe": "wireframes/text-serif.svg",
       "sourceFile": "src/main/kotlin/com/example/designcatalogm3/CatalogText.kt",
+      "bodyLine": 25,
       "section": "Material 3"
     },
     {
@@ -9543,19 +9624,35 @@
       "caption": "Generic monospace family (Droid Sans Mono) — pins the Wasm tier’s font interception.",
       "wireframe": "wireframes/text-monospace.svg",
       "sourceFile": "src/main/kotlin/com/example/designcatalogm3/CatalogText.kt",
+      "bodyLine": 34,
       "section": "Material 3"
     }
   ],
   "library": [
     "custom design system (JetsnackTheme)"
   ],
-  "renderer": "compose-preview 0.19.46",
-  "generatedAt": "2026-08-08T00:34:01.628Z",
+  "renderer": "compose-preview 0.19.51",
+  "generatedAt": "2026-08-09T09:31:24.466Z",
   "display": {
     "surface": "light",
     "hero": "Screens/Feed"
   },
-  "tokensFile": "tokens.dtcg.json",
+  "themes": [
+    {
+      "id": "com.example.jetsnack.catalog.JetsnackDarkThemeCatalog",
+      "tokensFile": "themes/com.example.jetsnack.catalog.jetsnackdarkthemecatalog.dtcg.json",
+      "name": "Jetsnack · Dark",
+      "group": "Jetsnack",
+      "dark": true
+    },
+    {
+      "id": "com.example.jetsnack.catalog.JetsnackLightThemeCatalog",
+      "tokensFile": "themes/com.example.jetsnack.catalog.jetsnacklightthemecatalog.dtcg.json",
+      "name": "Jetsnack · Light",
+      "group": "Jetsnack",
+      "dark": false
+    }
+  ],
   "liveBundle": {
     "path": "bundle/",
     "file": "bundle.png"

@@ -74,7 +74,7 @@
                           <rect x="315" y="158" width="352" height="352" rx="176" ry="176" fill="#FFFFFF"/>
                         <g clip-path="url(#clip-3)">
                           <g id="ImageKt">
-                            <image href="ideal__default__scope-full-grid.figma-raster/1129.png" x="315" y="158" width="352" height="352"/>
+                            <image href="ideal__default__scope-full-grid.figma-raster/1150.png" x="315" y="158" width="352" height="352"/>
                           </g>
                         </g>
                       </g>
@@ -92,7 +92,7 @@
                           <rect x="777" y="158" width="352" height="352" rx="176" ry="176" fill="#FFFFFF"/>
                         <g clip-path="url(#clip-5)">
                           <g id="ImageKt">
-                            <image href="ideal__default__scope-full-grid.figma-raster/1133.png" x="777" y="158" width="352" height="352"/>
+                            <image href="ideal__default__scope-full-grid.figma-raster/1154.png" x="777" y="158" width="352" height="352"/>
                           </g>
                         </g>
                       </g>
@@ -110,7 +110,7 @@
                           <rect x="315" y="490" width="352" height="352" rx="176" ry="176" fill="#FFFFFF"/>
                         <g clip-path="url(#clip-7)">
                           <g id="ImageKt">
-                            <image href="ideal__default__scope-full-grid.figma-raster/1137.png" x="315" y="490" width="352" height="352"/>
+                            <image href="ideal__default__scope-full-grid.figma-raster/1158.png" x="315" y="490" width="352" height="352"/>
                           </g>
                         </g>
                       </g>
@@ -128,7 +128,7 @@
                           <rect x="777" y="490" width="352" height="352" rx="176" ry="176" fill="#FFFFFF"/>
                         <g clip-path="url(#clip-9)">
                           <g id="ImageKt">
-                            <image href="ideal__default__scope-full-grid.figma-raster/1141.png" x="777" y="490" width="352" height="352"/>
+                            <image href="ideal__default__scope-full-grid.figma-raster/1162.png" x="777" y="490" width="352" height="352"/>
                           </g>
                         </g>
                       </g>
@@ -136,7 +136,6 @@
                   </g>
                 </g>
                 <g id="Spacer">
-                  <text x="21" y="66.99" font-size="42" font-family="Montserrat" font-weight="600" letter-spacing="0.39" fill="#000000" fill-opacity="0.87">Organic</text>
                 </g>
               </g>
               <g id="Column">
@@ -149,14 +148,14 @@
                       <rect x="84" y="1011" width="420" height="290" rx="26.25" ry="26.25" fill="url(#gf-4)"/>
                     <g clip-path="url(#clip-10)">
                       <g id="Empty">
-                        <text x="116" y="1175.99" font-size="42" font-family="&apos;FontListFontFamily(fonts=[ResourceFont(resId=2131165186, weight=FontWeight(weight=300), style=Normal, loadingStrategy=Blocking), ResourceFont(resId=2131165188, weight=FontWeight(weight=400), style=Normal, loadingStrategy=Blocking), ResourceFont(resId=2131165187, weight=FontWeight(weight=500), style=Normal, loadingStrategy=Blocking), ResourceFont(resId=2131165189, weight=FontWeight(weight=600), style=Normal, loadingStrategy=Blocking)])&apos;, sans-serif" font-weight="600" letter-spacing="0.39" fill="#000000" fill-opacity="0.87">Organic</text>
+                        <text x="116" y="1175.99" font-size="42" font-family="Montserrat" font-weight="600" letter-spacing="0.39" fill="#000000" fill-opacity="0.87">Organic</text>
                       </g>
                       <clipPath id="clip-11"><rect x="315" y="980" width="352" height="352" rx="176" ry="176"/></clipPath>
                       <g id="Box">
                           <rect x="315" y="980" width="352" height="352" rx="176" ry="176" fill="#FFFFFF"/>
                         <g clip-path="url(#clip-11)">
                           <g id="ImageKt">
-                            <image href="ideal__default__scope-full-grid.figma-raster/1150.png" x="315" y="980" width="352" height="352"/>
+                            <image href="ideal__default__scope-full-grid.figma-raster/1171.png" x="315" y="980" width="352" height="352"/>
                           </g>
                         </g>
                       </g>
@@ -167,14 +166,14 @@
                       <rect x="546" y="1011" width="420" height="290" rx="26.25" ry="26.25" fill="url(#gf-5)"/>
                     <g clip-path="url(#clip-12)">
                       <g id="Empty">
-                        <text x="578" y="1143.99" font-size="42" font-family="&apos;FontListFontFamily(fonts=[ResourceFont(resId=2131165186, weight=FontWeight(weight=300), style=Normal, loadingStrategy=Blocking), ResourceFont(resId=2131165188, weight=FontWeight(weight=400), style=Normal, loadingStrategy=Blocking), ResourceFont(resId=2131165187, weight=FontWeight(weight=500), style=Normal, loadingStrategy=Blocking), ResourceFont(resId=2131165189, weight=FontWeight(weight=600), style=Normal, loadingStrategy=Blocking)])&apos;, sans-serif" font-weight="600" letter-spacing="0.39" fill="#000000" fill-opacity="0.87">Gluten Free</text>
+                        <text font-size="42" font-family="Montserrat" font-weight="600" letter-spacing="0.39" fill="#000000" fill-opacity="0.87"><tspan x="578" y="1139" textLength="147" lengthAdjust="spacing">Gluten</tspan><tspan x="578" y="1202" textLength="97" lengthAdjust="spacing">Free</tspan></text>
                       </g>
                       <clipPath id="clip-13"><rect x="777" y="980" width="352" height="352" rx="176" ry="176"/></clipPath>
                       <g id="Box">
                           <rect x="777" y="980" width="352" height="352" rx="176" ry="176" fill="#FFFFFF"/>
                         <g clip-path="url(#clip-13)">
                           <g id="ImageKt">
-                            <image href="ideal__default__scope-full-grid.figma-raster/1154.png" x="777" y="980" width="352" height="352"/>
+                            <image href="ideal__default__scope-full-grid.figma-raster/1175.png" x="777" y="980" width="352" height="352"/>
                           </g>
                         </g>
                       </g>
@@ -185,7 +184,7 @@
                     <rect x="84" y="1343" width="420" height="290" rx="26.25" ry="26.25" fill="url(#gf-6)"/>
                     <g clip-path="url(#clip-14)">
                       <g id="Empty">
-                        <text x="116" y="1507.99" font-size="42" font-family="&apos;FontListFontFamily(fonts=[ResourceFont(resId=2131165186, weight=FontWeight(weight=300), style=Normal, loadingStrategy=Blocking), ResourceFont(resId=2131165188, weight=FontWeight(weight=400), style=Normal, loadingStrategy=Blocking), ResourceFont(resId=2131165187, weight=FontWeight(weight=500), style=Normal, loadingStrategy=Blocking), ResourceFont(resId=2131165189, weight=FontWeight(weight=600), style=Normal, loadingStrategy=Blocking)])&apos;, sans-serif" font-weight="600" letter-spacing="0.39" fill="#000000" fill-opacity="0.87">Paleo</text>
+                        <text x="116" y="1507.99" font-size="42" font-family="Montserrat" font-weight="600" letter-spacing="0.39" fill="#000000" fill-opacity="0.87">Paleo</text>
                       </g>
                       <g id="Box">
                         <rect x="315" y="1312" width="352" height="352" rx="176" ry="176" fill="#FFFFFF"/>
@@ -199,7 +198,7 @@
                     <rect x="546" y="1343" width="420" height="290" rx="26.25" ry="26.25" fill="url(#gf-7)"/>
                     <g clip-path="url(#clip-15)">
                       <g id="Empty">
-                        <text x="578" y="1507.99" font-size="42" font-family="&apos;FontListFontFamily(fonts=[ResourceFont(resId=2131165186, weight=FontWeight(weight=300), style=Normal, loadingStrategy=Blocking), ResourceFont(resId=2131165188, weight=FontWeight(weight=400), style=Normal, loadingStrategy=Blocking), ResourceFont(resId=2131165187, weight=FontWeight(weight=500), style=Normal, loadingStrategy=Blocking), ResourceFont(resId=2131165189, weight=FontWeight(weight=600), style=Normal, loadingStrategy=Blocking)])&apos;, sans-serif" font-weight="600" letter-spacing="0.39" fill="#000000" fill-opacity="0.87">Vegan</text>
+                        <text x="578" y="1507.99" font-size="42" font-family="Montserrat" font-weight="600" letter-spacing="0.39" fill="#000000" fill-opacity="0.87">Vegan</text>
                       </g>
                       <g id="Box">
                         <rect x="777" y="1312" width="352" height="352" rx="176" ry="176" fill="#FFFFFF"/>
@@ -213,7 +212,7 @@
                     <rect x="84" y="1675" width="420" height="290" rx="26.25" ry="26.25" fill="url(#gf-8)"/>
                     <g clip-path="url(#clip-16)">
                       <g id="Empty">
-                        <text x="116" y="1807.99" font-size="42" font-family="&apos;FontListFontFamily(fonts=[ResourceFont(resId=2131165186, weight=FontWeight(weight=300), style=Normal, loadingStrategy=Blocking), ResourceFont(resId=2131165188, weight=FontWeight(weight=400), style=Normal, loadingStrategy=Blocking), ResourceFont(resId=2131165187, weight=FontWeight(weight=500), style=Normal, loadingStrategy=Blocking), ResourceFont(resId=2131165189, weight=FontWeight(weight=600), style=Normal, loadingStrategy=Blocking)])&apos;, sans-serif" font-weight="600" letter-spacing="0.39" fill="#000000" fill-opacity="0.87">Vegetarian</text>
+                        <text font-size="42" font-family="Montserrat" font-weight="600" letter-spacing="0.39" fill="#000000" fill-opacity="0.87"><tspan x="116" y="1803" textLength="186" lengthAdjust="spacing">Vegetari</tspan><tspan x="116" y="1866" textLength="55" lengthAdjust="spacing">an</tspan></text>
                       </g>
                       <g id="Box">
                         <rect x="315" y="1644" width="352" height="352" rx="176" ry="176" fill="#FFFFFF"/>
@@ -227,7 +226,7 @@
                     <rect x="546" y="1675" width="420" height="290" rx="26.25" ry="26.25" fill="url(#gf-9)"/>
                     <g clip-path="url(#clip-17)">
                       <g id="Empty">
-                        <text x="578" y="1807.99" font-size="42" font-family="&apos;FontListFontFamily(fonts=[ResourceFont(resId=2131165186, weight=FontWeight(weight=300), style=Normal, loadingStrategy=Blocking), ResourceFont(resId=2131165188, weight=FontWeight(weight=400), style=Normal, loadingStrategy=Blocking), ResourceFont(resId=2131165187, weight=FontWeight(weight=500), style=Normal, loadingStrategy=Blocking), ResourceFont(resId=2131165189, weight=FontWeight(weight=600), style=Normal, loadingStrategy=Blocking)])&apos;, sans-serif" font-weight="600" letter-spacing="0.39" fill="#000000" fill-opacity="0.87">Whole30</text>
+                        <text font-size="42" font-family="Montserrat" font-weight="600" letter-spacing="0.39" fill="#000000" fill-opacity="0.87"><tspan x="578" y="1803" textLength="167" lengthAdjust="spacing">Whole3</tspan><tspan x="578" y="1866" textLength="28" lengthAdjust="spacing">0</tspan></text>
                       </g>
                       <g id="Box">
                         <rect x="777" y="1644" width="352" height="352" rx="176" ry="176" fill="#FFFFFF"/>

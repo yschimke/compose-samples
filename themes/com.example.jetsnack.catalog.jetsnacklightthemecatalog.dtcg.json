@@ -13,21 +13,57 @@
       "$type": "color",
       "$value": "#eaddffff"
     },
+    "onPrimaryContainer": {
+      "$type": "color",
+      "$value": "#21005dff"
+    },
     "secondary": {
       "$type": "color",
       "$value": "#86f7faff"
+    },
+    "onSecondary": {
+      "$type": "color",
+      "$value": "#ffffffff"
     },
     "secondaryContainer": {
       "$type": "color",
       "$value": "#e8def8ff"
     },
+    "onSecondaryContainer": {
+      "$type": "color",
+      "$value": "#1d192bff"
+    },
     "tertiary": {
       "$type": "color",
       "$value": "#005687ff"
     },
+    "onTertiary": {
+      "$type": "color",
+      "$value": "#ffffffff"
+    },
+    "tertiaryContainer": {
+      "$type": "color",
+      "$value": "#ffd8e4ff"
+    },
+    "onTertiaryContainer": {
+      "$type": "color",
+      "$value": "#31111dff"
+    },
     "error": {
       "$type": "color",
       "$value": "#d00036ff"
+    },
+    "onError": {
+      "$type": "color",
+      "$value": "#ffffffff"
+    },
+    "errorContainer": {
+      "$type": "color",
+      "$value": "#f9dedcff"
+    },
+    "onErrorContainer": {
+      "$type": "color",
+      "$value": "#410e0bff"
     },
     "surface": {
       "$type": "color",
@@ -41,9 +77,17 @@
       "$type": "color",
       "$value": "#f6f6f6ff"
     },
+    "onSurfaceVariant": {
+      "$type": "color",
+      "$value": "#00000099"
+    },
     "outline": {
       "$type": "color",
       "$value": "#0000001f"
+    },
+    "outlineVariant": {
+      "$type": "color",
+      "$value": "#cac4d0ff"
     }
   },
   "type": {

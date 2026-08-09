@@ -94,7 +94,7 @@
                             <g id="Box">
                               <rect x="1018" y="189" width="194" height="63" rx="31.5" ry="31.5" fill="none" stroke="url(#gs-3)" stroke-width="5.25"/>
                               <g id="Empty">
-                                <text x="1068" y="233.86" font-size="31.5" font-family="&apos;FontListFontFamily(fonts=[ResourceFont(resId=2131165185, weight=FontWeight(weight=400), style=Normal, loadingStrategy=Blocking), ResourceFont(resId=2131165184, weight=FontWeight(weight=700), style=Normal, loadingStrategy=Blocking)])&apos;, sans-serif" font-weight="700" letter-spacing="1.05" fill="#FFFFFF">Sweet</text>
+                                <text x="1068" y="233.86" font-size="31.5" font-family="Karla" font-weight="700" letter-spacing="1.05" fill="#FFFFFF">Sweet</text>
                               </g>
                             </g>
                           </g>
@@ -115,36 +115,32 @@
                       <clipPath id="clip-8"><rect x="0" y="441" width="1050" height="698"/></clipPath>
                       <g id="LayoutNodeSubcompositionsState">
                         <g clip-path="url(#clip-8)">
-                          <clipPath id="clip-9"><rect x="63" y="441" width="446" height="656" rx="52.5" ry="52.5"/></clipPath>
                           <g id="Box">
                               <rect x="64" y="442" width="444" height="654" rx="51.5" ry="51.5" fill="#121212" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="2.62"/>
-                            <g clip-path="url(#clip-9)">
-                              <g id="Column">
+                            <g id="Column">
+                              <g id="Box">
+                                <g id="BoxKt">
+                                  <image href="ideal__default__dark.figma-raster/4827.png" x="63" y="441" width="446" height="263"/>
+                                </g>
+                                <clipPath id="clip-9"><rect x="129" y="546" width="315" height="315" rx="157.5" ry="157.5"/></clipPath>
                                 <g id="Box">
-                                  <g id="BoxKt">
-                                    <image href="ideal__default__dark.figma-raster/4913.png" x="63" y="441" width="446" height="263"/>
-                                  </g>
-                                  <clipPath id="clip-10"><rect x="129" y="546" width="315" height="315" rx="157.5" ry="157.5"/></clipPath>
-                                  <g id="Box">
-                                      <rect x="129" y="546" width="315" height="315" rx="157.5" ry="157.5" fill="#121212"/>
-                                    <g clip-path="url(#clip-10)">
-                                      <g id="ImageKt">
-                                        <image href="ideal__default__dark.figma-raster/4915.png" x="129" y="546" width="315" height="315"/>
-                                      </g>
+                                    <rect x="129" y="546" width="315" height="315" rx="157.5" ry="157.5" fill="#121212"/>
+                                  <g clip-path="url(#clip-9)">
+                                    <g id="ImageKt">
+                                      <image href="ideal__default__dark.figma-raster/4829.png" x="129" y="546" width="315" height="315"/>
                                     </g>
                                   </g>
                                 </g>
-                                <g id="Spacer">
-                                  <text x="63" y="472.86" font-size="31.5" font-family="Karla" font-weight="700" letter-spacing="1.05" fill="#FFFFFF">Sweet</text>
-                                </g>
-                                <g id="Empty">
-                                  <text x="105" y="931.61" font-size="52.5" font-family="Montserrat" font-weight="600" fill="#FFFFFF">Cupcake</text>
-                                </g>
-                                <g id="Spacer">
-                                </g>
-                                <g id="Empty">
-                                  <text x="105" y="1008.24" font-size="42" font-family="Karla" font-weight="400" letter-spacing="0.39" fill="#FFFFFF" fill-opacity="0.74">A tag line</text>
-                                </g>
+                              </g>
+                              <g id="Spacer">
+                              </g>
+                              <g id="Empty">
+                                <text x="105" y="931.61" font-size="52.5" font-family="Montserrat" font-weight="600" fill="#FFFFFF">Cupcake</text>
+                              </g>
+                              <g id="Spacer">
+                              </g>
+                              <g id="Empty">
+                                <text x="105" y="1008.24" font-size="42" font-family="Karla" font-weight="400" letter-spacing="0.39" fill="#FFFFFF" fill-opacity="0.74">A tag line</text>
                               </g>
                             </g>
                           </g>
@@ -153,14 +149,14 @@
                             <g id="Column">
                               <g id="Box">
                                 <g id="BoxKt">
-                                  <image href="ideal__default__dark.figma-raster/4924.png" x="551" y="441" width="446" height="263"/>
+                                  <image href="ideal__default__dark.figma-raster/4838.png" x="551" y="441" width="446" height="263"/>
                                 </g>
-                                <clipPath id="clip-11"><rect x="617" y="546" width="315" height="315" rx="157.5" ry="157.5"/></clipPath>
+                                <clipPath id="clip-10"><rect x="617" y="546" width="315" height="315" rx="157.5" ry="157.5"/></clipPath>
                                 <g id="Box">
                                     <rect x="617" y="546" width="315" height="315" rx="157.5" ry="157.5" fill="#121212"/>
-                                  <g clip-path="url(#clip-11)">
+                                  <g clip-path="url(#clip-10)">
                                     <g id="ImageKt">
-                                      <image href="ideal__default__dark.figma-raster/4926.png" x="617" y="546" width="315" height="315"/>
+                                      <image href="ideal__default__dark.figma-raster/4840.png" x="617" y="546" width="315" height="315"/>
                                     </g>
                                   </g>
                                 </g>
@@ -182,7 +178,7 @@
                             <g id="Column">
                               <g id="Box">
                                 <g id="BoxKt">
-                                  <image href="ideal__default__dark.figma-raster/4935.png" x="1039" y="441" width="446" height="263"/>
+                                  <image href="ideal__default__dark.figma-raster/4849.png" x="1039" y="441" width="446" height="263"/>
                                 </g>
                                 <g id="Box">
                                   <rect x="1105" y="546" width="315" height="315" rx="157.5" ry="157.5" fill="#121212"/>
@@ -193,12 +189,12 @@
                               <g id="Spacer">
                               </g>
                               <g id="Empty">
-                                <text x="1081" y="931.61" font-size="52.5" font-family="&apos;FontListFontFamily(fonts=[ResourceFont(resId=2131165186, weight=FontWeight(weight=300), style=Normal, loadingStrategy=Blocking), ResourceFont(resId=2131165188, weight=FontWeight(weight=400), style=Normal, loadingStrategy=Blocking), ResourceFont(resId=2131165187, weight=FontWeight(weight=500), style=Normal, loadingStrategy=Blocking), ResourceFont(resId=2131165189, weight=FontWeight(weight=600), style=Normal, loadingStrategy=Blocking)])&apos;, sans-serif" font-weight="600" fill="#FFFFFF">Eclair</text>
+                                <text x="1081" y="931.61" font-size="52.5" font-family="Montserrat" font-weight="600" fill="#FFFFFF">Eclair</text>
                               </g>
                               <g id="Spacer">
                               </g>
                               <g id="Empty">
-                                <text x="1081" y="1008.24" font-size="42" font-family="&apos;FontListFontFamily(fonts=[ResourceFont(resId=2131165185, weight=FontWeight(weight=400), style=Normal, loadingStrategy=Blocking), ResourceFont(resId=2131165184, weight=FontWeight(weight=700), style=Normal, loadingStrategy=Blocking)])&apos;, sans-serif" font-weight="400" letter-spacing="0.39" fill="#FFFFFF" fill-opacity="0.74">A tag line</text>
+                                <text x="1081" y="1008.24" font-size="42" font-family="Karla" font-weight="400" letter-spacing="0.39" fill="#FFFFFF" fill-opacity="0.74">A tag line</text>
                               </g>
                             </g>
                           </g>
@@ -221,21 +217,21 @@
                           </g>
                         </g>
                       </g>
-                      <clipPath id="clip-12"><rect x="0" y="1291" width="1050" height="451"/></clipPath>
+                      <clipPath id="clip-11"><rect x="0" y="1291" width="1050" height="451"/></clipPath>
                       <g id="LayoutNodeSubcompositionsState">
-                        <g clip-path="url(#clip-12)">
+                        <g clip-path="url(#clip-11)">
                           <g id="Box">
                               <rect x="43" y="1291" width="357" height="430" rx="52.5" ry="52.5" fill="#121212"/>
                             <g id="Column">
                               <g id="Empty">
                                 <text x="159" y="1693.99" font-size="42" font-family="Montserrat" font-weight="600" letter-spacing="0.39" fill="#FFFFFF">Chips</text>
                               </g>
-                              <clipPath id="clip-13"><rect x="64" y="1312" width="315" height="315" rx="157.5" ry="157.5"/></clipPath>
+                              <clipPath id="clip-12"><rect x="64" y="1312" width="315" height="315" rx="157.5" ry="157.5"/></clipPath>
                               <g id="Box" filter="url(#shadow-3)">
                                   <rect x="64" y="1312" width="315" height="315" rx="157.5" ry="157.5" fill="#1E1E1E"/>
-                                <g clip-path="url(#clip-13)">
+                                <g clip-path="url(#clip-12)">
                                   <g id="ImageKt">
-                                    <image href="ideal__default__dark.figma-raster/4954.png" x="64" y="1312" width="315" height="315"/>
+                                    <image href="ideal__default__dark.figma-raster/4868.png" x="64" y="1312" width="315" height="315"/>
                                   </g>
                                 </g>
                               </g>
@@ -247,12 +243,12 @@
                               <g id="Empty">
                                 <text x="512" y="1693.99" font-size="42" font-family="Montserrat" font-weight="600" letter-spacing="0.39" fill="#FFFFFF">Pretzels</text>
                               </g>
-                              <clipPath id="clip-14"><rect x="443" y="1312" width="315" height="315" rx="157.5" ry="157.5"/></clipPath>
+                              <clipPath id="clip-13"><rect x="443" y="1312" width="315" height="315" rx="157.5" ry="157.5"/></clipPath>
                               <g id="Box" filter="url(#shadow-3)">
                                   <rect x="443" y="1312" width="315" height="315" rx="157.5" ry="157.5" fill="#1E1E1E"/>
-                                <g clip-path="url(#clip-14)">
+                                <g clip-path="url(#clip-13)">
                                   <g id="ImageKt">
-                                    <image href="ideal__default__dark.figma-raster/4960.png" x="443" y="1312" width="315" height="315"/>
+                                    <image href="ideal__default__dark.figma-raster/4874.png" x="443" y="1312" width="315" height="315"/>
                                   </g>
                                 </g>
                               </g>
@@ -264,12 +260,12 @@
                               <g id="Empty">
                                 <text x="862" y="1693.99" font-size="42" font-family="Montserrat" font-weight="600" letter-spacing="0.39" fill="#FFFFFF">Smoothies</text>
                               </g>
-                              <clipPath id="clip-15"><rect x="822" y="1312" width="315" height="315" rx="157.5" ry="157.5"/></clipPath>
+                              <clipPath id="clip-14"><rect x="822" y="1312" width="315" height="315" rx="157.5" ry="157.5"/></clipPath>
                               <g id="Box" filter="url(#shadow-3)">
                                   <rect x="822" y="1312" width="315" height="315" rx="157.5" ry="157.5" fill="#1E1E1E"/>
-                                <g clip-path="url(#clip-15)">
+                                <g clip-path="url(#clip-14)">
                                   <g id="ImageKt">
-                                    <image href="ideal__default__dark.figma-raster/4966.png" x="822" y="1312" width="315" height="315"/>
+                                    <image href="ideal__default__dark.figma-raster/4880.png" x="822" y="1312" width="315" height="315"/>
                                   </g>
                                 </g>
                               </g>
@@ -294,22 +290,22 @@
                           </g>
                         </g>
                       </g>
-                      <clipPath id="clip-16"><rect x="0" y="1894" width="1050" height="698"/></clipPath>
+                      <clipPath id="clip-15"><rect x="0" y="1894" width="1050" height="698"/></clipPath>
                       <g id="LayoutNodeSubcompositionsState">
-                        <g clip-path="url(#clip-16)">
+                        <g clip-path="url(#clip-15)">
                           <g id="Box">
                               <rect x="64" y="1895" width="444" height="654" rx="51.5" ry="51.5" fill="#121212" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="2.62"/>
                             <g id="Column">
                               <g id="Box">
                                 <g id="BoxKt">
-                                  <image href="ideal__default__dark.figma-raster/4980.png" x="63" y="1894" width="446" height="263"/>
+                                  <image href="ideal__default__dark.figma-raster/4894.png" x="63" y="1894" width="446" height="263"/>
                                 </g>
-                                <clipPath id="clip-17"><rect x="129" y="1999" width="315" height="315" rx="157.5" ry="157.5"/></clipPath>
+                                <clipPath id="clip-16"><rect x="129" y="1999" width="315" height="315" rx="157.5" ry="157.5"/></clipPath>
                                 <g id="Box">
                                     <rect x="129" y="1999" width="315" height="315" rx="157.5" ry="157.5" fill="#121212"/>
-                                  <g clip-path="url(#clip-17)">
+                                  <g clip-path="url(#clip-16)">
                                     <g id="ImageKt">
-                                      <image href="ideal__default__dark.figma-raster/4982.png" x="129" y="1999" width="315" height="315"/>
+                                      <image href="ideal__default__dark.figma-raster/4896.png" x="129" y="1999" width="315" height="315"/>
                                     </g>
                                   </g>
                                 </g>
@@ -317,12 +313,12 @@
                               <g id="Spacer">
                               </g>
                               <g id="Empty">
-                                <text x="105" y="2384.61" font-size="52.5" font-family="&apos;FontListFontFamily(fonts=[ResourceFont(resId=2131165186, weight=FontWeight(weight=300), style=Normal, loadingStrategy=Blocking), ResourceFont(resId=2131165188, weight=FontWeight(weight=400), style=Normal, loadingStrategy=Blocking), ResourceFont(resId=2131165187, weight=FontWeight(weight=500), style=Normal, loadingStrategy=Blocking), ResourceFont(resId=2131165189, weight=FontWeight(weight=600), style=Normal, loadingStrategy=Blocking)])&apos;, sans-serif" font-weight="600" fill="#FFFFFF">Cupcake</text>
+                                <text x="105" y="2384.61" font-size="52.5" font-family="Montserrat" font-weight="600" fill="#FFFFFF">Cupcake</text>
                               </g>
                               <g id="Spacer">
                               </g>
                               <g id="Empty">
-                                <text x="105" y="2461.23" font-size="42" font-family="&apos;FontListFontFamily(fonts=[ResourceFont(resId=2131165185, weight=FontWeight(weight=400), style=Normal, loadingStrategy=Blocking), ResourceFont(resId=2131165184, weight=FontWeight(weight=700), style=Normal, loadingStrategy=Blocking)])&apos;, sans-serif" font-weight="400" letter-spacing="0.39" fill="#FFFFFF" fill-opacity="0.74">A tag line</text>
+                                <text x="105" y="2461.23" font-size="42" font-family="Karla" font-weight="400" letter-spacing="0.39" fill="#FFFFFF" fill-opacity="0.74">A tag line</text>
                               </g>
                             </g>
                           </g>
@@ -331,14 +327,14 @@
                             <g id="Column">
                               <g id="Box">
                                 <g id="BoxKt">
-                                  <image href="ideal__default__dark.figma-raster/4991.png" x="551" y="1894" width="446" height="263"/>
+                                  <image href="ideal__default__dark.figma-raster/4905.png" x="551" y="1894" width="446" height="263"/>
                                 </g>
-                                <clipPath id="clip-18"><rect x="617" y="1999" width="315" height="315" rx="157.5" ry="157.5"/></clipPath>
+                                <clipPath id="clip-17"><rect x="617" y="1999" width="315" height="315" rx="157.5" ry="157.5"/></clipPath>
                                 <g id="Box">
                                     <rect x="617" y="1999" width="315" height="315" rx="157.5" ry="157.5" fill="#121212"/>
-                                  <g clip-path="url(#clip-18)">
+                                  <g clip-path="url(#clip-17)">
                                     <g id="ImageKt">
-                                      <image href="ideal__default__dark.figma-raster/4993.png" x="617" y="1999" width="315" height="315"/>
+                                      <image href="ideal__default__dark.figma-raster/4907.png" x="617" y="1999" width="315" height="315"/>
                                     </g>
                                   </g>
                                 </g>
@@ -346,12 +342,12 @@
                               <g id="Spacer">
                               </g>
                               <g id="Empty">
-                                <text x="593" y="2384.61" font-size="52.5" font-family="&apos;FontListFontFamily(fonts=[ResourceFont(resId=2131165186, weight=FontWeight(weight=300), style=Normal, loadingStrategy=Blocking), ResourceFont(resId=2131165188, weight=FontWeight(weight=400), style=Normal, loadingStrategy=Blocking), ResourceFont(resId=2131165187, weight=FontWeight(weight=500), style=Normal, loadingStrategy=Blocking), ResourceFont(resId=2131165189, weight=FontWeight(weight=600), style=Normal, loadingStrategy=Blocking)])&apos;, sans-serif" font-weight="600" fill="#FFFFFF">Donut</text>
+                                <text x="593" y="2384.61" font-size="52.5" font-family="Montserrat" font-weight="600" fill="#FFFFFF">Donut</text>
                               </g>
                               <g id="Spacer">
                               </g>
                               <g id="Empty">
-                                <text x="593" y="2461.23" font-size="42" font-family="&apos;FontListFontFamily(fonts=[ResourceFont(resId=2131165185, weight=FontWeight(weight=400), style=Normal, loadingStrategy=Blocking), ResourceFont(resId=2131165184, weight=FontWeight(weight=700), style=Normal, loadingStrategy=Blocking)])&apos;, sans-serif" font-weight="400" letter-spacing="0.39" fill="#FFFFFF" fill-opacity="0.74">A tag line</text>
+                                <text x="593" y="2461.23" font-size="42" font-family="Karla" font-weight="400" letter-spacing="0.39" fill="#FFFFFF" fill-opacity="0.74">A tag line</text>
                               </g>
                             </g>
                           </g>
@@ -360,7 +356,7 @@
                             <g id="Column">
                               <g id="Box">
                                 <g id="BoxKt">
-                                  <image href="ideal__default__dark.figma-raster/5002.png" x="1039" y="1894" width="446" height="263"/>
+                                  <image href="ideal__default__dark.figma-raster/4916.png" x="1039" y="1894" width="446" height="263"/>
                                 </g>
                                 <g id="Box">
                                   <rect x="1105" y="1999" width="315" height="315" rx="157.5" ry="157.5" fill="#121212"/>
@@ -371,12 +367,12 @@
                               <g id="Spacer">
                               </g>
                               <g id="Empty">
-                                <text x="1081" y="2384.61" font-size="52.5" font-family="&apos;FontListFontFamily(fonts=[ResourceFont(resId=2131165186, weight=FontWeight(weight=300), style=Normal, loadingStrategy=Blocking), ResourceFont(resId=2131165188, weight=FontWeight(weight=400), style=Normal, loadingStrategy=Blocking), ResourceFont(resId=2131165187, weight=FontWeight(weight=500), style=Normal, loadingStrategy=Blocking), ResourceFont(resId=2131165189, weight=FontWeight(weight=600), style=Normal, loadingStrategy=Blocking)])&apos;, sans-serif" font-weight="600" fill="#FFFFFF">Eclair</text>
+                                <text x="1081" y="2384.61" font-size="52.5" font-family="Montserrat" font-weight="600" fill="#FFFFFF">Eclair</text>
                               </g>
                               <g id="Spacer">
                               </g>
                               <g id="Empty">
-                                <text x="1081" y="2461.23" font-size="42" font-family="&apos;FontListFontFamily(fonts=[ResourceFont(resId=2131165185, weight=FontWeight(weight=400), style=Normal, loadingStrategy=Blocking), ResourceFont(resId=2131165184, weight=FontWeight(weight=700), style=Normal, loadingStrategy=Blocking)])&apos;, sans-serif" font-weight="400" letter-spacing="0.39" fill="#FFFFFF" fill-opacity="0.74">A tag line</text>
+                                <text x="1081" y="2461.23" font-size="42" font-family="Karla" font-weight="400" letter-spacing="0.39" fill="#FFFFFF" fill-opacity="0.74">A tag line</text>
                               </g>
                             </g>
                           </g>
@@ -387,7 +383,7 @@
                 </g>
                 <g id="Column">
                   <g id="Box">
-                    <image href="ideal__default__dark.figma-raster/4868.png" x="0" y="0" width="1050" height="168"/>
+                    <image href="ideal__default__dark.figma-raster/4782.png" x="0" y="0" width="1050" height="168"/>
                     <g id="TopAppBar">
                       <g id="Box">
                       </g>
