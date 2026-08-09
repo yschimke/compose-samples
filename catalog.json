@@ -113,7 +113,8 @@
       "group": "Browse",
       "caption": "Podcast browse list on a round face — the Wear counterpart of the phone's discover carousel.",
       "wireframe": "wireframes/podcast-screen.svg",
-      "sourceFile": "src/main/java/com/example/jetcaster/ui/podcasts/PodcastsScreen.kt"
+      "sourceFile": "src/main/java/com/example/jetcaster/ui/podcasts/PodcastsScreen.kt",
+      "bodyLine": 229
     },
     {
       "componentId": "Podcast/Details",
@@ -255,7 +256,8 @@
       "group": "Browse",
       "caption": "Podcast details on Wear.",
       "wireframe": "wireframes/podcast-details.svg",
-      "sourceFile": "src/main/java/com/example/jetcaster/ui/podcast/PodcastDetailsScreen.kt"
+      "sourceFile": "src/main/java/com/example/jetcaster/ui/podcast/PodcastDetailsScreen.kt",
+      "bodyLine": 227
     },
     {
       "componentId": "Library/Screen",
@@ -390,7 +392,8 @@
       "group": "Browse",
       "caption": "The user's library entry point.",
       "wireframe": "wireframes/library-screen.svg",
-      "sourceFile": "src/main/java/com/example/jetcaster/ui/library/LibraryScreen.kt"
+      "sourceFile": "src/main/java/com/example/jetcaster/ui/library/LibraryScreen.kt",
+      "bodyLine": 362
     },
     {
       "componentId": "Episode/Latest",
@@ -518,7 +521,8 @@
       "group": "Browse",
       "caption": "Latest-episode screen — the primary Wear launch surface.",
       "wireframe": "wireframes/episode-latest.svg",
-      "sourceFile": "src/main/java/com/example/jetcaster/ui/latest_episodes/LatestEpisodesScreen.kt"
+      "sourceFile": "src/main/java/com/example/jetcaster/ui/latest_episodes/LatestEpisodesScreen.kt",
+      "bodyLine": 236
     },
     {
       "componentId": "Episode/Screen",
@@ -706,7 +710,8 @@
       "group": "Playback",
       "caption": "Episode detail with playback controls, loaded.",
       "wireframe": "wireframes/episode-screen.svg",
-      "sourceFile": "src/main/java/com/example/jetcaster/ui/episode/EpisodeScreen.kt"
+      "sourceFile": "src/main/java/com/example/jetcaster/ui/episode/EpisodeScreen.kt",
+      "bodyLine": 357
     },
     {
       "componentId": "Queue/Screen",
@@ -864,7 +869,8 @@
       "group": "Playback",
       "caption": "Playback queue, populated.",
       "wireframe": "wireframes/queue-screen.svg",
-      "sourceFile": "src/main/java/com/example/jetcaster/ui/queue/QueueScreen.kt"
+      "sourceFile": "src/main/java/com/example/jetcaster/ui/queue/QueueScreen.kt",
+      "bodyLine": 264
     },
     {
       "componentId": "Podcast/Content",
@@ -942,7 +948,8 @@
       "group": "Components",
       "caption": "Podcast content block, centred at its on-device width rather than pinned to a screen.",
       "wireframe": "wireframes/podcast-content.svg",
-      "sourceFile": "src/main/java/com/example/jetcaster/ui/library/LibraryScreen.kt"
+      "sourceFile": "src/main/java/com/example/jetcaster/ui/library/LibraryScreen.kt",
+      "bodyLine": 384
     },
     {
       "componentId": "Player/Controls",
@@ -1034,20 +1041,29 @@
       "group": "Components",
       "caption": "Media content and transport, centred at its on-device width — where Wear's touch-target minimums bite hardest.",
       "wireframe": "wireframes/player-controls.svg",
-      "sourceFile": "src/main/java/com/example/jetcaster/ui/components/MediaContent.kt"
+      "sourceFile": "src/main/java/com/example/jetcaster/ui/components/MediaContent.kt",
+      "bodyLine": 109
     }
   ],
   "library": [
     "androidx.wear.compose:compose-material3",
     "androidx.wear.compose:compose-foundation"
   ],
-  "renderer": "compose-preview 0.19.46",
-  "generatedAt": "2026-08-08T00:33:13.992Z",
+  "renderer": "compose-preview 0.19.51",
+  "generatedAt": "2026-08-09T09:30:51.774Z",
   "display": {
     "surface": "dark",
     "hero": "Podcast/Screen"
   },
-  "tokensFile": "tokens.dtcg.json",
+  "themes": [
+    {
+      "id": "com.example.jetcaster.catalog.JetcasterWearDarkThemeCatalog",
+      "tokensFile": "themes/com.example.jetcaster.catalog.jetcasterweardarkthemecatalog.dtcg.json",
+      "name": "Dark",
+      "group": "Jetcaster Wear",
+      "dark": true
+    }
+  ],
   "liveBundle": {
     "path": "bundle/",
     "file": "bundle.png"
