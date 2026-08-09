@@ -45,13 +45,12 @@
                   <g id="Column">
                     <g id="Row">
                       <g id="ImageKt">
-                        <image href="ideal__default.figma-raster/3055.png" x="42" y="444" width="147" height="147"/>
+                        <image href="ideal__default.figma-raster/3184.png" x="42" y="444" width="147" height="147"/>
                       </g>
                       <g id="Empty">
                         <text x="231" y="531.99" font-size="42" font-family="Montserrat" font-weight="500" letter-spacing="0.39" fill="#1A1B20">Jetpack Compose</text>
                       </g>
                       <g id="Spacer">
-                        <text x="42" y="489.99" font-size="42" font-family="Montserrat" font-weight="500" letter-spacing="0.39" fill="#1A1B20">Technology</text>
                       </g>
                       <g id="Box">
                         <rect x="914" y="471" width="93" height="93" rx="46.5" ry="46.5" fill="#FFFFFF" stroke="#1A1B20" stroke-opacity="0.1" stroke-width="2.62"/>
@@ -71,7 +70,7 @@
                   <g id="Column">
                     <g id="Row">
                       <g id="ImageKt">
-                        <image href="ideal__default.figma-raster/3063.png" x="42" y="636" width="147" height="147"/>
+                        <image href="ideal__default.figma-raster/3192.png" x="42" y="636" width="147" height="147"/>
                       </g>
                       <g id="Empty">
                         <text x="231" y="723.99" font-size="42" font-family="Montserrat" font-weight="500" letter-spacing="0.39" fill="#1A1B20">Kotlin</text>
@@ -96,7 +95,7 @@
                   <g id="Column">
                     <g id="Row">
                       <g id="ImageKt">
-                        <image href="ideal__default.figma-raster/3071.png" x="42" y="828" width="147" height="147"/>
+                        <image href="ideal__default.figma-raster/3200.png" x="42" y="828" width="147" height="147"/>
                       </g>
                       <g id="Empty">
                         <text x="231" y="915.99" font-size="42" font-family="Montserrat" font-weight="500" letter-spacing="0.39" fill="#1A1B20">Jetpack</text>
@@ -126,7 +125,7 @@
                   <g id="Column">
                     <g id="Row">
                       <g id="ImageKt">
-                        <image href="ideal__default.figma-raster/3081.png" x="42" y="1167" width="147" height="147"/>
+                        <image href="ideal__default.figma-raster/3210.png" x="42" y="1167" width="147" height="147"/>
                       </g>
                       <g id="Empty">
                         <text x="231" y="1254.99" font-size="42" font-family="Montserrat" font-weight="500" letter-spacing="0.39" fill="#1A1B20">Kotlin</text>
@@ -151,7 +150,7 @@
                   <g id="Column">
                     <g id="Row">
                       <g id="ImageKt">
-                        <image href="ideal__default.figma-raster/3089.png" x="42" y="1359" width="147" height="147"/>
+                        <image href="ideal__default.figma-raster/3218.png" x="42" y="1359" width="147" height="147"/>
                       </g>
                       <g id="Empty">
                         <text x="231" y="1446.99" font-size="42" font-family="Montserrat" font-weight="500" letter-spacing="0.39" fill="#1A1B20">Declarative UIs</text>
@@ -176,7 +175,7 @@
                   <g id="Column">
                     <g id="Row">
                       <g id="ImageKt">
-                        <image href="ideal__default.figma-raster/3097.png" x="42" y="1551" width="147" height="147"/>
+                        <image href="ideal__default.figma-raster/3226.png" x="42" y="1551" width="147" height="147"/>
                       </g>
                       <g id="Empty">
                         <text x="231" y="1638.99" font-size="42" font-family="Montserrat" font-weight="500" letter-spacing="0.39" fill="#1A1B20">Java</text>
@@ -201,7 +200,7 @@
                   <g id="Column">
                     <g id="Row">
                       <g id="ImageKt">
-                        <image href="ideal__default.figma-raster/3105.png" x="42" y="1743" width="147" height="147"/>
+                        <image href="ideal__default.figma-raster/3234.png" x="42" y="1743" width="147" height="147"/>
                       </g>
                       <g id="Empty">
                         <text x="231" y="1830.99" font-size="42" font-family="Montserrat" font-weight="500" letter-spacing="0.39" fill="#1A1B20">Unidirectional Data Flow</text>
@@ -226,7 +225,7 @@
                   <g id="Column">
                     <g id="Row">
                       <g id="ImageKt">
-                        <image href="ideal__default.figma-raster/3113.png" x="42" y="1935" width="147" height="147"/>
+                        <image href="ideal__default.figma-raster/3242.png" x="42" y="1935" width="147" height="147"/>
                       </g>
                       <g id="Empty">
                         <text x="231" y="2022.99" font-size="42" font-family="Montserrat" font-weight="500" letter-spacing="0.39" fill="#1A1B20">C++</text>
@@ -250,7 +249,7 @@
                   </g>
                 </g>
                 <g id="Empty">
-                  <text x="42" y="2214.98" font-size="42" font-family="&apos;FontListFontFamily(fonts=[ResourceFont(resId=2131230721, weight=FontWeight(weight=400), style=Normal, loadingStrategy=Blocking), ResourceFont(resId=2131230720, weight=FontWeight(weight=500), style=Normal, loadingStrategy=Blocking)])&apos;, sans-serif" font-weight="500" letter-spacing="0.39" fill="#1A1B20">Technology</text>
+                  <text x="42" y="2214.98" font-size="42" font-family="Montserrat" font-weight="500" letter-spacing="0.39" fill="#1A1B20">Technology</text>
                 </g>
                 <g id="InterestsScreenKt">
                   <g id="Column">
@@ -258,7 +257,7 @@
                       <g id="ImageKt">
                       </g>
                       <g id="Empty">
-                        <text x="231" y="2361.98" font-size="42" font-family="&apos;FontListFontFamily(fonts=[ResourceFont(resId=2131230721, weight=FontWeight(weight=400), style=Normal, loadingStrategy=Blocking), ResourceFont(resId=2131230720, weight=FontWeight(weight=500), style=Normal, loadingStrategy=Blocking)])&apos;, sans-serif" font-weight="500" letter-spacing="0.39" fill="#1A1B20">Pixel</text>
+                        <text x="231" y="2361.98" font-size="42" font-family="Montserrat" font-weight="500" letter-spacing="0.39" fill="#1A1B20">Pixel</text>
                       </g>
                       <g id="Spacer">
                       </g>
@@ -282,7 +281,7 @@
                       <g id="ImageKt">
                       </g>
                       <g id="Empty">
-                        <text x="231" y="2553.98" font-size="42" font-family="&apos;FontListFontFamily(fonts=[ResourceFont(resId=2131230721, weight=FontWeight(weight=400), style=Normal, loadingStrategy=Blocking), ResourceFont(resId=2131230720, weight=FontWeight(weight=500), style=Normal, loadingStrategy=Blocking)])&apos;, sans-serif" font-weight="500" letter-spacing="0.39" fill="#1A1B20">Google</text>
+                        <text x="231" y="2553.98" font-size="42" font-family="Montserrat" font-weight="500" letter-spacing="0.39" fill="#1A1B20">Google</text>
                       </g>
                       <g id="Spacer">
                       </g>
@@ -306,7 +305,7 @@
             </g>
           </g>
           <g id="Box">
-            <image href="ideal__default.figma-raster/3014.png" x="0" y="0" width="1050" height="168"/>
+            <image href="ideal__default.figma-raster/3143.png" x="0" y="0" width="1050" height="168"/>
             <g id="TopAppBar">
               <g id="BoxKt">
                 <g transform="translate(43 53) scale(2.62 2.62)">

@@ -51,7 +51,6 @@
                         <text x="231" y="531.99" font-size="42" font-family="Montserrat" font-weight="500" letter-spacing="0.39" fill="#1A1B20">Jetpack Compose</text>
                       </g>
                       <g id="Spacer">
-                        <text x="42" y="489.99" font-size="42" font-family="Montserrat" font-weight="500" letter-spacing="0.39" fill="#1A1B20">Technology</text>
                       </g>
                       <g id="Box">
                         <rect x="914" y="471" width="93" height="93" rx="46.5" ry="46.5" fill="#FFFFFF" stroke="#1A1B20" stroke-opacity="0.1" stroke-width="2.62"/>
@@ -250,7 +249,7 @@
                   </g>
                 </g>
                 <g id="Empty">
-                  <text x="42" y="2214.98" font-size="42" font-family="&apos;FontListFontFamily(fonts=[ResourceFont(resId=2131230721, weight=FontWeight(weight=400), style=Normal, loadingStrategy=Blocking), ResourceFont(resId=2131230720, weight=FontWeight(weight=500), style=Normal, loadingStrategy=Blocking)])&apos;, sans-serif" font-weight="500" letter-spacing="0.39" fill="#1A1B20">Technology</text>
+                  <text x="42" y="2214.98" font-size="42" font-family="Montserrat" font-weight="500" letter-spacing="0.39" fill="#1A1B20">Technology</text>
                 </g>
                 <g id="InterestsScreenKt">
                   <g id="Column">
@@ -258,7 +257,7 @@
                       <g id="ImageKt">
                       </g>
                       <g id="Empty">
-                        <text x="231" y="2361.98" font-size="42" font-family="&apos;FontListFontFamily(fonts=[ResourceFont(resId=2131230721, weight=FontWeight(weight=400), style=Normal, loadingStrategy=Blocking), ResourceFont(resId=2131230720, weight=FontWeight(weight=500), style=Normal, loadingStrategy=Blocking)])&apos;, sans-serif" font-weight="500" letter-spacing="0.39" fill="#1A1B20">Pixel</text>
+                        <text x="231" y="2361.98" font-size="42" font-family="Montserrat" font-weight="500" letter-spacing="0.39" fill="#1A1B20">Pixel</text>
                       </g>
                       <g id="Spacer">
                       </g>
@@ -282,7 +281,7 @@
                       <g id="ImageKt">
                       </g>
                       <g id="Empty">
-                        <text x="231" y="2553.98" font-size="42" font-family="&apos;FontListFontFamily(fonts=[ResourceFont(resId=2131230721, weight=FontWeight(weight=400), style=Normal, loadingStrategy=Blocking), ResourceFont(resId=2131230720, weight=FontWeight(weight=500), style=Normal, loadingStrategy=Blocking)])&apos;, sans-serif" font-weight="500" letter-spacing="0.39" fill="#1A1B20">Google</text>
+                        <text x="231" y="2553.98" font-size="42" font-family="Montserrat" font-weight="500" letter-spacing="0.39" fill="#1A1B20">Google</text>
                       </g>
                       <g id="Spacer">
                       </g>

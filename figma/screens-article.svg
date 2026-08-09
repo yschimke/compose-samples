@@ -11,7 +11,7 @@
           <g id="LayoutNodeSubcompositionsState">
             <g clip-path="url(#clip-1)">
               <g id="ImageKt">
-                <image href="screens-article.figma-raster/4779.png" x="42" y="168" width="966" height="473"/>
+                <image href="screens-article.figma-raster/4615.png" x="42" y="168" width="966" height="473"/>
               </g>
               <g id="Spacer">
               </g>
@@ -46,12 +46,12 @@
                 <text font-size="42" font-family="Montserrat" letter-spacing="1.31" fill="#1A1B20"><tspan x="53" y="1557" font-size="42" font-family="Montserrat" fill="#1A1B20">Learn how to get started converting Java</tspan><tspan x="53" y="1631" font-size="42" font-family="Montserrat" fill="#1A1B20">Programming Language code to Kotlin,</tspan><tspan x="53" y="1705" font-size="42" font-family="Montserrat" fill="#1A1B20">making it more idiomatic and avoid</tspan><tspan x="53" y="1779" font-size="42" font-family="Montserrat" fill="#1A1B20">common pitfalls, by following our new</tspan><tspan x="53" y="1853" font-size="42" font-family="Montserrat" fill="#1A1B20">Refactoring to Kotlin</tspan><tspan font-size="42" font-family="Montserrat" fill="#1A1B20"> codelab, available</tspan><tspan x="53" y="1927" font-size="42" font-family="Montserrat" fill="#1A1B20">in English 🇬🇧, </tspan><tspan font-size="42" font-family="Montserrat" fill="#1A1B20">Chinese</tspan><tspan font-size="42" font-family="Montserrat" fill="#1A1B20"> 🇨🇳 and </tspan><tspan font-size="42" font-family="Montserrat" fill="#1A1B20">Brazilian</tspan><tspan x="53" y="2001" font-size="42" font-family="Montserrat" fill="#1A1B20">Portuguese</tspan><tspan font-size="42" font-family="Montserrat" fill="#1A1B20"> 🇧🇷.</tspan></text>
               </g>
               <g id="Empty">
-                <text x="53" y="2159.23" font-size="42" font-family="&apos;FontListFontFamily(fonts=[ResourceFont(resId=2131230721, weight=FontWeight(weight=400), style=Normal, loadingStrategy=Blocking), ResourceFont(resId=2131230720, weight=FontWeight(weight=500), style=Normal, loadingStrategy=Blocking)])&apos;, sans-serif" letter-spacing="1.31" fill="#1A1B20">When you first get started writing Kotlin code, you tend to follow Java Programming Language idioms. The automatic converter, part of both Android Studio and Intellij IDEA, can do a pretty good job of automatically refactoring your code, but sometimes, it needs a little help. This is where our new Refactoring to Kotlin codelab comes in.</text>
+                <text font-size="42" font-family="Montserrat" letter-spacing="1.31" fill="#1A1B20"><tspan x="53" y="2160" font-size="42" font-family="Montserrat" fill="#1A1B20">When you first get started writing</tspan><tspan x="53" y="2234" font-size="42" font-family="Montserrat" fill="#1A1B20">Kotlin code, you tend to follow Java</tspan><tspan x="53" y="2308" font-size="42" font-family="Montserrat" fill="#1A1B20">Programming Language idioms. The</tspan><tspan x="53" y="2382" font-size="42" font-family="Montserrat" fill="#1A1B20">automatic converter</tspan><tspan font-size="42" font-family="Montserrat" fill="#1A1B20">, part of both Android</tspan><tspan x="53" y="2456" font-size="42" font-family="Montserrat" fill="#1A1B20">Studio and Intellij IDEA, can do a pretty</tspan><tspan x="53" y="2530" font-size="42" font-family="Montserrat" fill="#1A1B20">good job of automatically refactoring</tspan><tspan x="53" y="2604" font-size="42" font-family="Montserrat" fill="#1A1B20">your code, but sometimes, it needs a little</tspan><tspan x="53" y="2678" font-size="42" font-family="Montserrat" fill="#1A1B20">help. This is where our new Refactoring to</tspan><tspan x="53" y="2752" font-size="42" font-family="Montserrat" fill="#1A1B20">Kotlin codelab comes in.</tspan></text>
               </g>
             </g>
           </g>
           <g id="Box">
-            <image href="screens-article.figma-raster/4747.png" x="0" y="0" width="1050" height="168"/>
+            <image href="screens-article.figma-raster/4583.png" x="0" y="0" width="1050" height="168"/>
             <g id="TopAppBar">
               <g id="BoxKt">
                 <g transform="translate(43 53) scale(0.06 0.06)">
@@ -70,7 +70,6 @@
                 </g>
               </g>
               <g id="Row">
-                <text font-size="42" font-family="Montserrat" letter-spacing="1.31" fill="#1A1B20"><tspan x="0" y="52" font-size="42" font-family="Montserrat" fill="#1A1B20">When you first get started writing</tspan><tspan x="0" y="126" font-size="42" font-family="Montserrat" fill="#1A1B20">Kotlin code, you tend to follow Java</tspan><tspan x="0" y="200" font-size="42" font-family="Montserrat" fill="#1A1B20">Programming Language idioms. The</tspan><tspan x="0" y="274" font-size="42" font-family="Montserrat" fill="#1A1B20">automatic converter</tspan><tspan font-size="42" font-family="Montserrat" fill="#1A1B20">, part of both Android</tspan><tspan x="0" y="348" font-size="42" font-family="Montserrat" fill="#1A1B20">Studio and Intellij IDEA, can do a pretty</tspan><tspan x="0" y="422" font-size="42" font-family="Montserrat" fill="#1A1B20">good job of automatically refactoring</tspan><tspan x="0" y="496" font-size="42" font-family="Montserrat" fill="#1A1B20">your code, but sometimes, it needs a little</tspan><tspan x="0" y="570" font-size="42" font-family="Montserrat" fill="#1A1B20">help. This is where our new Refactoring to</tspan><tspan x="0" y="644" font-size="42" font-family="Montserrat" fill="#1A1B20">Kotlin codelab comes in.</tspan></text>
               </g>
             </g>
           </g>
