@@ -45,7 +45,6 @@
                         </g>
                       </g>
                       <g id="Spacer">
-                        <text x="63" y="1497.86" font-size="31.5" font-family="Montserrat" font-weight="500" letter-spacing="1.05" fill="#1D1B20">Jun 2, 2020</text>
                       </g>
                     </g>
                   </g>
@@ -113,7 +112,7 @@
                             </g>
                           </g>
                           <g id="Empty">
-                            <text x="252" y="2407.86" font-size="31.5" font-family="&apos;FontListFontFamily(fonts=[ResourceFont(resId=2131230720, weight=FontWeight(weight=300), style=Normal, loadingStrategy=Blocking), ResourceFont(resId=2131230722, weight=FontWeight(weight=400), style=Normal, loadingStrategy=Blocking), ResourceFont(resId=2131230721, weight=FontWeight(weight=500), style=Normal, loadingStrategy=Blocking), ResourceFont(resId=2131230723, weight=FontWeight(weight=600), style=Normal, loadingStrategy=Blocking)])&apos;, sans-serif" font-weight="500" letter-spacing="1.05" fill="#1D1B20">Jun 2, 2020</text>
+                            <text x="252" y="2407.86" font-size="31.5" font-family="Montserrat" font-weight="500" letter-spacing="1.05" fill="#1D1B20">Jun 2, 2020</text>
                           </g>
                           <g id="BoxKt">
                             <g transform="translate(756 2364) scale(0.06 0.06)">
@@ -132,7 +131,7 @@
                 </g>
               </g>
               <g id="Box">
-                <image href="ideal__unsubscribed__compact.figma-raster/888.png" x="21" y="21" width="1039" height="168"/>
+                <image href="ideal__unsubscribed__compact.figma-raster/965.png" x="21" y="21" width="1039" height="168"/>
                 <g id="TopAppBar">
                   <g id="BoxKt">
                     <g transform="translate(64 74) scale(0.06 0.06)">
