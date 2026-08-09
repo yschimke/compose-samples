@@ -40,7 +40,6 @@
                               <text x="194" y="995.99" font-size="42" font-family="Montserrat" font-weight="600" letter-spacing="0.39" fill="#1A1B20">me</text>
                             </g>
                             <g id="Spacer">
-                              <text x="194" y="995.99" font-size="42" font-family="Montserrat" font-weight="600" letter-spacing="0.39" fill="#1A1B20">John Glenn</text>
                             </g>
                             <g id="Empty">
                               <text x="287" y="993.86" font-size="31.5" font-family="Karla" font-weight="700" letter-spacing="1.05" fill="#40434B">8:06 PM</text>
@@ -129,12 +128,12 @@
                         <g id="Column">
                           <g id="Row">
                             <g id="Empty">
-                              <text x="194" y="-213.01" font-size="42" font-family="&apos;FontListFontFamily(fonts=[Font(GoogleFont(&quot;Montserrat&quot;, bestEffort=true), weight=FontWeight(weight=400), style=Normal), ResourceFont(resId=2131296260, weight=FontWeight(weight=400), style=Normal, loadingStrategy=Blocking), Font(GoogleFont(&quot;Montserrat&quot;, bestEffort=true), weight=FontWeight(weight=300), style=Normal), ResourceFont(resId=2131296258, weight=FontWeight(weight=300), style=Normal, loadingStrategy=Blocking), Font(GoogleFont(&quot;Montserrat&quot;, bestEffort=true), weight=FontWeight(weight=500), style=Normal), ResourceFont(resId=2131296259, weight=FontWeight(weight=500), style=Normal, loadingStrategy=Blocking), Font(GoogleFont(&quot;Montserrat&quot;, bestEffort=true), weight=FontWeight(weight=600), style=Normal), ResourceFont(resId=2131296261, weight=FontWeight(weight=600), style=Normal, loadingStrategy=Blocking)])&apos;, sans-serif" font-weight="600" letter-spacing="0.39" fill="#1A1B20">John Glenn</text>
+                              <text x="194" y="-213.01" font-size="42" font-family="Montserrat" font-weight="600" letter-spacing="0.39" fill="#1A1B20">John Glenn</text>
                             </g>
                             <g id="Spacer">
                             </g>
                             <g id="Empty">
-                              <text x="467" y="-215.13" font-size="31.5" font-family="&apos;FontListFontFamily(fonts=[Font(GoogleFont(&quot;Karla&quot;, bestEffort=true), weight=FontWeight(weight=400), style=Normal), ResourceFont(resId=2131296257, weight=FontWeight(weight=400), style=Normal, loadingStrategy=Blocking), Font(GoogleFont(&quot;Karla&quot;, bestEffort=true), weight=FontWeight(weight=700), style=Normal), ResourceFont(resId=2131296256, weight=FontWeight(weight=700), style=Normal, loadingStrategy=Blocking)])&apos;, sans-serif" font-weight="700" letter-spacing="1.05" fill="#40434B">8:04 PM</text>
+                              <text x="467" y="-215.13" font-size="31.5" font-family="Karla" font-weight="700" letter-spacing="1.05" fill="#40434B">8:04 PM</text>
                             </g>
                           </g>
                           <g id="Box">

@@ -1,0 +1,135 @@
+{
+  "$schema": "https://github.com/yschimke/design-parity/schema/dtcg-tokens.schema.json",
+  "color": {
+    "primary": {
+      "$type": "color",
+      "$value": "#b8c3ffff"
+    },
+    "onPrimary": {
+      "$type": "color",
+      "$value": "#001e92ff"
+    },
+    "primaryContainer": {
+      "$type": "color",
+      "$value": "#002eccff"
+    },
+    "onPrimaryContainer": {
+      "$type": "color",
+      "$value": "#dde1ffff"
+    },
+    "secondary": {
+      "$type": "color",
+      "$value": "#bbc2ffff"
+    },
+    "onSecondary": {
+      "$type": "color",
+      "$value": "#000ba6ff"
+    },
+    "secondaryContainer": {
+      "$type": "color",
+      "$value": "#1026d3ff"
+    },
+    "onSecondaryContainer": {
+      "$type": "color",
+      "$value": "#dee0ffff"
+    },
+    "tertiary": {
+      "$type": "color",
+      "$value": "#fabd1bff"
+    },
+    "onTertiary": {
+      "$type": "color",
+      "$value": "#402d00ff"
+    },
+    "tertiaryContainer": {
+      "$type": "color",
+      "$value": "#5c4200ff"
+    },
+    "onTertiaryContainer": {
+      "$type": "color",
+      "$value": "#ffde9cff"
+    },
+    "error": {
+      "$type": "color",
+      "$value": "#ffb4a9ff"
+    },
+    "onError": {
+      "$type": "color",
+      "$value": "#680003ff"
+    },
+    "errorContainer": {
+      "$type": "color",
+      "$value": "#930006ff"
+    },
+    "onErrorContainer": {
+      "$type": "color",
+      "$value": "#ffdad4ff"
+    },
+    "surface": {
+      "$type": "color",
+      "$value": "#191c1dff"
+    },
+    "onSurface": {
+      "$type": "color",
+      "$value": "#c4c7c7ff"
+    },
+    "surfaceVariant": {
+      "$type": "color",
+      "$value": "#45464fff"
+    },
+    "onSurfaceVariant": {
+      "$type": "color",
+      "$value": "#c6c5d0ff"
+    },
+    "outline": {
+      "$type": "color",
+      "$value": "#90909aff"
+    },
+    "outlineVariant": {
+      "$type": "color",
+      "$value": "#49454fff"
+    }
+  },
+  "type": {
+    "displaySmall": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "FontListFontFamily(fonts=[Font(GoogleFont(\"Montserrat",
+        "fontSize": 36,
+        "fontWeight": 400,
+        "letterSpacing": 0,
+        "lineHeight": 44
+      }
+    },
+    "titleLarge": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "FontListFontFamily(fonts=[Font(GoogleFont(\"Montserrat",
+        "fontSize": 22,
+        "fontWeight": 600,
+        "letterSpacing": 0,
+        "lineHeight": 28
+      }
+    },
+    "bodyLarge": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "FontListFontFamily(fonts=[Font(GoogleFont(\"Karla",
+        "fontSize": 16,
+        "fontWeight": 400,
+        "letterSpacing": 0.15,
+        "lineHeight": 24
+      }
+    },
+    "labelSmall": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "FontListFontFamily(fonts=[Font(GoogleFont(\"Montserrat",
+        "fontSize": 11,
+        "fontWeight": 600,
+        "letterSpacing": 0.5,
+        "lineHeight": 16
+      }
+    }
+  }
+}

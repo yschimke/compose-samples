@@ -3,47 +3,91 @@
   "color": {
     "primary": {
       "$type": "color",
-      "$value": "#1546f6ff"
+      "$value": "#b7caffff"
     },
     "onPrimary": {
       "$type": "color",
-      "$value": "#ffffffff"
+      "$value": "#00143bff"
     },
     "primaryContainer": {
       "$type": "color",
-      "$value": "#dde1ffff"
+      "$value": "#7a90c8ff"
+    },
+    "onPrimaryContainer": {
+      "$type": "color",
+      "$value": "#000000ff"
     },
     "secondary": {
       "$type": "color",
-      "$value": "#3648eaff"
+      "$value": "#c4cae1ff"
+    },
+    "onSecondary": {
+      "$type": "color",
+      "$value": "#0f1626ff"
     },
     "secondaryContainer": {
       "$type": "color",
-      "$value": "#dee0ffff"
+      "$value": "#8a90a5ff"
+    },
+    "onSecondaryContainer": {
+      "$type": "color",
+      "$value": "#000000ff"
     },
     "tertiary": {
       "$type": "color",
-      "$value": "#7a5900ff"
+      "$value": "#e4bfe2ff"
+    },
+    "onTertiary": {
+      "$type": "color",
+      "$value": "#240d26ff"
+    },
+    "tertiaryContainer": {
+      "$type": "color",
+      "$value": "#a886a6ff"
+    },
+    "onTertiaryContainer": {
+      "$type": "color",
+      "$value": "#000000ff"
     },
     "error": {
       "$type": "color",
-      "$value": "#ba1b1bff"
+      "$value": "#f2b8b5ff"
+    },
+    "onError": {
+      "$type": "color",
+      "$value": "#601410ff"
+    },
+    "errorContainer": {
+      "$type": "color",
+      "$value": "#8c1d18ff"
+    },
+    "onErrorContainer": {
+      "$type": "color",
+      "$value": "#f9dedcff"
     },
     "surface": {
       "$type": "color",
-      "$value": "#fbfdfdff"
+      "$value": "#121318ff"
     },
     "onSurface": {
       "$type": "color",
-      "$value": "#191c1dff"
+      "$value": "#fcfaffff"
     },
     "surfaceVariant": {
       "$type": "color",
-      "$value": "#e2e1ecff"
+      "$value": "#44464fff"
+    },
+    "onSurfaceVariant": {
+      "$type": "color",
+      "$value": "#c9cad4ff"
     },
     "outline": {
       "$type": "color",
-      "$value": "#767680ff"
+      "$value": "#a1a2acff"
+    },
+    "outlineVariant": {
+      "$type": "color",
+      "$value": "#81838cff"
     }
   },
   "type": {

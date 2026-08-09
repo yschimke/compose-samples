@@ -27,7 +27,7 @@
                 </g>
                 <g id="Row">
                   <g id="ImageKt">
-                    <image href="ideal__default__medium__breakpoint-medium.figma-raster/1033.png" x="42" y="687" width="110" height="110"/>
+                    <image href="ideal__default__medium__breakpoint-medium.figma-raster/1156.png" x="42" y="687" width="110" height="110"/>
                   </g>
                   <g id="Column">
                     <g id="Row">
@@ -35,7 +35,6 @@
                         <text x="194" y="732.99" font-size="42" font-family="Montserrat" font-weight="600" letter-spacing="0.39" fill="#191C1D">me</text>
                       </g>
                       <g id="Spacer">
-                        <text x="194" y="732.99" font-size="42" font-family="Montserrat" font-weight="600" letter-spacing="0.39" fill="#191C1D">John Glenn</text>
                       </g>
                       <g id="Empty">
                         <text x="287" y="730.86" font-size="31.5" font-family="Karla" font-weight="700" letter-spacing="1.05" fill="#45464F">8:06 PM</text>
@@ -55,7 +54,7 @@
                           <path d="M204.5,894 H561.5 A52.5,52.5 0 0 1 614,946.5 V1261.5 A52.5,52.5 0 0 1 561.5,1314 H246.5 A52.5,52.5 0 0 1 194,1261.5 V904.5 A10.5,10.5 0 0 1 204.5,894 Z" fill="#1546F6"/>
                         <g clip-path="url(#clip-2)">
                           <g id="ImageKt">
-                            <image href="ideal__default__medium__breakpoint-medium.figma-raster/1044.png" x="194" y="894" width="420" height="420"/>
+                            <image href="ideal__default__medium__breakpoint-medium.figma-raster/1167.png" x="194" y="894" width="420" height="420"/>
                           </g>
                         </g>
                       </g>
@@ -95,7 +94,7 @@
                 </g>
                 <g id="Row">
                   <g id="ImageKt">
-                    <image href="ideal__default__medium__breakpoint-medium.figma-raster/1061.png" x="42" y="220" width="110" height="110"/>
+                    <image href="ideal__default__medium__breakpoint-medium.figma-raster/1184.png" x="42" y="220" width="110" height="110"/>
                   </g>
                   <g id="Column">
                     <g id="Row">
@@ -124,18 +123,18 @@
                   <g id="Column">
                     <g id="Row">
                       <g id="Empty">
-                        <text x="194" y="-161.01" font-size="42" font-family="&apos;FontListFontFamily(fonts=[Font(GoogleFont(&quot;Montserrat&quot;, bestEffort=true), weight=FontWeight(weight=400), style=Normal), ResourceFont(resId=2131296260, weight=FontWeight(weight=400), style=Normal, loadingStrategy=Blocking), Font(GoogleFont(&quot;Montserrat&quot;, bestEffort=true), weight=FontWeight(weight=300), style=Normal), ResourceFont(resId=2131296258, weight=FontWeight(weight=300), style=Normal, loadingStrategy=Blocking), Font(GoogleFont(&quot;Montserrat&quot;, bestEffort=true), weight=FontWeight(weight=500), style=Normal), ResourceFont(resId=2131296259, weight=FontWeight(weight=500), style=Normal, loadingStrategy=Blocking), Font(GoogleFont(&quot;Montserrat&quot;, bestEffort=true), weight=FontWeight(weight=600), style=Normal), ResourceFont(resId=2131296261, weight=FontWeight(weight=600), style=Normal, loadingStrategy=Blocking)])&apos;, sans-serif" font-weight="600" letter-spacing="0.39" fill="#191C1D">John Glenn</text>
+                        <text x="194" y="-161.01" font-size="42" font-family="Montserrat" font-weight="600" letter-spacing="0.39" fill="#191C1D">John Glenn</text>
                       </g>
                       <g id="Spacer">
                       </g>
                       <g id="Empty">
-                        <text x="467" y="-163.13" font-size="31.5" font-family="&apos;FontListFontFamily(fonts=[Font(GoogleFont(&quot;Karla&quot;, bestEffort=true), weight=FontWeight(weight=400), style=Normal), ResourceFont(resId=2131296257, weight=FontWeight(weight=400), style=Normal, loadingStrategy=Blocking), Font(GoogleFont(&quot;Karla&quot;, bestEffort=true), weight=FontWeight(weight=700), style=Normal), ResourceFont(resId=2131296256, weight=FontWeight(weight=700), style=Normal, loadingStrategy=Blocking)])&apos;, sans-serif" font-weight="700" letter-spacing="1.05" fill="#45464F">8:04 PM</text>
+                        <text x="467" y="-163.13" font-size="31.5" font-family="Karla" font-weight="700" letter-spacing="1.05" fill="#45464F">8:04 PM</text>
                       </g>
                     </g>
                     <g id="Box">
                       <path d="M204.5,-145 H1742.5 A52.5,52.5 0 0 1 1795,-92.5 V125.5 A52.5,52.5 0 0 1 1742.5,178 H246.5 A52.5,52.5 0 0 1 194,125.5 V-134.5 A10.5,10.5 0 0 1 204.5,-145 Z" fill="#E2E1EC"/>
                       <g id="Empty">
-                        <text x="236" y="-57.01" font-size="42" font-family="&apos;FontListFontFamily(fonts=[Font(GoogleFont(&quot;Karla&quot;, bestEffort=true), weight=FontWeight(weight=400), style=Normal), ResourceFont(resId=2131296257, weight=FontWeight(weight=400), style=Normal, loadingStrategy=Blocking), Font(GoogleFont(&quot;Karla&quot;, bestEffort=true), weight=FontWeight(weight=700), style=Normal), ResourceFont(resId=2131296256, weight=FontWeight(weight=700), style=Normal, loadingStrategy=Blocking)])&apos;, sans-serif" font-weight="400" letter-spacing="0.39" fill="#45464F">Compose newbie as well 🦩, have you looked at the JetNews sample? Most blog posts end up out of date pretty fast but this sample is always up to date and deals with async data loading (it's faked but the same idea applies)  👉 https://goo.gle/jetnews</text>
+                        <text font-size="42" font-family="Karla" font-weight="400" letter-spacing="0.39" fill="#000000"><tspan x="236" y="-64" font-size="42" font-family="Karla" font-weight="400" fill="#45464F">Compose newbie as well 🦩, have you looked at the JetNews sample? Most</tspan><tspan x="236" y="-1" font-size="42" font-family="Karla" font-weight="400" fill="#45464F">blog posts end up out of date pretty fast but this sample is always up to date</tspan><tspan x="236" y="62" font-size="42" font-family="Karla" font-weight="400" fill="#45464F">and deals with async data loading (it's faked but the same idea applies)  👉</tspan><tspan x="236" y="125" font-size="42" font-family="Karla" font-weight="400" fill="#1546F6">https://goo.gle/jetnews</tspan></text>
                       </g>
                     </g>
                     <g id="Spacer">
@@ -150,7 +149,7 @@
                 <g id="Row">
                   <g id="Box">
                     <g id="CoreTextFieldKt">
-                      <image href="ideal__default__medium__breakpoint-medium.figma-raster/1000.png" x="84" y="1533" width="1596" height="63"/>
+                      <image href="ideal__default__medium__breakpoint-medium.figma-raster/1123.png" x="84" y="1533" width="1596" height="63"/>
                     </g>
                     <g id="Empty">
                       <text x="84" y="1584.99" font-size="42" font-family="Karla" font-weight="400" letter-spacing="0.39" fill="#45464F">Message #composers</text>
@@ -206,7 +205,7 @@
             </g>
           </g>
           <g id="Box">
-            <image href="ideal__default__medium__breakpoint-medium.figma-raster/966.png" x="0" y="0" width="1837" height="168"/>
+            <image href="ideal__default__medium__breakpoint-medium.figma-raster/1089.png" x="0" y="0" width="1837" height="168"/>
             <g id="TopAppBar">
               <g id="Box">
                 <g id="BoxKt">
