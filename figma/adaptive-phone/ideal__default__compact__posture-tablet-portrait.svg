@@ -142,11 +142,7 @@
                           <text x="95" y="1786.99" font-size="42" font-family="Roboto, sans-serif" font-weight="400" letter-spacing="0.39" fill="#4F4539">High school reunion?</text>
                         </g>
                         <g id="Empty">
-                          <text x="95" y="1849.92" font-size="36.75" font-family="Roboto, sans-serif" font-weight="500" letter-spacing="0.66" fill="#4F4539">Hi friends,
-
-I was at the grocery store on Sunday night.. when I ran into Genie Williams! I almost didn't recognize her afer 20 years!
-
-Anyway, it turns out she is on the organizing committee for the high school reunion this fall. I don't know if you were planning on going or not, but she could definitely use our help in trying to track down lots of missing alums. If you can make it, we're doing a little phone-tree party at her place next Saturday, hoping that if we can find one person, thee more will...</text>
+                          <text font-size="36.75" font-family="Roboto, sans-serif" font-weight="500" letter-spacing="0.66" fill="#4F4539"><tspan x="95" y="1845" textLength="171" lengthAdjust="spacing">Hi friends,</tspan><tspan x="95" y="1898" textLength="25" lengthAdjust="spacing">…</tspan></text>
                         </g>
                       </g>
                     </g>
@@ -172,7 +168,6 @@ Anyway, it turns out she is on the organizing committee for the high school reun
                   </g>
                   <g id="ReusableComposeNode">
                     <g id="ReusableComposeNode">
-                      <text x="1027" y="1516.86" font-size="31.5" font-family="Roboto, sans-serif" font-weight="600" letter-spacing="1.31" fill="#4F4539">2 hours ago</text>
                     </g>
                     <g id="ReusableComposeNode">
                       <text x="1059" y="1523.92" font-size="36.75" font-family="Roboto, sans-serif" font-weight="600" letter-spacing="0.26" fill="#102004">Compose</text>
@@ -268,7 +263,7 @@ Anyway, it turns out she is on the organizing committee for the high school reun
                         </g>
                       </g>
                       <g id="ReusableComposeNode">
-                        <text x="-803" y="369.92" font-size="36.75" font-family="Roboto, sans-serif" font-weight="600" letter-spacing="0.26" fill="#102004">Compose</text>
+                        <text x="-449" y="369.92" font-size="36.75" font-family="Roboto, sans-serif" font-weight="600" letter-spacing="0.26" text-anchor="middle" fill="#102004">Compose</text>
                       </g>
                     </g>
                   </g>

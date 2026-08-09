@@ -168,7 +168,6 @@
                   </g>
                   <g id="ReusableComposeNode">
                     <g id="ReusableComposeNode">
-                      <text x="765" y="1793.99" font-size="42" font-family="Roboto, sans-serif" font-weight="600" letter-spacing="0.39" fill="#F4BD6F">REPLY</text>
                     </g>
                     <g id="ReusableComposeNode">
                       <text x="797" y="1786.92" font-size="36.75" font-family="Roboto, sans-serif" font-weight="600" letter-spacing="0.26" fill="#D4EABB">Compose</text>
@@ -264,7 +263,7 @@
                         </g>
                       </g>
                       <g id="ReusableComposeNode">
-                        <text x="-803" y="369.92" font-size="36.75" font-family="Roboto, sans-serif" font-weight="600" letter-spacing="0.26" fill="#D4EABB">Compose</text>
+                        <text x="-449" y="369.92" font-size="36.75" font-family="Roboto, sans-serif" font-weight="600" letter-spacing="0.26" text-anchor="middle" fill="#D4EABB">Compose</text>
                       </g>
                     </g>
                   </g>

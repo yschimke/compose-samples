@@ -52,7 +52,7 @@
                 <g id="Column">
                   <g id="Row">
                     <g id="ImageKt">
-                      <image href="ideal__selection__compact.figma-raster/769.png" x="116" y="750" width="105" height="105"/>
+                      <image href="ideal__selection__compact.figma-raster/776.png" x="116" y="750" width="105" height="105"/>
                     </g>
                     <g id="Column">
                       <g id="Empty">
@@ -121,7 +121,7 @@
                 <g id="Column">
                   <g id="Row">
                     <g id="ImageKt">
-                      <image href="ideal__selection__compact.figma-raster/800.png" x="116" y="1604" width="105" height="105"/>
+                      <image href="ideal__selection__compact.figma-raster/807.png" x="116" y="1604" width="105" height="105"/>
                     </g>
                     <g id="Column">
                       <g id="Empty">
@@ -144,11 +144,7 @@
                     <text x="116" y="1807.99" font-size="42" font-family="Roboto, sans-serif" font-weight="400" letter-spacing="0.39" fill="#4F4539">High school reunion?</text>
                   </g>
                   <g id="Empty">
-                    <text x="116" y="1870.92" font-size="36.75" font-family="Roboto, sans-serif" font-weight="500" letter-spacing="0.66" fill="#4F4539">Hi friends,
-
-I was at the grocery store on Sunday night.. when I ran into Genie Williams! I almost didn't recognize her afer 20 years!
-
-Anyway, it turns out she is on the organizing committee for the high school reunion this fall. I don't know if you were planning on going or not, but she could definitely use our help in trying to track down lots of missing alums. If you can make it, we're doing a little phone-tree party at her place next Saturday, hoping that if we can find one person, thee more will...</text>
+                    <text font-size="36.75" font-family="Roboto, sans-serif" font-weight="500" letter-spacing="0.66" fill="#4F4539"><tspan x="116" y="1866" textLength="171" lengthAdjust="spacing">Hi friends,</tspan><tspan x="116" y="1919" textLength="25" lengthAdjust="spacing">…</tspan></text>
                   </g>
                 </g>
               </g>
@@ -159,7 +155,7 @@ Anyway, it turns out she is on the organizing committee for the high school reun
               <rect x="63" y="63" width="924" height="148" rx="84" ry="84" fill="#F3E6DA"/>
             <g clip-path="url(#clip-2)">
               <g id="ReusableComposeNode">
-                <image href="ideal__selection__compact.figma-raster/731.png" x="63" y="63" width="924" height="148"/>
+                <image href="ideal__selection__compact.figma-raster/738.png" x="63" y="63" width="924" height="148"/>
               </g>
             </g>
           </g>

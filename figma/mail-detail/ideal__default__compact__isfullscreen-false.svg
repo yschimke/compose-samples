@@ -104,7 +104,6 @@
                   <text x="116" y="1426.92" font-size="36.75" font-family="Roboto, sans-serif" font-weight="500" letter-spacing="0.66" fill="#817567">Update to Your Itinerary</text>
                 </g>
                 <g id="Empty">
-                  <text x="116" y="1261.86" font-size="31.5" font-family="Roboto, sans-serif" font-weight="600" letter-spacing="1.31" fill="#201B13">Sandra</text>
                 </g>
                 <g id="Row">
                   <g id="Box">
@@ -150,7 +149,7 @@
                   <text x="116" y="2025.92" font-size="36.75" font-family="Roboto, sans-serif" font-weight="500" letter-spacing="0.66" fill="#817567">Recipe to try</text>
                 </g>
                 <g id="Empty">
-                  <text x="116" y="2096.98" font-size="42" font-family="Roboto, sans-serif" font-weight="400" letter-spacing="0.39" fill="#4F4539">Raspberry Pie: We should make this pie recipe tonight! The filling is very quick to put together.</text>
+                  <text font-size="42" font-family="Roboto, sans-serif" font-weight="400" letter-spacing="0.39" fill="#4F4539"><tspan x="116" y="2090" textLength="1027" lengthAdjust="spacing">Raspberry Pie: We should make this pie recipe tonight!</tspan><tspan x="116" y="2153" textLength="728" lengthAdjust="spacing">The filling is very quick to put together.</tspan></text>
                 </g>
                 <g id="Row">
                   <g id="Box">
