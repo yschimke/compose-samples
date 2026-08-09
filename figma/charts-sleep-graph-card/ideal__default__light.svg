@@ -34,7 +34,7 @@
                         <text x="867" y="235.49" font-size="42" font-family="Lato" font-weight="600" letter-spacing="1.31" fill="#1D1B20">6M</text>
                       </g>
                       <g id="ReusableComposeNode">
-                        <text x="1111" y="235.49" font-size="42" font-family="&apos;FontListFontFamily(fonts=[Font(GoogleFont(&quot;Lato&quot;, bestEffort=true), weight=FontWeight(weight=400), style=Normal)])&apos;, sans-serif" font-weight="600" letter-spacing="1.31" fill="#1D1B20">1Y</text>
+                        <text x="1111" y="235.49" font-size="42" font-family="Lato" font-weight="600" letter-spacing="1.31" fill="#1D1B20">1Y</text>
                       </g>
                       <g id="ReusableComposeNode">
                         <rect x="404" y="183" width="47" height="76" rx="23.25" ry="23.25" fill="none" stroke="#FFCB66" stroke-width="5.25"/>
@@ -44,13 +44,12 @@
                 </g>
               </g>
               <g id="ReusableComposeNode">
-                <text x="42" y="81.06" font-size="42" font-family="Lato" font-weight="600" letter-spacing="1.31" fill="#1D1B20">1Y</text>
               </g>
               <clipPath id="clip-4"><rect x="42" y="304" width="966" height="786"/></clipPath>
               <g id="ReusableComposeNode">
                 <g clip-path="url(#clip-4)">
                   <g id="ReusableComposeNode">
-                    <image href="ideal__default__light.figma-raster/424.png" x="215" y="304" width="1310" height="72"/>
+                    <image href="ideal__default__light.figma-raster/469.png" x="215" y="304" width="1310" height="72"/>
                     <g id="ReusableComposeNode">
                       <text x="280" y="354.49" font-size="42" font-family="Lato" font-weight="600" letter-spacing="1.31" text-anchor="middle" fill="#1D1B20">21</text>
                     </g>
@@ -73,53 +72,53 @@
                       <text x="1066" y="354.49" font-size="42" font-family="Lato" font-weight="600" letter-spacing="1.31" text-anchor="middle" fill="#1D1B20">3</text>
                     </g>
                     <g id="ReusableComposeNode">
-                      <text x="1132" y="354.49" font-size="42" font-family="&apos;FontListFontFamily(fonts=[Font(GoogleFont(&quot;Lato&quot;, bestEffort=true), weight=FontWeight(weight=400), style=Normal)])&apos;, sans-serif" font-weight="600" letter-spacing="1.31" fill="#1D1B20">4</text>
+                      <text x="1197" y="354.49" font-size="42" font-family="Lato" font-weight="600" letter-spacing="1.31" text-anchor="middle" fill="#1D1B20">4</text>
                     </g>
                     <g id="ReusableComposeNode">
-                      <text x="1263" y="354.49" font-size="42" font-family="&apos;FontListFontFamily(fonts=[Font(GoogleFont(&quot;Lato&quot;, bestEffort=true), weight=FontWeight(weight=400), style=Normal)])&apos;, sans-serif" font-weight="600" letter-spacing="1.31" fill="#1D1B20">5</text>
+                      <text x="1328" y="354.49" font-size="42" font-family="Lato" font-weight="600" letter-spacing="1.31" text-anchor="middle" fill="#1D1B20">5</text>
                     </g>
                     <g id="ReusableComposeNode">
-                      <text x="1394" y="354.49" font-size="42" font-family="&apos;FontListFontFamily(fonts=[Font(GoogleFont(&quot;Lato&quot;, bestEffort=true), weight=FontWeight(weight=400), style=Normal)])&apos;, sans-serif" font-weight="600" letter-spacing="1.31" fill="#1D1B20">6</text>
+                      <text x="1459" y="354.49" font-size="42" font-family="Lato" font-weight="600" letter-spacing="1.31" text-anchor="middle" fill="#1D1B20">6</text>
                     </g>
                   </g>
                   <g id="ReusableComposeNode">
-                    <image href="ideal__default__light.figma-raster/445.png" x="368" y="418" width="1190" height="63"/>
+                    <image href="ideal__default__light.figma-raster/490.png" x="368" y="418" width="1190" height="63"/>
                   </g>
                   <g id="ReusableComposeNode">
                     <text x="107" y="463.99" font-size="42" font-family="Lato" font-weight="600" letter-spacing="1.31" text-anchor="middle" fill="#1D1B20">Mon</text>
                   </g>
                   <g id="ReusableComposeNode">
-                    <image href="ideal__default__light.figma-raster/447.png" x="433" y="502" width="1070" height="63"/>
+                    <image href="ideal__default__light.figma-raster/492.png" x="433" y="502" width="1070" height="63"/>
                   </g>
                   <g id="ReusableComposeNode">
                     <text x="98" y="547.99" font-size="42" font-family="Lato" font-weight="600" letter-spacing="1.31" text-anchor="middle" fill="#1D1B20">Tue</text>
                   </g>
                   <g id="ReusableComposeNode">
-                    <image href="ideal__default__light.figma-raster/449.png" x="553" y="586" width="775" height="63"/>
+                    <image href="ideal__default__light.figma-raster/494.png" x="553" y="586" width="775" height="63"/>
                   </g>
                   <g id="ReusableComposeNode">
                     <text x="108" y="631.99" font-size="42" font-family="Lato" font-weight="600" letter-spacing="1.31" text-anchor="middle" fill="#1D1B20">Wed</text>
                   </g>
                   <g id="ReusableComposeNode">
-                    <image href="ideal__default__light.figma-raster/451.png" x="433" y="670" width="1070" height="63"/>
+                    <image href="ideal__default__light.figma-raster/496.png" x="433" y="670" width="1070" height="63"/>
                   </g>
                   <g id="ReusableComposeNode">
                     <text x="100" y="715.99" font-size="42" font-family="Lato" font-weight="600" letter-spacing="1.31" text-anchor="middle" fill="#1D1B20">Thu</text>
                   </g>
                   <g id="ReusableComposeNode">
-                    <image href="ideal__default__light.figma-raster/453.png" x="553" y="754" width="775" height="63"/>
+                    <image href="ideal__default__light.figma-raster/498.png" x="553" y="754" width="775" height="63"/>
                   </g>
                   <g id="ReusableComposeNode">
                     <text x="90" y="799.99" font-size="42" font-family="Lato" font-weight="600" letter-spacing="1.31" text-anchor="middle" fill="#1D1B20">Fri</text>
                   </g>
                   <g id="ReusableComposeNode">
-                    <image href="ideal__default__light.figma-raster/455.png" x="368" y="838" width="1190" height="63"/>
+                    <image href="ideal__default__light.figma-raster/500.png" x="368" y="838" width="1190" height="63"/>
                   </g>
                   <g id="ReusableComposeNode">
                     <text x="94" y="883.99" font-size="42" font-family="Lato" font-weight="600" letter-spacing="1.31" text-anchor="middle" fill="#1D1B20">Sat</text>
                   </g>
                   <g id="ReusableComposeNode">
-                    <image href="ideal__default__light.figma-raster/457.png" x="433" y="922" width="1070" height="63"/>
+                    <image href="ideal__default__light.figma-raster/502.png" x="433" y="922" width="1070" height="63"/>
                   </g>
                   <g id="ReusableComposeNode">
                     <text x="99" y="967.99" font-size="42" font-family="Lato" font-weight="600" letter-spacing="1.31" text-anchor="middle" fill="#1D1B20">Sun</text>

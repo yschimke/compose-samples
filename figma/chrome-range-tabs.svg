@@ -26,7 +26,7 @@
                   <text x="846" y="76.49" font-size="42" font-family="Lato" font-weight="600" letter-spacing="1.31" fill="#1D1B20">6M</text>
                 </g>
                 <g id="ReusableComposeNode">
-                  <text x="1090" y="76.49" font-size="42" font-family="&apos;FontListFontFamily(fonts=[Font(GoogleFont(&quot;Lato&quot;, bestEffort=true), weight=FontWeight(weight=400), style=Normal)])&apos;, sans-serif" font-weight="600" letter-spacing="1.31" fill="#1D1B20">1Y</text>
+                  <text x="1090" y="76.49" font-size="42" font-family="Lato" font-weight="600" letter-spacing="1.31" fill="#1D1B20">1Y</text>
                 </g>
                 <g id="ReusableComposeNode">
                   <rect x="383" y="24" width="47" height="76" rx="23.25" ry="23.25" fill="none" stroke="#FFCB66" stroke-width="5.25"/>
