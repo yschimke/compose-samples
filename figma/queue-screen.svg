@@ -9,7 +9,7 @@
         <g id="ReusableComposeNode">
           <g id="ReusableComposeNode">
             <g id="Row">
-              <image href="queue-screen.figma-raster/844.png" x="145" y="61" width="164" height="91"/>
+              <image href="queue-screen.figma-raster/773.png" x="145" y="61" width="164" height="91"/>
             </g>
             <g id="ButtonGroupKt">
               <g id="Box">
@@ -32,7 +32,7 @@
             <g id="Row">
                 <rect x="35" y="305" width="384" height="98" rx="49.18" ry="49.18" fill="#261E18"/>
               <g id="AsyncImageKt">
-                <image href="queue-screen.figma-raster/856.png" x="61" y="324" width="61" height="60"/>
+                <image href="queue-screen.figma-raster/785.png" x="61" y="324" width="61" height="60"/>
               </g>
               <g id="Spacer" opacity="0.92">
               </g>
@@ -50,7 +50,7 @@
           </g>
           <g id="ReusableComposeNode">
             <g id="ReusableComposeNode">
-              <image href="queue-screen.figma-raster/839.png" x="432" y="171" width="22" height="112"/>
+              <image href="queue-screen.figma-raster/768.png" x="432" y="171" width="22" height="112"/>
             </g>
           </g>
         </g>
