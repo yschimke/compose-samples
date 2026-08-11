@@ -26,7 +26,7 @@
         <rect x="0" y="0" width="400" height="800" fill="#FFFFFF"/>
       <g clip-path="url(#clip-0)">
         <g id="ReusableComposeNode">
-          <image href="ideal__default__compact__fontscale-2.figma-raster/1738.png" x="0" y="0" width="400" height="280"/>
+          <image href="ideal__default__compact__fontscale-2.figma-raster/1935.png" x="0" y="0" width="400" height="280"/>
         </g>
         <g id="ReusableComposeNode">
           <g id="ReusableComposeNode">
@@ -221,12 +221,12 @@
             <rect x="50" y="56" width="300" height="300" rx="150" ry="150" fill="#FFFFFF"/>
           <g clip-path="url(#clip-5)">
             <g id="ReusableComposeNode">
-              <image href="ideal__default__compact__fontscale-2.figma-raster/1780.png" x="50" y="56" width="300" height="300"/>
+              <image href="ideal__default__compact__fontscale-2.figma-raster/1977.png" x="50" y="56" width="300" height="300"/>
             </g>
           </g>
         </g>
         <g id="ReusableComposeNode">
-          <rect x="16" y="10" width="36" height="36" rx="18" ry="18" fill="#121212" fill-opacity="0.32"/>
+          <rect x="10" y="4" width="48" height="48" rx="24" ry="24" fill="#121212" fill-opacity="0.32"/>
           <g id="ReusableComposeNode">
             <g transform="translate(22 16) scale(1 1)">
               <path d="M20 11 H7.83 l5.59 -5.59 L12 4 l-8 8 l8 8 l1.41 -1.41 L7.83 13 H20 v-2 Z" fill="#FFFFFF"/>
@@ -251,7 +251,7 @@
                     <rect x="94" y="761" width="22" height="22" rx="11" ry="11" fill="#FFFFFF" stroke="url(#gs-0)" stroke-width="2"/>
                   <g clip-path="url(#clip-6)">
                     <g id="ReusableComposeNode">
-                      <image href="ideal__default__compact__fontscale-2.figma-raster/1790.png" x="93" y="760" width="24" height="24"/>
+                      <image href="ideal__default__compact__fontscale-2.figma-raster/1987.png" x="93" y="760" width="24" height="24"/>
                     </g>
                   </g>
                 </g>
@@ -263,7 +263,7 @@
                     <rect x="142" y="761" width="22" height="22" rx="11" ry="11" fill="#FFFFFF" stroke="url(#gs-1)" stroke-width="2"/>
                   <g clip-path="url(#clip-7)">
                     <g id="ReusableComposeNode">
-                      <image href="ideal__default__compact__fontscale-2.figma-raster/1795.png" x="141" y="760" width="24" height="24"/>
+                      <image href="ideal__default__compact__fontscale-2.figma-raster/1992.png" x="141" y="760" width="24" height="24"/>
                     </g>
                   </g>
                 </g>
