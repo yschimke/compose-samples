@@ -14,7 +14,8 @@
           "height": 2100,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetcaster/p/home-screen__ideal__default__dark",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterHomeDiscoverPreview_Dark"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterHomeDiscoverPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -24,7 +25,8 @@
           "height": 1680,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetcaster/p/home-screen__ideal__default__compact",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterHomeDiscoverPreview_Home___discover"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterHomeDiscoverPreview_Home___discover",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -34,7 +36,8 @@
           "height": 2100,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetcaster/p/home-screen__ideal__default__light",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterHomeDiscoverPreview_Light"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterHomeDiscoverPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -47,7 +50,8 @@
             "selectedTab": "library"
           },
           "livePreview": "https://preview.coo.ee/jetcaster/p/home-screen__ideal__library__compact__selectedtab-library",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterHomeLibraryPreview_Home___library"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterHomeLibraryPreview_Home___library",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -61,7 +65,8 @@
             "isLoading": true
           },
           "livePreview": "https://preview.coo.ee/jetcaster/p/home-screen__ideal__loading__compact__isloading-true__selectedtab-library",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterHomeLoadingPreview_Home___library__refreshing"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterHomeLoadingPreview_Home___library__refreshing",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -74,7 +79,8 @@
             "selectedTab": "library"
           },
           "livePreview": "https://preview.coo.ee/jetcaster/p/home-screen__ideal__empty__compact__selectedtab-library",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterHomeEmptyLibraryPreview_Home___empty_library"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterHomeEmptyLibraryPreview_Home___empty_library",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -88,7 +94,8 @@
             "selectedTab": "library"
           },
           "livePreview": "https://preview.coo.ee/jetcaster/p/home-screen__ideal__library__light__compact__selectedtab-library",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterHomeLibraryLightPreview_Home___library__light"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterHomeLibraryLightPreview_Home___library__light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -102,7 +109,8 @@
             "posture": "medium"
           },
           "livePreview": "https://preview.coo.ee/jetcaster/p/home-screen__ideal__loading__medium__posture-medium__selectedtab-library",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterHomeLoadingMediumPreview_Home___refreshing__medium"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterHomeLoadingMediumPreview_Home___refreshing__medium",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -116,7 +124,8 @@
             "posture": "expanded"
           },
           "livePreview": "https://preview.coo.ee/jetcaster/p/home-screen__ideal__loading__expanded__posture-expanded__selectedtab-library",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterHomeLoadingExpandedPreview_Home___refreshing__expanded"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterHomeLoadingExpandedPreview_Home___refreshing__expanded",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -864,7 +873,8 @@
           "height": 2100,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetcaster/p/podcastdetails-screen__ideal__default__dark",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPodcastDetailsFullScreenPreview_Dark"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPodcastDetailsFullScreenPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -874,7 +884,8 @@
           "height": 2100,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetcaster/p/podcastdetails-screen__ideal__default__light",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPodcastDetailsFullScreenPreview_Light"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPodcastDetailsFullScreenPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -884,7 +895,8 @@
           "height": 2363,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetcaster/p/podcastdetails-screen__ideal__default__compact",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPodcastDetailsFullScreenPreview_PodcastDetails_screen___full_screen"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPodcastDetailsFullScreenPreview_PodcastDetails_screen___full_screen",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -897,7 +909,8 @@
             "showBackButton": false
           },
           "livePreview": "https://preview.coo.ee/jetcaster/p/podcastdetails-screen__ideal__default__compact__showbackbutton-false",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPodcastDetailsPanePreview_PodcastDetails_screen___supporting_pane"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPodcastDetailsPanePreview_PodcastDetails_screen___supporting_pane",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -910,7 +923,8 @@
             "scope": "content only"
           },
           "livePreview": "https://preview.coo.ee/jetcaster/p/podcastdetails-screen__ideal__default__compact__scope-content-only",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPodcastDetailsContentPreview_PodcastDetails_content"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPodcastDetailsContentPreview_PodcastDetails_content",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -920,7 +934,8 @@
           "height": 2363,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetcaster/p/podcastdetails-screen__ideal__unsubscribed__compact",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPodcastDetailsUnsubscribedPreview_PodcastDetails_screen___not_subscribed"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPodcastDetailsUnsubscribedPreview_PodcastDetails_screen___not_subscribed",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -934,7 +949,8 @@
             "posture": "medium"
           },
           "livePreview": "https://preview.coo.ee/jetcaster/p/podcastdetails-screen__ideal__default__light__medium__posture-medium",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPodcastDetailsMediumLightPreview_PodcastDetails_screen___medium__light"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPodcastDetailsMediumLightPreview_PodcastDetails_screen___medium__light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -948,7 +964,8 @@
             "posture": "expanded"
           },
           "livePreview": "https://preview.coo.ee/jetcaster/p/podcastdetails-screen__ideal__default__light__expanded__posture-expanded",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPodcastDetailsExpandedLightPreview_PodcastDetails_screen___expanded__light"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPodcastDetailsExpandedLightPreview_PodcastDetails_screen___expanded__light",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -1266,7 +1283,8 @@
           "height": 1413,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetcaster/p/podcastdetails-header__ideal__default__dark",
-          "previewId": "com.example.jetcaster.ui.podcast.PodcastDetailsScreenKt.PodcastDetailsHeaderItemPreview_Dark"
+          "previewId": "com.example.jetcaster.ui.podcast.PodcastDetailsScreenKt.PodcastDetailsHeaderItemPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1276,7 +1294,8 @@
           "height": 1413,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetcaster/p/podcastdetails-header__ideal__default__light",
-          "previewId": "com.example.jetcaster.ui.podcast.PodcastDetailsScreenKt.PodcastDetailsHeaderItemPreview_Light"
+          "previewId": "com.example.jetcaster.ui.podcast.PodcastDetailsScreenKt.PodcastDetailsHeaderItemPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1285,7 +1304,8 @@
           "width": 1050,
           "height": 1413,
           "livePreview": "https://preview.coo.ee/jetcaster/p/podcastdetails-header__ideal__default",
-          "previewId": "com.example.jetcaster.ui.podcast.PodcastDetailsScreenKt.PodcastDetailsHeaderItemPreview_Light"
+          "previewId": "com.example.jetcaster.ui.podcast.PodcastDetailsScreenKt.PodcastDetailsHeaderItemPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1298,7 +1318,8 @@
             "isSubscribed": true
           },
           "livePreview": "https://preview.coo.ee/jetcaster/p/podcastdetails-header__ideal__subscribed__compact__issubscribed-true",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPodcastDetailsHeaderPreview_PodcastDetails_header___subscribed"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPodcastDetailsHeaderPreview_PodcastDetails_header___subscribed",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1311,7 +1332,8 @@
             "isSubscribed": false
           },
           "livePreview": "https://preview.coo.ee/jetcaster/p/podcastdetails-header__ideal__unsubscribed__compact__issubscribed-false",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPodcastDetailsHeaderUnsubscribedPreview_PodcastDetails_header___not_subscribed"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPodcastDetailsHeaderUnsubscribedPreview_PodcastDetails_header___not_subscribed",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1324,7 +1346,8 @@
             "title": "overflowing"
           },
           "livePreview": "https://preview.coo.ee/jetcaster/p/podcastdetails-header__ideal__default__compact__title-overflowing",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPodcastDetailsHeaderLongTitlePreview_PodcastDetails_header___long_title"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPodcastDetailsHeaderLongTitlePreview_PodcastDetails_header___long_title",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -1447,7 +1470,8 @@
           "height": 140,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetcaster/p/podcastdetails-description__ideal__default__dark",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPodcastDescriptionPreview_Dark"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPodcastDescriptionPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1457,7 +1481,8 @@
           "height": 140,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetcaster/p/podcastdetails-description__ideal__default__light",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPodcastDescriptionPreview_Light"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPodcastDescriptionPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1467,7 +1492,8 @@
           "height": 140,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetcaster/p/podcastdetails-description__ideal__default__compact",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPodcastDescriptionPreview_PodcastDetails_description___short"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPodcastDescriptionPreview_PodcastDetails_description___short",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1477,7 +1503,8 @@
           "height": 193,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetcaster/p/podcastdetails-description__ideal__overflowing__compact",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPodcastDescriptionOverflowPreview_PodcastDetails_description___overflowing"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPodcastDescriptionOverflowPreview_PodcastDetails_description___overflowing",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -1500,7 +1527,8 @@
           "height": 210,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetcaster/p/podcastdetails-app-bar__ideal__default__dark",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPodcastDetailsTopAppBarPreview_Dark"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPodcastDetailsTopAppBarPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1510,7 +1538,8 @@
           "height": 210,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetcaster/p/podcastdetails-app-bar__ideal__default__light",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPodcastDetailsTopAppBarPreview_Light"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPodcastDetailsTopAppBarPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1520,7 +1549,8 @@
           "height": 210,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetcaster/p/podcastdetails-app-bar__ideal__default__compact",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPodcastDetailsTopAppBarPreview_PodcastDetails_app_bar"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPodcastDetailsTopAppBarPreview_PodcastDetails_app_bar",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -1589,7 +1619,8 @@
           "height": 189,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetcaster/p/podcastdetails-subscribe__ideal__default__dark",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterSubscribeButtonsPreview_Dark"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterSubscribeButtonsPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1599,7 +1630,8 @@
           "height": 189,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetcaster/p/podcastdetails-subscribe__ideal__default__light",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterSubscribeButtonsPreview_Light"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterSubscribeButtonsPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1609,7 +1641,8 @@
           "height": 189,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetcaster/p/podcastdetails-subscribe__ideal__default__compact",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterSubscribeButtonsPreview_SubscribeButtons___not_subscribed"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterSubscribeButtonsPreview_SubscribeButtons___not_subscribed",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1622,7 +1655,8 @@
             "isSubscribed": true
           },
           "livePreview": "https://preview.coo.ee/jetcaster/p/podcastdetails-subscribe__ideal__subscribed__compact__issubscribed-true",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterSubscribeButtonsSubscribedPreview_SubscribeButtons___subscribed"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterSubscribeButtonsSubscribedPreview_SubscribeButtons___subscribed",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -1707,7 +1741,8 @@
           "height": 336,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetcaster/p/podcast-card__ideal__default__dark",
-          "previewId": "com.example.jetcaster.ui.home.HomeKt.PreviewPodcastCard_Dark"
+          "previewId": "com.example.jetcaster.ui.home.HomeKt.PreviewPodcastCard_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1717,7 +1752,8 @@
           "height": 336,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetcaster/p/podcast-card__ideal__default__light",
-          "previewId": "com.example.jetcaster.ui.home.HomeKt.PreviewPodcastCard_Light"
+          "previewId": "com.example.jetcaster.ui.home.HomeKt.PreviewPodcastCard_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1726,7 +1762,8 @@
           "width": 336,
           "height": 336,
           "livePreview": "https://preview.coo.ee/jetcaster/p/podcast-card__ideal__default",
-          "previewId": "com.example.jetcaster.ui.home.HomeKt.PreviewPodcastCard_Light"
+          "previewId": "com.example.jetcaster.ui.home.HomeKt.PreviewPodcastCard_Light",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -1791,7 +1828,8 @@
           "theme": "dark",
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetcaster/p/podcast-row-item__ideal__default__dark__compact",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterTopPodcastRowItemPreview_TopPodcastRowItem___not_following___dark"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterTopPodcastRowItemPreview_TopPodcastRowItem___not_following___dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1802,7 +1840,8 @@
           "theme": "light",
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetcaster/p/podcast-row-item__ideal__default__light__compact",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterTopPodcastRowItemPreview_TopPodcastRowItem___not_following___light"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterTopPodcastRowItemPreview_TopPodcastRowItem___not_following___light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1815,7 +1854,8 @@
             "isFollowed": true
           },
           "livePreview": "https://preview.coo.ee/jetcaster/p/podcast-row-item__ideal__followed__compact__isfollowed-true",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterTopPodcastRowItemFollowedPreview_TopPodcastRowItem___following"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterTopPodcastRowItemFollowedPreview_TopPodcastRowItem___following",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1828,7 +1868,8 @@
             "title": "overflowing"
           },
           "livePreview": "https://preview.coo.ee/jetcaster/p/podcast-row-item__ideal__default__compact__title-overflowing",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterTopPodcastRowItemLongTitlePreview_TopPodcastRowItem___long_title"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterTopPodcastRowItemLongTitlePreview_TopPodcastRowItem___long_title",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -1916,7 +1957,8 @@
           "height": 525,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetcaster/p/podcast-row__ideal__default__compact",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterCategoryPodcastRowPreview_CategoryPodcastRow"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterCategoryPodcastRowPreview_CategoryPodcastRow",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1926,7 +1968,8 @@
           "height": 378,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetcaster/p/podcast-row__ideal__default__dark",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterCategoryPodcastRowPreview_Dark"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterCategoryPodcastRowPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1936,7 +1979,8 @@
           "height": 378,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetcaster/p/podcast-row__ideal__default__light",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterCategoryPodcastRowPreview_Light"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterCategoryPodcastRowPreview_Light",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -2165,7 +2209,8 @@
           "height": 252,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetcaster/p/discover-category-tabs__ideal__default__compact",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterCategoryTabsPreview_CategoryTabs"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterCategoryTabsPreview_CategoryTabs",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2175,7 +2220,8 @@
           "height": 252,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetcaster/p/discover-category-tabs__ideal__default__dark",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterCategoryTabsPreview_Dark"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterCategoryTabsPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2185,7 +2231,8 @@
           "height": 252,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetcaster/p/discover-category-tabs__ideal__default__light",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterCategoryTabsPreview_Light"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterCategoryTabsPreview_Light",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -2317,7 +2364,8 @@
           "width": 284,
           "height": 168,
           "livePreview": "https://preview.coo.ee/jetcaster/p/discover-category-chip__ideal__default",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterCategoryChipPreview_CategoryChip___unselected"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterCategoryChipPreview_CategoryChip___unselected",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2327,7 +2375,8 @@
           "height": 168,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetcaster/p/discover-category-chip__ideal__default__dark",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterCategoryChipPreview_Dark"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterCategoryChipPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2337,7 +2386,8 @@
           "height": 168,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetcaster/p/discover-category-chip__ideal__default__light",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterCategoryChipPreview_Light"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterCategoryChipPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2349,7 +2399,8 @@
             "selected": true
           },
           "livePreview": "https://preview.coo.ee/jetcaster/p/discover-category-chip__ideal__selected__selected-true",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterCategoryChipSelectedPreview_CategoryChip___selected"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterCategoryChipSelectedPreview_CategoryChip___selected",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -2404,7 +2455,8 @@
           "height": 168,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetcaster/p/podcast-follow-toggle__ideal__default__dark",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterFollowToggleUnfollowedPreview_Dark"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterFollowToggleUnfollowedPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2413,7 +2465,8 @@
           "width": 168,
           "height": 168,
           "livePreview": "https://preview.coo.ee/jetcaster/p/podcast-follow-toggle__ideal__default",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterFollowToggleUnfollowedPreview_FollowToggle___not_following"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterFollowToggleUnfollowedPreview_FollowToggle___not_following",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2423,7 +2476,8 @@
           "height": 168,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetcaster/p/podcast-follow-toggle__ideal__default__light",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterFollowToggleUnfollowedPreview_Light"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterFollowToggleUnfollowedPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2435,7 +2489,8 @@
             "isFollowed": true
           },
           "livePreview": "https://preview.coo.ee/jetcaster/p/podcast-follow-toggle__ideal__followed__isfollowed-true",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterFollowToggleFollowedPreview_FollowToggle___following"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterFollowToggleFollowedPreview_FollowToggle___following",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -2490,7 +2545,8 @@
           "height": 454,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetcaster/p/episode-list-item__ideal__default__dark",
-          "previewId": "com.example.jetcaster.ui.shared.EpisodeListItemKt.EpisodeListItemPreview_Dark"
+          "previewId": "com.example.jetcaster.ui.shared.EpisodeListItemKt.EpisodeListItemPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2499,7 +2555,8 @@
           "width": 1050,
           "height": 454,
           "livePreview": "https://preview.coo.ee/jetcaster/p/episode-list-item__ideal__default",
-          "previewId": "com.example.jetcaster.ui.shared.EpisodeListItemKt.EpisodeListItemPreview_Episode_list_item"
+          "previewId": "com.example.jetcaster.ui.shared.EpisodeListItemKt.EpisodeListItemPreview_Episode_list_item",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2509,7 +2566,8 @@
           "height": 454,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetcaster/p/episode-list-item__ideal__default__light",
-          "previewId": "com.example.jetcaster.ui.shared.EpisodeListItemKt.EpisodeListItemPreview_Light"
+          "previewId": "com.example.jetcaster.ui.shared.EpisodeListItemKt.EpisodeListItemPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2521,7 +2579,8 @@
             "source": "sample"
           },
           "livePreview": "https://preview.coo.ee/jetcaster/p/episode-list-item__ideal__default__source-sample",
-          "previewId": "com.example.jetcaster.ui.home.category.PodcastCategoryKt.PreviewEpisodeListItem"
+          "previewId": "com.example.jetcaster.ui.home.category.PodcastCategoryKt.PreviewEpisodeListItem",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2534,7 +2593,8 @@
             "duration": "52m"
           },
           "livePreview": "https://preview.coo.ee/jetcaster/p/episode-list-item__ideal__default__compact__duration-52m",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterEpisodeRowPreview_EpisodeListItem"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterEpisodeRowPreview_EpisodeListItem",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2547,7 +2607,8 @@
             "showSummary": true
           },
           "livePreview": "https://preview.coo.ee/jetcaster/p/episode-list-item__ideal__expanded__compact__showsummary-true",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterEpisodeRowSummaryPreview_EpisodeListItem___with_summary"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterEpisodeRowSummaryPreview_EpisodeListItem___with_summary",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2560,7 +2621,8 @@
             "showPodcastImage": false
           },
           "livePreview": "https://preview.coo.ee/jetcaster/p/episode-list-item__ideal__default__compact__showpodcastimage-false",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterEpisodeRowNoArtworkPreview_EpisodeListItem___no_artwork"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterEpisodeRowNoArtworkPreview_EpisodeListItem___no_artwork",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2573,7 +2635,8 @@
             "duration": null
           },
           "livePreview": "https://preview.coo.ee/jetcaster/p/episode-list-item__ideal__default__compact__duration-null",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterEpisodeRowLongTitlePreview_EpisodeListItem___long_title__no_duration"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterEpisodeRowLongTitlePreview_EpisodeListItem___long_title__no_duration",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -2743,7 +2806,8 @@
           "height": 2100,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetcaster/p/player-screen__ideal__default__dark",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPlayerScreenCatalogPreview_Dark"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPlayerScreenCatalogPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2753,7 +2817,8 @@
           "height": 2100,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetcaster/p/player-screen__ideal__default__light",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPlayerScreenCatalogPreview_Light"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPlayerScreenCatalogPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2763,7 +2828,8 @@
           "height": 2363,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetcaster/p/player-screen__ideal__default__compact",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPlayerScreenCatalogPreview_Player_screen___catalog"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPlayerScreenCatalogPreview_Player_screen___catalog",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2776,7 +2842,8 @@
             "posture": "medium"
           },
           "livePreview": "https://preview.coo.ee/jetcaster/p/player-screen__ideal__default__medium__posture-medium",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPlayerScreenMediumPreview_Player_screen___medium"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPlayerScreenMediumPreview_Player_screen___medium",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2789,7 +2856,8 @@
             "posture": "expanded"
           },
           "livePreview": "https://preview.coo.ee/jetcaster/p/player-screen__ideal__default__expanded__posture-expanded",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPlayerScreenExpandedPreview_Player_screen___expanded"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPlayerScreenExpandedPreview_Player_screen___expanded",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -3086,7 +3154,8 @@
           "height": 620,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetcaster/p/player-transport__ideal__default__dark",
-          "previewId": "com.example.jetcaster.ui.player.PlayerScreenKt.PlayerButtonsPreview_Dark"
+          "previewId": "com.example.jetcaster.ui.player.PlayerScreenKt.PlayerButtonsPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3096,7 +3165,8 @@
           "height": 620,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetcaster/p/player-transport__ideal__default__light",
-          "previewId": "com.example.jetcaster.ui.player.PlayerScreenKt.PlayerButtonsPreview_Light"
+          "previewId": "com.example.jetcaster.ui.player.PlayerScreenKt.PlayerButtonsPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3105,7 +3175,8 @@
           "width": 757,
           "height": 620,
           "livePreview": "https://preview.coo.ee/jetcaster/p/player-transport__ideal__default",
-          "previewId": "com.example.jetcaster.ui.player.PlayerScreenKt.PlayerButtonsPreview_Light"
+          "previewId": "com.example.jetcaster.ui.player.PlayerScreenKt.PlayerButtonsPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3118,7 +3189,8 @@
             "isPlaying": true
           },
           "livePreview": "https://preview.coo.ee/jetcaster/p/player-transport__ideal__playing__compact__isplaying-true",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPlayerButtonsPlayingPreview_PlayerButtons___playing"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPlayerButtonsPlayingPreview_PlayerButtons___playing",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3131,7 +3203,8 @@
             "isPlaying": false
           },
           "livePreview": "https://preview.coo.ee/jetcaster/p/player-transport__ideal__paused__compact__isplaying-false",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPlayerButtonsPausedPreview_PlayerButtons___paused"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPlayerButtonsPausedPreview_PlayerButtons___paused",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3144,7 +3217,8 @@
             "hasNext": false
           },
           "livePreview": "https://preview.coo.ee/jetcaster/p/player-transport__ideal__queue-empty__compact__hasnext-false",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPlayerButtonsNoQueuePreview_PlayerButtons___empty_queue"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPlayerButtonsNoQueuePreview_PlayerButtons___empty_queue",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -3319,7 +3393,8 @@
           "height": 213,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetcaster/p/player-slider__ideal__default__dark",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPlayerSliderPreview_Dark"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPlayerSliderPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3329,7 +3404,8 @@
           "height": 213,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetcaster/p/player-slider__ideal__default__light",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPlayerSliderPreview_Light"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPlayerSliderPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3339,7 +3415,8 @@
           "height": 213,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetcaster/p/player-slider__ideal__default__compact",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPlayerSliderPreview_PlayerSlider___start"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPlayerSliderPreview_PlayerSlider___start",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3349,7 +3426,8 @@
           "height": 213,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetcaster/p/player-slider__ideal__in-progress__compact",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPlayerSliderElapsedPreview_PlayerSlider___part_way_through"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPlayerSliderElapsedPreview_PlayerSlider___part_way_through",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3359,7 +3437,8 @@
           "height": 213,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetcaster/p/player-slider__ideal__complete__compact",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPlayerSliderCompletePreview_PlayerSlider___complete"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPlayerSliderCompletePreview_PlayerSlider___complete",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -3406,7 +3485,8 @@
           "height": 578,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetcaster/p/player-episode-information__ideal__default__dark",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPodcastInformationPreview_Dark"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPodcastInformationPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3416,7 +3496,8 @@
           "height": 578,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetcaster/p/player-episode-information__ideal__default__light",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPodcastInformationPreview_Light"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPodcastInformationPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3426,7 +3507,8 @@
           "height": 1103,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetcaster/p/player-episode-information__ideal__default__compact",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPodcastInformationPreview_PodcastInformation"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPodcastInformationPreview_PodcastInformation",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -3449,7 +3531,8 @@
           "height": 168,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetcaster/p/player-app-bar__ideal__default__dark",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPlayerTopAppBarPreview_Dark"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPlayerTopAppBarPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3459,7 +3542,8 @@
           "height": 168,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetcaster/p/player-app-bar__ideal__default__light",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPlayerTopAppBarPreview_Light"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPlayerTopAppBarPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3469,7 +3553,8 @@
           "height": 168,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetcaster/p/player-app-bar__ideal__default__compact",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPlayerTopAppBarPreview_Player_app_bar"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPlayerTopAppBarPreview_Player_app_bar",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -3584,7 +3669,8 @@
           "height": 210,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetcaster/p/chrome-home-app-bar__ideal__default__dark",
-          "previewId": "com.example.jetcaster.ui.home.HomeKt.HomeAppBarPreview_Dark"
+          "previewId": "com.example.jetcaster.ui.home.HomeKt.HomeAppBarPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3593,7 +3679,8 @@
           "width": 1050,
           "height": 210,
           "livePreview": "https://preview.coo.ee/jetcaster/p/chrome-home-app-bar__ideal__default",
-          "previewId": "com.example.jetcaster.ui.home.HomeKt.HomeAppBarPreview_Home_app_bar"
+          "previewId": "com.example.jetcaster.ui.home.HomeKt.HomeAppBarPreview_Home_app_bar",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3603,7 +3690,8 @@
           "height": 210,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetcaster/p/chrome-home-app-bar__ideal__default__light",
-          "previewId": "com.example.jetcaster.ui.home.HomeKt.HomeAppBarPreview_Light"
+          "previewId": "com.example.jetcaster.ui.home.HomeKt.HomeAppBarPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3616,7 +3704,8 @@
             "isExpanded": false
           },
           "livePreview": "https://preview.coo.ee/jetcaster/p/chrome-home-app-bar__ideal__collapsed__compact__isexpanded-false",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterHomeAppBarPreview_HomeAppBar___compact"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterHomeAppBarPreview_HomeAppBar___compact",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3629,7 +3718,8 @@
             "isExpanded": true
           },
           "livePreview": "https://preview.coo.ee/jetcaster/p/chrome-home-app-bar__ideal__expanded__compact__isexpanded-true",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterHomeAppBarExpandedPreview_HomeAppBar___expanded"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterHomeAppBarExpandedPreview_HomeAppBar___expanded",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -3667,7 +3757,8 @@
           "height": 210,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetcaster/p/chrome-pill-toolbar__ideal__default__dark",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPillToolbarDiscoverPreview_Dark"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPillToolbarDiscoverPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3677,7 +3768,8 @@
           "height": 210,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetcaster/p/chrome-pill-toolbar__ideal__default__light",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPillToolbarDiscoverPreview_Light"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPillToolbarDiscoverPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3687,7 +3779,8 @@
           "height": 210,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetcaster/p/chrome-pill-toolbar__ideal__default__compact",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPillToolbarDiscoverPreview_PillToolbar___Discover_selected"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPillToolbarDiscoverPreview_PillToolbar___Discover_selected",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3700,7 +3793,8 @@
             "selected": "Library"
           },
           "livePreview": "https://preview.coo.ee/jetcaster/p/chrome-pill-toolbar__ideal__library__compact__selected-library",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPillToolbarLibraryPreview_PillToolbar___Library_selected"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPillToolbarLibraryPreview_PillToolbar___Library_selected",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -3832,7 +3926,8 @@
           "height": 126,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetcaster/p/chrome-top-app-bar__ideal__default__dark",
-          "previewId": "com.example.jetcaster.ui.player.PlayerScreenKt.TopAppBarPreview_Dark"
+          "previewId": "com.example.jetcaster.ui.player.PlayerScreenKt.TopAppBarPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3842,7 +3937,8 @@
           "height": 126,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetcaster/p/chrome-top-app-bar__ideal__default__light",
-          "previewId": "com.example.jetcaster.ui.player.PlayerScreenKt.TopAppBarPreview_Light"
+          "previewId": "com.example.jetcaster.ui.player.PlayerScreenKt.TopAppBarPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3851,7 +3947,8 @@
           "width": 1050,
           "height": 126,
           "livePreview": "https://preview.coo.ee/jetcaster/p/chrome-top-app-bar__ideal__default",
-          "previewId": "com.example.jetcaster.ui.player.PlayerScreenKt.TopAppBarPreview_Light"
+          "previewId": "com.example.jetcaster.ui.player.PlayerScreenKt.TopAppBarPreview_Light",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -3966,7 +4063,8 @@
           "height": 2100,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetcaster/p/chrome-home-error__ideal__default__dark",
-          "previewId": "com.example.jetcaster.ui.home.HomeKt.HomeScreenErrorPreview_Dark"
+          "previewId": "com.example.jetcaster.ui.home.HomeKt.HomeScreenErrorPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3975,7 +4073,8 @@
           "width": 1050,
           "height": 2100,
           "livePreview": "https://preview.coo.ee/jetcaster/p/chrome-home-error__ideal__default",
-          "previewId": "com.example.jetcaster.ui.home.HomeKt.HomeScreenErrorPreview_Home_screen_error"
+          "previewId": "com.example.jetcaster.ui.home.HomeKt.HomeScreenErrorPreview_Home_screen_error",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3985,7 +4084,8 @@
           "height": 2100,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetcaster/p/chrome-home-error__ideal__default__light",
-          "previewId": "com.example.jetcaster.ui.home.HomeKt.HomeScreenErrorPreview_Light"
+          "previewId": "com.example.jetcaster.ui.home.HomeKt.HomeScreenErrorPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3998,7 +4098,8 @@
             "onRetry": "present"
           },
           "livePreview": "https://preview.coo.ee/jetcaster/p/chrome-home-error__ideal__default__compact__onretry-present",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterHomeErrorPreview_Home___error"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterHomeErrorPreview_Home___error",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -4068,7 +4169,8 @@
           "height": 2100,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetcaster/p/states-loading__ideal__default__dark",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterLoadingPreview_Dark"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterLoadingPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4078,7 +4180,8 @@
           "height": 2100,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetcaster/p/states-loading__ideal__default__light",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterLoadingPreview_Light"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterLoadingPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4088,7 +4191,8 @@
           "height": 788,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetcaster/p/states-loading__ideal__default__compact",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterLoadingPreview_Loading"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterLoadingPreview_Loading",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -4111,7 +4215,8 @@
           "height": 574,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetcaster/p/states-offline__ideal__default__dark",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterOfflineStatePreview_Dark"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterOfflineStatePreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4121,7 +4226,8 @@
           "height": 574,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetcaster/p/states-offline__ideal__default__light",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterOfflineStatePreview_Light"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterOfflineStatePreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4131,7 +4237,8 @@
           "height": 1050,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetcaster/p/states-offline__ideal__default__compact",
-          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterOfflineStatePreview_Offline_state"
+          "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterOfflineStatePreview_Offline_state",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -4193,7 +4300,8 @@
           "state": "default",
           "width": 300,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4209,7 +4317,8 @@
           "state": "default",
           "width": 300,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4227,7 +4336,8 @@
           "theme": "dark",
           "props": {
             "fontScale": "2.0"
-          }
+          },
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4238,7 +4348,8 @@
           "theme": "light",
           "props": {
             "fontScale": "2.0"
-          }
+          },
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4246,7 +4357,8 @@
           "state": "pressed",
           "width": 342,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4254,7 +4366,8 @@
           "state": "pressed",
           "width": 342,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4262,7 +4375,8 @@
           "state": "keyboard-focus",
           "width": 351,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4270,7 +4384,8 @@
           "state": "keyboard-focus",
           "width": 351,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4281,7 +4396,8 @@
           "theme": "dark",
           "props": {
             "content": "icon+label"
-          }
+          },
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4292,7 +4408,8 @@
           "theme": "light",
           "props": {
             "content": "icon+label"
-          }
+          },
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -4345,7 +4462,8 @@
           "state": "default",
           "width": 300,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4353,7 +4471,8 @@
           "state": "default",
           "width": 300,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -4406,7 +4525,8 @@
           "state": "default",
           "width": 350,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4422,7 +4542,8 @@
           "state": "default",
           "width": 350,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4482,7 +4603,8 @@
           "state": "default",
           "width": 350,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4490,7 +4612,8 @@
           "state": "default",
           "width": 350,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -4543,7 +4666,8 @@
           "state": "default",
           "width": 236,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4551,7 +4675,8 @@
           "state": "default",
           "width": 236,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -4604,7 +4729,8 @@
           "state": "default",
           "width": 662,
           "height": 95,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4612,7 +4738,8 @@
           "state": "default",
           "width": 662,
           "height": 95,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -4647,7 +4774,8 @@
           "state": "default",
           "width": 189,
           "height": 189,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4655,7 +4783,8 @@
           "state": "default",
           "width": 189,
           "height": 189,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -4675,7 +4804,8 @@
           "state": "default",
           "width": 126,
           "height": 126,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4683,7 +4813,8 @@
           "state": "default",
           "width": 126,
           "height": 126,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -4719,7 +4850,8 @@
           "state": "default",
           "width": 504,
           "height": 294,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4727,7 +4859,8 @@
           "state": "default",
           "width": 504,
           "height": 294,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -4757,7 +4890,8 @@
           "state": "default",
           "width": 504,
           "height": 294,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4765,7 +4899,8 @@
           "state": "default",
           "width": 504,
           "height": 294,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -4795,7 +4930,8 @@
           "state": "default",
           "width": 504,
           "height": 294,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4803,7 +4939,8 @@
           "state": "default",
           "width": 504,
           "height": 294,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -4833,7 +4970,8 @@
           "state": "default",
           "width": 653,
           "height": 253,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4841,7 +4979,8 @@
           "state": "default",
           "width": 653,
           "height": 253,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4849,7 +4988,8 @@
           "state": "slot-mode",
           "width": 653,
           "height": 253,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4857,7 +4997,8 @@
           "state": "slot-mode",
           "width": 653,
           "height": 253,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4868,7 +5009,8 @@
           "theme": "dark",
           "props": {
             "locale": "ar"
-          }
+          },
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4879,7 +5021,8 @@
           "theme": "light",
           "props": {
             "locale": "ar"
-          }
+          },
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -4910,7 +5053,8 @@
           "state": "default",
           "width": 231,
           "height": 231,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4918,7 +5062,8 @@
           "state": "default",
           "width": 231,
           "height": 231,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -4970,7 +5115,8 @@
           "state": "default",
           "width": 210,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4986,7 +5132,8 @@
           "state": "default",
           "width": 210,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5051,7 +5198,8 @@
           "state": "default",
           "width": 221,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5067,7 +5215,8 @@
           "state": "default",
           "width": 221,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5085,7 +5234,8 @@
           "theme": "dark",
           "props": {
             "locale": "ar-XB"
-          }
+          },
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5096,7 +5246,8 @@
           "theme": "light",
           "props": {
             "locale": "ar-XB"
-          }
+          },
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5107,7 +5258,8 @@
           "theme": "dark",
           "props": {
             "direction": "rtl"
-          }
+          },
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5118,7 +5270,8 @@
           "theme": "light",
           "props": {
             "direction": "rtl"
-          }
+          },
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5129,7 +5282,8 @@
           "theme": "dark",
           "props": {
             "fontScale": "2.0"
-          }
+          },
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5140,7 +5294,8 @@
           "theme": "light",
           "props": {
             "fontScale": "2.0"
-          }
+          },
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -5202,7 +5357,8 @@
           "state": "default",
           "width": 210,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5218,7 +5374,8 @@
           "state": "default",
           "width": 210,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5262,7 +5419,8 @@
           "state": "default",
           "width": 662,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5270,7 +5428,8 @@
           "state": "default",
           "width": 662,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -5314,7 +5473,8 @@
           "state": "default",
           "width": 252,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5330,7 +5490,8 @@
           "state": "default",
           "width": 252,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5390,7 +5551,8 @@
           "state": "default",
           "width": 268,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5398,7 +5560,8 @@
           "state": "default",
           "width": 268,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -5450,7 +5613,8 @@
           "state": "default",
           "width": 445,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5458,7 +5622,8 @@
           "state": "default",
           "width": 445,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -5501,7 +5666,8 @@
           "width": 1078,
           "height": 2399,
           "theme": "dark",
-          "size": "compact"
+          "size": "compact",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5510,7 +5676,8 @@
           "width": 1078,
           "height": 2399,
           "theme": "light",
-          "size": "compact"
+          "size": "compact",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -5606,7 +5773,8 @@
           "state": "default",
           "width": 819,
           "height": 231,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5614,7 +5782,8 @@
           "state": "default",
           "width": 819,
           "height": 231,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -5634,7 +5803,8 @@
           "state": "default",
           "width": 819,
           "height": 252,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5642,7 +5812,8 @@
           "state": "default",
           "width": 819,
           "height": 252,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -5677,7 +5848,8 @@
           "state": "default",
           "width": 420,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5685,7 +5857,8 @@
           "state": "default",
           "width": 420,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -5706,7 +5879,8 @@
           "state": "default",
           "width": 510,
           "height": 147,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5714,7 +5888,8 @@
           "state": "default",
           "width": 510,
           "height": 147,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -5735,7 +5910,8 @@
           "state": "default",
           "width": 562,
           "height": 147,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5743,7 +5919,8 @@
           "state": "default",
           "width": 562,
           "height": 147,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -5760,8 +5937,8 @@
     "androidx.compose.material3:material3",
     "androidx.compose.material3.adaptive:adaptive"
   ],
-  "renderer": "compose-preview 0.19.57",
-  "generatedAt": "2026-08-11T08:57:16.725Z",
+  "renderer": "compose-preview 0.19.61",
+  "generatedAt": "2026-08-11T23:38:13.399Z",
   "display": {
     "surface": "dark",
     "hero": "Home/Screen"

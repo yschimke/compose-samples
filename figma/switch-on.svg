@@ -2,9 +2,10 @@
 <g transform="translate(0, 0)">
   <g id="Root">
     <g id="Box">
-      <rect x="42" y="63" width="137" height="84" rx="42" ry="42" fill="#FF792C"/>
+        <rect x="42" y="63" width="137" height="84" rx="42" ry="42" fill="#FF792C"/>
       <g id="Box">
-        <rect x="105" y="74" width="63" height="63" rx="31.5" ry="31.5" fill="#626004"/>
+        <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAA/CAYAAABXXxDfAAAECUlEQVR4XuWby09TQRSHJ8G3QA1EQTERQSnQ/juuhfIopQUshVJYqIkvXGiIcWM0UTcufD9ZqAnBP8CFRmXhc+MGo6Jo4vM4v2tuU870cfu+vUPyhZS5nTlfmd6ZOTNX0KSXisnrSAvdDjXQhUA9nR7YRMf6a2iqdwMNda8hX9cq4zde4+8ovzhYb1z/JtKq1FUYPHco6q4R+FEL8+ftWCtdCW6haM86QzBX8H7U867QH0TMu0CT7W0Fk/820UE3Q40y4PWKRCFAvbdk/cvRDqXtnIh5ZvOW/zHRSfeGGinoW60EXAxC8msyK9tDuzyWbMlZ/nfMQ3MjTTTqW6sEWArQ7rxsH3Hw2KySk/yHqJsO9VUrAZUDxIF4eIxWyFr+Sbg5fqe2C4gHcfFYM2FZ/o/sXlflnde3t0pp3BbIuK4FG+hvFl8DS/Jf5Z18Wo7DSoM25KTfZcTLHZKRUf6VHGPHfPmN16UG8SJu7sJJK/9LdqGjfZXxH+cgbsTPnSzLn5dTUl5pJYEpNXeyJI+JC6+sEoEHd0sr/3S0mXqSVFSJwCPVMKjI/4x10kiZZm3FYp/0gRd3VeSd0t05ybr/CvmlaDsN2mz2ViiC0gsrz5TylwY3K29yEsgNJJVfHHdTf1dplqXlAn6fZe9W5M8F6pSLnQjSZCvksRgIO+wOn4qwnPqaix9D/mWkRbnIycA3Lo8bAb/AyZg3PkN+qkhJR7sCX0P+/fhupVAHFsfbSDwO71AKdADe4v7wVqVAB+AtnD6rSwW8xSm/SynQAXgLu+TfSw28xXiem4mVCrxFb5ICHYC3QJaDF+gAvMWB3o1KgQ7AW5zw1yoFOmDc7XVZx3Owrhc4TcELdADeYm64SSnQAXgL3RIZJvAWOqWwTDDMwdtIZuDLzy9wMljUxDM52MviFziZFTk87GPr0vXNLh+X16nrK3l7gJ0MHXZssB+pyAOnp7BT7tUB7GJiN5O/yQlg9/l7ul1aoO3+PMAJBqet8XHSxNLJDIBx30lncnDGiDumlAdO6f7Iz3O3jPIA59h4ZZVE4piejLTyWp/ABF/kpCBSYWdvES/i5i6cjPLgU9RNRyqkBxzuqy7cqWsTdKEzA/bO9+GscKaunohleZOHw9uox2YPHGA4mx/ZrsSaiazlwbPRnbY5rIhHTJ7LeHiMVshJHixNtBsLhUB3eVaCaPeybB9x8NiskrO8yXKJPwRTGu3yWLIi5r2bt7wJgkEufH+Rtr9QL+rPW/o/L+jgrtqCySfyUQ6NeOBwxu8ifxIRK+B9M/0uI7+O+ngbORPzPijqg8SJ4LHPhUgLPZIfxo1QA50N1NG0nDOY5wLwG6/x9+uyfF7K4vpCPC6q4jlOe0SVIS5//gFWy1YzdCuWhgAAAABJRU5ErkJggg==" x="105" y="74" width="63" height="63"/>
+          <rect x="105" y="74" width="63" height="63" rx="31.5" ry="31.5" fill="#626004"/>
       </g>
     </g>
   </g>
