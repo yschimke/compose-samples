@@ -14,7 +14,8 @@
           "height": 2100,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetlagged/p/home-sleep-dashboard__ideal__default__dark",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedScreenPreviewsKt.JetLaggedScreenDarkPreview_Home___dark"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedScreenPreviewsKt.JetLaggedScreenDarkPreview_Home___dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -24,7 +25,8 @@
           "height": 2888,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetlagged/p/home-sleep-dashboard__ideal__default__compact",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedScreenPreviewsKt.JetLaggedScreenCompactPreview_Home___compact"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedScreenPreviewsKt.JetLaggedScreenCompactPreview_Home___compact",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -34,7 +36,8 @@
           "height": 2100,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetlagged/p/home-sleep-dashboard__ideal__default__light",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedScreenPreviewsKt.JetLaggedScreenCompactPreview_Light"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedScreenPreviewsKt.JetLaggedScreenCompactPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -47,7 +50,8 @@
             "windowSizeClass": "Medium"
           },
           "livePreview": "https://preview.coo.ee/jetlagged/p/home-sleep-dashboard__ideal__default__medium__windowsizeclass-medium",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedScreenPreviewsKt.JetLaggedScreenMediumPreview_Home___medium"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedScreenPreviewsKt.JetLaggedScreenMediumPreview_Home___medium",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -60,7 +64,8 @@
             "windowSizeClass": "Expanded"
           },
           "livePreview": "https://preview.coo.ee/jetlagged/p/home-sleep-dashboard__ideal__default__expanded__windowsizeclass-expanded",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedScreenPreviewsKt.JetLaggedScreenExpandedPreview_Home___expanded"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedScreenPreviewsKt.JetLaggedScreenExpandedPreview_Home___expanded",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -71,7 +76,8 @@
           "theme": "dark",
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetlagged/p/home-sleep-dashboard__ideal__default__dark__compact",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedScreenPreviewsKt.JetLaggedScreenDarkPreview_Home___dark"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedScreenPreviewsKt.JetLaggedScreenDarkPreview_Home___dark",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -912,7 +918,8 @@
           "height": 105,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetlagged/p/charts-sleep-bar__ideal__default__dark",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.SleepBarDarkPreview_SleepBar___dark"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.SleepBarDarkPreview_SleepBar___dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -922,7 +929,8 @@
           "height": 105,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetlagged/p/charts-sleep-bar__ideal__default__light",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.SleepBarCatalogPreview_Light"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.SleepBarCatalogPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -932,7 +940,8 @@
           "height": 210,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetlagged/p/charts-sleep-bar__ideal__default__compact",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.SleepBarCatalogPreview_Light"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.SleepBarCatalogPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -946,7 +955,8 @@
             "duration": "45 minutes"
           },
           "livePreview": "https://preview.coo.ee/jetlagged/p/charts-sleep-bar__ideal__default__dark__compact__duration-45-minutes",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.SleepBarShortNightPreview_SleepBar___45_minute_night"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.SleepBarShortNightPreview_SleepBar___45_minute_night",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -960,7 +970,8 @@
             "duration": "16 hours"
           },
           "livePreview": "https://preview.coo.ee/jetlagged/p/charts-sleep-bar__ideal__default__dark__compact__duration-16-hours",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.SleepBarLongNightPreview_SleepBar___16_hour_night"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.SleepBarLongNightPreview_SleepBar___16_hour_night",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -973,7 +984,8 @@
             "sleepScore": "92, 65, 50, 25"
           },
           "livePreview": "https://preview.coo.ee/jetlagged/p/charts-sleep-bar__ideal__default__compact__sleepscore-92-65-50-25",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.SleepBarScoreBandsPreview_SleepBar___score_bands"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.SleepBarScoreBandsPreview_SleepBar___score_bands",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -984,7 +996,8 @@
           "theme": "dark",
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetlagged/p/charts-sleep-bar__ideal__default__dark__compact",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.SleepBarDarkPreview_SleepBar___dark"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.SleepBarDarkPreview_SleepBar___dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -996,7 +1009,8 @@
             "data": "app sample data"
           },
           "livePreview": "https://preview.coo.ee/jetlagged/p/charts-sleep-bar__ideal__default__data-app-sample-data",
-          "previewId": "com.example.jetlagged.sleep.SleepBarKt.SleepBarPreview"
+          "previewId": "com.example.jetlagged.sleep.SleepBarKt.SleepBarPreview",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -1019,7 +1033,8 @@
           "height": 1132,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetlagged/p/charts-sleep-graph-card__ideal__default__dark",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.JetLaggedSleepGraphCardDarkPreview_SleepGraphCard___dark"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.JetLaggedSleepGraphCardDarkPreview_SleepGraphCard___dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1029,7 +1044,8 @@
           "height": 1132,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetlagged/p/charts-sleep-graph-card__ideal__default__light",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.JetLaggedSleepGraphCardPreview_Light"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.JetLaggedSleepGraphCardPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1039,7 +1055,8 @@
           "height": 1208,
           "size": "medium",
           "livePreview": "https://preview.coo.ee/jetlagged/p/charts-sleep-graph-card__ideal__default__medium",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.JetLaggedSleepGraphCardPreview_SleepGraphCard___week"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.JetLaggedSleepGraphCardPreview_SleepGraphCard___week",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1052,7 +1069,8 @@
             "range": "single day"
           },
           "livePreview": "https://preview.coo.ee/jetlagged/p/charts-sleep-graph-card__ideal__default__medium__range-single-day",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.JetLaggedSleepGraphCardSingleDayPreview_SleepGraphCard___single_day"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.JetLaggedSleepGraphCardSingleDayPreview_SleepGraphCard___single_day",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1063,7 +1081,8 @@
           "theme": "dark",
           "size": "medium",
           "livePreview": "https://preview.coo.ee/jetlagged/p/charts-sleep-graph-card__ideal__default__dark__medium",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.JetLaggedSleepGraphCardDarkPreview_SleepGraphCard___dark"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.JetLaggedSleepGraphCardDarkPreview_SleepGraphCard___dark",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -1769,7 +1788,8 @@
           "height": 828,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetlagged/p/charts-time-graph-layout__ideal__default__dark",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.TimeGraphPreview_Dark"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.TimeGraphPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1779,7 +1799,8 @@
           "height": 828,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetlagged/p/charts-time-graph-layout__ideal__default__light",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.TimeGraphPreview_Light"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.TimeGraphPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1789,7 +1810,8 @@
           "height": 893,
           "size": "medium",
           "livePreview": "https://preview.coo.ee/jetlagged/p/charts-time-graph-layout__ideal__default__medium",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.TimeGraphPreview_Light"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.TimeGraphPreview_Light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -2166,7 +2188,8 @@
           "height": 305,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetlagged/p/charts-heart-rate-graph__ideal__default__dark",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.HeartRateGraphDarkPreview_HeartRateGraph___dark"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.HeartRateGraphDarkPreview_HeartRateGraph___dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2176,7 +2199,8 @@
           "height": 315,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetlagged/p/charts-heart-rate-graph__ideal__default__compact",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.HeartRateGraphPreview_Light"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.HeartRateGraphPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2186,7 +2210,8 @@
           "height": 305,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetlagged/p/charts-heart-rate-graph__ideal__default__light",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.HeartRateGraphPreview_Light"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.HeartRateGraphPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2197,7 +2222,8 @@
           "theme": "dark",
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetlagged/p/charts-heart-rate-graph__ideal__default__dark__compact",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.HeartRateGraphDarkPreview_HeartRateGraph___dark"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.HeartRateGraphDarkPreview_HeartRateGraph___dark",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -2220,7 +2246,8 @@
           "height": 200,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetlagged/p/charts-sleep-stage-palette__ideal__default__dark",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.SleepStagePaletteDarkPreview_Sleep_stage_palette___dark"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.SleepStagePaletteDarkPreview_Sleep_stage_palette___dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2230,7 +2257,8 @@
           "height": 200,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetlagged/p/charts-sleep-stage-palette__ideal__default__light",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.SleepStagePalettePreview_Light"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.SleepStagePalettePreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2240,7 +2268,8 @@
           "height": 263,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetlagged/p/charts-sleep-stage-palette__ideal__default__compact",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.SleepStagePalettePreview_Light"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.SleepStagePalettePreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2251,7 +2280,8 @@
           "theme": "dark",
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetlagged/p/charts-sleep-stage-palette__ideal__default__dark__compact",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.SleepStagePaletteDarkPreview_Sleep_stage_palette___dark"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.SleepStagePaletteDarkPreview_Sleep_stage_palette___dark",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -2310,7 +2340,8 @@
           "width": 487,
           "height": 53,
           "livePreview": "https://preview.coo.ee/jetlagged/p/charts-detail-legend__ideal__default",
-          "previewId": "com.example.jetlagged.sleep.SleepBarKt.DetailLegend"
+          "previewId": "com.example.jetlagged.sleep.SleepBarKt.DetailLegend",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2320,7 +2351,8 @@
           "height": 53,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetlagged/p/charts-detail-legend__ideal__default__dark",
-          "previewId": "com.example.jetlagged.sleep.SleepBarKt.DetailLegend_Dark"
+          "previewId": "com.example.jetlagged.sleep.SleepBarKt.DetailLegend_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2330,7 +2362,8 @@
           "height": 53,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetlagged/p/charts-detail-legend__ideal__default__light",
-          "previewId": "com.example.jetlagged.sleep.SleepBarKt.DetailLegend_Light"
+          "previewId": "com.example.jetlagged.sleep.SleepBarKt.DetailLegend_Light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -2450,7 +2483,8 @@
           "height": 525,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetlagged/p/cards-time-asleep__ideal__default__compact",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedCatalogPreviewsKt.AverageTimeAsleepCardCatalogPreview_Light"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedCatalogPreviewsKt.AverageTimeAsleepCardCatalogPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2460,7 +2494,8 @@
           "height": 525,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetlagged/p/cards-time-asleep__ideal__default__dark",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedCatalogPreviewsKt.AverageTimeAsleepCardCatalogPreview_Dark"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedCatalogPreviewsKt.AverageTimeAsleepCardCatalogPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2470,7 +2505,8 @@
           "height": 525,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetlagged/p/cards-time-asleep__ideal__default__light",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedCatalogPreviewsKt.AverageTimeAsleepCardCatalogPreview_Light"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedCatalogPreviewsKt.AverageTimeAsleepCardCatalogPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2483,7 +2519,8 @@
             "widthDp": "500"
           },
           "livePreview": "https://preview.coo.ee/jetlagged/p/cards-time-asleep__ideal__default__compact__widthdp-500",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedCatalogPreviewsKt.AverageTimeAsleepCardWideCatalogPreview_Average_time_asleep___larger_screen"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedCatalogPreviewsKt.AverageTimeAsleepCardWideCatalogPreview_Average_time_asleep___larger_screen",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -2522,7 +2559,8 @@
           "height": 525,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetlagged/p/cards-time-in-bed__ideal__default__compact",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedCatalogPreviewsKt.AverageTimeInBedCardCatalogPreview_Light"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedCatalogPreviewsKt.AverageTimeInBedCardCatalogPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2532,7 +2570,8 @@
           "height": 525,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetlagged/p/cards-time-in-bed__ideal__default__dark",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedCatalogPreviewsKt.AverageTimeInBedCardCatalogPreview_Dark"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedCatalogPreviewsKt.AverageTimeInBedCardCatalogPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2542,7 +2581,8 @@
           "height": 525,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetlagged/p/cards-time-in-bed__ideal__default__light",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedCatalogPreviewsKt.AverageTimeInBedCardCatalogPreview_Light"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedCatalogPreviewsKt.AverageTimeInBedCardCatalogPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2555,7 +2595,8 @@
             "widthDp": "500"
           },
           "livePreview": "https://preview.coo.ee/jetlagged/p/cards-time-in-bed__ideal__default__compact__widthdp-500",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedCatalogPreviewsKt.AverageTimeInBedCardWideCatalogPreview_Average_time_in_bed___larger_screen"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedCatalogPreviewsKt.AverageTimeInBedCardWideCatalogPreview_Average_time_in_bed___larger_screen",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -2594,7 +2635,8 @@
           "height": 683,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetlagged/p/cards-heart-rate__ideal__default__dark",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.HeartRateCardDarkPreview_HeartRateCard___dark"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.HeartRateCardDarkPreview_HeartRateCard___dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2604,7 +2646,8 @@
           "height": 683,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetlagged/p/cards-heart-rate__ideal__default__compact",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedCatalogPreviewsKt.HeartRateCardCatalogPreview_Light"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedCatalogPreviewsKt.HeartRateCardCatalogPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2614,7 +2657,8 @@
           "height": 683,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetlagged/p/cards-heart-rate__ideal__default__light",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedCatalogPreviewsKt.HeartRateCardCatalogPreview_Light"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedCatalogPreviewsKt.HeartRateCardCatalogPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2627,7 +2671,8 @@
             "averageBpm": "48"
           },
           "livePreview": "https://preview.coo.ee/jetlagged/p/cards-heart-rate__ideal__resting__compact__averagebpm-48",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.HeartRateCardRestingPreview_HeartRateCard___resting"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.HeartRateCardRestingPreview_HeartRateCard___resting",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2638,7 +2683,8 @@
           "theme": "dark",
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetlagged/p/cards-heart-rate__ideal__default__dark__compact",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.HeartRateCardDarkPreview_HeartRateCard___dark"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.HeartRateCardDarkPreview_HeartRateCard___dark",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -2692,7 +2738,8 @@
           "height": 2100,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetlagged/p/cards-wellness__ideal__default__dark",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.WellnessCardDarkPreview_WellnessCard___dark"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.WellnessCardDarkPreview_WellnessCard___dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2702,7 +2749,8 @@
           "height": 2100,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetlagged/p/cards-wellness__ideal__default__light",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedCatalogPreviewsKt.WellnessCardCatalogPreview_Light"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedCatalogPreviewsKt.WellnessCardCatalogPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2712,7 +2760,8 @@
           "height": 2100,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetlagged/p/cards-wellness__ideal__default__compact",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedCatalogPreviewsKt.WellnessCardCatalogPreview_Light"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedCatalogPreviewsKt.WellnessCardCatalogPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2728,7 +2777,8 @@
             "respiration": "17"
           },
           "livePreview": "https://preview.coo.ee/jetlagged/p/cards-wellness__ideal__recorded__dark__compact__coughing-42__respiration-17__snoring-128",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.WellnessCardRecordedPreview_WellnessCard___recorded_night"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.WellnessCardRecordedPreview_WellnessCard___recorded_night",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2739,7 +2789,8 @@
           "theme": "dark",
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetlagged/p/cards-wellness__ideal__default__dark__compact",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.WellnessCardDarkPreview_WellnessCard___dark"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.WellnessCardDarkPreview_WellnessCard___dark",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -2793,7 +2844,8 @@
           "height": 327,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetlagged/p/cards-wellness-bubble__ideal__default__dark",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.WellnessBubblePreview_Dark"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.WellnessBubblePreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2803,7 +2855,8 @@
           "height": 327,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetlagged/p/cards-wellness-bubble__ideal__default__light",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.WellnessBubblePreview_Light"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.WellnessBubblePreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2813,7 +2866,8 @@
           "height": 368,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetlagged/p/cards-wellness-bubble__ideal__default__compact",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.WellnessBubblePreview_Light"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.WellnessBubblePreview_Light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -2836,7 +2890,8 @@
           "height": 420,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetlagged/p/cards-informational-card__ideal__default__compact",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.BasicInformationalCardPreview_Light"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.BasicInformationalCardPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2846,7 +2901,8 @@
           "height": 306,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetlagged/p/cards-informational-card__ideal__default__dark",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.BasicInformationalCardPreview_Dark"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.BasicInformationalCardPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2856,7 +2912,8 @@
           "height": 306,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetlagged/p/cards-informational-card__ideal__default__light",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.BasicInformationalCardPreview_Light"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.BasicInformationalCardPreview_Light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -2910,7 +2967,8 @@
           "height": 567,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetlagged/p/cards-two-line-info__ideal__default__dark",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.TwoLineInfoCardPreview_Dark"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.TwoLineInfoCardPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2920,7 +2978,8 @@
           "height": 567,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetlagged/p/cards-two-line-info__ideal__default__light",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.TwoLineInfoCardPreview_Light"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.TwoLineInfoCardPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2930,7 +2989,8 @@
           "height": 630,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetlagged/p/cards-two-line-info__ideal__default__compact",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.TwoLineInfoCardPreview_Light"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.TwoLineInfoCardPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2943,7 +3003,8 @@
             "widthDp": "520"
           },
           "livePreview": "https://preview.coo.ee/jetlagged/p/cards-two-line-info__ideal__default__compact__widthdp-520",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.TwoLineInfoCardWidePreview_TwoLineInfoCard___wide"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.TwoLineInfoCardWidePreview_TwoLineInfoCard___wide",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -2982,7 +3043,8 @@
           "height": 158,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetlagged/p/cards-card-heading__ideal__default__compact",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.HomeScreenCardHeadingPreview_Light"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.HomeScreenCardHeadingPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2992,7 +3054,8 @@
           "height": 138,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetlagged/p/cards-card-heading__ideal__default__dark",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.HomeScreenCardHeadingPreview_Dark"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.HomeScreenCardHeadingPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3002,7 +3065,8 @@
           "height": 138,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetlagged/p/cards-card-heading__ideal__default__light",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.HomeScreenCardHeadingPreview_Light"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.HomeScreenCardHeadingPreview_Light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -3041,7 +3105,8 @@
           "height": 394,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetlagged/p/chrome-header__ideal__default__dark",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.JetLaggedHeaderDarkPreview_Header___dark"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.JetLaggedHeaderDarkPreview_Header___dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3051,7 +3116,8 @@
           "height": 394,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetlagged/p/chrome-header__ideal__default__compact",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedCatalogPreviewsKt.JetLaggedHeaderCatalogPreview_Light"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedCatalogPreviewsKt.JetLaggedHeaderCatalogPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3061,7 +3127,8 @@
           "height": 394,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetlagged/p/chrome-header__ideal__default__light",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedCatalogPreviewsKt.JetLaggedHeaderCatalogPreview_Light"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedCatalogPreviewsKt.JetLaggedHeaderCatalogPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3072,7 +3139,8 @@
           "theme": "dark",
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetlagged/p/chrome-header__ideal__default__dark__compact",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.JetLaggedHeaderDarkPreview_Header___dark"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.JetLaggedHeaderDarkPreview_Header___dark",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -3142,7 +3210,8 @@
           "height": 124,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetlagged/p/chrome-range-tabs__ideal__default__dark",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.JetLaggedHeaderTabsPreview_Dark"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.JetLaggedHeaderTabsPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3152,7 +3221,8 @@
           "height": 189,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetlagged/p/chrome-range-tabs__ideal__default__compact",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.JetLaggedHeaderTabsPreview_Light"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.JetLaggedHeaderTabsPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3162,7 +3232,8 @@
           "height": 124,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetlagged/p/chrome-range-tabs__ideal__default__light",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.JetLaggedHeaderTabsPreview_Light"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.JetLaggedHeaderTabsPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3172,7 +3243,8 @@
           "height": 189,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetlagged/p/chrome-range-tabs__ideal__day__compact",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.JetLaggedHeaderTabsDayPreview_HeaderTabs___Day"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.JetLaggedHeaderTabsDayPreview_HeaderTabs___Day",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3182,7 +3254,8 @@
           "height": 189,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetlagged/p/chrome-range-tabs__ideal__month__compact",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.JetLaggedHeaderTabsMonthPreview_HeaderTabs___Month"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.JetLaggedHeaderTabsMonthPreview_HeaderTabs___Month",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3192,7 +3265,8 @@
           "height": 189,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetlagged/p/chrome-range-tabs__ideal__six-months__compact",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.JetLaggedHeaderTabsSixMonthsPreview_HeaderTabs___6M"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.JetLaggedHeaderTabsSixMonthsPreview_HeaderTabs___6M",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3202,7 +3276,8 @@
           "height": 189,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetlagged/p/chrome-range-tabs__ideal__one-year__compact",
-          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.JetLaggedHeaderTabsOneYearPreview_HeaderTabs___1Y"
+          "previewId": "com.example.jetlagged.catalog.JetLaggedComponentPreviewsKt.JetLaggedHeaderTabsOneYearPreview_HeaderTabs___1Y",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -3496,7 +3571,8 @@
           "width": 1050,
           "height": 2100,
           "livePreview": "https://preview.coo.ee/jetlagged/p/motion-fading-circle__ideal__default",
-          "previewId": "com.example.jetlagged.backgrounds.FadingCircleBackgroundKt.FadingCirclePreview"
+          "previewId": "com.example.jetlagged.backgrounds.FadingCircleBackgroundKt.FadingCirclePreview",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3506,7 +3582,8 @@
           "height": 2100,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetlagged/p/motion-fading-circle__ideal__default__dark",
-          "previewId": "com.example.jetlagged.backgrounds.FadingCircleBackgroundKt.FadingCirclePreview_Dark"
+          "previewId": "com.example.jetlagged.backgrounds.FadingCircleBackgroundKt.FadingCirclePreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3516,7 +3593,8 @@
           "height": 2100,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetlagged/p/motion-fading-circle__ideal__default__light",
-          "previewId": "com.example.jetlagged.backgrounds.FadingCircleBackgroundKt.FadingCirclePreview_Light"
+          "previewId": "com.example.jetlagged.backgrounds.FadingCircleBackgroundKt.FadingCirclePreview_Light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -3537,7 +3615,8 @@
           "state": "default",
           "width": 300,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3553,7 +3632,8 @@
           "state": "default",
           "width": 300,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3571,7 +3651,8 @@
           "theme": "dark",
           "props": {
             "fontScale": "2.0"
-          }
+          },
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3582,7 +3663,8 @@
           "theme": "light",
           "props": {
             "fontScale": "2.0"
-          }
+          },
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3590,7 +3672,8 @@
           "state": "pressed",
           "width": 342,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3598,7 +3681,8 @@
           "state": "pressed",
           "width": 342,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3606,7 +3690,8 @@
           "state": "keyboard-focus",
           "width": 351,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3614,7 +3699,8 @@
           "state": "keyboard-focus",
           "width": 351,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3625,7 +3711,8 @@
           "theme": "dark",
           "props": {
             "content": "icon+label"
-          }
+          },
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3636,7 +3723,8 @@
           "theme": "light",
           "props": {
             "content": "icon+label"
-          }
+          },
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -3689,7 +3777,8 @@
           "state": "default",
           "width": 300,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3697,7 +3786,8 @@
           "state": "default",
           "width": 300,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -3750,7 +3840,8 @@
           "state": "default",
           "width": 350,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3766,7 +3857,8 @@
           "state": "default",
           "width": 350,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3826,7 +3918,8 @@
           "state": "default",
           "width": 350,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3834,7 +3927,8 @@
           "state": "default",
           "width": 350,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -3887,7 +3981,8 @@
           "state": "default",
           "width": 236,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3895,7 +3990,8 @@
           "state": "default",
           "width": 236,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -3948,7 +4044,8 @@
           "state": "default",
           "width": 662,
           "height": 95,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3956,7 +4053,8 @@
           "state": "default",
           "width": 662,
           "height": 95,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -3991,7 +4089,8 @@
           "state": "default",
           "width": 189,
           "height": 189,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3999,7 +4098,8 @@
           "state": "default",
           "width": 189,
           "height": 189,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -4019,7 +4119,8 @@
           "state": "default",
           "width": 126,
           "height": 126,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4027,7 +4128,8 @@
           "state": "default",
           "width": 126,
           "height": 126,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -4063,7 +4165,8 @@
           "state": "default",
           "width": 504,
           "height": 294,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4071,7 +4174,8 @@
           "state": "default",
           "width": 504,
           "height": 294,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -4101,7 +4205,8 @@
           "state": "default",
           "width": 504,
           "height": 294,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4109,7 +4214,8 @@
           "state": "default",
           "width": 504,
           "height": 294,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -4139,7 +4245,8 @@
           "state": "default",
           "width": 504,
           "height": 294,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4147,7 +4254,8 @@
           "state": "default",
           "width": 504,
           "height": 294,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -4177,7 +4285,8 @@
           "state": "default",
           "width": 653,
           "height": 253,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4185,7 +4294,8 @@
           "state": "default",
           "width": 653,
           "height": 253,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4193,7 +4303,8 @@
           "state": "slot-mode",
           "width": 653,
           "height": 253,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4201,7 +4312,8 @@
           "state": "slot-mode",
           "width": 653,
           "height": 253,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4212,7 +4324,8 @@
           "theme": "dark",
           "props": {
             "locale": "ar"
-          }
+          },
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4223,7 +4336,8 @@
           "theme": "light",
           "props": {
             "locale": "ar"
-          }
+          },
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -4254,7 +4368,8 @@
           "state": "default",
           "width": 231,
           "height": 231,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4262,7 +4377,8 @@
           "state": "default",
           "width": 231,
           "height": 231,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -4314,7 +4430,8 @@
           "state": "default",
           "width": 210,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4330,7 +4447,8 @@
           "state": "default",
           "width": 210,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4395,7 +4513,8 @@
           "state": "default",
           "width": 221,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4411,7 +4530,8 @@
           "state": "default",
           "width": 221,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4429,7 +4549,8 @@
           "theme": "dark",
           "props": {
             "locale": "ar-XB"
-          }
+          },
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4440,7 +4561,8 @@
           "theme": "light",
           "props": {
             "locale": "ar-XB"
-          }
+          },
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4451,7 +4573,8 @@
           "theme": "dark",
           "props": {
             "direction": "rtl"
-          }
+          },
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4462,7 +4585,8 @@
           "theme": "light",
           "props": {
             "direction": "rtl"
-          }
+          },
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4473,7 +4597,8 @@
           "theme": "dark",
           "props": {
             "fontScale": "2.0"
-          }
+          },
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4484,7 +4609,8 @@
           "theme": "light",
           "props": {
             "fontScale": "2.0"
-          }
+          },
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -4546,7 +4672,8 @@
           "state": "default",
           "width": 210,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4562,7 +4689,8 @@
           "state": "default",
           "width": 210,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4606,7 +4734,8 @@
           "state": "default",
           "width": 662,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4614,7 +4743,8 @@
           "state": "default",
           "width": 662,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -4658,7 +4788,8 @@
           "state": "default",
           "width": 252,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4674,7 +4805,8 @@
           "state": "default",
           "width": 252,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4734,7 +4866,8 @@
           "state": "default",
           "width": 268,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4742,7 +4875,8 @@
           "state": "default",
           "width": 268,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -4794,7 +4928,8 @@
           "state": "default",
           "width": 445,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4802,7 +4937,8 @@
           "state": "default",
           "width": 445,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -4845,7 +4981,8 @@
           "width": 1078,
           "height": 2399,
           "theme": "dark",
-          "size": "compact"
+          "size": "compact",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4854,7 +4991,8 @@
           "width": 1078,
           "height": 2399,
           "theme": "light",
-          "size": "compact"
+          "size": "compact",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -4950,7 +5088,8 @@
           "state": "default",
           "width": 819,
           "height": 231,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4958,7 +5097,8 @@
           "state": "default",
           "width": 819,
           "height": 231,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -4978,7 +5118,8 @@
           "state": "default",
           "width": 819,
           "height": 252,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4986,7 +5127,8 @@
           "state": "default",
           "width": 819,
           "height": 252,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -5021,7 +5163,8 @@
           "state": "default",
           "width": 420,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5029,7 +5172,8 @@
           "state": "default",
           "width": 420,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -5050,7 +5194,8 @@
           "state": "default",
           "width": 510,
           "height": 147,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5058,7 +5203,8 @@
           "state": "default",
           "width": 510,
           "height": 147,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -5079,7 +5225,8 @@
           "state": "default",
           "width": 562,
           "height": 147,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5087,7 +5234,8 @@
           "state": "default",
           "width": 562,
           "height": 147,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -5103,8 +5251,8 @@
   "library": [
     "custom Canvas drawing + custom layouts"
   ],
-  "renderer": "compose-preview 0.19.57",
-  "generatedAt": "2026-08-11T08:54:20.545Z",
+  "renderer": "compose-preview 0.19.61",
+  "generatedAt": "2026-08-11T23:37:09.701Z",
   "display": {
     "surface": "light",
     "hero": "Home/Sleep dashboard"
