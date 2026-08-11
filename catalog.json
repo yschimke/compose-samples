@@ -5103,8 +5103,8 @@
   "library": [
     "custom Canvas drawing + custom layouts"
   ],
-  "renderer": "compose-preview 0.19.51",
-  "generatedAt": "2026-08-09T09:30:08.907Z",
+  "renderer": "compose-preview 0.19.56",
+  "generatedAt": "2026-08-11T08:17:48.292Z",
   "display": {
     "surface": "light",
     "hero": "Home/Sleep dashboard"
