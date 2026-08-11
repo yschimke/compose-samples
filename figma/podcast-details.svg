@@ -9,7 +9,7 @@
         <g id="ReusableComposeNode">
           <g id="ReusableComposeNode">
             <g id="Row">
-              <image href="podcast-details.figma-raster/806.png" x="32" y="61" width="390" height="91"/>
+              <image href="podcast-details.figma-raster/884.png" x="32" y="61" width="390" height="91"/>
             </g>
             <g id="Row">
               <rect x="24" y="161" width="406" height="104" rx="52" ry="52" fill="#F0FCB0"/>
@@ -25,13 +25,15 @@
               </g>
             </g>
             <g id="Row">
+              <g opacity="0.99">
                 <rect x="25" y="273" width="404" height="103" rx="51.72" ry="51.72" fill="#261E18"/>
+              </g>
               <g id="AsyncImageKt">
-                <image href="podcast-details.figma-raster/819.png" x="53" y="293" width="64" height="64"/>
+                <image href="podcast-details.figma-raster/897.png" x="53" y="293" width="64" height="64"/>
               </g>
-              <g id="Spacer" opacity="0.99">
+              <g id="Spacer" opacity="0.98">
               </g>
-              <g id="Column" opacity="0.99">
+              <g id="Column" opacity="0.98">
                 <g id="Empty">
                   <text font-size="23.87" font-family="Montserrat" font-weight="500" letter-spacing="0.99" fill="#E1DAE5"><tspan x="129" y="319" textLength="269" lengthAdjust="spacing">Episode 140: Lorem…</tspan></text>
                 </g>
@@ -45,7 +47,7 @@
           </g>
           <g id="ReusableComposeNode">
             <g id="ReusableComposeNode">
-              <image href="podcast-details.figma-raster/801.png" x="432" y="171" width="22" height="112"/>
+              <image href="podcast-details.figma-raster/879.png" x="432" y="171" width="22" height="112"/>
             </g>
           </g>
         </g>

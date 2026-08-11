@@ -89,12 +89,32 @@
       "redlines": [
         {
           "bounds": {
+            "x": 154,
+            "y": 91,
+            "width": 145,
+            "height": 38
+          },
+          "padding": {
+            "start": 14,
+            "top": 16,
+            "end": 14,
+            "bottom": 12
+          }
+        },
+        {
+          "bounds": {
             "x": 24,
             "y": 161,
             "width": 406,
             "height": 104
           },
           "role": "Button",
+          "padding": {
+            "start": 14,
+            "top": 6,
+            "end": 14,
+            "bottom": 6
+          },
           "cornerRadius": 26
         },
         {
@@ -222,12 +242,32 @@
       "redlines": [
         {
           "bounds": {
+            "x": 58,
+            "y": 91,
+            "width": 337,
+            "height": 38
+          },
+          "padding": {
+            "start": 14,
+            "top": 16,
+            "end": 14,
+            "bottom": 12
+          }
+        },
+        {
+          "bounds": {
             "x": 24,
             "y": 161,
             "width": 406,
             "height": 104
           },
           "role": "Button",
+          "padding": {
+            "start": 14,
+            "top": 6,
+            "end": 14,
+            "bottom": 6
+          },
           "cornerRadius": 26
         },
         {
@@ -238,6 +278,12 @@
             "height": 103
           },
           "role": "Button",
+          "padding": {
+            "start": 14,
+            "top": 6,
+            "end": 14,
+            "bottom": 6
+          },
           "cornerRadius": 26
         },
         {
@@ -351,12 +397,32 @@
       "redlines": [
         {
           "bounds": {
+            "x": 135,
+            "y": 91,
+            "width": 184,
+            "height": 38
+          },
+          "padding": {
+            "start": 14,
+            "top": 16,
+            "end": 14,
+            "bottom": 12
+          }
+        },
+        {
+          "bounds": {
             "x": 24,
             "y": 161,
             "width": 406,
             "height": 104
           },
           "role": "Button",
+          "padding": {
+            "start": 14,
+            "top": 6,
+            "end": 14,
+            "bottom": 6
+          },
           "cornerRadius": 26
         },
         {
@@ -376,6 +442,12 @@
             "height": 103
           },
           "role": "Button",
+          "padding": {
+            "start": 14,
+            "top": 6,
+            "end": 14,
+            "bottom": 6
+          },
           "cornerRadius": 26
         },
         {
@@ -386,6 +458,20 @@
             "height": 64
           },
           "cornerRadius": 16
+        },
+        {
+          "bounds": {
+            "x": 184,
+            "y": 409,
+            "width": 85,
+            "height": 29
+          },
+          "padding": {
+            "start": 14,
+            "top": 16,
+            "end": 14,
+            "bottom": 12
+          }
         }
       ],
       "section": "Screens",
@@ -487,12 +573,32 @@
       "redlines": [
         {
           "bounds": {
+            "x": 102,
+            "y": 91,
+            "width": 250,
+            "height": 38
+          },
+          "padding": {
+            "start": 14,
+            "top": 16,
+            "end": 14,
+            "bottom": 12
+          }
+        },
+        {
+          "bounds": {
             "x": 24,
             "y": 161,
             "width": 406,
             "height": 104
           },
           "role": "Button",
+          "padding": {
+            "start": 14,
+            "top": 6,
+            "end": 14,
+            "bottom": 6
+          },
           "cornerRadius": 26
         },
         {
@@ -503,6 +609,12 @@
             "height": 103
           },
           "role": "Button",
+          "padding": {
+            "start": 14,
+            "top": 6,
+            "end": 14,
+            "bottom": 6
+          },
           "cornerRadius": 26
         },
         {
@@ -641,6 +753,20 @@
         }
       ],
       "redlines": [
+        {
+          "bounds": {
+            "x": 58,
+            "y": 91,
+            "width": 337,
+            "height": 38
+          },
+          "padding": {
+            "start": 14,
+            "top": 16,
+            "end": 14,
+            "bottom": 12
+          }
+        },
         {
           "bounds": {
             "x": 48,
@@ -825,6 +951,34 @@
       "redlines": [
         {
           "bounds": {
+            "x": 172,
+            "y": 91,
+            "width": 109,
+            "height": 38
+          },
+          "padding": {
+            "start": 14,
+            "top": 16,
+            "end": 14,
+            "bottom": 12
+          }
+        },
+        {
+          "bounds": {
+            "x": 48,
+            "y": 161,
+            "width": 358,
+            "height": 104
+          },
+          "padding": {
+            "start": 11.803999,
+            "top": 0,
+            "end": 11.803999,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
             "x": 48,
             "y": 161,
             "width": 245,
@@ -851,6 +1005,12 @@
             "height": 98
           },
           "role": "Button",
+          "padding": {
+            "start": 14,
+            "top": 6,
+            "end": 14,
+            "bottom": 6
+          },
           "cornerRadius": 26
         },
         {
@@ -930,6 +1090,12 @@
             "height": 104
           },
           "role": "Button",
+          "padding": {
+            "start": 14,
+            "top": 6,
+            "end": 14,
+            "bottom": 6
+          },
           "cornerRadius": 26
         },
         {
@@ -1023,6 +1189,12 @@
             "height": 104
           },
           "role": "Button",
+          "padding": {
+            "start": 14,
+            "top": 6,
+            "end": 14,
+            "bottom": 6
+          },
           "cornerRadius": 26
         },
         {
@@ -1049,8 +1221,8 @@
     "androidx.wear.compose:compose-material3",
     "androidx.wear.compose:compose-foundation"
   ],
-  "renderer": "compose-preview 0.19.56",
-  "generatedAt": "2026-08-11T08:19:48.405Z",
+  "renderer": "compose-preview 0.19.57",
+  "generatedAt": "2026-08-11T08:54:51.642Z",
   "display": {
     "surface": "dark",
     "hero": "Podcast/Screen"
@@ -1062,6 +1234,22 @@
       "name": "Dark",
       "group": "Jetcaster Wear",
       "dark": true
+    }
+  ],
+  "failures": [
+    {
+      "id": "render-failed--mainactivity--activity-mainactivity",
+      "componentId": "MainActivity",
+      "preview": "activity__MainActivity",
+      "phase": "render",
+      "errorClass": "java.lang.IllegalStateException",
+      "message": "Hilt Activity must be attached to an @HiltAndroidApp Application. Did you forget to specify your Application's class name in your manifest's <application />'s android:name attribute?",
+      "stackTrace": "java.lang.IllegalStateException: Hilt Activity must be attached to an @HiltAndroidApp Application. Did you forget to specify your Application's class name in your manifest's <application />'s android:name attribute?\n\tat dagger.hilt.android.internal.managers.ActivityComponentManager.createComponent(ActivityComponentManager.java:102)\n\tat dagger.hilt.android.internal.managers.ActivityComponentManager.generatedComponent(ActivityComponentManager.java:71)\n\tat com.example.jetcaster.Hilt_MainActivity.generatedComponent(Hilt_MainActivity.java:66)\n\tat com.example.jetcaster.Hilt_MainActivity.inject(Hilt_MainActivity.java:88)\n\tat com.example.jetcaster.Hilt_MainActivity$1.onContextAvailable(Hilt_MainActivity.java:42)\n\tat androidx.activity.contextaware.ContextAwareHelper.dispatchOnContextAvailable(ContextAwareHelper.kt:78)\n\tat androidx.activity.ComponentActivity.onCreate(ComponentActivity.kt:342)\n\tat com.example.jetcaster.Hilt_MainActivity.onCreate(Hilt_MainActivity.java:54)\n\tat com.example.jetcaster.MainActivity.onCreate(MainActivity.kt:31)\n\tat android.app.Activity.performCreate(Activity.java:9002)\n\tat android.app.Activity.performCreate(Activity.java:8980)\n\tat android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1526)\n\tat org.robolectric.android.internal.RoboMonitoringInstrumentation.callActivityOnCreate(RoboMonitoringInstrumentation.java:382)\n\tat org.robolectric.android.controller.ActivityController.lambda$create$0(ActivityController.java:136)\n\tat org.robolectric.shadows.ShadowPausedLooper.runPaused(ShadowPausedLooper.java:257)\n\tat org.robolectric.android.controller.ActivityController.create(ActivityController.java:134)\n\tat org.robolectric.android.controller.ActivityController.create(ActivityController.java:144)\n\tat org.robolectric.android.controller.ActivityController.setup(ActivityController.java:340)\n\tat ee.schimke.composeai.renderer.AppTourRenderer$TourSession.launchIntent(AppTourRenderer.kt:196)\n\tat ee.schimke.composeai.renderer.AppTourRenderer$TourSession.launch(AppTourRenderer.kt:122)\n\tat ee.schimke.composeai.renderer.AppTourRenderer$render$statement$1.evaluate(AppTourRenderer.kt:75)\n\tat androidx.compose.ui.test.junit4.AndroidComposeTestRule$apply$testWithDisposal$1.evaluate(AndroidComposeTestRule.android.kt:421)\n\tat androidx.compose.ui.test.junit4.AndroidComposeTestRule$apply$1$evaluate$1.invokeSuspend(AndroidComposeTestRule.android.kt:441)\n\tat androidx.compose.ui.test.junit4.AndroidComposeTestRule$apply$1$evaluate$1.invoke(AndroidComposeTestRule.android.kt)\n\tat androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1$1$1$1.invokeSuspend(ComposeUiTest.android.kt:689)\n\tat androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1$1$1$1.invoke(ComposeUiTest.android.kt)\n\tat androidx.compose.ui.test.IdlingStrategy.withStrategy$suspendImpl(IdlingStrategy.android.kt:55)\n\tat androidx.compose.ui.test.IdlingStrategy.withStrategy(IdlingStrategy.android.kt)\n\tat androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1.invokeSuspend(ComposeUiTest.android.kt:686)\n\tat androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1.invoke(ComposeUiTest.android.kt)\n\tat kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt$runTest$2$1$1.invokeSuspend(TestBuilders.kt:317)\n\tat kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)\n\tat kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)\n\tat kotlinx.coroutines.test.TestDispatcher.processEvent$kotlinx_coroutines_test(TestDispatcher.kt:24)\n\tat kotlinx.coroutines.test.TestCoroutineScheduler.tryRunNextTaskUnless$kotlinx_coroutines_test(TestCoroutineScheduler.kt:99)\n\tat kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt$runTest$2$1$workRunner$1.invokeSuspend(TestBuilders.kt:326)\n\tat kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)\n\tat kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)\n\tat kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:263)\n\tat kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:94)\n\tat kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking(Builders.kt:70)\n\tat kotlinx.coroutines.BuildersKt.runBlocking(Unknown Source)\n\tat kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking$default(Builders.kt:48)\n\tat kotlinx.coroutines.BuildersKt.runBlocking$default(Unknown Source)\n\tat kotlinx.coroutines.test.TestBuildersJvmKt.createTestResult(TestBuildersJvm.kt:10)\n\tat kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt.runTest-8Mi8wO0(TestBuilders.kt:309)\n\tat kotlinx.coroutines.test.TestBuildersKt.runTest-8Mi8wO0(Unknown Source)\n\tat kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt.runTest-8Mi8wO0(TestBuilders.kt:167)\n\tat kotlinx.coroutines.test.TestBuildersKt.runTest-8Mi8wO0(Unknown Source)\n\tat androidx.compose.ui.test.AndroidComposeUiTestEnvironment.runTest(ComposeUiTest.android.kt:665)\n\tat androidx.compose.ui.test.junit4.AndroidComposeTestRule$apply$1.evaluate(AndroidComposeTestRule.android.kt:441)\n\tat ee.schimke.composeai.renderer.AppTourRenderer.render(AppTourRenderer.kt:99)\n\tat ee.schimke.composeai.renderer.RobolectricRenderTestBase.renderPreview(RobolectricRenderTest.kt:650)\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.robolectric.RobolectricTestRunner$HelperTestRunner$1.evaluate(RobolectricTestRunner.java:542)\n\tat org.robolectric.internal.SandboxTestRunner.lambda$executeInSandbox$4(SandboxTestRunner.java:429)\n\tat org.robolectric.internal.SandboxTestRunner.runInSandbox(SandboxTestRunner.java:455)\n\tat org.robolectric.internal.SandboxTestRunner.executeInSandbox(SandboxTestRunner.java:420)\n\tat org.robolectric.internal.SandboxTestRunner$5.evaluate(SandboxTestRunner.java:405)\n\tat org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)\n\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)\n\tat org.robolectric.internal.SandboxTestRunner.access$000(SandboxTestRunner.java:64)\n\tat org.robolectric.internal.SandboxTestRunner$4.evaluate(SandboxTestRunner.java:294)\n\tat org.robolectric.internal.SandboxTestRunner$2.evaluate(SandboxTestRunner.java:260)\n\tat org.robolectric.internal.SandboxTestRunner$3.lambda$evaluate$0(SandboxTestRunner.java:280)\n\tat org.robolectric.internal.bytecode.Sandbox.lambda$runOnMainThreadWithClassLoader$1(Sandbox.java:112)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n",
+      "topAppFrame": {
+        "file": "ActivityComponentManager.java",
+        "line": 102,
+        "function": "createComponent"
+      }
     }
   ],
   "liveBundle": {

@@ -9,12 +9,12 @@
         <g id="ReusableComposeNode">
           <g id="ReusableComposeNode">
             <g id="Row">
-              <image href="ideal__no-subscriptions__largeround.figma-raster/222.png" x="24" y="60" width="406" height="191"/>
+              <image href="ideal__no-subscriptions__largeround.figma-raster/97.png" x="24" y="60" width="406" height="191"/>
             </g>
             <g id="Row">
                 <rect x="24" y="259" width="406" height="104" rx="52" ry="52" fill="#261E18"/>
               <g id="AsyncImageKt">
-                <image href="ideal__no-subscriptions__largeround.figma-raster/227.png" x="52" y="279" width="64" height="64"/>
+                <image href="ideal__no-subscriptions__largeround.figma-raster/102.png" x="52" y="279" width="64" height="64"/>
               </g>
               <g id="Spacer">
               </g>
@@ -23,20 +23,22 @@
               </g>
             </g>
             <g id="Row">
-                <rect x="69" y="370" width="315" height="81" rx="40.33" ry="40.33" fill="#261E18"/>
+              <g opacity="0.69">
+                <rect x="70" y="371" width="314" height="81" rx="40.33" ry="40.33" fill="#261E18"/>
+              </g>
               <g id="AsyncImageKt">
-                <image href="ideal__no-subscriptions__largeround.figma-raster/235.png" x="91" y="387" width="50" height="49"/>
+                <image href="ideal__no-subscriptions__largeround.figma-raster/110.png" x="91" y="387" width="50" height="49"/>
               </g>
-              <g id="Spacer" opacity="0.69">
+              <g id="Spacer" opacity="0.48">
               </g>
-              <g id="Empty" opacity="0.69">
+              <g id="Empty" opacity="0.48">
                 <text font-size="18.61" font-family="Montserrat" font-weight="500" letter-spacing="0.77" fill="#E1DAE5"><tspan x="150" y="406" textLength="247" lengthAdjust="spacing">Google Developers</tspan><tspan x="150" y="431" textLength="103" lengthAdjust="spacing">podcast</tspan></text>
               </g>
             </g>
           </g>
           <g id="ReusableComposeNode">
             <g id="ReusableComposeNode">
-              <image href="ideal__no-subscriptions__largeround.figma-raster/217.png" x="432" y="171" width="22" height="112"/>
+              <image href="ideal__no-subscriptions__largeround.figma-raster/92.png" x="432" y="171" width="22" height="112"/>
             </g>
           </g>
         </g>

@@ -9,7 +9,7 @@
         <g id="ReusableComposeNode">
           <g id="ReusableComposeNode">
             <g id="Row">
-              <image href="ideal__default__largeround.figma-raster/773.png" x="145" y="61" width="164" height="91"/>
+              <image href="ideal__default__largeround.figma-raster/726.png" x="145" y="61" width="164" height="91"/>
             </g>
             <g id="ButtonGroupKt">
               <g id="Box">
@@ -30,13 +30,15 @@
               </g>
             </g>
             <g id="Row">
+              <g opacity="0.92">
                 <rect x="35" y="305" width="384" height="98" rx="49.18" ry="49.18" fill="#261E18"/>
+              </g>
               <g id="AsyncImageKt">
-                <image href="ideal__default__largeround.figma-raster/785.png" x="61" y="324" width="61" height="60"/>
+                <image href="ideal__default__largeround.figma-raster/738.png" x="61" y="324" width="61" height="60"/>
               </g>
-              <g id="Spacer" opacity="0.92">
+              <g id="Spacer" opacity="0.86">
               </g>
-              <g id="Column" opacity="0.92">
+              <g id="Column" opacity="0.86">
                 <g id="Empty">
                   <text font-size="22.7" font-family="Montserrat" font-weight="500" letter-spacing="0.94" fill="#E1DAE5"><tspan x="133" y="349" textLength="269" lengthAdjust="spacing">Episode 140: Lorem…</tspan></text>
                 </g>
@@ -50,7 +52,7 @@
           </g>
           <g id="ReusableComposeNode">
             <g id="ReusableComposeNode">
-              <image href="ideal__default__largeround.figma-raster/768.png" x="432" y="171" width="22" height="112"/>
+              <image href="ideal__default__largeround.figma-raster/721.png" x="432" y="171" width="22" height="112"/>
             </g>
           </g>
         </g>

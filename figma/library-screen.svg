@@ -9,7 +9,7 @@
         <g id="ReusableComposeNode">
           <g id="ReusableComposeNode">
             <g id="Row">
-              <image href="library-screen.figma-raster/700.png" x="109" y="61" width="237" height="91"/>
+              <image href="library-screen.figma-raster/848.png" x="109" y="61" width="237" height="91"/>
             </g>
             <g id="Row">
               <rect x="24" y="161" width="406" height="104" rx="52" ry="52" fill="#261E18"/>
@@ -27,7 +27,7 @@
                 <text x="128" y="223.28" font-size="24" font-family="Montserrat" font-weight="500" letter-spacing="1" fill="#E1DAE5">Latest episodes</text>
               </g>
             </g>
-            <g id="Row">
+            <g id="Row" opacity="0.99">
               <rect x="25" y="273" width="404" height="103" rx="51.72" ry="51.72" fill="#261E18"/>
               <g opacity="0.99">
                 <g id="Box">
@@ -46,12 +46,12 @@
               </g>
             </g>
             <g id="Row">
-              <image href="library-screen.figma-raster/721.png" x="164" y="386" width="126" height="70"/>
+              <image href="library-screen.figma-raster/869.png" x="164" y="386" width="126" height="70"/>
             </g>
           </g>
           <g id="ReusableComposeNode">
             <g id="ReusableComposeNode">
-              <image href="library-screen.figma-raster/695.png" x="432" y="171" width="22" height="112"/>
+              <image href="library-screen.figma-raster/843.png" x="432" y="171" width="22" height="112"/>
             </g>
           </g>
         </g>

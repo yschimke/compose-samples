@@ -9,7 +9,7 @@
         <g id="ReusableComposeNode">
           <g id="ReusableComposeNode">
             <g id="Row">
-              <image href="ideal__default__smallround__device-smallround.figma-raster/150.png" x="69" y="51" width="247" height="95"/>
+              <image href="ideal__default__smallround__device-smallround.figma-raster/206.png" x="69" y="51" width="247" height="95"/>
             </g>
             <g id="Row">
               <rect x="20" y="154" width="344" height="104" rx="52" ry="52" fill="#261E18"/>
@@ -27,7 +27,7 @@
                 <text x="124" y="216.28" font-size="24" font-family="Montserrat" font-weight="500" letter-spacing="1" fill="#E1DAE5">Latest episodes</text>
               </g>
             </g>
-            <g id="Row">
+            <g id="Row" opacity="0.94">
               <rect x="26" y="266" width="332" height="100" rx="50.18" ry="50.18" fill="#261E18"/>
               <g opacity="0.94">
                 <g id="Box">
@@ -46,12 +46,12 @@
               </g>
             </g>
             <g id="Row">
-              <image href="ideal__default__smallround__device-smallround.figma-raster/171.png" x="132" y="376" width="120" height="67"/>
+              <image href="ideal__default__smallround__device-smallround.figma-raster/227.png" x="132" y="376" width="120" height="67"/>
             </g>
           </g>
           <g id="ReusableComposeNode">
             <g id="ReusableComposeNode">
-              <image href="ideal__default__smallround__device-smallround.figma-raster/145.png" x="363" y="137" width="21" height="110"/>
+              <image href="ideal__default__smallround__device-smallround.figma-raster/201.png" x="363" y="137" width="21" height="110"/>
             </g>
           </g>
         </g>
