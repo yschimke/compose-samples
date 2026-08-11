@@ -31,7 +31,7 @@
                       </g>
                     </g>
                     <g id="Box">
-                      <rect x="819" y="306" width="105" height="105" rx="52.5" ry="52.5" fill="#F3E6DA"/>
+                      <rect x="808" y="295" width="126" height="126" rx="63" ry="63" fill="#F3E6DA"/>
                       <g id="BoxKt">
                         <g transform="translate(840 327) scale(0.06 0.06)">
                           <path d="M354 673 L480 597 L606 674 L573 530 L684 434 L538 421 L480 285 L422 420 L276 433 L387 530 L354 673 Z M233 840 L298 559 L80 370 L368 345 L480 80 L592 345 L880 370 L662 559 L727 840 L480 691 L233 840 Z M480 490 L480 490 L480 490 L480 490 L480 490 L480 490 L480 490 L480 490 L480 490 Z" fill="#817567"/>
@@ -52,7 +52,7 @@
                 <g id="Column">
                   <g id="Row">
                     <g id="ImageKt">
-                      <image href="ideal__selection__compact.figma-raster/436.png" x="116" y="750" width="105" height="105"/>
+                      <image href="ideal__selection__compact.figma-raster/855.png" x="116" y="750" width="105" height="105"/>
                     </g>
                     <g id="Column">
                       <g id="Empty">
@@ -63,7 +63,7 @@
                       </g>
                     </g>
                     <g id="Box">
-                      <rect x="819" y="761" width="105" height="105" rx="52.5" ry="52.5" fill="#F3E6DA"/>
+                      <rect x="808" y="750" width="126" height="126" rx="63" ry="63" fill="#F3E6DA"/>
                       <g id="BoxKt">
                         <g transform="translate(840 782) scale(0.06 0.06)">
                           <path d="M354 673 L480 597 L606 674 L573 530 L684 434 L538 421 L480 285 L422 420 L276 433 L387 530 L354 673 Z M233 840 L298 559 L80 370 L368 345 L480 80 L592 345 L880 370 L662 559 L727 840 L480 691 L233 840 Z M480 490 L480 490 L480 490 L480 490 L480 490 L480 490 L480 490 L480 490 L480 490 Z" fill="#817567"/>
@@ -100,7 +100,7 @@
                       </g>
                     </g>
                     <g id="Box">
-                      <rect x="819" y="1216" width="105" height="105" rx="52.5" ry="52.5" fill="#F3E6DA"/>
+                      <rect x="808" y="1205" width="126" height="126" rx="63" ry="63" fill="#F3E6DA"/>
                       <g id="BoxKt">
                         <g transform="translate(840 1237) scale(0.06 0.06)">
                           <path d="M354 673 L480 597 L606 674 L573 530 L684 434 L538 421 L480 285 L422 420 L276 433 L387 530 L354 673 Z M233 840 L298 559 L80 370 L368 345 L480 80 L592 345 L880 370 L662 559 L727 840 L480 691 L233 840 Z M480 490 L480 490 L480 490 L480 490 L480 490 L480 490 L480 490 L480 490 L480 490 Z" fill="#817567"/>
@@ -121,7 +121,7 @@
                 <g id="Column">
                   <g id="Row">
                     <g id="ImageKt">
-                      <image href="ideal__selection__compact.figma-raster/467.png" x="116" y="1604" width="105" height="105"/>
+                      <image href="ideal__selection__compact.figma-raster/886.png" x="116" y="1604" width="105" height="105"/>
                     </g>
                     <g id="Column">
                       <g id="Empty">
@@ -132,7 +132,7 @@
                       </g>
                     </g>
                     <g id="Box">
-                      <rect x="819" y="1615" width="105" height="105" rx="52.5" ry="52.5" fill="#F3E6DA"/>
+                      <rect x="808" y="1604" width="126" height="126" rx="63" ry="63" fill="#F3E6DA"/>
                       <g id="BoxKt">
                         <g transform="translate(840 1636) scale(0.06 0.06)">
                           <path d="M354 673 L480 597 L606 674 L573 530 L684 434 L538 421 L480 285 L422 420 L276 433 L387 530 L354 673 Z M233 840 L298 559 L80 370 L368 345 L480 80 L592 345 L880 370 L662 559 L727 840 L480 691 L233 840 Z M480 490 L480 490 L480 490 L480 490 L480 490 L480 490 L480 490 L480 490 L480 490 Z" fill="#817567"/>
@@ -155,7 +155,7 @@
               <rect x="63" y="63" width="924" height="148" rx="84" ry="84" fill="#F3E6DA"/>
             <g clip-path="url(#clip-2)">
               <g id="ReusableComposeNode">
-                <image href="ideal__selection__compact.figma-raster/398.png" x="63" y="63" width="924" height="148"/>
+                <image href="ideal__selection__compact.figma-raster/817.png" x="63" y="63" width="924" height="148"/>
               </g>
             </g>
           </g>

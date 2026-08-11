@@ -11,7 +11,7 @@
             <rect x="21" y="21" width="1008" height="2058" fill="#FCEFE2"/>
           <g clip-path="url(#clip-1)">
             <g id="Box">
-              <image href="ideal__default__compact.figma-raster/149.png" x="21" y="21" width="1008" height="168"/>
+              <image href="ideal__default__compact.figma-raster/900.png" x="21" y="21" width="1008" height="168"/>
               <g id="TopAppBar">
                 <g id="Box">
                   <rect x="64" y="53" width="105" height="105" rx="52.5" ry="52.5" fill="#FFF8F4"/>
@@ -41,7 +41,7 @@
               <g id="Column">
                 <g id="Row">
                   <g id="ImageKt">
-                    <image href="ideal__default__compact.figma-raster/168.png" x="116" y="253" width="105" height="105"/>
+                    <image href="ideal__default__compact.figma-raster/919.png" x="116" y="253" width="105" height="105"/>
                   </g>
                   <g id="Column">
                     <g id="Empty">
@@ -52,7 +52,7 @@
                     </g>
                   </g>
                   <g id="Box">
-                    <rect x="819" y="264" width="105" height="105" rx="52.5" ry="52.5" fill="#F9ECDF"/>
+                    <rect x="808" y="253" width="126" height="126" rx="63" ry="63" fill="#F9ECDF"/>
                     <g id="BoxKt">
                       <g transform="translate(840 285) scale(0.06 0.06)">
                         <path d="M354 673 L480 597 L606 674 L573 530 L684 434 L538 421 L480 285 L422 420 L276 433 L387 530 L354 673 Z M233 840 L298 559 L80 370 L368 345 L480 80 L592 345 L880 370 L662 559 L727 840 L480 691 L233 840 Z M480 490 L480 490 L480 490 L480 490 L480 490 L480 490 L480 490 L480 490 L480 490 Z" fill="#817567"/>
@@ -87,7 +87,7 @@
               <g id="Column">
                 <g id="Row">
                   <g id="ImageKt">
-                    <image href="ideal__default__compact.figma-raster/188.png" x="116" y="1356" width="105" height="105"/>
+                    <image href="ideal__default__compact.figma-raster/939.png" x="116" y="1356" width="105" height="105"/>
                   </g>
                   <g id="Column">
                     <g id="Empty">
@@ -98,7 +98,7 @@
                     </g>
                   </g>
                   <g id="Box">
-                    <rect x="819" y="1367" width="105" height="105" rx="52.5" ry="52.5" fill="#F9ECDF"/>
+                    <rect x="808" y="1356" width="126" height="126" rx="63" ry="63" fill="#F9ECDF"/>
                     <g id="BoxKt">
                       <g transform="translate(840 1388) scale(0.06 0.06)">
                         <path d="M354 673 L480 597 L606 674 L573 530 L684 434 L538 421 L480 285 L422 420 L276 433 L387 530 L354 673 Z M233 840 L298 559 L80 370 L368 345 L480 80 L592 345 L880 370 L662 559 L727 840 L480 691 L233 840 Z M480 490 L480 490 L480 490 L480 490 L480 490 L480 490 L480 490 L480 490 L480 490 Z" fill="#817567"/>
@@ -132,7 +132,7 @@
               <g id="Column">
                 <g id="Row">
                   <g id="ImageKt">
-                    <image href="ideal__default__compact.figma-raster/208.png" x="116" y="1955" width="105" height="105"/>
+                    <image href="ideal__default__compact.figma-raster/959.png" x="116" y="1955" width="105" height="105"/>
                   </g>
                   <g id="Column">
                     <g id="Empty">
@@ -143,7 +143,7 @@
                     </g>
                   </g>
                   <g id="Box">
-                    <rect x="819" y="1966" width="105" height="105" rx="52.5" ry="52.5" fill="#F9ECDF"/>
+                    <rect x="808" y="1955" width="126" height="126" rx="63" ry="63" fill="#F9ECDF"/>
                     <g id="BoxKt">
                       <g transform="translate(840 1987) scale(0.06 0.06)">
                         <path d="M354 673 L480 597 L606 674 L573 530 L684 434 L538 421 L480 285 L422 420 L276 433 L387 530 L354 673 Z M233 840 L298 559 L80 370 L368 345 L480 80 L592 345 L880 370 L662 559 L727 840 L480 691 L233 840 Z M480 490 L480 490 L480 490 L480 490 L480 490 L480 490 L480 490 L480 490 L480 490 Z" fill="#817567"/>
