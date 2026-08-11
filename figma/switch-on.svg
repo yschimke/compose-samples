@@ -2,9 +2,10 @@
 <g transform="translate(0, 0)">
   <g id="Root">
     <g id="Box">
-      <rect x="42" y="63" width="137" height="84" rx="42" ry="42" fill="#BF0031"/>
+        <rect x="42" y="63" width="137" height="84" rx="42" ry="42" fill="#BF0031"/>
       <g id="Box">
-        <rect x="105" y="74" width="63" height="63" rx="31.5" ry="31.5" fill="#FFFFFF"/>
+        <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAA/CAYAAABXXxDfAAAEQUlEQVR4XuWbSUwTURzGnxFjPEjEuMQYowej3qwKkYOIiBLlpDeNxgsqRmOiF+PFKLhE4oV4cIG4xOjFLUbUmGjY2opEVjlYVDaVRSzSglig0L9+LymB/7R0aAu0877kS9M3M+99P/KY6VtGFIl1NJmuSNhHjWeuUevNx9T55C05Siup71MjDdq7CcInvqMcx1tvPJLnV8Tv09QVHpsKLGL1XAFpD4buD+v3Usvl2+Rq/CEBgxWuRz0f1u3RtBGKC4XJZhZrV4UN3jwviZrO3SBXw3fOEBah3qaz18kct1nTdpB+FTJ8yZxEajh9ldzdPTzvpMj920lfT+XKdnmWiTpo+OKYeKrPvEADrZ0835QI7doOZcscPJteBwX/btlOcpbX8TzTIuRAHp5RjycMX7vjGA12OXiGaRXyIBfPGsj64WduoJZLt4g8Ht52ZOh/ruYL+VQ0w0d2P9YFb45Lpu7iCt5cRMr+yiLzcgZfDghfkbCfXC1tvI2IFvIiN2fhHhe+OCaBHJZqXndUyGGukvk5k274tvynvM6oEn5ScyZd8PjhYgSBg7ONC1+TdpQ8w8O8nqgUOPw9BjXwJbM30sDPLl5HVGug/Zfk4qwaeKN0dy5f3X8MvGXhVnI7e/l1hpDb0UOlsUn+4b/nPuDXGEqYG/AJX7Y8nYZd/fx8Qwl81sXbtPDtd5/zcw0pTJNp4PvbpmdcPtXqb+0cC1+ZeICfY2iBdwQeNwKV5L3xSfg+WxM/bmiBV8KXr9nNjymhshXpJOp2neTlSgjc4suJK7xcCYFbGP1XnT+BW/x6VsTLlRC4hfP9R16uhMAtXM3RNTkZLoFbeNxuXq6EwC0GOuy8XAmBW/TW1PNyJQRu0fXaysuVkLzbqzKO58K4XmA3hYoCt6g/cpGXKyFwC9UmMrwCtxzPqzKF5RUWMUYmM/DPr5IwqBmBx1qWShozh1c8K0GZru/t8iPwKnV9n/P2lkWpSqzYYD1SAw8bfQrb71odjFVMrGYaUVh9Lp27yT88rOz6PCx3ZhhsjI+dJrp2ZsB47htpTw72GHFGv/CwUbo/5uc5W0B4GPvYolmjn+m+PC683IFpruJ1RoWwczSkHZiwZUEKub6187ojWsiL3JyFOyA8bF2ynRzWGt5GRMpZVkvm+Vs0DL6sCx7G4Kfj/kveVkQJe4WRk2f3Z93wXn8+nkOeoSHe7rQKeWwZWZqsgTxheLgmNTNiNivipcTqlMOajHocFDxsWZwqBwpDvX08z5QI7bbk3JE5eDa9Dhrea/P85Cn9I3ih0S7PMjGbXoQM7zXCYC78T+3kLH+hXtQfOrT0p/diZWzY4EfbujRNvnBoLyih4b8uzqFLuM7+olTOr6M+3kbwNr2Z1BeJRxuvfVYlZ8i7cXN2HnXcKyBHSaVcH4fwie8obz6fR7aDWfL8cLwuyl0oTDkPhZgpwf/rH3bCtBAWdM/AAAAAAElFTkSuQmCC" x="105" y="74" width="63" height="63"/>
+          <rect x="105" y="74" width="63" height="63" rx="31.5" ry="31.5" fill="#FFFFFF"/>
       </g>
     </g>
   </g>

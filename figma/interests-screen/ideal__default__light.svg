@@ -45,7 +45,7 @@
                   <g id="Column">
                     <g id="Row">
                       <g id="ImageKt">
-                        <image href="ideal__default__light.figma-raster/3313.png" x="42" y="444" width="147" height="147"/>
+                        <image href="ideal__default__light.figma-raster/3784.png" x="42" y="444" width="147" height="147"/>
                       </g>
                       <g id="Empty">
                         <text x="231" y="531.99" font-size="42" font-family="Montserrat" font-weight="500" letter-spacing="0.39" fill="#1A1B20">Jetpack Compose</text>
@@ -70,7 +70,7 @@
                   <g id="Column">
                     <g id="Row">
                       <g id="ImageKt">
-                        <image href="ideal__default__light.figma-raster/3321.png" x="42" y="636" width="147" height="147"/>
+                        <image href="ideal__default__light.figma-raster/3792.png" x="42" y="636" width="147" height="147"/>
                       </g>
                       <g id="Empty">
                         <text x="231" y="723.99" font-size="42" font-family="Montserrat" font-weight="500" letter-spacing="0.39" fill="#1A1B20">Kotlin</text>
@@ -95,7 +95,7 @@
                   <g id="Column">
                     <g id="Row">
                       <g id="ImageKt">
-                        <image href="ideal__default__light.figma-raster/3329.png" x="42" y="828" width="147" height="147"/>
+                        <image href="ideal__default__light.figma-raster/3800.png" x="42" y="828" width="147" height="147"/>
                       </g>
                       <g id="Empty">
                         <text x="231" y="915.99" font-size="42" font-family="Montserrat" font-weight="500" letter-spacing="0.39" fill="#1A1B20">Jetpack</text>
@@ -125,7 +125,7 @@
                   <g id="Column">
                     <g id="Row">
                       <g id="ImageKt">
-                        <image href="ideal__default__light.figma-raster/3339.png" x="42" y="1167" width="147" height="147"/>
+                        <image href="ideal__default__light.figma-raster/3810.png" x="42" y="1167" width="147" height="147"/>
                       </g>
                       <g id="Empty">
                         <text x="231" y="1254.99" font-size="42" font-family="Montserrat" font-weight="500" letter-spacing="0.39" fill="#1A1B20">Kotlin</text>
@@ -150,7 +150,7 @@
                   <g id="Column">
                     <g id="Row">
                       <g id="ImageKt">
-                        <image href="ideal__default__light.figma-raster/3347.png" x="42" y="1359" width="147" height="147"/>
+                        <image href="ideal__default__light.figma-raster/3818.png" x="42" y="1359" width="147" height="147"/>
                       </g>
                       <g id="Empty">
                         <text x="231" y="1446.99" font-size="42" font-family="Montserrat" font-weight="500" letter-spacing="0.39" fill="#1A1B20">Declarative UIs</text>
@@ -175,7 +175,7 @@
                   <g id="Column">
                     <g id="Row">
                       <g id="ImageKt">
-                        <image href="ideal__default__light.figma-raster/3355.png" x="42" y="1551" width="147" height="147"/>
+                        <image href="ideal__default__light.figma-raster/3826.png" x="42" y="1551" width="147" height="147"/>
                       </g>
                       <g id="Empty">
                         <text x="231" y="1638.99" font-size="42" font-family="Montserrat" font-weight="500" letter-spacing="0.39" fill="#1A1B20">Java</text>
@@ -200,7 +200,7 @@
                   <g id="Column">
                     <g id="Row">
                       <g id="ImageKt">
-                        <image href="ideal__default__light.figma-raster/3363.png" x="42" y="1743" width="147" height="147"/>
+                        <image href="ideal__default__light.figma-raster/3834.png" x="42" y="1743" width="147" height="147"/>
                       </g>
                       <g id="Empty">
                         <text x="231" y="1830.99" font-size="42" font-family="Montserrat" font-weight="500" letter-spacing="0.39" fill="#1A1B20">Unidirectional Data Flow</text>
@@ -225,7 +225,7 @@
                   <g id="Column">
                     <g id="Row">
                       <g id="ImageKt">
-                        <image href="ideal__default__light.figma-raster/3371.png" x="42" y="1935" width="147" height="147"/>
+                        <image href="ideal__default__light.figma-raster/3842.png" x="42" y="1935" width="147" height="147"/>
                       </g>
                       <g id="Empty">
                         <text x="231" y="2022.99" font-size="42" font-family="Montserrat" font-weight="500" letter-spacing="0.39" fill="#1A1B20">C++</text>
@@ -305,7 +305,7 @@
             </g>
           </g>
           <g id="Box">
-            <image href="ideal__default__light.figma-raster/3272.png" x="0" y="0" width="1050" height="168"/>
+            <image href="ideal__default__light.figma-raster/3743.png" x="0" y="0" width="1050" height="168"/>
             <g id="TopAppBar">
               <g id="BoxKt">
                 <g transform="translate(43 53) scale(2.62 2.62)">

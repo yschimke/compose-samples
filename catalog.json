@@ -14,7 +14,8 @@
           "height": 2100,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetnews/p/screens-home-feed__ideal__default__dark",
-          "previewId": "com.example.jetnews.ui.home.HomeScreensKt.PreviewHomeListDrawerScreen_Dark"
+          "previewId": "com.example.jetnews.ui.home.HomeScreensKt.PreviewHomeListDrawerScreen_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -35,7 +36,8 @@
           "width": 1050,
           "height": 2100,
           "livePreview": "https://preview.coo.ee/jetnews/p/screens-home-feed__ideal__default",
-          "previewId": "com.example.jetnews.ui.home.HomeScreensKt.PreviewHomeListDrawerScreen_Home_list_drawer_screen"
+          "previewId": "com.example.jetnews.ui.home.HomeScreensKt.PreviewHomeListDrawerScreen_Home_list_drawer_screen",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -45,7 +47,8 @@
           "height": 2100,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetnews/p/screens-home-feed__ideal__default__light",
-          "previewId": "com.example.jetnews.ui.home.HomeScreensKt.PreviewHomeListDrawerScreen_Light"
+          "previewId": "com.example.jetnews.ui.home.HomeScreensKt.PreviewHomeListDrawerScreen_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -72,7 +75,8 @@
             "posture": "expanded"
           },
           "livePreview": "https://preview.coo.ee/jetnews/p/screens-home-feed__ideal__default__dark__compact__posture-expanded",
-          "previewId": "com.example.jetnews.ui.home.HomeScreensKt.PreviewHomeListNavRailScreen_Home_list_navrail_screen__dark_"
+          "previewId": "com.example.jetnews.ui.home.HomeScreensKt.PreviewHomeListNavRailScreen_Home_list_navrail_screen__dark_",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -85,7 +89,8 @@
             "posture": "expanded"
           },
           "livePreview": "https://preview.coo.ee/jetnews/p/screens-home-feed__ideal__default__compact__posture-expanded",
-          "previewId": "com.example.jetnews.ui.home.HomeScreensKt.PreviewHomeListNavRailScreen_Home_list_navrail_screen"
+          "previewId": "com.example.jetnews.ui.home.HomeScreensKt.PreviewHomeListNavRailScreen_Home_list_navrail_screen",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -95,7 +100,8 @@
           "height": 2100,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetnews/p/screens-home-feed__ideal__selected__dark",
-          "previewId": "com.example.jetnews.catalog.JetnewsScreenPreviewsKt.PreviewHomeFeedBookmarked_Home_feed___bookmarked__dark_"
+          "previewId": "com.example.jetnews.catalog.JetnewsScreenPreviewsKt.PreviewHomeFeedBookmarked_Home_feed___bookmarked__dark_",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -104,7 +110,8 @@
           "width": 1050,
           "height": 2100,
           "livePreview": "https://preview.coo.ee/jetnews/p/screens-home-feed__ideal__selected",
-          "previewId": "com.example.jetnews.catalog.JetnewsScreenPreviewsKt.PreviewHomeFeedBookmarked_Home_feed___bookmarked"
+          "previewId": "com.example.jetnews.catalog.JetnewsScreenPreviewsKt.PreviewHomeFeedBookmarked_Home_feed___bookmarked",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -114,7 +121,8 @@
           "height": 2100,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetnews/p/screens-home-feed__ideal__loading__dark",
-          "previewId": "com.example.jetnews.catalog.JetnewsScreenPreviewsKt.PreviewHomeFeedLoading_Home_feed___loading__dark_"
+          "previewId": "com.example.jetnews.catalog.JetnewsScreenPreviewsKt.PreviewHomeFeedLoading_Home_feed___loading__dark_",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -123,7 +131,8 @@
           "width": 1050,
           "height": 2100,
           "livePreview": "https://preview.coo.ee/jetnews/p/screens-home-feed__ideal__loading",
-          "previewId": "com.example.jetnews.catalog.JetnewsScreenPreviewsKt.PreviewHomeFeedLoading_Home_feed___loading"
+          "previewId": "com.example.jetnews.catalog.JetnewsScreenPreviewsKt.PreviewHomeFeedLoading_Home_feed___loading",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -133,7 +142,8 @@
           "height": 2100,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetnews/p/screens-home-feed__ideal__empty__dark",
-          "previewId": "com.example.jetnews.catalog.JetnewsScreenPreviewsKt.PreviewHomeFeedEmpty_Home_feed___empty__dark_"
+          "previewId": "com.example.jetnews.catalog.JetnewsScreenPreviewsKt.PreviewHomeFeedEmpty_Home_feed___empty__dark_",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -142,7 +152,8 @@
           "width": 1050,
           "height": 2100,
           "livePreview": "https://preview.coo.ee/jetnews/p/screens-home-feed__ideal__empty",
-          "previewId": "com.example.jetnews.catalog.JetnewsScreenPreviewsKt.PreviewHomeFeedEmpty_Home_feed___empty"
+          "previewId": "com.example.jetnews.catalog.JetnewsScreenPreviewsKt.PreviewHomeFeedEmpty_Home_feed___empty",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -151,7 +162,8 @@
           "width": 1050,
           "height": 2100,
           "livePreview": "https://preview.coo.ee/jetnews/p/screens-home-feed__ideal__error",
-          "previewId": "com.example.jetnews.catalog.JetnewsScreenPreviewsKt.PreviewHomeFeedError_Home_feed___refresh_error"
+          "previewId": "com.example.jetnews.catalog.JetnewsScreenPreviewsKt.PreviewHomeFeedError_Home_feed___refresh_error",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -164,7 +176,8 @@
             "posture": "medium"
           },
           "livePreview": "https://preview.coo.ee/jetnews/p/screens-home-feed__ideal__default__medium__posture-medium",
-          "previewId": "com.example.jetnews.catalog.JetnewsScreenPreviewsKt.PreviewHomeFeedExpandedSearch_Home_feed___expanded_search"
+          "previewId": "com.example.jetnews.catalog.JetnewsScreenPreviewsKt.PreviewHomeFeedExpandedSearch_Home_feed___expanded_search",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -579,7 +592,8 @@
           "height": 2363,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetnews/p/screens-app-shell__ideal__default__compact",
-          "previewId": "com.example.jetnews.catalog.JetnewsScreenPreviewsKt.PreviewJetnewsAppCompact_App___compact__single_pane_"
+          "previewId": "com.example.jetnews.catalog.JetnewsScreenPreviewsKt.PreviewJetnewsAppCompact_App___compact__single_pane_",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -589,7 +603,8 @@
           "height": 2100,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetnews/p/screens-app-shell__ideal__default__dark",
-          "previewId": "com.example.jetnews.catalog.JetnewsScreenPreviewsKt.PreviewJetnewsAppCompact_Dark"
+          "previewId": "com.example.jetnews.catalog.JetnewsScreenPreviewsKt.PreviewJetnewsAppCompact_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -599,7 +614,8 @@
           "height": 2100,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetnews/p/screens-app-shell__ideal__default__light",
-          "previewId": "com.example.jetnews.catalog.JetnewsScreenPreviewsKt.PreviewJetnewsAppCompact_Light"
+          "previewId": "com.example.jetnews.catalog.JetnewsScreenPreviewsKt.PreviewJetnewsAppCompact_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -612,7 +628,8 @@
             "posture": "expanded"
           },
           "livePreview": "https://preview.coo.ee/jetnews/p/screens-app-shell__ideal__default__expanded__posture-expanded",
-          "previewId": "com.example.jetnews.catalog.JetnewsScreenPreviewsKt.PreviewJetnewsAppExpanded_App___expanded__list_detail_"
+          "previewId": "com.example.jetnews.catalog.JetnewsScreenPreviewsKt.PreviewJetnewsAppExpanded_App___expanded__list_detail_",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -1022,7 +1039,8 @@
           "height": 2100,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetnews/p/screens-article__ideal__default__dark",
-          "previewId": "com.example.jetnews.ui.post.PostScreenKt.PreviewPostDrawer_Dark"
+          "previewId": "com.example.jetnews.ui.post.PostScreenKt.PreviewPostDrawer_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1032,7 +1050,8 @@
           "height": 2100,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetnews/p/screens-article__ideal__default__light",
-          "previewId": "com.example.jetnews.ui.post.PostScreenKt.PreviewPostDrawer_Light"
+          "previewId": "com.example.jetnews.ui.post.PostScreenKt.PreviewPostDrawer_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1053,7 +1072,8 @@
           "width": 1050,
           "height": 2100,
           "livePreview": "https://preview.coo.ee/jetnews/p/screens-article__ideal__default",
-          "previewId": "com.example.jetnews.ui.post.PostScreenKt.PreviewPostDrawer_Light"
+          "previewId": "com.example.jetnews.ui.post.PostScreenKt.PreviewPostDrawer_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1080,7 +1100,8 @@
             "posture": "expanded"
           },
           "livePreview": "https://preview.coo.ee/jetnews/p/screens-article__ideal__default__dark__expanded__posture-expanded",
-          "previewId": "com.example.jetnews.ui.post.PostScreenKt.PreviewPostNavRail_Post_screen_navrail__dark_"
+          "previewId": "com.example.jetnews.ui.post.PostScreenKt.PreviewPostNavRail_Post_screen_navrail__dark_",
+          "density": 2
         },
         {
           "variant": "ideal",
@@ -1093,7 +1114,8 @@
             "posture": "expanded"
           },
           "livePreview": "https://preview.coo.ee/jetnews/p/screens-article__ideal__default__expanded__posture-expanded",
-          "previewId": "com.example.jetnews.ui.post.PostScreenKt.PreviewPostNavRail_Post_screen_navrail"
+          "previewId": "com.example.jetnews.ui.post.PostScreenKt.PreviewPostNavRail_Post_screen_navrail",
+          "density": 2
         },
         {
           "variant": "ideal",
@@ -1103,7 +1125,8 @@
           "height": 2100,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetnews/p/screens-article__ideal__selected__dark",
-          "previewId": "com.example.jetnews.catalog.JetnewsScreenPreviewsKt.PreviewPostScreenBookmarked_Article___bookmarked__dark_"
+          "previewId": "com.example.jetnews.catalog.JetnewsScreenPreviewsKt.PreviewPostScreenBookmarked_Article___bookmarked__dark_",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1112,7 +1135,8 @@
           "width": 1050,
           "height": 2100,
           "livePreview": "https://preview.coo.ee/jetnews/p/screens-article__ideal__selected",
-          "previewId": "com.example.jetnews.catalog.JetnewsScreenPreviewsKt.PreviewPostScreenBookmarked_Article___bookmarked"
+          "previewId": "com.example.jetnews.catalog.JetnewsScreenPreviewsKt.PreviewPostScreenBookmarked_Article___bookmarked",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1121,7 +1145,8 @@
           "width": 1050,
           "height": 2100,
           "livePreview": "https://preview.coo.ee/jetnews/p/screens-article__ideal__loading",
-          "previewId": "com.example.jetnews.catalog.JetnewsScreenPreviewsKt.PreviewPostScreenLoading_Article___loading"
+          "previewId": "com.example.jetnews.catalog.JetnewsScreenPreviewsKt.PreviewPostScreenLoading_Article___loading",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1130,7 +1155,8 @@
           "width": 1050,
           "height": 2100,
           "livePreview": "https://preview.coo.ee/jetnews/p/screens-article__ideal__error",
-          "previewId": "com.example.jetnews.catalog.JetnewsScreenPreviewsKt.PreviewPostScreenNotFound_Article___not_found"
+          "previewId": "com.example.jetnews.catalog.JetnewsScreenPreviewsKt.PreviewPostScreenNotFound_Article___not_found",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -1425,7 +1451,8 @@
           "height": 2100,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetnews/p/navigation-drawer__ideal__default__dark",
-          "previewId": "com.example.jetnews.ui.AppDrawerKt.PreviewAppDrawer_Dark"
+          "previewId": "com.example.jetnews.ui.AppDrawerKt.PreviewAppDrawer_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1434,7 +1461,8 @@
           "width": 945,
           "height": 2100,
           "livePreview": "https://preview.coo.ee/jetnews/p/navigation-drawer__ideal__default",
-          "previewId": "com.example.jetnews.ui.AppDrawerKt.PreviewAppDrawer_Drawer_contents"
+          "previewId": "com.example.jetnews.ui.AppDrawerKt.PreviewAppDrawer_Drawer_contents",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1444,7 +1472,8 @@
           "height": 2100,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetnews/p/navigation-drawer__ideal__default__light",
-          "previewId": "com.example.jetnews.ui.AppDrawerKt.PreviewAppDrawer_Light"
+          "previewId": "com.example.jetnews.ui.AppDrawerKt.PreviewAppDrawer_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1454,7 +1483,8 @@
           "height": 2100,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetnews/p/navigation-drawer__ideal__selected__dark",
-          "previewId": "com.example.jetnews.catalog.JetnewsScreenPreviewsKt.PreviewAppDrawerInterestsSelected_Drawer___Interests_selected__dark_"
+          "previewId": "com.example.jetnews.catalog.JetnewsScreenPreviewsKt.PreviewAppDrawerInterestsSelected_Drawer___Interests_selected__dark_",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1463,7 +1493,8 @@
           "width": 945,
           "height": 2100,
           "livePreview": "https://preview.coo.ee/jetnews/p/navigation-drawer__ideal__selected",
-          "previewId": "com.example.jetnews.catalog.JetnewsScreenPreviewsKt.PreviewAppDrawerInterestsSelected_Drawer___Interests_selected"
+          "previewId": "com.example.jetnews.catalog.JetnewsScreenPreviewsKt.PreviewAppDrawerInterestsSelected_Drawer___Interests_selected",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -1569,7 +1600,8 @@
           "height": 2100,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetnews/p/navigation-rail__ideal__default__dark",
-          "previewId": "com.example.jetnews.ui.components.AppNavRailKt.PreviewAppNavRail_Dark"
+          "previewId": "com.example.jetnews.ui.components.AppNavRailKt.PreviewAppNavRail_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1578,7 +1610,8 @@
           "width": 210,
           "height": 2100,
           "livePreview": "https://preview.coo.ee/jetnews/p/navigation-rail__ideal__default",
-          "previewId": "com.example.jetnews.ui.components.AppNavRailKt.PreviewAppNavRail_Drawer_contents"
+          "previewId": "com.example.jetnews.ui.components.AppNavRailKt.PreviewAppNavRail_Drawer_contents",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1588,7 +1621,8 @@
           "height": 2100,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetnews/p/navigation-rail__ideal__default__light",
-          "previewId": "com.example.jetnews.ui.components.AppNavRailKt.PreviewAppNavRail_Light"
+          "previewId": "com.example.jetnews.ui.components.AppNavRailKt.PreviewAppNavRail_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1598,7 +1632,8 @@
           "height": 2100,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetnews/p/navigation-rail__ideal__selected__dark",
-          "previewId": "com.example.jetnews.catalog.JetnewsScreenPreviewsKt.PreviewAppNavRailInterestsSelected_Rail___Interests_selected__dark_"
+          "previewId": "com.example.jetnews.catalog.JetnewsScreenPreviewsKt.PreviewAppNavRailInterestsSelected_Rail___Interests_selected__dark_",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1607,7 +1642,8 @@
           "width": 210,
           "height": 2100,
           "livePreview": "https://preview.coo.ee/jetnews/p/navigation-rail__ideal__selected",
-          "previewId": "com.example.jetnews.catalog.JetnewsScreenPreviewsKt.PreviewAppNavRailInterestsSelected_Rail___Interests_selected"
+          "previewId": "com.example.jetnews.catalog.JetnewsScreenPreviewsKt.PreviewAppNavRailInterestsSelected_Rail___Interests_selected",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -1714,7 +1750,8 @@
           "height": 2100,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetnews/p/reader-article-body__ideal__default__dark",
-          "previewId": "com.example.jetnews.ui.post.PostContentKt.PreviewPost_Dark"
+          "previewId": "com.example.jetnews.ui.post.PostContentKt.PreviewPost_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1724,7 +1761,8 @@
           "height": 2100,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetnews/p/reader-article-body__ideal__default__light",
-          "previewId": "com.example.jetnews.ui.post.PostContentKt.PreviewPost_Light"
+          "previewId": "com.example.jetnews.ui.post.PostContentKt.PreviewPost_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1733,7 +1771,8 @@
           "width": 1050,
           "height": 2100,
           "livePreview": "https://preview.coo.ee/jetnews/p/reader-article-body__ideal__default",
-          "previewId": "com.example.jetnews.ui.post.PostContentKt.PreviewPost_Light"
+          "previewId": "com.example.jetnews.ui.post.PostContentKt.PreviewPost_Light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -1839,7 +1878,8 @@
           "height": 2100,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetnews/p/interests-screen__ideal__default__dark",
-          "previewId": "com.example.jetnews.ui.interests.InterestsScreenKt.PreviewInterestsScreenDrawer_Dark"
+          "previewId": "com.example.jetnews.ui.interests.InterestsScreenKt.PreviewInterestsScreenDrawer_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1860,7 +1900,8 @@
           "width": 1050,
           "height": 2100,
           "livePreview": "https://preview.coo.ee/jetnews/p/interests-screen__ideal__default",
-          "previewId": "com.example.jetnews.ui.interests.InterestsScreenKt.PreviewInterestsScreenDrawer_Interests_screen"
+          "previewId": "com.example.jetnews.ui.interests.InterestsScreenKt.PreviewInterestsScreenDrawer_Interests_screen",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1870,7 +1911,8 @@
           "height": 2100,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetnews/p/interests-screen__ideal__default__light",
-          "previewId": "com.example.jetnews.ui.interests.InterestsScreenKt.PreviewInterestsScreenDrawer_Light"
+          "previewId": "com.example.jetnews.ui.interests.InterestsScreenKt.PreviewInterestsScreenDrawer_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1897,7 +1939,8 @@
             "posture": "expanded"
           },
           "livePreview": "https://preview.coo.ee/jetnews/p/interests-screen__ideal__default__dark__expanded__posture-expanded",
-          "previewId": "com.example.jetnews.ui.interests.InterestsScreenKt.PreviewInterestsScreenNavRail_Interests_screen_navrail__dark_"
+          "previewId": "com.example.jetnews.ui.interests.InterestsScreenKt.PreviewInterestsScreenNavRail_Interests_screen_navrail__dark_",
+          "density": 2
         },
         {
           "variant": "ideal",
@@ -1910,7 +1953,8 @@
             "posture": "expanded"
           },
           "livePreview": "https://preview.coo.ee/jetnews/p/interests-screen__ideal__default__expanded__posture-expanded",
-          "previewId": "com.example.jetnews.ui.interests.InterestsScreenKt.PreviewInterestsScreenNavRail_Interests_screen_navrail"
+          "previewId": "com.example.jetnews.ui.interests.InterestsScreenKt.PreviewInterestsScreenNavRail_Interests_screen_navrail",
+          "density": 2
         }
       ],
       "greenlines": [
@@ -2593,7 +2637,8 @@
           "height": 874,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetnews/p/postcard-top__ideal__default__dark",
-          "previewId": "com.example.jetnews.catalog.JetnewsAnimationPreviewsKt.PostCardTopDarkCatalogPreview_Featured_post_card___dark"
+          "previewId": "com.example.jetnews.catalog.JetnewsAnimationPreviewsKt.PostCardTopDarkCatalogPreview_Featured_post_card___dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2603,7 +2648,8 @@
           "height": 874,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetnews/p/postcard-top__ideal__default__light",
-          "previewId": "com.example.jetnews.ui.home.PostCardTopKt.PostCardTopPreview_Light"
+          "previewId": "com.example.jetnews.ui.home.PostCardTopKt.PostCardTopPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2612,7 +2658,8 @@
           "width": 1050,
           "height": 874,
           "livePreview": "https://preview.coo.ee/jetnews/p/postcard-top__ideal__default",
-          "previewId": "com.example.jetnews.ui.home.PostCardTopKt.PostCardTopPreview_Light"
+          "previewId": "com.example.jetnews.ui.home.PostCardTopKt.PostCardTopPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2623,7 +2670,8 @@
           "theme": "dark",
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetnews/p/postcard-top__ideal__default__dark__compact",
-          "previewId": "com.example.jetnews.catalog.JetnewsAnimationPreviewsKt.PostCardTopDarkCatalogPreview_Featured_post_card___dark"
+          "previewId": "com.example.jetnews.catalog.JetnewsAnimationPreviewsKt.PostCardTopDarkCatalogPreview_Featured_post_card___dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2636,7 +2684,8 @@
             "fontScale": 1.5
           },
           "livePreview": "https://preview.coo.ee/jetnews/p/postcard-top__ideal__default__compact__fontscale-1.5",
-          "previewId": "com.example.jetnews.catalog.JetnewsAnimationPreviewsKt.PostCardTopLargeFontCatalogPreview_Featured_post_card___large_font"
+          "previewId": "com.example.jetnews.catalog.JetnewsAnimationPreviewsKt.PostCardTopLargeFontCatalogPreview_Featured_post_card___large_font",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2649,7 +2698,8 @@
             "posture": "medium"
           },
           "livePreview": "https://preview.coo.ee/jetnews/p/postcard-top__ideal__default__medium__posture-medium",
-          "previewId": "com.example.jetnews.catalog.JetnewsAnimationPreviewsKt.PostCardTopMediumCatalogPreview_Featured_post_card___medium"
+          "previewId": "com.example.jetnews.catalog.JetnewsAnimationPreviewsKt.PostCardTopMediumCatalogPreview_Featured_post_card___medium",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -2712,7 +2762,8 @@
           "height": 294,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetnews/p/postcard-simple__ideal__default__dark",
-          "previewId": "com.example.jetnews.ui.home.PostCardsKt.SimplePostPreview_Dark"
+          "previewId": "com.example.jetnews.ui.home.PostCardsKt.SimplePostPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2722,7 +2773,8 @@
           "height": 294,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetnews/p/postcard-simple__ideal__default__light",
-          "previewId": "com.example.jetnews.ui.home.PostCardsKt.SimplePostPreview_Light"
+          "previewId": "com.example.jetnews.ui.home.PostCardsKt.SimplePostPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2731,7 +2783,8 @@
           "width": 1050,
           "height": 294,
           "livePreview": "https://preview.coo.ee/jetnews/p/postcard-simple__ideal__default",
-          "previewId": "com.example.jetnews.ui.home.PostCardsKt.SimplePostPreview_Light"
+          "previewId": "com.example.jetnews.ui.home.PostCardsKt.SimplePostPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2741,7 +2794,8 @@
           "height": 294,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetnews/p/postcard-simple__ideal__selected__compact",
-          "previewId": "com.example.jetnews.catalog.JetnewsAnimationPreviewsKt.SimplePostBookmarkedCatalogPreview_Simple_post_card___bookmarked"
+          "previewId": "com.example.jetnews.catalog.JetnewsAnimationPreviewsKt.SimplePostBookmarkedCatalogPreview_Simple_post_card___bookmarked",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -2795,7 +2849,8 @@
           "height": 359,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetnews/p/postcard-history__ideal__default__dark",
-          "previewId": "com.example.jetnews.ui.home.PostCardsKt.HistoryPostPreview_Dark"
+          "previewId": "com.example.jetnews.ui.home.PostCardsKt.HistoryPostPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2805,7 +2860,8 @@
           "height": 359,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetnews/p/postcard-history__ideal__default__light",
-          "previewId": "com.example.jetnews.ui.home.PostCardsKt.HistoryPostPreview_Light"
+          "previewId": "com.example.jetnews.ui.home.PostCardsKt.HistoryPostPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2814,7 +2870,8 @@
           "width": 1050,
           "height": 359,
           "livePreview": "https://preview.coo.ee/jetnews/p/postcard-history__ideal__default",
-          "previewId": "com.example.jetnews.ui.home.PostCardsKt.HistoryPostPreview_Light"
+          "previewId": "com.example.jetnews.ui.home.PostCardsKt.HistoryPostPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2824,7 +2881,8 @@
           "height": 359,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetnews/p/postcard-history__ideal__actions-open__compact",
-          "previewId": "com.example.jetnews.catalog.JetnewsAnimationPreviewsKt.HistoryPostActionsOpenCatalogPreview_History_post_card___actions_open"
+          "previewId": "com.example.jetnews.catalog.JetnewsAnimationPreviewsKt.HistoryPostActionsOpenCatalogPreview_History_post_card___actions_open",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -2894,7 +2952,8 @@
           "height": 2100,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetnews/p/postcard-popular__ideal__default__dark",
-          "previewId": "com.example.jetnews.catalog.JetnewsAnimationPreviewsKt.PopularPostCardCatalogPreview_Dark"
+          "previewId": "com.example.jetnews.catalog.JetnewsAnimationPreviewsKt.PopularPostCardCatalogPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2904,7 +2963,8 @@
           "height": 2100,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetnews/p/postcard-popular__ideal__default__light",
-          "previewId": "com.example.jetnews.catalog.JetnewsAnimationPreviewsKt.PopularPostCardCatalogPreview_Light"
+          "previewId": "com.example.jetnews.catalog.JetnewsAnimationPreviewsKt.PopularPostCardCatalogPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2914,7 +2974,8 @@
           "height": 2100,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetnews/p/postcard-popular__ideal__default__compact",
-          "previewId": "com.example.jetnews.catalog.JetnewsAnimationPreviewsKt.PopularPostCardCatalogPreview_Light"
+          "previewId": "com.example.jetnews.catalog.JetnewsAnimationPreviewsKt.PopularPostCardCatalogPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2927,7 +2988,8 @@
             "content": "long title"
           },
           "livePreview": "https://preview.coo.ee/jetnews/p/postcard-popular__ideal__default__compact__content-long-title",
-          "previewId": "com.example.jetnews.catalog.JetnewsAnimationPreviewsKt.PopularPostCardLongTextCatalogPreview_Popular_post_card___long_text"
+          "previewId": "com.example.jetnews.catalog.JetnewsAnimationPreviewsKt.PopularPostCardLongTextCatalogPreview_Popular_post_card___long_text",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -2959,7 +3021,8 @@
           "width": 126,
           "height": 126,
           "livePreview": "https://preview.coo.ee/jetnews/p/bookmark-button__ideal__default",
-          "previewId": "com.example.jetnews.ui.home.PostCardsKt.BookmarkButtonPreview_Bookmark_Button"
+          "previewId": "com.example.jetnews.ui.home.PostCardsKt.BookmarkButtonPreview_Bookmark_Button",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2969,7 +3032,8 @@
           "height": 126,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetnews/p/bookmark-button__ideal__default__dark",
-          "previewId": "com.example.jetnews.ui.home.PostCardsKt.BookmarkButtonPreview_Dark"
+          "previewId": "com.example.jetnews.ui.home.PostCardsKt.BookmarkButtonPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2979,7 +3043,8 @@
           "height": 126,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetnews/p/bookmark-button__ideal__default__light",
-          "previewId": "com.example.jetnews.ui.home.PostCardsKt.BookmarkButtonPreview_Light"
+          "previewId": "com.example.jetnews.ui.home.PostCardsKt.BookmarkButtonPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2988,7 +3053,8 @@
           "width": 126,
           "height": 126,
           "livePreview": "https://preview.coo.ee/jetnews/p/bookmark-button__ideal__selected",
-          "previewId": "com.example.jetnews.ui.home.PostCardsKt.BookmarkButtonBookmarkedPreview_Bookmark_Button_Bookmarked"
+          "previewId": "com.example.jetnews.ui.home.PostCardsKt.BookmarkButtonBookmarkedPreview_Bookmark_Button_Bookmarked",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -3043,7 +3109,8 @@
           "height": 2100,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetnews/p/interests-topics-tab__ideal__default__dark",
-          "previewId": "com.example.jetnews.ui.interests.InterestsScreenKt.PreviewTopicsTab_Dark"
+          "previewId": "com.example.jetnews.ui.interests.InterestsScreenKt.PreviewTopicsTab_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3052,7 +3119,8 @@
           "width": 1050,
           "height": 2100,
           "livePreview": "https://preview.coo.ee/jetnews/p/interests-topics-tab__ideal__default",
-          "previewId": "com.example.jetnews.ui.interests.InterestsScreenKt.PreviewTopicsTab_Interests_screen_topics_tab"
+          "previewId": "com.example.jetnews.ui.interests.InterestsScreenKt.PreviewTopicsTab_Interests_screen_topics_tab",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3062,7 +3130,8 @@
           "height": 2100,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetnews/p/interests-topics-tab__ideal__default__light",
-          "previewId": "com.example.jetnews.ui.interests.InterestsScreenKt.PreviewTopicsTab_Light"
+          "previewId": "com.example.jetnews.ui.interests.InterestsScreenKt.PreviewTopicsTab_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3072,7 +3141,8 @@
           "height": 2100,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetnews/p/interests-topics-tab__ideal__selected__dark",
-          "previewId": "com.example.jetnews.catalog.JetnewsScreenPreviewsKt.PreviewTopicsTabSubscribed_Topics_tab___subscribed__dark_"
+          "previewId": "com.example.jetnews.catalog.JetnewsScreenPreviewsKt.PreviewTopicsTabSubscribed_Topics_tab___subscribed__dark_",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3081,7 +3151,8 @@
           "width": 1050,
           "height": 2100,
           "livePreview": "https://preview.coo.ee/jetnews/p/interests-topics-tab__ideal__selected",
-          "previewId": "com.example.jetnews.catalog.JetnewsScreenPreviewsKt.PreviewTopicsTabSubscribed_Topics_tab___subscribed"
+          "previewId": "com.example.jetnews.catalog.JetnewsScreenPreviewsKt.PreviewTopicsTabSubscribed_Topics_tab___subscribed",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -3620,7 +3691,8 @@
           "height": 1770,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetnews/p/interests-people-and-publications-tab__ideal__default__dark",
-          "previewId": "com.example.jetnews.ui.interests.InterestsScreenKt.PreviewPeopleTab_Dark"
+          "previewId": "com.example.jetnews.ui.interests.InterestsScreenKt.PreviewPeopleTab_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3629,7 +3701,8 @@
           "width": 1050,
           "height": 1770,
           "livePreview": "https://preview.coo.ee/jetnews/p/interests-people-and-publications-tab__ideal__default",
-          "previewId": "com.example.jetnews.ui.interests.InterestsScreenKt.PreviewPeopleTab_Interests_screen_people_tab"
+          "previewId": "com.example.jetnews.ui.interests.InterestsScreenKt.PreviewPeopleTab_Interests_screen_people_tab",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3639,7 +3712,8 @@
           "height": 1770,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetnews/p/interests-people-and-publications-tab__ideal__default__light",
-          "previewId": "com.example.jetnews.ui.interests.InterestsScreenKt.PreviewPeopleTab_Light"
+          "previewId": "com.example.jetnews.ui.interests.InterestsScreenKt.PreviewPeopleTab_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3648,7 +3722,8 @@
           "width": 1050,
           "height": 1770,
           "livePreview": "https://preview.coo.ee/jetnews/p/interests-people-and-publications-tab__ideal__selected",
-          "previewId": "com.example.jetnews.catalog.JetnewsScreenPreviewsKt.PreviewPeopleTabFollowed_People_tab___followed"
+          "previewId": "com.example.jetnews.catalog.JetnewsScreenPreviewsKt.PreviewPeopleTabFollowed_People_tab___followed",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3661,7 +3736,8 @@
             "content": "publications"
           },
           "livePreview": "https://preview.coo.ee/jetnews/p/interests-people-and-publications-tab__ideal__default__dark__content-publications",
-          "previewId": "com.example.jetnews.ui.interests.InterestsScreenKt.PreviewPublicationsTab_Interests_screen_publications_tab__dark_"
+          "previewId": "com.example.jetnews.ui.interests.InterestsScreenKt.PreviewPublicationsTab_Interests_screen_publications_tab__dark_",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3673,7 +3749,8 @@
             "content": "publications"
           },
           "livePreview": "https://preview.coo.ee/jetnews/p/interests-people-and-publications-tab__ideal__default__content-publications",
-          "previewId": "com.example.jetnews.ui.interests.InterestsScreenKt.PreviewPublicationsTab_Interests_screen_publications_tab"
+          "previewId": "com.example.jetnews.ui.interests.InterestsScreenKt.PreviewPublicationsTab_Interests_screen_publications_tab",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3685,7 +3762,8 @@
             "content": "publications"
           },
           "livePreview": "https://preview.coo.ee/jetnews/p/interests-people-and-publications-tab__ideal__selected__content-publications",
-          "previewId": "com.example.jetnews.catalog.JetnewsScreenPreviewsKt.PreviewPublicationsTabFollowed_Publications_tab___followed"
+          "previewId": "com.example.jetnews.catalog.JetnewsScreenPreviewsKt.PreviewPublicationsTabFollowed_Publications_tab___followed",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -4132,7 +4210,8 @@
           "height": 263,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetnews/p/interests-select-topic__ideal__default__dark",
-          "previewId": "com.example.jetnews.ui.interests.SelectTopicButtonKt.SelectTopicButtonPreviewOff_Dark"
+          "previewId": "com.example.jetnews.ui.interests.SelectTopicButtonKt.SelectTopicButtonPreviewOff_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4142,7 +4221,8 @@
           "height": 263,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetnews/p/interests-select-topic__ideal__default__light",
-          "previewId": "com.example.jetnews.ui.interests.SelectTopicButtonKt.SelectTopicButtonPreviewOff_Light"
+          "previewId": "com.example.jetnews.ui.interests.SelectTopicButtonKt.SelectTopicButtonPreviewOff_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4151,7 +4231,8 @@
           "width": 263,
           "height": 263,
           "livePreview": "https://preview.coo.ee/jetnews/p/interests-select-topic__ideal__default",
-          "previewId": "com.example.jetnews.ui.interests.SelectTopicButtonKt.SelectTopicButtonPreviewOff_Light"
+          "previewId": "com.example.jetnews.ui.interests.SelectTopicButtonKt.SelectTopicButtonPreviewOff_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4161,7 +4242,8 @@
           "height": 263,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetnews/p/interests-select-topic__ideal__selected__dark",
-          "previewId": "com.example.jetnews.ui.interests.SelectTopicButtonKt.SelectTopicButtonPreviewOn_On__dark_"
+          "previewId": "com.example.jetnews.ui.interests.SelectTopicButtonKt.SelectTopicButtonPreviewOn_On__dark_",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4170,7 +4252,8 @@
           "width": 263,
           "height": 263,
           "livePreview": "https://preview.coo.ee/jetnews/p/interests-select-topic__ideal__selected",
-          "previewId": "com.example.jetnews.ui.interests.SelectTopicButtonKt.SelectTopicButtonPreviewOn_On"
+          "previewId": "com.example.jetnews.ui.interests.SelectTopicButtonKt.SelectTopicButtonPreviewOn_On",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -4221,7 +4304,8 @@
           "state": "default",
           "width": 300,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4237,7 +4321,8 @@
           "state": "default",
           "width": 300,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4255,7 +4340,8 @@
           "theme": "dark",
           "props": {
             "fontScale": "2.0"
-          }
+          },
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4266,7 +4352,8 @@
           "theme": "light",
           "props": {
             "fontScale": "2.0"
-          }
+          },
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4274,7 +4361,8 @@
           "state": "pressed",
           "width": 342,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4282,7 +4370,8 @@
           "state": "pressed",
           "width": 342,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4290,7 +4379,8 @@
           "state": "keyboard-focus",
           "width": 351,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4298,7 +4388,8 @@
           "state": "keyboard-focus",
           "width": 351,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4309,7 +4400,8 @@
           "theme": "dark",
           "props": {
             "content": "icon+label"
-          }
+          },
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4320,7 +4412,8 @@
           "theme": "light",
           "props": {
             "content": "icon+label"
-          }
+          },
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -4373,7 +4466,8 @@
           "state": "default",
           "width": 300,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4381,7 +4475,8 @@
           "state": "default",
           "width": 300,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -4434,7 +4529,8 @@
           "state": "default",
           "width": 350,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4450,7 +4546,8 @@
           "state": "default",
           "width": 350,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4510,7 +4607,8 @@
           "state": "default",
           "width": 350,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4518,7 +4616,8 @@
           "state": "default",
           "width": 350,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -4571,7 +4670,8 @@
           "state": "default",
           "width": 236,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4579,7 +4679,8 @@
           "state": "default",
           "width": 236,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -4632,7 +4733,8 @@
           "state": "default",
           "width": 662,
           "height": 95,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4640,7 +4742,8 @@
           "state": "default",
           "width": 662,
           "height": 95,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -4675,7 +4778,8 @@
           "state": "default",
           "width": 189,
           "height": 189,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4683,7 +4787,8 @@
           "state": "default",
           "width": 189,
           "height": 189,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -4703,7 +4808,8 @@
           "state": "default",
           "width": 126,
           "height": 126,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4711,7 +4817,8 @@
           "state": "default",
           "width": 126,
           "height": 126,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -4747,7 +4854,8 @@
           "state": "default",
           "width": 504,
           "height": 294,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4755,7 +4863,8 @@
           "state": "default",
           "width": 504,
           "height": 294,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -4785,7 +4894,8 @@
           "state": "default",
           "width": 504,
           "height": 294,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4793,7 +4903,8 @@
           "state": "default",
           "width": 504,
           "height": 294,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -4823,7 +4934,8 @@
           "state": "default",
           "width": 504,
           "height": 294,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4831,7 +4943,8 @@
           "state": "default",
           "width": 504,
           "height": 294,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -4861,7 +4974,8 @@
           "state": "default",
           "width": 653,
           "height": 253,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4869,7 +4983,8 @@
           "state": "default",
           "width": 653,
           "height": 253,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4877,7 +4992,8 @@
           "state": "slot-mode",
           "width": 653,
           "height": 253,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4885,7 +5001,8 @@
           "state": "slot-mode",
           "width": 653,
           "height": 253,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4896,7 +5013,8 @@
           "theme": "dark",
           "props": {
             "locale": "ar"
-          }
+          },
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4907,7 +5025,8 @@
           "theme": "light",
           "props": {
             "locale": "ar"
-          }
+          },
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -4938,7 +5057,8 @@
           "state": "default",
           "width": 231,
           "height": 231,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4946,7 +5066,8 @@
           "state": "default",
           "width": 231,
           "height": 231,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -4998,7 +5119,8 @@
           "state": "default",
           "width": 210,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5014,7 +5136,8 @@
           "state": "default",
           "width": 210,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5079,7 +5202,8 @@
           "state": "default",
           "width": 221,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5095,7 +5219,8 @@
           "state": "default",
           "width": 221,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5113,7 +5238,8 @@
           "theme": "dark",
           "props": {
             "locale": "ar-XB"
-          }
+          },
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5124,7 +5250,8 @@
           "theme": "light",
           "props": {
             "locale": "ar-XB"
-          }
+          },
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5135,7 +5262,8 @@
           "theme": "dark",
           "props": {
             "direction": "rtl"
-          }
+          },
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5146,7 +5274,8 @@
           "theme": "light",
           "props": {
             "direction": "rtl"
-          }
+          },
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5157,7 +5286,8 @@
           "theme": "dark",
           "props": {
             "fontScale": "2.0"
-          }
+          },
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5168,7 +5298,8 @@
           "theme": "light",
           "props": {
             "fontScale": "2.0"
-          }
+          },
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -5230,7 +5361,8 @@
           "state": "default",
           "width": 210,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5246,7 +5378,8 @@
           "state": "default",
           "width": 210,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5290,7 +5423,8 @@
           "state": "default",
           "width": 662,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5298,7 +5432,8 @@
           "state": "default",
           "width": 662,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -5342,7 +5477,8 @@
           "state": "default",
           "width": 252,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5358,7 +5494,8 @@
           "state": "default",
           "width": 252,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5418,7 +5555,8 @@
           "state": "default",
           "width": 268,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5426,7 +5564,8 @@
           "state": "default",
           "width": 268,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -5478,7 +5617,8 @@
           "state": "default",
           "width": 445,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5486,7 +5626,8 @@
           "state": "default",
           "width": 445,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -5529,7 +5670,8 @@
           "width": 1078,
           "height": 2399,
           "theme": "dark",
-          "size": "compact"
+          "size": "compact",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5538,7 +5680,8 @@
           "width": 1078,
           "height": 2399,
           "theme": "light",
-          "size": "compact"
+          "size": "compact",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -5634,7 +5777,8 @@
           "state": "default",
           "width": 819,
           "height": 231,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5642,7 +5786,8 @@
           "state": "default",
           "width": 819,
           "height": 231,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -5662,7 +5807,8 @@
           "state": "default",
           "width": 819,
           "height": 252,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5670,7 +5816,8 @@
           "state": "default",
           "width": 819,
           "height": 252,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -5705,7 +5852,8 @@
           "state": "default",
           "width": 420,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5713,7 +5861,8 @@
           "state": "default",
           "width": 420,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -5734,7 +5883,8 @@
           "state": "default",
           "width": 510,
           "height": 147,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5742,7 +5892,8 @@
           "state": "default",
           "width": 510,
           "height": 147,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -5763,7 +5914,8 @@
           "state": "default",
           "width": 562,
           "height": 147,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5771,7 +5923,8 @@
           "state": "default",
           "width": 562,
           "height": 147,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -5789,8 +5942,8 @@
     "androidx.compose.material3.adaptive:adaptive",
     "androidx.navigation3:navigation3"
   ],
-  "renderer": "compose-preview 0.19.57",
-  "generatedAt": "2026-08-11T08:55:42.126Z",
+  "renderer": "compose-preview 0.19.61",
+  "generatedAt": "2026-08-11T23:30:19.579Z",
   "display": {
     "surface": "light",
     "hero": "Screens/Home feed"
