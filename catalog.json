@@ -771,6 +771,12 @@
             "width": 734,
             "height": 126
           },
+          "padding": {
+            "start": 8,
+            "top": 8,
+            "end": 8,
+            "bottom": 8
+          },
           "cornerRadius": 24
         },
         {
@@ -3747,6 +3753,12 @@
             "width": 734,
             "height": 126
           },
+          "padding": {
+            "start": 8,
+            "top": 8,
+            "end": 8,
+            "bottom": 8
+          },
           "cornerRadius": 24
         },
         {
@@ -5748,8 +5760,8 @@
     "androidx.compose.material3:material3",
     "androidx.compose.material3.adaptive:adaptive"
   ],
-  "renderer": "compose-preview 0.19.56",
-  "generatedAt": "2026-08-11T08:20:39.940Z",
+  "renderer": "compose-preview 0.19.57",
+  "generatedAt": "2026-08-11T08:57:16.725Z",
   "display": {
     "surface": "dark",
     "hero": "Home/Screen"

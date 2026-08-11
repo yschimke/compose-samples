@@ -3842,8 +3842,12 @@
           "width": 734,
           "height": 126
         },
-        "label": "r 24dp",
+        "label": "pad 8dp · r 24dp",
         "detail": {
+          "padding.start": "8",
+          "padding.top": "8",
+          "padding.end": "8",
+          "padding.bottom": "8",
           "cornerRadius": "24",
           "unit": "dp"
         }
@@ -4727,8 +4731,12 @@
           "width": 734,
           "height": 126
         },
-        "label": "r 24dp",
+        "label": "pad 8dp · r 24dp",
         "detail": {
+          "padding.start": "8",
+          "padding.top": "8",
+          "padding.end": "8",
+          "padding.bottom": "8",
           "cornerRadius": "24",
           "unit": "dp"
         }
@@ -5612,8 +5620,12 @@
           "width": 734,
           "height": 126
         },
-        "label": "r 24dp",
+        "label": "pad 8dp · r 24dp",
         "detail": {
+          "padding.start": "8",
+          "padding.top": "8",
+          "padding.end": "8",
+          "padding.bottom": "8",
           "cornerRadius": "24",
           "unit": "dp"
         }
@@ -6497,8 +6509,12 @@
           "width": 734,
           "height": 126
         },
-        "label": "r 24dp",
+        "label": "pad 8dp · r 24dp",
         "detail": {
+          "padding.start": "8",
+          "padding.top": "8",
+          "padding.end": "8",
+          "padding.bottom": "8",
           "cornerRadius": "24",
           "unit": "dp"
         }
@@ -7382,8 +7398,12 @@
           "width": 734,
           "height": 126
         },
-        "label": "r 24dp",
+        "label": "pad 8dp · r 24dp",
         "detail": {
+          "padding.start": "8",
+          "padding.top": "8",
+          "padding.end": "8",
+          "padding.bottom": "8",
           "cornerRadius": "24",
           "unit": "dp"
         }
@@ -8267,8 +8287,12 @@
           "width": 734,
           "height": 126
         },
-        "label": "r 24dp",
+        "label": "pad 8dp · r 24dp",
         "detail": {
+          "padding.start": "8",
+          "padding.top": "8",
+          "padding.end": "8",
+          "padding.bottom": "8",
           "cornerRadius": "24",
           "unit": "dp"
         }
@@ -9152,8 +9176,12 @@
           "width": 734,
           "height": 126
         },
-        "label": "r 24dp",
+        "label": "pad 8dp · r 24dp",
         "detail": {
+          "padding.start": "8",
+          "padding.top": "8",
+          "padding.end": "8",
+          "padding.bottom": "8",
           "cornerRadius": "24",
           "unit": "dp"
         }
@@ -10037,8 +10065,12 @@
           "width": 734,
           "height": 126
         },
-        "label": "r 24dp",
+        "label": "pad 8dp · r 24dp",
         "detail": {
+          "padding.start": "8",
+          "padding.top": "8",
+          "padding.end": "8",
+          "padding.bottom": "8",
           "cornerRadius": "24",
           "unit": "dp"
         }
@@ -10922,8 +10954,12 @@
           "width": 734,
           "height": 126
         },
-        "label": "r 24dp",
+        "label": "pad 8dp · r 24dp",
         "detail": {
+          "padding.start": "8",
+          "padding.top": "8",
+          "padding.end": "8",
+          "padding.bottom": "8",
           "cornerRadius": "24",
           "unit": "dp"
         }
@@ -20665,8 +20701,12 @@
           "width": 734,
           "height": 126
         },
-        "label": "r 24dp",
+        "label": "pad 8dp · r 24dp",
         "detail": {
+          "padding.start": "8",
+          "padding.top": "8",
+          "padding.end": "8",
+          "padding.bottom": "8",
           "cornerRadius": "24",
           "unit": "dp"
         }
@@ -20785,8 +20825,12 @@
           "width": 734,
           "height": 126
         },
-        "label": "r 24dp",
+        "label": "pad 8dp · r 24dp",
         "detail": {
+          "padding.start": "8",
+          "padding.top": "8",
+          "padding.end": "8",
+          "padding.bottom": "8",
           "cornerRadius": "24",
           "unit": "dp"
         }
@@ -20905,8 +20949,12 @@
           "width": 734,
           "height": 126
         },
-        "label": "r 24dp",
+        "label": "pad 8dp · r 24dp",
         "detail": {
+          "padding.start": "8",
+          "padding.top": "8",
+          "padding.end": "8",
+          "padding.bottom": "8",
           "cornerRadius": "24",
           "unit": "dp"
         }
@@ -21025,8 +21073,12 @@
           "width": 734,
           "height": 126
         },
-        "label": "r 24dp",
+        "label": "pad 8dp · r 24dp",
         "detail": {
+          "padding.start": "8",
+          "padding.top": "8",
+          "padding.end": "8",
+          "padding.bottom": "8",
           "cornerRadius": "24",
           "unit": "dp"
         }

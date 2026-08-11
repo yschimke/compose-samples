@@ -287,7 +287,7 @@
   </g>
   <g>
     <path d="M84,21 H692 A63,63 0 0 1 755,84 V84 A63,63 0 0 1 692,147 H84 A63,63 0 0 1 21,84 V84 A63,63 0 0 1 84,21 Z" fill="#E6E0E9" fill-opacity="1" stroke="#7A7A33" stroke-width="1.5" stroke-opacity="1"/>
-    <text x="24" y="33" font-family="system-ui, sans-serif" font-size="9" fill="#7A7A33">#FFE6E0E9</text>
+    <text x="24" y="33" font-family="system-ui, sans-serif" font-size="9" fill="#7A7A33">#FFE6E0E9  pad 8.0dp</text>
   </g>
   <g>
     <rect x="32" y="21" width="712" height="126" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
