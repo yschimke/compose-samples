@@ -10,7 +10,8 @@
         </g>
       </g>
       <g id="Spacer">
-        <rect x="326" y="47" width="11" height="116" rx="5.5" ry="5.5" fill="#4B30ED"/>
+        <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAB0CAYAAABT2MgyAAAA4klEQVR4Xu3YMQ4BQRTG8XcFbkCFWDMuQcxQcAJH4RZ6kbiBCyiUSq3+DUsohWdCsnZ2RKX6Jvlns/t+uzv1EL2WTdKSVW5qlFtbxefn1Wg36TZO5bfxq694aLU7Svcg5Q7y8sjDTiutGMWXAGXy8yStktG8yA8LUzwneWsXDIrbkuzpVjAIem6F8g+/BQwcCxg4FjBwLGDgWMDAsYCBYwEDxwIGjgX8J/zrcZZRbiPYLfODosTNqNd2Dav5mh9+xtdBwjV/Zmc0j0OQ+arMM2eBRLbJdfnVSob7F9r7e3n+Ng/hjs6cIV0EewAAAABJRU5ErkJggg==" x="326" y="47" width="11" height="116"/>
+          <rect x="326" y="47" width="11" height="116" rx="5.5" ry="5.5" fill="#4B30ED"/>
       </g>
     </g>
   </g>

@@ -14,7 +14,8 @@
           "height": 105,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetsnack/p/foundations-button__ideal__default__dark",
-          "previewId": "com.example.jetsnack.ui.components.ButtonKt.ButtonPreview_Dark"
+          "previewId": "com.example.jetsnack.ui.components.ButtonKt.ButtonPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -24,7 +25,8 @@
           "height": 105,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetsnack/p/foundations-button__ideal__default__light",
-          "previewId": "com.example.jetsnack.ui.components.ButtonKt.ButtonPreview_Light"
+          "previewId": "com.example.jetsnack.ui.components.ButtonKt.ButtonPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -33,7 +35,8 @@
           "width": 250,
           "height": 105,
           "livePreview": "https://preview.coo.ee/jetsnack/p/foundations-button__ideal__default",
-          "previewId": "com.example.jetsnack.ui.components.ButtonKt.ButtonPreview_Light"
+          "previewId": "com.example.jetsnack.ui.components.ButtonKt.ButtonPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -58,7 +61,8 @@
             "shape": "rectangle"
           },
           "livePreview": "https://preview.coo.ee/jetsnack/p/foundations-button__ideal__default__dark__shape-rectangle",
-          "previewId": "com.example.jetsnack.ui.components.ButtonKt.RectangleButtonPreview_dark_theme"
+          "previewId": "com.example.jetsnack.ui.components.ButtonKt.RectangleButtonPreview_dark_theme",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -70,7 +74,8 @@
             "shape": "rectangle"
           },
           "livePreview": "https://preview.coo.ee/jetsnack/p/foundations-button__ideal__default__shape-rectangle",
-          "previewId": "com.example.jetsnack.ui.components.ButtonKt.RectangleButtonPreview_default"
+          "previewId": "com.example.jetsnack.ui.components.ButtonKt.RectangleButtonPreview_default",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -93,7 +98,8 @@
           "height": 147,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetsnack/p/foundations-button__ideal__disabled__dark",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.JetsnackButtonDisabledPreview_dark_theme"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.JetsnackButtonDisabledPreview_dark_theme",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -102,7 +108,8 @@
           "width": 409,
           "height": 147,
           "livePreview": "https://preview.coo.ee/jetsnack/p/foundations-button__ideal__disabled",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.JetsnackButtonDisabledPreview_default"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.JetsnackButtonDisabledPreview_default",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -157,7 +164,8 @@
           "height": 158,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetsnack/p/foundations-card__ideal__default__dark",
-          "previewId": "com.example.jetsnack.ui.components.CardKt.CardPreview_Dark"
+          "previewId": "com.example.jetsnack.ui.components.CardKt.CardPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -167,7 +175,8 @@
           "height": 158,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetsnack/p/foundations-card__ideal__default__light",
-          "previewId": "com.example.jetsnack.ui.components.CardKt.CardPreview_Light"
+          "previewId": "com.example.jetsnack.ui.components.CardKt.CardPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -176,7 +185,8 @@
           "width": 199,
           "height": 158,
           "livePreview": "https://preview.coo.ee/jetsnack/p/foundations-card__ideal__default",
-          "previewId": "com.example.jetsnack.ui.components.CardKt.CardPreview_Light"
+          "previewId": "com.example.jetsnack.ui.components.CardKt.CardPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -236,7 +246,8 @@
           "height": 200,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetsnack/p/foundations-surface__ideal__default__dark",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.JetsnackSurfaceFlatPreview_Dark"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.JetsnackSurfaceFlatPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -246,7 +257,8 @@
           "height": 200,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetsnack/p/foundations-surface__ideal__default__light",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.JetsnackSurfaceFlatPreview_Light"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.JetsnackSurfaceFlatPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -255,7 +267,8 @@
           "width": 680,
           "height": 200,
           "livePreview": "https://preview.coo.ee/jetsnack/p/foundations-surface__ideal__default",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.JetsnackSurfaceFlatPreview_Light"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.JetsnackSurfaceFlatPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -268,7 +281,8 @@
             "elevation": "8dp"
           },
           "livePreview": "https://preview.coo.ee/jetsnack/p/foundations-surface__ideal__default__dark__elevation-8dp",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.JetsnackSurfaceElevatedPreview_dark_theme"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.JetsnackSurfaceElevatedPreview_dark_theme",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -280,7 +294,8 @@
             "elevation": "8dp"
           },
           "livePreview": "https://preview.coo.ee/jetsnack/p/foundations-surface__ideal__default__elevation-8dp",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.JetsnackSurfaceElevatedPreview_default"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.JetsnackSurfaceElevatedPreview_default",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -328,7 +343,8 @@
           "height": 26,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetsnack/p/foundations-divider__ideal__default__dark",
-          "previewId": "com.example.jetsnack.ui.components.DividerKt.DividerPreview_Dark"
+          "previewId": "com.example.jetsnack.ui.components.DividerKt.DividerPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -338,7 +354,8 @@
           "height": 26,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetsnack/p/foundations-divider__ideal__default__light",
-          "previewId": "com.example.jetsnack.ui.components.DividerKt.DividerPreview_Light"
+          "previewId": "com.example.jetsnack.ui.components.DividerKt.DividerPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -347,7 +364,8 @@
           "width": 263,
           "height": 26,
           "livePreview": "https://preview.coo.ee/jetsnack/p/foundations-divider__ideal__default",
-          "previewId": "com.example.jetsnack.ui.components.DividerKt.DividerPreview_Light"
+          "previewId": "com.example.jetsnack.ui.components.DividerKt.DividerPreview_Light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -370,7 +388,8 @@
           "height": 85,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetsnack/p/foundations-icon-button__ideal__default__dark",
-          "previewId": "com.example.jetsnack.ui.components.GradientTintedIconButtonKt.GradientTintedIconButtonPreview_Dark"
+          "previewId": "com.example.jetsnack.ui.components.GradientTintedIconButtonKt.GradientTintedIconButtonPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -380,7 +399,8 @@
           "height": 85,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetsnack/p/foundations-icon-button__ideal__default__light",
-          "previewId": "com.example.jetsnack.ui.components.GradientTintedIconButtonKt.GradientTintedIconButtonPreview_Light"
+          "previewId": "com.example.jetsnack.ui.components.GradientTintedIconButtonKt.GradientTintedIconButtonPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -389,7 +409,8 @@
           "width": 85,
           "height": 85,
           "livePreview": "https://preview.coo.ee/jetsnack/p/foundations-icon-button__ideal__default",
-          "previewId": "com.example.jetsnack.ui.components.GradientTintedIconButtonKt.GradientTintedIconButtonPreview_Light"
+          "previewId": "com.example.jetsnack.ui.components.GradientTintedIconButtonKt.GradientTintedIconButtonPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -398,7 +419,8 @@
           "width": 127,
           "height": 127,
           "livePreview": "https://preview.coo.ee/jetsnack/p/foundations-icon-button__ideal__pressed",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.JetsnackGradientIconButtonPressedPreview_pressed"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.JetsnackGradientIconButtonPressedPreview_pressed",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -437,7 +459,8 @@
           "height": 1324,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetsnack/p/tokens-colour__ideal__default__dark",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.JetsnackColorTokensLightPreview_Dark"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.JetsnackColorTokensLightPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -447,7 +470,8 @@
           "height": 1324,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetsnack/p/tokens-colour__ideal__default__light",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.JetsnackColorTokensLightPreview_Light"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.JetsnackColorTokensLightPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -456,7 +480,8 @@
           "width": 625,
           "height": 1470,
           "livePreview": "https://preview.coo.ee/jetsnack/p/tokens-colour__ideal__default",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.JetsnackColorTokensLightPreview_Light"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.JetsnackColorTokensLightPreview_Light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -615,7 +640,8 @@
           "height": 1115,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetsnack/p/tokens-gradients__ideal__default__dark",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.JetsnackGradientTokensPreview_Dark"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.JetsnackGradientTokensPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -625,7 +651,8 @@
           "height": 1115,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetsnack/p/tokens-gradients__ideal__default__light",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.JetsnackGradientTokensPreview_Light"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.JetsnackGradientTokensPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -634,7 +661,8 @@
           "width": 1050,
           "height": 1234,
           "livePreview": "https://preview.coo.ee/jetsnack/p/tokens-gradients__ideal__default",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.JetsnackGradientTokensPreview_Light"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.JetsnackGradientTokensPreview_Light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -778,7 +806,8 @@
           "height": 582,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetsnack/p/layout-vertical-grid__ideal__default__dark",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.VerticalGridTwoColumnPreview_Dark"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.VerticalGridTwoColumnPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -788,7 +817,8 @@
           "height": 582,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetsnack/p/layout-vertical-grid__ideal__default__light",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.VerticalGridTwoColumnPreview_Light"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.VerticalGridTwoColumnPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -797,7 +827,8 @@
           "width": 1050,
           "height": 582,
           "livePreview": "https://preview.coo.ee/jetsnack/p/layout-vertical-grid__ideal__default",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.VerticalGridTwoColumnPreview_Light"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.VerticalGridTwoColumnPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -809,7 +840,8 @@
             "columns": 3
           },
           "livePreview": "https://preview.coo.ee/jetsnack/p/layout-vertical-grid__ideal__default__columns-3",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.VerticalGridThreeColumnPreview_default"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.VerticalGridThreeColumnPreview_default",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -1013,7 +1045,8 @@
           "height": 698,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetsnack/p/snack-card__ideal__default__dark",
-          "previewId": "com.example.jetsnack.ui.components.SnacksKt.SnackCardPreview_Dark"
+          "previewId": "com.example.jetsnack.ui.components.SnacksKt.SnackCardPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1023,7 +1056,8 @@
           "height": 698,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetsnack/p/snack-card__ideal__default__light",
-          "previewId": "com.example.jetsnack.ui.components.SnacksKt.SnackCardPreview_Light"
+          "previewId": "com.example.jetsnack.ui.components.SnacksKt.SnackCardPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1032,7 +1066,8 @@
           "width": 446,
           "height": 698,
           "livePreview": "https://preview.coo.ee/jetsnack/p/snack-card__ideal__default",
-          "previewId": "com.example.jetsnack.ui.components.SnacksKt.SnackCardPreview_Light"
+          "previewId": "com.example.jetsnack.ui.components.SnacksKt.SnackCardPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1122,7 +1157,8 @@
           "height": 493,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetsnack/p/snack-item__ideal__default__dark",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SnackItemPreview_Dark"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SnackItemPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1132,7 +1168,8 @@
           "height": 493,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetsnack/p/snack-item__ideal__default__light",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SnackItemPreview_Light"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SnackItemPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1141,7 +1178,8 @@
           "width": 421,
           "height": 493,
           "livePreview": "https://preview.coo.ee/jetsnack/p/snack-item__ideal__default",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SnackItemPreview_Light"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SnackItemPreview_Light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -1218,7 +1256,8 @@
           "height": 357,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetsnack/p/snack-image__ideal__default__dark",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SnackImagePreview_Dark"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SnackImagePreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1228,7 +1267,8 @@
           "height": 357,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetsnack/p/snack-image__ideal__default__light",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SnackImagePreview_Light"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SnackImagePreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1237,7 +1277,8 @@
           "width": 357,
           "height": 357,
           "livePreview": "https://preview.coo.ee/jetsnack/p/snack-image__ideal__default",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SnackImagePreview_Light"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SnackImagePreview_Light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -1270,7 +1311,8 @@
           "height": 887,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetsnack/p/snack-collection__ideal__default__dark",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SnackCollectionHighlightPreview_Dark"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SnackCollectionHighlightPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1280,7 +1322,8 @@
           "height": 887,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetsnack/p/snack-collection__ideal__default__light",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SnackCollectionHighlightPreview_Light"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SnackCollectionHighlightPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1289,7 +1332,8 @@
           "width": 1050,
           "height": 840,
           "livePreview": "https://preview.coo.ee/jetsnack/p/snack-collection__ideal__default",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SnackCollectionHighlightPreview_Light"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SnackCollectionHighlightPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1301,7 +1345,8 @@
             "highlight": false
           },
           "livePreview": "https://preview.coo.ee/jetsnack/p/snack-collection__ideal__normal__highlight-false",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SnackCollectionNormalPreview_default"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SnackCollectionNormalPreview_default",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -1464,7 +1509,8 @@
           "height": 69,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetsnack/p/catalog-filters__ideal__default__dark",
-          "previewId": "com.example.jetsnack.ui.components.FiltersKt.FilterEnabledPreview_Dark"
+          "previewId": "com.example.jetsnack.ui.components.FiltersKt.FilterEnabledPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1474,7 +1520,8 @@
           "height": 69,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetsnack/p/catalog-filters__ideal__default__light",
-          "previewId": "com.example.jetsnack.ui.components.FiltersKt.FilterEnabledPreview_Light"
+          "previewId": "com.example.jetsnack.ui.components.FiltersKt.FilterEnabledPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1483,7 +1530,8 @@
           "width": 195,
           "height": 69,
           "livePreview": "https://preview.coo.ee/jetsnack/p/catalog-filters__ideal__default",
-          "previewId": "com.example.jetsnack.ui.components.FiltersKt.FilterEnabledPreview_Light"
+          "previewId": "com.example.jetsnack.ui.components.FiltersKt.FilterEnabledPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1505,7 +1553,8 @@
           "height": 91,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetsnack/p/catalog-filters__ideal__disabled__dark",
-          "previewId": "com.example.jetsnack.ui.components.FiltersKt.FilterDisabledPreview_dark_theme"
+          "previewId": "com.example.jetsnack.ui.components.FiltersKt.FilterDisabledPreview_dark_theme",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1514,7 +1563,8 @@
           "width": 217,
           "height": 91,
           "livePreview": "https://preview.coo.ee/jetsnack/p/catalog-filters__ideal__disabled",
-          "previewId": "com.example.jetsnack.ui.components.FiltersKt.FilterDisabledPreview_default"
+          "previewId": "com.example.jetsnack.ui.components.FiltersKt.FilterDisabledPreview_default",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1583,7 +1633,8 @@
           "height": 189,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetsnack/p/catalog-filter-bar__ideal__default__dark",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.FilterBarPreview_Dark"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.FilterBarPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1593,7 +1644,8 @@
           "height": 189,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetsnack/p/catalog-filter-bar__ideal__default__light",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.FilterBarPreview_Light"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.FilterBarPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1602,7 +1654,8 @@
           "width": 1050,
           "height": 189,
           "livePreview": "https://preview.coo.ee/jetsnack/p/catalog-filter-bar__ideal__default",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.FilterBarPreview_Light"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.FilterBarPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1611,7 +1664,8 @@
           "width": 1050,
           "height": 189,
           "livePreview": "https://preview.coo.ee/jetsnack/p/catalog-filter-bar__ideal__inactive",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.FilterBarInactivePreview_no_filters_selected"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.FilterBarInactivePreview_no_filters_selected",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1620,7 +1674,8 @@
           "width": 1050,
           "height": 189,
           "livePreview": "https://preview.coo.ee/jetsnack/p/catalog-filter-bar__ideal__sheet-open",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.FilterBarSheetOpenPreview_default"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.FilterBarSheetOpenPreview_default",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -1785,7 +1840,8 @@
           "height": 63,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetsnack/p/cart-quantity__ideal__default__dark",
-          "previewId": "com.example.jetsnack.ui.components.QuantitySelectorKt.QuantitySelectorPreview_Dark"
+          "previewId": "com.example.jetsnack.ui.components.QuantitySelectorKt.QuantitySelectorPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1795,7 +1851,8 @@
           "height": 63,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetsnack/p/cart-quantity__ideal__default__light",
-          "previewId": "com.example.jetsnack.ui.components.QuantitySelectorKt.QuantitySelectorPreview_Light"
+          "previewId": "com.example.jetsnack.ui.components.QuantitySelectorKt.QuantitySelectorPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1804,7 +1861,8 @@
           "width": 313,
           "height": 63,
           "livePreview": "https://preview.coo.ee/jetsnack/p/cart-quantity__ideal__default",
-          "previewId": "com.example.jetsnack.ui.components.QuantitySelectorKt.QuantitySelectorPreview_Light"
+          "previewId": "com.example.jetsnack.ui.components.QuantitySelectorKt.QuantitySelectorPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1828,7 +1886,8 @@
             "layoutDirection": "rtl"
           },
           "livePreview": "https://preview.coo.ee/jetsnack/p/cart-quantity__ideal__default__layoutdirection-rtl",
-          "previewId": "com.example.jetsnack.ui.components.QuantitySelectorKt.QuantitySelectorPreviewRtl_RTL"
+          "previewId": "com.example.jetsnack.ui.components.QuantitySelectorKt.QuantitySelectorPreviewRtl_RTL",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1841,7 +1900,8 @@
             "count": 1
           },
           "livePreview": "https://preview.coo.ee/jetsnack/p/cart-quantity__ideal__minimum__dark__count-1",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.QuantitySelectorSinglePreview_dark_theme"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.QuantitySelectorSinglePreview_dark_theme",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1853,7 +1913,8 @@
             "count": 1
           },
           "livePreview": "https://preview.coo.ee/jetsnack/p/cart-quantity__ideal__minimum__count-1",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.QuantitySelectorSinglePreview_default"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.QuantitySelectorSinglePreview_default",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1866,7 +1927,8 @@
             "count": 12
           },
           "livePreview": "https://preview.coo.ee/jetsnack/p/cart-quantity__ideal__many__dark__count-12",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.QuantitySelectorManyPreview_dark_theme"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.QuantitySelectorManyPreview_dark_theme",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1878,7 +1940,8 @@
             "count": 12
           },
           "livePreview": "https://preview.coo.ee/jetsnack/p/cart-quantity__ideal__many__count-12",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.QuantitySelectorManyPreview_default"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.QuantitySelectorManyPreview_default",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -1935,7 +1998,8 @@
           "height": 392,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetsnack/p/cart-item__ideal__default__dark",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.CartItemPreview_Dark"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.CartItemPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1945,7 +2009,8 @@
           "height": 392,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetsnack/p/cart-item__ideal__default__light",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.CartItemPreview_Light"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.CartItemPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1954,7 +2019,8 @@
           "width": 1050,
           "height": 392,
           "livePreview": "https://preview.coo.ee/jetsnack/p/cart-item__ideal__default",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.CartItemPreview_Light"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.CartItemPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1963,7 +2029,8 @@
           "width": 1050,
           "height": 392,
           "livePreview": "https://preview.coo.ee/jetsnack/p/cart-item__ideal__minimum",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.CartItemSinglePreview_count___one"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.CartItemSinglePreview_count___one",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1972,7 +2039,8 @@
           "width": 1050,
           "height": 392,
           "livePreview": "https://preview.coo.ee/jetsnack/p/cart-item__ideal__many",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.CartItemManyPreview_count___many"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.CartItemManyPreview_count___many",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -2140,7 +2208,8 @@
           "height": 452,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetsnack/p/cart-summary__ideal__default__dark",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SummaryItemPreview_Dark"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SummaryItemPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2150,7 +2219,8 @@
           "height": 452,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetsnack/p/cart-summary__ideal__default__light",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SummaryItemPreview_Light"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SummaryItemPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2159,7 +2229,8 @@
           "width": 1050,
           "height": 452,
           "livePreview": "https://preview.coo.ee/jetsnack/p/cart-summary__ideal__default",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SummaryItemPreview_Light"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SummaryItemPreview_Light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -2213,7 +2284,8 @@
           "height": 222,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetsnack/p/cart-swipe-to-dismiss__ideal__default__dark",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SwipeDismissItemPreview_Dark"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SwipeDismissItemPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2223,7 +2295,8 @@
           "height": 222,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetsnack/p/cart-swipe-to-dismiss__ideal__default__light",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SwipeDismissItemPreview_Light"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SwipeDismissItemPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2232,7 +2305,8 @@
           "width": 472,
           "height": 222,
           "livePreview": "https://preview.coo.ee/jetsnack/p/cart-swipe-to-dismiss__ideal__default",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SwipeDismissItemPreview_Light"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SwipeDismissItemPreview_Light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -2287,7 +2361,8 @@
           "height": 189,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetsnack/p/search-bar__ideal__default__dark",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SearchBarCatalogPreview_Dark"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SearchBarCatalogPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2297,7 +2372,8 @@
           "height": 189,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetsnack/p/search-bar__ideal__default__light",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SearchBarCatalogPreview_Light"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SearchBarCatalogPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2306,7 +2382,8 @@
           "width": 1050,
           "height": 189,
           "livePreview": "https://preview.coo.ee/jetsnack/p/search-bar__ideal__default",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SearchBarCatalogPreview_Light"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SearchBarCatalogPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2315,7 +2392,8 @@
           "width": 1050,
           "height": 189,
           "livePreview": "https://preview.coo.ee/jetsnack/p/search-bar__ideal__focused",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SearchBarFocusedCatalogPreview_catalog___focused"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SearchBarFocusedCatalogPreview_catalog___focused",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2324,7 +2402,8 @@
           "width": 1050,
           "height": 189,
           "livePreview": "https://preview.coo.ee/jetsnack/p/search-bar__ideal__query",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SearchBarQueryCatalogPreview_catalog___query"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SearchBarQueryCatalogPreview_catalog___query",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2333,7 +2412,8 @@
           "width": 1050,
           "height": 189,
           "livePreview": "https://preview.coo.ee/jetsnack/p/search-bar__ideal__searching",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SearchBarSearchingCatalogPreview_catalog___searching"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SearchBarSearchingCatalogPreview_catalog___searching",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2346,7 +2426,8 @@
             "fontScale": 2
           },
           "livePreview": "https://preview.coo.ee/jetsnack/p/search-bar__ideal__default__compact__fontscale-2",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SearchBarLargeFontCatalogPreview_catalog___large_font"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SearchBarLargeFontCatalogPreview_catalog___large_font",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -2385,7 +2466,8 @@
           "height": 737,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetsnack/p/search-categories__ideal__default__dark",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SearchCategoryCatalogPreview_Dark"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SearchCategoryCatalogPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2395,7 +2477,8 @@
           "height": 737,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetsnack/p/search-categories__ideal__default__light",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SearchCategoryCatalogPreview_Light"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SearchCategoryCatalogPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2404,7 +2487,8 @@
           "width": 1050,
           "height": 737,
           "livePreview": "https://preview.coo.ee/jetsnack/p/search-categories__ideal__default",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SearchCategoryCatalogPreview_Light"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SearchCategoryCatalogPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2429,7 +2513,8 @@
             "scope": "full grid"
           },
           "livePreview": "https://preview.coo.ee/jetsnack/p/search-categories__ideal__default__dark__scope-full-grid",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SearchCategoriesPreview_dark_theme"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SearchCategoriesPreview_dark_theme",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2441,7 +2526,8 @@
             "scope": "full grid"
           },
           "livePreview": "https://preview.coo.ee/jetsnack/p/search-categories__ideal__default__scope-full-grid",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SearchCategoriesPreview_default"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SearchCategoriesPreview_default",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -2498,7 +2584,8 @@
           "height": 389,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetsnack/p/search-results__ideal__default__dark",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SearchResultCatalogPreview_Dark"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SearchResultCatalogPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2508,7 +2595,8 @@
           "height": 389,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetsnack/p/search-results__ideal__default__light",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SearchResultCatalogPreview_Light"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SearchResultCatalogPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2517,7 +2605,8 @@
           "width": 1050,
           "height": 389,
           "livePreview": "https://preview.coo.ee/jetsnack/p/search-results__ideal__default",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SearchResultCatalogPreview_Light"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SearchResultCatalogPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2538,7 +2627,8 @@
           "width": 1050,
           "height": 389,
           "livePreview": "https://preview.coo.ee/jetsnack/p/search-results__ideal__with-divider",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SearchResultWithDividerCatalogPreview_with_divider"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SearchResultWithDividerCatalogPreview_with_divider",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2551,7 +2641,8 @@
             "scope": "full list"
           },
           "livePreview": "https://preview.coo.ee/jetsnack/p/search-results__ideal__default__dark__scope-full-list",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SearchResultsPreview_dark_theme"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SearchResultsPreview_dark_theme",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2563,7 +2654,8 @@
             "scope": "full list"
           },
           "livePreview": "https://preview.coo.ee/jetsnack/p/search-results__ideal__default__scope-full-list",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SearchResultsPreview_default"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SearchResultsPreview_default",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -2641,7 +2733,8 @@
           "height": 1366,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetsnack/p/search-suggestions__ideal__default__dark",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SearchSuggestionsPreview_Dark"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SearchSuggestionsPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2651,7 +2744,8 @@
           "height": 1366,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetsnack/p/search-suggestions__ideal__default__light",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SearchSuggestionsPreview_Light"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SearchSuggestionsPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2660,7 +2754,8 @@
           "width": 1050,
           "height": 1050,
           "livePreview": "https://preview.coo.ee/jetsnack/p/search-suggestions__ideal__default",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SearchSuggestionsPreview_Light"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SearchSuggestionsPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2673,7 +2768,8 @@
             "fontScale": 2
           },
           "livePreview": "https://preview.coo.ee/jetsnack/p/search-suggestions__ideal__default__compact__fontscale-2",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SearchSuggestionsLargeFontPreview_suggestions___large_font"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SearchSuggestionsLargeFontPreview_suggestions___large_font",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -2847,7 +2943,8 @@
           "height": 2100,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetsnack/p/search-no-results__ideal__default__dark",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.NoResultsPreview_Dark"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.NoResultsPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2857,7 +2954,8 @@
           "height": 2100,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetsnack/p/search-no-results__ideal__default__light",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.NoResultsPreview_Light"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.NoResultsPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2866,7 +2964,8 @@
           "width": 1050,
           "height": 2100,
           "livePreview": "https://preview.coo.ee/jetsnack/p/search-no-results__ideal__default",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.NoResultsPreview_Light"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.NoResultsPreview_Light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -2889,7 +2988,8 @@
           "height": 189,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetsnack/p/chrome-bottom-nav__ideal__default__dark",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.JetsnackBottomBarFeedPreview_Dark"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.JetsnackBottomBarFeedPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2899,7 +2999,8 @@
           "height": 189,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetsnack/p/chrome-bottom-nav__ideal__default__light",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.JetsnackBottomBarFeedPreview_Light"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.JetsnackBottomBarFeedPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2908,7 +3009,8 @@
           "width": 1050,
           "height": 189,
           "livePreview": "https://preview.coo.ee/jetsnack/p/chrome-bottom-nav__ideal__default",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.JetsnackBottomBarFeedPreview_Light"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.JetsnackBottomBarFeedPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2917,7 +3019,8 @@
           "width": 1050,
           "height": 189,
           "livePreview": "https://preview.coo.ee/jetsnack/p/chrome-bottom-nav__ideal__search",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.JetsnackBottomBarSearchPreview_default"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.JetsnackBottomBarSearchPreview_default",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2926,7 +3029,8 @@
           "width": 1050,
           "height": 189,
           "livePreview": "https://preview.coo.ee/jetsnack/p/chrome-bottom-nav__ideal__cart",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.JetsnackBottomBarCartPreview_default"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.JetsnackBottomBarCartPreview_default",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2935,7 +3039,8 @@
           "width": 1050,
           "height": 189,
           "livePreview": "https://preview.coo.ee/jetsnack/p/chrome-bottom-nav__ideal__profile",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.JetsnackBottomBarProfilePreview_default"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.JetsnackBottomBarProfilePreview_default",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -3090,7 +3195,8 @@
           "height": 2100,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetsnack/p/chrome-bottom-nav-item__ideal__default__dark",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.JetsnackBottomNavigationItemSelectedPreview_Dark"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.JetsnackBottomNavigationItemSelectedPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3100,7 +3206,8 @@
           "height": 2100,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetsnack/p/chrome-bottom-nav-item__ideal__default__light",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.JetsnackBottomNavigationItemSelectedPreview_Light"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.JetsnackBottomNavigationItemSelectedPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3110,7 +3217,8 @@
           "height": 800,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetsnack/p/chrome-bottom-nav-item__ideal__default__compact",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.JetsnackBottomNavigationItemSelectedPreview_Light"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.JetsnackBottomNavigationItemSelectedPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3120,7 +3228,8 @@
           "height": 800,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetsnack/p/chrome-bottom-nav-item__ideal__unselected__compact",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.JetsnackBottomNavigationItemUnselectedPreview_default"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.JetsnackBottomNavigationItemUnselectedPreview_default",
+          "density": 1
         }
       ],
       "greenlines": [],
@@ -3158,7 +3267,8 @@
           "height": 171,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetsnack/p/chrome-destination-bar__ideal__default__dark",
-          "previewId": "com.example.jetsnack.ui.home.DestinationBarKt.PreviewDestinationBar_Dark"
+          "previewId": "com.example.jetsnack.ui.home.DestinationBarKt.PreviewDestinationBar_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3168,7 +3278,8 @@
           "height": 171,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetsnack/p/chrome-destination-bar__ideal__default__light",
-          "previewId": "com.example.jetsnack.ui.home.DestinationBarKt.PreviewDestinationBar_Light"
+          "previewId": "com.example.jetsnack.ui.home.DestinationBarKt.PreviewDestinationBar_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3177,7 +3288,8 @@
           "width": 1050,
           "height": 171,
           "livePreview": "https://preview.coo.ee/jetsnack/p/chrome-destination-bar__ideal__default",
-          "previewId": "com.example.jetsnack.ui.home.DestinationBarKt.PreviewDestinationBar_Light"
+          "previewId": "com.example.jetsnack.ui.home.DestinationBarKt.PreviewDestinationBar_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3258,7 +3370,8 @@
           "height": 232,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetsnack/p/feedback-snackbar__ideal__default__dark",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.JetsnackSnackbarPreview_Dark"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.JetsnackSnackbarPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3268,7 +3381,8 @@
           "height": 232,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetsnack/p/feedback-snackbar__ideal__default__light",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.JetsnackSnackbarPreview_Light"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.JetsnackSnackbarPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3277,7 +3391,8 @@
           "width": 1050,
           "height": 232,
           "livePreview": "https://preview.coo.ee/jetsnack/p/feedback-snackbar__ideal__default",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.JetsnackSnackbarPreview_Light"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.JetsnackSnackbarPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3287,7 +3402,8 @@
           "height": 232,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetsnack/p/feedback-snackbar__ideal__with-action__dark",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.JetsnackSnackbarWithActionPreview_dark_theme"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.JetsnackSnackbarWithActionPreview_dark_theme",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3296,7 +3412,8 @@
           "width": 1050,
           "height": 232,
           "livePreview": "https://preview.coo.ee/jetsnack/p/feedback-snackbar__ideal__with-action",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.JetsnackSnackbarWithActionPreview_default"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.JetsnackSnackbarWithActionPreview_default",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -3335,7 +3452,8 @@
           "height": 800,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetsnack/p/screens-app-shell__ideal__default__compact",
-          "previewId": "com.example.jetsnack.ui.JetsnackAppKt.JetsnackApp_Light"
+          "previewId": "com.example.jetsnack.ui.JetsnackAppKt.JetsnackApp_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3345,7 +3463,8 @@
           "height": 2100,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetsnack/p/screens-app-shell__ideal__default__dark",
-          "previewId": "com.example.jetsnack.ui.JetsnackAppKt.JetsnackApp_Dark"
+          "previewId": "com.example.jetsnack.ui.JetsnackAppKt.JetsnackApp_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3355,7 +3474,8 @@
           "height": 2100,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetsnack/p/screens-app-shell__ideal__default__light",
-          "previewId": "com.example.jetsnack.ui.JetsnackAppKt.JetsnackApp_Light"
+          "previewId": "com.example.jetsnack.ui.JetsnackAppKt.JetsnackApp_Light",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -4301,7 +4421,8 @@
           "height": 2100,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetsnack/p/screens-feed__ideal__default__dark",
-          "previewId": "com.example.jetsnack.catalog.JetsnackScreenPreviewsKt.FeedScreenPreview_Dark"
+          "previewId": "com.example.jetsnack.catalog.JetsnackScreenPreviewsKt.FeedScreenPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4311,7 +4432,8 @@
           "height": 2100,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetsnack/p/screens-feed__ideal__default__light",
-          "previewId": "com.example.jetsnack.catalog.JetsnackScreenPreviewsKt.FeedScreenPreview_Light"
+          "previewId": "com.example.jetsnack.catalog.JetsnackScreenPreviewsKt.FeedScreenPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4321,7 +4443,8 @@
           "height": 800,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetsnack/p/screens-feed__ideal__default__compact",
-          "previewId": "com.example.jetsnack.catalog.JetsnackScreenPreviewsKt.FeedScreenPreview_Light"
+          "previewId": "com.example.jetsnack.catalog.JetsnackScreenPreviewsKt.FeedScreenPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5148,7 +5271,8 @@
           "height": 2100,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetsnack/p/screens-cart__ideal__default__dark",
-          "previewId": "com.example.jetsnack.catalog.JetsnackScreenPreviewsKt.CartScreenPreview_Dark"
+          "previewId": "com.example.jetsnack.catalog.JetsnackScreenPreviewsKt.CartScreenPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5158,7 +5282,8 @@
           "height": 2100,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetsnack/p/screens-cart__ideal__default__light",
-          "previewId": "com.example.jetsnack.catalog.JetsnackScreenPreviewsKt.CartScreenPreview_Light"
+          "previewId": "com.example.jetsnack.catalog.JetsnackScreenPreviewsKt.CartScreenPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5168,7 +5293,8 @@
           "height": 800,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetsnack/p/screens-cart__ideal__default__compact",
-          "previewId": "com.example.jetsnack.catalog.JetsnackScreenPreviewsKt.CartScreenPreview_Light"
+          "previewId": "com.example.jetsnack.catalog.JetsnackScreenPreviewsKt.CartScreenPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5190,7 +5316,8 @@
           "height": 800,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetsnack/p/screens-cart__ideal__empty__compact",
-          "previewId": "com.example.jetsnack.catalog.JetsnackScreenPreviewsKt.CartScreenEmptyPreview_empty"
+          "previewId": "com.example.jetsnack.catalog.JetsnackScreenPreviewsKt.CartScreenEmptyPreview_empty",
+          "density": 1
         }
       ],
       "greenlines": [
@@ -6002,7 +6129,8 @@
           "height": 2100,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetsnack/p/screens-search__ideal__default__dark",
-          "previewId": "com.example.jetsnack.catalog.JetsnackScreenPreviewsKt.SearchScreenPreview_Dark"
+          "previewId": "com.example.jetsnack.catalog.JetsnackScreenPreviewsKt.SearchScreenPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -6012,7 +6140,8 @@
           "height": 2100,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetsnack/p/screens-search__ideal__default__light",
-          "previewId": "com.example.jetsnack.catalog.JetsnackScreenPreviewsKt.SearchScreenPreview_Light"
+          "previewId": "com.example.jetsnack.catalog.JetsnackScreenPreviewsKt.SearchScreenPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -6022,7 +6151,8 @@
           "height": 800,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetsnack/p/screens-search__ideal__default__compact",
-          "previewId": "com.example.jetsnack.catalog.JetsnackScreenPreviewsKt.SearchScreenPreview_Light"
+          "previewId": "com.example.jetsnack.catalog.JetsnackScreenPreviewsKt.SearchScreenPreview_Light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -6495,7 +6625,8 @@
           "height": 2100,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetsnack/p/screens-profile__ideal__default__dark",
-          "previewId": "com.example.jetsnack.catalog.JetsnackScreenPreviewsKt.ProfileScreenPreview_Dark"
+          "previewId": "com.example.jetsnack.catalog.JetsnackScreenPreviewsKt.ProfileScreenPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -6505,7 +6636,8 @@
           "height": 2100,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetsnack/p/screens-profile__ideal__default__light",
-          "previewId": "com.example.jetsnack.catalog.JetsnackScreenPreviewsKt.ProfileScreenPreview_Light"
+          "previewId": "com.example.jetsnack.catalog.JetsnackScreenPreviewsKt.ProfileScreenPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -6514,7 +6646,8 @@
           "width": 1050,
           "height": 2100,
           "livePreview": "https://preview.coo.ee/jetsnack/p/screens-profile__ideal__default",
-          "previewId": "com.example.jetsnack.catalog.JetsnackScreenPreviewsKt.ProfileScreenPreview_Light"
+          "previewId": "com.example.jetsnack.catalog.JetsnackScreenPreviewsKt.ProfileScreenPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -6549,7 +6682,8 @@
           "height": 2100,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetsnack/p/snack-detail__ideal__default__dark",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SnackDetailCatalogPreview_Dark"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SnackDetailCatalogPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -6559,7 +6693,8 @@
           "height": 2100,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetsnack/p/snack-detail__ideal__default__light",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SnackDetailCatalogPreview_Light"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SnackDetailCatalogPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -6569,7 +6704,8 @@
           "height": 800,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetsnack/p/snack-detail__ideal__default__compact",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SnackDetailCatalogPreview_Light"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SnackDetailCatalogPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -6582,7 +6718,8 @@
             "fontScale": 2
           },
           "livePreview": "https://preview.coo.ee/jetsnack/p/snack-detail__ideal__default__compact__fontscale-2",
-          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SnackDetailLargeFontCatalogPreview_catalog___large_font"
+          "previewId": "com.example.jetsnack.catalog.JetsnackComponentPreviewsKt.SnackDetailLargeFontCatalogPreview_catalog___large_font",
+          "density": 1
         }
       ],
       "greenlines": [
@@ -7236,7 +7373,8 @@
           "height": 2100,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetsnack/p/catalog-filter-screen__ideal__default__dark",
-          "previewId": "com.example.jetsnack.catalog.JetsnackScreenPreviewsKt.FilterScreenCatalogPreview_Dark"
+          "previewId": "com.example.jetsnack.catalog.JetsnackScreenPreviewsKt.FilterScreenCatalogPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -7246,7 +7384,8 @@
           "height": 2100,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetsnack/p/catalog-filter-screen__ideal__default__light",
-          "previewId": "com.example.jetsnack.catalog.JetsnackScreenPreviewsKt.FilterScreenCatalogPreview_Light"
+          "previewId": "com.example.jetsnack.catalog.JetsnackScreenPreviewsKt.FilterScreenCatalogPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -7255,7 +7394,8 @@
           "width": 1050,
           "height": 2100,
           "livePreview": "https://preview.coo.ee/jetsnack/p/catalog-filter-screen__ideal__default",
-          "previewId": "com.example.jetsnack.catalog.JetsnackScreenPreviewsKt.FilterScreenCatalogPreview_Light"
+          "previewId": "com.example.jetsnack.catalog.JetsnackScreenPreviewsKt.FilterScreenCatalogPreview_Light",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -8065,7 +8205,8 @@
           "state": "default",
           "width": 300,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -8081,7 +8222,8 @@
           "state": "default",
           "width": 300,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -8099,7 +8241,8 @@
           "theme": "dark",
           "props": {
             "fontScale": "2.0"
-          }
+          },
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -8110,7 +8253,8 @@
           "theme": "light",
           "props": {
             "fontScale": "2.0"
-          }
+          },
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -8118,7 +8262,8 @@
           "state": "pressed",
           "width": 342,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -8126,7 +8271,8 @@
           "state": "pressed",
           "width": 342,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -8134,7 +8280,8 @@
           "state": "keyboard-focus",
           "width": 351,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -8142,7 +8289,8 @@
           "state": "keyboard-focus",
           "width": 351,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -8153,7 +8301,8 @@
           "theme": "dark",
           "props": {
             "content": "icon+label"
-          }
+          },
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -8164,7 +8313,8 @@
           "theme": "light",
           "props": {
             "content": "icon+label"
-          }
+          },
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -8217,7 +8367,8 @@
           "state": "default",
           "width": 300,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -8225,7 +8376,8 @@
           "state": "default",
           "width": 300,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -8278,7 +8430,8 @@
           "state": "default",
           "width": 350,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -8294,7 +8447,8 @@
           "state": "default",
           "width": 350,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -8354,7 +8508,8 @@
           "state": "default",
           "width": 350,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -8362,7 +8517,8 @@
           "state": "default",
           "width": 350,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -8415,7 +8571,8 @@
           "state": "default",
           "width": 236,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -8423,7 +8580,8 @@
           "state": "default",
           "width": 236,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -8476,7 +8634,8 @@
           "state": "default",
           "width": 662,
           "height": 95,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -8484,7 +8643,8 @@
           "state": "default",
           "width": 662,
           "height": 95,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -8519,7 +8679,8 @@
           "state": "default",
           "width": 189,
           "height": 189,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -8527,7 +8688,8 @@
           "state": "default",
           "width": 189,
           "height": 189,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -8547,7 +8709,8 @@
           "state": "default",
           "width": 126,
           "height": 126,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -8555,7 +8718,8 @@
           "state": "default",
           "width": 126,
           "height": 126,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -8591,7 +8755,8 @@
           "state": "default",
           "width": 504,
           "height": 294,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -8599,7 +8764,8 @@
           "state": "default",
           "width": 504,
           "height": 294,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -8629,7 +8795,8 @@
           "state": "default",
           "width": 504,
           "height": 294,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -8637,7 +8804,8 @@
           "state": "default",
           "width": 504,
           "height": 294,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -8667,7 +8835,8 @@
           "state": "default",
           "width": 504,
           "height": 294,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -8675,7 +8844,8 @@
           "state": "default",
           "width": 504,
           "height": 294,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -8705,7 +8875,8 @@
           "state": "default",
           "width": 653,
           "height": 253,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -8713,7 +8884,8 @@
           "state": "default",
           "width": 653,
           "height": 253,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -8721,7 +8893,8 @@
           "state": "slot-mode",
           "width": 653,
           "height": 253,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -8729,7 +8902,8 @@
           "state": "slot-mode",
           "width": 653,
           "height": 253,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -8740,7 +8914,8 @@
           "theme": "dark",
           "props": {
             "locale": "ar"
-          }
+          },
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -8751,7 +8926,8 @@
           "theme": "light",
           "props": {
             "locale": "ar"
-          }
+          },
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -8782,7 +8958,8 @@
           "state": "default",
           "width": 231,
           "height": 231,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -8790,7 +8967,8 @@
           "state": "default",
           "width": 231,
           "height": 231,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -8842,7 +9020,8 @@
           "state": "default",
           "width": 210,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -8858,7 +9037,8 @@
           "state": "default",
           "width": 210,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -8923,7 +9103,8 @@
           "state": "default",
           "width": 221,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -8939,7 +9120,8 @@
           "state": "default",
           "width": 221,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -8957,7 +9139,8 @@
           "theme": "dark",
           "props": {
             "locale": "ar-XB"
-          }
+          },
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -8968,7 +9151,8 @@
           "theme": "light",
           "props": {
             "locale": "ar-XB"
-          }
+          },
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -8979,7 +9163,8 @@
           "theme": "dark",
           "props": {
             "direction": "rtl"
-          }
+          },
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -8990,7 +9175,8 @@
           "theme": "light",
           "props": {
             "direction": "rtl"
-          }
+          },
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -9001,7 +9187,8 @@
           "theme": "dark",
           "props": {
             "fontScale": "2.0"
-          }
+          },
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -9012,7 +9199,8 @@
           "theme": "light",
           "props": {
             "fontScale": "2.0"
-          }
+          },
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -9074,7 +9262,8 @@
           "state": "default",
           "width": 210,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -9090,7 +9279,8 @@
           "state": "default",
           "width": 210,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -9134,7 +9324,8 @@
           "state": "default",
           "width": 662,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -9142,7 +9333,8 @@
           "state": "default",
           "width": 662,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -9186,7 +9378,8 @@
           "state": "default",
           "width": 252,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -9202,7 +9395,8 @@
           "state": "default",
           "width": 252,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -9262,7 +9456,8 @@
           "state": "default",
           "width": 268,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -9270,7 +9465,8 @@
           "state": "default",
           "width": 268,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -9322,7 +9518,8 @@
           "state": "default",
           "width": 445,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -9330,7 +9527,8 @@
           "state": "default",
           "width": 445,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -9373,7 +9571,8 @@
           "width": 1078,
           "height": 2399,
           "theme": "dark",
-          "size": "compact"
+          "size": "compact",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -9382,7 +9581,8 @@
           "width": 1078,
           "height": 2399,
           "theme": "light",
-          "size": "compact"
+          "size": "compact",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -9478,7 +9678,8 @@
           "state": "default",
           "width": 819,
           "height": 231,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -9486,7 +9687,8 @@
           "state": "default",
           "width": 819,
           "height": 231,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -9506,7 +9708,8 @@
           "state": "default",
           "width": 819,
           "height": 252,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -9514,7 +9717,8 @@
           "state": "default",
           "width": 819,
           "height": 252,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -9549,7 +9753,8 @@
           "state": "default",
           "width": 420,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -9557,7 +9762,8 @@
           "state": "default",
           "width": 420,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -9578,7 +9784,8 @@
           "state": "default",
           "width": 510,
           "height": 147,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -9586,7 +9793,8 @@
           "state": "default",
           "width": 510,
           "height": 147,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -9607,7 +9815,8 @@
           "state": "default",
           "width": 562,
           "height": 147,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -9615,7 +9824,8 @@
           "state": "default",
           "width": 562,
           "height": 147,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -9631,8 +9841,8 @@
   "library": [
     "custom design system (JetsnackTheme)"
   ],
-  "renderer": "compose-preview 0.19.57",
-  "generatedAt": "2026-08-11T08:56:19.262Z",
+  "renderer": "compose-preview 0.19.61",
+  "generatedAt": "2026-08-11T23:38:05.636Z",
   "display": {
     "surface": "light",
     "hero": "Screens/Feed"
