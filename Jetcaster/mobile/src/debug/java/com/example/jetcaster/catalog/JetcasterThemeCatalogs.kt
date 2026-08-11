@@ -24,6 +24,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.PreviewWrapperProvider
 import com.example.jetcaster.designsystem.theme.JetcasterShapes
 import com.example.jetcaster.designsystem.theme.JetcasterTypography
+import com.example.jetcaster.ui.theme.PreviewThemeOverride
 import com.example.jetcaster.ui.theme.darkScheme
 import com.example.jetcaster.ui.theme.highContrastDarkColorScheme
 import com.example.jetcaster.ui.theme.highContrastLightColorScheme
@@ -54,13 +55,15 @@ import ee.schimke.composeai.preview.ThemeCatalog
 
 @OptIn(ExperimentalMaterial3ExpressiveApi::class)
 @Composable
-private fun JetcasterScheme(scheme: ColorScheme, content: @Composable () -> Unit) = MaterialExpressiveTheme(
-    colorScheme = scheme,
-    motionScheme = MotionScheme.expressive(),
-    shapes = JetcasterShapes,
-    typography = JetcasterTypography,
-    content = content,
-)
+private fun JetcasterScheme(scheme: ColorScheme, content: @Composable () -> Unit) = PreviewThemeOverride(content) { themedContent ->
+    MaterialExpressiveTheme(
+        colorScheme = scheme,
+        motionScheme = MotionScheme.expressive(),
+        shapes = JetcasterShapes,
+        typography = JetcasterTypography,
+        content = themedContent,
+    )
+}
 
 /** The scheme the app actually ships with — every other catalog here is currently unreachable. */
 @ThemeCatalog(name = "Jetcaster · Dark", group = "Jetcaster")

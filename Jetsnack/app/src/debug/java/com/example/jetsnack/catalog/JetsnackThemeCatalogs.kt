@@ -24,6 +24,7 @@ import androidx.compose.ui.tooling.preview.PreviewWrapperProvider
 import com.example.jetsnack.ui.theme.DarkColorPalette
 import com.example.jetsnack.ui.theme.JetsnackColors
 import com.example.jetsnack.ui.theme.LightColorPalette
+import com.example.jetsnack.ui.theme.PreviewThemeOverride
 import com.example.jetsnack.ui.theme.ProvideJetsnackColors
 import com.example.jetsnack.ui.theme.Shapes
 import com.example.jetsnack.ui.theme.Typography
@@ -53,49 +54,51 @@ import ee.schimke.composeai.preview.ThemeCatalog
  * sheets in `JetsnackComponentPreviews.kt`.
  */
 @Composable
-private fun JetsnackPalette(colors: JetsnackColors, content: @Composable () -> Unit) = ProvideJetsnackColors(colors) {
-    MaterialTheme(
-        colorScheme = if (colors.isDark) {
-            darkColorScheme(
-                primary = colors.brand,
-                onPrimary = colors.textInteractive,
-                secondary = colors.brandSecondary,
-                onSecondary = colors.textInteractive,
-                tertiary = colors.textLink,
-                background = colors.uiBackground,
-                onBackground = colors.textSecondary,
-                surface = colors.uiBackground,
-                onSurface = colors.textSecondary,
-                surfaceVariant = colors.uiFloated,
-                onSurfaceVariant = colors.textHelp,
-                surfaceTint = colors.brand,
-                outline = colors.uiBorder,
-                error = colors.error,
-                onError = colors.textInteractive,
-            )
-        } else {
-            lightColorScheme(
-                primary = colors.brand,
-                onPrimary = colors.textInteractive,
-                secondary = colors.brandSecondary,
-                onSecondary = colors.textInteractive,
-                tertiary = colors.textLink,
-                background = colors.uiBackground,
-                onBackground = colors.textSecondary,
-                surface = colors.uiBackground,
-                onSurface = colors.textSecondary,
-                surfaceVariant = colors.uiFloated,
-                onSurfaceVariant = colors.textHelp,
-                surfaceTint = colors.brand,
-                outline = colors.uiBorder,
-                error = colors.error,
-                onError = colors.textInteractive,
-            )
-        },
-        typography = Typography,
-        shapes = Shapes,
-        content = content,
-    )
+private fun JetsnackPalette(colors: JetsnackColors, content: @Composable () -> Unit) = PreviewThemeOverride(content) { themedContent ->
+    ProvideJetsnackColors(colors) {
+        MaterialTheme(
+            colorScheme = if (colors.isDark) {
+                darkColorScheme(
+                    primary = colors.brand,
+                    onPrimary = colors.textInteractive,
+                    secondary = colors.brandSecondary,
+                    onSecondary = colors.textInteractive,
+                    tertiary = colors.textLink,
+                    background = colors.uiBackground,
+                    onBackground = colors.textSecondary,
+                    surface = colors.uiBackground,
+                    onSurface = colors.textSecondary,
+                    surfaceVariant = colors.uiFloated,
+                    onSurfaceVariant = colors.textHelp,
+                    surfaceTint = colors.brand,
+                    outline = colors.uiBorder,
+                    error = colors.error,
+                    onError = colors.textInteractive,
+                )
+            } else {
+                lightColorScheme(
+                    primary = colors.brand,
+                    onPrimary = colors.textInteractive,
+                    secondary = colors.brandSecondary,
+                    onSecondary = colors.textInteractive,
+                    tertiary = colors.textLink,
+                    background = colors.uiBackground,
+                    onBackground = colors.textSecondary,
+                    surface = colors.uiBackground,
+                    onSurface = colors.textSecondary,
+                    surfaceVariant = colors.uiFloated,
+                    onSurfaceVariant = colors.textHelp,
+                    surfaceTint = colors.brand,
+                    outline = colors.uiBorder,
+                    error = colors.error,
+                    onError = colors.textInteractive,
+                )
+            },
+            typography = Typography,
+            shapes = Shapes,
+            content = themedContent,
+        )
+    }
 }
 
 @ThemeCatalog(name = "Jetsnack · Light", group = "Jetsnack")

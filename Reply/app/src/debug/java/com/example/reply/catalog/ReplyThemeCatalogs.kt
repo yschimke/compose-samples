@@ -19,6 +19,7 @@ package com.example.reply.catalog
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.PreviewWrapperProvider
+import com.example.reply.ui.theme.PreviewThemeOverride
 import com.example.reply.ui.theme.darkScheme
 import com.example.reply.ui.theme.highContrastDarkColorScheme
 import com.example.reply.ui.theme.highContrastLightColorScheme
@@ -49,7 +50,9 @@ import ee.schimke.composeai.preview.ThemeCatalog
  * scheme instead of re-entering the contrast selection the catalog is trying to enumerate.
  */
 @Composable private fun ReplyScheme(scheme: androidx.compose.material3.ColorScheme, content: @Composable () -> Unit) =
-    MaterialTheme(colorScheme = scheme, typography = replyTypography, shapes = shapes, content = content)
+    PreviewThemeOverride(content) { themedContent ->
+        MaterialTheme(colorScheme = scheme, typography = replyTypography, shapes = shapes, content = themedContent)
+    }
 
 @ThemeCatalog(name = "Reply · Light", group = "Reply")
 class ReplyLightThemeCatalog : PreviewWrapperProvider {

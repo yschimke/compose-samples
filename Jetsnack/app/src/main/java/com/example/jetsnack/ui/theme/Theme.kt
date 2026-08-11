@@ -79,15 +79,17 @@ internal val DarkColorPalette = JetsnackColors(
 
 @Composable
 fun JetsnackTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Composable () -> Unit) {
-    val colors = if (darkTheme) DarkColorPalette else LightColorPalette
+    PreviewTheme(content) { themedContent ->
+        val colors = if (darkTheme) DarkColorPalette else LightColorPalette
 
-    ProvideJetsnackColors(colors) {
-        MaterialTheme(
-            colorScheme = debugColors(darkTheme),
-            typography = Typography,
-            shapes = Shapes,
-            content = content,
-        )
+        ProvideJetsnackColors(colors) {
+            MaterialTheme(
+                colorScheme = debugColors(darkTheme),
+                typography = Typography,
+                shapes = Shapes,
+                content = themedContent,
+            )
+        }
     }
 }
 

@@ -300,18 +300,20 @@ fun ContrastAwareReplyTheme(
     @Composable()
     () -> Unit,
 ) {
-    val replyColorScheme = when {
-        dynamicColor && Build.VERSION.SDK_INT >= Build.VERSION_CODES.S -> {
-            val context = LocalContext.current
-            if (darkTheme) dynamicDarkColorScheme(context) else dynamicLightColorScheme(context)
-        }
+    PreviewTheme(content) { themedContent ->
+        val replyColorScheme = when {
+            dynamicColor && Build.VERSION.SDK_INT >= Build.VERSION_CODES.S -> {
+                val context = LocalContext.current
+                if (darkTheme) dynamicDarkColorScheme(context) else dynamicLightColorScheme(context)
+            }
 
-        else -> selectSchemeForContrast(darkTheme)
+            else -> selectSchemeForContrast(darkTheme)
+        }
+        MaterialTheme(
+            colorScheme = replyColorScheme,
+            typography = replyTypography,
+            shapes = shapes,
+            content = themedContent,
+        )
     }
-    MaterialTheme(
-        colorScheme = replyColorScheme,
-        typography = replyTypography,
-        shapes = shapes,
-        content = content,
-    )
 }

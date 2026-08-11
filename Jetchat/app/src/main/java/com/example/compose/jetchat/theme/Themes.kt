@@ -89,24 +89,26 @@ val JetchatLightColorScheme = lightColorScheme(
 @SuppressLint("NewApi")
 @Composable
 fun JetchatTheme(isDarkTheme: Boolean = isSystemInDarkTheme(), isDynamicColor: Boolean = true, content: @Composable () -> Unit) {
-    val dynamicColor = isDynamicColor && Build.VERSION.SDK_INT >= Build.VERSION_CODES.S
-    val myColorScheme = when {
-        dynamicColor && isDarkTheme -> {
-            dynamicDarkColorScheme(LocalContext.current)
+    PreviewTheme(content) { themedContent ->
+        val dynamicColor = isDynamicColor && Build.VERSION.SDK_INT >= Build.VERSION_CODES.S
+        val myColorScheme = when {
+            dynamicColor && isDarkTheme -> {
+                dynamicDarkColorScheme(LocalContext.current)
+            }
+
+            dynamicColor && !isDarkTheme -> {
+                dynamicLightColorScheme(LocalContext.current)
+            }
+
+            isDarkTheme -> JetchatDarkColorScheme
+
+            else -> JetchatLightColorScheme
         }
 
-        dynamicColor && !isDarkTheme -> {
-            dynamicLightColorScheme(LocalContext.current)
-        }
-
-        isDarkTheme -> JetchatDarkColorScheme
-
-        else -> JetchatLightColorScheme
+        MaterialTheme(
+            colorScheme = myColorScheme,
+            typography = JetchatTypography,
+            content = themedContent,
+        )
     }
-
-    MaterialTheme(
-        colorScheme = myColorScheme,
-        typography = JetchatTypography,
-        content = content,
-    )
 }

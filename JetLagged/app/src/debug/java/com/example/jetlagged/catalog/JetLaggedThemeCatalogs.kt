@@ -19,6 +19,7 @@ package com.example.jetlagged.catalog
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.PreviewWrapperProvider
 import com.example.jetlagged.ui.theme.JetLaggedTheme
+import com.example.jetlagged.ui.theme.PreviewThemeOverride
 import ee.schimke.composeai.preview.ThemeCatalog
 
 /*
@@ -45,11 +46,15 @@ import ee.schimke.composeai.preview.ThemeCatalog
 @ThemeCatalog(name = "JetLagged · Light", group = "JetLagged")
 class JetLaggedLightThemeCatalog : PreviewWrapperProvider {
     @Composable
-    override fun Wrap(content: @Composable () -> Unit) = JetLaggedTheme(isDarkTheme = false, content = content)
+    override fun Wrap(content: @Composable () -> Unit) = PreviewThemeOverride(content) { themedContent ->
+        JetLaggedTheme(isDarkTheme = false, content = themedContent)
+    }
 }
 
 @ThemeCatalog(name = "JetLagged · Dark", group = "JetLagged")
 class JetLaggedDarkThemeCatalog : PreviewWrapperProvider {
     @Composable
-    override fun Wrap(content: @Composable () -> Unit) = JetLaggedTheme(isDarkTheme = true, content = content)
+    override fun Wrap(content: @Composable () -> Unit) = PreviewThemeOverride(content) { themedContent ->
+        JetLaggedTheme(isDarkTheme = true, content = themedContent)
+    }
 }
