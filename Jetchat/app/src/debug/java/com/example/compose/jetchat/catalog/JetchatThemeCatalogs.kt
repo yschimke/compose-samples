@@ -27,6 +27,7 @@ import androidx.compose.ui.tooling.preview.PreviewWrapperProvider
 import com.example.compose.jetchat.theme.JetchatDarkColorScheme
 import com.example.compose.jetchat.theme.JetchatLightColorScheme
 import com.example.compose.jetchat.theme.JetchatTypography
+import com.example.compose.jetchat.theme.PreviewThemeOverride
 import ee.schimke.composeai.preview.ThemeCatalog
 
 /*
@@ -49,8 +50,9 @@ import ee.schimke.composeai.preview.ThemeCatalog
  */
 
 @Composable
-private fun JetchatScheme(scheme: ColorScheme, content: @Composable () -> Unit) =
-    MaterialTheme(colorScheme = scheme, typography = JetchatTypography, content = content)
+private fun JetchatScheme(scheme: ColorScheme, content: @Composable () -> Unit) = PreviewThemeOverride(content) { themedContent ->
+    MaterialTheme(colorScheme = scheme, typography = JetchatTypography, content = themedContent)
+}
 
 @ThemeCatalog(name = "Jetchat · Light", group = "Jetchat")
 class JetchatLightThemeCatalog : PreviewWrapperProvider {

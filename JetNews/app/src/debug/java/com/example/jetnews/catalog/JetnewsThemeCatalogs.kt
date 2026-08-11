@@ -24,6 +24,7 @@ import com.example.jetnews.ui.theme.DarkColors
 import com.example.jetnews.ui.theme.JetnewsShapes
 import com.example.jetnews.ui.theme.JetnewsTypography
 import com.example.jetnews.ui.theme.LightColors
+import com.example.jetnews.ui.theme.PreviewThemeOverride
 import ee.schimke.composeai.preview.ThemeCatalog
 
 /**
@@ -45,8 +46,9 @@ import ee.schimke.composeai.preview.ThemeCatalog
  * colour branch the catalog is trying to enumerate around.
  */
 @Composable
-private fun JetnewsScheme(scheme: ColorScheme, content: @Composable () -> Unit) =
-    MaterialTheme(colorScheme = scheme, shapes = JetnewsShapes, typography = JetnewsTypography, content = content)
+private fun JetnewsScheme(scheme: ColorScheme, content: @Composable () -> Unit) = PreviewThemeOverride(content) { themedContent ->
+    MaterialTheme(colorScheme = scheme, shapes = JetnewsShapes, typography = JetnewsTypography, content = themedContent)
+}
 
 @ThemeCatalog(name = "JetNews · Light", group = "JetNews")
 class JetnewsLightThemeCatalog : PreviewWrapperProvider {

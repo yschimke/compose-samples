@@ -18,6 +18,7 @@ package com.example.jetcaster.catalog
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.PreviewWrapperProvider
+import com.example.jetcaster.theme.PreviewThemeOverride
 import com.example.jetcaster.theme.WearAppTheme
 import ee.schimke.composeai.preview.WearThemeCatalog
 
@@ -30,5 +31,7 @@ import ee.schimke.composeai.preview.WearThemeCatalog
 @WearThemeCatalog(name = "Dark", group = "Jetcaster Wear")
 class JetcasterWearDarkThemeCatalog : PreviewWrapperProvider {
     @Composable
-    override fun Wrap(content: @Composable () -> Unit) = WearAppTheme(content)
+    override fun Wrap(content: @Composable () -> Unit) = PreviewThemeOverride(content) { themedContent ->
+        WearAppTheme(themedContent)
+    }
 }

@@ -21,10 +21,12 @@ import androidx.wear.compose.material3.MaterialTheme
 
 @Composable
 fun WearAppTheme(content: @Composable () -> Unit) {
-    MaterialTheme(
-        colorScheme = wearColorPalette,
-        typography = Typography,
-        shapes = Shapes,
-        content = content,
-    )
+    PreviewTheme(content) { themedContent ->
+        MaterialTheme(
+            colorScheme = wearColorPalette,
+            typography = Typography,
+            shapes = Shapes,
+            content = themedContent,
+        )
+    }
 }

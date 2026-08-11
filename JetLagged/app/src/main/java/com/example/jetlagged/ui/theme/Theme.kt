@@ -102,23 +102,25 @@ private val shapes: Shapes
     )
 @Composable
 fun JetLaggedTheme(isDarkTheme: Boolean = isSystemInDarkTheme(), content: @Composable () -> Unit) {
-    val colorScheme: ColorScheme
-    val extraColors: JetLaggedExtraColors
-    if (isDarkTheme) {
-        colorScheme = DarkColorScheme
-        extraColors = DarkExtraColors
-    } else {
-        colorScheme = LightColorScheme
-        extraColors = LightExtraColors
-    }
+    PreviewTheme(content) { themedContent ->
+        val colorScheme: ColorScheme
+        val extraColors: JetLaggedExtraColors
+        if (isDarkTheme) {
+            colorScheme = DarkColorScheme
+            extraColors = DarkExtraColors
+        } else {
+            colorScheme = LightColorScheme
+            extraColors = LightExtraColors
+        }
 
-    CompositionLocalProvider(LocalExtraColors provides extraColors) {
-        MaterialTheme(
-            colorScheme = colorScheme,
-            typography = Typography,
-            shapes = shapes,
-            content = content,
-        )
+        CompositionLocalProvider(LocalExtraColors provides extraColors) {
+            MaterialTheme(
+                colorScheme = colorScheme,
+                typography = Typography,
+                shapes = shapes,
+                content = themedContent,
+            )
+        }
     }
 }
 

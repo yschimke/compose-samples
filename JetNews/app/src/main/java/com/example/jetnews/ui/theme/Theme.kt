@@ -88,18 +88,20 @@ val DarkColors = darkColorScheme(
 
 @Composable
 fun JetnewsTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Composable () -> Unit) {
-    val colorScheme =
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
-            val context = LocalContext.current
-            if (darkTheme) dynamicDarkColorScheme(context) else dynamicLightColorScheme(context)
-        } else {
-            if (darkTheme) DarkColors else LightColors
-        }
+    PreviewTheme(content) { themedContent ->
+        val colorScheme =
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+                val context = LocalContext.current
+                if (darkTheme) dynamicDarkColorScheme(context) else dynamicLightColorScheme(context)
+            } else {
+                if (darkTheme) DarkColors else LightColors
+            }
 
-    MaterialTheme(
-        colorScheme = colorScheme,
-        shapes = JetnewsShapes,
-        typography = JetnewsTypography,
-        content = content,
-    )
+        MaterialTheme(
+            colorScheme = colorScheme,
+            shapes = JetnewsShapes,
+            typography = JetnewsTypography,
+            content = themedContent,
+        )
+    }
 }
