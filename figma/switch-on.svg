@@ -2,9 +2,10 @@
 <g transform="translate(0, 0)">
   <g id="Root">
     <g id="Box">
-      <rect x="42" y="63" width="137" height="84" rx="42" ry="42" fill="#1546F6"/>
+        <rect x="42" y="63" width="137" height="84" rx="42" ry="42" fill="#1546F6"/>
       <g id="Box">
-        <rect x="105" y="74" width="63" height="63" rx="31.5" ry="31.5" fill="#FFFFFF"/>
+        <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAA/CAYAAABXXxDfAAAEHElEQVR4XuWbW0gUURjHB3quh9joQj10k5KC6C166uKiFZGJWUS99NS9sAjrpeghjDQNIiICy8Qk6EUT0nwKS7MeUssoorDIC6lpOnuZ2f3yf2IW/WZ3Z/amu3P+8Ed2dvec7+c5e+ac75xRFrhVSqVzTnjpWpWfHjzTqP6lTq87A/S5N0hDoySEv3iN63i/qkETn99+3GsqKxl2uSfqXZtprgLxN5Phrcc8VPlYo+99wf+EcQrfRzlbjnpMdSRil1v95NrmzUoa/Mp8la5Xa/TtV2LAkYRySx/6adVec93xeaIxYfhlu1S6et9Pf/7ycFOjkTGiK/f8ol4eS6yOG35RrkrFFX7q+52alrYS6j170yfi4LHZdVzwGw566F1PgMczK0IciIfHaMcxwxdd9NLw6Oy0diQhHsTFY7WybfiFk92rolajYHpxh4S4yms0U9zRbAt+dYFKre91Xl9a6sUbXcTLGcLZEt590kM/BtLj921XiBdxcxbuqPCL81Rq786MFudq69JF/JzJNnx1o8bLzChhSs2ZbMFj4uIEgYOzRYUvLPFSIJCmw3qMAkek26AJfulOlQZHnAFuaGAoKLg4qwneKd2dK1z3nwa/tlClsXFntbqh0UmuFXuiwN99mtmju5WQGwgLv/GQhzw+Z7a6IfBlF4WBr23KzMlMrEKazATfP0vr8pkW8gDT4HNPeflnHC3whuAxEMgkY+AT8F965ejyhsAr4Dcd8fD3pBDubsrhyz5+XQqBW7l0x5nTWSuBW3H6rC6SwK00tsoxueECt/I2TfLvMy1wK739ct3mDIFb0XQ54cGtDAzzy3II3ErXVzlbHtxKS4ecA54Y7WVZx3NhXa/gNIWMArdyrlLO6S24FdkSGYbALdbzsqSwDGETI5TMwI9fJmFRE4LHXpZMmpbDW7JDnq5vdPkQvExdP2zePnufKsWODfYjTfCw01PYEffqYOxiYjfTicLu8/Jou7SwtPvzME4wDAw7q/Vx0sTWyQwY930nncnBGSPOGBEedkr3R36es1nCwzjHlsmaek8P56jwOMGIk4yZKJwcTegEJrxmclLwczCzUl2IF3FzFm5LeHjdfpXaP2RGD+j4GKCsZJ26NozFz5OW9B4DcFYYcfLYI9k2vOGS237S0+xXoOtBOlPuM8Vq5Zjh4YIL3rQ5rDg0GqT88+Hv41aOCx7GKhALhXGVhzMzQr236jQRB4/NruOGN4xHOmbyn2BA232UJJJdORMNCcMbRjDIhXenaPsL5aL8RKFhl1vtmZ9H85IGP9XrD3jEA4fP23RS40wP4ntNbQGRX0d5vI547XJPNKf0QeKpxmOfu4u9dLrMRzceaVTXrNOrzoDYH4fwF69xvaxGE6M2Pp+Mx0W5XTlqqVJIcwT4pP4Bzr7+4L+AnSkAAAAASUVORK5CYII=" x="105" y="74" width="63" height="63"/>
+          <rect x="105" y="74" width="63" height="63" rx="31.5" ry="31.5" fill="#FFFFFF"/>
       </g>
     </g>
   </g>

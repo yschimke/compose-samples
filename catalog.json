@@ -15,7 +15,8 @@
           "theme": "light",
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetchat/p/conversation-screen__ideal__default__light__compact",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatConversationContentLightPreview_Conversation___light"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatConversationContentLightPreview_Conversation___light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -25,7 +26,8 @@
           "height": 2100,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetchat/p/conversation-screen__ideal__default__dark",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatConversationContentLightPreview_Dark"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatConversationContentLightPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -35,7 +37,8 @@
           "height": 2100,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetchat/p/conversation-screen__ideal__default__light",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatConversationContentLightPreview_Conversation___light"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatConversationContentLightPreview_Conversation___light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -48,7 +51,8 @@
             "breakpoint": "medium"
           },
           "livePreview": "https://preview.coo.ee/jetchat/p/conversation-screen__ideal__default__medium__breakpoint-medium",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatConversationContentMediumPreview_Conversation___medium_width"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatConversationContentMediumPreview_Conversation___medium_width",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -58,7 +62,8 @@
           "height": 2100,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetchat/p/conversation-screen__ideal__empty__compact",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatConversationContentEmptyPreview_Conversation___empty"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatConversationContentEmptyPreview_Conversation___empty",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -664,7 +669,8 @@
           "height": 84,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetchat/p/conversation-day-header__ideal__default__dark",
-          "previewId": "com.example.compose.jetchat.conversation.ConversationKt.DayHeaderPrev_Dark"
+          "previewId": "com.example.compose.jetchat.conversation.ConversationKt.DayHeaderPrev_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -673,7 +679,8 @@
           "width": 1050,
           "height": 84,
           "livePreview": "https://preview.coo.ee/jetchat/p/conversation-day-header__ideal__default",
-          "previewId": "com.example.compose.jetchat.conversation.ConversationKt.DayHeaderPrev_Day_header"
+          "previewId": "com.example.compose.jetchat.conversation.ConversationKt.DayHeaderPrev_Day_header",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -683,7 +690,8 @@
           "height": 84,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetchat/p/conversation-day-header__ideal__default__light",
-          "previewId": "com.example.compose.jetchat.conversation.ConversationKt.DayHeaderPrev_Light"
+          "previewId": "com.example.compose.jetchat.conversation.ConversationKt.DayHeaderPrev_Light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -722,7 +730,8 @@
           "height": 2100,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetchat/p/conversation-jump-to-bottom__ideal__default__dark",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatJumpToBottomLightPreview_Dark"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatJumpToBottomLightPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -733,7 +742,8 @@
           "theme": "light",
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetchat/p/conversation-jump-to-bottom__ideal__default__light__compact",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatJumpToBottomLightPreview_Light"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatJumpToBottomLightPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -743,7 +753,8 @@
           "height": 2100,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetchat/p/conversation-jump-to-bottom__ideal__default__light",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatJumpToBottomLightPreview_JumpToBottom___light"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatJumpToBottomLightPreview_JumpToBottom___light",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -798,7 +809,8 @@
           "height": 280,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetchat/p/messages-row__ideal__default__dark",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatMessageOtherPreview_Dark"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatMessageOtherPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -808,7 +820,8 @@
           "height": 280,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetchat/p/messages-row__ideal__default__light",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatMessageOtherPreview_Light"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatMessageOtherPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -818,7 +831,8 @@
           "height": 280,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetchat/p/messages-row__ideal__default__compact",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatMessageOtherPreview_Light"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatMessageOtherPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -831,7 +845,8 @@
             "author": "me"
           },
           "livePreview": "https://preview.coo.ee/jetchat/p/messages-row__ideal__default__compact__author-me",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatMessageMePreview_Message___me"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatMessageMePreview_Message___me",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -841,7 +856,8 @@
           "height": 187,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetchat/p/messages-row__ideal__continuation__compact",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatMessageContinuationPreview_Message___continuation"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatMessageContinuationPreview_Message___continuation",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -851,7 +867,8 @@
           "height": 270,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetchat/p/messages-row__ideal__group-head__compact",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatMessageGroupHeadPreview_Message___group_head"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatMessageGroupHeadPreview_Message___group_head",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -861,7 +878,8 @@
           "height": 197,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetchat/p/messages-row__ideal__group-tail__compact",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatMessageGroupTailPreview_Message___group_tail"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatMessageGroupTailPreview_Message___group_tail",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -874,7 +892,8 @@
             "content": "image"
           },
           "livePreview": "https://preview.coo.ee/jetchat/p/messages-row__ideal__default__compact__content-image",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatMessageWithImagePreview_Message___with_image"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatMessageWithImagePreview_Message___with_image",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -887,7 +906,8 @@
             "content": "long text + link"
           },
           "livePreview": "https://preview.coo.ee/jetchat/p/messages-row__ideal__default__compact__content-long-text-link",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatMessageLongTextPreview_Message___long_text_and_link"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatMessageLongTextPreview_Message___long_text_and_link",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -901,7 +921,8 @@
             "author": "me"
           },
           "livePreview": "https://preview.coo.ee/jetchat/p/messages-row__ideal__default__dark__compact__author-me",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatMessageMeDarkPreview_Message___me__dark"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatMessageMeDarkPreview_Message___me__dark",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -964,7 +985,8 @@
           "height": 259,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetchat/p/messages-author-and-text__ideal__default__compact",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatAuthorAndTextMessagePreview_Light"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatAuthorAndTextMessagePreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -974,7 +996,8 @@
           "height": 259,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetchat/p/messages-author-and-text__ideal__default__dark",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatAuthorAndTextMessagePreview_Dark"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatAuthorAndTextMessagePreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -984,7 +1007,8 @@
           "height": 259,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetchat/p/messages-author-and-text__ideal__default__light",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatAuthorAndTextMessagePreview_Light"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatAuthorAndTextMessagePreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -997,7 +1021,8 @@
             "grouping": "continuation"
           },
           "livePreview": "https://preview.coo.ee/jetchat/p/messages-author-and-text__ideal__continuation__compact__grouping-continuation",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatAuthorAndTextMessageContinuedPreview_AuthorAndTextMessage___continuation"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatAuthorAndTextMessageContinuedPreview_AuthorAndTextMessage___continuation",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -1045,7 +1070,8 @@
           "height": 176,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetchat/p/messages-bubble__ideal__default__compact",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatChatItemBubbleOtherPreview_Light"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatChatItemBubbleOtherPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1055,7 +1081,8 @@
           "height": 176,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetchat/p/messages-bubble__ideal__default__dark",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatChatItemBubbleOtherPreview_Dark"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatChatItemBubbleOtherPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1065,7 +1092,8 @@
           "height": 176,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetchat/p/messages-bubble__ideal__default__light",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatChatItemBubbleOtherPreview_Light"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatChatItemBubbleOtherPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1078,7 +1106,8 @@
             "author": "me"
           },
           "livePreview": "https://preview.coo.ee/jetchat/p/messages-bubble__ideal__default__compact__author-me",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatChatItemBubbleMePreview_ChatItemBubble___me"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatChatItemBubbleMePreview_ChatItemBubble___me",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1091,7 +1120,8 @@
             "content": "image"
           },
           "livePreview": "https://preview.coo.ee/jetchat/p/messages-bubble__ideal__default__compact__content-image",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatChatItemBubbleWithImagePreview_ChatItemBubble___with_image"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatChatItemBubbleWithImagePreview_ChatItemBubble___with_image",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -1139,7 +1169,8 @@
           "height": 239,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetchat/p/messages-clickable-text__ideal__default__compact",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatClickableMessagePreview_Light"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatClickableMessagePreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1149,7 +1180,8 @@
           "height": 239,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetchat/p/messages-clickable-text__ideal__default__dark",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatClickableMessagePreview_Dark"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatClickableMessagePreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1159,7 +1191,8 @@
           "height": 239,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetchat/p/messages-clickable-text__ideal__default__light",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatClickableMessagePreview_Light"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatClickableMessagePreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1172,7 +1205,8 @@
             "author": "me"
           },
           "livePreview": "https://preview.coo.ee/jetchat/p/messages-clickable-text__ideal__default__compact__author-me",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatClickableMessagePrimaryPreview_ClickableMessage___primary__own__styling"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatClickableMessagePrimaryPreview_ClickableMessage___primary__own__styling",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -1211,7 +1245,8 @@
           "height": 2100,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetchat/p/messages-list__ideal__default__dark",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatMessagesPreview_Dark"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatMessagesPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1221,7 +1256,8 @@
           "height": 2100,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetchat/p/messages-list__ideal__default__light",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatMessagesPreview_Light"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatMessagesPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1231,7 +1267,8 @@
           "height": 1680,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetchat/p/messages-list__ideal__default__compact",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatMessagesPreview_Light"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatMessagesPreview_Light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -1444,7 +1481,8 @@
           "height": 357,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetchat/p/conversation-input__ideal__default__dark",
-          "previewId": "com.example.compose.jetchat.conversation.UserInputKt.UserInputPreview_Dark"
+          "previewId": "com.example.compose.jetchat.conversation.UserInputKt.UserInputPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1454,7 +1492,8 @@
           "height": 357,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetchat/p/conversation-input__ideal__default__light",
-          "previewId": "com.example.compose.jetchat.conversation.UserInputKt.UserInputPreview_Light"
+          "previewId": "com.example.compose.jetchat.conversation.UserInputKt.UserInputPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1463,7 +1502,8 @@
           "width": 1050,
           "height": 357,
           "livePreview": "https://preview.coo.ee/jetchat/p/conversation-input__ideal__default",
-          "previewId": "com.example.compose.jetchat.conversation.UserInputKt.UserInputPreview_Light"
+          "previewId": "com.example.compose.jetchat.conversation.UserInputKt.UserInputPreview_Light",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -1818,7 +1858,8 @@
           "height": 661,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetchat/p/composer-emoji-selector__ideal__default__dark",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatEmojiSelectorPreview_Dark"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatEmojiSelectorPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1828,7 +1869,8 @@
           "height": 840,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetchat/p/composer-emoji-selector__ideal__default__compact",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatEmojiSelectorPreview_EmojiSelector"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatEmojiSelectorPreview_EmojiSelector",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1838,7 +1880,8 @@
           "height": 661,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetchat/p/composer-emoji-selector__ideal__default__light",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatEmojiSelectorPreview_Light"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatEmojiSelectorPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1851,7 +1894,8 @@
             "part": "table only"
           },
           "livePreview": "https://preview.coo.ee/jetchat/p/composer-emoji-selector__ideal__default__compact__part-table-only",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatEmojiTablePreview_EmojiTable"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatEmojiTablePreview_EmojiTable",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -2548,7 +2592,8 @@
           "height": 179,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetchat/p/composer-selector-tab__ideal__default__dark",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatExtendedSelectorInnerButtonSelectedPreview_Dark"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatExtendedSelectorInnerButtonSelectedPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2558,7 +2603,8 @@
           "height": 179,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetchat/p/composer-selector-tab__ideal__default__light",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatExtendedSelectorInnerButtonSelectedPreview_Light"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatExtendedSelectorInnerButtonSelectedPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2568,7 +2614,8 @@
           "height": 179,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetchat/p/composer-selector-tab__ideal__default__compact",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatExtendedSelectorInnerButtonSelectedPreview_Light"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatExtendedSelectorInnerButtonSelectedPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2578,7 +2625,8 @@
           "height": 179,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetchat/p/composer-selector-tab__ideal__unselected__compact",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatExtendedSelectorInnerButtonUnselectedPreview_SelectorInnerButton___unselected"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatExtendedSelectorInnerButtonUnselectedPreview_SelectorInnerButton___unselected",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -2639,7 +2687,8 @@
           "height": 882,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetchat/p/composer-not-available__ideal__default__dark",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatFunctionalityNotAvailablePanelPreview_Dark"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatFunctionalityNotAvailablePanelPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2649,7 +2698,8 @@
           "height": 893,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetchat/p/composer-not-available__ideal__default__compact",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatFunctionalityNotAvailablePanelPreview_FunctionalityNotAvailablePanel"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatFunctionalityNotAvailablePanelPreview_FunctionalityNotAvailablePanel",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2659,7 +2709,8 @@
           "height": 882,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetchat/p/composer-not-available__ideal__default__light",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatFunctionalityNotAvailablePanelPreview_Light"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatFunctionalityNotAvailablePanelPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2672,7 +2723,8 @@
             "presentation": "popup"
           },
           "livePreview": "https://preview.coo.ee/jetchat/p/composer-not-available__ideal__default__compact__presentation-popup",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatFunctionalityNotAvailablePopupPreview_FunctionalityNotAvailablePopup"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatFunctionalityNotAvailablePopupPreview_FunctionalityNotAvailablePopup",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -2695,7 +2747,8 @@
           "height": 2100,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetchat/p/composer-record-button__ideal__default__dark",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatRecordButtonIdlePreview_Dark"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatRecordButtonIdlePreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2705,7 +2758,8 @@
           "height": 2100,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetchat/p/composer-record-button__ideal__default__light",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatRecordButtonIdlePreview_Light"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatRecordButtonIdlePreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2715,7 +2769,8 @@
           "height": 378,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetchat/p/composer-record-button__ideal__default__compact",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatRecordButtonIdlePreview_Light"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatRecordButtonIdlePreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2725,7 +2780,8 @@
           "height": 378,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetchat/p/composer-record-button__ideal__recording__compact",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatRecordButtonRecordingPreview_RecordButton___recording"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatRecordButtonRecordingPreview_RecordButton___recording",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -2774,7 +2830,8 @@
           "height": 800,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetchat/p/profile-screen__ideal__default__compact",
-          "previewId": "com.example.compose.jetchat.profile.PreviewsKt.ProfilePreview340_Light"
+          "previewId": "com.example.compose.jetchat.profile.PreviewsKt.ProfilePreview340_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2784,7 +2841,8 @@
           "height": 2100,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetchat/p/profile-screen__ideal__default__dark",
-          "previewId": "com.example.compose.jetchat.profile.PreviewsKt.ProfilePreview340MeDark_340_width_-_Me_-_Dark"
+          "previewId": "com.example.compose.jetchat.profile.PreviewsKt.ProfilePreview340MeDark_340_width_-_Me_-_Dark",
+          "density": 1
         },
         {
           "variant": "ideal",
@@ -2794,7 +2852,8 @@
           "height": 2100,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetchat/p/profile-screen__ideal__default__light",
-          "previewId": "com.example.compose.jetchat.profile.PreviewsKt.ProfilePreview340_Light"
+          "previewId": "com.example.compose.jetchat.profile.PreviewsKt.ProfilePreview340_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2805,7 +2864,8 @@
           "theme": "dark",
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetchat/p/profile-screen__ideal__default__dark__compact",
-          "previewId": "com.example.compose.jetchat.profile.PreviewsKt.ProfilePreview340MeDark_340_width_-_Me_-_Dark"
+          "previewId": "com.example.compose.jetchat.profile.PreviewsKt.ProfilePreview340MeDark_340_width_-_Me_-_Dark",
+          "density": 1
         },
         {
           "variant": "ideal",
@@ -2818,7 +2878,8 @@
             "widthDp": 480
           },
           "livePreview": "https://preview.coo.ee/jetchat/p/profile-screen__ideal__default__compact__widthdp-480",
-          "previewId": "com.example.compose.jetchat.profile.PreviewsKt.ProfilePreview480Me_480_width_-_Me"
+          "previewId": "com.example.compose.jetchat.profile.PreviewsKt.ProfilePreview480Me_480_width_-_Me",
+          "density": 1
         },
         {
           "variant": "ideal",
@@ -2832,7 +2893,8 @@
             "widthDp": 480
           },
           "livePreview": "https://preview.coo.ee/jetchat/p/profile-screen__ideal__default__dark__compact__widthdp-480",
-          "previewId": "com.example.compose.jetchat.profile.PreviewsKt.ProfilePreview480MeDark_480_width_-_Me_-_Dark"
+          "previewId": "com.example.compose.jetchat.profile.PreviewsKt.ProfilePreview480MeDark_480_width_-_Me_-_Dark",
+          "density": 1
         },
         {
           "variant": "ideal",
@@ -2846,7 +2908,8 @@
             "subject": "other"
           },
           "livePreview": "https://preview.coo.ee/jetchat/p/profile-screen__ideal__default__compact__subject-other__widthdp-480",
-          "previewId": "com.example.compose.jetchat.profile.PreviewsKt.ProfilePreview480Other_480_width_-_Other"
+          "previewId": "com.example.compose.jetchat.profile.PreviewsKt.ProfilePreview480Other_480_width_-_Other",
+          "density": 1
         },
         {
           "variant": "ideal",
@@ -2861,7 +2924,8 @@
             "subject": "other"
           },
           "livePreview": "https://preview.coo.ee/jetchat/p/profile-screen__ideal__default__dark__compact__subject-other__widthdp-480",
-          "previewId": "com.example.compose.jetchat.profile.PreviewsKt.ProfilePreview480OtherDark_480_width_-_Other_-_Dark"
+          "previewId": "com.example.compose.jetchat.profile.PreviewsKt.ProfilePreview480OtherDark_480_width_-_Other_-_Dark",
+          "density": 1
         },
         {
           "variant": "ideal",
@@ -2874,7 +2938,8 @@
             "widthDp": 700
           },
           "livePreview": "https://preview.coo.ee/jetchat/p/profile-screen__ideal__default__medium__widthdp-700",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatProfileScreenMediumPreview_Profile___medium_width"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatProfileScreenMediumPreview_Profile___medium_width",
+          "density": 1
         },
         {
           "variant": "ideal",
@@ -2889,7 +2954,8 @@
             "subject": "other"
           },
           "livePreview": "https://preview.coo.ee/jetchat/p/profile-screen__ideal__default__dark__medium__subject-other__widthdp-700",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatProfileScreenMediumDarkPreview_Profile___medium_width__dark"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatProfileScreenMediumDarkPreview_Profile___medium_width__dark",
+          "density": 1
         },
         {
           "variant": "ideal",
@@ -2903,7 +2969,8 @@
             "heightDp": 480
           },
           "livePreview": "https://preview.coo.ee/jetchat/p/profile-screen__ideal__default__compact__heightdp-480__widthdp-360",
-          "previewId": "com.example.compose.jetchat.profile.ProfileKt.ConvPreviewPortraitMeDefault_width_360dp_height_480dp_dpi_160"
+          "previewId": "com.example.compose.jetchat.profile.ProfileKt.ConvPreviewPortraitMeDefault_width_360dp_height_480dp_dpi_160",
+          "density": 1
         },
         {
           "variant": "ideal",
@@ -2918,7 +2985,8 @@
             "orientation": "landscape"
           },
           "livePreview": "https://preview.coo.ee/jetchat/p/profile-screen__ideal__default__medium__heightdp-360__orientation-landscape__widthdp-640",
-          "previewId": "com.example.compose.jetchat.profile.ProfileKt.ConvPreviewLandscapeMeDefault_width_640dp_height_360dp_dpi_160"
+          "previewId": "com.example.compose.jetchat.profile.ProfileKt.ConvPreviewLandscapeMeDefault_width_640dp_height_360dp_dpi_160",
+          "density": 1
         },
         {
           "variant": "ideal",
@@ -2933,7 +3001,8 @@
             "subject": "other"
           },
           "livePreview": "https://preview.coo.ee/jetchat/p/profile-screen__ideal__default__compact__heightdp-480__subject-other__widthdp-360",
-          "previewId": "com.example.compose.jetchat.profile.ProfileKt.ConvPreviewPortraitOtherDefault_width_360dp_height_480dp_dpi_160"
+          "previewId": "com.example.compose.jetchat.profile.ProfileKt.ConvPreviewPortraitOtherDefault_width_360dp_height_480dp_dpi_160",
+          "density": 1
         }
       ],
       "greenlines": [
@@ -3024,7 +3093,8 @@
           "height": 210,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetchat/p/profile-fab__ideal__default__dark",
-          "previewId": "com.example.compose.jetchat.profile.ProfileKt.ProfileFabPreview_Dark"
+          "previewId": "com.example.compose.jetchat.profile.ProfileKt.ProfileFabPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3034,7 +3104,8 @@
           "height": 210,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetchat/p/profile-fab__ideal__default__light",
-          "previewId": "com.example.compose.jetchat.profile.ProfileKt.ProfileFabPreview_Light"
+          "previewId": "com.example.compose.jetchat.profile.ProfileKt.ProfileFabPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3043,7 +3114,8 @@
           "width": 408,
           "height": 210,
           "livePreview": "https://preview.coo.ee/jetchat/p/profile-fab__ideal__default",
-          "previewId": "com.example.compose.jetchat.profile.ProfileKt.ProfileFabPreview_Light"
+          "previewId": "com.example.compose.jetchat.profile.ProfileKt.ProfileFabPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3056,7 +3128,8 @@
             "subject": "me"
           },
           "livePreview": "https://preview.coo.ee/jetchat/p/profile-fab__ideal__default__compact__subject-me",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatProfileFabMeExtendedPreview_ProfileFab___me__extended"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatProfileFabMeExtendedPreview_ProfileFab___me__extended",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3069,7 +3142,8 @@
             "subject": "me"
           },
           "livePreview": "https://preview.coo.ee/jetchat/p/profile-fab__ideal__collapsed__compact__subject-me",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatProfileFabMeCollapsedPreview_ProfileFab___me__collapsed"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatProfileFabMeCollapsedPreview_ProfileFab___me__collapsed",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3082,7 +3156,8 @@
             "subject": "other"
           },
           "livePreview": "https://preview.coo.ee/jetchat/p/profile-fab__ideal__collapsed__compact__subject-other",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatProfileFabOtherCollapsedPreview_ProfileFab___other__collapsed"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatProfileFabOtherCollapsedPreview_ProfileFab___other__collapsed",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -3143,7 +3218,8 @@
           "height": 168,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetchat/p/profile-animating-fab-content__ideal__default__compact",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatAnimatingFabContentExtendedPreview_Light"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatAnimatingFabContentExtendedPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3153,7 +3229,8 @@
           "height": 168,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetchat/p/profile-animating-fab-content__ideal__default__dark",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatAnimatingFabContentExtendedPreview_Dark"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatAnimatingFabContentExtendedPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3163,7 +3240,8 @@
           "height": 168,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetchat/p/profile-animating-fab-content__ideal__default__light",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatAnimatingFabContentExtendedPreview_Light"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatAnimatingFabContentExtendedPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3173,7 +3251,8 @@
           "height": 168,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetchat/p/profile-animating-fab-content__ideal__collapsed__compact",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatAnimatingFabContentCollapsedPreview_AnimatingFabContent___collapsed"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatAnimatingFabContentCollapsedPreview_AnimatingFabContent___collapsed",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -3196,7 +3275,8 @@
           "height": 384,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetchat/p/profile-property__ideal__default__dark",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatProfilePropertyPreview_Dark"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatProfilePropertyPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3206,7 +3286,8 @@
           "height": 384,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetchat/p/profile-property__ideal__default__light",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatProfilePropertyPreview_Light"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatProfilePropertyPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3216,7 +3297,8 @@
           "height": 384,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetchat/p/profile-property__ideal__default__compact",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatProfilePropertyPreview_Light"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatProfilePropertyPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3229,7 +3311,8 @@
             "content": "link"
           },
           "livePreview": "https://preview.coo.ee/jetchat/p/profile-property__ideal__default__compact__content-link",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatProfilePropertyLinkPreview_ProfileProperty___link"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatProfilePropertyLinkPreview_ProfileProperty___link",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3242,7 +3325,8 @@
             "subject": "other"
           },
           "livePreview": "https://preview.coo.ee/jetchat/p/profile-property__ideal__default__compact__subject-other",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatProfilePropertyAwayPreview_ProfileProperty___away_status"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatProfilePropertyAwayPreview_ProfileProperty___away_status",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -3265,7 +3349,8 @@
           "height": 105,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetchat/p/profile-error__ideal__default__dark",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatProfileErrorPreview_Dark"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatProfileErrorPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3275,7 +3360,8 @@
           "height": 105,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetchat/p/profile-error__ideal__default__light",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatProfileErrorPreview_Light"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatProfileErrorPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3285,7 +3371,8 @@
           "height": 210,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetchat/p/profile-error__ideal__default__compact",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatProfileErrorPreview_Light"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatProfileErrorPreview_Light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -3307,7 +3394,8 @@
           "width": 1050,
           "height": 168,
           "livePreview": "https://preview.coo.ee/jetchat/p/chrome-app-bar__ideal__default",
-          "previewId": "com.example.compose.jetchat.components.JetchatAppBarKt.JetchatAppBarPreview_App_bar"
+          "previewId": "com.example.compose.jetchat.components.JetchatAppBarKt.JetchatAppBarPreview_App_bar",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3317,7 +3405,8 @@
           "height": 168,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetchat/p/chrome-app-bar__ideal__default__dark",
-          "previewId": "com.example.compose.jetchat.components.JetchatAppBarKt.JetchatAppBarPreview_Dark"
+          "previewId": "com.example.compose.jetchat.components.JetchatAppBarKt.JetchatAppBarPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3327,7 +3416,8 @@
           "height": 168,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetchat/p/chrome-app-bar__ideal__default__light",
-          "previewId": "com.example.compose.jetchat.components.JetchatAppBarKt.JetchatAppBarPreview_Light"
+          "previewId": "com.example.compose.jetchat.components.JetchatAppBarKt.JetchatAppBarPreview_Light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -3381,7 +3471,8 @@
           "height": 1015,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetchat/p/chrome-drawer__ideal__default__dark",
-          "previewId": "com.example.compose.jetchat.components.JetchatDrawerKt.DrawerPreview_Dark"
+          "previewId": "com.example.compose.jetchat.components.JetchatDrawerKt.DrawerPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3390,7 +3481,8 @@
           "width": 1050,
           "height": 1015,
           "livePreview": "https://preview.coo.ee/jetchat/p/chrome-drawer__ideal__default",
-          "previewId": "com.example.compose.jetchat.components.JetchatDrawerKt.DrawerPreview_Drawer"
+          "previewId": "com.example.compose.jetchat.components.JetchatDrawerKt.DrawerPreview_Drawer",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3400,7 +3492,8 @@
           "height": 1015,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetchat/p/chrome-drawer__ideal__default__light",
-          "previewId": "com.example.compose.jetchat.components.JetchatDrawerKt.DrawerPreview_Light"
+          "previewId": "com.example.compose.jetchat.components.JetchatDrawerKt.DrawerPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3410,7 +3503,8 @@
           "height": 1470,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetchat/p/chrome-drawer__ideal__chat-selected__compact",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatDrawerContentChatSelectedPreview_Drawer_content___chat_selected"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatDrawerContentChatSelectedPreview_Drawer_content___chat_selected",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3420,7 +3514,8 @@
           "height": 1470,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetchat/p/chrome-drawer__ideal__profile-selected__compact",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatDrawerContentProfileSelectedPreview_Drawer_content___profile_selected"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatDrawerContentProfileSelectedPreview_Drawer_content___profile_selected",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3431,7 +3526,8 @@
           "theme": "dark",
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetchat/p/chrome-drawer__ideal__profile-selected__dark__compact",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatDrawerContentProfileSelectedDarkPreview_Drawer_content___profile_selected__dark"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatDrawerContentProfileSelectedDarkPreview_Drawer_content___profile_selected__dark",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -3619,7 +3715,8 @@
           "height": 2100,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetchat/p/chrome-drawer-shell__ideal__default__dark",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatDrawerOpenPreview_Dark"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatDrawerOpenPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3629,7 +3726,8 @@
           "height": 2100,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetchat/p/chrome-drawer-shell__ideal__default__compact",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatDrawerOpenPreview_Drawer_shell___open"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatDrawerOpenPreview_Drawer_shell___open",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3639,7 +3737,8 @@
           "height": 2100,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetchat/p/chrome-drawer-shell__ideal__default__light",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatDrawerOpenPreview_Light"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatDrawerOpenPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3649,7 +3748,8 @@
           "height": 2100,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetchat/p/chrome-drawer-shell__ideal__closed__compact",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatDrawerClosedPreview_Drawer_shell___closed"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatDrawerClosedPreview_Drawer_shell___closed",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -4427,7 +4527,8 @@
           "width": 1050,
           "height": 168,
           "livePreview": "https://preview.coo.ee/jetchat/p/chrome-channel-bar__ideal__default",
-          "previewId": "com.example.compose.jetchat.conversation.ConversationKt.ChannelBarPrev_Channel_bar"
+          "previewId": "com.example.compose.jetchat.conversation.ConversationKt.ChannelBarPrev_Channel_bar",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4437,7 +4538,8 @@
           "height": 168,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetchat/p/chrome-channel-bar__ideal__default__dark",
-          "previewId": "com.example.compose.jetchat.conversation.ConversationKt.ChannelBarPrev_Dark"
+          "previewId": "com.example.compose.jetchat.conversation.ConversationKt.ChannelBarPrev_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4447,7 +4549,8 @@
           "height": 168,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetchat/p/chrome-channel-bar__ideal__default__light",
-          "previewId": "com.example.compose.jetchat.conversation.ConversationKt.ChannelBarPrev_Light"
+          "previewId": "com.example.compose.jetchat.conversation.ConversationKt.ChannelBarPrev_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4460,7 +4563,8 @@
             "content": "long name"
           },
           "livePreview": "https://preview.coo.ee/jetchat/p/chrome-channel-bar__ideal__default__compact__content-long-name",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatChannelNameBarLongNamePreview_ChannelNameBar___long_channel_name"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatChannelNameBarLongNamePreview_ChannelNameBar___long_channel_name",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -4546,7 +4650,8 @@
           "height": 168,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetchat/p/chrome-icon__ideal__default__dark",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatIconPreview_Dark"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatIconPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4556,7 +4661,8 @@
           "height": 252,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetchat/p/chrome-icon__ideal__default__compact",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatIconPreview_Light"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatIconPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4566,7 +4672,8 @@
           "height": 168,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetchat/p/chrome-icon__ideal__default__light",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatIconPreview_Light"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatIconPreview_Light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -4589,7 +4696,8 @@
           "height": 82,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/jetchat/p/chrome-divider__ideal__default__dark",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatDividerItemPreview_Dark"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatDividerItemPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4599,7 +4707,8 @@
           "height": 126,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/jetchat/p/chrome-divider__ideal__default__compact",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatDividerItemPreview_Light"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatDividerItemPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4609,7 +4718,8 @@
           "height": 82,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetchat/p/chrome-divider__ideal__default__light",
-          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatDividerItemPreview_Light"
+          "previewId": "com.example.compose.jetchat.catalog.JetchatComponentPreviewsKt.JetchatDividerItemPreview_Light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -4630,7 +4740,8 @@
           "state": "default",
           "width": 300,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4646,7 +4757,8 @@
           "state": "default",
           "width": 300,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4664,7 +4776,8 @@
           "theme": "dark",
           "props": {
             "fontScale": "2.0"
-          }
+          },
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4675,7 +4788,8 @@
           "theme": "light",
           "props": {
             "fontScale": "2.0"
-          }
+          },
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4683,7 +4797,8 @@
           "state": "pressed",
           "width": 342,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4691,7 +4806,8 @@
           "state": "pressed",
           "width": 342,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4699,7 +4815,8 @@
           "state": "keyboard-focus",
           "width": 351,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4707,7 +4824,8 @@
           "state": "keyboard-focus",
           "width": 351,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4718,7 +4836,8 @@
           "theme": "dark",
           "props": {
             "content": "icon+label"
-          }
+          },
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4729,7 +4848,8 @@
           "theme": "light",
           "props": {
             "content": "icon+label"
-          }
+          },
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -4782,7 +4902,8 @@
           "state": "default",
           "width": 300,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4790,7 +4911,8 @@
           "state": "default",
           "width": 300,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -4843,7 +4965,8 @@
           "state": "default",
           "width": 350,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4859,7 +4982,8 @@
           "state": "default",
           "width": 350,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4919,7 +5043,8 @@
           "state": "default",
           "width": 350,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4927,7 +5052,8 @@
           "state": "default",
           "width": 350,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -4980,7 +5106,8 @@
           "state": "default",
           "width": 236,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4988,7 +5115,8 @@
           "state": "default",
           "width": 236,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -5041,7 +5169,8 @@
           "state": "default",
           "width": 662,
           "height": 95,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5049,7 +5178,8 @@
           "state": "default",
           "width": 662,
           "height": 95,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -5084,7 +5214,8 @@
           "state": "default",
           "width": 189,
           "height": 189,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5092,7 +5223,8 @@
           "state": "default",
           "width": 189,
           "height": 189,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -5112,7 +5244,8 @@
           "state": "default",
           "width": 126,
           "height": 126,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5120,7 +5253,8 @@
           "state": "default",
           "width": 126,
           "height": 126,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -5156,7 +5290,8 @@
           "state": "default",
           "width": 504,
           "height": 294,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5164,7 +5299,8 @@
           "state": "default",
           "width": 504,
           "height": 294,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -5194,7 +5330,8 @@
           "state": "default",
           "width": 504,
           "height": 294,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5202,7 +5339,8 @@
           "state": "default",
           "width": 504,
           "height": 294,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -5232,7 +5370,8 @@
           "state": "default",
           "width": 504,
           "height": 294,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5240,7 +5379,8 @@
           "state": "default",
           "width": 504,
           "height": 294,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -5270,7 +5410,8 @@
           "state": "default",
           "width": 653,
           "height": 253,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5278,7 +5419,8 @@
           "state": "default",
           "width": 653,
           "height": 253,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5286,7 +5428,8 @@
           "state": "slot-mode",
           "width": 653,
           "height": 253,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5294,7 +5437,8 @@
           "state": "slot-mode",
           "width": 653,
           "height": 253,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5305,7 +5449,8 @@
           "theme": "dark",
           "props": {
             "locale": "ar"
-          }
+          },
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5316,7 +5461,8 @@
           "theme": "light",
           "props": {
             "locale": "ar"
-          }
+          },
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -5347,7 +5493,8 @@
           "state": "default",
           "width": 231,
           "height": 231,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5355,7 +5502,8 @@
           "state": "default",
           "width": 231,
           "height": 231,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -5407,7 +5555,8 @@
           "state": "default",
           "width": 210,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5423,7 +5572,8 @@
           "state": "default",
           "width": 210,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5488,7 +5638,8 @@
           "state": "default",
           "width": 221,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5504,7 +5655,8 @@
           "state": "default",
           "width": 221,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5522,7 +5674,8 @@
           "theme": "dark",
           "props": {
             "locale": "ar-XB"
-          }
+          },
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5533,7 +5686,8 @@
           "theme": "light",
           "props": {
             "locale": "ar-XB"
-          }
+          },
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5544,7 +5698,8 @@
           "theme": "dark",
           "props": {
             "direction": "rtl"
-          }
+          },
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5555,7 +5710,8 @@
           "theme": "light",
           "props": {
             "direction": "rtl"
-          }
+          },
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5566,7 +5722,8 @@
           "theme": "dark",
           "props": {
             "fontScale": "2.0"
-          }
+          },
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5577,7 +5734,8 @@
           "theme": "light",
           "props": {
             "fontScale": "2.0"
-          }
+          },
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -5639,7 +5797,8 @@
           "state": "default",
           "width": 210,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5655,7 +5814,8 @@
           "state": "default",
           "width": 210,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5699,7 +5859,8 @@
           "state": "default",
           "width": 662,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5707,7 +5868,8 @@
           "state": "default",
           "width": 662,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -5751,7 +5913,8 @@
           "state": "default",
           "width": 252,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5767,7 +5930,8 @@
           "state": "default",
           "width": 252,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5827,7 +5991,8 @@
           "state": "default",
           "width": 268,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5835,7 +6000,8 @@
           "state": "default",
           "width": 268,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -5887,7 +6053,8 @@
           "state": "default",
           "width": 445,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5895,7 +6062,8 @@
           "state": "default",
           "width": 445,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -5938,7 +6106,8 @@
           "width": 1078,
           "height": 2399,
           "theme": "dark",
-          "size": "compact"
+          "size": "compact",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5947,7 +6116,8 @@
           "width": 1078,
           "height": 2399,
           "theme": "light",
-          "size": "compact"
+          "size": "compact",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -6043,7 +6213,8 @@
           "state": "default",
           "width": 819,
           "height": 231,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -6051,7 +6222,8 @@
           "state": "default",
           "width": 819,
           "height": 231,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -6071,7 +6243,8 @@
           "state": "default",
           "width": 819,
           "height": 252,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -6079,7 +6252,8 @@
           "state": "default",
           "width": 819,
           "height": 252,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -6114,7 +6288,8 @@
           "state": "default",
           "width": 420,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -6122,7 +6297,8 @@
           "state": "default",
           "width": 420,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -6143,7 +6319,8 @@
           "state": "default",
           "width": 510,
           "height": 147,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -6151,7 +6328,8 @@
           "state": "default",
           "width": 510,
           "height": 147,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -6172,7 +6350,8 @@
           "state": "default",
           "width": 562,
           "height": 147,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -6180,7 +6359,8 @@
           "state": "default",
           "width": 562,
           "height": 147,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -6196,8 +6376,8 @@
   "library": [
     "androidx.compose.material3:material3"
   ],
-  "renderer": "compose-preview 0.19.57",
-  "generatedAt": "2026-08-11T08:55:12.399Z",
+  "renderer": "compose-preview 0.19.61",
+  "generatedAt": "2026-08-11T23:38:31.160Z",
   "display": {
     "surface": "light",
     "hero": "Conversation/Screen"
