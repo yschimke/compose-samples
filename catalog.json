@@ -5765,8 +5765,8 @@
     "androidx.compose.material3.adaptive:adaptive",
     "androidx.navigation3:navigation3"
   ],
-  "renderer": "compose-preview 0.19.51",
-  "generatedAt": "2026-08-09T09:30:21.089Z",
+  "renderer": "compose-preview 0.19.56",
+  "generatedAt": "2026-08-11T08:19:07.209Z",
   "display": {
     "surface": "light",
     "hero": "Screens/Home feed"
