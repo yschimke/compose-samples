@@ -14,7 +14,8 @@
           "height": 2100,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/reply/p/adaptive-phone__ideal__default__dark",
-          "previewId": "com.example.reply.ui.MainActivityKt.ReplyAppPreview_Dark"
+          "previewId": "com.example.reply.ui.MainActivityKt.ReplyAppPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -24,7 +25,8 @@
           "height": 2100,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/reply/p/adaptive-phone__ideal__default__light",
-          "previewId": "com.example.reply.ui.MainActivityKt.ReplyAppPreview_Light"
+          "previewId": "com.example.reply.ui.MainActivityKt.ReplyAppPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -33,7 +35,8 @@
           "width": 1050,
           "height": 2100,
           "livePreview": "https://preview.coo.ee/reply/p/adaptive-phone__ideal__default",
-          "previewId": "com.example.reply.ui.MainActivityKt.ReplyAppPreview_Light"
+          "previewId": "com.example.reply.ui.MainActivityKt.ReplyAppPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -46,7 +49,8 @@
             "posture": "tablet landscape"
           },
           "livePreview": "https://preview.coo.ee/reply/p/adaptive-phone__ideal__default__medium__posture-tablet-landscape",
-          "previewId": "com.example.reply.ui.MainActivityKt.ReplyAppPreviewTablet"
+          "previewId": "com.example.reply.ui.MainActivityKt.ReplyAppPreviewTablet",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -59,7 +63,8 @@
             "posture": "tablet portrait"
           },
           "livePreview": "https://preview.coo.ee/reply/p/adaptive-phone__ideal__default__compact__posture-tablet-portrait",
-          "previewId": "com.example.reply.ui.MainActivityKt.ReplyAppPreviewTabletPortrait"
+          "previewId": "com.example.reply.ui.MainActivityKt.ReplyAppPreviewTabletPortrait",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -72,7 +77,8 @@
             "posture": "desktop landscape"
           },
           "livePreview": "https://preview.coo.ee/reply/p/adaptive-phone__ideal__default__expanded__posture-desktop-landscape",
-          "previewId": "com.example.reply.ui.MainActivityKt.ReplyAppPreviewDesktop"
+          "previewId": "com.example.reply.ui.MainActivityKt.ReplyAppPreviewDesktop",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -85,7 +91,8 @@
             "posture": "desktop portrait"
           },
           "livePreview": "https://preview.coo.ee/reply/p/adaptive-phone__ideal__default__medium__posture-desktop-portrait",
-          "previewId": "com.example.reply.ui.MainActivityKt.ReplyAppPreviewDesktopPortrait"
+          "previewId": "com.example.reply.ui.MainActivityKt.ReplyAppPreviewDesktopPortrait",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -900,7 +907,8 @@
           "height": 2100,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/reply/p/mail-list__ideal__default__dark",
-          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyEmailListPreview_Dark"
+          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyEmailListPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -910,7 +918,8 @@
           "height": 1838,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/reply/p/mail-list__ideal__default__compact",
-          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyEmailListPreview_Light"
+          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyEmailListPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -920,7 +929,8 @@
           "height": 2100,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/reply/p/mail-list__ideal__default__light",
-          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyEmailListPreview_Light"
+          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyEmailListPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -930,7 +940,8 @@
           "height": 1838,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/reply/p/mail-list__ideal__selection__compact",
-          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyEmailListSelectionPreview_EmailList___selection_mode"
+          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyEmailListSelectionPreview_EmailList___selection_mode",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -940,7 +951,8 @@
           "height": 1838,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/reply/p/mail-list__ideal__empty__compact",
-          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyEmailListEmptyPreview_EmailList___empty"
+          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyEmailListEmptyPreview_EmailList___empty",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -1396,7 +1408,8 @@
           "height": 2100,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/reply/p/mail-detail__ideal__default__dark",
-          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyEmailDetailDarkPreview_EmailDetail___dark"
+          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyEmailDetailDarkPreview_EmailDetail___dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1406,7 +1419,8 @@
           "height": 1838,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/reply/p/mail-detail__ideal__default__compact",
-          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyEmailDetailPreview_Light"
+          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyEmailDetailPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1416,7 +1430,8 @@
           "height": 2100,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/reply/p/mail-detail__ideal__default__light",
-          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyEmailDetailPreview_Light"
+          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyEmailDetailPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1429,7 +1444,8 @@
             "isFullScreen": false
           },
           "livePreview": "https://preview.coo.ee/reply/p/mail-detail__ideal__default__compact__isfullscreen-false",
-          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyEmailDetailPanePreview_EmailDetail___pane"
+          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyEmailDetailPanePreview_EmailDetail___pane",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1440,7 +1456,8 @@
           "theme": "dark",
           "size": "compact",
           "livePreview": "https://preview.coo.ee/reply/p/mail-detail__ideal__default__dark__compact",
-          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyEmailDetailDarkPreview_EmailDetail___dark"
+          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyEmailDetailDarkPreview_EmailDetail___dark",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -1953,7 +1970,8 @@
           "height": 497,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/reply/p/email-listitem__ideal__default__dark",
-          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyEmailListItemDarkPreview_EmailListItem___dark"
+          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyEmailListItemDarkPreview_EmailListItem___dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1963,7 +1981,8 @@
           "height": 497,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/reply/p/email-listitem__ideal__default__compact",
-          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyEmailListItemPreview_Light"
+          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyEmailListItemPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1973,7 +1992,8 @@
           "height": 497,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/reply/p/email-listitem__ideal__default__light",
-          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyEmailListItemPreview_Light"
+          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyEmailListItemPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1986,7 +2006,8 @@
             "isOpened": true
           },
           "livePreview": "https://preview.coo.ee/reply/p/email-listitem__ideal__opened__compact__isopened-true",
-          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyEmailListItemOpenedPreview_EmailListItem___opened"
+          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyEmailListItemOpenedPreview_EmailListItem___opened",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1996,7 +2017,8 @@
           "height": 497,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/reply/p/email-listitem__ideal__selected__compact",
-          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyEmailListItemSelectedPreview_EmailListItem___selected"
+          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyEmailListItemSelectedPreview_EmailListItem___selected",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2006,7 +2028,8 @@
           "height": 497,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/reply/p/email-listitem__ideal__opened-selected__compact",
-          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyEmailListItemOpenedSelectedPreview_EmailListItem___opened_and_selected"
+          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyEmailListItemOpenedSelectedPreview_EmailListItem___opened_and_selected",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2017,7 +2040,8 @@
           "theme": "dark",
           "size": "compact",
           "livePreview": "https://preview.coo.ee/reply/p/email-listitem__ideal__default__dark__compact",
-          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyEmailListItemDarkPreview_EmailListItem___dark"
+          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyEmailListItemDarkPreview_EmailListItem___dark",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -2113,7 +2137,8 @@
           "height": 1523,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/reply/p/threads-threaditem__ideal__default__dark",
-          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyEmailThreadItemDarkPreview_EmailThreadItem___dark"
+          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyEmailThreadItemDarkPreview_EmailThreadItem___dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2123,7 +2148,8 @@
           "height": 1523,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/reply/p/threads-threaditem__ideal__default__compact",
-          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyEmailThreadItemPreview_Light"
+          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyEmailThreadItemPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2133,7 +2159,8 @@
           "height": 1523,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/reply/p/threads-threaditem__ideal__default__light",
-          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyEmailThreadItemPreview_Light"
+          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyEmailThreadItemPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2144,7 +2171,8 @@
           "theme": "dark",
           "size": "compact",
           "livePreview": "https://preview.coo.ee/reply/p/threads-threaditem__ideal__default__dark__compact",
-          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyEmailThreadItemDarkPreview_EmailThreadItem___dark"
+          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyEmailThreadItemDarkPreview_EmailThreadItem___dark",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -2300,7 +2328,8 @@
           "height": 190,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/reply/p/appbars-search__ideal__default__dark",
-          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyDockedSearchBarPreview_Dark"
+          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyDockedSearchBarPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2310,7 +2339,8 @@
           "height": 190,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/reply/p/appbars-search__ideal__default__light",
-          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyDockedSearchBarPreview_Light"
+          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyDockedSearchBarPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2320,7 +2350,8 @@
           "height": 190,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/reply/p/appbars-search__ideal__default__compact",
-          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyDockedSearchBarPreview_Light"
+          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyDockedSearchBarPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2330,7 +2361,8 @@
           "height": 473,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/reply/p/appbars-search__ideal__expanded__compact",
-          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyDockedSearchBarExpandedPreview_SearchBar___expanded"
+          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyDockedSearchBarExpandedPreview_SearchBar___expanded",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2340,7 +2372,8 @@
           "height": 1103,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/reply/p/appbars-search__ideal__results__compact",
-          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyDockedSearchBarResultsPreview_SearchBar___results"
+          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyDockedSearchBarResultsPreview_SearchBar___results",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -2420,7 +2453,8 @@
           "height": 210,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/reply/p/appbars-detail__ideal__default__dark",
-          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.EmailDetailAppBarFullScreenPreview_Dark"
+          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.EmailDetailAppBarFullScreenPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2430,7 +2464,8 @@
           "height": 210,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/reply/p/appbars-detail__ideal__default__compact",
-          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.EmailDetailAppBarFullScreenPreview_Light"
+          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.EmailDetailAppBarFullScreenPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2440,7 +2475,8 @@
           "height": 210,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/reply/p/appbars-detail__ideal__default__light",
-          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.EmailDetailAppBarFullScreenPreview_Light"
+          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.EmailDetailAppBarFullScreenPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2453,7 +2489,8 @@
             "isFullScreen": false
           },
           "livePreview": "https://preview.coo.ee/reply/p/appbars-detail__ideal__default__compact__isfullscreen-false",
-          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.EmailDetailAppBarPanePreview_DetailAppBar___pane"
+          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.EmailDetailAppBarPanePreview_DetailAppBar___pane",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -2573,7 +2610,8 @@
           "height": 252,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/reply/p/navigation-bottombar__ideal__default__compact",
-          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyBottomNavigationBarPreview_Light"
+          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyBottomNavigationBarPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2583,7 +2621,8 @@
           "height": 252,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/reply/p/navigation-bottombar__ideal__default__dark",
-          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyBottomNavigationBarPreview_Dark"
+          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyBottomNavigationBarPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2593,7 +2632,8 @@
           "height": 252,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/reply/p/navigation-bottombar__ideal__default__light",
-          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyBottomNavigationBarPreview_Light"
+          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyBottomNavigationBarPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2603,7 +2643,8 @@
           "height": 252,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/reply/p/navigation-bottombar__ideal__inbox__compact",
-          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyBottomNavigationBarInboxPreview_BottomNavigationBar___Inbox_selected"
+          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyBottomNavigationBarInboxPreview_BottomNavigationBar___Inbox_selected",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2613,7 +2654,8 @@
           "height": 252,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/reply/p/navigation-bottombar__ideal__articles__compact",
-          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyBottomNavigationBarArticlesPreview_BottomNavigationBar___Articles_selected"
+          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyBottomNavigationBarArticlesPreview_BottomNavigationBar___Articles_selected",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -2763,7 +2805,8 @@
           "height": 2100,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/reply/p/navigation-rail__ideal__default__dark",
-          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyNavigationRailTopPreview_Dark"
+          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyNavigationRailTopPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2773,7 +2816,8 @@
           "height": 2100,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/reply/p/navigation-rail__ideal__default__light",
-          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyNavigationRailTopPreview_Light"
+          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyNavigationRailTopPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2783,7 +2827,8 @@
           "height": 1575,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/reply/p/navigation-rail__ideal__default__compact",
-          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyNavigationRailTopPreview_Light"
+          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyNavigationRailTopPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2796,7 +2841,8 @@
             "contentPosition": "CENTER"
           },
           "livePreview": "https://preview.coo.ee/reply/p/navigation-rail__ideal__default__compact__contentposition-center",
-          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyNavigationRailCenterPreview_NavigationRail___centre"
+          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyNavigationRailCenterPreview_NavigationRail___centre",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2806,7 +2852,8 @@
           "height": 1575,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/reply/p/navigation-rail__ideal__inbox__compact",
-          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyNavigationRailInboxPreview_NavigationRail___Inbox_selected"
+          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyNavigationRailInboxPreview_NavigationRail___Inbox_selected",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -3027,7 +3074,8 @@
           "height": 2100,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/reply/p/navigation-drawer__ideal__default__dark",
-          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.PermanentNavigationDrawerContentPreview_Dark"
+          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.PermanentNavigationDrawerContentPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3037,7 +3085,8 @@
           "height": 2100,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/reply/p/navigation-drawer__ideal__default__light",
-          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.PermanentNavigationDrawerContentPreview_Light"
+          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.PermanentNavigationDrawerContentPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3047,7 +3096,8 @@
           "height": 1838,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/reply/p/navigation-drawer__ideal__default__compact",
-          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.PermanentNavigationDrawerContentPreview_Light"
+          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.PermanentNavigationDrawerContentPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3060,7 +3110,8 @@
             "presentation": "modal"
           },
           "livePreview": "https://preview.coo.ee/reply/p/navigation-drawer__ideal__default__compact__presentation-modal",
-          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ModalNavigationDrawerContentPreview_ModalDrawer"
+          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ModalNavigationDrawerContentPreview_ModalDrawer",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3070,7 +3121,8 @@
           "height": 1838,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/reply/p/navigation-drawer__ideal__inbox__compact",
-          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.PermanentNavigationDrawerInboxPreview_PermanentDrawer___Inbox_selected"
+          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.PermanentNavigationDrawerInboxPreview_PermanentDrawer___Inbox_selected",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -3340,7 +3392,8 @@
           "height": 169,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/reply/p/identity-profileimage__ideal__default__dark",
-          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyProfileImagePreview_Dark"
+          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyProfileImagePreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3350,7 +3403,8 @@
           "height": 169,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/reply/p/identity-profileimage__ideal__default__light",
-          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyProfileImagePreview_Light"
+          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyProfileImagePreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3359,7 +3413,8 @@
           "width": 169,
           "height": 169,
           "livePreview": "https://preview.coo.ee/reply/p/identity-profileimage__ideal__default",
-          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyProfileImagePreview_Light"
+          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.ReplyProfileImagePreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3368,7 +3423,8 @@
           "width": 169,
           "height": 169,
           "livePreview": "https://preview.coo.ee/reply/p/identity-profileimage__ideal__selected",
-          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.SelectedProfileImagePreview_ProfileImage___selected"
+          "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.SelectedProfileImagePreview_ProfileImage___selected",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -3408,7 +3464,8 @@
           "width": 1050,
           "height": 2100,
           "livePreview": "https://preview.coo.ee/reply/p/states-coming-soon__ideal__default",
-          "previewId": "com.example.reply.ui.EmptyComingSoonKt.ComingSoonPreview"
+          "previewId": "com.example.reply.ui.EmptyComingSoonKt.ComingSoonPreview",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3418,7 +3475,8 @@
           "height": 2100,
           "theme": "dark",
           "livePreview": "https://preview.coo.ee/reply/p/states-coming-soon__ideal__default__dark",
-          "previewId": "com.example.reply.ui.EmptyComingSoonKt.ComingSoonPreview_Dark"
+          "previewId": "com.example.reply.ui.EmptyComingSoonKt.ComingSoonPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3428,7 +3486,8 @@
           "height": 2100,
           "theme": "light",
           "livePreview": "https://preview.coo.ee/reply/p/states-coming-soon__ideal__default__light",
-          "previewId": "com.example.reply.ui.EmptyComingSoonKt.ComingSoonPreview_Light"
+          "previewId": "com.example.reply.ui.EmptyComingSoonKt.ComingSoonPreview_Light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -3480,7 +3539,8 @@
           "state": "default",
           "width": 300,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3496,7 +3556,8 @@
           "state": "default",
           "width": 300,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3514,7 +3575,8 @@
           "theme": "dark",
           "props": {
             "fontScale": "2.0"
-          }
+          },
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3525,7 +3587,8 @@
           "theme": "light",
           "props": {
             "fontScale": "2.0"
-          }
+          },
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3533,7 +3596,8 @@
           "state": "pressed",
           "width": 342,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3541,7 +3605,8 @@
           "state": "pressed",
           "width": 342,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3549,7 +3614,8 @@
           "state": "keyboard-focus",
           "width": 351,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3557,7 +3623,8 @@
           "state": "keyboard-focus",
           "width": 351,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3568,7 +3635,8 @@
           "theme": "dark",
           "props": {
             "content": "icon+label"
-          }
+          },
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3579,7 +3647,8 @@
           "theme": "light",
           "props": {
             "content": "icon+label"
-          }
+          },
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -3632,7 +3701,8 @@
           "state": "default",
           "width": 300,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3640,7 +3710,8 @@
           "state": "default",
           "width": 300,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -3693,7 +3764,8 @@
           "state": "default",
           "width": 350,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3709,7 +3781,8 @@
           "state": "default",
           "width": 350,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3769,7 +3842,8 @@
           "state": "default",
           "width": 350,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3777,7 +3851,8 @@
           "state": "default",
           "width": 350,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -3830,7 +3905,8 @@
           "state": "default",
           "width": 236,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3838,7 +3914,8 @@
           "state": "default",
           "width": 236,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -3891,7 +3968,8 @@
           "state": "default",
           "width": 662,
           "height": 95,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3899,7 +3977,8 @@
           "state": "default",
           "width": 662,
           "height": 95,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -3934,7 +4013,8 @@
           "state": "default",
           "width": 189,
           "height": 189,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3942,7 +4022,8 @@
           "state": "default",
           "width": 189,
           "height": 189,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -3962,7 +4043,8 @@
           "state": "default",
           "width": 126,
           "height": 126,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -3970,7 +4052,8 @@
           "state": "default",
           "width": 126,
           "height": 126,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -4006,7 +4089,8 @@
           "state": "default",
           "width": 504,
           "height": 294,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4014,7 +4098,8 @@
           "state": "default",
           "width": 504,
           "height": 294,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -4044,7 +4129,8 @@
           "state": "default",
           "width": 504,
           "height": 294,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4052,7 +4138,8 @@
           "state": "default",
           "width": 504,
           "height": 294,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -4082,7 +4169,8 @@
           "state": "default",
           "width": 504,
           "height": 294,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4090,7 +4178,8 @@
           "state": "default",
           "width": 504,
           "height": 294,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -4120,7 +4209,8 @@
           "state": "default",
           "width": 653,
           "height": 253,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4128,7 +4218,8 @@
           "state": "default",
           "width": 653,
           "height": 253,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4136,7 +4227,8 @@
           "state": "slot-mode",
           "width": 653,
           "height": 253,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4144,7 +4236,8 @@
           "state": "slot-mode",
           "width": 653,
           "height": 253,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4155,7 +4248,8 @@
           "theme": "dark",
           "props": {
             "locale": "ar"
-          }
+          },
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4166,7 +4260,8 @@
           "theme": "light",
           "props": {
             "locale": "ar"
-          }
+          },
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -4197,7 +4292,8 @@
           "state": "default",
           "width": 231,
           "height": 231,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4205,7 +4301,8 @@
           "state": "default",
           "width": 231,
           "height": 231,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -4257,7 +4354,8 @@
           "state": "default",
           "width": 210,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4273,7 +4371,8 @@
           "state": "default",
           "width": 210,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4338,7 +4437,8 @@
           "state": "default",
           "width": 221,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4354,7 +4454,8 @@
           "state": "default",
           "width": 221,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4372,7 +4473,8 @@
           "theme": "dark",
           "props": {
             "locale": "ar-XB"
-          }
+          },
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4383,7 +4485,8 @@
           "theme": "light",
           "props": {
             "locale": "ar-XB"
-          }
+          },
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4394,7 +4497,8 @@
           "theme": "dark",
           "props": {
             "direction": "rtl"
-          }
+          },
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4405,7 +4509,8 @@
           "theme": "light",
           "props": {
             "direction": "rtl"
-          }
+          },
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4416,7 +4521,8 @@
           "theme": "dark",
           "props": {
             "fontScale": "2.0"
-          }
+          },
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4427,7 +4533,8 @@
           "theme": "light",
           "props": {
             "fontScale": "2.0"
-          }
+          },
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -4489,7 +4596,8 @@
           "state": "default",
           "width": 210,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4505,7 +4613,8 @@
           "state": "default",
           "width": 210,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4549,7 +4658,8 @@
           "state": "default",
           "width": 662,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4557,7 +4667,8 @@
           "state": "default",
           "width": 662,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -4601,7 +4712,8 @@
           "state": "default",
           "width": 252,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4617,7 +4729,8 @@
           "state": "default",
           "width": 252,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4677,7 +4790,8 @@
           "state": "default",
           "width": 268,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4685,7 +4799,8 @@
           "state": "default",
           "width": 268,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -4737,7 +4852,8 @@
           "state": "default",
           "width": 445,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4745,7 +4861,8 @@
           "state": "default",
           "width": 445,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -4788,7 +4905,8 @@
           "width": 1078,
           "height": 2399,
           "theme": "dark",
-          "size": "compact"
+          "size": "compact",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4797,7 +4915,8 @@
           "width": 1078,
           "height": 2399,
           "theme": "light",
-          "size": "compact"
+          "size": "compact",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -4893,7 +5012,8 @@
           "state": "default",
           "width": 819,
           "height": 231,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4901,7 +5021,8 @@
           "state": "default",
           "width": 819,
           "height": 231,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -4921,7 +5042,8 @@
           "state": "default",
           "width": 819,
           "height": 252,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4929,7 +5051,8 @@
           "state": "default",
           "width": 819,
           "height": 252,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -4964,7 +5087,8 @@
           "state": "default",
           "width": 420,
           "height": 210,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -4972,7 +5096,8 @@
           "state": "default",
           "width": 420,
           "height": 210,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -4993,7 +5118,8 @@
           "state": "default",
           "width": 510,
           "height": 147,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5001,7 +5127,8 @@
           "state": "default",
           "width": 510,
           "height": 147,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -5022,7 +5149,8 @@
           "state": "default",
           "width": 562,
           "height": 147,
-          "theme": "dark"
+          "theme": "dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -5030,7 +5158,8 @@
           "state": "default",
           "width": 562,
           "height": 147,
-          "theme": "light"
+          "theme": "light",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -5047,8 +5176,8 @@
     "androidx.compose.material3:material3",
     "androidx.compose.material3.adaptive:adaptive"
   ],
-  "renderer": "compose-preview 0.19.57",
-  "generatedAt": "2026-08-11T08:54:24.549Z",
+  "renderer": "compose-preview 0.19.61",
+  "generatedAt": "2026-08-11T23:33:46.210Z",
   "display": {
     "surface": "light",
     "hero": "Adaptive/Phone"
