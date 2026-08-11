@@ -25,7 +25,7 @@
   </g>
   <g>
     <path d="M105.5,189 H839.5 A73.5,73.5 0 0 1 913,262.5 V262.5 A73.5,73.5 0 0 1 839.5,336 H105.5 A73.5,73.5 0 0 1 32,262.5 V262.5 A73.5,73.5 0 0 1 105.5,189 Z" fill="#6E7488" fill-opacity="1" stroke="#3B72A8" stroke-width="1.5" stroke-opacity="1"/>
-    <text x="35" y="201" font-family="system-ui, sans-serif" font-size="9" fill="#3B72A8">#FF6E7488</text>
+    <text x="35" y="201" font-family="system-ui, sans-serif" font-size="9" fill="#3B72A8">#FF6E7488  pad ·</text>
   </g>
   <g>
     <rect x="74" y="189" width="776" height="147" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>
@@ -41,6 +41,7 @@
   </g>
   <g>
     <path d="M105.5,336 H839.5 A73.5,73.5 0 0 1 913,409.5 V409.5 A73.5,73.5 0 0 1 839.5,483 H105.5 A73.5,73.5 0 0 1 32,409.5 V409.5 A73.5,73.5 0 0 1 105.5,336 Z" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="35" y="348" font-family="system-ui, sans-serif" font-size="9" fill="#3B72A8">pad ·</text>
   </g>
   <g>
     <rect x="74" y="336" width="776" height="147" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>

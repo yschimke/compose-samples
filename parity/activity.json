@@ -1,15 +1,15 @@
 {
   "schema": "compose-preview-activity/v1",
-  "generatedAt": "2026-08-11T08:19:28.232Z",
+  "generatedAt": "2026-08-11T08:56:05.347Z",
   "windowDays": 30,
   "code": {
     "repo": "yschimke/compose-samples",
     "ref": "previews",
     "events": [
       {
-        "sha": "20e4f95f061dae1851c85f553fa5ea750a02185b",
-        "subject": "Fix preview theme overrides (#28)",
-        "at": "2026-08-11T09:03:09+01:00",
+        "sha": "501bbfb506e1522b917079ea6946bd3e78a7952b",
+        "subject": "Merge pull request #27 from yschimke/agent/compose-ai-tools-0.19.56",
+        "at": "2026-08-11T09:38:53+01:00",
         "author": "Yuri Schimke",
         "previewIds": [],
         "components": []

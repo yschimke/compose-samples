@@ -979,6 +979,12 @@
             "height": 147
           },
           "role": "Tab",
+          "padding": {
+            "start": 12,
+            "top": 0,
+            "end": 12,
+            "bottom": 0
+          },
           "cornerRadius": 28
         },
         {
@@ -989,6 +995,12 @@
             "height": 147
           },
           "role": "Tab",
+          "padding": {
+            "start": 12,
+            "top": 0,
+            "end": 12,
+            "bottom": 0
+          },
           "cornerRadius": 28
         }
       ],
@@ -1514,6 +1526,12 @@
             "height": 147
           },
           "role": "Tab",
+          "padding": {
+            "start": 12,
+            "top": 0,
+            "end": 12,
+            "bottom": 0
+          },
           "cornerRadius": 28
         },
         {
@@ -1524,6 +1542,12 @@
             "height": 147
           },
           "role": "Tab",
+          "padding": {
+            "start": 12,
+            "top": 0,
+            "end": 12,
+            "bottom": 0
+          },
           "cornerRadius": 28
         }
       ],
@@ -5765,8 +5789,8 @@
     "androidx.compose.material3.adaptive:adaptive",
     "androidx.navigation3:navigation3"
   ],
-  "renderer": "compose-preview 0.19.56",
-  "generatedAt": "2026-08-11T08:19:07.209Z",
+  "renderer": "compose-preview 0.19.57",
+  "generatedAt": "2026-08-11T08:55:42.126Z",
   "display": {
     "surface": "light",
     "hero": "Screens/Home feed"
