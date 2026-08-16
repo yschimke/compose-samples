@@ -1,15 +1,15 @@
 {
   "schema": "compose-preview-activity/v1",
-  "generatedAt": "2026-08-16T11:39:58.318Z",
+  "generatedAt": "2026-08-16T18:55:53.093Z",
   "windowDays": 30,
   "code": {
     "repo": "yschimke/compose-samples",
     "ref": "previews",
     "events": [
       {
-        "sha": "e6d119dca34de5573ccd3ef784af947e6a671fbb",
-        "subject": "Merge pull request #30 from yschimke/agent/bump-compose-ai-tools-1.8.0",
-        "at": "2026-08-16T12:09:43+01:00",
+        "sha": "7b680eee80ac0c73b41cbf91a860b7357798c765",
+        "subject": "Merge pull request #31 from yschimke/agent/bump-compose-ai-tools-1.9.0",
+        "at": "2026-08-16T19:40:45+01:00",
         "author": "Yuri Schimke",
         "previewIds": [],
         "components": []
