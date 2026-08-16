@@ -104,7 +104,7 @@
 <body>
 <header class="top">
   <h1>Jetcaster for Wear OS</h1>
-  <div class="subtitle">system <code>jetcaster-wear</code> · androidx.wear.compose:compose-material3, androidx.wear.compose:compose-foundation · rendered by compose-preview 0.19.61 · 2026-08-11T23:37:45.749Z · 9 components · 1 failed renders</div>
+  <div class="subtitle">system <code>jetcaster-wear</code> · androidx.wear.compose:compose-material3, androidx.wear.compose:compose-foundation · rendered by compose-preview 1.8.0 · 2026-08-16T11:39:50.368Z · 9 components · 1 failed renders</div>
   <div class="subtitle"><a class="pagelink" href="compare.html">PNG vs SVG compare ↗</a></div>
 </header>
 <aside class="failure-summary"><strong>1 failed render</strong><ul><li><span>IllegalStateException: Hilt Activity must be attached to an @HiltAndroidApp Application. Did you forget to specify your Application&#39;s class name in your manifest&#39;s &lt;application /&gt;&#39;s android:name attribute?</span><strong>×1</strong></li></ul></aside>
@@ -298,7 +298,7 @@
 	at org.robolectric.android.controller.ActivityController.create(ActivityController.java:134)
 	at org.robolectric.android.controller.ActivityController.create(ActivityController.java:144)
 	at org.robolectric.android.controller.ActivityController.setup(ActivityController.java:340)
-	at ee.schimke.composeai.renderer.AppTourRenderer$TourSession.launchIntent(AppTourRenderer.kt:196)
+	at ee.schimke.composeai.renderer.AppTourRenderer$TourSession.launchIntent(AppTourRenderer.kt:194)
 	at ee.schimke.composeai.renderer.AppTourRenderer$TourSession.launch(AppTourRenderer.kt:122)
 	at ee.schimke.composeai.renderer.AppTourRenderer$render$statement$1.evaluate(AppTourRenderer.kt:75)
 	at androidx.compose.ui.test.junit4.AndroidComposeTestRule$apply$testWithDisposal$1.evaluate(AndroidComposeTestRule.android.kt:421)
@@ -332,7 +332,7 @@
 	at androidx.compose.ui.test.AndroidComposeUiTestEnvironment.runTest(ComposeUiTest.android.kt:665)
 	at androidx.compose.ui.test.junit4.AndroidComposeTestRule$apply$1.evaluate(AndroidComposeTestRule.android.kt:441)
 	at ee.schimke.composeai.renderer.AppTourRenderer.render(AppTourRenderer.kt:99)
-	at ee.schimke.composeai.renderer.RobolectricRenderTestBase.renderPreview(RobolectricRenderTest.kt:650)
+	at ee.schimke.composeai.renderer.RobolectricRenderTestBase.renderPreview(RobolectricRenderTest.kt:838)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
