@@ -139,6 +139,7 @@
       "caption": "Podcast browse list on a round face — the Wear counterpart of the phone's discover carousel.",
       "wireframe": "wireframes/podcast-screen.svg",
       "sourceFile": "src/main/java/com/example/jetcaster/ui/podcasts/PodcastsScreen.kt",
+      "sourceModule": ":wear",
       "bodyLine": 229
     },
     {
@@ -313,6 +314,7 @@
       "caption": "Podcast details on Wear.",
       "wireframe": "wireframes/podcast-details.svg",
       "sourceFile": "src/main/java/com/example/jetcaster/ui/podcast/PodcastDetailsScreen.kt",
+      "sourceModule": ":wear",
       "bodyLine": 227
     },
     {
@@ -493,6 +495,7 @@
       "caption": "The user's library entry point.",
       "wireframe": "wireframes/library-screen.svg",
       "sourceFile": "src/main/java/com/example/jetcaster/ui/library/LibraryScreen.kt",
+      "sourceModule": ":wear",
       "bodyLine": 362
     },
     {
@@ -652,6 +655,7 @@
       "caption": "Latest-episode screen — the primary Wear launch surface.",
       "wireframe": "wireframes/episode-latest.svg",
       "sourceFile": "src/main/java/com/example/jetcaster/ui/latest_episodes/LatestEpisodesScreen.kt",
+      "sourceModule": ":wear",
       "bodyLine": 236
     },
     {
@@ -861,6 +865,7 @@
       "caption": "Episode detail with playback controls, loaded.",
       "wireframe": "wireframes/episode-screen.svg",
       "sourceFile": "src/main/java/com/example/jetcaster/ui/episode/EpisodeScreen.kt",
+      "sourceModule": ":wear",
       "bodyLine": 357
     },
     {
@@ -1058,6 +1063,7 @@
       "caption": "Playback queue, populated.",
       "wireframe": "wireframes/queue-screen.svg",
       "sourceFile": "src/main/java/com/example/jetcaster/ui/queue/QueueScreen.kt",
+      "sourceModule": ":wear",
       "bodyLine": 264
     },
     {
@@ -1145,6 +1151,7 @@
       "caption": "Podcast content block, centred at its on-device width rather than pinned to a screen.",
       "wireframe": "wireframes/podcast-content.svg",
       "sourceFile": "src/main/java/com/example/jetcaster/ui/library/LibraryScreen.kt",
+      "sourceModule": ":wear",
       "bodyLine": 384
     },
     {
@@ -1247,6 +1254,7 @@
       "caption": "Media content and transport, centred at its on-device width — where Wear's touch-target minimums bite hardest.",
       "wireframe": "wireframes/player-controls.svg",
       "sourceFile": "src/main/java/com/example/jetcaster/ui/components/MediaContent.kt",
+      "sourceModule": ":wear",
       "bodyLine": 109
     }
   ],
@@ -1254,8 +1262,8 @@
     "androidx.wear.compose:compose-material3",
     "androidx.wear.compose:compose-foundation"
   ],
-  "renderer": "compose-preview 1.9.0",
-  "generatedAt": "2026-08-16T18:55:45.667Z",
+  "renderer": "compose-preview 1.12.0",
+  "generatedAt": "2026-08-17T19:18:17.856Z",
   "display": {
     "surface": "dark",
     "hero": "Podcast/Screen"
@@ -1289,6 +1297,14 @@
     "path": "bundle/",
     "file": "bundle.png"
   },
+  "liveBundles": [
+    {
+      "path": "bundle/",
+      "file": "bundle.png",
+      "module": ":wear",
+      "previewIdPrefix": ""
+    }
+  ],
   "source": {
     "repo": "yschimke/compose-samples",
     "ref": "previews",
