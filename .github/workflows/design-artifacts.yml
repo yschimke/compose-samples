@@ -183,7 +183,9 @@ jobs:
           - system: jetcaster
             spec: Jetcaster/catalog.spec.json
             dir: Jetcaster
-            module: ':mobile'
+            # Publish every preview-enabled module into one live catalog. Keep the
+            # dedicated jetcaster-wear entry below as a stable existing URL.
+            modules: all
             foldArtifact: compose-m3-jetcaster
           - system: jetchat
             spec: Jetchat/catalog.spec.json
@@ -218,7 +220,8 @@ jobs:
     with:
       system: ${{ matrix.system }}
       spec: ${{ matrix.spec }}
-      module: ${{ matrix.module }}
+      module: ${{ matrix.module || '' }}
+      modules: ${{ matrix.modules || '' }}
       working-directory: ${{ matrix.dir }}
       # Render `previews`, the branch the catalogs live on — not whatever ref
       # triggered this. Only matters for triggers that can't imply the ref: a
