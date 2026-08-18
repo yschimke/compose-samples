@@ -2,10 +2,9 @@
 <g transform="translate(0, 0)">
   <g id="Root">
     <g id="Box">
-        <rect x="42" y="63" width="137" height="84" rx="42" ry="42" fill="#FFCB66"/>
+      <rect x="42" y="63" width="137" height="84" rx="42" ry="42" fill="#FFCB66"/>
       <g id="Box">
-        <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAA/CAYAAABXXxDfAAADvUlEQVR4XuWb208TQRTGJ/FZ/wz/I598M6nXxBte4osv3mKMBl9895IYE2OiIJroi5ooaKUgVgtVQStgapVCEWmhHM+3SxHObtvZ3tid+ZIvpNPdOedXNjM7N0VvdlNbnTxH9P0+UfY50e9BosIY0d9poqUCOcJffEY5vs8+c6/HfbKuVvh1rIdSu7YqyPNlK5w8SzT9iGjxpwvYqHA/6kme8cZozikaiG1vHfzgIaLJHk44KxFaI9Q7+YDjHPbGbsixvubh4weIMveIlv/IdNsjxMncdePKXAK6Cfi9RBM3iUozMr3OCHHHb7h5eHLTc2PwwyeJ5r/IdDZHyAP5yBw1HBx+9Cq30PMyhc0V8kFeMtc6DgC/h2iqjyOtyNAhEec19dAn7+rWg0cLOzcqo4VT+RHtHqE+fPI8dzO/ZIhwC/kib8kSCD7OLWkhLauOhubSbv6SSRs++0JWGS3hlVoyacHjxcUEgUOy1YQf7ebGsyyriabAUaUb9MLH9/Pb06ysItoq5V2uuvCmPO5SPo//RvhEFw8cFuRtZmiJuQYP1oD/8VTeYpYwN+ALP3yKqFySl5sl8CWO+cDnXspLzRSmyTzwxby8zEwVZwT8hwvyErMF3jV4NAQ2abXhc+ExdWyTwOvAj5yWX9kh7t0Upa/JYjvE3Iq+3ZHFdoi5lfFvddXE3IpmErLYDjG3Cs38e6fF3IqKOVlsh5hb0cqyLLZDzK1oybBZG10xt6KFjCy2Q8ytaPa9LLZDTmtvyzheisf1ytlNYaOYW9HELVlsh5hbWTeRURFzu+N5W6awKsIixtpkBib1bBIGc2vwWMuySRvm8OL77Hn0Vx/5//A2Pfq+8/ZYp7NixabLBx42fQq76lodjFVMrGaaKKw+v621Sgtbuz4PG7kzY1ZzZwaMft+oPTndXsaq8LApjz/WJSRbXXgY+9iirHV9up9rw2MHI3YyRlHYOdrUDkw4cZRffSO29xb5Im/JEhgeHjrOv+QnGSKcKnzm95UjXgYf68HDGPzk+mWocAl7hZGnzL2K9eEr/nqbo4SsG0R3Nn7dm2sdB4eHU1fCs1kRhxJTl705argxeBijIwwUyosync4IcacfbxilBXXj8BXjSEcnf4QKtOZRkhrubR6+YiSDNYB2LX+hXtTfPDT8kfp3bmsd/HoPnXAPHOaH+T9VlBh6wn35d878ulOfjNGwY0/ae5B4vXHsM3XJbY0ne7m7fMVvjWPO+rgj/MVnlE/1uqckcX0Ljot6HbtItGOLA876B3DZ97U0bll3AAAAAElFTkSuQmCC" x="105" y="74" width="63" height="63"/>
-          <rect x="105" y="74" width="63" height="63" rx="31.5" ry="31.5" fill="#FFFFFF"/>
+        <rect x="105" y="74" width="63" height="63" rx="31.5" ry="31.5" fill="#FFFFFF"/>
       </g>
     </g>
   </g>

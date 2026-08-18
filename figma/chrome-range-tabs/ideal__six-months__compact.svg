@@ -14,22 +14,22 @@
             <g id="ReusableComposeNode">
               <g clip-path="url(#clip-2)">
                 <g id="ReusableComposeNode">
-                  <text x="116" y="76.49" font-size="42" font-family="Lato" font-weight="600" letter-spacing="1.31" fill="#1D1B20">Day</text>
+                  <text x="-25" y="76.49" font-size="42" font-family="Lato" font-weight="600" letter-spacing="1.31" fill="#1D1B20">Day</text>
                 </g>
                 <g id="ReusableComposeNode">
-                  <text x="334" y="76.49" font-size="42" font-family="Lato" font-weight="600" letter-spacing="1.31" fill="#1D1B20">Week</text>
+                  <text x="193" y="76.49" font-size="42" font-family="Lato" font-weight="600" letter-spacing="1.31" fill="#1D1B20">Week</text>
                 </g>
                 <g id="ReusableComposeNode">
-                  <text x="562" y="76.49" font-size="42" font-family="Lato" font-weight="600" letter-spacing="1.31" fill="#1D1B20">Month</text>
+                  <text x="421" y="76.49" font-size="42" font-family="Lato" font-weight="600" letter-spacing="1.31" fill="#1D1B20">Month</text>
                 </g>
                 <g id="ReusableComposeNode">
-                  <text x="830" y="76.49" font-size="42" font-family="Lato" font-weight="600" letter-spacing="1.31" fill="#1D1B20">6M</text>
+                  <text x="689" y="76.49" font-size="42" font-family="Lato" font-weight="600" letter-spacing="1.31" fill="#1D1B20">6M</text>
                 </g>
                 <g id="ReusableComposeNode">
-                  <text x="1074" y="76.49" font-size="42" font-family="Lato" font-weight="600" letter-spacing="1.31" fill="#1D1B20">1Y</text>
+                  <text x="933" y="76.49" font-size="42" font-family="Lato" font-weight="600" letter-spacing="1.31" fill="#1D1B20">1Y</text>
                 </g>
                 <g id="ReusableComposeNode">
-                  <rect x="839" y="24" width="47" height="76" rx="23.25" ry="23.25" fill="none" stroke="#FFCB66" stroke-width="5.25"/>
+                  <rect x="698" y="24" width="47" height="76" rx="23.25" ry="23.25" fill="none" stroke="#FFCB66" stroke-width="5.25"/>
                 </g>
               </g>
             </g>
