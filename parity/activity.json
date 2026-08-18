@@ -1,15 +1,15 @@
 {
   "schema": "compose-preview-activity/v1",
-  "generatedAt": "2026-08-17T19:18:25.834Z",
+  "generatedAt": "2026-08-18T22:49:24.994Z",
   "windowDays": 30,
   "code": {
     "repo": "yschimke/compose-samples",
     "ref": "previews",
     "events": [
       {
-        "sha": "21a01c30f8db83b6382467d231796cc23eb2aedf",
-        "subject": "Merge pull request #34 from yschimke/agent/bump-compose-ai-tools-design-parity",
-        "at": "2026-08-17T19:59:19+01:00",
+        "sha": "95a308eb1a30ae3ea4e8aab4b155ff33bf272a7d",
+        "subject": "Merge pull request #36 from yschimke/agent/jetcaster-exempt-activity-semantics",
+        "at": "2026-08-18T23:27:47+01:00",
         "author": "Yuri Schimke",
         "previewIds": [],
         "components": []
