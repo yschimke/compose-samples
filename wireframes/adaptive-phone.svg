@@ -309,6 +309,10 @@
     <rect x="0" y="1890" width="246" height="210" fill="none" fill-opacity="0" stroke="#8E6BA8" stroke-width="1" stroke-opacity="0.5"/>
   </g>
   <g>
+    <path d="M111,1953 H135 A42,42 0 0 1 177,1995 V1995 A42,42 0 0 1 135,2037 H111 A42,42 0 0 1 69,1995 V1995 A42,42 0 0 1 111,1953 Z" fill="#FBDEBC" fill-opacity="1" stroke="#B0813B" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="72" y="1965" font-family="system-ui, sans-serif" font-size="9" fill="#B0813B">#FFFBDEBC</text>
+  </g>
+  <g>
     <rect x="91" y="1963" width="63" height="63" fill="none" fill-opacity="0" stroke="#B0813B" stroke-width="1" stroke-opacity="0.5"/>
   </g>
   <g>

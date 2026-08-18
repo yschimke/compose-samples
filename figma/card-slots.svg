@@ -8,11 +8,10 @@
 <g transform="translate(0, 0)">
   <g id="Root">
     <g id="Box" filter="url(#shadow-3)">
-        <rect x="42" y="42" width="569" height="169" rx="31.5" ry="31.5" fill="#FFF1E5"/>
+      <rect x="42" y="42" width="569" height="169" rx="31.5" ry="31.5" fill="#FFF1E5"/>
       <g id="Row">
         <g id="BoxKt">
-          <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGkAAABpCAYAAAA5gg06AAABDUlEQVR4Xu3RMQ0AIADAMCTiAmP4hB8FLOnRZ+/Gmvvwt/EG/mNSgEkBJgWYFGBSgEkBJgWYFGBSgEkBJgWYFGBSgEkBJgWYFGBSgEkBJgWYFGBSgEkBJgWYFGBSgEkBJgWYFGBSgEkBJgWYFGBSgEkBJgWYFGBSgEkBJgWYFGBSgEkBJgWYFGBSgEkBJgWYFGBSgEkBJgWYFGBSgEkBJgWYFGBSgEkBJgWYFGBSgEkBJgWYFGBSgEkBJgWYFGBSgEkBJgWYFGBSgEkBJgWYFGBSgEkBJgWYFGBSgEkBJgWYFGBSgEkBJgWYFGBSgEkBJgWYFGBSgEkBJgWYFGBSgEkBJgWYFGBSgEkBJgVc0PtL5vI+hssAAAAASUVORK5CYII=" x="74" y="74" width="105" height="105"/>
-            <rect x="74" y="74" width="105" height="105" fill="#6750A4"/>
+          <rect x="74" y="74" width="105" height="105" fill="#6750A4"/>
         </g>
         <g id="Column">
           <g id="Empty">

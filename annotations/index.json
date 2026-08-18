@@ -2407,6 +2407,110 @@
         }
       }
     ],
+    "shape-morph__ideal__default__dark": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 99,
+          "y": 520,
+          "width": 630,
+          "height": 116
+        },
+        "label": "pad 0dp/10dp",
+        "detail": {
+          "padding.start": "10",
+          "padding.top": "0",
+          "padding.end": "10",
+          "padding.bottom": "0",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 409,
+          "y": 520,
+          "width": 11,
+          "height": 116
+        },
+        "label": "r 2.1dp",
+        "detail": {
+          "cornerRadius": "2.1",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 42,
+          "y": 641,
+          "width": 743,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Square → Rounded 9-point star · 50%",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "400",
+          "fontFamily": "RobotoFlex"
+        }
+      }
+    ],
+    "shape-morph__ideal__default__light": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 99,
+          "y": 520,
+          "width": 630,
+          "height": 116
+        },
+        "label": "pad 0dp/10dp",
+        "detail": {
+          "padding.start": "10",
+          "padding.top": "0",
+          "padding.end": "10",
+          "padding.bottom": "0",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 409,
+          "y": 520,
+          "width": 11,
+          "height": 116
+        },
+        "label": "r 2.1dp",
+        "detail": {
+          "cornerRadius": "2.1",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 42,
+          "y": 641,
+          "width": 743,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Square → Rounded 9-point star · 50%",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "400",
+          "fontFamily": "RobotoFlex"
+        }
+      }
+    ],
     "template-appscaffold__ideal__default__dark__compact": [
       {
         "kind": "layout",
@@ -3741,6 +3845,20 @@
       {
         "kind": "layout",
         "bounds": {
+          "x": 69,
+          "y": 1953,
+          "width": 108,
+          "height": 84
+        },
+        "label": "r 16dp",
+        "detail": {
+          "cornerRadius": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
           "x": 49,
           "y": 1953,
           "width": 147,
@@ -4826,6 +4944,20 @@
         "label": "gap 8dp",
         "detail": {
           "gap": "8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 69,
+          "y": 1953,
+          "width": 108,
+          "height": 84
+        },
+        "label": "r 16dp",
+        "detail": {
+          "cornerRadius": "16",
           "unit": "dp"
         }
       },
@@ -5923,6 +6055,20 @@
       {
         "kind": "layout",
         "bounds": {
+          "x": 69,
+          "y": 1953,
+          "width": 108,
+          "height": 84
+        },
+        "label": "r 16dp",
+        "detail": {
+          "cornerRadius": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
           "x": 49,
           "y": 1953,
           "width": 147,
@@ -7008,6 +7154,20 @@
         "label": "gap 8dp",
         "detail": {
           "gap": "8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 69,
+          "y": 1953,
+          "width": 108,
+          "height": 84
+        },
+        "label": "r 16dp",
+        "detail": {
+          "cornerRadius": "16",
           "unit": "dp"
         }
       },
@@ -8105,6 +8265,20 @@
       {
         "kind": "layout",
         "bounds": {
+          "x": 69,
+          "y": 1953,
+          "width": 108,
+          "height": 84
+        },
+        "label": "r 16dp",
+        "detail": {
+          "cornerRadius": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
           "x": 49,
           "y": 1953,
           "width": 147,
@@ -9196,6 +9370,20 @@
       {
         "kind": "layout",
         "bounds": {
+          "x": 69,
+          "y": 1953,
+          "width": 108,
+          "height": 84
+        },
+        "label": "r 16dp",
+        "detail": {
+          "cornerRadius": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
           "x": 49,
           "y": 1953,
           "width": 147,
@@ -10281,6 +10469,20 @@
         "label": "gap 8dp",
         "detail": {
           "gap": "8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 69,
+          "y": 1953,
+          "width": 108,
+          "height": 84
+        },
+        "label": "r 16dp",
+        "detail": {
+          "cornerRadius": "16",
           "unit": "dp"
         }
       },

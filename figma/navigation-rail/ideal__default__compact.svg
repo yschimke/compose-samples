@@ -7,9 +7,9 @@
 <g transform="translate(0, 0)">
   <g id="Root">
     <g id="ReusableComposeNode">
-      <rect x="0" y="0" width="252" height="2100" fill="#FFF8F4"/>
+        <rect x="0" y="0" width="252" height="2100" fill="#FFF8F4"/>
       <g id="ReusableComposeNode">
-        <rect x="21" y="21" width="210" height="2058" fill="#FCEFE2"/>
+          <rect x="21" y="21" width="210" height="2058" fill="#FCEFE2"/>
         <g id="ReusableComposeNode">
           <g id="ReusableComposeNode">
             <g id="ReusableComposeNode">
@@ -22,6 +22,7 @@
                 </g>
               </g>
               <g id="ReusableComposeNode">
+                <image href="ideal__default__compact.figma-raster/1418.png" x="52" y="32" width="147" height="147"/>
               </g>
             </g>
             <g id="ReusableComposeNode" filter="url(#shadow-16)">
@@ -48,6 +49,7 @@
                 </g>
               </g>
               <g id="ReusableComposeNode">
+                <image href="ideal__default__compact.figma-raster/1431.png" x="52" y="507" width="147" height="147"/>
               </g>
             </g>
             <g id="ReusableComposeNode">
@@ -60,6 +62,7 @@
                 </g>
               </g>
               <g id="ReusableComposeNode">
+                <image href="ideal__default__compact.figma-raster/1438.png" x="52" y="665" width="147" height="147"/>
               </g>
             </g>
             <g id="ReusableComposeNode">
@@ -72,6 +75,7 @@
                 </g>
               </g>
               <g id="ReusableComposeNode">
+                <image href="ideal__default__compact.figma-raster/1445.png" x="52" y="823" width="147" height="147"/>
               </g>
             </g>
             <g id="ReusableComposeNode">
@@ -84,6 +88,7 @@
                 </g>
               </g>
               <g id="ReusableComposeNode">
+                <image href="ideal__default__compact.figma-raster/1452.png" x="52" y="981" width="147" height="147"/>
               </g>
             </g>
           </g>

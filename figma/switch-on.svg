@@ -2,10 +2,9 @@
 <g transform="translate(0, 0)">
   <g id="Root">
     <g id="Box">
-        <rect x="42" y="63" width="137" height="84" rx="42" ry="42" fill="#805610"/>
+      <rect x="42" y="63" width="137" height="84" rx="42" ry="42" fill="#805610"/>
       <g id="Box">
-        <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAA/CAYAAABXXxDfAAAETklEQVR4XuWbWUhUURzGD/RsIy3US1m0UFC99VhU9BYVVJOJD2YlES3YiyVBqW2OtvgQVBYuZJtZlK2klJqZlEUSqU1BWlaWqdO4TGL6b74DI/q/M851ZtSZez74GObce8/5fnK8d85yRdLGcBpJZyYupyfXj1JVUTbVVBZSQ81zam78QF32FoLwie8ox/Gqx1ny/Mz9yzR1BcTm8LuWNSJMQJqDAfD5fUup/PZpavtZLwF9Fa5HPecSlmja8MtmU11SZNjcgMGnbo6gkhup1Nr0mTMERKj3af5xSo2N0LTtk82mB37DH4meSsWXk8jRYeN5R0SOjjYqyjso2+VZhmuf4VM2TaS7mfFkb/3O842K0G7h+T0yB8+m1z7Bn9qxgBo/VvE8YyLkQB6eUY+HDZ93bAN1tbfyDGMq5EEuntWbdcMnR06gZ7dOEvX18baDQ85cZTfTNbmHsi741NgZ9Pl9OW8uKGV981jm5Qzu7BU+M3EF2Zq/8DaCWsiL3JyFe0j4lKhJ1FD3gtcdEmqorZD5OZNu+NfFubzOkBJ+UnMmXfD44WIEgYOzDQl/6cg66uvt5fWEpMDh6TGogT8cPYU6bL94HSGt9rYmycVZNfBG6e5c7rr/IPi0bbPpb+cffp0h5Oi00fGY6Z7hK++f5dcYSpgbcAt/eudC6ul28PMNJfClx83Vwr8tucLPNaQwTaaBt7f+4OcZUvaW74PhLx5Yyc8xtMDbD48bgUpy3fgk/O9vVn7c0AKvhD8Tv5gfU0IZOxeRuJYezcuVELjFo5xEXq6EwC2M/qvOk8At6l7e5+VKCNyi0fqKlyshcAvbr9CanAyUwC16//XwciUEbtFh+8nLlRC4RVP9O16uhMAtPr0t5uVKSN7tVRnHc2FcL7CbQkWBW9y7sJeXKyFwC9UmMlwCtxzPqzKF5RIWMfonM/DPr5IwqOmHzzu6nh83tAbN4aVETVam67u6fD+8Sl3f7bx9etwcJVZssB6pgYeNPoXtca0OxiomVjONKKw+H4uZ5hkeVnZ9HsYOhvY2Y43xsdNE184MGHtYjLQnB3uMOKNHeNgo3R/z85zNKzyMfWyhrIHPdHceEl7uwKyt4HWGhLBz1K8dmHDa1llka/7K6w5qIS9ycxZur/Dwie3z6EtdJW8jKPXV+pIsW2ZqGNxZFzyMwU91WT5vK6iEvcLIybN7sm54lx9kJTgfH/94u2OqXmeeO+d2a7J687Dh4dyUtUGzWbHT3kI5yas1GfXYJ3gYo0AMFLod7TzPqAjtlt/OkDl4Nr32Gd5lS+yMUf0juKDRLs8yLJvD7/kN7zLCYC58pJa/UC/q9xsaNptqk6LF+IDBD/TJ7fPlC4cfqh5ST3cX59AlXGd9/UjOr6M+3obvNhWN6IvEA43XPrMPraI7Z3dRaYGFqkuvUn1NuVwfh/CJ7ygvLUijQuddG+cH4nVRrU2WfLMYJ8Gd+g9ceJIcoOjcXgAAAABJRU5ErkJggg==" x="105" y="74" width="63" height="63"/>
-          <rect x="105" y="74" width="63" height="63" rx="31.5" ry="31.5" fill="#FFFFFF"/>
+        <rect x="105" y="74" width="63" height="63" rx="31.5" ry="31.5" fill="#FFFFFF"/>
       </g>
     </g>
   </g>

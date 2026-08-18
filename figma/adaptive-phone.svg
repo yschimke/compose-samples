@@ -23,7 +23,7 @@
                       <g id="Column">
                         <g id="Row">
                           <g id="ImageKt">
-                            <image href="adaptive-phone.figma-raster/2104.png" x="95" y="274" width="105" height="105"/>
+                            <image href="adaptive-phone.figma-raster/2274.png" x="95" y="274" width="105" height="105"/>
                           </g>
                           <g id="Column">
                             <g id="Empty">
@@ -55,7 +55,7 @@
                       <g id="Column">
                         <g id="Row">
                           <g id="ImageKt">
-                            <image href="adaptive-phone.figma-raster/2119.png" x="95" y="729" width="105" height="105"/>
+                            <image href="adaptive-phone.figma-raster/2289.png" x="95" y="729" width="105" height="105"/>
                           </g>
                           <g id="Column">
                             <g id="Empty">
@@ -87,7 +87,7 @@
                       <g id="Column">
                         <g id="Row">
                           <g id="ImageKt">
-                            <image href="adaptive-phone.figma-raster/2134.png" x="95" y="1184" width="105" height="105"/>
+                            <image href="adaptive-phone.figma-raster/2304.png" x="95" y="1184" width="105" height="105"/>
                           </g>
                           <g id="Column">
                             <g id="Empty">
@@ -119,7 +119,7 @@
                       <g id="Column">
                         <g id="Row">
                           <g id="ImageKt">
-                            <image href="adaptive-phone.figma-raster/2149.png" x="95" y="1583" width="105" height="105"/>
+                            <image href="adaptive-phone.figma-raster/2319.png" x="95" y="1583" width="105" height="105"/>
                           </g>
                           <g id="Column">
                             <g id="Empty">
@@ -153,7 +153,7 @@
                     <rect x="42" y="42" width="966" height="148" rx="84" ry="84" fill="#F3E6DA"/>
                   <g clip-path="url(#clip-2)">
                     <g id="ReusableComposeNode">
-                      <image href="adaptive-phone.figma-raster/2034.png" x="42" y="42" width="966" height="148"/>
+                      <image href="adaptive-phone.figma-raster/2204.png" x="42" y="42" width="966" height="148"/>
                     </g>
                   </g>
                 </g>
@@ -177,18 +177,19 @@
               </g>
             </g>
             <g id="ReusableComposeNode">
-              <rect x="0" y="1890" width="1050" height="210" fill="#F9ECDF"/>
+                <rect x="0" y="1890" width="1050" height="210" fill="#F9ECDF"/>
               <g id="ReusableComposeNode">
                 <g id="ReusableComposeNode">
-                  <g id="ReusableComposeNode" opacity="0">
-                    <rect x="0" y="1890" width="0" height="84" rx="0" ry="0" fill="#FBDEBC"/>
+                  <g id="ReusableComposeNode" opacity="0.72">
+                    <rect x="69" y="1953" width="108" height="84" rx="42" ry="42" fill="#FBDEBC"/>
                   </g>
                   <g id="ReusableComposeNode">
                     <g transform="translate(91 1963) scale(0.06 0.06)">
-                      <path d="M200 840 Q 167 840 143.5 816.5 Q 120 793 120 760 L120 200 Q 120 167 143.5 143.5 Q 167 120 200 120 L760 120 Q 793 120 816.5 143.5 Q 840 167 840 200 L840 760 Q 840 793 816.5 816.5 Q 793 840 760 840 L200 840 Z M480 640 Q 518 640 549 618 Q 580 596 592 560 L760 560 L760 200 Q 760 200 760 200 Q 760 200 760 200 L200 200 Q 200 200 200 200 Q 200 200 200 200 L200 560 L368 560 Q 380 596 411 618 Q 442 640 480 640 Z" fill="#4F4539"/>
+                      <path d="M200 840 Q 167 840 143.5 816.5 Q 120 793 120 760 L120 200 Q 120 167 143.5 143.5 Q 167 120 200 120 L760 120 Q 793 120 816.5 143.5 Q 840 167 840 200 L840 760 Q 840 793 816.5 816.5 Q 793 840 760 840 L200 840 Z M480 640 Q 518 640 549 618 Q 580 596 592 560 L760 560 L760 200 Q 760 200 760 200 Q 760 200 760 200 L200 200 Q 200 200 200 200 Q 200 200 200 200 L200 560 L368 560 Q 380 596 411 618 Q 442 640 480 640 Z" fill="#322512"/>
                     </g>
                   </g>
                   <g id="ReusableComposeNode">
+                    <image href="adaptive-phone.figma-raster/2168.png" x="49" y="1953" width="147" height="84"/>
                   </g>
                 </g>
                 <g id="ReusableComposeNode">
@@ -201,6 +202,7 @@
                     </g>
                   </g>
                   <g id="ReusableComposeNode">
+                    <image href="adaptive-phone.figma-raster/2175.png" x="317" y="1953" width="147" height="84"/>
                   </g>
                 </g>
                 <g id="ReusableComposeNode">
@@ -213,6 +215,7 @@
                     </g>
                   </g>
                   <g id="ReusableComposeNode">
+                    <image href="adaptive-phone.figma-raster/2182.png" x="585" y="1953" width="147" height="84"/>
                   </g>
                 </g>
                 <g id="ReusableComposeNode">
@@ -225,6 +228,7 @@
                     </g>
                   </g>
                   <g id="ReusableComposeNode">
+                    <image href="adaptive-phone.figma-raster/2189.png" x="853" y="1953" width="147" height="84"/>
                   </g>
                 </g>
               </g>

@@ -2,9 +2,9 @@
 <g transform="translate(0, 0)">
   <g id="Root">
     <g id="ReusableComposeNode">
-      <rect x="0" y="0" width="1050" height="252" fill="#FFF8F4"/>
+        <rect x="0" y="0" width="1050" height="252" fill="#FFF8F4"/>
       <g id="ReusableComposeNode">
-        <rect x="21" y="21" width="1008" height="210" fill="#F9ECDF"/>
+          <rect x="21" y="21" width="1008" height="210" fill="#F9ECDF"/>
         <g id="ReusableComposeNode">
           <g id="ReusableComposeNode">
             <g id="ReusableComposeNode" opacity="0">
@@ -16,6 +16,7 @@
               </g>
             </g>
             <g id="ReusableComposeNode">
+              <image href="navigation-bottombar.figma-raster/1267.png" x="66" y="84" width="147" height="84"/>
             </g>
           </g>
           <g id="ReusableComposeNode">
@@ -28,6 +29,7 @@
               </g>
             </g>
             <g id="ReusableComposeNode">
+              <image href="navigation-bottombar.figma-raster/1274.png" x="323" y="84" width="147" height="84"/>
             </g>
           </g>
           <g id="ReusableComposeNode">
@@ -40,6 +42,7 @@
               </g>
             </g>
             <g id="ReusableComposeNode">
+              <image href="navigation-bottombar.figma-raster/1281.png" x="580" y="84" width="147" height="84"/>
             </g>
           </g>
           <g id="ReusableComposeNode">
@@ -52,6 +55,7 @@
               </g>
             </g>
             <g id="ReusableComposeNode">
+              <image href="navigation-bottombar.figma-raster/1288.png" x="837" y="84" width="147" height="84"/>
             </g>
           </g>
         </g>

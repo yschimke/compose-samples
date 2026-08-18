@@ -14,7 +14,7 @@
         <g id="ReusableComposeNode">
           <g id="ReusableComposeNode">
             <g id="ReusableComposeNode">
-              <rect x="0" y="0" width="210" height="2887" fill="#FCEFE2"/>
+                <rect x="0" y="0" width="210" height="2887" fill="#FCEFE2"/>
               <g id="ReusableComposeNode">
                 <g id="ReusableComposeNode">
                   <g id="ReusableComposeNode">
@@ -27,6 +27,7 @@
                       </g>
                     </g>
                     <g id="ReusableComposeNode">
+                      <image href="ideal__default__medium__posture-desktop-portrait.figma-raster/2731.png" x="31" y="11" width="147" height="147"/>
                     </g>
                   </g>
                   <g id="ReusableComposeNode" filter="url(#shadow-16)">
@@ -44,15 +45,16 @@
                 </g>
                 <g id="ReusableComposeNode">
                   <g id="ReusableComposeNode">
-                    <g id="ReusableComposeNode" opacity="0">
-                      <rect x="0" y="486" width="0" height="147" rx="0" ry="0" fill="#FBDEBC"/>
+                    <g id="ReusableComposeNode" opacity="0.72">
+                      <rect x="51" y="486" width="108" height="147" rx="54" ry="54" fill="#FBDEBC"/>
                     </g>
                     <g id="ReusableComposeNode">
                       <g transform="translate(73 528) scale(0.06 0.06)">
-                        <path d="M200 840 Q 167 840 143.5 816.5 Q 120 793 120 760 L120 200 Q 120 167 143.5 143.5 Q 167 120 200 120 L760 120 Q 793 120 816.5 143.5 Q 840 167 840 200 L840 760 Q 840 793 816.5 816.5 Q 793 840 760 840 L200 840 Z M480 640 Q 518 640 549 618 Q 580 596 592 560 L760 560 L760 200 Q 760 200 760 200 Q 760 200 760 200 L200 200 Q 200 200 200 200 Q 200 200 200 200 L200 560 L368 560 Q 380 596 411 618 Q 442 640 480 640 Z" fill="#4F4539"/>
+                        <path d="M200 840 Q 167 840 143.5 816.5 Q 120 793 120 760 L120 200 Q 120 167 143.5 143.5 Q 167 120 200 120 L760 120 Q 793 120 816.5 143.5 Q 840 167 840 200 L840 760 Q 840 793 816.5 816.5 Q 793 840 760 840 L200 840 Z M480 640 Q 518 640 549 618 Q 580 596 592 560 L760 560 L760 200 Q 760 200 760 200 Q 760 200 760 200 L200 200 Q 200 200 200 200 Q 200 200 200 200 L200 560 L368 560 Q 380 596 411 618 Q 442 640 480 640 Z" fill="#322512"/>
                       </g>
                     </g>
                     <g id="ReusableComposeNode">
+                      <image href="ideal__default__medium__posture-desktop-portrait.figma-raster/2744.png" x="31" y="486" width="147" height="147"/>
                     </g>
                   </g>
                   <g id="ReusableComposeNode">
@@ -65,6 +67,7 @@
                       </g>
                     </g>
                     <g id="ReusableComposeNode">
+                      <image href="ideal__default__medium__posture-desktop-portrait.figma-raster/2751.png" x="31" y="644" width="147" height="147"/>
                     </g>
                   </g>
                   <g id="ReusableComposeNode">
@@ -77,6 +80,7 @@
                       </g>
                     </g>
                     <g id="ReusableComposeNode">
+                      <image href="ideal__default__medium__posture-desktop-portrait.figma-raster/2758.png" x="31" y="802" width="147" height="147"/>
                     </g>
                   </g>
                   <g id="ReusableComposeNode">
@@ -89,6 +93,7 @@
                       </g>
                     </g>
                     <g id="ReusableComposeNode">
+                      <image href="ideal__default__medium__posture-desktop-portrait.figma-raster/2765.png" x="31" y="960" width="147" height="147"/>
                     </g>
                   </g>
                 </g>
@@ -103,7 +108,7 @@
                     <g id="Column">
                       <g id="Row">
                         <g id="ImageKt">
-                          <image href="ideal__default__medium__posture-desktop-portrait.figma-raster/3012.png" x="305" y="274" width="105" height="105"/>
+                          <image href="ideal__default__medium__posture-desktop-portrait.figma-raster/2842.png" x="305" y="274" width="105" height="105"/>
                         </g>
                         <g id="Column">
                           <g id="Empty">
@@ -135,7 +140,7 @@
                     <g id="Column">
                       <g id="Row">
                         <g id="ImageKt">
-                          <image href="ideal__default__medium__posture-desktop-portrait.figma-raster/3027.png" x="305" y="729" width="105" height="105"/>
+                          <image href="ideal__default__medium__posture-desktop-portrait.figma-raster/2857.png" x="305" y="729" width="105" height="105"/>
                         </g>
                         <g id="Column">
                           <g id="Empty">
@@ -167,7 +172,7 @@
                     <g id="Column">
                       <g id="Row">
                         <g id="ImageKt">
-                          <image href="ideal__default__medium__posture-desktop-portrait.figma-raster/3042.png" x="305" y="1184" width="105" height="105"/>
+                          <image href="ideal__default__medium__posture-desktop-portrait.figma-raster/2872.png" x="305" y="1184" width="105" height="105"/>
                         </g>
                         <g id="Column">
                           <g id="Empty">
@@ -199,7 +204,7 @@
                     <g id="Column">
                       <g id="Row">
                         <g id="ImageKt">
-                          <image href="ideal__default__medium__posture-desktop-portrait.figma-raster/3057.png" x="305" y="1583" width="105" height="105"/>
+                          <image href="ideal__default__medium__posture-desktop-portrait.figma-raster/2887.png" x="305" y="1583" width="105" height="105"/>
                         </g>
                         <g id="Column">
                           <g id="Empty">
@@ -231,7 +236,7 @@
                     <g id="Column">
                       <g id="Row">
                         <g id="ImageKt">
-                          <image href="ideal__default__medium__posture-desktop-portrait.figma-raster/3072.png" x="305" y="2038" width="105" height="105"/>
+                          <image href="ideal__default__medium__posture-desktop-portrait.figma-raster/2902.png" x="305" y="2038" width="105" height="105"/>
                         </g>
                         <g id="Column">
                           <g id="Empty">
@@ -263,7 +268,7 @@
                     <g id="Column">
                       <g id="Row">
                         <g id="ImageKt">
-                          <image href="ideal__default__medium__posture-desktop-portrait.figma-raster/3087.png" x="305" y="2493" width="105" height="105"/>
+                          <image href="ideal__default__medium__posture-desktop-portrait.figma-raster/2917.png" x="305" y="2493" width="105" height="105"/>
                         </g>
                         <g id="Column">
                           <g id="Empty">
@@ -327,7 +332,7 @@
                   <rect x="252" y="42" width="1281" height="148" rx="84" ry="84" fill="#F3E6DA"/>
                 <g clip-path="url(#clip-2)">
                   <g id="ReusableComposeNode">
-                    <image href="ideal__default__medium__posture-desktop-portrait.figma-raster/2950.png" x="252" y="42" width="1281" height="148"/>
+                    <image href="ideal__default__medium__posture-desktop-portrait.figma-raster/2780.png" x="252" y="42" width="1281" height="148"/>
                   </g>
                 </g>
               </g>
