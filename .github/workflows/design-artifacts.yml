@@ -187,21 +187,10 @@ jobs:
             # dedicated jetcaster-wear entry below as a stable existing URL.
             modules: all
             foldArtifact: compose-m3-jetcaster
-            # TEMPORARY, tracked by yschimke/compose-ai-tools#4117 — drop this once the
-            # completeness gate can exempt discovered inventory.
-            #
-            # `modules: all` pulls the synthetic `mobile/MainActivity` render into the
-            # catalog, and it carries no semantics tree: as this spec's own `$comment`
-            # records, Jetcaster's home is driven by Room plus live RSS and the renderer has
-            # no network, so the app cold-starts empty and the capture is a near-empty frame.
-            # The gate counts it in `withoutSemantics` and refuses the whole publish. It is
-            # not a declared entry, so there is nothing to withhold from `components[]`.
-            #
-            # Note this also masks the 2 failed renders this catalog reports (1 distinct
-            # error signature, recorded in catalog.json) — they were not diagnosed, only
-            # unblocked. The `empty` half of the gate still holds, so a total render miss
-            # cannot blank the delivery branch.
-            allowIncomplete: true
+            # The synthetic `mobile/MainActivity` render is exempted BY NAME in
+            # Jetcaster/catalog.spec.json (`completeness.exemptSemantics`), so this entry no
+            # longer needs the wholesale flag and the gate is strict again for every declared
+            # component — see yschimke/compose-ai-tools#4117.
           - system: jetchat
             spec: Jetchat/catalog.spec.json
             dir: Jetchat
