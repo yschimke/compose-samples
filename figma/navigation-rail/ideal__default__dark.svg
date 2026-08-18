@@ -3,7 +3,7 @@
 <g transform="translate(0, 0)">
   <g id="Root">
     <g id="ReusableComposeNode">
-      <rect x="0" y="0" width="210" height="2100" fill="#121318"/>
+        <rect x="0" y="0" width="210" height="2100" fill="#121318"/>
       <g id="ReusableComposeNode">
         <g id="ReusableComposeNode">
           <g transform="translate(74 43) scale(2.62 2.62)">
@@ -29,6 +29,7 @@
             </g>
           </g>
           <g id="ReusableComposeNode">
+            <image href="ideal__default__dark.figma-raster/1881.png" x="31" y="982" width="147" height="84"/>
           </g>
         </g>
         <g id="ReusableComposeNode">
@@ -41,6 +42,7 @@
             </g>
           </g>
           <g id="ReusableComposeNode">
+            <image href="ideal__default__dark.figma-raster/1890.png" x="31" y="1172" width="147" height="84"/>
           </g>
         </g>
         <g id="ReusableComposeNode">

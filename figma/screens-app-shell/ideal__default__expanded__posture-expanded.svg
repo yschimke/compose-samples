@@ -5,7 +5,7 @@
     <g id="ReusableComposeNode">
       <g id="ReusableComposeNode">
         <g id="ReusableComposeNode">
-          <rect x="0" y="0" width="210" height="2100" fill="#FAF8FF"/>
+            <rect x="0" y="0" width="210" height="2100" fill="#FAF8FF"/>
           <g id="ReusableComposeNode">
             <g id="ReusableComposeNode">
               <g transform="translate(74 43) scale(2.62 2.62)">
@@ -31,6 +31,7 @@
                 </g>
               </g>
               <g id="ReusableComposeNode">
+                <image href="ideal__default__expanded__posture-expanded.figma-raster/1669.png" x="31" y="982" width="147" height="84"/>
               </g>
             </g>
             <g id="ReusableComposeNode">
@@ -43,6 +44,7 @@
                 </g>
               </g>
               <g id="ReusableComposeNode">
+                <image href="ideal__default__expanded__posture-expanded.figma-raster/1678.png" x="31" y="1172" width="147" height="84"/>
               </g>
             </g>
             <g id="ReusableComposeNode">
@@ -64,14 +66,14 @@
                       <g id="LayoutNodeSubcompositionsState">
                         <g clip-path="url(#clip-2)">
                           <g id="OutlinedTextField">
-                            <image href="ideal__default__expanded__posture-expanded.figma-raster/1646.png" x="252" y="0" width="793" height="147"/>
+                            <image href="ideal__default__expanded__posture-expanded.figma-raster/1742.png" x="252" y="0" width="793" height="147"/>
                           </g>
                           <g id="Empty">
                             <text x="252" y="234.99" font-size="42" font-family="Montserrat" font-weight="500" letter-spacing="0.39" fill="#1A1B20">Top stories for you</text>
                           </g>
                           <g id="Column">
                             <g id="ImageKt">
-                              <image href="ideal__default__expanded__posture-expanded.figma-raster/1659.png" x="252" y="294" width="793" height="473"/>
+                              <image href="ideal__default__expanded__posture-expanded.figma-raster/1755.png" x="252" y="294" width="793" height="473"/>
                             </g>
                             <g id="Spacer">
                             </g>
@@ -93,7 +95,7 @@
                           <g id="Column">
                             <g id="Row">
                               <g id="ImageKt">
-                                <image href="ideal__default__expanded__posture-expanded.figma-raster/1668.png" x="252" y="1171" width="105" height="105"/>
+                                <image href="ideal__default__expanded__posture-expanded.figma-raster/1764.png" x="252" y="1171" width="105" height="105"/>
                               </g>
                               <g id="Column">
                                 <g id="Empty">
@@ -116,7 +118,7 @@
                             </g>
                             <g id="Row">
                               <g id="ImageKt">
-                                <image href="ideal__default__expanded__posture-expanded.figma-raster/1677.png" x="252" y="1405" width="105" height="105"/>
+                                <image href="ideal__default__expanded__posture-expanded.figma-raster/1773.png" x="252" y="1405" width="105" height="105"/>
                               </g>
                               <g id="Column">
                                 <g id="Empty">
@@ -139,7 +141,7 @@
                             </g>
                             <g id="Row">
                               <g id="ImageKt">
-                                <image href="ideal__default__expanded__posture-expanded.figma-raster/1686.png" x="252" y="1702" width="105" height="105"/>
+                                <image href="ideal__default__expanded__posture-expanded.figma-raster/1782.png" x="252" y="1702" width="105" height="105"/>
                               </g>
                               <g id="Column">
                                 <g id="Empty">
@@ -164,7 +166,7 @@
                           <g id="Column">
                             <g id="Row">
                               <g id="ImageKt">
-                                <image href="ideal__default__expanded__posture-expanded.figma-raster/1697.png" x="252" y="2052" width="105" height="105"/>
+                                <image href="ideal__default__expanded__posture-expanded.figma-raster/1793.png" x="252" y="2052" width="105" height="105"/>
                               </g>
                               <g id="Column">
                                 <g id="Empty">
