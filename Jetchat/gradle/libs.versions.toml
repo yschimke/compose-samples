@@ -3,7 +3,7 @@
 # Do not add a dependency to an individual sample, edit the global version instead.
 #####
 [versions]
-composeAiPreview = "1.12.0"
+composeAiPreview = "1.21.0"
 accompanist = "0.37.3"
 android-material3 = "1.14.0"
 androidGradlePlugin = "9.2.1"
