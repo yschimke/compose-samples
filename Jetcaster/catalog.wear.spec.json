@@ -16,7 +16,7 @@
   "compareWith": "jetcaster",
   "display": {
     "surface": "dark",
-    "hero": "Podcast/Screen"
+    "hero": "Episode/Latest"
   },
   "groupOrder": ["Browse", "Playback", "Components"],
   "groups": [
