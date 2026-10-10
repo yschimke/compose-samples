@@ -4,7 +4,8 @@
 #####
 [versions]
 accompanist = "0.37.3"
-composeAiPreview = "1.21.0"
+composeAiPreview = "2.39.2"
+composeAiPreviewAnnotations = "3.13.2"
 android-material3 = "1.14.0"
 androidGradlePlugin = "9.2.1"
 androidx-activity-compose = "1.13.0"
@@ -63,7 +64,7 @@ version-catalog-update = "1.1.0"
 
 [libraries]
 accompanist-adaptive = { module = "com.google.accompanist:accompanist-adaptive", version.ref = "accompanist" }
-composeai-preview-annotations = { module = "ee.schimke.composeai:preview-annotations", version.ref = "composeAiPreview" }
+composeai-preview-annotations = { module = "ee.schimke.composeai:preview-annotations", version.ref = "composeAiPreviewAnnotations" }
 accompanist-permissions = { module = "com.google.accompanist:accompanist-permissions", version.ref = "accompanist" }
 android-material3 = { module = "com.google.android.material:material", version.ref = "android-material3" }
 androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activity-compose" }
