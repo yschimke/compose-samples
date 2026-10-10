@@ -20,6 +20,15 @@ on:
         description: 'Publish even if some previews fail to render or lack semantics (use while tuning a spec).'
         type: boolean
         default: false
+  # A scheduled run always uses the DEFAULT branch's copy of this file, which is
+  # why both jobs check out / render `ref: previews` explicitly rather than the
+  # triggering ref. It has no inputs, so `inputs.allow_incomplete` is empty and
+  # the publish job falls back to each matrix entry's own `allowIncomplete`.
+  # Weekly so the catalogs pick up compose-ai-tools changes that land on `main`
+  # (the retheme job builds its CLI from there, and the reusable workflow is
+  # `@main`) even when nothing on `previews` moves.
+  schedule:
+    - cron: '20 2 * * 3' # Wednesdays 02:20 UTC — weekly, at a quiet time, off the top of the hour
   push:
     branches:
       - previews
@@ -47,7 +56,12 @@ permissions:
   contents: read
 
 concurrency:
-  group: design-artifacts-${{ github.ref }}
+  # Every trigger renders `previews` and pushes the same delivery branches, so
+  # every run shares one queue. Spelled as the literal key a push to `previews`
+  # evaluates `design-artifacts-${{ github.ref }}` to, so a scheduled or
+  # dispatched run (ref `main`) also queues behind one started from the
+  # `previews` copy of this file instead of racing it.
+  group: design-artifacts-refs/heads/previews
   cancel-in-progress: false
 
 jobs:
@@ -70,8 +84,8 @@ jobs:
         with:
           # The catalogs, their specs and m3-theme-overrides.mjs all live on
           # `previews`; none of them exist on `main`. A push run would check the
-          # right commit out anyway, but a `workflow_dispatch` (and any future
-          # `schedule`) can only ever run the copy of this file on the DEFAULT
+          # right commit out anyway, but a `workflow_dispatch` or the weekly
+          # `schedule` can only ever run the copy of this file on the DEFAULT
           # branch and would otherwise check out `main` and find nothing.
           ref: previews
           persist-credentials: false
@@ -221,11 +235,10 @@ jobs:
       working-directory: ${{ matrix.dir }}
       # Render `previews`, the branch the catalogs live on — not whatever ref
       # triggered this. Only matters for triggers that can't imply the ref: a
-      # `workflow_dispatch` is offered solely for the default branch's copy of
+      # `workflow_dispatch` or `schedule` runs solely the default branch's copy of
       # this file and would otherwise render a `main` that carries no
       # catalog.spec.json at all. See the note on the retheme checkout above.
       ref: previews
-      preview-annotations: ${{ matrix.preview-annotations || '' }}
       # Carry the executable render bundle onto the delivery branch and split it
       # per preview, so preview.coo.ee re-renders these live instead of replaying
       # baked PNGs — that's what makes the device / theme / knob controls do
