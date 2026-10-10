@@ -7,87 +7,617 @@
     "ref": "previews",
     "module": ":app"
   },
-  "generatedAt": "2026-08-18T22:48:25.180Z",
+  "generatedAt": "2026-10-10T09:41:28.670Z",
   "mappings": [
     {
       "componentId": "Foundations/Button",
       "figmaLayerName": "Foundations/Button",
-      "componentName": "ButtonPreview",
+      "componentName": "JetsnackButton",
       "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetsnack/ui/components/Button.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "ButtonPreview",
-      "figmaSvg": "figma/foundations-button.svg"
+      "codeSnippet": "JetsnackButton(\n    onClick = TODO(\"() -> Unit\"),\n    content = { },\n)",
+      "imports": [
+        "import com.example.jetsnack.ui.components.JetsnackButton"
+      ],
+      "parameters": [
+        {
+          "name": "onClick",
+          "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "enabled",
+          "type": "Boolean",
+          "typeFqn": "kotlin.Boolean",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "interactionSource",
+          "type": "MutableInteractionSource",
+          "typeFqn": "androidx.compose.foundation.interaction.MutableInteractionSource",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "shape",
+          "type": "Shape",
+          "typeFqn": "androidx.compose.ui.graphics.Shape",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "border",
+          "type": "BorderStroke?",
+          "typeFqn": "androidx.compose.foundation.BorderStroke",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": true,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "backgroundGradient",
+          "type": "List<Color>",
+          "typeFqn": "kotlin.collections.List",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "disabledBackgroundGradient",
+          "type": "List<Color>",
+          "typeFqn": "kotlin.collections.List",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "contentColor",
+          "type": "Color",
+          "typeFqn": "androidx.compose.ui.graphics.Color",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "disabledContentColor",
+          "type": "Color",
+          "typeFqn": "androidx.compose.ui.graphics.Color",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "contentPadding",
+          "type": "PaddingValues",
+          "typeFqn": "androidx.compose.foundation.layout.PaddingValues",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "content",
+          "type": "RowScope.() -> Unit",
+          "typeFqn": "kotlin.Function1",
+          "hasDefault": false,
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.RowScope",
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        }
+      ]
     },
     {
       "componentId": "Foundations/Card",
       "figmaLayerName": "Foundations/Card",
-      "componentName": "CardPreview",
+      "componentName": "JetsnackCard",
       "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetsnack/ui/components/Card.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "CardPreview",
-      "figmaSvg": "figma/foundations-card.svg"
+      "codeSnippet": "JetsnackCard(\n    content = { },\n)",
+      "imports": [
+        "import com.example.jetsnack.ui.components.JetsnackCard"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "shape",
+          "type": "Shape",
+          "typeFqn": "androidx.compose.ui.graphics.Shape",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "color",
+          "type": "Color",
+          "typeFqn": "androidx.compose.ui.graphics.Color",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "contentColor",
+          "type": "Color",
+          "typeFqn": "androidx.compose.ui.graphics.Color",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "border",
+          "type": "BorderStroke?",
+          "typeFqn": "androidx.compose.foundation.BorderStroke",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": true,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "elevation",
+          "type": "Dp",
+          "typeFqn": "androidx.compose.ui.unit.Dp",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
+          "hasDefault": false,
+          "composableSlot": true,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        }
+      ]
     },
     {
       "componentId": "Foundations/Surface",
       "figmaLayerName": "Foundations/Surface",
-      "componentName": "JetsnackSurfaceFlatPreview",
-      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt",
+      "componentName": "JetsnackSurface",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetsnack/ui/components/Surface.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "JetsnackSurfaceFlatPreview",
-      "figmaSvg": "figma/foundations-surface.svg"
+      "codeSnippet": "JetsnackSurface(\n    content = { },\n)",
+      "imports": [
+        "import com.example.jetsnack.ui.components.JetsnackSurface"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "shape",
+          "type": "Shape",
+          "typeFqn": "androidx.compose.ui.graphics.Shape",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "color",
+          "type": "Color",
+          "typeFqn": "androidx.compose.ui.graphics.Color",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "contentColor",
+          "type": "Color",
+          "typeFqn": "androidx.compose.ui.graphics.Color",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "border",
+          "type": "BorderStroke?",
+          "typeFqn": "androidx.compose.foundation.BorderStroke",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": true,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "elevation",
+          "type": "Dp",
+          "typeFqn": "androidx.compose.ui.unit.Dp",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
+          "hasDefault": false,
+          "composableSlot": true,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        }
+      ]
     },
     {
       "componentId": "Foundations/Divider",
       "figmaLayerName": "Foundations/Divider",
-      "componentName": "DividerPreview",
+      "componentName": "JetsnackDivider",
       "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetsnack/ui/components/Divider.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "DividerPreview",
-      "figmaSvg": "figma/foundations-divider.svg"
+      "codeSnippet": "JetsnackDivider()",
+      "imports": [
+        "import com.example.jetsnack.ui.components.JetsnackDivider"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "color",
+          "type": "Color",
+          "typeFqn": "androidx.compose.ui.graphics.Color",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "thickness",
+          "type": "Dp",
+          "typeFqn": "androidx.compose.ui.unit.Dp",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ]
     },
     {
       "componentId": "Foundations/Icon button",
       "figmaLayerName": "Foundations/Icon button",
-      "componentName": "GradientTintedIconButtonPreview",
+      "componentName": "JetsnackGradientTintedIconButton",
       "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetsnack/ui/components/GradientTintedIconButton.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "GradientTintedIconButtonPreview",
-      "figmaSvg": "figma/foundations-icon-button.svg"
+      "codeSnippet": "JetsnackGradientTintedIconButton(\n    iconResourceId = TODO(\"Int\"),\n    onClick = TODO(\"() -> Unit\"),\n    contentDescription = TODO(\"String?\"),\n)",
+      "imports": [
+        "import com.example.jetsnack.ui.components.JetsnackGradientTintedIconButton"
+      ],
+      "parameters": [
+        {
+          "name": "iconResourceId",
+          "type": "Int",
+          "typeFqn": "kotlin.Int",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "onClick",
+          "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "contentDescription",
+          "type": "String?",
+          "typeFqn": "kotlin.String",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": true,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "colors",
+          "type": "List<Color>",
+          "typeFqn": "kotlin.collections.List",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "interactionSource",
+          "type": "MutableInteractionSource",
+          "typeFqn": "androidx.compose.foundation.interaction.MutableInteractionSource",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ]
     },
     {
       "componentId": "Tokens/Colour",
       "figmaLayerName": "Tokens/Colour",
-      "componentName": "JetsnackColorTokensLightPreview",
-      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt",
+      "componentName": "getColors",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetsnack/ui/theme/Theme.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "JetsnackColorTokensLightPreview",
-      "figmaSvg": "figma/tokens-colour.svg"
+      "codeSnippet": "getColors()",
+      "imports": [
+        "import com.example.jetsnack.ui.theme.getColors"
+      ]
     },
     {
       "componentId": "Tokens/Gradients",
       "figmaLayerName": "Tokens/Gradients",
-      "componentName": "JetsnackGradientTokensPreview",
-      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt",
+      "componentName": "getColors",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetsnack/ui/theme/Theme.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "JetsnackGradientTokensPreview",
-      "figmaSvg": "figma/tokens-gradients.svg"
+      "codeSnippet": "getColors()",
+      "imports": [
+        "import com.example.jetsnack.ui.theme.getColors"
+      ]
     },
     {
       "componentId": "Layout/Vertical grid",
       "figmaLayerName": "Layout/Vertical grid",
-      "componentName": "VerticalGridTwoColumnPreview",
-      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt",
+      "componentName": "VerticalGrid",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetsnack/ui/components/Grid.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "VerticalGridTwoColumnPreview",
-      "figmaSvg": "figma/layout-vertical-grid.svg"
+      "codeSnippet": "VerticalGrid(\n    content = { },\n)",
+      "imports": [
+        "import com.example.jetsnack.ui.components.VerticalGrid"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "columns",
+          "type": "Int",
+          "typeFqn": "kotlin.Int",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
+          "hasDefault": false,
+          "composableSlot": true,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        }
+      ]
     },
     {
       "componentId": "Snack/Card",
@@ -100,148 +630,945 @@
       "codeSnippet": "getColors()",
       "imports": [
         "import com.example.jetsnack.ui.theme.getColors"
-      ],
-      "figmaSvg": "figma/snack-card.svg"
+      ]
     },
     {
       "componentId": "Snack/Item",
       "figmaLayerName": "Snack/Item",
-      "componentName": "SnackItemPreview",
-      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt",
+      "componentName": "SnackItem",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetsnack/ui/components/Snacks.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "SnackItemPreview",
-      "figmaSvg": "figma/snack-item.svg"
+      "codeSnippet": "SnackItem(\n    snack = TODO(\"Snack\"),\n    snackCollectionId = TODO(\"Long\"),\n    onSnackClick = TODO(\"(Long, String) -> Unit\"),\n)",
+      "imports": [
+        "import com.example.jetsnack.ui.components.SnackItem"
+      ],
+      "parameters": [
+        {
+          "name": "snack",
+          "type": "Snack",
+          "typeFqn": "com.example.jetsnack.model.Snack",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "snackCollectionId",
+          "type": "Long",
+          "typeFqn": "kotlin.Long",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "onSnackClick",
+          "type": "(Long, String) -> Unit",
+          "typeFqn": "kotlin.Function2",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ]
     },
     {
       "componentId": "Snack/Image",
       "figmaLayerName": "Snack/Image",
-      "componentName": "SnackImagePreview",
-      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt",
+      "componentName": "SnackImage",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetsnack/ui/components/Snacks.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "SnackImagePreview",
-      "figmaSvg": "figma/snack-image.svg"
+      "codeSnippet": "SnackImage(\n    imageRes = TODO(\"Int\"),\n    contentDescription = TODO(\"String?\"),\n)",
+      "imports": [
+        "import com.example.jetsnack.ui.components.SnackImage"
+      ],
+      "parameters": [
+        {
+          "name": "imageRes",
+          "type": "Int",
+          "typeFqn": "kotlin.Int",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "contentDescription",
+          "type": "String?",
+          "typeFqn": "kotlin.String",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": true,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "elevation",
+          "type": "Dp",
+          "typeFqn": "androidx.compose.ui.unit.Dp",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ]
     },
     {
       "componentId": "Snack/Collection",
       "figmaLayerName": "Snack/Collection",
-      "componentName": "SnackCollectionHighlightPreview",
-      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt",
+      "componentName": "SnackCollection",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetsnack/ui/components/Snacks.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "SnackCollectionHighlightPreview",
-      "figmaSvg": "figma/snack-collection.svg"
+      "codeSnippet": "SnackCollection(\n    snackCollection = TODO(\"SnackCollection\"),\n    onSnackClick = TODO(\"(Long, String) -> Unit\"),\n)",
+      "imports": [
+        "import com.example.jetsnack.ui.components.SnackCollection"
+      ],
+      "parameters": [
+        {
+          "name": "snackCollection",
+          "type": "SnackCollection",
+          "typeFqn": "com.example.jetsnack.model.SnackCollection",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "onSnackClick",
+          "type": "(Long, String) -> Unit",
+          "typeFqn": "kotlin.Function2",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "index",
+          "type": "Int",
+          "typeFqn": "kotlin.Int",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "highlight",
+          "type": "Boolean",
+          "typeFqn": "kotlin.Boolean",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ]
     },
     {
       "componentId": "Catalog/Filters",
       "figmaLayerName": "Catalog/Filters",
-      "componentName": "FilterEnabledPreview",
+      "componentName": "FilterChip",
       "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetsnack/ui/components/Filters.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "FilterEnabledPreview",
-      "figmaSvg": "figma/catalog-filters.svg"
+      "codeSnippet": "FilterChip(\n    filter = TODO(\"Filter\"),\n)",
+      "imports": [
+        "import com.example.jetsnack.ui.components.FilterChip"
+      ],
+      "parameters": [
+        {
+          "name": "filter",
+          "type": "Filter",
+          "typeFqn": "com.example.jetsnack.model.Filter",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "shape",
+          "type": "Shape",
+          "typeFqn": "androidx.compose.ui.graphics.Shape",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ]
     },
     {
       "componentId": "Catalog/Filter bar",
       "figmaLayerName": "Catalog/Filter bar",
-      "componentName": "FilterBarPreview",
-      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt",
+      "componentName": "FilterBar",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetsnack/ui/components/Filters.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "FilterBarPreview",
-      "figmaSvg": "figma/catalog-filter-bar.svg"
+      "codeSnippet": "FilterBar(\n    filters = TODO(\"List<Filter>\"),\n    onShowFilters = TODO(\"() -> Unit\"),\n    filterScreenVisible = TODO(\"Boolean\"),\n    sharedTransitionScope = TODO(\"SharedTransitionScope\"),\n)",
+      "imports": [
+        "import com.example.jetsnack.ui.components.FilterBar"
+      ],
+      "parameters": [
+        {
+          "name": "filters",
+          "type": "List<Filter>",
+          "typeFqn": "kotlin.collections.List",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "onShowFilters",
+          "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "filterScreenVisible",
+          "type": "Boolean",
+          "typeFqn": "kotlin.Boolean",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "sharedTransitionScope",
+          "type": "SharedTransitionScope",
+          "typeFqn": "androidx.compose.animation.SharedTransitionScope",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ]
     },
     {
       "componentId": "Cart/Quantity",
       "figmaLayerName": "Cart/Quantity",
-      "componentName": "QuantitySelectorPreview",
+      "componentName": "QuantitySelector",
       "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetsnack/ui/components/QuantitySelector.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "MEDIUM",
       "previewName": "QuantitySelectorPreview",
-      "figmaSvg": "figma/cart-quantity.svg"
+      "codeSnippet": "QuantitySelector(\n    count = TODO(\"Int\"),\n    decreaseItemCount = TODO(\"() -> Unit\"),\n    increaseItemCount = TODO(\"() -> Unit\"),\n)",
+      "imports": [
+        "import com.example.jetsnack.ui.components.QuantitySelector"
+      ],
+      "parameters": [
+        {
+          "name": "count",
+          "type": "Int",
+          "typeFqn": "kotlin.Int",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "decreaseItemCount",
+          "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "increaseItemCount",
+          "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ]
     },
     {
       "componentId": "Cart/Item",
       "figmaLayerName": "Cart/Item",
-      "componentName": "CartItemPreview",
-      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt",
+      "componentName": "CartItem",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetsnack/ui/home/cart/Cart.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "CartItemPreview",
-      "figmaSvg": "figma/cart-item.svg"
+      "codeSnippet": "CartItem(\n    orderLine = TODO(\"OrderLine\"),\n    removeSnack = TODO(\"(Long) -> Unit\"),\n    increaseItemCount = TODO(\"(Long) -> Unit\"),\n    decreaseItemCount = TODO(\"(Long) -> Unit\"),\n    onSnackClick = TODO(\"(Long, String) -> Unit\"),\n)",
+      "imports": [
+        "import com.example.jetsnack.ui.home.cart.CartItem"
+      ],
+      "parameters": [
+        {
+          "name": "orderLine",
+          "type": "OrderLine",
+          "typeFqn": "com.example.jetsnack.model.OrderLine",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "removeSnack",
+          "type": "(Long) -> Unit",
+          "typeFqn": "kotlin.Function1",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "increaseItemCount",
+          "type": "(Long) -> Unit",
+          "typeFqn": "kotlin.Function1",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "decreaseItemCount",
+          "type": "(Long) -> Unit",
+          "typeFqn": "kotlin.Function1",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "onSnackClick",
+          "type": "(Long, String) -> Unit",
+          "typeFqn": "kotlin.Function2",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ]
     },
     {
       "componentId": "Cart/Summary",
       "figmaLayerName": "Cart/Summary",
-      "componentName": "SummaryItemPreview",
-      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt",
+      "componentName": "SummaryItem",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetsnack/ui/home/cart/Cart.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "SummaryItemPreview",
-      "figmaSvg": "figma/cart-summary.svg"
+      "codeSnippet": "SummaryItem(\n    subtotal = TODO(\"Long\"),\n    shippingCosts = TODO(\"Long\"),\n)",
+      "imports": [
+        "import com.example.jetsnack.ui.home.cart.SummaryItem"
+      ],
+      "parameters": [
+        {
+          "name": "subtotal",
+          "type": "Long",
+          "typeFqn": "kotlin.Long",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "shippingCosts",
+          "type": "Long",
+          "typeFqn": "kotlin.Long",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ]
     },
     {
       "componentId": "Cart/Swipe to dismiss",
       "figmaLayerName": "Cart/Swipe to dismiss",
-      "componentName": "SwipeDismissItemPreview",
-      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt",
+      "componentName": "SwipeDismissItem",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetsnack/ui/home/cart/SwipeDismissItem.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "MEDIUM",
       "previewName": "SwipeDismissItemPreview",
-      "figmaSvg": "figma/cart-swipe-to-dismiss.svg"
+      "codeSnippet": "SwipeDismissItem(\n    background = { },\n    content = { },\n)",
+      "imports": [
+        "import com.example.jetsnack.ui.home.cart.SwipeDismissItem"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "enter",
+          "type": "EnterTransition",
+          "typeFqn": "androidx.compose.animation.EnterTransition",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "exit",
+          "type": "ExitTransition",
+          "typeFqn": "androidx.compose.animation.ExitTransition",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "background",
+          "type": "(Float) -> Unit",
+          "typeFqn": "kotlin.Function1",
+          "hasDefault": false,
+          "composableSlot": true,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "content",
+          "type": "(Boolean) -> Unit",
+          "typeFqn": "kotlin.Function1",
+          "hasDefault": false,
+          "composableSlot": true,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        }
+      ]
     },
     {
       "componentId": "Search/Bar",
       "figmaLayerName": "Search/Bar",
-      "componentName": "SearchBarCatalogPreview",
-      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt",
+      "componentName": "SearchBar",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetsnack/ui/home/search/Search.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "SearchBarCatalogPreview",
-      "figmaSvg": "figma/search-bar.svg"
+      "codeSnippet": "SearchBar(\n    query = TODO(\"TextFieldValue\"),\n    onQueryChange = TODO(\"(TextFieldValue) -> Unit\"),\n    searchFocused = TODO(\"Boolean\"),\n    onSearchFocusChange = TODO(\"(Boolean) -> Unit\"),\n    onClearQuery = TODO(\"() -> Unit\"),\n    searching = TODO(\"Boolean\"),\n)",
+      "imports": [
+        "import com.example.jetsnack.ui.home.search.SearchBar"
+      ],
+      "parameters": [
+        {
+          "name": "query",
+          "type": "TextFieldValue",
+          "typeFqn": "androidx.compose.ui.text.input.TextFieldValue",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "onQueryChange",
+          "type": "(TextFieldValue) -> Unit",
+          "typeFqn": "kotlin.Function1",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "searchFocused",
+          "type": "Boolean",
+          "typeFqn": "kotlin.Boolean",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "onSearchFocusChange",
+          "type": "(Boolean) -> Unit",
+          "typeFqn": "kotlin.Function1",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "onClearQuery",
+          "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "searching",
+          "type": "Boolean",
+          "typeFqn": "kotlin.Boolean",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ]
     },
     {
       "componentId": "Search/Categories",
       "figmaLayerName": "Search/Categories",
-      "componentName": "SearchCategoryCatalogPreview",
-      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt",
+      "componentName": "SearchCategory",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetsnack/ui/home/search/Categories.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "MEDIUM",
       "previewName": "SearchCategoryCatalogPreview",
-      "figmaSvg": "figma/search-categories.svg"
+      "codeSnippet": "SearchCategory(\n    category = TODO(\"SearchCategory\"),\n    gradient = TODO(\"List<Color>\"),\n)",
+      "imports": [
+        "import com.example.jetsnack.ui.home.search.SearchCategory"
+      ],
+      "parameters": [
+        {
+          "name": "category",
+          "type": "SearchCategory",
+          "typeFqn": "com.example.jetsnack.model.SearchCategory",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "gradient",
+          "type": "List<Color>",
+          "typeFqn": "kotlin.collections.List",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ]
     },
     {
       "componentId": "Search/Results",
       "figmaLayerName": "Search/Results",
-      "componentName": "SearchResultCatalogPreview",
-      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt",
+      "componentName": "SearchResult",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetsnack/ui/home/search/Results.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "SearchResultCatalogPreview",
-      "figmaSvg": "figma/search-results.svg"
+      "codeSnippet": "SearchResult(\n    snack = TODO(\"Snack\"),\n    onSnackClick = TODO(\"(Long, String) -> Unit\"),\n    showDivider = TODO(\"Boolean\"),\n)",
+      "imports": [
+        "import com.example.jetsnack.ui.home.search.SearchResult"
+      ],
+      "parameters": [
+        {
+          "name": "snack",
+          "type": "Snack",
+          "typeFqn": "com.example.jetsnack.model.Snack",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "onSnackClick",
+          "type": "(Long, String) -> Unit",
+          "typeFqn": "kotlin.Function2",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "showDivider",
+          "type": "Boolean",
+          "typeFqn": "kotlin.Boolean",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ]
     },
     {
       "componentId": "Search/Suggestions",
       "figmaLayerName": "Search/Suggestions",
-      "componentName": "SearchSuggestionsPreview",
-      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt",
+      "componentName": "SearchSuggestions",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetsnack/ui/home/search/Suggestions.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "SearchSuggestionsPreview",
-      "figmaSvg": "figma/search-suggestions.svg"
+      "codeSnippet": "SearchSuggestions(\n    suggestions = TODO(\"List<SearchSuggestionGroup>\"),\n    onSuggestionSelect = TODO(\"(String) -> Unit\"),\n)",
+      "imports": [
+        "import com.example.jetsnack.ui.home.search.SearchSuggestions"
+      ],
+      "parameters": [
+        {
+          "name": "suggestions",
+          "type": "List<SearchSuggestionGroup>",
+          "typeFqn": "kotlin.collections.List",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "onSuggestionSelect",
+          "type": "(String) -> Unit",
+          "typeFqn": "kotlin.Function1",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        }
+      ]
     },
     {
       "componentId": "Search/No results",
       "figmaLayerName": "Search/No results",
-      "componentName": "NoResultsPreview",
-      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt",
+      "componentName": "NoResults",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetsnack/ui/home/search/Results.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "NoResultsPreview",
-      "figmaSvg": "figma/search-no-results.svg"
+      "codeSnippet": "NoResults(\n    query = TODO(\"String\"),\n)",
+      "imports": [
+        "import com.example.jetsnack.ui.home.search.NoResults"
+      ],
+      "parameters": [
+        {
+          "name": "query",
+          "type": "String",
+          "typeFqn": "kotlin.String",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ]
     },
     {
       "componentId": "Chrome/Bottom nav",
@@ -250,8 +1577,7 @@
       "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
-      "previewName": "JetsnackBottomBarFeedPreview",
-      "figmaSvg": "figma/chrome-bottom-nav.svg"
+      "previewName": "JetsnackBottomBarFeedPreview"
     },
     {
       "componentId": "Chrome/Bottom nav item",
@@ -260,28 +1586,141 @@
       "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
-      "previewName": "JetsnackBottomNavigationItemSelectedPreview",
-      "figmaSvg": "figma/chrome-bottom-nav-item.svg"
+      "previewName": "JetsnackBottomNavigationItemSelectedPreview"
     },
     {
       "componentId": "Chrome/Destination bar",
       "figmaLayerName": "Chrome/Destination bar",
-      "componentName": "PreviewDestinationBar",
+      "componentName": "DestinationBar",
       "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetsnack/ui/home/DestinationBar.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "PreviewDestinationBar",
-      "figmaSvg": "figma/chrome-destination-bar.svg"
+      "codeSnippet": "DestinationBar()",
+      "imports": [
+        "import com.example.jetsnack.ui.home.DestinationBar"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ]
     },
     {
       "componentId": "Feedback/Snackbar",
       "figmaLayerName": "Feedback/Snackbar",
-      "componentName": "JetsnackSnackbarPreview",
-      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt",
+      "componentName": "JetsnackSnackbar",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetsnack/ui/components/Snackbar.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "JetsnackSnackbarPreview",
-      "figmaSvg": "figma/feedback-snackbar.svg"
+      "codeSnippet": "JetsnackSnackbar(\n    snackbarData = TODO(\"SnackbarData\"),\n)",
+      "imports": [
+        "import com.example.jetsnack.ui.components.JetsnackSnackbar"
+      ],
+      "parameters": [
+        {
+          "name": "snackbarData",
+          "type": "SnackbarData",
+          "typeFqn": "androidx.compose.material3.SnackbarData",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "actionOnNewLine",
+          "type": "Boolean",
+          "typeFqn": "kotlin.Boolean",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "shape",
+          "type": "Shape",
+          "typeFqn": "androidx.compose.ui.graphics.Shape",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "backgroundColor",
+          "type": "Color",
+          "typeFqn": "androidx.compose.ui.graphics.Color",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "contentColor",
+          "type": "Color",
+          "typeFqn": "androidx.compose.ui.graphics.Color",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "actionColor",
+          "type": "Color",
+          "typeFqn": "androidx.compose.ui.graphics.Color",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ]
     },
     {
       "componentId": "Screens/App shell",
@@ -290,68 +1729,292 @@
       "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetsnack/ui/JetsnackApp.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
-      "previewName": "JetsnackApp",
-      "figmaSvg": "figma/screens-app-shell.svg"
+      "previewName": "JetsnackApp"
     },
     {
       "componentId": "Screens/Feed",
       "figmaLayerName": "Screens/Feed",
-      "componentName": "FeedScreenPreview",
-      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetsnack/catalog/JetsnackScreenPreviews.kt",
+      "componentName": "Feed",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetsnack/ui/home/Feed.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "FeedScreenPreview",
-      "figmaSvg": "figma/screens-feed.svg"
+      "codeSnippet": "Feed(\n    onSnackClick = TODO(\"(Long, String) -> Unit\"),\n)",
+      "imports": [
+        "import com.example.jetsnack.ui.home.Feed"
+      ],
+      "parameters": [
+        {
+          "name": "onSnackClick",
+          "type": "(Long, String) -> Unit",
+          "typeFqn": "kotlin.Function2",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ]
     },
     {
       "componentId": "Screens/Cart",
       "figmaLayerName": "Screens/Cart",
-      "componentName": "CartScreenPreview",
-      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetsnack/catalog/JetsnackScreenPreviews.kt",
+      "componentName": "Cart",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetsnack/ui/home/cart/Cart.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "CartScreenPreview",
-      "figmaSvg": "figma/screens-cart.svg"
+      "codeSnippet": "Cart(\n    onSnackClick = TODO(\"(Long, String) -> Unit\"),\n)",
+      "imports": [
+        "import com.example.jetsnack.ui.home.cart.Cart"
+      ],
+      "parameters": [
+        {
+          "name": "onSnackClick",
+          "type": "(Long, String) -> Unit",
+          "typeFqn": "kotlin.Function2",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "viewModel",
+          "type": "CartViewModel",
+          "typeFqn": "com.example.jetsnack.ui.home.cart.CartViewModel",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ]
     },
     {
       "componentId": "Screens/Search",
       "figmaLayerName": "Screens/Search",
-      "componentName": "SearchScreenPreview",
-      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetsnack/catalog/JetsnackScreenPreviews.kt",
+      "componentName": "Search",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetsnack/ui/home/search/Search.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "SearchScreenPreview",
-      "figmaSvg": "figma/screens-search.svg"
+      "codeSnippet": "Search(\n    onSnackClick = TODO(\"(Long, String) -> Unit\"),\n)",
+      "imports": [
+        "import com.example.jetsnack.ui.home.search.Search"
+      ],
+      "parameters": [
+        {
+          "name": "onSnackClick",
+          "type": "(Long, String) -> Unit",
+          "typeFqn": "kotlin.Function2",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "state",
+          "type": "SearchState",
+          "typeFqn": "com.example.jetsnack.ui.home.search.SearchState",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ]
     },
     {
       "componentId": "Screens/Profile",
       "figmaLayerName": "Screens/Profile",
-      "componentName": "ProfileScreenPreview",
-      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetsnack/catalog/JetsnackScreenPreviews.kt",
+      "componentName": "Profile",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetsnack/ui/home/Profile.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "ProfileScreenPreview",
-      "figmaSvg": "figma/screens-profile.svg"
+      "codeSnippet": "Profile()",
+      "imports": [
+        "import com.example.jetsnack.ui.home.Profile"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ]
     },
     {
       "componentId": "Snack/Detail",
       "figmaLayerName": "Snack/Detail",
-      "componentName": "SnackDetailCatalogPreview",
-      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt",
+      "componentName": "SnackDetail",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetsnack/ui/snackdetail/SnackDetail.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "SnackDetailCatalogPreview",
-      "figmaSvg": "figma/snack-detail.svg"
+      "codeSnippet": "SnackDetail(\n    snackId = TODO(\"Long\"),\n    origin = TODO(\"String\"),\n    upPress = TODO(\"() -> Unit\"),\n)",
+      "imports": [
+        "import com.example.jetsnack.ui.snackdetail.SnackDetail"
+      ],
+      "parameters": [
+        {
+          "name": "snackId",
+          "type": "Long",
+          "typeFqn": "kotlin.Long",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "origin",
+          "type": "String",
+          "typeFqn": "kotlin.String",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "upPress",
+          "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        }
+      ]
     },
     {
       "componentId": "Catalog/Filter screen",
       "figmaLayerName": "Catalog/Filter screen",
-      "componentName": "FilterScreenCatalogPreview",
-      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetsnack/catalog/JetsnackScreenPreviews.kt",
+      "componentName": "FilterScreen",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetsnack/ui/home/FilterScreen.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "FilterScreenCatalogPreview",
-      "figmaSvg": "figma/catalog-filter-screen.svg"
+      "codeSnippet": "FilterScreen(\n    sharedTransitionScope = TODO(\"SharedTransitionScope\"),\n    animatedVisibilityScope = TODO(\"AnimatedVisibilityScope\"),\n    onDismiss = TODO(\"() -> Unit\"),\n)",
+      "imports": [
+        "import com.example.jetsnack.ui.home.FilterScreen"
+      ],
+      "parameters": [
+        {
+          "name": "sharedTransitionScope",
+          "type": "SharedTransitionScope",
+          "typeFqn": "androidx.compose.animation.SharedTransitionScope",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "animatedVisibilityScope",
+          "type": "AnimatedVisibilityScope",
+          "typeFqn": "androidx.compose.animation.AnimatedVisibilityScope",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "onDismiss",
+          "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        }
+      ]
     }
   ]
 }

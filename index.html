@@ -52,6 +52,12 @@
   .shot--framed { overflow:hidden; padding:0; min-height:0; position:relative; place-items:stretch;
     margin:16px auto; border-radius:8px; max-width:100%; }
   .shot--framed img { position:absolute; max-width:none; max-height:none; }
+  /* A gutter window shows the component at its siblings' size and lets the shadow it holds spill
+     past the box — so it must not clip, and the card must not either, or the spill dies at the card
+     edge. AFTER the .shot--framed rule on purpose: same specificity, so the later one is what
+     wins, and a bleeding shot always carries both classes. */
+  .shot--bleed { overflow:visible; }
+  .card:has(.shot--bleed) { overflow:visible; }
   .shot--missing { color:var(--muted); font-style:italic; }
   .card--failed { border-color:#7d4148; }
   .shot--failed { color:#f1b5b9; background:#26191b; text-align:center; display:flex; flex-direction:column; gap:6px; }
@@ -104,8 +110,8 @@
 <body>
 <header class="top">
   <h1>Jetsnack</h1>
-  <div class="subtitle">system <code>jetsnack</code> · custom design system (JetsnackTheme) · rendered by compose-preview 1.15.0 · 2026-08-18T22:48:21.631Z · 34 components</div>
-  <div class="subtitle"><a class="pagelink" href="compare.html">PNG vs SVG compare ↗</a></div>
+  <div class="subtitle">system <code>jetsnack</code> · custom design system (JetsnackTheme) · rendered by compose-preview 2.39.2 · 2026-10-10T09:41:26.273Z · 34 components</div>
+  <div class="subtitle"><a class="pagelink" href="compare.html">SVG vs PNG compare ↗</a></div>
 </header>
 
 <div class="layout">
@@ -143,7 +149,7 @@
   <a class="shot" href="#d-foundations-button" aria-label="Zoom Foundations/Button"><img loading="lazy" src="images/foundations-button/ideal__default__dark.png" alt="Foundations/Button" /></a>
   <div class="meta">
     <h3><a class="ctitle" href="#d-foundations-button">Foundations/Button</a></h3>
-    <div class="sub">250×105<a class="statechip" href="#d-foundations-button">+4 variants</a><a class="wf" href="wireframes/foundations-button.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/foundations-button.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="sub">250×105<a class="statechip" href="#d-foundations-button">+4 variants</a><a class="wf" href="wireframes/foundations-button.svg" target="_blank" rel="noopener">wireframe ↗</a></div>
     <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">button</span></div>
   </div>
 </article>
@@ -151,7 +157,7 @@
   <a class="shot" href="#d-foundations-card" aria-label="Zoom Foundations/Card"><img loading="lazy" src="images/foundations-card/ideal__default__dark.png" alt="Foundations/Card" /></a>
   <div class="meta">
     <h3><a class="ctitle" href="#d-foundations-card">Foundations/Card</a></h3>
-    <div class="sub">199×158<a class="statechip" href="#d-foundations-card">+1 variant</a><a class="wf" href="wireframes/foundations-card.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/foundations-card.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="sub">199×158<a class="statechip" href="#d-foundations-card">+1 variant</a><a class="wf" href="wireframes/foundations-card.svg" target="_blank" rel="noopener">wireframe ↗</a></div>
     
   </div>
 </article>
@@ -159,7 +165,7 @@
   <a class="shot" href="#d-foundations-surface" aria-label="Zoom Foundations/Surface"><img loading="lazy" src="images/foundations-surface/ideal__default__dark.png" alt="Foundations/Surface" /></a>
   <div class="meta">
     <h3><a class="ctitle" href="#d-foundations-surface">Foundations/Surface</a></h3>
-    <div class="sub">680×200<a class="statechip" href="#d-foundations-surface">+1 variant</a><a class="wf" href="wireframes/foundations-surface.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/foundations-surface.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="sub">680×200<a class="statechip" href="#d-foundations-surface">+1 variant</a><a class="wf" href="wireframes/foundations-surface.svg" target="_blank" rel="noopener">wireframe ↗</a></div>
     
   </div>
 </article>
@@ -167,7 +173,7 @@
   <a class="shot" href="#d-foundations-divider" aria-label="Zoom Foundations/Divider"><img loading="lazy" src="images/foundations-divider/ideal__default__dark.png" alt="Foundations/Divider" /></a>
   <div class="meta">
     <h3><a class="ctitle" href="#d-foundations-divider">Foundations/Divider</a></h3>
-    <div class="sub">263×26<a class="wf" href="wireframes/foundations-divider.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/foundations-divider.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="sub">263×26<a class="wf" href="wireframes/foundations-divider.svg" target="_blank" rel="noopener">wireframe ↗</a></div>
     
   </div>
 </article>
@@ -175,7 +181,7 @@
   <a class="shot" href="#d-foundations-icon-button" aria-label="Zoom Foundations/Icon button"><img loading="lazy" src="images/foundations-icon-button/ideal__default__dark.png" alt="Foundations/Icon button" /></a>
   <div class="meta">
     <h3><a class="ctitle" href="#d-foundations-icon-button">Foundations/Icon button</a></h3>
-    <div class="sub">85×85<a class="statechip" href="#d-foundations-icon-button">+1 state</a><a class="wf" href="wireframes/foundations-icon-button.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/foundations-icon-button.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="sub">85×85<a class="statechip" href="#d-foundations-icon-button">+1 state</a><a class="wf" href="wireframes/foundations-icon-button.svg" target="_blank" rel="noopener">wireframe ↗</a></div>
     
   </div>
 </article></div>
@@ -186,7 +192,7 @@
   <a class="shot" href="#d-tokens-colour" aria-label="Zoom Tokens/Colour"><img loading="lazy" src="images/tokens-colour/ideal__default__dark.png" alt="Tokens/Colour" /></a>
   <div class="meta">
     <h3><a class="ctitle" href="#d-tokens-colour">Tokens/Colour</a></h3>
-    <div class="sub">625×1324<a class="wf" href="wireframes/tokens-colour.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/tokens-colour.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="sub">625×1324<a class="wf" href="wireframes/tokens-colour.svg" target="_blank" rel="noopener">wireframe ↗</a></div>
     
   </div>
 </article>
@@ -194,7 +200,7 @@
   <a class="shot" href="#d-tokens-gradients" aria-label="Zoom Tokens/Gradients"><img loading="lazy" src="images/tokens-gradients/ideal__default__dark.png" alt="Tokens/Gradients" /></a>
   <div class="meta">
     <h3><a class="ctitle" href="#d-tokens-gradients">Tokens/Gradients</a></h3>
-    <div class="sub">1050×1115<a class="wf" href="wireframes/tokens-gradients.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/tokens-gradients.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="sub">1050×1115<a class="wf" href="wireframes/tokens-gradients.svg" target="_blank" rel="noopener">wireframe ↗</a></div>
     
   </div>
 </article></div>
@@ -205,7 +211,7 @@
   <a class="shot" href="#d-layout-vertical-grid" aria-label="Zoom Layout/Vertical grid"><img loading="lazy" src="images/layout-vertical-grid/ideal__default__dark.png" alt="Layout/Vertical grid" /></a>
   <div class="meta">
     <h3><a class="ctitle" href="#d-layout-vertical-grid">Layout/Vertical grid</a></h3>
-    <div class="sub">1050×582<a class="statechip" href="#d-layout-vertical-grid">+1 variant</a><a class="wf" href="wireframes/layout-vertical-grid.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/layout-vertical-grid.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="sub">1050×582<a class="statechip" href="#d-layout-vertical-grid">+1 variant</a><a class="wf" href="wireframes/layout-vertical-grid.svg" target="_blank" rel="noopener">wireframe ↗</a></div>
     
   </div>
 </article></div>
@@ -216,7 +222,7 @@
   <a class="shot" href="#d-snack-card" aria-label="Zoom Snack/Card"><img loading="lazy" src="images/snack-card/ideal__default__dark.png" alt="Snack/Card" /></a>
   <div class="meta">
     <h3><a class="ctitle" href="#d-snack-card">Snack/Card</a></h3>
-    <div class="sub">446×698<a class="statechip" href="#d-snack-card">+1 variant</a><a class="wf" href="wireframes/snack-card.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/snack-card.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="sub">446×698<a class="statechip" href="#d-snack-card">+1 variant</a><a class="wf" href="wireframes/snack-card.svg" target="_blank" rel="noopener">wireframe ↗</a></div>
     
   </div>
 </article>
@@ -224,7 +230,7 @@
   <a class="shot" href="#d-snack-item" aria-label="Zoom Snack/Item"><img loading="lazy" src="images/snack-item/ideal__default__dark.png" alt="Snack/Item" /></a>
   <div class="meta">
     <h3><a class="ctitle" href="#d-snack-item">Snack/Item</a></h3>
-    <div class="sub">421×493<a class="wf" href="wireframes/snack-item.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/snack-item.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="sub">421×493<a class="wf" href="wireframes/snack-item.svg" target="_blank" rel="noopener">wireframe ↗</a></div>
     
   </div>
 </article>
@@ -232,7 +238,7 @@
   <a class="shot" href="#d-snack-image" aria-label="Zoom Snack/Image"><img loading="lazy" src="images/snack-image/ideal__default__dark.png" alt="Snack/Image" /></a>
   <div class="meta">
     <h3><a class="ctitle" href="#d-snack-image">Snack/Image</a></h3>
-    <div class="sub">357×357<a class="wf" href="wireframes/snack-image.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/snack-image.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="sub">357×357<a class="wf" href="wireframes/snack-image.svg" target="_blank" rel="noopener">wireframe ↗</a></div>
     
   </div>
 </article>
@@ -240,7 +246,7 @@
   <a class="shot" href="#d-snack-collection" aria-label="Zoom Snack/Collection"><img loading="lazy" src="images/snack-collection/ideal__default__dark.png" alt="Snack/Collection" /></a>
   <div class="meta">
     <h3><a class="ctitle" href="#d-snack-collection">Snack/Collection</a></h3>
-    <div class="sub">1050×887<a class="statechip" href="#d-snack-collection">+1 variant</a><a class="wf" href="wireframes/snack-collection.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/snack-collection.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="sub">1050×887<a class="statechip" href="#d-snack-collection">+1 variant</a><a class="wf" href="wireframes/snack-collection.svg" target="_blank" rel="noopener">wireframe ↗</a></div>
     <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">button</span></div>
   </div>
 </article>
@@ -248,7 +254,7 @@
   <a class="shot" href="#d-catalog-filters" aria-label="Zoom Catalog/Filters"><img loading="lazy" src="images/catalog-filters/ideal__default__dark.png" alt="Catalog/Filters" /></a>
   <div class="meta">
     <h3><a class="ctitle" href="#d-catalog-filters">Catalog/Filters</a></h3>
-    <div class="sub">195×69<a class="statechip" href="#d-catalog-filters">+2 variants</a><a class="wf" href="wireframes/catalog-filters.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/catalog-filters.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="sub">195×69<a class="statechip" href="#d-catalog-filters">+2 variants</a><a class="wf" href="wireframes/catalog-filters.svg" target="_blank" rel="noopener">wireframe ↗</a></div>
     
   </div>
 </article>
@@ -256,7 +262,7 @@
   <a class="shot" href="#d-catalog-filter-bar" aria-label="Zoom Catalog/Filter bar"><img loading="lazy" src="images/catalog-filter-bar/ideal__default__dark.png" alt="Catalog/Filter bar" /></a>
   <div class="meta">
     <h3><a class="ctitle" href="#d-catalog-filter-bar">Catalog/Filter bar</a></h3>
-    <div class="sub">1050×189<a class="statechip" href="#d-catalog-filter-bar">+2 states</a><a class="wf" href="wireframes/catalog-filter-bar.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/catalog-filter-bar.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="sub">1050×189<a class="statechip" href="#d-catalog-filter-bar">+2 states</a><a class="wf" href="wireframes/catalog-filter-bar.svg" target="_blank" rel="noopener">wireframe ↗</a></div>
     <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">button</span></div>
   </div>
 </article></div>
@@ -267,7 +273,7 @@
   <a class="shot" href="#d-cart-quantity" aria-label="Zoom Cart/Quantity"><img loading="lazy" src="images/cart-quantity/ideal__default__dark.png" alt="Cart/Quantity" /></a>
   <div class="meta">
     <h3><a class="ctitle" href="#d-cart-quantity">Cart/Quantity</a></h3>
-    <div class="sub">313×63<a class="statechip" href="#d-cart-quantity">+4 variants</a><a class="wf" href="wireframes/cart-quantity.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/cart-quantity.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="sub">313×63<a class="statechip" href="#d-cart-quantity">+4 variants</a><a class="wf" href="wireframes/cart-quantity.svg" target="_blank" rel="noopener">wireframe ↗</a></div>
     
   </div>
 </article>
@@ -275,7 +281,7 @@
   <a class="shot" href="#d-cart-item" aria-label="Zoom Cart/Item"><img loading="lazy" src="images/cart-item/ideal__default__dark.png" alt="Cart/Item" /></a>
   <div class="meta">
     <h3><a class="ctitle" href="#d-cart-item">Cart/Item</a></h3>
-    <div class="sub">1050×392<a class="statechip" href="#d-cart-item">+2 states</a><a class="wf" href="wireframes/cart-item.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/cart-item.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="sub">1050×392<a class="statechip" href="#d-cart-item">+2 states</a><a class="wf" href="wireframes/cart-item.svg" target="_blank" rel="noopener">wireframe ↗</a></div>
     <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">button</span></div>
   </div>
 </article>
@@ -283,7 +289,7 @@
   <a class="shot" href="#d-cart-summary" aria-label="Zoom Cart/Summary"><img loading="lazy" src="images/cart-summary/ideal__default__dark.png" alt="Cart/Summary" /></a>
   <div class="meta">
     <h3><a class="ctitle" href="#d-cart-summary">Cart/Summary</a></h3>
-    <div class="sub">1050×452<a class="wf" href="wireframes/cart-summary.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/cart-summary.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="sub">1050×452<a class="wf" href="wireframes/cart-summary.svg" target="_blank" rel="noopener">wireframe ↗</a></div>
     
   </div>
 </article>
@@ -291,7 +297,7 @@
   <a class="shot" href="#d-cart-swipe-to-dismiss" aria-label="Zoom Cart/Swipe to dismiss"><img loading="lazy" src="images/cart-swipe-to-dismiss/ideal__default__dark.png" alt="Cart/Swipe to dismiss" /></a>
   <div class="meta">
     <h3><a class="ctitle" href="#d-cart-swipe-to-dismiss">Cart/Swipe to dismiss</a></h3>
-    <div class="sub">472×222<a class="wf" href="wireframes/cart-swipe-to-dismiss.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/cart-swipe-to-dismiss.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="sub">472×222<a class="wf" href="wireframes/cart-swipe-to-dismiss.svg" target="_blank" rel="noopener">wireframe ↗</a></div>
     
   </div>
 </article></div>
@@ -302,7 +308,7 @@
   <a class="shot" href="#d-search-bar" aria-label="Zoom Search/Bar"><img loading="lazy" src="images/search-bar/ideal__default__dark.png" alt="Search/Bar" /></a>
   <div class="meta">
     <h3><a class="ctitle" href="#d-search-bar">Search/Bar</a></h3>
-    <div class="sub">1050×189<a class="statechip" href="#d-search-bar">+4 variants</a><a class="wf" href="wireframes/search-bar.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/search-bar.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="sub">1050×189<a class="statechip" href="#d-search-bar">+4 variants</a><a class="wf" href="wireframes/search-bar.svg" target="_blank" rel="noopener">wireframe ↗</a></div>
     
   </div>
 </article>
@@ -310,7 +316,7 @@
   <a class="shot" href="#d-search-categories" aria-label="Zoom Search/Categories"><img loading="lazy" src="images/search-categories/ideal__default__dark.png" alt="Search/Categories" /></a>
   <div class="meta">
     <h3><a class="ctitle" href="#d-search-categories">Search/Categories</a></h3>
-    <div class="sub">1050×737<a class="statechip" href="#d-search-categories">+2 variants</a><a class="wf" href="wireframes/search-categories.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/search-categories.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="sub">1050×737<a class="statechip" href="#d-search-categories">+2 variants</a><a class="wf" href="wireframes/search-categories.svg" target="_blank" rel="noopener">wireframe ↗</a></div>
     
   </div>
 </article>
@@ -318,7 +324,7 @@
   <a class="shot" href="#d-search-results" aria-label="Zoom Search/Results"><img loading="lazy" src="images/search-results/ideal__default__dark.png" alt="Search/Results" /></a>
   <div class="meta">
     <h3><a class="ctitle" href="#d-search-results">Search/Results</a></h3>
-    <div class="sub">1050×389<a class="statechip" href="#d-search-results">+3 variants</a><a class="wf" href="wireframes/search-results.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/search-results.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="sub">1050×389<a class="statechip" href="#d-search-results">+3 variants</a><a class="wf" href="wireframes/search-results.svg" target="_blank" rel="noopener">wireframe ↗</a></div>
     <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">button</span></div>
   </div>
 </article>
@@ -326,7 +332,7 @@
   <a class="shot" href="#d-search-suggestions" aria-label="Zoom Search/Suggestions"><img loading="lazy" src="images/search-suggestions/ideal__default__dark.png" alt="Search/Suggestions" /></a>
   <div class="meta">
     <h3><a class="ctitle" href="#d-search-suggestions">Search/Suggestions</a></h3>
-    <div class="sub">1050×1366<a class="statechip" href="#d-search-suggestions">+1 variant</a><a class="wf" href="wireframes/search-suggestions.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/search-suggestions.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="sub">1050×1366<a class="statechip" href="#d-search-suggestions">+1 variant</a><a class="wf" href="wireframes/search-suggestions.svg" target="_blank" rel="noopener">wireframe ↗</a></div>
     
   </div>
 </article>
@@ -334,7 +340,7 @@
   <a class="shot" href="#d-search-no-results" aria-label="Zoom Search/No results"><img loading="lazy" src="images/search-no-results/ideal__default__dark.png" alt="Search/No results" /></a>
   <div class="meta">
     <h3><a class="ctitle" href="#d-search-no-results">Search/No results</a></h3>
-    <div class="sub">1050×2100<a class="wf" href="wireframes/search-no-results.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/search-no-results.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="sub">1050×2100<a class="wf" href="wireframes/search-no-results.svg" target="_blank" rel="noopener">wireframe ↗</a></div>
     
   </div>
 </article></div>
@@ -345,7 +351,7 @@
   <a class="shot" href="#d-chrome-bottom-nav" aria-label="Zoom Chrome/Bottom nav"><img loading="lazy" src="images/chrome-bottom-nav/ideal__default__dark.png" alt="Chrome/Bottom nav" /></a>
   <div class="meta">
     <h3><a class="ctitle" href="#d-chrome-bottom-nav">Chrome/Bottom nav</a></h3>
-    <div class="sub">1050×189<a class="statechip" href="#d-chrome-bottom-nav">+3 states</a><a class="wf" href="wireframes/chrome-bottom-nav.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/chrome-bottom-nav.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="sub">1050×189<a class="statechip" href="#d-chrome-bottom-nav">+3 states</a><a class="wf" href="wireframes/chrome-bottom-nav.svg" target="_blank" rel="noopener">wireframe ↗</a></div>
     
   </div>
 </article>
@@ -353,7 +359,7 @@
   <a class="shot" href="#d-chrome-bottom-nav-item" aria-label="Zoom Chrome/Bottom nav item"><img loading="lazy" src="images/chrome-bottom-nav-item/ideal__default__dark.png" alt="Chrome/Bottom nav item" /></a>
   <div class="meta">
     <h3><a class="ctitle" href="#d-chrome-bottom-nav-item">Chrome/Bottom nav item</a></h3>
-    <div class="sub">1050×2100<a class="statechip" href="#d-chrome-bottom-nav-item">+1 state</a><a class="wf" href="wireframes/chrome-bottom-nav-item.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/chrome-bottom-nav-item.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="sub">1050×2100<a class="statechip" href="#d-chrome-bottom-nav-item">+1 state</a><a class="wf" href="wireframes/chrome-bottom-nav-item.svg" target="_blank" rel="noopener">wireframe ↗</a></div>
     
   </div>
 </article>
@@ -361,7 +367,7 @@
   <a class="shot" href="#d-chrome-destination-bar" aria-label="Zoom Chrome/Destination bar"><img loading="lazy" src="images/chrome-destination-bar/ideal__default__dark.png" alt="Chrome/Destination bar" /></a>
   <div class="meta">
     <h3><a class="ctitle" href="#d-chrome-destination-bar">Chrome/Destination bar</a></h3>
-    <div class="sub">1050×171<a class="statechip" href="#d-chrome-destination-bar">+1 variant</a><a class="wf" href="wireframes/chrome-destination-bar.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/chrome-destination-bar.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="sub">1050×171<a class="statechip" href="#d-chrome-destination-bar">+1 variant</a><a class="wf" href="wireframes/chrome-destination-bar.svg" target="_blank" rel="noopener">wireframe ↗</a></div>
     <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">button</span></div>
   </div>
 </article></div>
@@ -372,7 +378,7 @@
   <a class="shot" href="#d-feedback-snackbar" aria-label="Zoom Feedback/Snackbar"><img loading="lazy" src="images/feedback-snackbar/ideal__default__dark.png" alt="Feedback/Snackbar" /></a>
   <div class="meta">
     <h3><a class="ctitle" href="#d-feedback-snackbar">Feedback/Snackbar</a></h3>
-    <div class="sub">1050×232<a class="statechip" href="#d-feedback-snackbar">+1 state</a><a class="wf" href="wireframes/feedback-snackbar.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/feedback-snackbar.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="sub">1050×232<a class="statechip" href="#d-feedback-snackbar">+1 state</a><a class="wf" href="wireframes/feedback-snackbar.svg" target="_blank" rel="noopener">wireframe ↗</a></div>
     
   </div>
 </article></div>
@@ -383,7 +389,7 @@
   <a class="shot" href="#d-screens-app-shell" aria-label="Zoom Screens/App shell"><img loading="lazy" src="images/screens-app-shell/ideal__default__dark.png" alt="Screens/App shell" /></a>
   <div class="meta">
     <h3><a class="ctitle" href="#d-screens-app-shell">Screens/App shell</a></h3>
-    <div class="sub">1050×2100<a class="wf" href="wireframes/screens-app-shell.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/screens-app-shell.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="sub">1050×2100<a class="wf" href="wireframes/screens-app-shell.svg" target="_blank" rel="noopener">wireframe ↗</a></div>
     <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span></div>
   </div>
 </article>
@@ -391,7 +397,7 @@
   <a class="shot" href="#d-screens-feed" aria-label="Zoom Screens/Feed"><img loading="lazy" src="images/screens-feed/ideal__default__dark.png" alt="Screens/Feed" /></a>
   <div class="meta">
     <h3><a class="ctitle" href="#d-screens-feed">Screens/Feed</a></h3>
-    <div class="sub">1050×2100<a class="statechip" href="#d-screens-feed">+1 variant</a><a class="wf" href="wireframes/screens-feed.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/screens-feed.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="sub">1050×2100<a class="statechip" href="#d-screens-feed">+1 variant</a><a class="wf" href="wireframes/screens-feed.svg" target="_blank" rel="noopener">wireframe ↗</a></div>
     <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span></div>
   </div>
 </article>
@@ -399,7 +405,7 @@
   <a class="shot" href="#d-screens-cart" aria-label="Zoom Screens/Cart"><img loading="lazy" src="images/screens-cart/ideal__default__dark.png" alt="Screens/Cart" /></a>
   <div class="meta">
     <h3><a class="ctitle" href="#d-screens-cart">Screens/Cart</a></h3>
-    <div class="sub">1050×2100<a class="statechip" href="#d-screens-cart">+2 variants</a><a class="wf" href="wireframes/screens-cart.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/screens-cart.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="sub">1050×2100<a class="statechip" href="#d-screens-cart">+2 variants</a><a class="wf" href="wireframes/screens-cart.svg" target="_blank" rel="noopener">wireframe ↗</a></div>
     <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span></div>
   </div>
 </article>
@@ -407,7 +413,7 @@
   <a class="shot" href="#d-screens-search" aria-label="Zoom Screens/Search"><img loading="lazy" src="images/screens-search/ideal__default__dark.png" alt="Screens/Search" /></a>
   <div class="meta">
     <h3><a class="ctitle" href="#d-screens-search">Screens/Search</a></h3>
-    <div class="sub">1050×2100<a class="wf" href="wireframes/screens-search.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/screens-search.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="sub">1050×2100<a class="wf" href="wireframes/screens-search.svg" target="_blank" rel="noopener">wireframe ↗</a></div>
     
   </div>
 </article>
@@ -415,7 +421,7 @@
   <a class="shot" href="#d-screens-profile" aria-label="Zoom Screens/Profile"><img loading="lazy" src="images/screens-profile/ideal__default__dark.png" alt="Screens/Profile" /></a>
   <div class="meta">
     <h3><a class="ctitle" href="#d-screens-profile">Screens/Profile</a></h3>
-    <div class="sub">1050×2100<a class="statechip" href="#d-screens-profile">+1 variant</a><a class="wf" href="wireframes/screens-profile.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/screens-profile.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="sub">1050×2100<a class="statechip" href="#d-screens-profile">+1 variant</a><a class="wf" href="wireframes/screens-profile.svg" target="_blank" rel="noopener">wireframe ↗</a></div>
     
   </div>
 </article>
@@ -423,7 +429,7 @@
   <a class="shot" href="#d-snack-detail" aria-label="Zoom Snack/Detail"><img loading="lazy" src="images/snack-detail/ideal__default__dark.png" alt="Snack/Detail" /></a>
   <div class="meta">
     <h3><a class="ctitle" href="#d-snack-detail">Snack/Detail</a></h3>
-    <div class="sub">1050×2100<a class="statechip" href="#d-snack-detail">+1 variant</a><a class="wf" href="wireframes/snack-detail.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/snack-detail.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="sub">1050×2100<a class="statechip" href="#d-snack-detail">+1 variant</a><a class="wf" href="wireframes/snack-detail.svg" target="_blank" rel="noopener">wireframe ↗</a></div>
     <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span></div>
   </div>
 </article>
@@ -431,7 +437,7 @@
   <a class="shot" href="#d-catalog-filter-screen" aria-label="Zoom Catalog/Filter screen"><img loading="lazy" src="images/catalog-filter-screen/ideal__default__dark.png" alt="Catalog/Filter screen" /></a>
   <div class="meta">
     <h3><a class="ctitle" href="#d-catalog-filter-screen">Catalog/Filter screen</a></h3>
-    <div class="sub">1050×2100<a class="wf" href="wireframes/catalog-filter-screen.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/catalog-filter-screen.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="sub">1050×2100<a class="wf" href="wireframes/catalog-filter-screen.svg" target="_blank" rel="noopener">wireframe ↗</a></div>
     <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">button</span><span class="chip chip--info">button</span></div>
   </div>
 </article></div>
@@ -755,16 +761,24 @@
     if (!v) return null;
     return { tx: t ? +t[1] : 0, ty: t ? +t[2] : 0, vw: +v[1], vh: +v[2] };
   }
-  function frame(shot, box) {
+  function frame(shot, box, gutterEdges) {
     var img = shot.querySelector("img");
     if (!img) return;
     function apply() {
       var rw = img.naturalWidth || img.width, rh = img.naturalHeight || img.height;
       if (!(rw > 0 && rh > 0)) return;
-      if (box.vw >= rw * 0.9 && box.vh >= rh * 0.9) return; // already close-cropped
+      if (box.vw >= rw * 0.9 && box.vh >= rh * 0.9) {
+        // Already close-cropped as far as the vector can tell — but a declared gutter is margin the
+        // capture added, which no bbox of the drawn pixels can distinguish from the component.
+        if (gutterEdges) frameGutter(shot, gutterEdges);
+        return;
+      }
       var cap = 240, scale = Math.min(1, cap / Math.max(box.vw, box.vh));
       var dw = Math.max(1, Math.round(box.vw * scale));
       shot.classList.add("shot--framed");
+      // A vector-framed shot on a GUTTERED render must not hide its overflow either: the box the
+      // vector describes is the component, and the pixels beyond it are that component's shadow.
+      if (gutterEdges) shot.classList.add("shot--bleed");
       // Size the window by aspect-ratio at its natural (capped) width, with max-width:100% so it
       // shrinks to a narrow grid card instead of overflowing it; frame the render in PERCENTAGES of
       // the box so the whole thing scales as one. (A fixed-px window overflowed the card and clipped
@@ -781,19 +795,90 @@
     if (img.complete) apply();
     else img.addEventListener("load", apply);
   }
+  // A declared capture gutter needs no vector and no guard: the renderer recorded exactly how much
+  // transparent margin it added, so the box is a fact rather than an inference. Native pixels — the
+  // stylesheet caps how large a card draws, and scaling here would hand a guttered card a different
+  // display size from the plain one beside it, which is the difference being removed.
+  function frameGutter(shot, edges) {
+    var img = shot.querySelector("img");
+    if (!img) return;
+    function apply() {
+      var rw = img.naturalWidth || img.width, rh = img.naturalHeight || img.height;
+      if (!(rw > 0 && rh > 0)) return;
+      var boxW = rw - edges[0] - edges[2], boxH = rh - edges[1] - edges[3];
+      if (!(boxW > 0 && boxH > 0)) return;
+      // Capped on HEIGHT, which is the rule the stylesheet applies to a plain card image
+      // (max-height:240px, width follows) — a framed window carries an aspect-ratio, so the cap
+      // cannot come from CSS without squashing it. Capping the largest edge instead would shrink a
+      // wide-but-short component no plain sibling shrinks.
+      var scale = Math.min(1, 240 / boxH);
+      var bw = Math.max(1, Math.round(boxW * scale));
+      var bh = Math.max(1, Math.round(boxH * scale));
+      var iw = Math.round(rw * scale);
+      var offX = Math.round(edges[0] * scale), offY = Math.round(edges[1] * scale);
+      var pct = function (n, d) { return +(n / d * 100).toFixed(4); };
+      // "shot--bleed" keeps the overflow visible: what falls outside this box is the component's
+      // own shadow, which the gutter was captured to preserve. Hiding it would crop the shadow a
+      // second time, which is the bug the gutter fixed.
+      shot.classList.add("shot--framed");
+      shot.classList.add("shot--bleed");
+      shot.style.width = bw + "px";
+      shot.style.aspectRatio = bw + " / " + bh;
+      img.style.width = pct(iw, bw) + "%";
+      img.style.left = pct(-offX, bw) + "%";
+      img.style.top = pct(-offY, bh) + "%";
+    }
+    if (img.complete) apply();
+    else img.addEventListener("load", apply);
+  }
   document.querySelectorAll(".card").forEach(function (card) {
-    var link = card.querySelector('a.wf[href^="figma/"]');
-    if (!link) return;
     var hero = card.querySelector("a.shot");
     if (!hero) return;
-    fetch(link.getAttribute("href"))
-      .then(function (r) { return r.ok ? r.text() : null; })
-      .then(function (txt) {
-        if (!txt) return;
-        var box = parseBox(txt);
-        if (box) frame(hero, box);
-      })
-      .catch(function () {});
+    var declared = hero.getAttribute("data-gutter");
+    var edges = declared
+      ? declared.split(",").map(function (v) { return Math.max(0, parseInt(v, 10) || 0); })
+      : null;
+    var link = card.querySelector('a.figma-svg-link');
+    if (!link) {
+      if (edges) frameGutter(hero, edges);
+      return;
+    }
+    // Fetch the vector only once the card is actually near the viewport.
+    //
+    // A deferred catalog publishes no static vector: the href is an absolute live-render URL and
+    // the daemon generates the SVG per request, from a small pool of live seats. Fetching every
+    // card's on load would start a render for the whole catalog the instant the gallery opens —
+    // thousands, on the large catalogs deferral exists for — spending the seats on bounding boxes
+    // and answering the visitors who actually asked for a vector with 503s.
+    //
+    // Deferring the same fetch to visibility fixes that without giving up the crop: the vector is
+    // the only source of the content box for a card with no declared gutter (an ordinary 454x454
+    // Wear canvas, say), so skipping it outright would leave those heroes uncropped in the full
+    // device canvas. Only what someone looks at is rendered, at the pace they scroll.
+    var pending = function () {
+      fetch(link.getAttribute("href"))
+        .then(function (r) { return r.ok ? r.text() : null; })
+        .then(function (txt) {
+          // The vector wins where it applies — it answers the tighter question of where the
+          // component sits on a canvas it was drawn on — and the gutter answers when it does not.
+          var box = txt ? parseBox(txt) : null;
+          if (box) frame(hero, box, edges);
+          else if (edges) frameGutter(hero, edges);
+        })
+        .catch(function () { if (edges) frameGutter(hero, edges); });
+    };
+    if (typeof IntersectionObserver !== "function") {
+      pending();
+      return;
+    }
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        observer.unobserve(entry.target);
+        pending();
+      });
+    }, { rootMargin: "400px" });
+    observer.observe(card);
   });
 })();
 </script>
