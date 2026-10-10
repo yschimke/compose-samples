@@ -15,6 +15,13 @@
           "size": "largeRound",
           "livePreview": "https://preview.coo.ee/jetcaster-wear/p/podcast-screen__ideal__default__largeround",
           "previewId": "com.example.jetcaster.ui.podcasts.PodcastsScreenKt.PodcastScreenLoadedPreview_Large_Round",
+          "previewParams": {
+            "showBackground": true,
+            "backgroundColor": 4278190080,
+            "device": "id:wearos_large_round",
+            "widthDp": 227,
+            "heightDp": 227
+          },
           "density": 2
         },
         {
@@ -29,6 +36,13 @@
           },
           "livePreview": "https://preview.coo.ee/jetcaster-wear/p/podcast-screen__ideal__default__smallround__device-smallround",
           "previewId": "com.example.jetcaster.catalog.JetcasterWearCatalogPreviewsKt.PodcastScreenSmallCatalogPreview_Small_Round",
+          "previewParams": {
+            "showBackground": true,
+            "backgroundColor": 4278190080,
+            "device": "id:wearos_small_round",
+            "widthDp": 192,
+            "heightDp": 192
+          },
           "density": 2
         },
         {
@@ -44,6 +58,11 @@
           },
           "livePreview": "https://preview.coo.ee/jetcaster-wear/p/podcast-screen__ideal__default__smallround__device-smallround__fontscale-1.24",
           "previewId": "com.example.jetcaster.catalog.JetcasterWearCatalogPreviewsKt.PodcastScreenLargestFontCatalogPreview_Podcast_screen___largest_font",
+          "previewParams": {
+            "device": "id:wearos_small_round",
+            "widthDp": 192,
+            "heightDp": 192
+          },
           "density": 2
         },
         {
@@ -55,6 +74,13 @@
           "size": "largeRound",
           "livePreview": "https://preview.coo.ee/jetcaster-wear/p/podcast-screen__ideal__loading__largeround",
           "previewId": "com.example.jetcaster.catalog.JetcasterWearCatalogPreviewsKt.PodcastScreenLoadingCatalogPreview_Large_Round",
+          "previewParams": {
+            "showBackground": true,
+            "backgroundColor": 4278190080,
+            "device": "id:wearos_large_round",
+            "widthDp": 227,
+            "heightDp": 227
+          },
           "density": 2
         },
         {
@@ -66,6 +92,13 @@
           "size": "largeRound",
           "livePreview": "https://preview.coo.ee/jetcaster-wear/p/podcast-screen__ideal__empty__largeround",
           "previewId": "com.example.jetcaster.catalog.JetcasterWearCatalogPreviewsKt.PodcastScreenEmptyCatalogPreview_Large_Round",
+          "previewParams": {
+            "showBackground": true,
+            "backgroundColor": 4278190080,
+            "device": "id:wearos_large_round",
+            "widthDp": 227,
+            "heightDp": 227
+          },
           "density": 2
         }
       ],
@@ -140,7 +173,37 @@
       "wireframe": "wireframes/podcast-screen.svg",
       "sourceFile": "src/main/java/com/example/jetcaster/ui/podcasts/PodcastsScreen.kt",
       "sourceModule": ":wear",
-      "bodyLine": 229
+      "bodyLine": 229,
+      "sourceDirectory": "Jetcaster/wear",
+      "sourceFunction": "PodcastScreenLoadedPreview",
+      "parameters": [
+        {
+          "name": "podcastList",
+          "type": "List<PodcastInfo>"
+        },
+        {
+          "name": "onPodcastsItemClick",
+          "type": "(PodcastInfo) -> Unit"
+        },
+        {
+          "name": "contentPadding",
+          "type": "PaddingValues"
+        },
+        {
+          "name": "columnState",
+          "type": "TransformingLazyColumnState"
+        },
+        {
+          "name": "placeholderState",
+          "type": "PlaceholderState"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        }
+      ],
+      "parallel": "Podcast/Card"
     },
     {
       "componentId": "Podcast/Details",
@@ -154,6 +217,13 @@
           "size": "largeRound",
           "livePreview": "https://preview.coo.ee/jetcaster-wear/p/podcast-details__ideal__default__largeround",
           "previewId": "com.example.jetcaster.ui.podcast.PodcastDetailsScreenKt.PodcastDetailsScreenLoadedPreview_Large_Round",
+          "previewParams": {
+            "showBackground": true,
+            "backgroundColor": 4278190080,
+            "device": "id:wearos_large_round",
+            "widthDp": 227,
+            "heightDp": 227
+          },
           "density": 2
         },
         {
@@ -168,6 +238,13 @@
           },
           "livePreview": "https://preview.coo.ee/jetcaster-wear/p/podcast-details__ideal__default__smallround__device-smallround",
           "previewId": "com.example.jetcaster.catalog.JetcasterWearCatalogPreviewsKt.PodcastDetailsSmallCatalogPreview_Small_Round",
+          "previewParams": {
+            "showBackground": true,
+            "backgroundColor": 4278190080,
+            "device": "id:wearos_small_round",
+            "widthDp": 192,
+            "heightDp": 192
+          },
           "density": 2
         },
         {
@@ -183,6 +260,11 @@
           },
           "livePreview": "https://preview.coo.ee/jetcaster-wear/p/podcast-details__ideal__default__smallround__device-smallround__fontscale-1.24",
           "previewId": "com.example.jetcaster.catalog.JetcasterWearCatalogPreviewsKt.PodcastDetailsLargestFontCatalogPreview_Podcast_details___largest_font",
+          "previewParams": {
+            "device": "id:wearos_small_round",
+            "widthDp": 192,
+            "heightDp": 192
+          },
           "density": 2
         },
         {
@@ -194,6 +276,13 @@
           "size": "largeRound",
           "livePreview": "https://preview.coo.ee/jetcaster-wear/p/podcast-details__ideal__loading__largeround",
           "previewId": "com.example.jetcaster.catalog.JetcasterWearCatalogPreviewsKt.PodcastDetailsLoadingCatalogPreview_Large_Round",
+          "previewParams": {
+            "showBackground": true,
+            "backgroundColor": 4278190080,
+            "device": "id:wearos_large_round",
+            "widthDp": 227,
+            "heightDp": 227
+          },
           "density": 2
         },
         {
@@ -205,6 +294,13 @@
           "size": "largeRound",
           "livePreview": "https://preview.coo.ee/jetcaster-wear/p/podcast-details__ideal__empty__largeround",
           "previewId": "com.example.jetcaster.catalog.JetcasterWearCatalogPreviewsKt.PodcastDetailsEmptyCatalogPreview_Large_Round",
+          "previewParams": {
+            "showBackground": true,
+            "backgroundColor": 4278190080,
+            "device": "id:wearos_large_round",
+            "widthDp": 227,
+            "heightDp": 227
+          },
           "density": 2
         }
       ],
@@ -315,7 +411,16 @@
       "wireframe": "wireframes/podcast-details.svg",
       "sourceFile": "src/main/java/com/example/jetcaster/ui/podcast/PodcastDetailsScreen.kt",
       "sourceModule": ":wear",
-      "bodyLine": 227
+      "bodyLine": 227,
+      "sourceDirectory": "Jetcaster/wear",
+      "sourceFunction": "PodcastDetailsScreenLoadedPreview",
+      "parameters": [
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "composableSlot": true
+        }
+      ]
     },
     {
       "componentId": "Library/Screen",
@@ -329,6 +434,13 @@
           "size": "largeRound",
           "livePreview": "https://preview.coo.ee/jetcaster-wear/p/library-screen__ideal__default__largeround",
           "previewId": "com.example.jetcaster.ui.library.LibraryScreenKt.LibraryScreenPreview_Large_Round",
+          "previewParams": {
+            "showBackground": true,
+            "backgroundColor": 4278190080,
+            "device": "id:wearos_large_round",
+            "widthDp": 227,
+            "heightDp": 227
+          },
           "density": 2
         },
         {
@@ -343,6 +455,13 @@
           },
           "livePreview": "https://preview.coo.ee/jetcaster-wear/p/library-screen__ideal__default__smallround__device-smallround",
           "previewId": "com.example.jetcaster.catalog.JetcasterWearCatalogPreviewsKt.LibraryScreenSmallCatalogPreview_Small_Round",
+          "previewParams": {
+            "showBackground": true,
+            "backgroundColor": 4278190080,
+            "device": "id:wearos_small_round",
+            "widthDp": 192,
+            "heightDp": 192
+          },
           "density": 2
         },
         {
@@ -354,6 +473,13 @@
           "size": "largeRound",
           "livePreview": "https://preview.coo.ee/jetcaster-wear/p/library-screen__ideal__loading__largeround",
           "previewId": "com.example.jetcaster.catalog.JetcasterWearCatalogPreviewsKt.LibraryScreenLoadingCatalogPreview_Large_Round",
+          "previewParams": {
+            "showBackground": true,
+            "backgroundColor": 4278190080,
+            "device": "id:wearos_large_round",
+            "widthDp": 227,
+            "heightDp": 227
+          },
           "density": 2
         },
         {
@@ -365,6 +491,13 @@
           "size": "largeRound",
           "livePreview": "https://preview.coo.ee/jetcaster-wear/p/library-screen__ideal__no-subscriptions__largeround",
           "previewId": "com.example.jetcaster.catalog.JetcasterWearCatalogPreviewsKt.LibraryScreenNoSubscriptionsCatalogPreview_Large_Round",
+          "previewParams": {
+            "showBackground": true,
+            "backgroundColor": 4278190080,
+            "device": "id:wearos_large_round",
+            "widthDp": 227,
+            "heightDp": 227
+          },
           "density": 2
         }
       ],
@@ -496,7 +629,33 @@
       "wireframe": "wireframes/library-screen.svg",
       "sourceFile": "src/main/java/com/example/jetcaster/ui/library/LibraryScreen.kt",
       "sourceModule": ":wear",
-      "bodyLine": 362
+      "bodyLine": 362,
+      "sourceDirectory": "Jetcaster/wear",
+      "sourceFunction": "LibraryScreenPreview",
+      "parameters": [
+        {
+          "name": "onLatestEpisodeClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "onYourPodcastClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "onUpNextClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "libraryScreenViewModel",
+          "type": "LibraryViewModel",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "Episode/Latest",
@@ -510,6 +669,13 @@
           "size": "largeRound",
           "livePreview": "https://preview.coo.ee/jetcaster-wear/p/episode-latest__ideal__default__largeround",
           "previewId": "com.example.jetcaster.ui.latest_episodes.LatestEpisodesScreenKt.LatestEpisodeScreenLoadedPreview_Large_Round",
+          "previewParams": {
+            "showBackground": true,
+            "backgroundColor": 4278190080,
+            "device": "id:wearos_large_round",
+            "widthDp": 227,
+            "heightDp": 227
+          },
           "density": 2
         },
         {
@@ -524,6 +690,13 @@
           },
           "livePreview": "https://preview.coo.ee/jetcaster-wear/p/episode-latest__ideal__default__smallround__device-smallround",
           "previewId": "com.example.jetcaster.catalog.JetcasterWearCatalogPreviewsKt.LatestEpisodeSmallCatalogPreview_Small_Round",
+          "previewParams": {
+            "showBackground": true,
+            "backgroundColor": 4278190080,
+            "device": "id:wearos_small_round",
+            "widthDp": 192,
+            "heightDp": 192
+          },
           "density": 2
         },
         {
@@ -535,6 +708,13 @@
           "size": "largeRound",
           "livePreview": "https://preview.coo.ee/jetcaster-wear/p/episode-latest__ideal__loading__largeround",
           "previewId": "com.example.jetcaster.catalog.JetcasterWearCatalogPreviewsKt.LatestEpisodeLoadingCatalogPreview_Large_Round",
+          "previewParams": {
+            "showBackground": true,
+            "backgroundColor": 4278190080,
+            "device": "id:wearos_large_round",
+            "widthDp": 227,
+            "heightDp": 227
+          },
           "density": 2
         },
         {
@@ -546,6 +726,13 @@
           "size": "largeRound",
           "livePreview": "https://preview.coo.ee/jetcaster-wear/p/episode-latest__ideal__empty__largeround",
           "previewId": "com.example.jetcaster.catalog.JetcasterWearCatalogPreviewsKt.LatestEpisodeEmptyCatalogPreview_Large_Round",
+          "previewParams": {
+            "showBackground": true,
+            "backgroundColor": 4278190080,
+            "device": "id:wearos_large_round",
+            "widthDp": 227,
+            "heightDp": 227
+          },
           "density": 2
         }
       ],
@@ -656,7 +843,16 @@
       "wireframe": "wireframes/episode-latest.svg",
       "sourceFile": "src/main/java/com/example/jetcaster/ui/latest_episodes/LatestEpisodesScreen.kt",
       "sourceModule": ":wear",
-      "bodyLine": 236
+      "bodyLine": 236,
+      "sourceDirectory": "Jetcaster/wear",
+      "sourceFunction": "LatestEpisodeScreenLoadedPreview",
+      "parameters": [
+        {
+          "name": "content",
+          "type": "(TransformingLazyColumnState, PaddingValues) -> Unit",
+          "composableSlot": true
+        }
+      ]
     },
     {
       "componentId": "Episode/Screen",
@@ -670,6 +866,13 @@
           "size": "largeRound",
           "livePreview": "https://preview.coo.ee/jetcaster-wear/p/episode-screen__ideal__default__largeround",
           "previewId": "com.example.jetcaster.ui.episode.EpisodeScreenKt.EpisodeScreenLoadedPreview_Large_Round",
+          "previewParams": {
+            "showBackground": true,
+            "backgroundColor": 4278190080,
+            "device": "id:wearos_large_round",
+            "widthDp": 227,
+            "heightDp": 227
+          },
           "density": 2
         },
         {
@@ -684,6 +887,13 @@
           },
           "livePreview": "https://preview.coo.ee/jetcaster-wear/p/episode-screen__ideal__default__smallround__device-smallround",
           "previewId": "com.example.jetcaster.catalog.JetcasterWearCatalogPreviewsKt.EpisodeScreenSmallCatalogPreview_Small_Round",
+          "previewParams": {
+            "showBackground": true,
+            "backgroundColor": 4278190080,
+            "device": "id:wearos_small_round",
+            "widthDp": 192,
+            "heightDp": 192
+          },
           "density": 2
         },
         {
@@ -699,6 +909,11 @@
           },
           "livePreview": "https://preview.coo.ee/jetcaster-wear/p/episode-screen__ideal__default__smallround__device-smallround__fontscale-1.24",
           "previewId": "com.example.jetcaster.catalog.JetcasterWearCatalogPreviewsKt.EpisodeScreenLargestFontCatalogPreview_Episode_screen___largest_font",
+          "previewParams": {
+            "device": "id:wearos_small_round",
+            "widthDp": 192,
+            "heightDp": 192
+          },
           "density": 2
         },
         {
@@ -710,6 +925,13 @@
           "size": "largeRound",
           "livePreview": "https://preview.coo.ee/jetcaster-wear/p/episode-screen__ideal__loading__largeround",
           "previewId": "com.example.jetcaster.ui.episode.EpisodeScreenKt.EpisodeScreenLoadingPreview_Large_Round",
+          "previewParams": {
+            "showBackground": true,
+            "backgroundColor": 4278190080,
+            "device": "id:wearos_large_round",
+            "widthDp": 227,
+            "heightDp": 227
+          },
           "density": 2
         },
         {
@@ -724,6 +946,13 @@
           },
           "livePreview": "https://preview.coo.ee/jetcaster-wear/p/episode-screen__ideal__loading__smallround__device-smallround",
           "previewId": "com.example.jetcaster.catalog.JetcasterWearCatalogPreviewsKt.EpisodeLoadingSmallCatalogPreview_Small_Round",
+          "previewParams": {
+            "showBackground": true,
+            "backgroundColor": 4278190080,
+            "device": "id:wearos_small_round",
+            "widthDp": 192,
+            "heightDp": 192
+          },
           "density": 2
         },
         {
@@ -735,6 +964,13 @@
           "size": "largeRound",
           "livePreview": "https://preview.coo.ee/jetcaster-wear/p/episode-screen__ideal__empty__largeround",
           "previewId": "com.example.jetcaster.catalog.JetcasterWearCatalogPreviewsKt.EpisodeScreenEmptyCatalogPreview_Large_Round",
+          "previewParams": {
+            "showBackground": true,
+            "backgroundColor": 4278190080,
+            "device": "id:wearos_large_round",
+            "widthDp": 227,
+            "heightDp": 227
+          },
           "density": 2
         }
       ],
@@ -866,7 +1102,17 @@
       "wireframe": "wireframes/episode-screen.svg",
       "sourceFile": "src/main/java/com/example/jetcaster/ui/episode/EpisodeScreen.kt",
       "sourceModule": ":wear",
-      "bodyLine": 357
+      "bodyLine": 357,
+      "sourceDirectory": "Jetcaster/wear",
+      "sourceFunction": "EpisodeScreenLoadedPreview",
+      "parameters": [
+        {
+          "name": "content",
+          "type": "(TransformingLazyColumnState, PaddingValues) -> Unit",
+          "composableSlot": true
+        }
+      ],
+      "parallel": "Episode/List item"
     },
     {
       "componentId": "Queue/Screen",
@@ -880,6 +1126,13 @@
           "size": "largeRound",
           "livePreview": "https://preview.coo.ee/jetcaster-wear/p/queue-screen__ideal__default__largeround",
           "previewId": "com.example.jetcaster.ui.queue.QueueScreenKt.QueueScreenLoadedPreview_Large_Round",
+          "previewParams": {
+            "showBackground": true,
+            "backgroundColor": 4278190080,
+            "device": "id:wearos_large_round",
+            "widthDp": 227,
+            "heightDp": 227
+          },
           "density": 2
         },
         {
@@ -894,6 +1147,13 @@
           },
           "livePreview": "https://preview.coo.ee/jetcaster-wear/p/queue-screen__ideal__default__smallround__device-smallround",
           "previewId": "com.example.jetcaster.catalog.JetcasterWearCatalogPreviewsKt.QueueScreenSmallCatalogPreview_Small_Round",
+          "previewParams": {
+            "showBackground": true,
+            "backgroundColor": 4278190080,
+            "device": "id:wearos_small_round",
+            "widthDp": 192,
+            "heightDp": 192
+          },
           "density": 2
         },
         {
@@ -905,6 +1165,13 @@
           "size": "largeRound",
           "livePreview": "https://preview.coo.ee/jetcaster-wear/p/queue-screen__ideal__loading__largeround",
           "previewId": "com.example.jetcaster.catalog.JetcasterWearCatalogPreviewsKt.QueueScreenLoadingCatalogPreview_Large_Round",
+          "previewParams": {
+            "showBackground": true,
+            "backgroundColor": 4278190080,
+            "device": "id:wearos_large_round",
+            "widthDp": 227,
+            "heightDp": 227
+          },
           "density": 2
         },
         {
@@ -916,6 +1183,13 @@
           "size": "largeRound",
           "livePreview": "https://preview.coo.ee/jetcaster-wear/p/queue-screen__ideal__empty__largeround",
           "previewId": "com.example.jetcaster.catalog.JetcasterWearCatalogPreviewsKt.QueueScreenEmptyCatalogPreview_Large_Round",
+          "previewParams": {
+            "showBackground": true,
+            "backgroundColor": 4278190080,
+            "device": "id:wearos_large_round",
+            "widthDp": 227,
+            "heightDp": 227
+          },
           "density": 2
         }
       ],
@@ -1064,7 +1338,16 @@
       "wireframe": "wireframes/queue-screen.svg",
       "sourceFile": "src/main/java/com/example/jetcaster/ui/queue/QueueScreen.kt",
       "sourceModule": ":wear",
-      "bodyLine": 264
+      "bodyLine": 264,
+      "sourceDirectory": "Jetcaster/wear",
+      "sourceFunction": "QueueScreenLoadedPreview",
+      "parameters": [
+        {
+          "name": "content",
+          "type": "(TransformingLazyColumnState, PaddingValues) -> Unit",
+          "composableSlot": true
+        }
+      ]
     },
     {
       "componentId": "Podcast/Content",
@@ -1078,6 +1361,13 @@
           "size": "largeRound",
           "livePreview": "https://preview.coo.ee/jetcaster-wear/p/podcast-content__ideal__default__largeround",
           "previewId": "com.example.jetcaster.ui.library.LibraryScreenKt.PodcastContentPreview_Large_Round",
+          "previewParams": {
+            "showBackground": true,
+            "backgroundColor": 4278190080,
+            "device": "id:wearos_large_round",
+            "widthDp": 227,
+            "heightDp": 227
+          },
           "density": 2
         },
         {
@@ -1092,6 +1382,13 @@
           },
           "livePreview": "https://preview.coo.ee/jetcaster-wear/p/podcast-content__ideal__default__smallround__device-smallround",
           "previewId": "com.example.jetcaster.catalog.JetcasterWearCatalogPreviewsKt.PodcastContentSmallCatalogPreview_Small_Round",
+          "previewParams": {
+            "showBackground": true,
+            "backgroundColor": 4278190080,
+            "device": "id:wearos_small_round",
+            "widthDp": 192,
+            "heightDp": 192
+          },
           "density": 2
         }
       ],
@@ -1152,7 +1449,16 @@
       "wireframe": "wireframes/podcast-content.svg",
       "sourceFile": "src/main/java/com/example/jetcaster/ui/library/LibraryScreen.kt",
       "sourceModule": ":wear",
-      "bodyLine": 384
+      "bodyLine": 384,
+      "sourceDirectory": "Jetcaster/wear",
+      "sourceFunction": "PodcastContentPreview",
+      "parameters": [
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "composableSlot": true
+        }
+      ]
     },
     {
       "componentId": "Player/Controls",
@@ -1166,6 +1472,13 @@
           "size": "largeRound",
           "livePreview": "https://preview.coo.ee/jetcaster-wear/p/player-controls__ideal__default__largeround",
           "previewId": "com.example.jetcaster.ui.components.MediaContentKt.MediaContentPreview_Large_Round",
+          "previewParams": {
+            "showBackground": true,
+            "backgroundColor": 4278190080,
+            "device": "id:wearos_large_round",
+            "widthDp": 227,
+            "heightDp": 227
+          },
           "density": 2
         },
         {
@@ -1180,6 +1493,13 @@
           },
           "livePreview": "https://preview.coo.ee/jetcaster-wear/p/player-controls__ideal__default__smallround__device-smallround",
           "previewId": "com.example.jetcaster.catalog.JetcasterWearCatalogPreviewsKt.PlayerControlsSmallCatalogPreview_Small_Round",
+          "previewParams": {
+            "showBackground": true,
+            "backgroundColor": 4278190080,
+            "device": "id:wearos_small_round",
+            "widthDp": 192,
+            "heightDp": 192
+          },
           "density": 2
         },
         {
@@ -1195,6 +1515,11 @@
           },
           "livePreview": "https://preview.coo.ee/jetcaster-wear/p/player-controls__ideal__default__smallround__device-smallround__fontscale-1.24",
           "previewId": "com.example.jetcaster.catalog.JetcasterWearCatalogPreviewsKt.PlayerControlsLargestFontCatalogPreview_Player_controls___largest_font",
+          "previewParams": {
+            "device": "id:wearos_small_round",
+            "widthDp": 192,
+            "heightDp": 192
+          },
           "density": 2
         }
       ],
@@ -1255,44 +1580,32 @@
       "wireframe": "wireframes/player-controls.svg",
       "sourceFile": "src/main/java/com/example/jetcaster/ui/components/MediaContent.kt",
       "sourceModule": ":wear",
-      "bodyLine": 109
+      "bodyLine": 109,
+      "sourceDirectory": "Jetcaster/wear",
+      "sourceFunction": "MediaContentPreview",
+      "parameters": [
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "composableSlot": true
+        }
+      ],
+      "parallel": "Player/Transport"
     }
   ],
   "library": [
     "androidx.wear.compose:compose-material3",
     "androidx.wear.compose:compose-foundation"
   ],
-  "renderer": "compose-preview 1.15.0",
-  "generatedAt": "2026-08-18T22:49:17.074Z",
+  "renderer": "compose-preview 2.39.2",
+  "generatedAt": "2026-10-10T09:41:25.677Z",
   "display": {
     "surface": "dark",
-    "hero": "Podcast/Screen"
+    "hero": "Episode/Latest"
   },
-  "themes": [
-    {
-      "id": "com.example.jetcaster.catalog.JetcasterWearDarkThemeCatalog",
-      "tokensFile": "themes/com.example.jetcaster.catalog.jetcasterweardarkthemecatalog.dtcg.json",
-      "name": "Dark",
-      "group": "Jetcaster Wear",
-      "dark": true
-    }
-  ],
-  "failures": [
-    {
-      "id": "render-failed--mainactivity--activity-mainactivity",
-      "componentId": "MainActivity",
-      "preview": "activity__MainActivity",
-      "phase": "render",
-      "errorClass": "java.lang.IllegalStateException",
-      "message": "Hilt Activity must be attached to an @HiltAndroidApp Application. Did you forget to specify your Application's class name in your manifest's <application />'s android:name attribute?",
-      "stackTrace": "java.lang.IllegalStateException: Hilt Activity must be attached to an @HiltAndroidApp Application. Did you forget to specify your Application's class name in your manifest's <application />'s android:name attribute?\n\tat dagger.hilt.android.internal.managers.ActivityComponentManager.createComponent(ActivityComponentManager.java:102)\n\tat dagger.hilt.android.internal.managers.ActivityComponentManager.generatedComponent(ActivityComponentManager.java:71)\n\tat com.example.jetcaster.Hilt_MainActivity.generatedComponent(Hilt_MainActivity.java:66)\n\tat com.example.jetcaster.Hilt_MainActivity.inject(Hilt_MainActivity.java:88)\n\tat com.example.jetcaster.Hilt_MainActivity$1.onContextAvailable(Hilt_MainActivity.java:42)\n\tat androidx.activity.contextaware.ContextAwareHelper.dispatchOnContextAvailable(ContextAwareHelper.kt:78)\n\tat androidx.activity.ComponentActivity.onCreate(ComponentActivity.kt:342)\n\tat com.example.jetcaster.Hilt_MainActivity.onCreate(Hilt_MainActivity.java:54)\n\tat com.example.jetcaster.MainActivity.onCreate(MainActivity.kt:31)\n\tat android.app.Activity.performCreate(Activity.java:9002)\n\tat android.app.Activity.performCreate(Activity.java:8980)\n\tat android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1526)\n\tat org.robolectric.android.internal.RoboMonitoringInstrumentation.callActivityOnCreate(RoboMonitoringInstrumentation.java:382)\n\tat org.robolectric.android.controller.ActivityController.lambda$create$0(ActivityController.java:136)\n\tat org.robolectric.shadows.ShadowPausedLooper.runPaused(ShadowPausedLooper.java:257)\n\tat org.robolectric.android.controller.ActivityController.create(ActivityController.java:134)\n\tat org.robolectric.android.controller.ActivityController.create(ActivityController.java:144)\n\tat org.robolectric.android.controller.ActivityController.setup(ActivityController.java:340)\n\tat ee.schimke.composeai.renderer.AppTourRenderer$TourSession.launchIntent(AppTourRenderer.kt:194)\n\tat ee.schimke.composeai.renderer.AppTourRenderer$TourSession.launch(AppTourRenderer.kt:122)\n\tat ee.schimke.composeai.renderer.AppTourRenderer$render$statement$1.evaluate(AppTourRenderer.kt:75)\n\tat androidx.compose.ui.test.junit4.AndroidComposeTestRule$apply$testWithDisposal$1.evaluate(AndroidComposeTestRule.android.kt:421)\n\tat androidx.compose.ui.test.junit4.AndroidComposeTestRule$apply$1$evaluate$1.invokeSuspend(AndroidComposeTestRule.android.kt:441)\n\tat androidx.compose.ui.test.junit4.AndroidComposeTestRule$apply$1$evaluate$1.invoke(AndroidComposeTestRule.android.kt)\n\tat androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1$1$1$1.invokeSuspend(ComposeUiTest.android.kt:689)\n\tat androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1$1$1$1.invoke(ComposeUiTest.android.kt)\n\tat androidx.compose.ui.test.IdlingStrategy.withStrategy$suspendImpl(IdlingStrategy.android.kt:55)\n\tat androidx.compose.ui.test.IdlingStrategy.withStrategy(IdlingStrategy.android.kt)\n\tat androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1.invokeSuspend(ComposeUiTest.android.kt:686)\n\tat androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1.invoke(ComposeUiTest.android.kt)\n\tat kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt$runTest$2$1$1.invokeSuspend(TestBuilders.kt:317)\n\tat kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)\n\tat kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)\n\tat kotlinx.coroutines.test.TestDispatcher.processEvent$kotlinx_coroutines_test(TestDispatcher.kt:24)\n\tat kotlinx.coroutines.test.TestCoroutineScheduler.tryRunNextTaskUnless$kotlinx_coroutines_test(TestCoroutineScheduler.kt:99)\n\tat kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt$runTest$2$1$workRunner$1.invokeSuspend(TestBuilders.kt:326)\n\tat kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)\n\tat kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)\n\tat kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:263)\n\tat kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:94)\n\tat kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking(Builders.kt:70)\n\tat kotlinx.coroutines.BuildersKt.runBlocking(Unknown Source)\n\tat kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking$default(Builders.kt:48)\n\tat kotlinx.coroutines.BuildersKt.runBlocking$default(Unknown Source)\n\tat kotlinx.coroutines.test.TestBuildersJvmKt.createTestResult(TestBuildersJvm.kt:10)\n\tat kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt.runTest-8Mi8wO0(TestBuilders.kt:309)\n\tat kotlinx.coroutines.test.TestBuildersKt.runTest-8Mi8wO0(Unknown Source)\n\tat kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt.runTest-8Mi8wO0(TestBuilders.kt:167)\n\tat kotlinx.coroutines.test.TestBuildersKt.runTest-8Mi8wO0(Unknown Source)\n\tat androidx.compose.ui.test.AndroidComposeUiTestEnvironment.runTest(ComposeUiTest.android.kt:665)\n\tat androidx.compose.ui.test.junit4.AndroidComposeTestRule$apply$1.evaluate(AndroidComposeTestRule.android.kt:441)\n\tat ee.schimke.composeai.renderer.AppTourRenderer.render(AppTourRenderer.kt:99)\n\tat ee.schimke.composeai.renderer.RobolectricRenderTestBase.renderPreview(RobolectricRenderTest.kt:840)\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.robolectric.RobolectricTestRunner$HelperTestRunner$1.evaluate(RobolectricTestRunner.java:542)\n\tat org.robolectric.internal.SandboxTestRunner.lambda$executeInSandbox$4(SandboxTestRunner.java:429)\n\tat org.robolectric.internal.SandboxTestRunner.runInSandbox(SandboxTestRunner.java:455)\n\tat org.robolectric.internal.SandboxTestRunner.executeInSandbox(SandboxTestRunner.java:420)\n\tat org.robolectric.internal.SandboxTestRunner$5.evaluate(SandboxTestRunner.java:405)\n\tat org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)\n\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)\n\tat org.robolectric.internal.SandboxTestRunner.access$000(SandboxTestRunner.java:64)\n\tat org.robolectric.internal.SandboxTestRunner$4.evaluate(SandboxTestRunner.java:294)\n\tat org.robolectric.internal.SandboxTestRunner$2.evaluate(SandboxTestRunner.java:260)\n\tat org.robolectric.internal.SandboxTestRunner$3.lambda$evaluate$0(SandboxTestRunner.java:280)\n\tat org.robolectric.internal.bytecode.Sandbox.lambda$runOnMainThreadWithClassLoader$1(Sandbox.java:112)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n",
-      "topAppFrame": {
-        "file": "ActivityComponentManager.java",
-        "line": 102,
-        "function": "createComponent"
-      }
-    }
-  ],
+  "compareWith": {
+    "system": "jetcaster"
+  },
   "liveBundle": {
     "path": "bundle/",
     "file": "bundle.png"
@@ -1305,6 +1618,7 @@
       "previewIdPrefix": ""
     }
   ],
+  "componentsFile": "components.json",
   "source": {
     "repo": "yschimke/compose-samples",
     "ref": "previews",

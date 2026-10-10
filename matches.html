@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Jetcaster for Wear OS ↔ Jetcaster — component matches</title>
+<style>
+  :root { color-scheme: light dark; --bg:#0f0f10; --panel:#1b1b1d; --fg:#e8e8ea; --muted:#9b9ba1; --line:#2a2a2d;
+    --accent:#7dd87d; --warn:#e0c060; --link:#8ab4f8; }
+  * { box-sizing: border-box; }
+  body { margin:0; font:14px/1.5 system-ui, -apple-system, Segoe UI, Roboto, sans-serif; background:var(--bg); color:var(--fg); }
+  header.top { padding:24px clamp(16px,4vw,40px); border-bottom:1px solid var(--line); }
+  header.top h1 { margin:0 0 6px; font-size:22px; }
+  header.top .subtitle { color:var(--muted); font-size:13px; display:flex; gap:16px; flex-wrap:wrap; }
+  header.top .arrow { color:var(--accent); }
+  header.top .note { margin-top:10px; color:var(--muted); font-size:12px; max-width:78ch; }
+  header.top code { background:var(--panel); padding:1px 6px; border-radius:5px; }
+  main { padding:8px clamp(16px,4vw,40px) 64px; }
+  table { border-collapse:collapse; width:100%; }
+  /* line-height is pinned, not inherited: the row offset below is arithmetic on these
+     exact numbers, and a heading whose height nobody can compute is a header rows hide
+     under. */
+  thead th { position:sticky; top:0; background:var(--bg); text-align:left; font-size:12px; color:var(--muted);
+    line-height:1.35; padding:10px 12px; border-bottom:1px solid var(--line); z-index:1; }
+  tbody tr.crow { border-bottom:1px solid var(--line); }
+  th.rowhead { text-align:left; font-weight:600; padding:12px; vertical-align:middle; width:22%; }
+  th.rowhead .cid { display:block; word-break:break-word; }
+  /* scroll-margin-top because thead th is sticky: without it a row jumped to from
+     its #c-slug anchor lands underneath the header and reads as the wrong row.
+
+     Derived, not guessed. It used to be a flat 44px — the height of a ONE-LINE
+     heading — and a heading wraps: the design-reference column's "M3 Wear OS Apps
+     Design Kit" does it at a narrow viewport, and the row then lands back under the
+     header, which is the failure this margin exists to prevent. So the reserve is
+     three heading lines, spelled as the arithmetic that produces it:
+     3 lines x 1.35 x 12px, + 10px padding top and bottom, + the 1px border.
+
+     Overshooting is free and undershooting is not — too much margin leaves a little
+     empty space above the row, too little hides the row — so this reserves more than
+     any current heading needs, on purpose. The page carries no script -- the
+     "fully static" test pins that -- so measuring the header at view time is not on
+     the table; keep these numbers in step with thead th above if either moves. */
+  tr.crow { scroll-margin-top:calc(3 * 1.35 * 12px + 21px); }
+  a.anchor { color:inherit; text-decoration:none; }
+  a.anchor:hover, a.anchor:focus-visible { text-decoration:underline; }
+  a.anchor::after { content:" #"; color:var(--muted); opacity:0; }
+  tr.crow:hover a.anchor::after, a.anchor:focus-visible::after { opacity:1; }
+  tr.crow:target { outline:2px solid var(--accent); outline-offset:-2px; }
+  th.rowhead .grp { display:block; margin-top:3px; font-weight:400; font-size:11px; color:var(--muted); }
+  td { padding:10px 12px; vertical-align:middle; }
+
+  .pv-embed { position:relative; display:inline-flex; flex-direction:column; gap:6px; text-decoration:none; color:inherit; }
+  .pv-frame { position:relative; display:inline-grid; place-items:center; min-width:120px; min-height:80px;
+    padding:10px; border-radius:10px; background-color:#161617; }
+  .pv-frame--checker { background-image:
+      linear-gradient(45deg,#202022 25%,transparent 25%),
+      linear-gradient(-45deg,#202022 25%,transparent 25%),
+      linear-gradient(45deg,transparent 75%,#202022 75%),
+      linear-gradient(-45deg,transparent 75%,#202022 75%);
+    background-size:16px 16px; background-position:0 0,0 8px,8px -8px,-8px 0; }
+  .pv-frame--solid { background-color:#1b1b1d; }
+  .pv-frame--bare { background:none; padding:0; }
+  .pv-img { max-width:var(--pv-max-w,260px); max-height:var(--pv-max-h,200px); height:auto; display:block; }
+  .pv-missing { color:var(--muted); font-style:italic; font-size:12px; text-align:center; padding:0 8px; }
+  .pv-label { font-size:12px; color:var(--muted); }
+  .pv-live { position:absolute; top:6px; right:8px; font-size:11px; color:var(--link);
+    background:rgba(10,10,12,0.72); border-radius:6px; padding:1px 6px; opacity:0; transition:opacity .12s; pointer-events:none; }
+  a.pv-embed:hover .pv-live, a.pv-embed:focus-visible .pv-live { opacity:1; }
+  a.pv-embed:hover .pv-frame, a.pv-embed:focus-visible .pv-frame { outline:1px solid var(--link); outline-offset:1px; }
+  @media (max-width:640px){ .pv-img { max-width:min(var(--pv-max-w,260px),150px); } .pv-live { opacity:1; } }
+
+  .pv-missing code { background:var(--panel); padding:0 4px; border-radius:4px; font-style:normal; }
+  a.pv-open { font-size:11px; color:var(--link); text-decoration:none; }
+  a.pv-open:hover { text-decoration:underline; }
+  .rel code { font-size:12px; }
+  .badge { display:inline-block; margin-left:6px; font-size:10px; padding:0 6px; border-radius:999px;
+    background:rgba(224,192,96,0.12); color:var(--warn); border:1px solid var(--warn); }
+  section.solo { margin-top:36px; }
+  section.solo h2 { font-size:15px; border-bottom:1px solid var(--line); padding-bottom:6px; }
+  section.solo h2 span { color:var(--muted); font-weight:400; }
+  section.solo ul { list-style:none; padding:0; display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:6px 20px; }
+  section.solo li { padding:6px 0; border-bottom:1px solid var(--line); }
+  section.solo .cid { font-weight:600; }
+  section.solo .grp { color:var(--muted); font-size:11px; margin-left:8px; }
+  section.solo .cap { display:block; color:var(--muted); font-size:12px; }
+  @media (max-width:640px){ th.rowhead { width:auto; } }
+</style>
+</head>
+<body>
+<header class="top">
+  <h1>Jetcaster for Wear OS ↔ Jetcaster</h1>
+  <div class="subtitle"><span>Jetcaster for Wear OS <span class="arrow">↔</span> Jetcaster</span><span>3 paired</span><span>3 rendered both sides</span></div>
+  <p class="note">Each row pairs a <strong>jetcaster-wear</strong> component with its declared
+  <strong>jetcaster</strong> parallel (the <code>parallel</code> field in the catalog spec). Both
+  renders are static thumbnails — the left from this branch, the right baked from the
+  <code>design-artifacts/jetcaster</code> branch — and each <strong>links to the live preview server</strong> on
+  click, where the component re-renders under other themes / locales / devices. A parallel that isn't
+  catalogued in jetcaster yet is flagged <span class="badge">unpaired</span>. Components with
+  no parallel on either side are listed below the table.</p>
+</header>
+<main>
+  <table>
+    <thead>
+      <tr>
+        <th scope="col">Component</th>
+        <th scope="col">Jetcaster for Wear OS</th>
+        <th scope="col">Jetcaster</th>
+        <th scope="col">Parallel</th>
+      </tr>
+    </thead>
+    <tbody id="rows"><tr class="crow" id="c-podcast-screen">
+  <th scope="row" class="rowhead"><a class="cid anchor" href="#c-podcast-screen">Podcast/Screen</a><span class="grp">Browse</span></th>
+  <td class="col-a"><a class="pv-embed" href="https://preview.coo.ee/jetcaster-wear/p/podcast-screen__ideal__default__largeround" target="_blank" rel="noopener" title="Podcast/Screen"><span class="pv-frame pv-frame--checker" style="--pv-max-w:260px;--pv-max-h:200px"><img class="pv-img" src="images/podcast-screen/ideal__default__largeround.png" alt="Podcast/Screen" loading="lazy" decoding="async" /></span><span class="pv-live">live ↗</span></a></td>
+  <td class="col-b"><a class="pv-embed" href="https://preview.coo.ee/jetcaster/p/podcast-card__ideal__default__light" target="_blank" rel="noopener" title="Podcast/Card"><span class="pv-frame pv-frame--checker" style="--pv-max-w:260px;--pv-max-h:200px"><img class="pv-img" src="https://raw.githubusercontent.com/yschimke/compose-samples/design-artifacts/jetcaster/images/podcast-card/ideal__default__light.png" alt="Podcast/Card" loading="lazy" decoding="async" /></span><span class="pv-live">live ↗</span></a></td>
+  <td class="rel"><code>Podcast/Card</code></td>
+</tr>
+<tr class="crow" id="c-episode-screen">
+  <th scope="row" class="rowhead"><a class="cid anchor" href="#c-episode-screen">Episode/Screen</a><span class="grp">Playback</span></th>
+  <td class="col-a"><a class="pv-embed" href="https://preview.coo.ee/jetcaster-wear/p/episode-screen__ideal__default__largeround" target="_blank" rel="noopener" title="Episode/Screen"><span class="pv-frame pv-frame--checker" style="--pv-max-w:260px;--pv-max-h:200px"><img class="pv-img" src="images/episode-screen/ideal__default__largeround.png" alt="Episode/Screen" loading="lazy" decoding="async" /></span><span class="pv-live">live ↗</span></a></td>
+  <td class="col-b"><a class="pv-embed" href="https://preview.coo.ee/jetcaster/p/episode-list-item__ideal__default__light" target="_blank" rel="noopener" title="Episode/List item"><span class="pv-frame pv-frame--checker" style="--pv-max-w:260px;--pv-max-h:200px"><img class="pv-img" src="https://raw.githubusercontent.com/yschimke/compose-samples/design-artifacts/jetcaster/images/episode-list-item/ideal__default__light.png" alt="Episode/List item" loading="lazy" decoding="async" /></span><span class="pv-live">live ↗</span></a></td>
+  <td class="rel"><code>Episode/List item</code></td>
+</tr>
+<tr class="crow" id="c-player-controls">
+  <th scope="row" class="rowhead"><a class="cid anchor" href="#c-player-controls">Player/Controls</a><span class="grp">Components</span></th>
+  <td class="col-a"><a class="pv-embed" href="https://preview.coo.ee/jetcaster-wear/p/player-controls__ideal__default__largeround" target="_blank" rel="noopener" title="Player/Controls"><span class="pv-frame pv-frame--checker" style="--pv-max-w:260px;--pv-max-h:200px"><img class="pv-img" src="images/player-controls/ideal__default__largeround.png" alt="Player/Controls" loading="lazy" decoding="async" /></span><span class="pv-live">live ↗</span></a></td>
+  <td class="col-b"><a class="pv-embed" href="https://preview.coo.ee/jetcaster/p/player-transport__ideal__default__light" target="_blank" rel="noopener" title="Player/Transport"><span class="pv-frame pv-frame--checker" style="--pv-max-w:260px;--pv-max-h:200px"><img class="pv-img" src="https://raw.githubusercontent.com/yschimke/compose-samples/design-artifacts/jetcaster/images/player-transport/ideal__default__light.png" alt="Player/Transport" loading="lazy" decoding="async" /></span><span class="pv-live">live ↗</span></a></td>
+  <td class="rel"><code>Player/Transport</code></td>
+</tr></tbody>
+  </table>
+  <section class="solo"><h2>Only in jetcaster-wear <span>5</span></h2>
+       <ul><li><span class="cid">Podcast/Details</span><span class="grp">Browse</span><span class="cap">Podcast details on Wear.</span></li>
+<li><span class="cid">Library/Screen</span><span class="grp">Browse</span><span class="cap">The user&#39;s library entry point.</span></li>
+<li><span class="cid">Episode/Latest</span><span class="grp">Browse</span><span class="cap">Latest-episode screen — the primary Wear launch surface.</span></li>
+<li><span class="cid">Queue/Screen</span><span class="grp">Playback</span><span class="cap">Playback queue, populated.</span></li>
+<li><span class="cid">Podcast/Content</span><span class="grp">Components</span><span class="cap">Podcast content block, centred at its on-device width rather than pinned to a screen.</span></li></ul></section>
+  <section class="solo"><h2>Only in jetcaster <span>47</span></h2>
+       <ul><li><span class="cid">Home/Screen</span><span class="grp">Home</span><span class="cap">The starter screen: home on the Discover tab, which is the category HomeViewModel opens on — category chips over the top-podcast carousel and the episode list.</span></li>
+<li><span class="cid">PodcastDetails/Screen</span><span class="grp">Podcast details</span><span class="cap">Podcast details at the compact catalog breakpoint.</span></li>
+<li><span class="cid">PodcastDetails/Header</span><span class="grp">Podcast details components</span><span class="cap">Podcast details header: artwork, title, and the follow affordance.</span></li>
+<li><span class="cid">PodcastDetails/Description</span><span class="grp">Podcast details components</span><span class="cap">Show notes short enough to fit inside the collapsed line limit.</span></li>
+<li><span class="cid">PodcastDetails/App bar</span><span class="grp">Podcast details components</span><span class="cap">Details app bar with the back affordance.</span></li>
+<li><span class="cid">PodcastDetails/Subscribe</span><span class="grp">Podcast details components</span><span class="cap">Subscribe action row, not yet subscribed.</span></li>
+<li><span class="cid">Podcast/Row item</span><span class="grp">Discover</span><span class="cap">Carousel item, not followed.</span></li>
+<li><span class="cid">Podcast/Row</span><span class="grp">Discover</span><span class="cap">The horizontally scrolling row of podcasts within a category.</span></li>
+<li><span class="cid">Discover/Category tabs</span><span class="grp">Discover</span><span class="cap">Scrollable category tabs with the second category selected.</span></li>
+<li><span class="cid">Discover/Category chip</span><span class="grp">Discover</span><span class="cap">Category chip, unselected.</span></li>
+<li><span class="cid">Podcast/Follow toggle</span><span class="grp">Discover</span><span class="cap">The follow toggle in its resting state.</span></li>
+<li><span class="cid">Player/Screen</span><span class="grp">Player</span><span class="cap">The now-playing screen at the compact catalog breakpoint.</span></li>
+<li><span class="cid">Player/Slider</span><span class="grp">Player controls</span><span class="cap">Scrubber at the start of an episode.</span></li>
+<li><span class="cid">Player/Episode information</span><span class="grp">Player controls</span><span class="cap">Episode title, podcast name and summary as stacked on the player.</span></li>
+<li><span class="cid">Player/App bar</span><span class="grp">Player controls</span><span class="cap">Player app bar: back, plus add-to-queue.</span></li>
+<li><span class="cid">Chrome/Home app bar</span><span class="grp">Chrome</span><span class="cap">Home app bar as the sample&#39;s own preview drives it.</span></li>
+<li><span class="cid">Chrome/Pill toolbar</span><span class="grp">Chrome</span><span class="cap">The floating pill toolbar with Discover selected.</span></li>
+<li><span class="cid">Chrome/Top app bar</span><span class="grp">Chrome</span><span class="cap">The shared top app bar.</span></li>
+<li><span class="cid">Chrome/Home error</span><span class="grp">States</span><span class="cap">Home error state as the sample&#39;s own preview drives it.</span></li>
+<li><span class="cid">States/Loading</span><span class="grp">States</span><span class="cap">The shared loading indicator.</span></li>
+<li><span class="cid">States/Offline</span><span class="grp">States</span><span class="cap">Offline dialog, shown when the feed refresh cannot reach the network. Drawn inline from AlertDialogDefaults rather than through OfflineDialog&#39;s AlertDialog: a Material 3 dialog composes into its own window, so the root semantics tree the catalog reads comes back empty.</span></li>
+<li><span class="cid">Button/Filled</span><span class="grp">Buttons</span><span class="cap">Highest emphasis; the primary action; the disabled state folds in as an @OverrideVariant (enabled = false).</span></li>
+<li><span class="cid">Button/Tonal</span><span class="grp">Buttons</span><span class="cap">Secondary, still prominent.</span></li>
+<li><span class="cid">Button/Outlined</span><span class="grp">Buttons</span><span class="cap">Medium emphasis on a busy surface.</span></li>
+<li><span class="cid">Button/Elevated</span><span class="grp">Buttons</span><span class="cap">Outlined alternative needing separation.</span></li>
+<li><span class="cid">Button/Text</span><span class="grp">Buttons</span><span class="cap">Lowest emphasis; inline actions.</span></li>
+<li><span class="cid">Progress/Linear</span><span class="grp">Communication</span></li>
+<li><span class="cid">Progress/Circular</span><span class="grp">Communication</span></li>
+<li><span class="cid">Badge</span><span class="grp">Communication</span></li>
+<li><span class="cid">Card/Elevated</span><span class="grp">Containment</span></li>
+<li><span class="cid">Card/Outlined</span><span class="grp">Containment</span></li>
+<li><span class="cid">Card/Filled</span><span class="grp">Containment</span></li>
+<li><span class="cid">Card/Slots</span><span class="grp">Containment</span><span class="cap">A card with named PreviewSlot regions a structured-screen builder fills.</span></li>
+<li><span class="cid">FAB</span><span class="grp">Containment</span></li>
+<li><span class="cid">Checkbox/Checked</span><span class="grp">Selection</span><span class="cap">Checked; the unchecked state folds in as an @OverrideVariant (checked = false).</span></li>
+<li><span class="cid">Switch/On</span><span class="grp">Selection</span><span class="cap">On; the off state folds in as an @OverrideVariant (checked = false).</span></li>
+<li><span class="cid">RadioButton/Selected</span><span class="grp">Selection</span><span class="cap">Selected; the unselected state folds in as an @OverrideVariant (selected = false).</span></li>
+<li><span class="cid">Slider</span><span class="grp">Selection</span></li>
+<li><span class="cid">Chip/Filter-Selected</span><span class="grp">Selection</span><span class="cap">Selected; the unselected state folds in as an @OverrideVariant (selected = false).</span></li>
+<li><span class="cid">Chip/Assist</span><span class="grp">Selection</span></li>
+<li><span class="cid">SegmentedButton</span><span class="grp">Selection</span><span class="cap">Single-choice toggle: selected + unselected segments.</span></li>
+<li><span class="cid">Template/AppScaffold</span><span class="grp">Scaffold templates</span><span class="cap">Full-screen layout with the OS status bar — TopAppBar, a list, and a FAB, captured with showSystemUi on a phone.</span></li>
+<li><span class="cid">TextField/Filled</span><span class="grp">Text fields</span></li>
+<li><span class="cid">TextField/Outlined</span><span class="grp">Text fields</span></li>
+<li><span class="cid">Text/MaxLines-Truncated</span><span class="grp">Text options</span><span class="cap">maxLines=2 + ellipsis overflow — exercises the textOverflow product.</span></li>
+<li><span class="cid">Text/Serif</span><span class="grp">Text options</span><span class="cap">Generic serif family (Noto Serif) — pins the Wasm tier’s font interception.</span></li>
+<li><span class="cid">Text/Monospace</span><span class="grp">Text options</span><span class="cap">Generic monospace family (Droid Sans Mono) — pins the Wasm tier’s font interception.</span></li></ul></section>
+</main>
+</body>
+</html>
