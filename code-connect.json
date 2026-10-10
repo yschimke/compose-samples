@@ -7,127 +7,837 @@
     "ref": "previews",
     "module": ":app"
   },
-  "generatedAt": "2026-08-18T22:47:43.828Z",
+  "generatedAt": "2026-10-10T09:39:26.019Z",
   "mappings": [
     {
       "componentId": "Adaptive/Phone",
       "figmaLayerName": "Adaptive/Phone",
-      "componentName": "ReplyAppPreview",
-      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/reply/ui/MainActivity.kt",
+      "componentName": "ReplyApp",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/reply/ui/ReplyApp.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "ReplyAppPreview",
-      "figmaSvg": "figma/adaptive-phone.svg"
+      "codeSnippet": "ReplyApp(\n    windowSize = TODO(\"WindowSizeClass\"),\n    displayFeatures = TODO(\"List<DisplayFeature>\"),\n    replyHomeUIState = TODO(\"ReplyHomeUIState\"),\n)",
+      "imports": [
+        "import com.example.reply.ui.ReplyApp"
+      ],
+      "parameters": [
+        {
+          "name": "windowSize",
+          "type": "WindowSizeClass",
+          "typeFqn": "androidx.compose.material3.windowsizeclass.WindowSizeClass",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "displayFeatures",
+          "type": "List<DisplayFeature>",
+          "typeFqn": "kotlin.collections.List",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "replyHomeUIState",
+          "type": "ReplyHomeUIState",
+          "typeFqn": "com.example.reply.ui.ReplyHomeUIState",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "closeDetailScreen",
+          "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "navigateToDetail",
+          "type": "(Long, ReplyContentType) -> Unit",
+          "typeFqn": "kotlin.Function2",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "toggleSelectedEmail",
+          "type": "(Long) -> Unit",
+          "typeFqn": "kotlin.Function1",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        }
+      ]
     },
     {
       "componentId": "Mail/List",
       "figmaLayerName": "Mail/List",
-      "componentName": "ReplyEmailListPreview",
-      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/reply/catalog/ReplyComponentPreviews.kt",
+      "componentName": "ReplyEmailList",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/reply/ui/ReplyListContent.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "ReplyEmailListPreview",
-      "figmaSvg": "figma/mail-list.svg"
+      "codeSnippet": "ReplyEmailList(\n    emails = TODO(\"List<Email>\"),\n    openedEmail = TODO(\"Email?\"),\n    selectedEmailIds = TODO(\"Set<Long>\"),\n    toggleEmailSelection = TODO(\"(Long) -> Unit\"),\n    emailLazyListState = TODO(\"LazyListState\"),\n    navigateToDetail = TODO(\"(Long, ReplyContentType) -> Unit\"),\n)",
+      "imports": [
+        "import com.example.reply.ui.ReplyEmailList"
+      ],
+      "parameters": [
+        {
+          "name": "emails",
+          "type": "List<Email>",
+          "typeFqn": "kotlin.collections.List",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "openedEmail",
+          "type": "Email?",
+          "typeFqn": "com.example.reply.data.Email",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": true,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "selectedEmailIds",
+          "type": "Set<Long>",
+          "typeFqn": "kotlin.collections.Set",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "toggleEmailSelection",
+          "type": "(Long) -> Unit",
+          "typeFqn": "kotlin.Function1",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "emailLazyListState",
+          "type": "LazyListState",
+          "typeFqn": "androidx.compose.foundation.lazy.LazyListState",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "navigateToDetail",
+          "type": "(Long, ReplyContentType) -> Unit",
+          "typeFqn": "kotlin.Function2",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        }
+      ]
     },
     {
       "componentId": "Mail/Detail",
       "figmaLayerName": "Mail/Detail",
-      "componentName": "ReplyEmailDetailPreview",
-      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/reply/catalog/ReplyComponentPreviews.kt",
+      "componentName": "ReplyEmailDetail",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/reply/ui/ReplyListContent.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "ReplyEmailDetailPreview",
-      "figmaSvg": "figma/mail-detail.svg"
+      "codeSnippet": "ReplyEmailDetail(\n    email = TODO(\"Email\"),\n)",
+      "imports": [
+        "import com.example.reply.ui.ReplyEmailDetail"
+      ],
+      "parameters": [
+        {
+          "name": "email",
+          "type": "Email",
+          "typeFqn": "com.example.reply.data.Email",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "isFullScreen",
+          "type": "Boolean",
+          "typeFqn": "kotlin.Boolean",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "onBackPressed",
+          "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        }
+      ]
     },
     {
       "componentId": "Email/ListItem",
       "figmaLayerName": "Email/ListItem",
-      "componentName": "ReplyEmailListItemPreview",
-      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/reply/catalog/ReplyComponentPreviews.kt",
+      "componentName": "ReplyEmailListItem",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/reply/ui/components/ReplyEmailListItem.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "ReplyEmailListItemPreview",
-      "figmaSvg": "figma/email-listitem.svg"
+      "codeSnippet": "ReplyEmailListItem(\n    email = TODO(\"Email\"),\n    navigateToDetail = TODO(\"(Long) -> Unit\"),\n    toggleSelection = TODO(\"(Long) -> Unit\"),\n)",
+      "imports": [
+        "import com.example.reply.ui.components.ReplyEmailListItem"
+      ],
+      "parameters": [
+        {
+          "name": "email",
+          "type": "Email",
+          "typeFqn": "com.example.reply.data.Email",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "navigateToDetail",
+          "type": "(Long) -> Unit",
+          "typeFqn": "kotlin.Function1",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "toggleSelection",
+          "type": "(Long) -> Unit",
+          "typeFqn": "kotlin.Function1",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "isOpened",
+          "type": "Boolean",
+          "typeFqn": "kotlin.Boolean",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "isSelected",
+          "type": "Boolean",
+          "typeFqn": "kotlin.Boolean",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ]
     },
     {
       "componentId": "Threads/ThreadItem",
       "figmaLayerName": "Threads/ThreadItem",
-      "componentName": "ReplyEmailThreadItemPreview",
-      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/reply/catalog/ReplyComponentPreviews.kt",
+      "componentName": "ReplyEmailThreadItem",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/reply/ui/components/ReplyEmailThreadItem.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "ReplyEmailThreadItemPreview",
-      "figmaSvg": "figma/threads-threaditem.svg"
+      "codeSnippet": "ReplyEmailThreadItem(\n    email = TODO(\"Email\"),\n)",
+      "imports": [
+        "import com.example.reply.ui.components.ReplyEmailThreadItem"
+      ],
+      "parameters": [
+        {
+          "name": "email",
+          "type": "Email",
+          "typeFqn": "com.example.reply.data.Email",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ]
     },
     {
       "componentId": "AppBars/Search",
       "figmaLayerName": "AppBars/Search",
-      "componentName": "ReplyDockedSearchBarPreview",
-      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/reply/catalog/ReplyComponentPreviews.kt",
+      "componentName": "ReplyDockedSearchBar",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/reply/ui/components/ReplyAppBars.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "ReplyDockedSearchBarPreview",
-      "figmaSvg": "figma/appbars-search.svg"
+      "codeSnippet": "ReplyDockedSearchBar(\n    emails = TODO(\"List<Email>\"),\n    onSearchItemSelected = TODO(\"(Email) -> Unit\"),\n)",
+      "imports": [
+        "import com.example.reply.ui.components.ReplyDockedSearchBar"
+      ],
+      "parameters": [
+        {
+          "name": "emails",
+          "type": "List<Email>",
+          "typeFqn": "kotlin.collections.List",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "onSearchItemSelected",
+          "type": "(Email) -> Unit",
+          "typeFqn": "kotlin.Function1",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "initialQuery",
+          "type": "String",
+          "typeFqn": "kotlin.String",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "initialExpanded",
+          "type": "Boolean",
+          "typeFqn": "kotlin.Boolean",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ]
     },
     {
       "componentId": "AppBars/Detail",
       "figmaLayerName": "AppBars/Detail",
-      "componentName": "EmailDetailAppBarFullScreenPreview",
-      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/reply/catalog/ReplyComponentPreviews.kt",
+      "componentName": "EmailDetailAppBar",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/reply/ui/components/ReplyAppBars.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "EmailDetailAppBarFullScreenPreview",
-      "figmaSvg": "figma/appbars-detail.svg"
+      "codeSnippet": "EmailDetailAppBar(\n    email = TODO(\"Email\"),\n    isFullScreen = TODO(\"Boolean\"),\n    onBackPressed = TODO(\"() -> Unit\"),\n)",
+      "imports": [
+        "import com.example.reply.ui.components.EmailDetailAppBar"
+      ],
+      "parameters": [
+        {
+          "name": "email",
+          "type": "Email",
+          "typeFqn": "com.example.reply.data.Email",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "isFullScreen",
+          "type": "Boolean",
+          "typeFqn": "kotlin.Boolean",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "onBackPressed",
+          "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        }
+      ]
     },
     {
       "componentId": "Navigation/BottomBar",
       "figmaLayerName": "Navigation/BottomBar",
-      "componentName": "ReplyBottomNavigationBarPreview",
-      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/reply/catalog/ReplyComponentPreviews.kt",
+      "componentName": "ReplyBottomNavigationBar",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/reply/ui/navigation/ReplyNavigationComponents.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "ReplyBottomNavigationBarPreview",
-      "figmaSvg": "figma/navigation-bottombar.svg"
+      "codeSnippet": "ReplyBottomNavigationBar(\n    currentDestination = TODO(\"NavDestination?\"),\n    navigateToTopLevelDestination = TODO(\"(ReplyTopLevelDestination) -> Unit\"),\n)",
+      "imports": [
+        "import com.example.reply.ui.navigation.ReplyBottomNavigationBar"
+      ],
+      "parameters": [
+        {
+          "name": "currentDestination",
+          "type": "NavDestination?",
+          "typeFqn": "androidx.navigation.NavDestination",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": true,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "navigateToTopLevelDestination",
+          "type": "(ReplyTopLevelDestination) -> Unit",
+          "typeFqn": "kotlin.Function1",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "selectedDestination",
+          "type": "ReplyTopLevelDestination?",
+          "typeFqn": "com.example.reply.ui.navigation.ReplyTopLevelDestination",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": true,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ]
     },
     {
       "componentId": "Navigation/Rail",
       "figmaLayerName": "Navigation/Rail",
-      "componentName": "ReplyNavigationRailTopPreview",
-      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/reply/catalog/ReplyComponentPreviews.kt",
+      "componentName": "ReplyNavigationRail",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/reply/ui/navigation/ReplyNavigationComponents.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "ReplyNavigationRailTopPreview",
-      "figmaSvg": "figma/navigation-rail.svg"
+      "codeSnippet": "ReplyNavigationRail(\n    currentDestination = TODO(\"NavDestination?\"),\n    navigationContentPosition = TODO(\"ReplyNavigationContentPosition\"),\n    navigateToTopLevelDestination = TODO(\"(ReplyTopLevelDestination) -> Unit\"),\n)",
+      "imports": [
+        "import com.example.reply.ui.navigation.ReplyNavigationRail"
+      ],
+      "parameters": [
+        {
+          "name": "currentDestination",
+          "type": "NavDestination?",
+          "typeFqn": "androidx.navigation.NavDestination",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": true,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "navigationContentPosition",
+          "type": "ReplyNavigationContentPosition",
+          "typeFqn": "com.example.reply.ui.utils.ReplyNavigationContentPosition",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "navigateToTopLevelDestination",
+          "type": "(ReplyTopLevelDestination) -> Unit",
+          "typeFqn": "kotlin.Function1",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "onDrawerClicked",
+          "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "selectedDestination",
+          "type": "ReplyTopLevelDestination?",
+          "typeFqn": "com.example.reply.ui.navigation.ReplyTopLevelDestination",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": true,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ]
     },
     {
       "componentId": "Navigation/Drawer",
       "figmaLayerName": "Navigation/Drawer",
-      "componentName": "PermanentNavigationDrawerContentPreview",
-      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/reply/catalog/ReplyComponentPreviews.kt",
+      "componentName": "PermanentNavigationDrawerContent",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/reply/ui/navigation/ReplyNavigationComponents.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "PermanentNavigationDrawerContentPreview",
-      "figmaSvg": "figma/navigation-drawer.svg"
+      "codeSnippet": "PermanentNavigationDrawerContent(\n    currentDestination = TODO(\"NavDestination?\"),\n    navigationContentPosition = TODO(\"ReplyNavigationContentPosition\"),\n    navigateToTopLevelDestination = TODO(\"(ReplyTopLevelDestination) -> Unit\"),\n)",
+      "imports": [
+        "import com.example.reply.ui.navigation.PermanentNavigationDrawerContent"
+      ],
+      "parameters": [
+        {
+          "name": "currentDestination",
+          "type": "NavDestination?",
+          "typeFqn": "androidx.navigation.NavDestination",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": true,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "navigationContentPosition",
+          "type": "ReplyNavigationContentPosition",
+          "typeFqn": "com.example.reply.ui.utils.ReplyNavigationContentPosition",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "navigateToTopLevelDestination",
+          "type": "(ReplyTopLevelDestination) -> Unit",
+          "typeFqn": "kotlin.Function1",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "selectedDestination",
+          "type": "ReplyTopLevelDestination?",
+          "typeFqn": "com.example.reply.ui.navigation.ReplyTopLevelDestination",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": true,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ]
     },
     {
       "componentId": "Identity/ProfileImage",
       "figmaLayerName": "Identity/ProfileImage",
-      "componentName": "ReplyProfileImagePreview",
-      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/reply/catalog/ReplyComponentPreviews.kt",
+      "componentName": "ReplyProfileImage",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/reply/ui/components/ReplyProfileImage.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "ReplyProfileImagePreview",
-      "figmaSvg": "figma/identity-profileimage.svg"
+      "codeSnippet": "ReplyProfileImage(\n    drawableResource = TODO(\"Int\"),\n    description = TODO(\"String\"),\n)",
+      "imports": [
+        "import com.example.reply.ui.components.ReplyProfileImage"
+      ],
+      "parameters": [
+        {
+          "name": "drawableResource",
+          "type": "Int",
+          "typeFqn": "kotlin.Int",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "description",
+          "type": "String",
+          "typeFqn": "kotlin.String",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ]
     },
     {
       "componentId": "States/Coming soon",
       "figmaLayerName": "States/Coming soon",
-      "componentName": "ComingSoonPreview",
+      "componentName": "EmptyComingSoon",
       "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/reply/ui/EmptyComingSoon.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "ComingSoonPreview",
-      "figmaSvg": "figma/states-coming-soon.svg"
+      "codeSnippet": "EmptyComingSoon()",
+      "imports": [
+        "import com.example.reply.ui.EmptyComingSoon"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ]
     }
   ]
 }

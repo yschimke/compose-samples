@@ -12,12 +12,14 @@ Figma / Stitch / Claude Design.
 A self-contained gallery — one card per component with its rendered PNG,
 dimensions, accessibility greenlines, and a link to an editable SVG wireframe.
 
-## 🔬 Compare PNG vs SVG
+## 🔬 Compare SVG vs PNG
 
-**[▶ Open the PNG↔SVG comparison (htmlpreview)](https://htmlpreview.github.io/?https://github.com/yschimke/compose-samples/blob/design-artifacts/reply/compare.html)**
+**[▶ Open the SVG↔PNG comparison (htmlpreview)](https://htmlpreview.github.io/?https://github.com/yschimke/compose-samples/blob/design-artifacts/reply/compare.html)**
 
-Every component on one row: its rendered **PNG** beside its editable **figma-svg**
-re-rasterized by the browser, plus a live **structural-similarity (SSIM)** match
+Every component on one row: its editable **figma-svg** re-rasterized by the
+browser beside the rendered **PNG** it is measured against — the design vector on
+the left, the render on the right, as everywhere else the two are shown together
+— plus a live **structural-similarity (SSIM)** match
 score — so you can eyeball vector fidelity across the whole system at once and
 spot which stickers drift. The score is pre-blurred and downscaled, so a
 half-pixel rasterizer offset doesn't read as a mismatch.
@@ -39,12 +41,12 @@ customising the live render are two ends of one workflow.
 | Components | **12** |
 | Rendered images (PNG) | **59** |
 | Editable wireframes (SVG) | **12** |
-| Editable design vectors (figma-svg) | **12** |
+| Editable design vectors (figma-svg) | **0** |
 | Components with a11y greenlines | **9** |
 | Library | `androidx.compose.material3:material3`<br>`androidx.compose.material3.adaptive:adaptive` |
-| Renderer | compose-preview 1.15.0 |
+| Renderer | compose-preview 2.39.2 |
 | Schema | `design-parity-catalog/v1` |
-| Generated | 2026-08-18 |
+| Generated | 2026-10-10 |
 
 ## Components by group
 
@@ -64,7 +66,7 @@ customising the live render are two ends of one workflow.
 | Path | What it is |
 | --- | --- |
 | `index.html` | Self-contained gallery — [open via htmlpreview](https://htmlpreview.github.io/?https://github.com/yschimke/compose-samples/blob/design-artifacts/reply/index.html) |
-| `compare.html` | PNG↔SVG comparison with a live structural-similarity score — [open via htmlpreview](https://htmlpreview.github.io/?https://github.com/yschimke/compose-samples/blob/design-artifacts/reply/compare.html) |
+| `compare.html` | SVG↔PNG comparison with a live structural-similarity score — [open via htmlpreview](https://htmlpreview.github.io/?https://github.com/yschimke/compose-samples/blob/design-artifacts/reply/compare.html) |
 | `catalog.json` | Machine-readable catalog (`design-parity-catalog/v1`): components, variants, design tokens, greenlines, and per-variant `livePreview` deep links |
 | `images/` | Rendered PNGs — the source of truth for each variant |
 | `wireframes/` | One editable SVG per component (layout-inspector tree → token-styled shapes) |
