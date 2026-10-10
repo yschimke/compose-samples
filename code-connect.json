@@ -7,7 +7,7 @@
     "ref": "previews",
     "module": ":app"
   },
-  "generatedAt": "2026-08-18T22:49:18.965Z",
+  "generatedAt": "2026-10-10T09:40:24.379Z",
   "mappings": [
     {
       "componentId": "Screens/Home feed",
@@ -17,7 +17,7 @@
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "PreviewHomeListDrawerScreen",
-      "codeSnippet": "HomeFeedScreen(\n    uiState = TODO(\"HomeUiState\"),\n    showTopAppBar = TODO(\"Boolean\"),\n    onToggleFavorite = { },\n    onSelectPost = { },\n    onRefreshPosts = { },\n    onErrorDismiss = { },\n    openDrawer = { },\n    homeListLazyListState = TODO(\"LazyListState\"),\n    snackbarHostState = TODO(\"SnackbarHostState\"),\n    onSearchInputChanged = { },\n)",
+      "codeSnippet": "HomeFeedScreen(\n    uiState = TODO(\"HomeUiState\"),\n    showTopAppBar = TODO(\"Boolean\"),\n    onToggleFavorite = TODO(\"(String) -> Unit\"),\n    onSelectPost = TODO(\"(String) -> Unit\"),\n    onRefreshPosts = TODO(\"() -> Unit\"),\n    onErrorDismiss = TODO(\"(Long) -> Unit\"),\n    openDrawer = TODO(\"() -> Unit\"),\n    homeListLazyListState = TODO(\"LazyListState\"),\n    snackbarHostState = TODO(\"SnackbarHostState\"),\n    onSearchInputChanged = TODO(\"(String) -> Unit\"),\n)",
       "imports": [
         "import com.example.jetnews.ui.home.HomeFeedScreen"
       ],
@@ -25,77 +25,160 @@
         {
           "name": "uiState",
           "type": "HomeUiState",
+          "typeFqn": "com.example.jetnews.ui.home.HomeUiState",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "showTopAppBar",
           "type": "Boolean",
+          "typeFqn": "kotlin.Boolean",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "onToggleFavorite",
           "type": "(String) -> Unit",
+          "typeFqn": "kotlin.Function1",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
         },
         {
           "name": "onSelectPost",
           "type": "(String) -> Unit",
+          "typeFqn": "kotlin.Function1",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
         },
         {
           "name": "onRefreshPosts",
           "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
         },
         {
           "name": "onErrorDismiss",
           "type": "(Long) -> Unit",
+          "typeFqn": "kotlin.Function1",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
         },
         {
           "name": "openDrawer",
           "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
         },
         {
           "name": "homeListLazyListState",
           "type": "LazyListState",
+          "typeFqn": "androidx.compose.foundation.lazy.LazyListState",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "snackbarHostState",
           "type": "SnackbarHostState",
+          "typeFqn": "androidx.compose.material3.SnackbarHostState",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "modifier",
           "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "searchInput",
           "type": "String",
+          "typeFqn": "kotlin.String",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "onSearchInputChanged",
           "type": "(String) -> Unit",
+          "typeFqn": "kotlin.Function1",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
         }
-      ],
-      "figmaSvg": "figma/screens-home-feed.svg"
+      ]
     },
     {
       "componentId": "Screens/App shell",
@@ -113,123 +196,687 @@
         {
           "name": "appContainer",
           "type": "AppContainer",
+          "typeFqn": "com.example.jetnews.data.AppContainer",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "isBackEnabled",
           "type": "Boolean",
+          "typeFqn": "kotlin.Boolean",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "initialBackStack",
           "type": "List<NavKey>",
+          "typeFqn": "kotlin.collections.List",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         }
-      ],
-      "figmaSvg": "figma/screens-app-shell.svg"
+      ]
     },
     {
       "componentId": "Screens/Article",
       "figmaLayerName": "Screens/Article",
-      "componentName": "PreviewPostDrawer",
+      "componentName": "PostScreen",
       "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetnews/ui/post/PostScreen.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "PreviewPostDrawer",
-      "figmaSvg": "figma/screens-article.svg"
+      "codeSnippet": "PostScreen(\n    uiState = TODO(\"PostUiState\"),\n    isExpandedScreen = TODO(\"Boolean\"),\n    onBack = TODO(\"() -> Unit\"),\n    onToggleFavorite = TODO(\"() -> Unit\"),\n    onScroll = TODO(\"(Int, Int) -> Unit\"),\n)",
+      "imports": [
+        "import com.example.jetnews.ui.post.PostScreen"
+      ],
+      "parameters": [
+        {
+          "name": "uiState",
+          "type": "PostUiState",
+          "typeFqn": "com.example.jetnews.ui.post.PostUiState",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "isExpandedScreen",
+          "type": "Boolean",
+          "typeFqn": "kotlin.Boolean",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "onBack",
+          "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "onToggleFavorite",
+          "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "onScroll",
+          "type": "(Int, Int) -> Unit",
+          "typeFqn": "kotlin.Function2",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        }
+      ]
     },
     {
       "componentId": "Navigation/Drawer",
       "figmaLayerName": "Navigation/Drawer",
-      "componentName": "PreviewAppDrawer",
+      "componentName": "AppDrawer",
       "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetnews/ui/AppDrawer.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "PreviewAppDrawer",
-      "figmaSvg": "figma/navigation-drawer.svg"
+      "codeSnippet": "AppDrawer(\n    drawerState = TODO(\"DrawerState\"),\n    currentTopLevelKey = TODO(\"NavKey\"),\n    navigate = TODO(\"(NavKey) -> Unit\"),\n    navigationItems = TODO(\"List<NavigationItem>\"),\n    closeDrawer = TODO(\"() -> Unit\"),\n)",
+      "imports": [
+        "import com.example.jetnews.ui.AppDrawer"
+      ],
+      "parameters": [
+        {
+          "name": "drawerState",
+          "type": "DrawerState",
+          "typeFqn": "androidx.compose.material3.DrawerState",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "currentTopLevelKey",
+          "type": "NavKey",
+          "typeFqn": "androidx.navigation3.runtime.NavKey",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "navigate",
+          "type": "(NavKey) -> Unit",
+          "typeFqn": "kotlin.Function1",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "navigationItems",
+          "type": "List<NavigationItem>",
+          "typeFqn": "kotlin.collections.List",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "closeDrawer",
+          "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ]
     },
     {
       "componentId": "Navigation/Rail",
       "figmaLayerName": "Navigation/Rail",
-      "componentName": "PreviewAppNavRail",
+      "componentName": "AppNavRail",
       "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetnews/ui/components/AppNavRail.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "PreviewAppNavRail",
-      "figmaSvg": "figma/navigation-rail.svg"
+      "codeSnippet": "AppNavRail(\n    currentTopLevelKey = TODO(\"NavKey\"),\n    navigate = TODO(\"(NavKey) -> Unit\"),\n    navigationItems = TODO(\"List<NavigationItem>\"),\n)",
+      "imports": [
+        "import com.example.jetnews.ui.components.AppNavRail"
+      ],
+      "parameters": [
+        {
+          "name": "currentTopLevelKey",
+          "type": "NavKey",
+          "typeFqn": "androidx.navigation3.runtime.NavKey",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "navigate",
+          "type": "(NavKey) -> Unit",
+          "typeFqn": "kotlin.Function1",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "navigationItems",
+          "type": "List<NavigationItem>",
+          "typeFqn": "kotlin.collections.List",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ]
     },
     {
       "componentId": "Reader/Article body",
       "figmaLayerName": "Reader/Article body",
-      "componentName": "PreviewPost",
+      "componentName": "PostContent",
       "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetnews/ui/post/PostContent.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "PreviewPost",
-      "figmaSvg": "figma/reader-article-body.svg"
+      "codeSnippet": "PostContent(\n    post = TODO(\"Post\"),\n)",
+      "imports": [
+        "import com.example.jetnews.ui.post.PostContent"
+      ],
+      "parameters": [
+        {
+          "name": "post",
+          "type": "Post",
+          "typeFqn": "com.example.jetnews.model.Post",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "contentPadding",
+          "type": "PaddingValues",
+          "typeFqn": "androidx.compose.foundation.layout.PaddingValues",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "state",
+          "type": "LazyListState",
+          "typeFqn": "androidx.compose.foundation.lazy.LazyListState",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ]
     },
     {
       "componentId": "Interests/Screen",
       "figmaLayerName": "Interests/Screen",
-      "componentName": "PreviewInterestsScreenDrawer",
+      "componentName": "InterestsScreen",
       "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetnews/ui/interests/InterestsScreen.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "PreviewInterestsScreenDrawer",
-      "figmaSvg": "figma/interests-screen.svg"
+      "codeSnippet": "InterestsScreen(\n    interestsViewModel = TODO(\"InterestsViewModel\"),\n    isExpandedScreen = TODO(\"Boolean\"),\n    openDrawer = TODO(\"() -> Unit\"),\n)",
+      "imports": [
+        "import com.example.jetnews.ui.interests.InterestsScreen"
+      ],
+      "parameters": [
+        {
+          "name": "interestsViewModel",
+          "type": "InterestsViewModel",
+          "typeFqn": "com.example.jetnews.ui.interests.InterestsViewModel",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "isExpandedScreen",
+          "type": "Boolean",
+          "typeFqn": "kotlin.Boolean",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "openDrawer",
+          "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "snackbarHostState",
+          "type": "SnackbarHostState",
+          "typeFqn": "androidx.compose.material3.SnackbarHostState",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ]
     },
     {
       "componentId": "PostCard/Top",
       "figmaLayerName": "PostCard/Top",
-      "componentName": "PostCardTopPreview",
+      "componentName": "PostCardTop",
       "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetnews/ui/home/PostCardTop.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "PostCardTopPreview",
-      "figmaSvg": "figma/postcard-top.svg"
+      "codeSnippet": "PostCardTop(\n    post = TODO(\"Post\"),\n)",
+      "imports": [
+        "import com.example.jetnews.ui.home.PostCardTop"
+      ],
+      "parameters": [
+        {
+          "name": "post",
+          "type": "Post",
+          "typeFqn": "com.example.jetnews.model.Post",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ]
     },
     {
       "componentId": "PostCard/Simple",
       "figmaLayerName": "PostCard/Simple",
-      "componentName": "SimplePostPreview",
+      "componentName": "PostCardSimple",
       "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetnews/ui/home/PostCards.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "SimplePostPreview",
-      "figmaSvg": "figma/postcard-simple.svg"
+      "codeSnippet": "PostCardSimple(\n    post = TODO(\"Post\"),\n    navigateToPost = TODO(\"(String) -> Unit\"),\n    isFavorite = TODO(\"Boolean\"),\n    onToggleFavorite = TODO(\"() -> Unit\"),\n)",
+      "imports": [
+        "import com.example.jetnews.ui.home.PostCardSimple"
+      ],
+      "parameters": [
+        {
+          "name": "post",
+          "type": "Post",
+          "typeFqn": "com.example.jetnews.model.Post",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "navigateToPost",
+          "type": "(String) -> Unit",
+          "typeFqn": "kotlin.Function1",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "isFavorite",
+          "type": "Boolean",
+          "typeFqn": "kotlin.Boolean",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "onToggleFavorite",
+          "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        }
+      ]
     },
     {
       "componentId": "PostCard/History",
       "figmaLayerName": "PostCard/History",
-      "componentName": "HistoryPostPreview",
+      "componentName": "PostCardHistory",
       "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetnews/ui/home/PostCards.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "HistoryPostPreview",
-      "figmaSvg": "figma/postcard-history.svg"
+      "codeSnippet": "PostCardHistory(\n    post = TODO(\"Post\"),\n    navigateToPost = TODO(\"(String) -> Unit\"),\n)",
+      "imports": [
+        "import com.example.jetnews.ui.home.PostCardHistory"
+      ],
+      "parameters": [
+        {
+          "name": "post",
+          "type": "Post",
+          "typeFqn": "com.example.jetnews.model.Post",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "navigateToPost",
+          "type": "(String) -> Unit",
+          "typeFqn": "kotlin.Function1",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "initialDialogOpen",
+          "type": "Boolean",
+          "typeFqn": "kotlin.Boolean",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ]
     },
     {
       "componentId": "PostCard/Popular",
       "figmaLayerName": "PostCard/Popular",
-      "componentName": "PopularPostCardCatalogPreview",
-      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetnews/catalog/JetnewsAnimationPreviews.kt",
+      "componentName": "PostCardPopular",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetnews/ui/home/PostCardYourNetwork.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "PopularPostCardCatalogPreview",
-      "figmaSvg": "figma/postcard-popular.svg"
+      "codeSnippet": "PostCardPopular(\n    post = TODO(\"Post\"),\n    navigateToPost = TODO(\"(String) -> Unit\"),\n)",
+      "imports": [
+        "import com.example.jetnews.ui.home.PostCardPopular"
+      ],
+      "parameters": [
+        {
+          "name": "post",
+          "type": "Post",
+          "typeFqn": "com.example.jetnews.model.Post",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "navigateToPost",
+          "type": "(String) -> Unit",
+          "typeFqn": "kotlin.Function1",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ]
     },
     {
       "componentId": "Bookmark/Button",
       "figmaLayerName": "Bookmark/Button",
-      "componentName": "BookmarkButtonPreview",
-      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetnews/ui/home/PostCards.kt",
+      "componentName": "BookmarkButton",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetnews/ui/utils/JetnewsIcons.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "BookmarkButtonPreview",
-      "figmaSvg": "figma/bookmark-button.svg"
+      "codeSnippet": "BookmarkButton(\n    isBookmarked = TODO(\"Boolean\"),\n    onClick = TODO(\"() -> Unit\"),\n)",
+      "imports": [
+        "import com.example.jetnews.ui.utils.BookmarkButton"
+      ],
+      "parameters": [
+        {
+          "name": "isBookmarked",
+          "type": "Boolean",
+          "typeFqn": "kotlin.Boolean",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "onClick",
+          "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ]
     },
     {
       "componentId": "Interests/Topics tab",
@@ -239,7 +886,7 @@
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "PreviewTopicsTab",
-      "codeSnippet": "TabWithSections(\n    sections = TODO(\"List<InterestSection>\"),\n    selectedTopics = TODO(\"Set<TopicSelection>\"),\n    onTopicSelect = { },\n)",
+      "codeSnippet": "TabWithSections(\n    sections = TODO(\"List<InterestSection>\"),\n    selectedTopics = TODO(\"Set<TopicSelection>\"),\n    onTopicSelect = TODO(\"(TopicSelection) -> Unit\"),\n)",
       "imports": [
         "import com.example.jetnews.ui.interests.TabWithSections"
       ],
@@ -247,23 +894,43 @@
         {
           "name": "sections",
           "type": "List<InterestSection>",
+          "typeFqn": "kotlin.collections.List",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "selectedTopics",
           "type": "Set<TopicSelection>",
+          "typeFqn": "kotlin.collections.Set",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "onTopicSelect",
           "type": "(TopicSelection) -> Unit",
+          "typeFqn": "kotlin.Function1",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
         }
-      ],
-      "figmaSvg": "figma/interests-topics-tab.svg"
+      ]
     },
     {
       "componentId": "Interests/People and publications tab",
@@ -273,7 +940,7 @@
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "PreviewPeopleTab",
-      "codeSnippet": "TabWithTopics(\n    topics = TODO(\"List<String>\"),\n    selectedTopics = TODO(\"Set<String>\"),\n    onTopicSelect = { },\n)",
+      "codeSnippet": "TabWithTopics(\n    topics = TODO(\"List<String>\"),\n    selectedTopics = TODO(\"Set<String>\"),\n    onTopicSelect = TODO(\"(String) -> Unit\"),\n)",
       "imports": [
         "import com.example.jetnews.ui.interests.TabWithTopics"
       ],
@@ -281,23 +948,43 @@
         {
           "name": "topics",
           "type": "List<String>",
+          "typeFqn": "kotlin.collections.List",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "selectedTopics",
           "type": "Set<String>",
+          "typeFqn": "kotlin.collections.Set",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "onTopicSelect",
           "type": "(String) -> Unit",
+          "typeFqn": "kotlin.Function1",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
         }
-      ],
-      "figmaSvg": "figma/interests-people-and-publications-tab.svg"
+      ]
     },
     {
       "componentId": "Interests/Select topic",
@@ -315,11 +1002,17 @@
         {
           "name": "selected",
           "type": "Boolean",
+          "typeFqn": "kotlin.Boolean",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         }
-      ],
-      "figmaSvg": "figma/interests-select-topic.svg"
+      ]
     }
   ]
 }

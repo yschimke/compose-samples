@@ -52,6 +52,12 @@
   .shot--framed { overflow:hidden; padding:0; min-height:0; position:relative; place-items:stretch;
     margin:16px auto; border-radius:8px; max-width:100%; }
   .shot--framed img { position:absolute; max-width:none; max-height:none; }
+  /* A gutter window shows the component at its siblings' size and lets the shadow it holds spill
+     past the box — so it must not clip, and the card must not either, or the spill dies at the card
+     edge. AFTER the .shot--framed rule on purpose: same specificity, so the later one is what
+     wins, and a bleeding shot always carries both classes. */
+  .shot--bleed { overflow:visible; }
+  .card:has(.shot--bleed) { overflow:visible; }
   .shot--missing { color:var(--muted); font-style:italic; }
   .card--failed { border-color:#7d4148; }
   .shot--failed { color:#f1b5b9; background:#26191b; text-align:center; display:flex; flex-direction:column; gap:6px; }
@@ -104,8 +110,8 @@
 <body>
 <header class="top">
   <h1>JetNews</h1>
-  <div class="subtitle">system <code>jetnews</code> · androidx.compose.material3:material3, androidx.compose.material3.adaptive:adaptive, androidx.navigation3:navigation3 · rendered by compose-preview 1.15.0 · 2026-08-18T22:49:17.304Z · 15 components</div>
-  <div class="subtitle"><a class="pagelink" href="compare.html">PNG vs SVG compare ↗</a></div>
+  <div class="subtitle">system <code>jetnews</code> · androidx.compose.material3:material3, androidx.compose.material3.adaptive:adaptive, androidx.navigation3:navigation3 · rendered by compose-preview 2.39.2 · 2026-10-10T09:40:22.891Z · 15 components</div>
+  <div class="subtitle"><a class="pagelink" href="compare.html">SVG vs PNG compare ↗</a></div>
 </header>
 
 <div class="layout">
@@ -134,7 +140,7 @@
   <a class="shot" href="#d-screens-home-feed" aria-label="Zoom Screens/Home feed"><img loading="lazy" src="images/screens-home-feed/ideal__default__dark.png" alt="Screens/Home feed" /></a>
   <div class="meta">
     <h3><a class="ctitle" href="#d-screens-home-feed">Screens/Home feed</a></h3>
-    <div class="sub">1050×2100<a class="statechip" href="#d-screens-home-feed">+8 variants</a><a class="wf" href="wireframes/screens-home-feed.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/screens-home-feed.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="sub">1050×2100<a class="statechip" href="#d-screens-home-feed">+8 variants</a><a class="wf" href="wireframes/screens-home-feed.svg" target="_blank" rel="noopener">wireframe ↗</a></div>
     <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span></div>
   </div>
 </article>
@@ -142,7 +148,7 @@
   <a class="shot" href="#d-screens-app-shell" aria-label="Zoom Screens/App shell"><img loading="lazy" src="images/screens-app-shell/ideal__default__compact.png" alt="Screens/App shell" /></a>
   <div class="meta">
     <h3><a class="ctitle" href="#d-screens-app-shell">Screens/App shell</a></h3>
-    <div class="sub">1082×2363<a class="statechip" href="#d-screens-app-shell">+1 variant</a><a class="wf" href="wireframes/screens-app-shell.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/screens-app-shell.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="sub">1082×2363<a class="statechip" href="#d-screens-app-shell">+1 variant</a><a class="wf" href="wireframes/screens-app-shell.svg" target="_blank" rel="noopener">wireframe ↗</a></div>
     <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">tab</span><span class="chip chip--info">tab</span></div>
   </div>
 </article>
@@ -150,7 +156,7 @@
   <a class="shot" href="#d-screens-article" aria-label="Zoom Screens/Article"><img loading="lazy" src="images/screens-article/ideal__default__dark.png" alt="Screens/Article" /></a>
   <div class="meta">
     <h3><a class="ctitle" href="#d-screens-article">Screens/Article</a></h3>
-    <div class="sub">1050×2100<a class="statechip" href="#d-screens-article">+6 variants</a><a class="wf" href="wireframes/screens-article.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/screens-article.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="sub">1050×2100<a class="statechip" href="#d-screens-article">+6 variants</a><a class="wf" href="wireframes/screens-article.svg" target="_blank" rel="noopener">wireframe ↗</a></div>
     <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">checkbox</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span></div>
   </div>
 </article></div>
@@ -161,7 +167,7 @@
   <a class="shot" href="#d-navigation-drawer" aria-label="Zoom Navigation/Drawer"><img loading="lazy" src="images/navigation-drawer/ideal__default__dark.png" alt="Navigation/Drawer" /></a>
   <div class="meta">
     <h3><a class="ctitle" href="#d-navigation-drawer">Navigation/Drawer</a></h3>
-    <div class="sub">945×2100<a class="statechip" href="#d-navigation-drawer">+1 state</a><a class="wf" href="wireframes/navigation-drawer.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/navigation-drawer.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="sub">945×2100<a class="statechip" href="#d-navigation-drawer">+1 state</a><a class="wf" href="wireframes/navigation-drawer.svg" target="_blank" rel="noopener">wireframe ↗</a></div>
     <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">tab</span><span class="chip chip--info">tab</span></div>
   </div>
 </article>
@@ -169,7 +175,7 @@
   <a class="shot" href="#d-navigation-rail" aria-label="Zoom Navigation/Rail"><img loading="lazy" src="images/navigation-rail/ideal__default__dark.png" alt="Navigation/Rail" /></a>
   <div class="meta">
     <h3><a class="ctitle" href="#d-navigation-rail">Navigation/Rail</a></h3>
-    <div class="sub">210×2100<a class="statechip" href="#d-navigation-rail">+1 state</a><a class="wf" href="wireframes/navigation-rail.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/navigation-rail.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="sub">210×2100<a class="statechip" href="#d-navigation-rail">+1 state</a><a class="wf" href="wireframes/navigation-rail.svg" target="_blank" rel="noopener">wireframe ↗</a></div>
     <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">tab</span><span class="chip chip--info">tab</span></div>
   </div>
 </article></div>
@@ -180,7 +186,7 @@
   <a class="shot" href="#d-reader-article-body" aria-label="Zoom Reader/Article body"><img loading="lazy" src="images/reader-article-body/ideal__default__dark.png" alt="Reader/Article body" /></a>
   <div class="meta">
     <h3><a class="ctitle" href="#d-reader-article-body">Reader/Article body</a></h3>
-    <div class="sub">1050×2100<a class="wf" href="wireframes/reader-article-body.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/reader-article-body.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="sub">1050×2100<a class="wf" href="wireframes/reader-article-body.svg" target="_blank" rel="noopener">wireframe ↗</a></div>
     
   </div>
 </article></div>
@@ -191,7 +197,7 @@
   <a class="shot" href="#d-interests-screen" aria-label="Zoom Interests/Screen"><img loading="lazy" src="images/interests-screen/ideal__default__dark.png" alt="Interests/Screen" /></a>
   <div class="meta">
     <h3><a class="ctitle" href="#d-interests-screen">Interests/Screen</a></h3>
-    <div class="sub">1050×2100<a class="statechip" href="#d-interests-screen">+3 variants</a><a class="wf" href="wireframes/interests-screen.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/interests-screen.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="sub">1050×2100<a class="statechip" href="#d-interests-screen">+3 variants</a><a class="wf" href="wireframes/interests-screen.svg" target="_blank" rel="noopener">wireframe ↗</a></div>
     <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">tab</span><span class="chip chip--info">tab</span><span class="chip chip--info">tab</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span></div>
   </div>
 </article></div>
@@ -202,7 +208,7 @@
   <a class="shot" href="#d-postcard-top" aria-label="Zoom PostCard/Top"><img loading="lazy" src="images/postcard-top/ideal__default__dark__compact.png" alt="PostCard/Top" /></a>
   <div class="meta">
     <h3><a class="ctitle" href="#d-postcard-top">PostCard/Top</a></h3>
-    <div class="sub">1082×874<a class="statechip" href="#d-postcard-top">+2 variants</a><a class="wf" href="wireframes/postcard-top.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/postcard-top.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="sub">1082×874<a class="statechip" href="#d-postcard-top">+2 variants</a><a class="wf" href="wireframes/postcard-top.svg" target="_blank" rel="noopener">wireframe ↗</a></div>
     
   </div>
 </article>
@@ -210,7 +216,7 @@
   <a class="shot" href="#d-postcard-simple" aria-label="Zoom PostCard/Simple"><img loading="lazy" src="images/postcard-simple/ideal__default__dark.png" alt="PostCard/Simple" /></a>
   <div class="meta">
     <h3><a class="ctitle" href="#d-postcard-simple">PostCard/Simple</a></h3>
-    <div class="sub">1050×294<a class="statechip" href="#d-postcard-simple">+1 state</a><a class="wf" href="wireframes/postcard-simple.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/postcard-simple.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="sub">1050×294<a class="statechip" href="#d-postcard-simple">+1 state</a><a class="wf" href="wireframes/postcard-simple.svg" target="_blank" rel="noopener">wireframe ↗</a></div>
     
   </div>
 </article>
@@ -218,7 +224,7 @@
   <a class="shot" href="#d-postcard-history" aria-label="Zoom PostCard/History"><img loading="lazy" src="images/postcard-history/ideal__default__dark.png" alt="PostCard/History" /></a>
   <div class="meta">
     <h3><a class="ctitle" href="#d-postcard-history">PostCard/History</a></h3>
-    <div class="sub">1050×359<a class="statechip" href="#d-postcard-history">+1 state</a><a class="wf" href="wireframes/postcard-history.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/postcard-history.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="sub">1050×359<a class="statechip" href="#d-postcard-history">+1 state</a><a class="wf" href="wireframes/postcard-history.svg" target="_blank" rel="noopener">wireframe ↗</a></div>
     <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">button</span></div>
   </div>
 </article>
@@ -226,7 +232,7 @@
   <a class="shot" href="#d-postcard-popular" aria-label="Zoom PostCard/Popular"><img loading="lazy" src="images/postcard-popular/ideal__default__dark.png" alt="PostCard/Popular" /></a>
   <div class="meta">
     <h3><a class="ctitle" href="#d-postcard-popular">PostCard/Popular</a></h3>
-    <div class="sub">735×2100<a class="statechip" href="#d-postcard-popular">+1 variant</a><a class="wf" href="wireframes/postcard-popular.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/postcard-popular.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="sub">735×2100<a class="statechip" href="#d-postcard-popular">+1 variant</a><a class="wf" href="wireframes/postcard-popular.svg" target="_blank" rel="noopener">wireframe ↗</a></div>
     
   </div>
 </article>
@@ -234,7 +240,7 @@
   <a class="shot" href="#d-bookmark-button" aria-label="Zoom Bookmark/Button"><img loading="lazy" src="images/bookmark-button/ideal__default.png" alt="Bookmark/Button" /></a>
   <div class="meta">
     <h3><a class="ctitle" href="#d-bookmark-button">Bookmark/Button</a></h3>
-    <div class="sub">126×126<a class="statechip" href="#d-bookmark-button">+1 state</a><a class="wf" href="wireframes/bookmark-button.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/bookmark-button.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="sub">126×126<a class="statechip" href="#d-bookmark-button">+1 state</a><a class="wf" href="wireframes/bookmark-button.svg" target="_blank" rel="noopener">wireframe ↗</a></div>
     <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">checkbox</span></div>
   </div>
 </article></div>
@@ -245,7 +251,7 @@
   <a class="shot" href="#d-interests-topics-tab" aria-label="Zoom Interests/Topics tab"><img loading="lazy" src="images/interests-topics-tab/ideal__default__dark.png" alt="Interests/Topics tab" /></a>
   <div class="meta">
     <h3><a class="ctitle" href="#d-interests-topics-tab">Interests/Topics tab</a></h3>
-    <div class="sub">1050×2100<a class="statechip" href="#d-interests-topics-tab">+1 state</a><a class="wf" href="wireframes/interests-topics-tab.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/interests-topics-tab.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="sub">1050×2100<a class="statechip" href="#d-interests-topics-tab">+1 state</a><a class="wf" href="wireframes/interests-topics-tab.svg" target="_blank" rel="noopener">wireframe ↗</a></div>
     
   </div>
 </article>
@@ -253,7 +259,7 @@
   <a class="shot" href="#d-interests-people-and-publications-tab" aria-label="Zoom Interests/People and publications tab"><img loading="lazy" src="images/interests-people-and-publications-tab/ideal__default__dark.png" alt="Interests/People and publications tab" /></a>
   <div class="meta">
     <h3><a class="ctitle" href="#d-interests-people-and-publications-tab">Interests/People and publications tab</a></h3>
-    <div class="sub">1050×1770<a class="statechip" href="#d-interests-people-and-publications-tab">+2 variants</a><a class="wf" href="wireframes/interests-people-and-publications-tab.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/interests-people-and-publications-tab.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="sub">1050×1770<a class="statechip" href="#d-interests-people-and-publications-tab">+2 variants</a><a class="wf" href="wireframes/interests-people-and-publications-tab.svg" target="_blank" rel="noopener">wireframe ↗</a></div>
     
   </div>
 </article>
@@ -261,7 +267,7 @@
   <a class="shot" href="#d-interests-select-topic" aria-label="Zoom Interests/Select topic"><img loading="lazy" src="images/interests-select-topic/ideal__default__dark.png" alt="Interests/Select topic" /></a>
   <div class="meta">
     <h3><a class="ctitle" href="#d-interests-select-topic">Interests/Select topic</a></h3>
-    <div class="sub">263×263<a class="statechip" href="#d-interests-select-topic">+1 state</a><a class="wf" href="wireframes/interests-select-topic.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf" href="figma/interests-select-topic.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="sub">263×263<a class="statechip" href="#d-interests-select-topic">+1 state</a><a class="wf" href="wireframes/interests-select-topic.svg" target="_blank" rel="noopener">wireframe ↗</a></div>
     
   </div>
 </article></div>
@@ -273,7 +279,7 @@
     <a class="detail-x" href="#c-screens-home-feed" aria-label="Close">×</a>
     <h3>Screens/Home feed</h3>
     <div class="detail-caption">Home feed in the compact posture — navigation lives behind a modal drawer.</div>
-    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/screens-home-feed/ideal__default__dark.png" alt="Screens/Home feed default" /><span>dark</span></div><div class="state-shot"><img loading="lazy" src="images/screens-home-feed/ideal__default.png" alt="Screens/Home feed default" /><span>default</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/screens-home-feed/ideal__default__light.png" alt="Screens/Home feed default" /><span>light</span></div></div></figure><figure class="state"><figcaption>fontScale=1.5</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/screens-home-feed/ideal__default__compact__fontscale-1.5.png" alt="Screens/Home feed fontScale=1.5" /><span>compact</span></div></div></figure><figure class="state"><figcaption>fontScale=1.5, posture=expanded</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/screens-home-feed/ideal__default__medium__fontscale-1.5__posture-expanded.png" alt="Screens/Home feed fontScale=1.5, posture=expanded" /><span>medium</span></div></div></figure><figure class="state"><figcaption>posture=expanded</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/screens-home-feed/ideal__default__dark__compact__posture-expanded.png" alt="Screens/Home feed posture=expanded" /><span>dark</span></div><div class="state-shot"><img loading="lazy" src="images/screens-home-feed/ideal__default__compact__posture-expanded.png" alt="Screens/Home feed posture=expanded" /><span>compact</span></div></div></figure><figure class="state"><figcaption>selected</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/screens-home-feed/ideal__selected__dark.png" alt="Screens/Home feed selected" /><span>dark</span></div><div class="state-shot"><img loading="lazy" src="images/screens-home-feed/ideal__selected.png" alt="Screens/Home feed selected" /><span>selected</span></div></div></figure><figure class="state"><figcaption>loading</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/screens-home-feed/ideal__loading__dark.png" alt="Screens/Home feed loading" /><span>dark</span></div><div class="state-shot"><img loading="lazy" src="images/screens-home-feed/ideal__loading.png" alt="Screens/Home feed loading" /><span>loading</span></div></div></figure><figure class="state"><figcaption>empty</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/screens-home-feed/ideal__empty__dark.png" alt="Screens/Home feed empty" /><span>dark</span></div><div class="state-shot"><img loading="lazy" src="images/screens-home-feed/ideal__empty.png" alt="Screens/Home feed empty" /><span>empty</span></div></div></figure><figure class="state"><figcaption>error</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/screens-home-feed/ideal__error.png" alt="Screens/Home feed error" /><span>error</span></div></div></figure><figure class="state"><figcaption>posture=medium</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/screens-home-feed/ideal__default__medium__posture-medium.png" alt="Screens/Home feed posture=medium" /><span>medium</span></div></div></figure></div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/screens-home-feed/ideal__default__dark.png" alt="Screens/Home feed default" /><span>dark</span></div><div class="state-shot"><img loading="lazy" src="images/screens-home-feed/ideal__default.png" alt="Screens/Home feed default" /><span>default</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/screens-home-feed/ideal__default__light.png" alt="Screens/Home feed default" /><span>light</span></div></div></figure><figure class="state"><figcaption>fontScale=1.5</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/screens-home-feed/ideal__default__compact__fontscale-1.5.png" alt="Screens/Home feed fontScale=1.5" /><span>compact</span></div></div></figure><figure class="state"><figcaption>posture=expanded</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/screens-home-feed/ideal__default__compact__posture-expanded.png" alt="Screens/Home feed posture=expanded" /><span>compact</span></div><div class="state-shot"><img loading="lazy" src="images/screens-home-feed/ideal__default__dark__compact__posture-expanded.png" alt="Screens/Home feed posture=expanded" /><span>dark</span></div></div></figure><figure class="state"><figcaption>fontScale=1.5, posture=expanded</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/screens-home-feed/ideal__default__medium__fontscale-1.5__posture-expanded.png" alt="Screens/Home feed fontScale=1.5, posture=expanded" /><span>medium</span></div></div></figure><figure class="state"><figcaption>selected</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/screens-home-feed/ideal__selected.png" alt="Screens/Home feed selected" /><span>selected</span></div><div class="state-shot"><img loading="lazy" src="images/screens-home-feed/ideal__selected__dark.png" alt="Screens/Home feed selected" /><span>dark</span></div></div></figure><figure class="state"><figcaption>loading</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/screens-home-feed/ideal__loading.png" alt="Screens/Home feed loading" /><span>loading</span></div><div class="state-shot"><img loading="lazy" src="images/screens-home-feed/ideal__loading__dark.png" alt="Screens/Home feed loading" /><span>dark</span></div></div></figure><figure class="state"><figcaption>empty</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/screens-home-feed/ideal__empty.png" alt="Screens/Home feed empty" /><span>empty</span></div><div class="state-shot"><img loading="lazy" src="images/screens-home-feed/ideal__empty__dark.png" alt="Screens/Home feed empty" /><span>dark</span></div></div></figure><figure class="state"><figcaption>error</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/screens-home-feed/ideal__error.png" alt="Screens/Home feed error" /><span>error</span></div></div></figure><figure class="state"><figcaption>posture=medium</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/screens-home-feed/ideal__default__medium__posture-medium.png" alt="Screens/Home feed posture=medium" /><span>medium</span></div></div></figure></div>
   </div>
 </div>
 <div class="detail" id="d-screens-app-shell" role="dialog" aria-label="Screens/App shell">
@@ -291,7 +297,7 @@
     <a class="detail-x" href="#c-screens-article" aria-label="Close">×</a>
     <h3>Screens/Article</h3>
     <div class="detail-caption">Article screen, compact posture.</div>
-    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/screens-article/ideal__default__dark.png" alt="Screens/Article default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/screens-article/ideal__default__light.png" alt="Screens/Article default" /><span>light</span></div><div class="state-shot"><img loading="lazy" src="images/screens-article/ideal__default.png" alt="Screens/Article default" /><span>default</span></div></div></figure><figure class="state"><figcaption>fontScale=1.5</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/screens-article/ideal__default__compact__fontscale-1.5.png" alt="Screens/Article fontScale=1.5" /><span>compact</span></div></div></figure><figure class="state"><figcaption>fontScale=1.5, posture=expanded</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/screens-article/ideal__default__medium__fontscale-1.5__posture-expanded.png" alt="Screens/Article fontScale=1.5, posture=expanded" /><span>medium</span></div></div></figure><figure class="state"><figcaption>posture=expanded</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/screens-article/ideal__default__dark__expanded__posture-expanded.png" alt="Screens/Article posture=expanded" /><span>dark</span></div><div class="state-shot"><img loading="lazy" src="images/screens-article/ideal__default__expanded__posture-expanded.png" alt="Screens/Article posture=expanded" /><span>expanded</span></div></div></figure><figure class="state"><figcaption>selected</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/screens-article/ideal__selected__dark.png" alt="Screens/Article selected" /><span>dark</span></div><div class="state-shot"><img loading="lazy" src="images/screens-article/ideal__selected.png" alt="Screens/Article selected" /><span>selected</span></div></div></figure><figure class="state"><figcaption>loading</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/screens-article/ideal__loading.png" alt="Screens/Article loading" /><span>loading</span></div></div></figure><figure class="state"><figcaption>error</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/screens-article/ideal__error.png" alt="Screens/Article error" /><span>error</span></div></div></figure></div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/screens-article/ideal__default__dark.png" alt="Screens/Article default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/screens-article/ideal__default__light.png" alt="Screens/Article default" /><span>light</span></div><div class="state-shot"><img loading="lazy" src="images/screens-article/ideal__default.png" alt="Screens/Article default" /><span>default</span></div></div></figure><figure class="state"><figcaption>fontScale=1.5</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/screens-article/ideal__default__compact__fontscale-1.5.png" alt="Screens/Article fontScale=1.5" /><span>compact</span></div></div></figure><figure class="state"><figcaption>posture=expanded</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/screens-article/ideal__default__expanded__posture-expanded.png" alt="Screens/Article posture=expanded" /><span>expanded</span></div><div class="state-shot"><img loading="lazy" src="images/screens-article/ideal__default__dark__expanded__posture-expanded.png" alt="Screens/Article posture=expanded" /><span>dark</span></div></div></figure><figure class="state"><figcaption>fontScale=1.5, posture=expanded</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/screens-article/ideal__default__medium__fontscale-1.5__posture-expanded.png" alt="Screens/Article fontScale=1.5, posture=expanded" /><span>medium</span></div></div></figure><figure class="state"><figcaption>selected</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/screens-article/ideal__selected.png" alt="Screens/Article selected" /><span>selected</span></div><div class="state-shot"><img loading="lazy" src="images/screens-article/ideal__selected__dark.png" alt="Screens/Article selected" /><span>dark</span></div></div></figure><figure class="state"><figcaption>loading</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/screens-article/ideal__loading.png" alt="Screens/Article loading" /><span>loading</span></div></div></figure><figure class="state"><figcaption>error</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/screens-article/ideal__error.png" alt="Screens/Article error" /><span>error</span></div></div></figure></div>
   </div>
 </div>
 <div class="detail" id="d-navigation-drawer" role="dialog" aria-label="Navigation/Drawer">
@@ -300,7 +306,7 @@
     <a class="detail-x" href="#c-navigation-drawer" aria-label="Close">×</a>
     <h3>Navigation/Drawer</h3>
     <div class="detail-caption">Modal navigation drawer — the compact-width navigation surface, Home active.</div>
-    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/navigation-drawer/ideal__default__dark.png" alt="Navigation/Drawer default" /><span>dark</span></div><div class="state-shot"><img loading="lazy" src="images/navigation-drawer/ideal__default.png" alt="Navigation/Drawer default" /><span>default</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/navigation-drawer/ideal__default__light.png" alt="Navigation/Drawer default" /><span>light</span></div></div></figure><figure class="state"><figcaption>selected</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/navigation-drawer/ideal__selected__dark.png" alt="Navigation/Drawer selected" /><span>dark</span></div><div class="state-shot"><img loading="lazy" src="images/navigation-drawer/ideal__selected.png" alt="Navigation/Drawer selected" /><span>selected</span></div></div></figure></div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/navigation-drawer/ideal__default__dark.png" alt="Navigation/Drawer default" /><span>dark</span></div><div class="state-shot"><img loading="lazy" src="images/navigation-drawer/ideal__default.png" alt="Navigation/Drawer default" /><span>default</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/navigation-drawer/ideal__default__light.png" alt="Navigation/Drawer default" /><span>light</span></div></div></figure><figure class="state"><figcaption>selected</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/navigation-drawer/ideal__selected.png" alt="Navigation/Drawer selected" /><span>selected</span></div><div class="state-shot"><img loading="lazy" src="images/navigation-drawer/ideal__selected__dark.png" alt="Navigation/Drawer selected" /><span>dark</span></div></div></figure></div>
   </div>
 </div>
 <div class="detail" id="d-navigation-rail" role="dialog" aria-label="Navigation/Rail">
@@ -309,7 +315,7 @@
     <a class="detail-x" href="#c-navigation-rail" aria-label="Close">×</a>
     <h3>Navigation/Rail</h3>
     <div class="detail-caption">Navigation rail — the same destinations at expanded width, Home active.</div>
-    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/navigation-rail/ideal__default__dark.png" alt="Navigation/Rail default" /><span>dark</span></div><div class="state-shot"><img loading="lazy" src="images/navigation-rail/ideal__default.png" alt="Navigation/Rail default" /><span>default</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/navigation-rail/ideal__default__light.png" alt="Navigation/Rail default" /><span>light</span></div></div></figure><figure class="state"><figcaption>selected</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/navigation-rail/ideal__selected__dark.png" alt="Navigation/Rail selected" /><span>dark</span></div><div class="state-shot"><img loading="lazy" src="images/navigation-rail/ideal__selected.png" alt="Navigation/Rail selected" /><span>selected</span></div></div></figure></div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/navigation-rail/ideal__default__dark.png" alt="Navigation/Rail default" /><span>dark</span></div><div class="state-shot"><img loading="lazy" src="images/navigation-rail/ideal__default.png" alt="Navigation/Rail default" /><span>default</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/navigation-rail/ideal__default__light.png" alt="Navigation/Rail default" /><span>light</span></div></div></figure><figure class="state"><figcaption>selected</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/navigation-rail/ideal__selected.png" alt="Navigation/Rail selected" /><span>selected</span></div><div class="state-shot"><img loading="lazy" src="images/navigation-rail/ideal__selected__dark.png" alt="Navigation/Rail selected" /><span>dark</span></div></div></figure></div>
   </div>
 </div>
 <div class="detail" id="d-reader-article-body" role="dialog" aria-label="Reader/Article body">
@@ -327,7 +333,7 @@
     <a class="detail-x" href="#c-interests-screen" aria-label="Close">×</a>
     <h3>Interests/Screen</h3>
     <div class="detail-caption">Interests screen with tabbed sections, compact posture.</div>
-    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/interests-screen/ideal__default__dark.png" alt="Interests/Screen default" /><span>dark</span></div><div class="state-shot"><img loading="lazy" src="images/interests-screen/ideal__default.png" alt="Interests/Screen default" /><span>default</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/interests-screen/ideal__default__light.png" alt="Interests/Screen default" /><span>light</span></div></div></figure><figure class="state"><figcaption>fontScale=1.5</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/interests-screen/ideal__default__compact__fontscale-1.5.png" alt="Interests/Screen fontScale=1.5" /><span>compact</span></div></div></figure><figure class="state"><figcaption>fontScale=1.5, posture=expanded</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/interests-screen/ideal__default__medium__fontscale-1.5__posture-expanded.png" alt="Interests/Screen fontScale=1.5, posture=expanded" /><span>medium</span></div></div></figure><figure class="state"><figcaption>posture=expanded</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/interests-screen/ideal__default__dark__expanded__posture-expanded.png" alt="Interests/Screen posture=expanded" /><span>dark</span></div><div class="state-shot"><img loading="lazy" src="images/interests-screen/ideal__default__expanded__posture-expanded.png" alt="Interests/Screen posture=expanded" /><span>expanded</span></div></div></figure></div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/interests-screen/ideal__default__dark.png" alt="Interests/Screen default" /><span>dark</span></div><div class="state-shot"><img loading="lazy" src="images/interests-screen/ideal__default.png" alt="Interests/Screen default" /><span>default</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/interests-screen/ideal__default__light.png" alt="Interests/Screen default" /><span>light</span></div></div></figure><figure class="state"><figcaption>fontScale=1.5</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/interests-screen/ideal__default__compact__fontscale-1.5.png" alt="Interests/Screen fontScale=1.5" /><span>compact</span></div></div></figure><figure class="state"><figcaption>posture=expanded</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/interests-screen/ideal__default__expanded__posture-expanded.png" alt="Interests/Screen posture=expanded" /><span>expanded</span></div><div class="state-shot"><img loading="lazy" src="images/interests-screen/ideal__default__dark__expanded__posture-expanded.png" alt="Interests/Screen posture=expanded" /><span>dark</span></div></div></figure><figure class="state"><figcaption>fontScale=1.5, posture=expanded</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/interests-screen/ideal__default__medium__fontscale-1.5__posture-expanded.png" alt="Interests/Screen fontScale=1.5, posture=expanded" /><span>medium</span></div></div></figure></div>
   </div>
 </div>
 <div class="detail" id="d-postcard-top" role="dialog" aria-label="PostCard/Top">
@@ -381,7 +387,7 @@
     <a class="detail-x" href="#c-interests-topics-tab" aria-label="Close">×</a>
     <h3>Interests/Topics tab</h3>
     <div class="detail-caption">Topics tab content, nothing subscribed.</div>
-    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/interests-topics-tab/ideal__default__dark.png" alt="Interests/Topics tab default" /><span>dark</span></div><div class="state-shot"><img loading="lazy" src="images/interests-topics-tab/ideal__default.png" alt="Interests/Topics tab default" /><span>default</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/interests-topics-tab/ideal__default__light.png" alt="Interests/Topics tab default" /><span>light</span></div></div></figure><figure class="state"><figcaption>selected</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/interests-topics-tab/ideal__selected__dark.png" alt="Interests/Topics tab selected" /><span>dark</span></div><div class="state-shot"><img loading="lazy" src="images/interests-topics-tab/ideal__selected.png" alt="Interests/Topics tab selected" /><span>selected</span></div></div></figure></div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/interests-topics-tab/ideal__default__dark.png" alt="Interests/Topics tab default" /><span>dark</span></div><div class="state-shot"><img loading="lazy" src="images/interests-topics-tab/ideal__default.png" alt="Interests/Topics tab default" /><span>default</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/interests-topics-tab/ideal__default__light.png" alt="Interests/Topics tab default" /><span>light</span></div></div></figure><figure class="state"><figcaption>selected</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/interests-topics-tab/ideal__selected.png" alt="Interests/Topics tab selected" /><span>selected</span></div><div class="state-shot"><img loading="lazy" src="images/interests-topics-tab/ideal__selected__dark.png" alt="Interests/Topics tab selected" /><span>dark</span></div></div></figure></div>
   </div>
 </div>
 <div class="detail" id="d-interests-people-and-publications-tab" role="dialog" aria-label="Interests/People and publications tab">
@@ -390,7 +396,7 @@
     <a class="detail-x" href="#c-interests-people-and-publications-tab" aria-label="Close">×</a>
     <h3>Interests/People and publications tab</h3>
     <div class="detail-caption">People tab content, nobody followed.</div>
-    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/interests-people-and-publications-tab/ideal__default__dark.png" alt="Interests/People and publications tab default" /><span>dark</span></div><div class="state-shot"><img loading="lazy" src="images/interests-people-and-publications-tab/ideal__default.png" alt="Interests/People and publications tab default" /><span>default</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/interests-people-and-publications-tab/ideal__default__light.png" alt="Interests/People and publications tab default" /><span>light</span></div></div></figure><figure class="state"><figcaption>selected</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/interests-people-and-publications-tab/ideal__selected.png" alt="Interests/People and publications tab selected" /><span>selected</span></div></div></figure><figure class="state"><figcaption>content=publications</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/interests-people-and-publications-tab/ideal__default__dark__content-publications.png" alt="Interests/People and publications tab content=publications" /><span>dark</span></div><div class="state-shot"><img loading="lazy" src="images/interests-people-and-publications-tab/ideal__default__content-publications.png" alt="Interests/People and publications tab content=publications" /><span>default</span></div><div class="state-shot"><img loading="lazy" src="images/interests-people-and-publications-tab/ideal__selected__content-publications.png" alt="Interests/People and publications tab content=publications" /><span>selected</span></div></div></figure></div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/interests-people-and-publications-tab/ideal__default__dark.png" alt="Interests/People and publications tab default" /><span>dark</span></div><div class="state-shot"><img loading="lazy" src="images/interests-people-and-publications-tab/ideal__default.png" alt="Interests/People and publications tab default" /><span>default</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/interests-people-and-publications-tab/ideal__default__light.png" alt="Interests/People and publications tab default" /><span>light</span></div></div></figure><figure class="state"><figcaption>selected</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/interests-people-and-publications-tab/ideal__selected.png" alt="Interests/People and publications tab selected" /><span>selected</span></div></div></figure><figure class="state"><figcaption>content=publications</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/interests-people-and-publications-tab/ideal__default__content-publications.png" alt="Interests/People and publications tab content=publications" /><span>default</span></div><div class="state-shot"><img loading="lazy" src="images/interests-people-and-publications-tab/ideal__default__dark__content-publications.png" alt="Interests/People and publications tab content=publications" /><span>dark</span></div><div class="state-shot"><img loading="lazy" src="images/interests-people-and-publications-tab/ideal__selected__content-publications.png" alt="Interests/People and publications tab content=publications" /><span>selected</span></div></div></figure></div>
   </div>
 </div>
 <div class="detail" id="d-interests-select-topic" role="dialog" aria-label="Interests/Select topic">
@@ -399,7 +405,7 @@
     <a class="detail-x" href="#c-interests-select-topic" aria-label="Close">×</a>
     <h3>Interests/Select topic</h3>
     <div class="detail-caption">Topic subscribe toggle, unselected.</div>
-    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/interests-select-topic/ideal__default__dark.png" alt="Interests/Select topic default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/interests-select-topic/ideal__default__light.png" alt="Interests/Select topic default" /><span>light</span></div><div class="state-shot"><img loading="lazy" src="images/interests-select-topic/ideal__default.png" alt="Interests/Select topic default" /><span>default</span></div></div></figure><figure class="state"><figcaption>selected</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/interests-select-topic/ideal__selected__dark.png" alt="Interests/Select topic selected" /><span>dark</span></div><div class="state-shot"><img loading="lazy" src="images/interests-select-topic/ideal__selected.png" alt="Interests/Select topic selected" /><span>selected</span></div></div></figure></div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/interests-select-topic/ideal__default__dark.png" alt="Interests/Select topic default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/interests-select-topic/ideal__default__light.png" alt="Interests/Select topic default" /><span>light</span></div><div class="state-shot"><img loading="lazy" src="images/interests-select-topic/ideal__default.png" alt="Interests/Select topic default" /><span>default</span></div></div></figure><figure class="state"><figcaption>selected</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/interests-select-topic/ideal__selected.png" alt="Interests/Select topic selected" /><span>selected</span></div><div class="state-shot"><img loading="lazy" src="images/interests-select-topic/ideal__selected__dark.png" alt="Interests/Select topic selected" /><span>dark</span></div></div></figure></div>
   </div>
 </div>
 <script>
@@ -414,16 +420,24 @@
     if (!v) return null;
     return { tx: t ? +t[1] : 0, ty: t ? +t[2] : 0, vw: +v[1], vh: +v[2] };
   }
-  function frame(shot, box) {
+  function frame(shot, box, gutterEdges) {
     var img = shot.querySelector("img");
     if (!img) return;
     function apply() {
       var rw = img.naturalWidth || img.width, rh = img.naturalHeight || img.height;
       if (!(rw > 0 && rh > 0)) return;
-      if (box.vw >= rw * 0.9 && box.vh >= rh * 0.9) return; // already close-cropped
+      if (box.vw >= rw * 0.9 && box.vh >= rh * 0.9) {
+        // Already close-cropped as far as the vector can tell — but a declared gutter is margin the
+        // capture added, which no bbox of the drawn pixels can distinguish from the component.
+        if (gutterEdges) frameGutter(shot, gutterEdges);
+        return;
+      }
       var cap = 240, scale = Math.min(1, cap / Math.max(box.vw, box.vh));
       var dw = Math.max(1, Math.round(box.vw * scale));
       shot.classList.add("shot--framed");
+      // A vector-framed shot on a GUTTERED render must not hide its overflow either: the box the
+      // vector describes is the component, and the pixels beyond it are that component's shadow.
+      if (gutterEdges) shot.classList.add("shot--bleed");
       // Size the window by aspect-ratio at its natural (capped) width, with max-width:100% so it
       // shrinks to a narrow grid card instead of overflowing it; frame the render in PERCENTAGES of
       // the box so the whole thing scales as one. (A fixed-px window overflowed the card and clipped
@@ -440,19 +454,90 @@
     if (img.complete) apply();
     else img.addEventListener("load", apply);
   }
+  // A declared capture gutter needs no vector and no guard: the renderer recorded exactly how much
+  // transparent margin it added, so the box is a fact rather than an inference. Native pixels — the
+  // stylesheet caps how large a card draws, and scaling here would hand a guttered card a different
+  // display size from the plain one beside it, which is the difference being removed.
+  function frameGutter(shot, edges) {
+    var img = shot.querySelector("img");
+    if (!img) return;
+    function apply() {
+      var rw = img.naturalWidth || img.width, rh = img.naturalHeight || img.height;
+      if (!(rw > 0 && rh > 0)) return;
+      var boxW = rw - edges[0] - edges[2], boxH = rh - edges[1] - edges[3];
+      if (!(boxW > 0 && boxH > 0)) return;
+      // Capped on HEIGHT, which is the rule the stylesheet applies to a plain card image
+      // (max-height:240px, width follows) — a framed window carries an aspect-ratio, so the cap
+      // cannot come from CSS without squashing it. Capping the largest edge instead would shrink a
+      // wide-but-short component no plain sibling shrinks.
+      var scale = Math.min(1, 240 / boxH);
+      var bw = Math.max(1, Math.round(boxW * scale));
+      var bh = Math.max(1, Math.round(boxH * scale));
+      var iw = Math.round(rw * scale);
+      var offX = Math.round(edges[0] * scale), offY = Math.round(edges[1] * scale);
+      var pct = function (n, d) { return +(n / d * 100).toFixed(4); };
+      // "shot--bleed" keeps the overflow visible: what falls outside this box is the component's
+      // own shadow, which the gutter was captured to preserve. Hiding it would crop the shadow a
+      // second time, which is the bug the gutter fixed.
+      shot.classList.add("shot--framed");
+      shot.classList.add("shot--bleed");
+      shot.style.width = bw + "px";
+      shot.style.aspectRatio = bw + " / " + bh;
+      img.style.width = pct(iw, bw) + "%";
+      img.style.left = pct(-offX, bw) + "%";
+      img.style.top = pct(-offY, bh) + "%";
+    }
+    if (img.complete) apply();
+    else img.addEventListener("load", apply);
+  }
   document.querySelectorAll(".card").forEach(function (card) {
-    var link = card.querySelector('a.wf[href^="figma/"]');
-    if (!link) return;
     var hero = card.querySelector("a.shot");
     if (!hero) return;
-    fetch(link.getAttribute("href"))
-      .then(function (r) { return r.ok ? r.text() : null; })
-      .then(function (txt) {
-        if (!txt) return;
-        var box = parseBox(txt);
-        if (box) frame(hero, box);
-      })
-      .catch(function () {});
+    var declared = hero.getAttribute("data-gutter");
+    var edges = declared
+      ? declared.split(",").map(function (v) { return Math.max(0, parseInt(v, 10) || 0); })
+      : null;
+    var link = card.querySelector('a.figma-svg-link');
+    if (!link) {
+      if (edges) frameGutter(hero, edges);
+      return;
+    }
+    // Fetch the vector only once the card is actually near the viewport.
+    //
+    // A deferred catalog publishes no static vector: the href is an absolute live-render URL and
+    // the daemon generates the SVG per request, from a small pool of live seats. Fetching every
+    // card's on load would start a render for the whole catalog the instant the gallery opens —
+    // thousands, on the large catalogs deferral exists for — spending the seats on bounding boxes
+    // and answering the visitors who actually asked for a vector with 503s.
+    //
+    // Deferring the same fetch to visibility fixes that without giving up the crop: the vector is
+    // the only source of the content box for a card with no declared gutter (an ordinary 454x454
+    // Wear canvas, say), so skipping it outright would leave those heroes uncropped in the full
+    // device canvas. Only what someone looks at is rendered, at the pace they scroll.
+    var pending = function () {
+      fetch(link.getAttribute("href"))
+        .then(function (r) { return r.ok ? r.text() : null; })
+        .then(function (txt) {
+          // The vector wins where it applies — it answers the tighter question of where the
+          // component sits on a canvas it was drawn on — and the gutter answers when it does not.
+          var box = txt ? parseBox(txt) : null;
+          if (box) frame(hero, box, edges);
+          else if (edges) frameGutter(hero, edges);
+        })
+        .catch(function () { if (edges) frameGutter(hero, edges); });
+    };
+    if (typeof IntersectionObserver !== "function") {
+      pending();
+      return;
+    }
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        observer.unobserve(entry.target);
+        pending();
+      });
+    }, { rootMargin: "400px" });
+    observer.observe(card);
   });
 })();
 </script>
