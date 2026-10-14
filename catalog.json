@@ -1597,8 +1597,8 @@
     "androidx.wear.compose:compose-material3",
     "androidx.wear.compose:compose-foundation"
   ],
-  "renderer": "compose-preview 2.39.2",
-  "generatedAt": "2026-10-10T09:41:25.677Z",
+  "renderer": "compose-preview 2.57.0",
+  "generatedAt": "2026-10-14T07:45:45.768Z",
   "display": {
     "surface": "dark",
     "hero": "Episode/Latest"
