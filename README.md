@@ -12,15 +12,27 @@ Figma / Stitch / Claude Design.
 A self-contained gallery — one card per component with its rendered PNG,
 dimensions, accessibility greenlines, and a link to an editable SVG wireframe.
 
-## 🔬 Compare PNG vs SVG
+## 🔬 Compare SVG vs PNG
 
-**[▶ Open the PNG↔SVG comparison (htmlpreview)](https://htmlpreview.github.io/?https://github.com/yschimke/compose-samples/blob/design-artifacts/jetcaster/compare.html)**
+**[▶ Open the SVG↔PNG comparison (htmlpreview)](https://htmlpreview.github.io/?https://github.com/yschimke/compose-samples/blob/design-artifacts/jetcaster/compare.html)**
 
-Every component on one row: its rendered **PNG** beside its editable **figma-svg**
-re-rasterized by the browser, plus a live **structural-similarity (SSIM)** match
+Every component on one row: its editable **figma-svg** re-rasterized by the
+browser beside the rendered **PNG** it is measured against — the design vector on
+the left, the render on the right, as everywhere else the two are shown together
+— plus a live **structural-similarity (SSIM)** match
 score — so you can eyeball vector fidelity across the whole system at once and
 spot which stickers drift. The score is pre-blurred and downscaled, so a
 half-pixel rasterizer offset doesn't read as a mismatch.
+
+## ↔ Compare across systems
+
+**[▶ Open the Jetcaster ↔ Jetcaster for Wear OS matches (htmlpreview)](https://htmlpreview.github.io/?https://github.com/yschimke/compose-samples/blob/design-artifacts/jetcaster/matches.html)**
+
+Every component paired with its counterpart in **Jetcaster for Wear OS**, side by side — the
+authored `parallel` mapping in the catalog spec, rendered as a cross-system contact sheet. Both
+sides are static thumbnails — this branch's baked render on the left, the jetcaster-wear
+render baked from its own `design-artifacts/jetcaster-wear` branch on the right — and each
+links to the live preview server on click.
 
 ## 🎛 Customise live
 
@@ -39,12 +51,12 @@ customising the live render are two ends of one workflow.
 | Components | **24** |
 | Rendered images (PNG) | **107** |
 | Editable wireframes (SVG) | **24** |
-| Editable design vectors (figma-svg) | **24** |
+| Editable design vectors (figma-svg) | **0** |
 | Components with a11y greenlines | **19** |
 | Library | `androidx.compose.material3:material3`<br>`androidx.compose.material3.adaptive:adaptive` |
-| Renderer | compose-preview 0.19.61 |
+| Renderer | compose-preview 2.57.0 |
 | Schema | `design-parity-catalog/v1` |
-| Generated | 2026-08-11 |
+| Generated | 2026-10-14 |
 
 ## Components by group
 
@@ -65,7 +77,8 @@ customising the live render are two ends of one workflow.
 | Path | What it is |
 | --- | --- |
 | `index.html` | Self-contained gallery — [open via htmlpreview](https://htmlpreview.github.io/?https://github.com/yschimke/compose-samples/blob/design-artifacts/jetcaster/index.html) |
-| `compare.html` | PNG↔SVG comparison with a live structural-similarity score — [open via htmlpreview](https://htmlpreview.github.io/?https://github.com/yschimke/compose-samples/blob/design-artifacts/jetcaster/compare.html) |
+| `compare.html` | SVG↔PNG comparison with a live structural-similarity score — [open via htmlpreview](https://htmlpreview.github.io/?https://github.com/yschimke/compose-samples/blob/design-artifacts/jetcaster/compare.html) |
+| `matches.html` | Cross-system component pairing vs `jetcaster-wear` — [open via htmlpreview](https://htmlpreview.github.io/?https://github.com/yschimke/compose-samples/blob/design-artifacts/jetcaster/matches.html) |
 | `catalog.json` | Machine-readable catalog (`design-parity-catalog/v1`): components, variants, design tokens, greenlines, and per-variant `livePreview` deep links |
 | `images/` | Rendered PNGs — the source of truth for each variant |
 | `wireframes/` | One editable SVG per component (layout-inspector tree → token-styled shapes) |

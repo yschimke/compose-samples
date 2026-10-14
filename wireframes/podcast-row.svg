@@ -21,7 +21,7 @@
     <rect x="758" y="21" width="347" height="336" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>
   </g>
   <g>
-    <path d="M800,21 H1052 A42,42 0 0 1 1094,63 V315 A42,42 0 0 1 1052,357 H800 A42,42 0 0 1 758,315 V63 A42,42 0 0 1 800,21 Z" fill="none" fill-opacity="0" stroke="#4F8A4A" stroke-width="1.5" stroke-opacity="1"/>
+    <rect x="758" y="21" width="336" height="336" fill="none" fill-opacity="0" stroke="#4F8A4A" stroke-width="1" stroke-opacity="0.5"/>
   </g>
   <g>
     <path d="M779,21 H1073 A21,21 0 0 1 1094,42 V336 A21,21 0 0 1 1073,357 H779 A21,21 0 0 1 758,336 V42 A21,21 0 0 1 779,21 Z" fill="#FF792C" fill-opacity="1" stroke="#7A7A33" stroke-width="1.5" stroke-opacity="1"/>
@@ -44,7 +44,7 @@
     <rect x="42" y="21" width="347" height="336" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>
   </g>
   <g>
-    <path d="M84,21 H336 A42,42 0 0 1 378,63 V315 A42,42 0 0 1 336,357 H84 A42,42 0 0 1 42,315 V63 A42,42 0 0 1 84,21 Z" fill="none" fill-opacity="0" stroke="#4F8A4A" stroke-width="1.5" stroke-opacity="1"/>
+    <rect x="42" y="21" width="336" height="336" fill="none" fill-opacity="0" stroke="#4F8A4A" stroke-width="1" stroke-opacity="0.5"/>
   </g>
   <g>
     <path d="M63,21 H357 A21,21 0 0 1 378,42 V336 A21,21 0 0 1 357,357 H63 A21,21 0 0 1 42,336 V42 A21,21 0 0 1 63,21 Z" fill="#FF792C" fill-opacity="1" stroke="#7A7A33" stroke-width="1.5" stroke-opacity="1"/>
@@ -67,7 +67,7 @@
     <rect x="400" y="21" width="347" height="336" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>
   </g>
   <g>
-    <path d="M442,21 H694 A42,42 0 0 1 736,63 V315 A42,42 0 0 1 694,357 H442 A42,42 0 0 1 400,315 V63 A42,42 0 0 1 442,21 Z" fill="none" fill-opacity="0" stroke="#4F8A4A" stroke-width="1.5" stroke-opacity="1"/>
+    <rect x="400" y="21" width="336" height="336" fill="none" fill-opacity="0" stroke="#4F8A4A" stroke-width="1" stroke-opacity="0.5"/>
   </g>
   <g>
     <path d="M421,21 H715 A21,21 0 0 1 736,42 V336 A21,21 0 0 1 715,357 H421 A21,21 0 0 1 400,336 V42 A21,21 0 0 1 421,21 Z" fill="#FF792C" fill-opacity="1" stroke="#7A7A33" stroke-width="1.5" stroke-opacity="1"/>

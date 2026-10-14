@@ -7,67 +7,305 @@
     "ref": "previews",
     "module": ":mobile"
   },
-  "generatedAt": "2026-08-11T23:38:17.247Z",
+  "generatedAt": "2026-10-14T07:45:29.511Z",
   "mappings": [
     {
       "componentId": "Home/Screen",
       "figmaLayerName": "Home/Screen",
-      "componentName": "JetcasterHomeDiscoverPreview",
-      "source": "https://github.com/yschimke/compose-samples/blob/previews/mobile/src/debug/java/com/example/jetcaster/catalog/JetcasterComponentPreviews.kt",
+      "componentName": "SharedTransitionPreview",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/mobile/src/main/java/com/example/jetcaster/ui/tooling/SharedTransitionPreview.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "MEDIUM",
       "previewName": "JetcasterHomeDiscoverPreview",
-      "figmaSvg": "figma/home-screen.svg"
+      "codeSnippet": "SharedTransitionPreview(\n    content = { },\n)",
+      "imports": [
+        "import com.example.jetcaster.ui.tooling.SharedTransitionPreview"
+      ],
+      "parameters": [
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
+          "hasDefault": false,
+          "composableSlot": true,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        }
+      ]
     },
     {
       "componentId": "PodcastDetails/Screen",
       "figmaLayerName": "PodcastDetails/Screen",
-      "componentName": "JetcasterPodcastDetailsFullScreenPreview",
-      "source": "https://github.com/yschimke/compose-samples/blob/previews/mobile/src/debug/java/com/example/jetcaster/catalog/JetcasterComponentPreviews.kt",
+      "componentName": "PodcastDetailsScreen",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/mobile/src/main/java/com/example/jetcaster/ui/podcast/PodcastDetailsScreen.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "JetcasterPodcastDetailsFullScreenPreview",
-      "figmaSvg": "figma/podcastdetails-screen.svg"
+      "codeSnippet": "PodcastDetailsScreen(\n    viewModel = TODO(\"PodcastDetailsViewModel\"),\n    navigateToPlayer = TODO(\"(EpisodeInfo) -> Unit\"),\n    navigateBack = TODO(\"() -> Unit\"),\n    showBackButton = TODO(\"Boolean\"),\n)",
+      "imports": [
+        "import com.example.jetcaster.ui.podcast.PodcastDetailsScreen"
+      ],
+      "parameters": [
+        {
+          "name": "viewModel",
+          "type": "PodcastDetailsViewModel",
+          "typeFqn": "com.example.jetcaster.ui.podcast.PodcastDetailsViewModel",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "navigateToPlayer",
+          "type": "(EpisodeInfo) -> Unit",
+          "typeFqn": "kotlin.Function1",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "navigateBack",
+          "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "showBackButton",
+          "type": "Boolean",
+          "typeFqn": "kotlin.Boolean",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ]
     },
     {
       "componentId": "PodcastDetails/Header",
       "figmaLayerName": "PodcastDetails/Header",
-      "componentName": "PodcastDetailsHeaderItemPreview",
+      "componentName": "PodcastDetailsHeaderItem",
       "source": "https://github.com/yschimke/compose-samples/blob/previews/mobile/src/main/java/com/example/jetcaster/ui/podcast/PodcastDetailsScreen.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "PodcastDetailsHeaderItemPreview",
-      "figmaSvg": "figma/podcastdetails-header.svg"
+      "codeSnippet": "PodcastDetailsHeaderItem(\n    podcast = TODO(\"PodcastInfo\"),\n    toggleSubscribe = TODO(\"(PodcastInfo) -> Unit\"),\n)",
+      "imports": [
+        "import com.example.jetcaster.ui.podcast.PodcastDetailsHeaderItem"
+      ],
+      "parameters": [
+        {
+          "name": "podcast",
+          "type": "PodcastInfo",
+          "typeFqn": "com.example.jetcaster.core.model.PodcastInfo",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "toggleSubscribe",
+          "type": "(PodcastInfo) -> Unit",
+          "typeFqn": "kotlin.Function1",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ]
     },
     {
       "componentId": "PodcastDetails/Description",
       "figmaLayerName": "PodcastDetails/Description",
-      "componentName": "JetcasterPodcastDescriptionPreview",
-      "source": "https://github.com/yschimke/compose-samples/blob/previews/mobile/src/debug/java/com/example/jetcaster/catalog/JetcasterComponentPreviews.kt",
+      "componentName": "PodcastDetailsDescription",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/mobile/src/main/java/com/example/jetcaster/ui/podcast/PodcastDetailsScreen.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "JetcasterPodcastDescriptionPreview",
-      "figmaSvg": "figma/podcastdetails-description.svg"
+      "codeSnippet": "PodcastDetailsDescription(\n    podcast = TODO(\"PodcastInfo\"),\n    modifier = TODO(\"Modifier\"),\n)",
+      "imports": [
+        "import com.example.jetcaster.ui.podcast.PodcastDetailsDescription"
+      ],
+      "parameters": [
+        {
+          "name": "podcast",
+          "type": "PodcastInfo",
+          "typeFqn": "com.example.jetcaster.core.model.PodcastInfo",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ]
     },
     {
       "componentId": "PodcastDetails/App bar",
       "figmaLayerName": "PodcastDetails/App bar",
-      "componentName": "JetcasterPodcastDetailsTopAppBarPreview",
-      "source": "https://github.com/yschimke/compose-samples/blob/previews/mobile/src/debug/java/com/example/jetcaster/catalog/JetcasterComponentPreviews.kt",
+      "componentName": "PodcastDetailsTopAppBar",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/mobile/src/main/java/com/example/jetcaster/ui/podcast/PodcastDetailsScreen.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "JetcasterPodcastDetailsTopAppBarPreview",
-      "figmaSvg": "figma/podcastdetails-app-bar.svg"
+      "codeSnippet": "PodcastDetailsTopAppBar(\n    navigateBack = TODO(\"() -> Unit\"),\n)",
+      "imports": [
+        "import com.example.jetcaster.ui.podcast.PodcastDetailsTopAppBar"
+      ],
+      "parameters": [
+        {
+          "name": "navigateBack",
+          "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ]
     },
     {
       "componentId": "PodcastDetails/Subscribe",
       "figmaLayerName": "PodcastDetails/Subscribe",
-      "componentName": "JetcasterSubscribeButtonsPreview",
-      "source": "https://github.com/yschimke/compose-samples/blob/previews/mobile/src/debug/java/com/example/jetcaster/catalog/JetcasterComponentPreviews.kt",
+      "componentName": "PodcastDetailsHeaderItemButtons",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/mobile/src/main/java/com/example/jetcaster/ui/podcast/PodcastDetailsScreen.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "JetcasterSubscribeButtonsPreview",
-      "figmaSvg": "figma/podcastdetails-subscribe.svg"
+      "codeSnippet": "PodcastDetailsHeaderItemButtons(\n    isSubscribed = TODO(\"Boolean\"),\n    onClick = TODO(\"() -> Unit\"),\n)",
+      "imports": [
+        "import com.example.jetcaster.ui.podcast.PodcastDetailsHeaderItemButtons"
+      ],
+      "parameters": [
+        {
+          "name": "isSubscribed",
+          "type": "Boolean",
+          "typeFqn": "kotlin.Boolean",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "onClick",
+          "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ]
     },
     {
       "componentId": "Podcast/Card",
@@ -76,68 +314,461 @@
       "source": "https://github.com/yschimke/compose-samples/blob/previews/mobile/src/main/java/com/example/jetcaster/ui/home/Home.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
-      "previewName": "PreviewPodcastCard",
-      "figmaSvg": "figma/podcast-card.svg"
+      "previewName": "PreviewPodcastCard"
     },
     {
       "componentId": "Podcast/Row item",
       "figmaLayerName": "Podcast/Row item",
-      "componentName": "JetcasterTopPodcastRowItemPreview",
-      "source": "https://github.com/yschimke/compose-samples/blob/previews/mobile/src/debug/java/com/example/jetcaster/catalog/JetcasterComponentPreviews.kt",
+      "componentName": "TopPodcastRowItem",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/mobile/src/main/java/com/example/jetcaster/ui/home/category/PodcastCategory.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "JetcasterTopPodcastRowItemPreview",
-      "figmaSvg": "figma/podcast-row-item.svg"
+      "codeSnippet": "TopPodcastRowItem(\n    podcastTitle = TODO(\"String\"),\n    podcastImageUrl = TODO(\"String\"),\n    isFollowed = TODO(\"Boolean\"),\n    onToggleFollowClicked = TODO(\"() -> Unit\"),\n)",
+      "imports": [
+        "import com.example.jetcaster.ui.home.category.TopPodcastRowItem"
+      ],
+      "parameters": [
+        {
+          "name": "podcastTitle",
+          "type": "String",
+          "typeFqn": "kotlin.String",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "podcastImageUrl",
+          "type": "String",
+          "typeFqn": "kotlin.String",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "isFollowed",
+          "type": "Boolean",
+          "typeFqn": "kotlin.Boolean",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "onToggleFollowClicked",
+          "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        }
+      ]
     },
     {
       "componentId": "Podcast/Row",
       "figmaLayerName": "Podcast/Row",
-      "componentName": "JetcasterCategoryPodcastRowPreview",
-      "source": "https://github.com/yschimke/compose-samples/blob/previews/mobile/src/debug/java/com/example/jetcaster/catalog/JetcasterComponentPreviews.kt",
+      "componentName": "CategoryPodcastRow",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/mobile/src/main/java/com/example/jetcaster/ui/home/category/PodcastCategory.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "JetcasterCategoryPodcastRowPreview",
-      "figmaSvg": "figma/podcast-row.svg"
+      "codeSnippet": "CategoryPodcastRow(\n    podcasts = TODO(\"List<PodcastInfo>\"),\n    onTogglePodcastFollowed = TODO(\"(PodcastInfo) -> Unit\"),\n    navigateToPodcastDetails = TODO(\"(PodcastInfo) -> Unit\"),\n)",
+      "imports": [
+        "import com.example.jetcaster.ui.home.category.CategoryPodcastRow"
+      ],
+      "parameters": [
+        {
+          "name": "podcasts",
+          "type": "List<PodcastInfo>",
+          "typeFqn": "kotlin.collections.List",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "onTogglePodcastFollowed",
+          "type": "(PodcastInfo) -> Unit",
+          "typeFqn": "kotlin.Function1",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "navigateToPodcastDetails",
+          "type": "(PodcastInfo) -> Unit",
+          "typeFqn": "kotlin.Function1",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ]
     },
     {
       "componentId": "Discover/Category tabs",
       "figmaLayerName": "Discover/Category tabs",
-      "componentName": "JetcasterCategoryTabsPreview",
-      "source": "https://github.com/yschimke/compose-samples/blob/previews/mobile/src/debug/java/com/example/jetcaster/catalog/JetcasterComponentPreviews.kt",
+      "componentName": "PodcastCategoryTabs",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/mobile/src/main/java/com/example/jetcaster/ui/home/discover/Discover.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "JetcasterCategoryTabsPreview",
-      "figmaSvg": "figma/discover-category-tabs.svg"
+      "codeSnippet": "PodcastCategoryTabs(\n    filterableCategoriesModel = TODO(\"FilterableCategoriesModel\"),\n    onCategorySelected = TODO(\"(CategoryInfo) -> Unit\"),\n)",
+      "imports": [
+        "import com.example.jetcaster.ui.home.discover.PodcastCategoryTabs"
+      ],
+      "parameters": [
+        {
+          "name": "filterableCategoriesModel",
+          "type": "FilterableCategoriesModel",
+          "typeFqn": "com.example.jetcaster.core.model.FilterableCategoriesModel",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "onCategorySelected",
+          "type": "(CategoryInfo) -> Unit",
+          "typeFqn": "kotlin.Function1",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ]
     },
     {
       "componentId": "Discover/Category chip",
       "figmaLayerName": "Discover/Category chip",
-      "componentName": "JetcasterCategoryChipPreview",
-      "source": "https://github.com/yschimke/compose-samples/blob/previews/mobile/src/debug/java/com/example/jetcaster/catalog/JetcasterComponentPreviews.kt",
+      "componentName": "ChoiceChipContent",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/mobile/src/main/java/com/example/jetcaster/ui/home/discover/Discover.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "JetcasterCategoryChipPreview",
-      "figmaSvg": "figma/discover-category-chip.svg"
+      "codeSnippet": "ChoiceChipContent(\n    text = TODO(\"String\"),\n    selected = TODO(\"Boolean\"),\n    onClick = TODO(\"() -> Unit\"),\n)",
+      "imports": [
+        "import com.example.jetcaster.ui.home.discover.ChoiceChipContent"
+      ],
+      "parameters": [
+        {
+          "name": "text",
+          "type": "String",
+          "typeFqn": "kotlin.String",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "selected",
+          "type": "Boolean",
+          "typeFqn": "kotlin.Boolean",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "onClick",
+          "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ]
     },
     {
       "componentId": "Podcast/Follow toggle",
       "figmaLayerName": "Podcast/Follow toggle",
-      "componentName": "JetcasterFollowToggleUnfollowedPreview",
-      "source": "https://github.com/yschimke/compose-samples/blob/previews/mobile/src/debug/java/com/example/jetcaster/catalog/JetcasterComponentPreviews.kt",
+      "componentName": "ToggleFollowPodcastIconButton",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/mobile/src/main/java/com/example/jetcaster/util/Buttons.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "JetcasterFollowToggleUnfollowedPreview",
-      "figmaSvg": "figma/podcast-follow-toggle.svg"
+      "codeSnippet": "ToggleFollowPodcastIconButton(\n    isFollowed = TODO(\"Boolean\"),\n    onClick = TODO(\"() -> Unit\"),\n)",
+      "imports": [
+        "import com.example.jetcaster.util.ToggleFollowPodcastIconButton"
+      ],
+      "parameters": [
+        {
+          "name": "isFollowed",
+          "type": "Boolean",
+          "typeFqn": "kotlin.Boolean",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "onClick",
+          "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ]
     },
     {
       "componentId": "Episode/List item",
       "figmaLayerName": "Episode/List item",
-      "componentName": "EpisodeListItemPreview",
+      "componentName": "EpisodeListItem",
       "source": "https://github.com/yschimke/compose-samples/blob/previews/mobile/src/main/java/com/example/jetcaster/ui/shared/EpisodeListItem.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "EpisodeListItemPreview",
-      "figmaSvg": "figma/episode-list-item.svg"
+      "codeSnippet": "EpisodeListItem(\n    episode = TODO(\"EpisodeInfo\"),\n    podcast = TODO(\"PodcastInfo\"),\n    onClick = TODO(\"(EpisodeInfo) -> Unit\"),\n    onQueueEpisode = TODO(\"(PlayerEpisode) -> Unit\"),\n)",
+      "imports": [
+        "import com.example.jetcaster.ui.shared.EpisodeListItem"
+      ],
+      "parameters": [
+        {
+          "name": "episode",
+          "type": "EpisodeInfo",
+          "typeFqn": "com.example.jetcaster.core.model.EpisodeInfo",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "podcast",
+          "type": "PodcastInfo",
+          "typeFqn": "com.example.jetcaster.core.model.PodcastInfo",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "onClick",
+          "type": "(EpisodeInfo) -> Unit",
+          "typeFqn": "kotlin.Function1",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "removeFromQueue",
+          "type": "(EpisodeInfo) -> Unit",
+          "typeFqn": "kotlin.Function1",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "onQueueEpisode",
+          "type": "(PlayerEpisode) -> Unit",
+          "typeFqn": "kotlin.Function1",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "imageModifier",
+          "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "showPodcastImage",
+          "type": "Boolean",
+          "typeFqn": "kotlin.Boolean",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "showSummary",
+          "type": "Boolean",
+          "typeFqn": "kotlin.Boolean",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ]
     },
     {
       "componentId": "Player/Screen",
@@ -146,98 +777,545 @@
       "source": "https://github.com/yschimke/compose-samples/blob/previews/mobile/src/debug/java/com/example/jetcaster/catalog/JetcasterComponentPreviews.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
-      "previewName": "JetcasterPlayerScreenCatalogPreview",
-      "figmaSvg": "figma/player-screen.svg"
+      "previewName": "JetcasterPlayerScreenCatalogPreview"
     },
     {
       "componentId": "Player/Transport",
       "figmaLayerName": "Player/Transport",
-      "componentName": "PlayerButtonsPreview",
+      "componentName": "PlayerButtons",
       "source": "https://github.com/yschimke/compose-samples/blob/previews/mobile/src/main/java/com/example/jetcaster/ui/player/PlayerScreen.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "PlayerButtonsPreview",
-      "figmaSvg": "figma/player-transport.svg"
+      "codeSnippet": "PlayerButtons(\n    hasNext = TODO(\"Boolean\"),\n    isPlaying = TODO(\"Boolean\"),\n    onPlayPress = TODO(\"() -> Unit\"),\n    onPausePress = TODO(\"() -> Unit\"),\n    onAdvanceBy = TODO(\"(Duration) -> Unit\"),\n    onRewindBy = TODO(\"(Duration) -> Unit\"),\n    onNext = TODO(\"() -> Unit\"),\n    onPrevious = TODO(\"() -> Unit\"),\n)",
+      "imports": [
+        "import com.example.jetcaster.ui.player.PlayerButtons"
+      ],
+      "parameters": [
+        {
+          "name": "hasNext",
+          "type": "Boolean",
+          "typeFqn": "kotlin.Boolean",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "isPlaying",
+          "type": "Boolean",
+          "typeFqn": "kotlin.Boolean",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "onPlayPress",
+          "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "onPausePress",
+          "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "onAdvanceBy",
+          "type": "(Duration) -> Unit",
+          "typeFqn": "kotlin.Function1",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "onRewindBy",
+          "type": "(Duration) -> Unit",
+          "typeFqn": "kotlin.Function1",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "onNext",
+          "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "onPrevious",
+          "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ]
     },
     {
       "componentId": "Player/Slider",
       "figmaLayerName": "Player/Slider",
-      "componentName": "JetcasterPlayerSliderPreview",
-      "source": "https://github.com/yschimke/compose-samples/blob/previews/mobile/src/debug/java/com/example/jetcaster/catalog/JetcasterComponentPreviews.kt",
+      "componentName": "PlayerSlider",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/mobile/src/main/java/com/example/jetcaster/ui/player/PlayerScreen.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "JetcasterPlayerSliderPreview",
-      "figmaSvg": "figma/player-slider.svg"
+      "codeSnippet": "PlayerSlider(\n    timeElapsed = TODO(\"Duration\"),\n    episodeDuration = TODO(\"Duration?\"),\n    onSeekingStarted = TODO(\"() -> Unit\"),\n    onSeekingFinished = TODO(\"(Duration) -> Unit\"),\n)",
+      "imports": [
+        "import com.example.jetcaster.ui.player.PlayerSlider"
+      ],
+      "parameters": [
+        {
+          "name": "timeElapsed",
+          "type": "Duration",
+          "typeFqn": "java.time.Duration",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "episodeDuration",
+          "type": "Duration?",
+          "typeFqn": "java.time.Duration",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": true,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "onSeekingStarted",
+          "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "onSeekingFinished",
+          "type": "(Duration) -> Unit",
+          "typeFqn": "kotlin.Function1",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        }
+      ]
     },
     {
       "componentId": "Player/Episode information",
       "figmaLayerName": "Player/Episode information",
-      "componentName": "JetcasterPodcastInformationPreview",
-      "source": "https://github.com/yschimke/compose-samples/blob/previews/mobile/src/debug/java/com/example/jetcaster/catalog/JetcasterComponentPreviews.kt",
+      "componentName": "PodcastInformation",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/mobile/src/main/java/com/example/jetcaster/ui/player/PlayerScreen.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "JetcasterPodcastInformationPreview",
-      "figmaSvg": "figma/player-episode-information.svg"
+      "codeSnippet": "PodcastInformation(\n    title = TODO(\"String\"),\n    name = TODO(\"String\"),\n    summary = TODO(\"String\"),\n)",
+      "imports": [
+        "import com.example.jetcaster.ui.player.PodcastInformation"
+      ],
+      "parameters": [
+        {
+          "name": "title",
+          "type": "String",
+          "typeFqn": "kotlin.String",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "name",
+          "type": "String",
+          "typeFqn": "kotlin.String",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "summary",
+          "type": "String",
+          "typeFqn": "kotlin.String",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "titleTextStyle",
+          "type": "TextStyle",
+          "typeFqn": "androidx.compose.ui.text.TextStyle",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "nameTextStyle",
+          "type": "TextStyle",
+          "typeFqn": "androidx.compose.ui.text.TextStyle",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ]
     },
     {
       "componentId": "Player/App bar",
       "figmaLayerName": "Player/App bar",
-      "componentName": "JetcasterPlayerTopAppBarPreview",
-      "source": "https://github.com/yschimke/compose-samples/blob/previews/mobile/src/debug/java/com/example/jetcaster/catalog/JetcasterComponentPreviews.kt",
+      "componentName": "TopAppBar",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/mobile/src/main/java/com/example/jetcaster/ui/player/PlayerScreen.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "JetcasterPlayerTopAppBarPreview",
-      "figmaSvg": "figma/player-app-bar.svg"
+      "codeSnippet": "TopAppBar(\n    onBackPress = TODO(\"() -> Unit\"),\n    onAddToQueue = TODO(\"() -> Unit\"),\n)",
+      "imports": [
+        "import com.example.jetcaster.ui.player.TopAppBar"
+      ],
+      "parameters": [
+        {
+          "name": "onBackPress",
+          "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "onAddToQueue",
+          "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        }
+      ]
     },
     {
       "componentId": "Chrome/Home app bar",
       "figmaLayerName": "Chrome/Home app bar",
-      "componentName": "HomeAppBarPreview",
+      "componentName": "HomeAppBar",
       "source": "https://github.com/yschimke/compose-samples/blob/previews/mobile/src/main/java/com/example/jetcaster/ui/home/Home.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "HomeAppBarPreview",
-      "figmaSvg": "figma/chrome-home-app-bar.svg"
+      "codeSnippet": "HomeAppBar(\n    isExpanded = TODO(\"Boolean\"),\n)",
+      "imports": [
+        "import com.example.jetcaster.ui.home.HomeAppBar"
+      ],
+      "parameters": [
+        {
+          "name": "isExpanded",
+          "type": "Boolean",
+          "typeFqn": "kotlin.Boolean",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ]
     },
     {
       "componentId": "Chrome/Pill toolbar",
       "figmaLayerName": "Chrome/Pill toolbar",
-      "componentName": "JetcasterPillToolbarDiscoverPreview",
-      "source": "https://github.com/yschimke/compose-samples/blob/previews/mobile/src/debug/java/com/example/jetcaster/catalog/JetcasterComponentPreviews.kt",
+      "componentName": "PillToolbar",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/mobile/src/main/java/com/example/jetcaster/ui/home/Home.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "JetcasterPillToolbarDiscoverPreview",
-      "figmaSvg": "figma/chrome-pill-toolbar.svg"
+      "codeSnippet": "PillToolbar(\n    selectedHomeCategory = TODO(\"HomeCategory\"),\n    onHomeAction = TODO(\"(HomeAction) -> Unit\"),\n)",
+      "imports": [
+        "import com.example.jetcaster.ui.home.PillToolbar"
+      ],
+      "parameters": [
+        {
+          "name": "selectedHomeCategory",
+          "type": "HomeCategory",
+          "typeFqn": "com.example.jetcaster.ui.home.HomeCategory",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "onHomeAction",
+          "type": "(HomeAction) -> Unit",
+          "typeFqn": "kotlin.Function1",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ]
     },
     {
       "componentId": "Chrome/Top app bar",
       "figmaLayerName": "Chrome/Top app bar",
-      "componentName": "TopAppBarPreview",
+      "componentName": "TopAppBar",
       "source": "https://github.com/yschimke/compose-samples/blob/previews/mobile/src/main/java/com/example/jetcaster/ui/player/PlayerScreen.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "TopAppBarPreview",
-      "figmaSvg": "figma/chrome-top-app-bar.svg"
+      "codeSnippet": "TopAppBar(\n    onBackPress = TODO(\"() -> Unit\"),\n    onAddToQueue = TODO(\"() -> Unit\"),\n)",
+      "imports": [
+        "import com.example.jetcaster.ui.player.TopAppBar"
+      ],
+      "parameters": [
+        {
+          "name": "onBackPress",
+          "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "onAddToQueue",
+          "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        }
+      ]
     },
     {
       "componentId": "Chrome/Home error",
       "figmaLayerName": "Chrome/Home error",
-      "componentName": "HomeScreenErrorPreview",
+      "componentName": "HomeScreenError",
       "source": "https://github.com/yschimke/compose-samples/blob/previews/mobile/src/main/java/com/example/jetcaster/ui/home/Home.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "HomeScreenErrorPreview",
-      "figmaSvg": "figma/chrome-home-error.svg"
+      "codeSnippet": "HomeScreenError(\n    onRetry = TODO(\"() -> Unit\"),\n)",
+      "imports": [
+        "import com.example.jetcaster.ui.home.HomeScreenError"
+      ],
+      "parameters": [
+        {
+          "name": "onRetry",
+          "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ]
     },
     {
       "componentId": "States/Loading",
       "figmaLayerName": "States/Loading",
-      "componentName": "JetcasterLoadingPreview",
-      "source": "https://github.com/yschimke/compose-samples/blob/previews/mobile/src/debug/java/com/example/jetcaster/catalog/JetcasterComponentPreviews.kt",
+      "componentName": "Loading",
+      "source": "https://github.com/yschimke/compose-samples/blob/previews/mobile/src/main/java/com/example/jetcaster/ui/shared/Loading.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "JetcasterLoadingPreview",
-      "figmaSvg": "figma/states-loading.svg"
+      "codeSnippet": "Loading()",
+      "imports": [
+        "import com.example.jetcaster.ui.shared.Loading"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ]
     },
     {
       "componentId": "States/Offline",
@@ -246,8 +1324,7 @@
       "source": "https://github.com/yschimke/compose-samples/blob/previews/mobile/src/debug/java/com/example/jetcaster/catalog/JetcasterComponentPreviews.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
-      "previewName": "JetcasterOfflineStatePreview",
-      "figmaSvg": "figma/states-offline.svg"
+      "previewName": "JetcasterOfflineStatePreview"
     }
   ]
 }

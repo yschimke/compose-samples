@@ -96,7 +96,7 @@
     <rect x="737" y="420" width="347" height="336" fill="none" fill-opacity="0" stroke="#2E7D6B" stroke-width="1" stroke-opacity="0.5"/>
   </g>
   <g>
-    <path d="M779,420 H1031 A42,42 0 0 1 1073,462 V714 A42,42 0 0 1 1031,756 H779 A42,42 0 0 1 737,714 V462 A42,42 0 0 1 779,420 Z" fill="none" fill-opacity="0" stroke="#8E6BA8" stroke-width="1.5" stroke-opacity="1"/>
+    <rect x="737" y="420" width="336" height="336" fill="none" fill-opacity="0" stroke="#8E6BA8" stroke-width="1" stroke-opacity="0.5"/>
   </g>
   <g>
     <path d="M758,420 H1052 A21,21 0 0 1 1073,441 V735 A21,21 0 0 1 1052,756 H758 A21,21 0 0 1 737,735 V441 A21,21 0 0 1 758,420 Z" fill="#FF792C" fill-opacity="1" stroke="#B0813B" stroke-width="1.5" stroke-opacity="1"/>
@@ -119,7 +119,7 @@
     <rect x="21" y="420" width="347" height="336" fill="none" fill-opacity="0" stroke="#2E7D6B" stroke-width="1" stroke-opacity="0.5"/>
   </g>
   <g>
-    <path d="M63,420 H315 A42,42 0 0 1 357,462 V714 A42,42 0 0 1 315,756 H63 A42,42 0 0 1 21,714 V462 A42,42 0 0 1 63,420 Z" fill="none" fill-opacity="0" stroke="#8E6BA8" stroke-width="1.5" stroke-opacity="1"/>
+    <rect x="21" y="420" width="336" height="336" fill="none" fill-opacity="0" stroke="#8E6BA8" stroke-width="1" stroke-opacity="0.5"/>
   </g>
   <g>
     <path d="M42,420 H336 A21,21 0 0 1 357,441 V735 A21,21 0 0 1 336,756 H42 A21,21 0 0 1 21,735 V441 A21,21 0 0 1 42,420 Z" fill="#FF792C" fill-opacity="1" stroke="#B0813B" stroke-width="1.5" stroke-opacity="1"/>
@@ -142,7 +142,7 @@
     <rect x="379" y="420" width="347" height="336" fill="none" fill-opacity="0" stroke="#2E7D6B" stroke-width="1" stroke-opacity="0.5"/>
   </g>
   <g>
-    <path d="M421,420 H673 A42,42 0 0 1 715,462 V714 A42,42 0 0 1 673,756 H421 A42,42 0 0 1 379,714 V462 A42,42 0 0 1 421,420 Z" fill="none" fill-opacity="0" stroke="#8E6BA8" stroke-width="1.5" stroke-opacity="1"/>
+    <rect x="379" y="420" width="336" height="336" fill="none" fill-opacity="0" stroke="#8E6BA8" stroke-width="1" stroke-opacity="0.5"/>
   </g>
   <g>
     <path d="M400,420 H694 A21,21 0 0 1 715,441 V735 A21,21 0 0 1 694,756 H400 A21,21 0 0 1 379,735 V441 A21,21 0 0 1 400,420 Z" fill="#FF792C" fill-opacity="1" stroke="#B0813B" stroke-width="1.5" stroke-opacity="1"/>
