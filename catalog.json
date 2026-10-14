@@ -3936,8 +3936,8 @@
     "androidx.compose.material3:material3",
     "androidx.compose.material3.adaptive:adaptive"
   ],
-  "renderer": "compose-preview 2.39.2",
-  "generatedAt": "2026-10-10T09:39:25.449Z",
+  "renderer": "compose-preview 2.57.0",
+  "generatedAt": "2026-10-14T07:44:03.179Z",
   "display": {
     "surface": "light",
     "hero": "Adaptive/Phone"
