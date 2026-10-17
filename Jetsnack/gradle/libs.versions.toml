@@ -1,6 +1,6 @@
 [versions]
-composeAiPreview = "2.39.2"
-composeAiPreviewAnnotations = "3.13.2"
+composeAiPreview = "2.66.0"
+composeAiPreviewAnnotations = "3.17.1"
 accompanist = "0.37.3"
 android-material3 = "1.14.0"
 androidGradlePlugin = "9.2.1"
