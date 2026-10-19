@@ -81,7 +81,8 @@
             "widthDp": 227,
             "heightDp": 227
           },
-          "density": 2
+          "density": 2,
+          "figmaSvg": "https://preview.coo.ee/jetcaster-wear/render/podcast-screen__ideal__loading__largeround.svg"
         },
         {
           "variant": "ideal",
@@ -99,7 +100,8 @@
             "widthDp": 227,
             "heightDp": 227
           },
-          "density": 2
+          "density": 2,
+          "figmaSvg": "https://preview.coo.ee/jetcaster-wear/render/podcast-screen__ideal__empty__largeround.svg"
         }
       ],
       "greenlines": [
@@ -283,7 +285,8 @@
             "widthDp": 227,
             "heightDp": 227
           },
-          "density": 2
+          "density": 2,
+          "figmaSvg": "https://preview.coo.ee/jetcaster-wear/render/podcast-details__ideal__loading__largeround.svg"
         },
         {
           "variant": "ideal",
@@ -301,7 +304,8 @@
             "widthDp": 227,
             "heightDp": 227
           },
-          "density": 2
+          "density": 2,
+          "figmaSvg": "https://preview.coo.ee/jetcaster-wear/render/podcast-details__ideal__empty__largeround.svg"
         }
       ],
       "greenlines": [
@@ -480,7 +484,8 @@
             "widthDp": 227,
             "heightDp": 227
           },
-          "density": 2
+          "density": 2,
+          "figmaSvg": "https://preview.coo.ee/jetcaster-wear/render/library-screen__ideal__loading__largeround.svg"
         },
         {
           "variant": "ideal",
@@ -634,6 +639,18 @@
       "sourceFunction": "LibraryScreenPreview",
       "parameters": [
         {
+          "name": "columnState",
+          "type": "TransformingLazyColumnState"
+        },
+        {
+          "name": "placeholderState",
+          "type": "PlaceholderState"
+        },
+        {
+          "name": "contentPadding",
+          "type": "PaddingValues"
+        },
+        {
           "name": "onLatestEpisodeClick",
           "type": "() -> Unit"
         },
@@ -646,13 +663,12 @@
           "type": "() -> Unit"
         },
         {
-          "name": "modifier",
-          "type": "Modifier",
-          "hasDefault": true
+          "name": "queue",
+          "type": "List<PlayerEpisode>"
         },
         {
-          "name": "libraryScreenViewModel",
-          "type": "LibraryViewModel",
+          "name": "modifier",
+          "type": "Modifier",
           "hasDefault": true
         }
       ]
@@ -715,7 +731,8 @@
             "widthDp": 227,
             "heightDp": 227
           },
-          "density": 2
+          "density": 2,
+          "figmaSvg": "https://preview.coo.ee/jetcaster-wear/render/episode-latest__ideal__loading__largeround.svg"
         },
         {
           "variant": "ideal",
@@ -733,7 +750,8 @@
             "widthDp": 227,
             "heightDp": 227
           },
-          "density": 2
+          "density": 2,
+          "figmaSvg": "https://preview.coo.ee/jetcaster-wear/render/episode-latest__ideal__empty__largeround.svg"
         }
       ],
       "greenlines": [
@@ -971,7 +989,8 @@
             "widthDp": 227,
             "heightDp": 227
           },
-          "density": 2
+          "density": 2,
+          "figmaSvg": "https://preview.coo.ee/jetcaster-wear/render/episode-screen__ideal__empty__largeround.svg"
         }
       ],
       "greenlines": [
@@ -1172,7 +1191,8 @@
             "widthDp": 227,
             "heightDp": 227
           },
-          "density": 2
+          "density": 2,
+          "figmaSvg": "https://preview.coo.ee/jetcaster-wear/render/queue-screen__ideal__loading__largeround.svg"
         },
         {
           "variant": "ideal",
@@ -1190,7 +1210,8 @@
             "widthDp": 227,
             "heightDp": 227
           },
-          "density": 2
+          "density": 2,
+          "figmaSvg": "https://preview.coo.ee/jetcaster-wear/render/queue-screen__ideal__empty__largeround.svg"
         }
       ],
       "greenlines": [
@@ -1597,12 +1618,21 @@
     "androidx.wear.compose:compose-material3",
     "androidx.wear.compose:compose-foundation"
   ],
-  "renderer": "compose-preview 2.57.0",
-  "generatedAt": "2026-10-14T07:45:45.768Z",
+  "renderer": "compose-preview 2.68.6",
+  "generatedAt": "2026-10-19T00:32:07.446Z",
   "display": {
     "surface": "dark",
     "hero": "Episode/Latest"
   },
+  "themes": [
+    {
+      "id": "com.example.jetcaster.catalog.JetcasterWearDarkThemeCatalog",
+      "tokensFile": "themes/com.example.jetcaster.catalog.jetcasterweardarkthemecatalog.dtcg.json",
+      "name": "Dark",
+      "group": "Jetcaster Wear",
+      "dark": true
+    }
+  ],
   "compareWith": {
     "system": "jetcaster"
   },

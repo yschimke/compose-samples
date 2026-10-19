@@ -1,16 +1,16 @@
 {
   "schema": "compose-preview-activity/v1",
-  "generatedAt": "2026-10-14T07:45:54.992Z",
+  "generatedAt": "2026-10-19T00:32:23.061Z",
   "windowDays": 30,
   "code": {
     "repo": "yschimke/compose-samples",
-    "ref": "main",
+    "ref": "previews",
     "events": [
       {
-        "sha": "6c9d8fa3cd5b7f7c7298d358e9d4ae3449f4642c",
-        "subject": "Merge pull request #41 from yschimke/agent/drop-retheme-previews",
-        "at": "2026-10-10T10:32:48+01:00",
-        "author": "Yuri Schimke",
+        "sha": "c66a1428ee69f0067b217cd2695a2c5b9233fac5",
+        "subject": "chore(deps): update dependency ee.schimke.composeai.preview to v2.68.6 (#46)",
+        "at": "2026-10-19T00:25:24Z",
+        "author": "renovate[bot]",
         "previewIds": [],
         "components": []
       }
