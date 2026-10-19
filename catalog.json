@@ -2162,7 +2162,8 @@
           "previewParams": {
             "showBackground": true
           },
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/reply/render/email-listitem__ideal__selected__compact.svg"
         },
         {
           "variant": "ideal",
@@ -2176,7 +2177,8 @@
           "previewParams": {
             "showBackground": true
           },
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/reply/render/email-listitem__ideal__opened-selected__compact.svg"
         },
         {
           "variant": "ideal",
@@ -3411,7 +3413,8 @@
           "previewParams": {
             "uiMode": 33
           },
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/reply/render/navigation-drawer__ideal__default__dark.svg"
         },
         {
           "variant": "ideal",
@@ -3422,7 +3425,8 @@
           "theme": "light",
           "livePreview": "https://preview.coo.ee/reply/p/navigation-drawer__ideal__default__light",
           "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.PermanentNavigationDrawerContentPreview_Light",
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/reply/render/navigation-drawer__ideal__default__light.svg"
         },
         {
           "variant": "ideal",
@@ -3433,7 +3437,8 @@
           "size": "compact",
           "livePreview": "https://preview.coo.ee/reply/p/navigation-drawer__ideal__default__compact",
           "previewId": "com.example.reply.catalog.ReplyComponentPreviewsKt.PermanentNavigationDrawerContentPreview_Light",
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/reply/render/navigation-drawer__ideal__default__compact.svg"
         },
         {
           "variant": "ideal",
@@ -3450,7 +3455,8 @@
           "previewParams": {
             "showBackground": true
           },
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/reply/render/navigation-drawer__ideal__default__compact__presentation-modal.svg"
         },
         {
           "variant": "ideal",
@@ -3464,7 +3470,8 @@
           "previewParams": {
             "showBackground": true
           },
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/reply/render/navigation-drawer__ideal__inbox__compact.svg"
         }
       ],
       "greenlines": [
@@ -3794,7 +3801,8 @@
           "previewParams": {
             "showBackground": true
           },
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/reply/render/identity-profileimage__ideal__selected.svg"
         }
       ],
       "greenlines": [],
@@ -3853,7 +3861,8 @@
           "height": 2100,
           "livePreview": "https://preview.coo.ee/reply/p/states-coming-soon__ideal__default",
           "previewId": "com.example.reply.ui.EmptyComingSoonKt.ComingSoonPreview",
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/reply/render/states-coming-soon__ideal__default.svg"
         },
         {
           "variant": "ideal",
@@ -3867,7 +3876,8 @@
           "previewParams": {
             "uiMode": 33
           },
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/reply/render/states-coming-soon__ideal__default__dark.svg"
         },
         {
           "variant": "ideal",
@@ -3878,7 +3888,8 @@
           "theme": "light",
           "livePreview": "https://preview.coo.ee/reply/p/states-coming-soon__ideal__default__light",
           "previewId": "com.example.reply.ui.EmptyComingSoonKt.ComingSoonPreview_Light",
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/reply/render/states-coming-soon__ideal__default__light.svg"
         }
       ],
       "greenlines": [],
@@ -3936,12 +3947,56 @@
     "androidx.compose.material3:material3",
     "androidx.compose.material3.adaptive:adaptive"
   ],
-  "renderer": "compose-preview 2.57.0",
-  "generatedAt": "2026-10-14T07:44:03.179Z",
+  "renderer": "compose-preview 2.68.6",
+  "generatedAt": "2026-10-19T00:30:14.452Z",
   "display": {
     "surface": "light",
     "hero": "Adaptive/Phone"
   },
+  "themes": [
+    {
+      "id": "com.example.reply.catalog.ReplyDarkHighContrastThemeCatalog",
+      "tokensFile": "themes/com.example.reply.catalog.replydarkhighcontrastthemecatalog.dtcg.json",
+      "name": "Dark — high contrast",
+      "group": "Reply",
+      "dark": true
+    },
+    {
+      "id": "com.example.reply.catalog.ReplyDarkMediumContrastThemeCatalog",
+      "tokensFile": "themes/com.example.reply.catalog.replydarkmediumcontrastthemecatalog.dtcg.json",
+      "name": "Dark — medium contrast",
+      "group": "Reply",
+      "dark": true
+    },
+    {
+      "id": "com.example.reply.catalog.ReplyLightHighContrastThemeCatalog",
+      "tokensFile": "themes/com.example.reply.catalog.replylighthighcontrastthemecatalog.dtcg.json",
+      "name": "Light — high contrast",
+      "group": "Reply",
+      "dark": false
+    },
+    {
+      "id": "com.example.reply.catalog.ReplyLightMediumContrastThemeCatalog",
+      "tokensFile": "themes/com.example.reply.catalog.replylightmediumcontrastthemecatalog.dtcg.json",
+      "name": "Light — medium contrast",
+      "group": "Reply",
+      "dark": false
+    },
+    {
+      "id": "com.example.reply.catalog.ReplyDarkThemeCatalog",
+      "tokensFile": "themes/com.example.reply.catalog.replydarkthemecatalog.dtcg.json",
+      "name": "Reply · Dark",
+      "group": "Reply",
+      "dark": true
+    },
+    {
+      "id": "com.example.reply.catalog.ReplyLightThemeCatalog",
+      "tokensFile": "themes/com.example.reply.catalog.replylightthemecatalog.dtcg.json",
+      "name": "Reply · Light",
+      "group": "Reply",
+      "dark": false
+    }
+  ],
   "liveBundle": {
     "path": "bundle/",
     "file": "bundle.png"
