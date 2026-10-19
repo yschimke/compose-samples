@@ -7,7 +7,7 @@
     "ref": "previews",
     "module": ":app"
   },
-  "generatedAt": "2026-10-14T07:45:46.282Z",
+  "generatedAt": "2026-10-19T00:32:07.162Z",
   "mappings": [
     {
       "componentId": "Foundations/Button",
@@ -178,7 +178,8 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": "kotlin.Unit"
         }
-      ]
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetsnack/render/foundations-button__ideal__default__light.svg"
     },
     {
       "componentId": "Foundations/Card",
@@ -284,7 +285,8 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": "kotlin.Unit"
         }
-      ]
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetsnack/render/foundations-card__ideal__default__light.svg"
     },
     {
       "componentId": "Foundations/Surface",
@@ -390,7 +392,8 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": "kotlin.Unit"
         }
-      ]
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetsnack/render/foundations-surface__ideal__default__light.svg"
     },
     {
       "componentId": "Foundations/Divider",
@@ -444,7 +447,8 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ]
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetsnack/render/foundations-divider__ideal__default__light.svg"
     },
     {
       "componentId": "Foundations/Icon button",
@@ -537,7 +541,8 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ]
+      ],
+      "figmaSvg": "figma/foundations-icon-button.svg"
     },
     {
       "componentId": "Tokens/Colour",
@@ -550,7 +555,8 @@
       "codeSnippet": "getColors()",
       "imports": [
         "import com.example.jetsnack.ui.theme.getColors"
-      ]
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetsnack/render/tokens-colour__ideal__default__light.svg"
     },
     {
       "componentId": "Tokens/Gradients",
@@ -563,7 +569,8 @@
       "codeSnippet": "getColors()",
       "imports": [
         "import com.example.jetsnack.ui.theme.getColors"
-      ]
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetsnack/render/tokens-gradients__ideal__default__light.svg"
     },
     {
       "componentId": "Layout/Vertical grid",
@@ -617,7 +624,8 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": "kotlin.Unit"
         }
-      ]
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetsnack/render/layout-vertical-grid__ideal__default__light.svg"
     },
     {
       "componentId": "Snack/Card",
@@ -630,7 +638,8 @@
       "codeSnippet": "getColors()",
       "imports": [
         "import com.example.jetsnack.ui.theme.getColors"
-      ]
+      ],
+      "figmaSvg": "figma/snack-card.svg"
     },
     {
       "componentId": "Snack/Item",
@@ -697,7 +706,8 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ]
+      ],
+      "figmaSvg": "figma/snack-item.svg"
     },
     {
       "componentId": "Snack/Image",
@@ -764,7 +774,8 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ]
+      ],
+      "figmaSvg": "figma/snack-image.svg"
     },
     {
       "componentId": "Snack/Collection",
@@ -844,7 +855,8 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ]
+      ],
+      "figmaSvg": "figma/snack-collection.svg"
     },
     {
       "componentId": "Catalog/Filters",
@@ -898,7 +910,8 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ]
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetsnack/render/catalog-filters__ideal__default__light.svg"
     },
     {
       "componentId": "Catalog/Filter bar",
@@ -965,7 +978,8 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ]
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetsnack/render/catalog-filter-bar__ideal__default__light.svg"
     },
     {
       "componentId": "Cart/Quantity",
@@ -1032,7 +1046,8 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ]
+      ],
+      "figmaSvg": "figma/cart-quantity.svg"
     },
     {
       "componentId": "Cart/Item",
@@ -1125,7 +1140,8 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ]
+      ],
+      "figmaSvg": "figma/cart-item.svg"
     },
     {
       "componentId": "Cart/Summary",
@@ -1179,7 +1195,8 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ]
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetsnack/render/cart-summary__ideal__default__light.svg"
     },
     {
       "componentId": "Cart/Swipe to dismiss",
@@ -1259,7 +1276,8 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": "kotlin.Unit"
         }
-      ]
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetsnack/render/cart-swipe-to-dismiss__ideal__default__light.svg"
     },
     {
       "componentId": "Search/Bar",
@@ -1365,7 +1383,8 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ]
+      ],
+      "figmaSvg": "figma/search-bar.svg"
     },
     {
       "componentId": "Search/Categories",
@@ -1419,7 +1438,8 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ]
+      ],
+      "figmaSvg": "figma/search-categories.svg"
     },
     {
       "componentId": "Search/Results",
@@ -1486,7 +1506,8 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ]
+      ],
+      "figmaSvg": "figma/search-results.svg"
     },
     {
       "componentId": "Search/Suggestions",
@@ -1527,7 +1548,8 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": "kotlin.Unit"
         }
-      ]
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetsnack/render/search-suggestions__ideal__default__light.svg"
     },
     {
       "componentId": "Search/No results",
@@ -1568,7 +1590,8 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ]
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetsnack/render/search-no-results__ideal__default__light.svg"
     },
     {
       "componentId": "Chrome/Bottom nav",
@@ -1577,7 +1600,8 @@
       "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
-      "previewName": "JetsnackBottomBarFeedPreview"
+      "previewName": "JetsnackBottomBarFeedPreview",
+      "figmaSvg": "https://preview.coo.ee/jetsnack/render/chrome-bottom-nav__ideal__default__light.svg"
     },
     {
       "componentId": "Chrome/Bottom nav item",
@@ -1586,7 +1610,8 @@
       "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/debug/java/com/example/jetsnack/catalog/JetsnackComponentPreviews.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
-      "previewName": "JetsnackBottomNavigationItemSelectedPreview"
+      "previewName": "JetsnackBottomNavigationItemSelectedPreview",
+      "figmaSvg": "https://preview.coo.ee/jetsnack/render/chrome-bottom-nav-item__ideal__default__light.svg"
     },
     {
       "componentId": "Chrome/Destination bar",
@@ -1614,7 +1639,8 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ]
+      ],
+      "figmaSvg": "figma/chrome-destination-bar.svg"
     },
     {
       "componentId": "Feedback/Snackbar",
@@ -1720,7 +1746,8 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ]
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetsnack/render/feedback-snackbar__ideal__default__light.svg"
     },
     {
       "componentId": "Screens/App shell",
@@ -1729,7 +1756,8 @@
       "source": "https://github.com/yschimke/compose-samples/blob/previews/app/src/main/java/com/example/jetsnack/ui/JetsnackApp.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
-      "previewName": "JetsnackApp"
+      "previewName": "JetsnackApp",
+      "figmaSvg": "figma/screens-app-shell.svg"
     },
     {
       "componentId": "Screens/Feed",
@@ -1770,7 +1798,8 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ]
+      ],
+      "figmaSvg": "figma/screens-feed.svg"
     },
     {
       "componentId": "Screens/Cart",
@@ -1780,11 +1809,76 @@
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "CartScreenPreview",
-      "codeSnippet": "Cart(\n    onSnackClick = TODO(\"(Long, String) -> Unit\"),\n)",
+      "codeSnippet": "Cart(\n    orderLines = TODO(\"List<OrderLine>\"),\n    removeSnack = TODO(\"(Long) -> Unit\"),\n    increaseItemCount = TODO(\"(Long) -> Unit\"),\n    decreaseItemCount = TODO(\"(Long) -> Unit\"),\n    inspiredByCart = TODO(\"SnackCollection\"),\n    onSnackClick = TODO(\"(Long, String) -> Unit\"),\n)",
       "imports": [
         "import com.example.jetsnack.ui.home.cart.Cart"
       ],
       "parameters": [
+        {
+          "name": "orderLines",
+          "type": "List<OrderLine>",
+          "typeFqn": "kotlin.collections.List",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "removeSnack",
+          "type": "(Long) -> Unit",
+          "typeFqn": "kotlin.Function1",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "increaseItemCount",
+          "type": "(Long) -> Unit",
+          "typeFqn": "kotlin.Function1",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "decreaseItemCount",
+          "type": "(Long) -> Unit",
+          "typeFqn": "kotlin.Function1",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "inspiredByCart",
+          "type": "SnackCollection",
+          "typeFqn": "com.example.jetsnack.model.SnackCollection",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
         {
           "name": "onSnackClick",
           "type": "(Long, String) -> Unit",
@@ -1810,21 +1904,9 @@
           "noArgFactory": null,
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
-        },
-        {
-          "name": "viewModel",
-          "type": "CartViewModel",
-          "typeFqn": "com.example.jetsnack.ui.home.cart.CartViewModel",
-          "hasDefault": true,
-          "composableSlot": false,
-          "composableSlotReceiver": null,
-          "nullable": false,
-          "noArgConstructible": false,
-          "noArgFactory": null,
-          "scopeDslReceiver": null,
-          "lambdaReturnTypeFqn": null
         }
-      ]
+      ],
+      "figmaSvg": "figma/screens-cart.svg"
     },
     {
       "componentId": "Screens/Search",
@@ -1878,7 +1960,8 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ]
+      ],
+      "figmaSvg": "figma/screens-search.svg"
     },
     {
       "componentId": "Screens/Profile",
@@ -1906,7 +1989,8 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ]
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetsnack/render/screens-profile__ideal__default__light.svg"
     },
     {
       "componentId": "Snack/Detail",
@@ -1960,7 +2044,8 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": "kotlin.Unit"
         }
-      ]
+      ],
+      "figmaSvg": "figma/snack-detail.svg"
     },
     {
       "componentId": "Catalog/Filter screen",
@@ -2014,7 +2099,8 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": "kotlin.Unit"
         }
-      ]
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetsnack/render/catalog-filter-screen__ideal__default__light.svg"
     }
   ]
 }
