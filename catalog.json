@@ -1271,7 +1271,8 @@
           "height": 2100,
           "livePreview": "https://preview.coo.ee/jetnews/p/screens-article__ideal__error",
           "previewId": "com.example.jetnews.catalog.JetnewsScreenPreviewsKt.PreviewPostScreenNotFound_Article___not_found",
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetnews/render/screens-article__ideal__error.svg"
         }
       ],
       "greenlines": [
@@ -1559,8 +1560,8 @@
       "sourceFunction": "PreviewPostDrawer",
       "parameters": [
         {
-          "name": "uiState",
-          "type": "PostUiState"
+          "name": "post",
+          "type": "Post"
         },
         {
           "name": "isExpandedScreen",
@@ -1571,12 +1572,22 @@
           "type": "() -> Unit"
         },
         {
+          "name": "isFavorite",
+          "type": "Boolean"
+        },
+        {
           "name": "onToggleFavorite",
           "type": "() -> Unit"
         },
         {
-          "name": "onScroll",
-          "type": "(Int, Int) -> Unit"
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "lazyListState",
+          "type": "LazyListState",
+          "hasDefault": true
         }
       ]
     },
@@ -1595,7 +1606,8 @@
           "previewParams": {
             "uiMode": 33
           },
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetnews/render/navigation-drawer__ideal__default__dark.svg"
         },
         {
           "variant": "ideal",
@@ -1605,7 +1617,8 @@
           "height": 2100,
           "livePreview": "https://preview.coo.ee/jetnews/p/navigation-drawer__ideal__default",
           "previewId": "com.example.jetnews.ui.AppDrawerKt.PreviewAppDrawer_Drawer_contents",
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetnews/render/navigation-drawer__ideal__default.svg"
         },
         {
           "variant": "ideal",
@@ -1616,7 +1629,8 @@
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetnews/p/navigation-drawer__ideal__default__light",
           "previewId": "com.example.jetnews.ui.AppDrawerKt.PreviewAppDrawer_Light",
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetnews/render/navigation-drawer__ideal__default__light.svg"
         },
         {
           "variant": "ideal",
@@ -1626,7 +1640,8 @@
           "height": 2100,
           "livePreview": "https://preview.coo.ee/jetnews/p/navigation-drawer__ideal__selected",
           "previewId": "com.example.jetnews.catalog.JetnewsScreenPreviewsKt.PreviewAppDrawerInterestsSelected_Drawer___Interests_selected",
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetnews/render/navigation-drawer__ideal__selected.svg"
         },
         {
           "variant": "ideal",
@@ -1640,7 +1655,8 @@
           "previewParams": {
             "uiMode": 32
           },
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetnews/render/navigation-drawer__ideal__selected__dark.svg"
         }
       ],
       "greenlines": [
@@ -2875,12 +2891,20 @@
       "sourceFunction": "PreviewInterestsScreenDrawer",
       "parameters": [
         {
-          "name": "interestsViewModel",
-          "type": "InterestsViewModel"
+          "name": "tabContent",
+          "type": "List<TabContent>"
+        },
+        {
+          "name": "currentSection",
+          "type": "Sections"
         },
         {
           "name": "isExpandedScreen",
           "type": "Boolean"
+        },
+        {
+          "name": "onTabChange",
+          "type": "(Sections) -> Unit"
         },
         {
           "name": "openDrawer",
@@ -2888,8 +2912,7 @@
         },
         {
           "name": "snackbarHostState",
-          "type": "SnackbarHostState",
-          "hasDefault": true
+          "type": "SnackbarHostState"
         }
       ]
     },
@@ -3392,7 +3415,8 @@
           "height": 126,
           "livePreview": "https://preview.coo.ee/jetnews/p/bookmark-button__ideal__default",
           "previewId": "com.example.jetnews.ui.home.PostCardsKt.BookmarkButtonPreview_Bookmark_Button",
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetnews/render/bookmark-button__ideal__default.svg"
         },
         {
           "variant": "ideal",
@@ -3406,7 +3430,8 @@
           "previewParams": {
             "uiMode": 33
           },
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetnews/render/bookmark-button__ideal__default__dark.svg"
         },
         {
           "variant": "ideal",
@@ -3417,7 +3442,8 @@
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetnews/p/bookmark-button__ideal__default__light",
           "previewId": "com.example.jetnews.ui.home.PostCardsKt.BookmarkButtonPreview_Light",
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetnews/render/bookmark-button__ideal__default__light.svg"
         },
         {
           "variant": "ideal",
@@ -3427,7 +3453,8 @@
           "height": 126,
           "livePreview": "https://preview.coo.ee/jetnews/p/bookmark-button__ideal__selected",
           "previewId": "com.example.jetnews.ui.home.PostCardsKt.BookmarkButtonBookmarkedPreview_Bookmark_Button_Bookmarked",
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetnews/render/bookmark-button__ideal__selected.svg"
         }
       ],
       "greenlines": [
@@ -4651,7 +4678,8 @@
           "previewParams": {
             "uiMode": 33
           },
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetnews/render/interests-select-topic__ideal__default__dark.svg"
         },
         {
           "variant": "ideal",
@@ -4662,7 +4690,8 @@
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetnews/p/interests-select-topic__ideal__default__light",
           "previewId": "com.example.jetnews.ui.interests.SelectTopicButtonKt.SelectTopicButtonPreviewOff_Light",
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetnews/render/interests-select-topic__ideal__default__light.svg"
         },
         {
           "variant": "ideal",
@@ -4672,7 +4701,8 @@
           "height": 263,
           "livePreview": "https://preview.coo.ee/jetnews/p/interests-select-topic__ideal__default",
           "previewId": "com.example.jetnews.ui.interests.SelectTopicButtonKt.SelectTopicButtonPreviewOff_Light",
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetnews/render/interests-select-topic__ideal__default.svg"
         },
         {
           "variant": "ideal",
@@ -4682,7 +4712,8 @@
           "height": 263,
           "livePreview": "https://preview.coo.ee/jetnews/p/interests-select-topic__ideal__selected",
           "previewId": "com.example.jetnews.ui.interests.SelectTopicButtonKt.SelectTopicButtonPreviewOn_On",
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetnews/render/interests-select-topic__ideal__selected.svg"
         },
         {
           "variant": "ideal",
@@ -4696,7 +4727,8 @@
           "previewParams": {
             "uiMode": 32
           },
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetnews/render/interests-select-topic__ideal__selected__dark.svg"
         }
       ],
       "greenlines": [],
@@ -4753,12 +4785,28 @@
     "androidx.compose.material3.adaptive:adaptive",
     "androidx.navigation3:navigation3"
   ],
-  "renderer": "compose-preview 2.57.0",
-  "generatedAt": "2026-10-14T07:45:55.641Z",
+  "renderer": "compose-preview 2.68.6",
+  "generatedAt": "2026-10-19T00:30:34.583Z",
   "display": {
     "surface": "light",
     "hero": "Screens/Home feed"
   },
+  "themes": [
+    {
+      "id": "com.example.jetnews.catalog.JetnewsDarkThemeCatalog",
+      "tokensFile": "themes/com.example.jetnews.catalog.jetnewsdarkthemecatalog.dtcg.json",
+      "name": "JetNews · Dark",
+      "group": "JetNews",
+      "dark": true
+    },
+    {
+      "id": "com.example.jetnews.catalog.JetnewsLightThemeCatalog",
+      "tokensFile": "themes/com.example.jetnews.catalog.jetnewslightthemecatalog.dtcg.json",
+      "name": "JetNews · Light",
+      "group": "JetNews",
+      "dark": false
+    }
+  ],
   "liveBundle": {
     "path": "bundle/",
     "file": "bundle.png"

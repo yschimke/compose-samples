@@ -7,7 +7,7 @@
     "ref": "previews",
     "module": ":app"
   },
-  "generatedAt": "2026-10-14T07:45:57.087Z",
+  "generatedAt": "2026-10-19T00:30:36.020Z",
   "mappings": [
     {
       "componentId": "Screens/Home feed",
@@ -178,7 +178,8 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": "kotlin.Unit"
         }
-      ]
+      ],
+      "figmaSvg": "figma/screens-home-feed.svg"
     },
     {
       "componentId": "Screens/App shell",
@@ -232,7 +233,8 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ]
+      ],
+      "figmaSvg": "figma/screens-app-shell.svg"
     },
     {
       "componentId": "Screens/Article",
@@ -242,15 +244,15 @@
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "PreviewPostDrawer",
-      "codeSnippet": "PostScreen(\n    uiState = TODO(\"PostUiState\"),\n    isExpandedScreen = TODO(\"Boolean\"),\n    onBack = TODO(\"() -> Unit\"),\n    onToggleFavorite = TODO(\"() -> Unit\"),\n    onScroll = TODO(\"(Int, Int) -> Unit\"),\n)",
+      "codeSnippet": "PostScreen(\n    post = TODO(\"Post\"),\n    isExpandedScreen = TODO(\"Boolean\"),\n    onBack = TODO(\"() -> Unit\"),\n    isFavorite = TODO(\"Boolean\"),\n    onToggleFavorite = TODO(\"() -> Unit\"),\n)",
       "imports": [
         "import com.example.jetnews.ui.post.PostScreen"
       ],
       "parameters": [
         {
-          "name": "uiState",
-          "type": "PostUiState",
-          "typeFqn": "com.example.jetnews.ui.post.PostUiState",
+          "name": "post",
+          "type": "Post",
+          "typeFqn": "com.example.jetnews.model.Post",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -287,6 +289,19 @@
           "lambdaReturnTypeFqn": "kotlin.Unit"
         },
         {
+          "name": "isFavorite",
+          "type": "Boolean",
+          "typeFqn": "kotlin.Boolean",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
           "name": "onToggleFavorite",
           "type": "() -> Unit",
           "typeFqn": "kotlin.Function0",
@@ -300,19 +315,33 @@
           "lambdaReturnTypeFqn": "kotlin.Unit"
         },
         {
-          "name": "onScroll",
-          "type": "(Int, Int) -> Unit",
-          "typeFqn": "kotlin.Function2",
-          "hasDefault": false,
+          "name": "modifier",
+          "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
           "nullable": false,
           "noArgConstructible": false,
           "noArgFactory": null,
           "scopeDslReceiver": null,
-          "lambdaReturnTypeFqn": "kotlin.Unit"
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "lazyListState",
+          "type": "LazyListState",
+          "typeFqn": "androidx.compose.foundation.lazy.LazyListState",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         }
-      ]
+      ],
+      "figmaSvg": "figma/screens-article.svg"
     },
     {
       "componentId": "Navigation/Drawer",
@@ -405,7 +434,8 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ]
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetnews/render/navigation-drawer__ideal__default__light.svg"
     },
     {
       "componentId": "Navigation/Rail",
@@ -472,7 +502,8 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ]
+      ],
+      "figmaSvg": "figma/navigation-rail.svg"
     },
     {
       "componentId": "Reader/Article body",
@@ -539,7 +570,8 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ]
+      ],
+      "figmaSvg": "figma/reader-article-body.svg"
     },
     {
       "componentId": "Interests/Screen",
@@ -549,15 +581,28 @@
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "PreviewInterestsScreenDrawer",
-      "codeSnippet": "InterestsScreen(\n    interestsViewModel = TODO(\"InterestsViewModel\"),\n    isExpandedScreen = TODO(\"Boolean\"),\n    openDrawer = TODO(\"() -> Unit\"),\n)",
+      "codeSnippet": "InterestsScreen(\n    tabContent = TODO(\"List<TabContent>\"),\n    currentSection = TODO(\"Sections\"),\n    isExpandedScreen = TODO(\"Boolean\"),\n    onTabChange = TODO(\"(Sections) -> Unit\"),\n    openDrawer = TODO(\"() -> Unit\"),\n    snackbarHostState = TODO(\"SnackbarHostState\"),\n)",
       "imports": [
         "import com.example.jetnews.ui.interests.InterestsScreen"
       ],
       "parameters": [
         {
-          "name": "interestsViewModel",
-          "type": "InterestsViewModel",
-          "typeFqn": "com.example.jetnews.ui.interests.InterestsViewModel",
+          "name": "tabContent",
+          "type": "List<TabContent>",
+          "typeFqn": "kotlin.collections.List",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "currentSection",
+          "type": "Sections",
+          "typeFqn": "com.example.jetnews.ui.interests.Sections",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -581,6 +626,19 @@
           "lambdaReturnTypeFqn": null
         },
         {
+          "name": "onTabChange",
+          "type": "(Sections) -> Unit",
+          "typeFqn": "kotlin.Function1",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
           "name": "openDrawer",
           "type": "() -> Unit",
           "typeFqn": "kotlin.Function0",
@@ -597,7 +655,7 @@
           "name": "snackbarHostState",
           "type": "SnackbarHostState",
           "typeFqn": "androidx.compose.material3.SnackbarHostState",
-          "hasDefault": true,
+          "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
           "nullable": false,
@@ -606,7 +664,8 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ]
+      ],
+      "figmaSvg": "figma/interests-screen.svg"
     },
     {
       "componentId": "PostCard/Top",
@@ -647,7 +706,8 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ]
+      ],
+      "figmaSvg": "figma/postcard-top.svg"
     },
     {
       "componentId": "PostCard/Simple",
@@ -714,7 +774,8 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": "kotlin.Unit"
         }
-      ]
+      ],
+      "figmaSvg": "figma/postcard-simple.svg"
     },
     {
       "componentId": "PostCard/History",
@@ -768,7 +829,8 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ]
+      ],
+      "figmaSvg": "figma/postcard-history.svg"
     },
     {
       "componentId": "PostCard/Popular",
@@ -822,7 +884,8 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ]
+      ],
+      "figmaSvg": "figma/postcard-popular.svg"
     },
     {
       "componentId": "Bookmark/Button",
@@ -876,7 +939,8 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ]
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetnews/render/bookmark-button__ideal__default__light.svg"
     },
     {
       "componentId": "Interests/Topics tab",
@@ -930,7 +994,8 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": "kotlin.Unit"
         }
-      ]
+      ],
+      "figmaSvg": "figma/interests-topics-tab.svg"
     },
     {
       "componentId": "Interests/People and publications tab",
@@ -984,7 +1049,8 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": "kotlin.Unit"
         }
-      ]
+      ],
+      "figmaSvg": "figma/interests-people-and-publications-tab.svg"
     },
     {
       "componentId": "Interests/Select topic",
@@ -1012,7 +1078,8 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ]
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetnews/render/interests-select-topic__ideal__default__light.svg"
     }
   ]
 }
