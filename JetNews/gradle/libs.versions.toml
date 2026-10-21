@@ -4,8 +4,8 @@
 #####
 [versions]
 accompanist = "0.37.3"
-composeAiPreview = "2.68.6"
-composeAiPreviewAnnotations = "3.17.1"
+composeAiPreview = "2.70.7"
+composeAiPreviewAnnotations = "3.21.1"
 android-material3 = "1.14.0"
 androidGradlePlugin = "9.2.1"
 androidx-activity-compose = "1.13.0"
