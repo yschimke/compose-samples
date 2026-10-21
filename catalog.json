@@ -1618,8 +1618,8 @@
     "androidx.wear.compose:compose-material3",
     "androidx.wear.compose:compose-foundation"
   ],
-  "renderer": "compose-preview 2.68.6",
-  "generatedAt": "2026-10-19T00:32:07.446Z",
+  "renderer": "compose-preview 2.70.7",
+  "generatedAt": "2026-10-21T20:25:10.142Z",
   "display": {
     "surface": "dark",
     "hero": "Episode/Latest"
