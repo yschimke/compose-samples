@@ -7,7 +7,7 @@
     "ref": "previews",
     "module": ":mobile"
   },
-  "generatedAt": "2026-10-14T07:45:29.511Z",
+  "generatedAt": "2026-10-28T02:37:26.011Z",
   "mappings": [
     {
       "componentId": "Home/Screen",
@@ -35,7 +35,8 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": "kotlin.Unit"
         }
-      ]
+      ],
+      "figmaSvg": "figma/home-screen.svg"
     },
     {
       "componentId": "PodcastDetails/Screen",
@@ -45,15 +46,15 @@
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "JetcasterPodcastDetailsFullScreenPreview",
-      "codeSnippet": "PodcastDetailsScreen(\n    viewModel = TODO(\"PodcastDetailsViewModel\"),\n    navigateToPlayer = TODO(\"(EpisodeInfo) -> Unit\"),\n    navigateBack = TODO(\"() -> Unit\"),\n    showBackButton = TODO(\"Boolean\"),\n)",
+      "codeSnippet": "PodcastDetailsScreen(\n    podcast = TODO(\"PodcastInfo\"),\n    episodes = TODO(\"List<EpisodeInfo>\"),\n    toggleSubscribe = TODO(\"(PodcastInfo) -> Unit\"),\n    onQueueEpisode = TODO(\"(PlayerEpisode) -> Unit\"),\n    navigateToPlayer = TODO(\"(EpisodeInfo) -> Unit\"),\n    navigateBack = TODO(\"() -> Unit\"),\n    showBackButton = TODO(\"Boolean\"),\n)",
       "imports": [
         "import com.example.jetcaster.ui.podcast.PodcastDetailsScreen"
       ],
       "parameters": [
         {
-          "name": "viewModel",
-          "type": "PodcastDetailsViewModel",
-          "typeFqn": "com.example.jetcaster.ui.podcast.PodcastDetailsViewModel",
+          "name": "podcast",
+          "type": "PodcastInfo",
+          "typeFqn": "com.example.jetcaster.core.model.PodcastInfo",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -62,6 +63,45 @@
           "noArgFactory": null,
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "episodes",
+          "type": "List<EpisodeInfo>",
+          "typeFqn": "kotlin.collections.List",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "toggleSubscribe",
+          "type": "(PodcastInfo) -> Unit",
+          "typeFqn": "kotlin.Function1",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "onQueueEpisode",
+          "type": "(PlayerEpisode) -> Unit",
+          "typeFqn": "kotlin.Function1",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
         },
         {
           "name": "navigateToPlayer",
@@ -114,8 +154,22 @@
           "noArgFactory": null,
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "removeFromQueue",
+          "type": "(EpisodeInfo) -> Unit",
+          "typeFqn": "kotlin.Function1",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
         }
-      ]
+      ],
+      "figmaSvg": "figma/podcastdetails-screen.svg"
     },
     {
       "componentId": "PodcastDetails/Header",
@@ -169,7 +223,8 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ]
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetcaster/render/podcastdetails-header__ideal__default__light.svg"
     },
     {
       "componentId": "PodcastDetails/Description",
@@ -210,7 +265,8 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ]
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetcaster/render/podcastdetails-description__ideal__default__light.svg"
     },
     {
       "componentId": "PodcastDetails/App bar",
@@ -251,7 +307,8 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ]
+      ],
+      "figmaSvg": "figma/podcastdetails-app-bar.svg"
     },
     {
       "componentId": "PodcastDetails/Subscribe",
@@ -305,7 +362,8 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ]
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetcaster/render/podcastdetails-subscribe__ideal__default__light.svg"
     },
     {
       "componentId": "Podcast/Card",
@@ -314,7 +372,8 @@
       "source": "https://github.com/yschimke/compose-samples/blob/previews/mobile/src/main/java/com/example/jetcaster/ui/home/Home.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
-      "previewName": "PreviewPodcastCard"
+      "previewName": "PreviewPodcastCard",
+      "figmaSvg": "https://preview.coo.ee/jetcaster/render/podcast-card__ideal__default__light.svg"
     },
     {
       "componentId": "Podcast/Row item",
@@ -394,7 +453,8 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": "kotlin.Unit"
         }
-      ]
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetcaster/render/podcast-row-item__ideal__default__light__compact.svg"
     },
     {
       "componentId": "Podcast/Row",
@@ -461,7 +521,8 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ]
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetcaster/render/podcast-row__ideal__default__light.svg"
     },
     {
       "componentId": "Discover/Category tabs",
@@ -515,7 +576,8 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ]
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetcaster/render/discover-category-tabs__ideal__default__light.svg"
     },
     {
       "componentId": "Discover/Category chip",
@@ -582,7 +644,8 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ]
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetcaster/render/discover-category-chip__ideal__default__light.svg"
     },
     {
       "componentId": "Podcast/Follow toggle",
@@ -636,7 +699,8 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ]
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetcaster/render/podcast-follow-toggle__ideal__default__light.svg"
     },
     {
       "componentId": "Episode/List item",
@@ -768,7 +832,8 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ]
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetcaster/render/episode-list-item__ideal__default__light.svg"
     },
     {
       "componentId": "Player/Screen",
@@ -777,7 +842,8 @@
       "source": "https://github.com/yschimke/compose-samples/blob/previews/mobile/src/debug/java/com/example/jetcaster/catalog/JetcasterComponentPreviews.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
-      "previewName": "JetcasterPlayerScreenCatalogPreview"
+      "previewName": "JetcasterPlayerScreenCatalogPreview",
+      "figmaSvg": "figma/player-screen.svg"
     },
     {
       "componentId": "Player/Transport",
@@ -909,7 +975,8 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ]
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetcaster/render/player-transport__ideal__default__light.svg"
     },
     {
       "componentId": "Player/Slider",
@@ -976,7 +1043,8 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": "kotlin.Unit"
         }
-      ]
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetcaster/render/player-slider__ideal__default__light.svg"
     },
     {
       "componentId": "Player/Episode information",
@@ -1069,7 +1137,8 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ]
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetcaster/render/player-episode-information__ideal__default__light.svg"
     },
     {
       "componentId": "Player/App bar",
@@ -1110,7 +1179,8 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": "kotlin.Unit"
         }
-      ]
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetcaster/render/player-app-bar__ideal__default__light.svg"
     },
     {
       "componentId": "Chrome/Home app bar",
@@ -1151,7 +1221,8 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ]
+      ],
+      "figmaSvg": "figma/chrome-home-app-bar.svg"
     },
     {
       "componentId": "Chrome/Pill toolbar",
@@ -1205,7 +1276,8 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ]
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetcaster/render/chrome-pill-toolbar__ideal__default__light.svg"
     },
     {
       "componentId": "Chrome/Top app bar",
@@ -1246,7 +1318,8 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": "kotlin.Unit"
         }
-      ]
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetcaster/render/chrome-top-app-bar__ideal__default__light.svg"
     },
     {
       "componentId": "Chrome/Home error",
@@ -1287,7 +1360,8 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ]
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetcaster/render/chrome-home-error__ideal__default__light.svg"
     },
     {
       "componentId": "States/Loading",
@@ -1315,7 +1389,8 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ]
+      ],
+      "figmaSvg": "figma/states-loading.svg"
     },
     {
       "componentId": "States/Offline",
@@ -1324,7 +1399,8 @@
       "source": "https://github.com/yschimke/compose-samples/blob/previews/mobile/src/debug/java/com/example/jetcaster/catalog/JetcasterComponentPreviews.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
-      "previewName": "JetcasterOfflineStatePreview"
+      "previewName": "JetcasterOfflineStatePreview",
+      "figmaSvg": "https://preview.coo.ee/jetcaster/render/states-offline__ideal__default__light.svg"
     }
   ]
 }

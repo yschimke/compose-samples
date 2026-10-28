@@ -926,7 +926,8 @@
           "previewParams": {
             "showBackground": true
           },
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/podcastdetails-screen__ideal__default__compact__showbackbutton-false.svg"
         },
         {
           "variant": "ideal",
@@ -943,7 +944,8 @@
           "previewParams": {
             "showBackground": true
           },
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/podcastdetails-screen__ideal__default__compact__scope-content-only.svg"
         },
         {
           "variant": "ideal",
@@ -1304,8 +1306,20 @@
       "sourceFunction": "JetcasterPodcastDetailsFullScreenPreview",
       "parameters": [
         {
-          "name": "viewModel",
-          "type": "PodcastDetailsViewModel"
+          "name": "podcast",
+          "type": "PodcastInfo"
+        },
+        {
+          "name": "episodes",
+          "type": "List<EpisodeInfo>"
+        },
+        {
+          "name": "toggleSubscribe",
+          "type": "(PodcastInfo) -> Unit"
+        },
+        {
+          "name": "onQueueEpisode",
+          "type": "(PlayerEpisode) -> Unit"
         },
         {
           "name": "navigateToPlayer",
@@ -1322,6 +1336,11 @@
         {
           "name": "modifier",
           "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "removeFromQueue",
+          "type": "(EpisodeInfo) -> Unit",
           "hasDefault": true
         }
       ]
@@ -1341,7 +1360,8 @@
           "previewParams": {
             "uiMode": 33
           },
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/podcastdetails-header__ideal__default__dark.svg"
         },
         {
           "variant": "ideal",
@@ -1352,7 +1372,8 @@
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetcaster/p/podcastdetails-header__ideal__default__light",
           "previewId": "com.example.jetcaster.ui.podcast.PodcastDetailsScreenKt.PodcastDetailsHeaderItemPreview_Light",
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/podcastdetails-header__ideal__default__light.svg"
         },
         {
           "variant": "ideal",
@@ -1362,7 +1383,8 @@
           "height": 1413,
           "livePreview": "https://preview.coo.ee/jetcaster/p/podcastdetails-header__ideal__default",
           "previewId": "com.example.jetcaster.ui.podcast.PodcastDetailsScreenKt.PodcastDetailsHeaderItemPreview_Light",
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/podcastdetails-header__ideal__default.svg"
         },
         {
           "variant": "ideal",
@@ -1379,7 +1401,8 @@
           "previewParams": {
             "showBackground": true
           },
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/podcastdetails-header__ideal__subscribed__compact__issubscribed-true.svg"
         },
         {
           "variant": "ideal",
@@ -1396,7 +1419,8 @@
           "previewParams": {
             "showBackground": true
           },
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/podcastdetails-header__ideal__unsubscribed__compact__issubscribed-false.svg"
         },
         {
           "variant": "ideal",
@@ -1413,7 +1437,8 @@
           "previewParams": {
             "showBackground": true
           },
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/podcastdetails-header__ideal__default__compact__title-overflowing.svg"
         }
       ],
       "greenlines": [
@@ -1558,7 +1583,8 @@
           "previewParams": {
             "uiMode": 33
           },
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/podcastdetails-description__ideal__default__dark.svg"
         },
         {
           "variant": "ideal",
@@ -1569,7 +1595,8 @@
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetcaster/p/podcastdetails-description__ideal__default__light",
           "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPodcastDescriptionPreview_Light",
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/podcastdetails-description__ideal__default__light.svg"
         },
         {
           "variant": "ideal",
@@ -1583,7 +1610,8 @@
           "previewParams": {
             "showBackground": true
           },
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/podcastdetails-description__ideal__default__compact.svg"
         },
         {
           "variant": "ideal",
@@ -1597,7 +1625,8 @@
           "previewParams": {
             "showBackground": true
           },
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/podcastdetails-description__ideal__overflowing__compact.svg"
         }
       ],
       "greenlines": [],
@@ -1749,7 +1778,8 @@
           "previewParams": {
             "uiMode": 33
           },
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/podcastdetails-subscribe__ideal__default__dark.svg"
         },
         {
           "variant": "ideal",
@@ -1760,7 +1790,8 @@
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetcaster/p/podcastdetails-subscribe__ideal__default__light",
           "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterSubscribeButtonsPreview_Light",
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/podcastdetails-subscribe__ideal__default__light.svg"
         },
         {
           "variant": "ideal",
@@ -1774,7 +1805,8 @@
           "previewParams": {
             "showBackground": true
           },
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/podcastdetails-subscribe__ideal__default__compact.svg"
         },
         {
           "variant": "ideal",
@@ -1791,7 +1823,8 @@
           "previewParams": {
             "showBackground": true
           },
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/podcastdetails-subscribe__ideal__subscribed__compact__issubscribed-true.svg"
         }
       ],
       "greenlines": [
@@ -1898,7 +1931,8 @@
           "previewParams": {
             "uiMode": 33
           },
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/podcast-card__ideal__default__dark.svg"
         },
         {
           "variant": "ideal",
@@ -1909,7 +1943,8 @@
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetcaster/p/podcast-card__ideal__default__light",
           "previewId": "com.example.jetcaster.ui.home.HomeKt.PreviewPodcastCard_Light",
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/podcast-card__ideal__default__light.svg"
         },
         {
           "variant": "ideal",
@@ -1919,7 +1954,8 @@
           "height": 336,
           "livePreview": "https://preview.coo.ee/jetcaster/p/podcast-card__ideal__default",
           "previewId": "com.example.jetcaster.ui.home.HomeKt.PreviewPodcastCard_Light",
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/podcast-card__ideal__default.svg"
         }
       ],
       "greenlines": [
@@ -1993,7 +2029,8 @@
             "uiMode": 32,
             "showBackground": true
           },
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/podcast-row-item__ideal__default__dark__compact.svg"
         },
         {
           "variant": "ideal",
@@ -2008,7 +2045,8 @@
           "previewParams": {
             "showBackground": true
           },
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/podcast-row-item__ideal__default__light__compact.svg"
         },
         {
           "variant": "ideal",
@@ -2025,7 +2063,8 @@
           "previewParams": {
             "showBackground": true
           },
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/podcast-row-item__ideal__followed__compact__isfollowed-true.svg"
         },
         {
           "variant": "ideal",
@@ -2042,7 +2081,8 @@
           "previewParams": {
             "showBackground": true
           },
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/podcast-row-item__ideal__default__compact__title-overflowing.svg"
         }
       ],
       "greenlines": [
@@ -2160,7 +2200,8 @@
           "previewParams": {
             "showBackground": true
           },
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/podcast-row__ideal__default__compact.svg"
         },
         {
           "variant": "ideal",
@@ -2174,7 +2215,8 @@
           "previewParams": {
             "uiMode": 33
           },
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/podcast-row__ideal__default__dark.svg"
         },
         {
           "variant": "ideal",
@@ -2185,7 +2227,8 @@
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetcaster/p/podcast-row__ideal__default__light",
           "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterCategoryPodcastRowPreview_Light",
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/podcast-row__ideal__default__light.svg"
         }
       ],
       "greenlines": [
@@ -2413,7 +2456,8 @@
           "previewParams": {
             "showBackground": true
           },
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/discover-category-tabs__ideal__default__compact.svg"
         },
         {
           "variant": "ideal",
@@ -2427,7 +2471,8 @@
           "previewParams": {
             "uiMode": 33
           },
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/discover-category-tabs__ideal__default__dark.svg"
         },
         {
           "variant": "ideal",
@@ -2438,7 +2483,8 @@
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetcaster/p/discover-category-tabs__ideal__default__light",
           "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterCategoryTabsPreview_Light",
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/discover-category-tabs__ideal__default__light.svg"
         }
       ],
       "greenlines": [
@@ -2592,7 +2638,8 @@
           "previewParams": {
             "showBackground": true
           },
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/discover-category-chip__ideal__default.svg"
         },
         {
           "variant": "ideal",
@@ -2606,7 +2653,8 @@
           "previewParams": {
             "uiMode": 33
           },
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/discover-category-chip__ideal__default__dark.svg"
         },
         {
           "variant": "ideal",
@@ -2617,7 +2665,8 @@
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetcaster/p/discover-category-chip__ideal__default__light",
           "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterCategoryChipPreview_Light",
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/discover-category-chip__ideal__default__light.svg"
         },
         {
           "variant": "ideal",
@@ -2633,7 +2682,8 @@
           "previewParams": {
             "showBackground": true
           },
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/discover-category-chip__ideal__selected__selected-true.svg"
         }
       ],
       "greenlines": [
@@ -2714,7 +2764,8 @@
           "previewParams": {
             "uiMode": 33
           },
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/podcast-follow-toggle__ideal__default__dark.svg"
         },
         {
           "variant": "ideal",
@@ -2727,7 +2778,8 @@
           "previewParams": {
             "showBackground": true
           },
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/podcast-follow-toggle__ideal__default.svg"
         },
         {
           "variant": "ideal",
@@ -2738,7 +2790,8 @@
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetcaster/p/podcast-follow-toggle__ideal__default__light",
           "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterFollowToggleUnfollowedPreview_Light",
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/podcast-follow-toggle__ideal__default__light.svg"
         },
         {
           "variant": "ideal",
@@ -2754,7 +2807,8 @@
           "previewParams": {
             "showBackground": true
           },
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/podcast-follow-toggle__ideal__followed__isfollowed-true.svg"
         }
       ],
       "greenlines": [
@@ -2831,7 +2885,8 @@
           "previewParams": {
             "uiMode": 33
           },
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/episode-list-item__ideal__default__dark.svg"
         },
         {
           "variant": "ideal",
@@ -2844,7 +2899,8 @@
           "previewParams": {
             "showBackground": true
           },
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/episode-list-item__ideal__default.svg"
         },
         {
           "variant": "ideal",
@@ -2855,7 +2911,8 @@
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetcaster/p/episode-list-item__ideal__default__light",
           "previewId": "com.example.jetcaster.ui.shared.EpisodeListItemKt.EpisodeListItemPreview_Light",
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/episode-list-item__ideal__default__light.svg"
         },
         {
           "variant": "ideal",
@@ -2868,7 +2925,8 @@
           },
           "livePreview": "https://preview.coo.ee/jetcaster/p/episode-list-item__ideal__default__source-sample",
           "previewId": "com.example.jetcaster.ui.home.category.PodcastCategoryKt.PreviewEpisodeListItem",
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/episode-list-item__ideal__default__source-sample.svg"
         },
         {
           "variant": "ideal",
@@ -2885,7 +2943,8 @@
           "previewParams": {
             "showBackground": true
           },
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/episode-list-item__ideal__default__compact__duration-52m.svg"
         },
         {
           "variant": "ideal",
@@ -2902,7 +2961,8 @@
           "previewParams": {
             "showBackground": true
           },
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/episode-list-item__ideal__expanded__compact__showsummary-true.svg"
         },
         {
           "variant": "ideal",
@@ -2919,7 +2979,8 @@
           "previewParams": {
             "showBackground": true
           },
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/episode-list-item__ideal__default__compact__showpodcastimage-false.svg"
         },
         {
           "variant": "ideal",
@@ -2936,7 +2997,8 @@
           "previewParams": {
             "showBackground": true
           },
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/episode-list-item__ideal__default__compact__duration-null.svg"
         }
       ],
       "greenlines": [
@@ -3519,7 +3581,8 @@
           "previewParams": {
             "uiMode": 33
           },
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/player-transport__ideal__default__dark.svg"
         },
         {
           "variant": "ideal",
@@ -3530,7 +3593,8 @@
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetcaster/p/player-transport__ideal__default__light",
           "previewId": "com.example.jetcaster.ui.player.PlayerScreenKt.PlayerButtonsPreview_Light",
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/player-transport__ideal__default__light.svg"
         },
         {
           "variant": "ideal",
@@ -3540,7 +3604,8 @@
           "height": 620,
           "livePreview": "https://preview.coo.ee/jetcaster/p/player-transport__ideal__default",
           "previewId": "com.example.jetcaster.ui.player.PlayerScreenKt.PlayerButtonsPreview_Light",
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/player-transport__ideal__default.svg"
         },
         {
           "variant": "ideal",
@@ -3557,7 +3622,8 @@
           "previewParams": {
             "showBackground": true
           },
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/player-transport__ideal__playing__compact__isplaying-true.svg"
         },
         {
           "variant": "ideal",
@@ -3574,7 +3640,8 @@
           "previewParams": {
             "showBackground": true
           },
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/player-transport__ideal__paused__compact__isplaying-false.svg"
         },
         {
           "variant": "ideal",
@@ -3591,7 +3658,8 @@
           "previewParams": {
             "showBackground": true
           },
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/player-transport__ideal__queue-empty__compact__hasnext-false.svg"
         }
       ],
       "greenlines": [
@@ -3812,7 +3880,8 @@
           "previewParams": {
             "uiMode": 33
           },
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/player-slider__ideal__default__dark.svg"
         },
         {
           "variant": "ideal",
@@ -3823,7 +3892,8 @@
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetcaster/p/player-slider__ideal__default__light",
           "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPlayerSliderPreview_Light",
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/player-slider__ideal__default__light.svg"
         },
         {
           "variant": "ideal",
@@ -3837,7 +3907,8 @@
           "previewParams": {
             "showBackground": true
           },
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/player-slider__ideal__default__compact.svg"
         },
         {
           "variant": "ideal",
@@ -3851,7 +3922,8 @@
           "previewParams": {
             "showBackground": true
           },
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/player-slider__ideal__in-progress__compact.svg"
         },
         {
           "variant": "ideal",
@@ -3865,7 +3937,8 @@
           "previewParams": {
             "showBackground": true
           },
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/player-slider__ideal__complete__compact.svg"
         }
       ],
       "greenlines": [],
@@ -3937,7 +4010,8 @@
           "previewParams": {
             "uiMode": 33
           },
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/player-episode-information__ideal__default__dark.svg"
         },
         {
           "variant": "ideal",
@@ -3948,7 +4022,8 @@
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetcaster/p/player-episode-information__ideal__default__light",
           "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPodcastInformationPreview_Light",
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/player-episode-information__ideal__default__light.svg"
         },
         {
           "variant": "ideal",
@@ -3962,7 +4037,8 @@
           "previewParams": {
             "showBackground": true
           },
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/player-episode-information__ideal__default__compact.svg"
         }
       ],
       "greenlines": [],
@@ -4021,7 +4097,8 @@
           "previewParams": {
             "uiMode": 33
           },
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/player-app-bar__ideal__default__dark.svg"
         },
         {
           "variant": "ideal",
@@ -4032,7 +4109,8 @@
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetcaster/p/player-app-bar__ideal__default__light",
           "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPlayerTopAppBarPreview_Light",
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/player-app-bar__ideal__default__light.svg"
         },
         {
           "variant": "ideal",
@@ -4046,7 +4124,8 @@
           "previewParams": {
             "showBackground": true
           },
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/player-app-bar__ideal__default__compact.svg"
         }
       ],
       "greenlines": [
@@ -4289,7 +4368,8 @@
           "previewParams": {
             "uiMode": 33
           },
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/chrome-pill-toolbar__ideal__default__dark.svg"
         },
         {
           "variant": "ideal",
@@ -4300,7 +4380,8 @@
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetcaster/p/chrome-pill-toolbar__ideal__default__light",
           "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterPillToolbarDiscoverPreview_Light",
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/chrome-pill-toolbar__ideal__default__light.svg"
         },
         {
           "variant": "ideal",
@@ -4314,7 +4395,8 @@
           "previewParams": {
             "showBackground": true
           },
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/chrome-pill-toolbar__ideal__default__compact.svg"
         },
         {
           "variant": "ideal",
@@ -4331,7 +4413,8 @@
           "previewParams": {
             "showBackground": true
           },
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/chrome-pill-toolbar__ideal__library__compact__selected-library.svg"
         }
       ],
       "greenlines": [
@@ -4485,7 +4568,8 @@
           "previewParams": {
             "uiMode": 33
           },
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/chrome-top-app-bar__ideal__default__dark.svg"
         },
         {
           "variant": "ideal",
@@ -4496,7 +4580,8 @@
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetcaster/p/chrome-top-app-bar__ideal__default__light",
           "previewId": "com.example.jetcaster.ui.player.PlayerScreenKt.TopAppBarPreview_Light",
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/chrome-top-app-bar__ideal__default__light.svg"
         },
         {
           "variant": "ideal",
@@ -4506,7 +4591,8 @@
           "height": 126,
           "livePreview": "https://preview.coo.ee/jetcaster/p/chrome-top-app-bar__ideal__default",
           "previewId": "com.example.jetcaster.ui.player.PlayerScreenKt.TopAppBarPreview_Light",
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/chrome-top-app-bar__ideal__default.svg"
         }
       ],
       "greenlines": [
@@ -4638,7 +4724,8 @@
           "previewParams": {
             "uiMode": 33
           },
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/chrome-home-error__ideal__default__dark.svg"
         },
         {
           "variant": "ideal",
@@ -4648,7 +4735,8 @@
           "height": 2100,
           "livePreview": "https://preview.coo.ee/jetcaster/p/chrome-home-error__ideal__default",
           "previewId": "com.example.jetcaster.ui.home.HomeKt.HomeScreenErrorPreview_Home_screen_error",
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/chrome-home-error__ideal__default.svg"
         },
         {
           "variant": "ideal",
@@ -4659,7 +4747,8 @@
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetcaster/p/chrome-home-error__ideal__default__light",
           "previewId": "com.example.jetcaster.ui.home.HomeKt.HomeScreenErrorPreview_Light",
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/chrome-home-error__ideal__default__light.svg"
         },
         {
           "variant": "ideal",
@@ -4676,7 +4765,8 @@
           "previewParams": {
             "showBackground": true
           },
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/chrome-home-error__ideal__default__compact__onretry-present.svg"
         }
       ],
       "greenlines": [
@@ -4826,7 +4916,8 @@
           "previewParams": {
             "uiMode": 33
           },
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/states-offline__ideal__default__dark.svg"
         },
         {
           "variant": "ideal",
@@ -4837,7 +4928,8 @@
           "theme": "light",
           "livePreview": "https://preview.coo.ee/jetcaster/p/states-offline__ideal__default__light",
           "previewId": "com.example.jetcaster.catalog.JetcasterComponentPreviewsKt.JetcasterOfflineStatePreview_Light",
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/states-offline__ideal__default__light.svg"
         },
         {
           "variant": "ideal",
@@ -4851,7 +4943,8 @@
           "previewParams": {
             "showBackground": true
           },
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/jetcaster/render/states-offline__ideal__default__compact.svg"
         }
       ],
       "greenlines": [
@@ -4912,12 +5005,56 @@
     "androidx.compose.material3:material3",
     "androidx.compose.material3.adaptive:adaptive"
   ],
-  "renderer": "compose-preview 2.57.0",
-  "generatedAt": "2026-10-14T07:45:28.626Z",
+  "renderer": "compose-preview 2.74.1",
+  "generatedAt": "2026-10-28T02:37:23.771Z",
   "display": {
     "surface": "dark",
     "hero": "Home/Screen"
   },
+  "themes": [
+    {
+      "id": "com.example.jetcaster.catalog.JetcasterDarkHighContrastThemeCatalog",
+      "tokensFile": "themes/com.example.jetcaster.catalog.jetcasterdarkhighcontrastthemecatalog.dtcg.json",
+      "name": "Dark — high contrast",
+      "group": "Jetcaster",
+      "dark": true
+    },
+    {
+      "id": "com.example.jetcaster.catalog.JetcasterDarkMediumContrastThemeCatalog",
+      "tokensFile": "themes/com.example.jetcaster.catalog.jetcasterdarkmediumcontrastthemecatalog.dtcg.json",
+      "name": "Dark — medium contrast",
+      "group": "Jetcaster",
+      "dark": true
+    },
+    {
+      "id": "com.example.jetcaster.catalog.JetcasterDarkThemeCatalog",
+      "tokensFile": "themes/com.example.jetcaster.catalog.jetcasterdarkthemecatalog.dtcg.json",
+      "name": "Jetcaster · Dark",
+      "group": "Jetcaster",
+      "dark": true
+    },
+    {
+      "id": "com.example.jetcaster.catalog.JetcasterLightThemeCatalog",
+      "tokensFile": "themes/com.example.jetcaster.catalog.jetcasterlightthemecatalog.dtcg.json",
+      "name": "Jetcaster · Light",
+      "group": "Jetcaster",
+      "dark": false
+    },
+    {
+      "id": "com.example.jetcaster.catalog.JetcasterLightHighContrastThemeCatalog",
+      "tokensFile": "themes/com.example.jetcaster.catalog.jetcasterlighthighcontrastthemecatalog.dtcg.json",
+      "name": "Light — high contrast",
+      "group": "Jetcaster",
+      "dark": false
+    },
+    {
+      "id": "com.example.jetcaster.catalog.JetcasterLightMediumContrastThemeCatalog",
+      "tokensFile": "themes/com.example.jetcaster.catalog.jetcasterlightmediumcontrastthemecatalog.dtcg.json",
+      "name": "Light — medium contrast",
+      "group": "Jetcaster",
+      "dark": false
+    }
+  ],
   "compareWith": {
     "system": "jetcaster-wear"
   },
