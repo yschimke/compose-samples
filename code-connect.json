@@ -7,7 +7,7 @@
     "ref": "previews",
     "module": ":app"
   },
-  "generatedAt": "2026-10-28T02:33:27.194Z",
+  "generatedAt": "2026-11-05T05:58:22.263Z",
   "mappings": [
     {
       "componentId": "Adaptive/Phone",
@@ -765,7 +765,7 @@
           "lambdaReturnTypeFqn": null
         }
       ],
-      "figmaSvg": "https://preview.coo.ee/reply/render/navigation-drawer__ideal__default__light.svg"
+      "figmaSvg": "https://preview.coo.ee/reply/render/navigation-drawer__ideal__default__compact.svg"
     },
     {
       "componentId": "Identity/ProfileImage",
