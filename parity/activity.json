@@ -1,10 +1,10 @@
 {
   "schema": "compose-preview-activity/v1",
-  "generatedAt": "2026-11-07T22:22:42.489Z",
+  "generatedAt": "2026-11-11T02:29:41.952Z",
   "windowDays": 30,
   "code": {
     "repo": "yschimke/compose-samples",
-    "ref": "previews",
+    "ref": "main",
     "events": [
       {
         "sha": "fb26560a9e56200fd82263924c61b9142fa7be85",

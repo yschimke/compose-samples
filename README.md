@@ -46,7 +46,7 @@ customising the live render are two ends of one workflow.
 | Library | `custom design system (JetsnackTheme)` |
 | Renderer | compose-preview 2.89.0 |
 | Schema | `design-parity-catalog/v1` |
-| Generated | 2026-11-07 |
+| Generated | 2026-11-11 |
 
 ## Components by group
 
