@@ -1,15 +1,15 @@
 {
   "schema": "compose-preview-activity/v1",
-  "generatedAt": "2026-11-11T02:29:41.952Z",
+  "generatedAt": "2026-11-13T01:30:26.047Z",
   "windowDays": 30,
   "code": {
     "repo": "yschimke/compose-samples",
-    "ref": "main",
+    "ref": "previews",
     "events": [
       {
-        "sha": "fb26560a9e56200fd82263924c61b9142fa7be85",
-        "subject": "fix(deps): update compose-ai-tools (#52)",
-        "at": "2026-11-07T22:13:17Z",
+        "sha": "2510995f2165076885388cfe7a02d3be1e62745e",
+        "subject": "fix(deps): update compose-ai-tools (#53)",
+        "at": "2026-11-13T01:21:14Z",
         "author": "renovate[bot]",
         "previewIds": [],
         "components": []
