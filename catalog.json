@@ -9113,8 +9113,8 @@
   "library": [
     "custom design system (JetsnackTheme)"
   ],
-  "renderer": "compose-preview 2.90.1",
-  "generatedAt": "2026-11-13T01:28:17.840Z",
+  "renderer": "compose-preview 2.92.0",
+  "generatedAt": "2026-11-14T16:50:01.757Z",
   "display": {
     "surface": "light",
     "hero": "Screens/Feed"
