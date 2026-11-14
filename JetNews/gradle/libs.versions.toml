@@ -4,7 +4,7 @@
 #####
 [versions]
 accompanist = "0.37.3"
-composeAiPreview = "2.90.1"
+composeAiPreview = "2.92.0"
 composeAiPreviewAnnotations = "3.27.4"
 android-material3 = "1.14.0"
 androidGradlePlugin = "9.2.1"
