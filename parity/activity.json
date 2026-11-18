@@ -1,15 +1,15 @@
 {
   "schema": "compose-preview-activity/v1",
-  "generatedAt": "2026-11-18T02:34:14.926Z",
+  "generatedAt": "2026-11-18T07:37:32.909Z",
   "windowDays": 30,
   "code": {
     "repo": "yschimke/compose-samples",
-    "ref": "main",
+    "ref": "previews",
     "events": [
       {
-        "sha": "e646587ab5d2c11141ca4def9dc4169c2f5bf877",
-        "subject": "chore(deps): update dependency ee.schimke.composeai.preview to v2.92.0 (#54)",
-        "at": "2026-11-14T16:42:37Z",
+        "sha": "f64ccdf289331fe7e374fc65a05c35950ea1b6fd",
+        "subject": "fix(deps): update compose-ai-tools (#55)",
+        "at": "2026-11-18T07:28:29Z",
         "author": "renovate[bot]",
         "previewIds": [],
         "components": []
