@@ -5005,8 +5005,8 @@
     "androidx.compose.material3:material3",
     "androidx.compose.material3.adaptive:adaptive"
   ],
-  "renderer": "compose-preview 2.98.0",
-  "generatedAt": "2026-11-18T02:34:11.205Z",
+  "renderer": "compose-preview 2.103.1",
+  "generatedAt": "2026-11-25T02:33:46.996Z",
   "display": {
     "surface": "dark",
     "hero": "Home/Screen"
